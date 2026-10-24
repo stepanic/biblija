@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ChapterView from "../components/ChapterView.astro";
+import { getAllBooks, getBookPayload } from "../lib/bible";
+
+const books = getAllBooks();
+const book = getBookPayload(1);
+const chapterObj = book.chapters[0];
+---
+
+<BaseLayout
+  title="Biblija 365 & Offline Pretraživač (Zagrebačka / Jeruzalemska Biblija)"
+  activeNav="reader"
+>
+  <div id="resumeReadingBar" class="active-plan-banner" style="display:none;margin-bottom:1rem;">
+    <div>
+      <span class="badge">Nastavi čitanje</span>
+      <strong id="resumeReadingLabel" style="margin-left:0.5rem;"></strong>
+    </div>
+    <div style="display:flex;gap:0.4rem;">
+      <a id="resumeReadingLink" href="/" class="icon-btn" style="background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none;">
+        Nastavi gdje si stao →
+      </a>
+      <a href="/plan/" class="icon-btn" style="text-decoration:none;">🗓️ Biblija 365</a>
+    </div>
+  </div>
+
+  <ChapterView
+    books={books}
+    book={book}
+    chapterObj={chapterObj}
+    prevUrl={null}
+    nextUrl="/knjiga-postanka/2/"
+  />
+</BaseLayout>

@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ChapterView from "../../components/ChapterView.astro";
+import { getAllBooks, getBookPayload } from "../../lib/bible";
+
+export function getStaticPaths() {
+  const books = getAllBooks();
+  const payloads = books.map((b) => getBookPayload(b.order));
+
+  // Build flat list of all 1,329 chapters for prev/next navigation
+  const flat: Array<{ bookIdx: number; chIdx: number; url: string }> = [];
+  payloads.forEach((bp, bIdx) => {
+    bp.chapters.forEach((ch, cIdx) => {
+      flat.push({
+        bookIdx: bIdx,
+        chIdx: cIdx,
+        url: `/${bp.id}/${ch.chapter}/`,
+      });
+    });
+  });
+
+  return flat.map((item, idx) => {
+    const bp = payloads[item.bookIdx];
+    const chObj = bp.chapters[item.chIdx];
+    const prevUrl = idx > 0 ? flat[idx - 1].url : null;
+    const nextUrl = idx + 1 < flat.length ? flat[idx + 1].url : null;
+
+    return {
+      params: {
+        book: bp.id,
+        chapter: String(chObj.chapter),
+      },
+      props: {
+        book: bp,
+        chapterObj: chObj,
+        prevUrl,
+        nextUrl,
+      },
+    };
+  });
+}
+
+const { book, chapterObj, prevUrl, nextUrl } = Astro.props;
+const books = getAllBooks();
+
+const chTitle = chapterObj.chapter === 0 ? "Proslov" : `${chapterObj.chapter}. poglavlje`;
+const pageTitle = `${book.title} — ${chTitle} (${book.abbr} ${chapterObj.chapter === 0 ? "Proslov" : chapterObj.chapter}) | Biblija 365`;
+const previewVerses = chapterObj.verses
+  .slice(0, 2)
+  .map((v) => `${v.verse}. ${v.text}`)
+  .join(" ");
+---
+
+<BaseLayout title={pageTitle} description={previewVerses} activeNav="reader">
+  <ChapterView
+    books={books}
+    book={book}
+    chapterObj={chapterObj}
+    prevUrl={prevUrl}
+    nextUrl={nextUrl}
+  />
+</BaseLayout>

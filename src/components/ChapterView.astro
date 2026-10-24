@@ -1,0 +1,165 @@
+---
+import type { BookMeta, BookPayload, ChapterData } from "../lib/bible";
+
+interface Props {
+  books: BookMeta[];
+  book: BookPayload;
+  chapterObj: ChapterData;
+  prevUrl: string | null;
+  nextUrl: string | null;
+}
+
+const { books, book, chapterObj, prevUrl, nextUrl } = Astro.props;
+
+// Group books by category
+const groups = new Map<string, BookMeta[]>();
+for (const b of books) {
+  if (!groups.has(b.category)) groups.set(b.category, []);
+  groups.get(b.category)!.push(b);
+}
+
+const chLabel = chapterObj.chapter === 0 ? "Proslov" : `Poglavlje ${chapterObj.chapter}`;
+---
+
+<div
+  class="reader-layout"
+  id="readerRoot"
+  data-book-order={book.order}
+  data-book-id={book.id}
+  data-book-abbr={book.abbr}
+  data-book-title={book.title}
+  data-chapter={chapterObj.chapter}
+>
+  <aside class="sidebar-card">
+    <div class="filter-row">
+      <button class="filter-chip active" data-testament="ALL">Sve (73)</button>
+      <button class="filter-chip" data-testament="SZ">SZ (46)</button>
+      <button class="filter-chip" data-testament="NZ">NZ (27)</button>
+    </div>
+    <input type="search" id="bookFilterInput" class="book-filter-input" placeholder="Filtriraj knjige (npr. Iv, Ps, Izl)..." />
+    <div id="bookListContainer" class="book-list">
+      {Array.from(groups.entries()).map(([cat, items]) => (
+        <div class="book-group-section" data-category={cat}>
+          <div class="book-group-title">{cat}</div>
+          {items.map((b) => {
+            const firstCh = b.id === "knjiga-sirahova" ? 1 : 1;
+            const isAct = b.order === book.order ? "active" : "";
+            return (
+              <a
+                href={`/${b.id}/${firstCh}/`}
+                class={`book-item ${isAct}`}
+                style="text-decoration:none;"
+                data-testament-item={b.testament}
+                data-search={`${b.abbr.toLowerCase()} ${b.title.toLowerCase()} ${b.category.toLowerCase()}`}
+              >
+                <span>
+                  <span class="book-item-abbr">{b.abbr}</span> {b.title}
+                </span>
+                <span class="book-item-count">{b.chapter_count}</span>
+              </a>
+            );
+          })}
+        </div>
+      ))}
+    </div>
+  </aside>
+
+  <div class="reader-main">
+    <!-- Active Biblija 365 Day Banner inside Reader -->
+    <div id="readerPlanBanner" class="active-plan-banner" style="display:none;">
+      <div>
+        <strong id="bannerPlanDayTitle">Biblija 365 — Dan 1</strong>
+        <div id="bannerPlanPills" class="plan-reading-pills" style="margin-top:0.35rem;"></div>
+      </div>
+      <div style="display:flex;gap:0.4rem;align-items:center;">
+        <button class="icon-btn" id="btnBannerMarkDone" style="background:var(--accent);color:#fff;border-color:var(--accent);">✓ Označi dan pročitanim</button>
+        <button class="icon-btn" id="btnBannerClose" title="Sakrij traku plana">✕</button>
+      </div>
+    </div>
+
+    <div class="reader-header">
+      <div class="reader-title-row">
+        <div>
+          <span class="badge">{book.testament} • {book.category}</span>
+          <h1 class="reader-book-title">{book.title}</h1>
+        </div>
+        <div class="reader-meta">{chLabel} ({chapterObj.verse_count} redaka)</div>
+      </div>
+
+      <div class="chapter-grid">
+        {book.chapters.map((c) => {
+          const lbl = c.chapter === 0 ? "Proslov" : String(c.chapter);
+          const act = c.chapter === chapterObj.chapter ? "active" : "";
+          return (
+            <a
+              href={`/${book.id}/${c.chapter}/`}
+              class={`ch-pill ${act}`}
+              style="display:inline-flex;align-items:center;justify-content:center;text-decoration:none;"
+            >
+              {lbl}
+            </a>
+          );
+        })}
+      </div>
+    </div>
+
+    <article id="chapterBody" class="chapter-body">
+      {chapterObj.verses.map((v) => {
+        const vLabel = v.verse_label || String(v.verse);
+        const isPoetic = Boolean(v.lines && v.lines.length > 1);
+        return (
+          <>
+            {v.headings && v.headings.map((h) => {
+              if (h.level === "h2") return <h2 class="sec-h2">{h.text}</h2>;
+              if (h.level === "h3") return <h3 class="sec-h3">{h.text}</h3>;
+              return <h4 class="sec-h4">{h.text}</h4>;
+            })}
+            {v.references && v.references.map((refStr) => (
+              <div class="sec-ref">{refStr}</div>
+            ))}
+            {isPoetic ? (
+              <span
+                class="verse-item poetic-block"
+                id={`v-${v.verse}`}
+                data-verse={v.verse}
+                data-text={v.text}
+              >
+                {v.lines!.map((ln, idx) => (
+                  <span class="poetic-line">
+                    {idx === 0 && <sup class="verse-sup">{vLabel}</sup>}
+                    {ln}
+                  </span>
+                ))}
+              </span>
+            ) : (
+              <span
+                class="verse-item"
+                id={`v-${v.verse}`}
+                data-verse={v.verse}
+                data-text={v.text}
+              >
+                <sup class="verse-sup">{vLabel}</sup>
+                {v.text}
+              </span>
+            )}
+            {" "}
+          </>
+        );
+      })}
+    </article>
+
+    <div class="chapter-nav-footer">
+      {prevUrl ? (
+        <a href={prevUrl} class="icon-btn" style="text-decoration:none;">← Prethodno poglavlje</a>
+      ) : (
+        <span />
+      )}
+      <span class="reader-meta">{book.abbr} {chapterObj.chapter === 0 ? "Proslov" : chapterObj.chapter}</span>
+      {nextUrl ? (
+        <a href={nextUrl} class="icon-btn" style="text-decoration:none;">Sljedeće poglavlje →</a>
+      ) : (
+        <span />
+      )}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPlansIndex } from "../../lib/bible";
+
+const plans = getPlansIndex();
+---
+
+<BaseLayout
+  title="Biblija kroz 365 dana — Planovi čitanja | Biblija 365"
+  description="Službeni 365-dnevni planovi čitanja Biblije (Muževni budite: Tematski / Velika avantura s Biblijom, Usporedni, Linearni) i tematski planovi."
+  activeNav="plan365"
+>
+  <section id="planPageRoot">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.8rem;">
+        <div>
+          <h1 style="margin:0 0 0.25rem;font-size:1.5rem;">Program čitanja: Biblija 365</h1>
+          <p style="margin:0;color:var(--text-muted);font-size:0.9rem;">
+            Odaberi 365-dnevni raspored kroz cijelu katoličku Bibliju (73 knjige) ili kraće tematske planove.
+          </p>
+        </div>
+        <select id="planSelector" class="search-select" style="font-weight:600;min-width:300px;">
+          {plans.map((p: any) => (
+            <option value={p.id}>
+              {p.category === "biblija-365" ? "★ " : "• "}{p.title} ({p.days_count} dana)
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <p id="planDescription" style="margin:0.8rem 0 0.6rem;font-size:0.92rem;color:var(--text-muted);"></p>
+
+      <div class="progress-bar-outer">
+        <div id="planProgressBar" class="progress-bar-inner" style="width:0%;"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:0.86rem;color:var(--text-muted);flex-wrap:wrap;gap:0.5rem;">
+        <span id="planProgressStats">Pročitano: 0 / 365 dana (0%)</span>
+        <span id="planNextSuggested">Sljedeći nepročitani dan: Dan 1</span>
+      </div>
+    </div>
+
+    <div id="currentDayHeroCard" class="card" style="border:2px solid var(--accent);"></div>
+
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.6rem;">
+        <div style="display:flex;gap:0.4rem;">
+          <button class="filter-chip active" data-dayfilter="all" style="flex:none;padding:0.35rem 0.8rem;">Svi dani</button>
+          <button class="filter-chip" data-dayfilter="todo" style="flex:none;padding:0.35rem 0.8rem;">Nepročitani</button>
+          <button class="filter-chip" data-dayfilter="done" style="flex:none;padding:0.35rem 0.8rem;">Pročitani ✓</button>
+        </div>
+        <input type="search" id="daySearchInput" class="book-filter-input" style="max-width:260px;margin:0;" placeholder="Traži dan ili kraticu (npr. Dan 12, Iz)..." />
+      </div>
+      <div id="planDaysGrid" class="days-grid"></div>
+    </div>
+  </section>
+</BaseLayout>

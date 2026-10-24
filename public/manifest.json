@@ -1,0 +1,9 @@
+{
+  "name": "Biblija 365 & Offline Pretraživač (KS)",
+  "short_name": "Biblija 365",
+  "description": "Offline čitač, pretraživač i Biblija 365 program čitanja (Zagrebačka / Jeruzalemska Biblija)",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#faf7f2",
+  "theme_color": "#9a6b25"
+}

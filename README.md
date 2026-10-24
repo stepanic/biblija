@@ -1,11 +1,12 @@
 # 📖 Biblija 365 — Deterministički Katalog, SQLite (FTS5) Baza & Offline Web Aplikacija
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg)](LICENSE)
+[![Framework: Astro 5 SSG](https://img.shields.io/badge/Astro_5-1.334_stati%C4%8Dke_stranice-ff5d01.svg)](astro.config.mjs)
+[![Deploy: Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers_Static_Assets-f38020.svg)](wrangler.jsonc)
 [![Kanon: Katolički (73 knjige)](https://img.shields.io/badge/Kanon-73_knjige_(SZ_%2B_NZ)-brown.svg)](data/json/books.json)
-[![Retci: 35.394](https://img.shields.io/badge/Retci-35.394-blue.svg)](AUDIT.md)
 [![SQLite: FTS5](https://img.shields.io/badge/SQLite-FTS5_Full--Text_Search-green.svg)](data/biblija.db)
 
-Čista, brza i **100% offline** web aplikacija, deterministički JSON katalog i **SQLite (FTS5)** baza podataka cjelovitog hrvatskog katoličkog prijevoda **Svetoga pisma Staroga i Novoga zavjeta** (*Zagrebačka / Jeruzalemska Biblija*), s ugrađenim **Biblija kroz 365 dana** planovima čitanja.
+Čista, brza i **100% offline** **Astro SSG** web aplikacija spremna za **Cloudflare Workers Static Assets**, deterministički JSON katalog i **SQLite (FTS5)** baza podataka cjelovitog hrvatskog katoličkog prijevoda **Svetoga pisma Staroga i Novoga zavjeta** (*Zagrebačka / Jeruzalemska Biblija*), s ugrađenim **Biblija kroz 365 dana** planovima čitanja.
 
 ---
 
@@ -31,25 +32,34 @@
 
 ---
 
-## 🚀 Brzo pokretanje
+## 🚀 Brzo pokretanje i Cloudflare Deploy
 
-Aplikacija radi **bez vanjskih ovisnosti** (čisti Python 3 standardni library za SQLite server + Vanilla HTML/CSS/JS frontend):
-
-### Opcija 1: Lokalni SQLite + FTS5 server (Preporučeno)
+### Opcija 1: Astro + Cloudflare Workers Static Assets
 ```bash
 git clone https://github.com/stepanic/biblija.git
 cd biblija
+npm install
+
+# Lokalni Astro dev server
+npm run dev
+
+# Statički build svih 1.334 stranica (u ./dist za ~1.8s)
+npm run build
+
+# Lokalni Cloudflare Workers preview
+npm run preview
+
+# Deploy na Cloudflare Workers Static Assets
+npm run deploy
+```
+> Pri `npm run build`, Astro unaprijed generira **1.334 statičke HTML stranice** (svih 1.329 poglavlja na čistim URL-ovima poput `/evandelje-po-ivanu/1/`, `/psalmi/23/`, `/knjiga-sirahova/0/` s OpenGraph opisima + `/plan/`, `/pretraga/`, `/oznake/`).
+
+### Opcija 2: Lokalni Python + SQLite FTS5 server (bez Node.js-a)
+```bash
 python3 server.py --port 8088
 ```
 Otvori **`http://127.0.0.1:8088`** u pregledniku.
-> U ovom načinu rada pretraga koristi izravni **SQLite FTS5** indeks nad [`data/biblija.db`](data/biblija.db), a tvoj napredak kroz *Bibliju 365* i osobne oznake/bilješke spremaju se i u SQLite bazu i u `localStorage`.
-
-### Opcija 2: Čisto statički način rada (Static PWA / GitHub Pages / Cloudflare Pages)
-Posluži korijenski direktorij bilo kojim statičkim poslužiteljem:
-```bash
-python3 -m http.server 8000
-```
-> Ako `/api/status` nije prisutan, aplikacija se automatski prebacuje u **Statički JSON (Offline PWA)** način rada i čita izravno iz [`data/json/`](data/json/).
+> Poslužuje izgrađeni `dist/` direktorij (ili korijenski SPA fallback) uz izravni **SQLite FTS5** API (`/api/search`) nad [`data/biblija.db`](data/biblija.db).
 
 ---
 

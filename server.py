@@ -17,6 +17,7 @@ import urllib.parse
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+DIST_DIR = os.path.join(ROOT_DIR, "dist")
 DB_PATH = os.path.join(ROOT_DIR, "data", "biblija.db")
 
 CROATIAN_FOLD = str.maketrans({
@@ -39,7 +40,8 @@ def get_db():
 
 class BiblijaRequestHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, directory=ROOT_DIR, **kwargs)
+        serve_dir = DIST_DIR if os.path.isdir(DIST_DIR) else ROOT_DIR
+        super().__init__(*args, directory=serve_dir, **kwargs)
 
     def log_message(self, fmt, *args):
         # Quiet static asset logs unless error

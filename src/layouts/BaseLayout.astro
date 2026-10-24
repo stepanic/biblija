@@ -1,0 +1,96 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  activeNav?: "reader" | "plan365" | "search" | "notes";
+}
+
+const {
+  title,
+  description = "Cjeloviti hrvatski katolički prijevod Svetoga pisma (Zagrebačka / Jeruzalemska Biblija, 73 knjige, 35.394 retka) uz program čitanja Biblija kroz 365 dana i brzi offline pretraživač.",
+  activeNav = "reader",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="hr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="article" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script is:inline>
+    (function () {
+      try {
+        var t = localStorage.getItem("biblija_theme") || "light";
+        var fs = localStorage.getItem("biblija_fontsize") || "19";
+        document.documentElement.setAttribute("data-theme", t);
+        document.documentElement.style.setProperty("--font-size-reading", fs + "px");
+      } catch (_) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div style="display:flex;align-items:center;gap:0.6rem;">
+        <a href="/" class="brand">
+          <span>Biblija KS</span>
+          <span class="brand-badge">365 &amp; Offline</span>
+        </a>
+        <span class="engine-pill" id="engineStatusPill" title="Način rada">⚡ Astro SSG + Offline</span>
+      </div>
+
+      <nav class="nav-tabs" aria-label="Glavna navigacija">
+        <a href="/" class={`nav-tab ${activeNav === "reader" ? "active" : ""}`} style="text-decoration:none;">📖 Čitanje</a>
+        <a href="/plan/" class={`nav-tab ${activeNav === "plan365" ? "active" : ""}`} style="text-decoration:none;">🗓️ Biblija 365</a>
+        <a href="/pretraga/" class={`nav-tab ${activeNav === "search" ? "active" : ""}`} style="text-decoration:none;">🔍 Pretraživač</a>
+        <a href="/oznake/" class={`nav-tab ${activeNav === "notes" ? "active" : ""}`} style="text-decoration:none;">🔖 Oznake &amp; Audit</a>
+      </nav>
+
+      <div class="toolbar-controls">
+        <button class="icon-btn" id="btnFontDec" title="Smanji tekst">A−</button>
+        <button class="icon-btn" id="btnFontInc" title="Povećaj tekst">A+</button>
+        <button class="icon-btn" id="btnThemeToggle" title="Promijeni temu (Svijetla / Sepia / Tamna)">◐ Tema</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-container">
+    <slot />
+  </main>
+
+  <!-- Global Verse Action Popover -->
+  <div id="versePopover" class="verse-popover">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.55rem;">
+      <strong id="popoverRefTitle">Post 1,1</strong>
+      <div style="display:flex;gap:0.4rem;">
+        <button class="icon-btn" id="btnCopyVerse">📋 Kopiraj citat</button>
+        <button class="icon-btn" id="btnClosePopover">✕</button>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:0.75rem;margin-bottom:0.55rem;flex-wrap:wrap;">
+      <div class="color-dots">
+        <span style="font-size:0.8rem;color:var(--text-muted);">Boja oznake:</span>
+        <button class="color-dot gold" data-color="gold" title="Zlatna"></button>
+        <button class="color-dot green" data-color="green" title="Zelena"></button>
+        <button class="color-dot blue" data-color="blue" title="Plava"></button>
+        <button class="color-dot pink" data-color="pink" title="Ružičasta"></button>
+        <button class="icon-btn" id="btnRemoveBookmark" style="font-size:0.75rem;padding:0.2rem 0.45rem;">Ukloni</button>
+      </div>
+    </div>
+    <div style="display:flex;gap:0.4rem;">
+      <input type="text" id="popoverNoteInput" class="book-filter-input" style="margin:0;flex:1;" placeholder="Dodaj osobnu bilješku uz ovaj redak..." />
+      <button class="icon-btn" id="btnSaveNote" style="background:var(--accent);color:#fff;border-color:var(--accent);">Spremi</button>
+    </div>
+  </div>
+
+  <script src="/astro-client.js" is:inline></script>
+</body>
+</html>

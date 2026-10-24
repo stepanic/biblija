@@ -6,3 +6,10 @@ extracted/
 *.xapk
 *.apkm
 .DS_Store
+
+# Astro & Cloudflare build artifacts
+node_modules/
+dist/
+.astro/
+.wrangler/
+public/data/

@@ -1,0 +1,94 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getAuditReport } from "../../lib/bible";
+
+const audit = getAuditReport();
+const sampleDiscrepancies = (audit.web_vs_mobile_api_discrepancies || []).slice(0, 16);
+const planBugs = audit.ks_reading_plan_bugs || [];
+---
+
+<BaseLayout
+  title="Moje oznake, bilješke i Audit izvještaj | Biblija 365"
+  description="Osobne oznake i bilješke uz biblijske retke te izvještaj o provjeri integriteta baze Kršćanske sadašnjosti."
+  activeNav="notes"
+>
+  <section id="notesPageRoot">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.6rem;">
+        <div>
+          <h1 style="margin:0 0 0.25rem;font-size:1.5rem;">Moje oznake i bilješke</h1>
+          <p style="margin:0;color:var(--text-muted);font-size:0.88rem;">
+            Klikni na bilo koji redak tijekom čitanja za označavanje bojom ili dodavanje osobne bilješke.
+          </p>
+        </div>
+        <div style="display:flex;gap:0.4rem;">
+          <button class="icon-btn" id="btnExportData">⬇ Izvezi JSON backup</button>
+          <label class="icon-btn" style="cursor:pointer;">
+            ⬆ Uvezi JSON
+            <input type="file" id="inputImportData" accept=".json" style="display:none;" />
+          </label>
+        </div>
+      </div>
+      <div id="bookmarksListContainer" style="margin-top:1rem;"></div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin:0 0 0.35rem;">Lokalni Diff &amp; Audit izvještaj (KS Web vs. Mobilni API)</h2>
+      <p style="margin:0 0 0.8rem;color:var(--text-muted);font-size:0.9rem;">
+        Rezultati automatske provjere svih 73 knjiga, 1.329 poglavlja i 35.394 retka između <code>biblija.ks.hr</code> weba i mobilnog API-ja. Svi dolje navedeni problemi su <strong>automatski ispravljeni</strong> u našem determinističkom JSON katalogu i SQLite bazi (<code>data/biblija.db</code>).
+      </p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0.75rem;margin-bottom:1.1rem;">
+        <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
+          <div style="font-size:0.78rem;color:var(--text-muted);">Ukupno provjerenih redaka</div>
+          <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">{audit.total_verses.toLocaleString("hr-HR")}</div>
+          <div style="font-size:0.78rem;color:var(--text-muted);">73 knjige • 1.329 poglavlja (s Proslovom Siraha)</div>
+        </div>
+        <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
+          <div style="font-size:0.78rem;color:var(--text-muted);">Web vs. Mobilni API razlike</div>
+          <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">{audit.web_vs_mobile_api_discrepancies.length} redaka</div>
+          <div style="font-size:0.78rem;color:var(--text-muted);">Pozicija broja retka i uputnica (popravljeno)</div>
+        </div>
+        <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
+          <div style="font-size:0.78rem;color:var(--text-muted);">Vraćeno skriveno poglavlje</div>
+          <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">Sirah 0 (Proslov)</div>
+          <div style="font-size:0.78rem;color:var(--text-muted);">8 redaka nedostupnih u WP bible_chapter</div>
+        </div>
+        <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
+          <div style="font-size:0.78rem;color:var(--text-muted);">Greške u KS planovima čitanja</div>
+          <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">{planBugs.length} knjiga</div>
+          <div style="font-size:0.78rem;color:var(--text-muted);">Preskočena poglavlja (npr. Dj 2, Mt 26, Mk 14)</div>
+        </div>
+      </div>
+
+      <h4 style="margin:0.8rem 0 0.4rem;">1. Metapodaci knjiga i skrivena poglavlja (ispravljeno u katalogu)</h4>
+      <ul style="font-size:0.88rem;margin-top:0.2rem;">
+        <li><strong>Knjiga Izlaska (<code>knjiga-izlaska</code>):</strong> U KS API-ju stoji <code>chapter_count: 41</code> iako postoji samo 40 poglavlja. Ispravljeno na <strong>40</strong>.</li>
+        <li><strong>Knjiga Sirahova — Proslov prevodiočev (<a href="/knjiga-sirahova/0/">Sir Proslov</a>):</strong> U KS bazi postoji 8 redaka Proslova (ID 23140–23147), ali endpoint <code>/wp/v2/bible_chapter/871</code> puca s praznim odgovorom. Kod nas je vraćen kao uvodno poglavlje <a href="/knjiga-sirahova/0/">Knjige Sirahove</a>.</li>
+        <li><strong>Poslanica Kološanima:</strong> U KS API-ju naslov sadrži sirovi HTML entitet <code>Poslanica Kolo&amp;scaron;anima</code>. Očišćeno u <strong>Poslanica Kološanima</strong>.</li>
+      </ul>
+
+      <h4 style="margin:0.9rem 0 0.4rem;">2. Primjeri od 428 redaka gdje se Web i Mobilni API razlikuju (klikni za skok)</h4>
+      <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:0.8rem;">
+        {sampleDiscrepancies.map((d: any) => (
+          <a
+            href={`/${d.book_slug}/${d.chapter}/#v-${d.verse}`}
+            class="plan-reading-pill"
+            style="text-decoration:none;"
+          >
+            {d.reference}
+          </a>
+        ))}
+      </div>
+
+      <h4 style="margin:0.9rem 0 0.4rem;">3. Detektirana preskočena poglavlja u službenim KS planovima čitanja</h4>
+      <div style="max-height:220px;overflow-y:auto;font-size:0.84rem;border:1px solid var(--border);border-radius:6px;padding:0.6rem;">
+        {planBugs.map((b: any) => (
+          <div style="margin-bottom:0.25rem;">
+            • <strong>{b.plan_title}</strong> → u knjizi <em>{b.book}</em> preskočena poglavlja: <code>{b.missing_chapters.join(", ")}</code>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
