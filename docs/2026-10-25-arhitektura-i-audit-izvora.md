@@ -1,5 +1,7 @@
 # Arhitektura sustava, unakrsni audit izvora i tehničke zamke (`stepanic/biblija`)
 
+> Vezano: [Mobilne aplikacije — odluka za native SwiftUI + Compose](2026-10-25-mobilne-aplikacije-native.md)
+
 Datum: 2026-10-25  
 Vezani dokumenti: [`../AUDIT.md`](../AUDIT.md), [`../README.md`](../README.md), [`../data/errata.json`](../data/errata.json), [`../migrations/0001_sync.sql`](../migrations/0001_sync.sql)
 
