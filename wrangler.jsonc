@@ -1,9 +1,23 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "biblija-365",
+  "main": "src/worker.ts",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
   }
+  // Za multi-user sinkronizaciju na Cloudflareu kreirajte D1 bazu:
+  //   npx wrangler d1 create biblija-365-db
+  //   npx wrangler d1 migrations apply biblija-365-db --remote
+  // i otkomentirajte blok ispod s dobivenim database_id:
+  // "d1_databases": [
+  //   {
+  //     "binding": "DB",
+  //     "database_name": "biblija-365-db",
+  //     "database_id": "YOUR_D1_DATABASE_ID",
+  //     "migrations_dir": "migrations"
+  //   }
+  // ]
 }

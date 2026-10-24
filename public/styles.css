@@ -653,3 +653,63 @@ mark {
   color: var(--text-muted);
   font-weight: 600;
 }
+
+/* Multi-Device Sync Modal & Status Button */
+.sync-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bg-muted);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.32rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sync-btn:hover {
+  border-color: var(--accent);
+}
+
+.sync-btn.synced {
+  border-color: #4caf50;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.sync-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  display: inline-block;
+}
+
+.sync-btn.synced .sync-dot {
+  background: #4caf50;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(0, 0, 0, 0.52);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-overlay.open {
+  display: flex;
+}
+
+.modal-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+  width: min(480px, 100%);
+  padding: 1.35rem 1.5rem;
+}

@@ -24,6 +24,13 @@
 * **⚡ Trenutni Offline Pretraživač (SQLite FTS5 + Statički JSON fallback):**
   * Pretraživanje svih **35.394 redaka** u `< 15 ms` — podržava upite **sa i bez hrvatskih dijakritičkih znakova** (`blazenstva` ili `blaženstva`, `pocetku` ili `početku`), točne fraze pod navodnicima (`"duh Božji"`) te filtriranje po zavjetu i knjizi.
   * **Pametni parser biblijskih kratica:** Upiši npr. `Iv 1,19`, `Ps 23`, `Post 1,1-5` ili `1 Kor 13` za trenutni skok na traženo poglavlje i redak.
+* **☁️ Višekorisnička sinkronizacija na više uređaja (Cloudflare D1 / SQLite Sync):**
+  * Podržava neograničen broj korisnika (**SaaS mod**) koji čitaju na više uređaja (mobitel, tablet, laptop) bez potrebe za registracijom e-mailom:
+  * Klikom na **☁️ Sinkronizacija** u zaglavlju korisnik bira ili generira svoj **Sync kod (korisničko ime)** i **PIN** (SHA-256 hashiran).
+  * Korištenjem *Last-Write-Wins (LWW)* algoritma s vremenskim oznakama (`updated_at`), automatski se spajaju i sinkroniziraju:
+    1. Pročitani dani u bilo kojem od 18 planova čitanja (`sync_progress`),
+    2. Aktivni plan i zadnje otvoreno poglavlje (*Nastavi čitanje*, `sync_users`),
+    3. Osobne oznake u boji i bilješke uz retke (`sync_bookmarks`).
 * **🔍 Provjera integriteta i ispravci pogrešaka ([`AUDIT.md`](AUDIT.md)):**
   * Automatskim diff checkom između web sučelja `biblija.ks.hr` i mobilnog REST API-ja otkriveno je i u ovom katalogu **ispravljeno**:
     * **Spašeno skriveno poglavlje *Knjige Sirahove* (`Poglavlje 0 — Proslov prevodiočev`, 8 redaka, ID `871`)** na kojem službeni `/wp/v2/bible_chapter/871` endpoint puca, a web izbornik ga ne prikazuje.
@@ -49,10 +56,12 @@ npm run build
 # Lokalni Cloudflare Workers preview
 npm run preview
 
-# Deploy na Cloudflare Workers Static Assets
+# Deploy na Cloudflare Workers Static Assets (+ opcionalni D1 multi-device sync)
+npx wrangler d1 create biblija-365-db
+npx wrangler d1 migrations apply biblija-365-db --remote
 npm run deploy
 ```
-> Pri `npm run build`, Astro unaprijed generira **1.334 statičke HTML stranice** (svih 1.329 poglavlja na čistim URL-ovima poput `/evandelje-po-ivanu/1/`, `/psalmi/23/`, `/knjiga-sirahova/0/` s OpenGraph opisima + `/plan/`, `/pretraga/`, `/oznake/`).
+> Pri `npm run build`, Astro unaprijed generira **1.334 statičke HTML stranice** (svih 1.329 poglavlja na čistim URL-ovima poput `/evandelje-po-ivanu/1/`, `/psalmi/23/`, `/knjiga-sirahova/0/` s OpenGraph opisima + `/plan/`, `/pretraga/`, `/oznake/`), dok [`src/worker.ts`](src/worker.ts) obrađuje `/api/auth` i `/api/sync` nad Cloudflare D1 bazom ([`migrations/0001_sync.sql`](migrations/0001_sync.sql)).
 
 ### Opcija 2: Lokalni Python + SQLite FTS5 server (bez Node.js-a)
 ```bash

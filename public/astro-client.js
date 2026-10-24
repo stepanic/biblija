@@ -1,4 +1,4 @@
-/* Biblija 365 — Astro SSG + Cloudflare / Local SQLite Client Controller */
+/* Biblija 365 — Astro SSG + Cloudflare D1 / Local SQLite Multi-Device Client Controller */
 (function () {
   const CRO_MAP = {
     "č": "c", "ć": "c", "ž": "z", "š": "s", "đ": "d",
@@ -24,6 +24,7 @@
 
   const state = {
     hasSqliteServer: false,
+    syncEnabledServer: false,
     books: null,
     booksByOrder: {},
     loadedPlans: {},
@@ -37,7 +38,52 @@
     selectedVerseContext: null,
     fontSize: parseInt(localStorage.getItem("biblija_fontsize") || "19", 10),
     theme: localStorage.getItem("biblija_theme") || "light",
+    syncAuth: JSON.parse(localStorage.getItem("biblija_sync_auth") || "null"),
+    lastSyncedAt: localStorage.getItem("biblija_last_synced_at") || null,
+    isSyncing: false,
+    uiRefreshCallbacks: [],
   };
+
+  function isDayDone(planId, dayNum) {
+    const planMap = state.progress[planId];
+    if (!planMap) return false;
+    const entry = planMap[String(dayNum)];
+    if (!entry) return false;
+    if (typeof entry === "string") return true;
+    if (typeof entry === "object") return Boolean(entry.completed);
+    return Boolean(entry);
+  }
+
+  function getActiveBookmark(key) {
+    const bm = state.bookmarks[key];
+    if (!bm || bm.deleted) return null;
+    return bm;
+  }
+
+  function getActiveBookmarksList() {
+    return Object.values(state.bookmarks)
+      .filter((bm) => bm && !bm.deleted)
+      .sort((a, b) =>
+        String(b.updated_at || b.created_at || "").localeCompare(String(a.updated_at || a.created_at || ""))
+      );
+  }
+
+  function countTotalCompletedDays() {
+    let total = 0;
+    for (const planId of Object.keys(state.progress)) {
+      const daysMap = state.progress[planId] || {};
+      for (const d of Object.keys(daysMap)) {
+        if (isDayDone(planId, d)) total++;
+      }
+    }
+    return total;
+  }
+
+  function touchMetaTimestamp() {
+    const now = new Date().toISOString();
+    localStorage.setItem("biblija_meta_updated_at", now);
+    return now;
+  }
 
   function applyThemeAndFont() {
     document.documentElement.setAttribute("data-theme", state.theme);
@@ -62,14 +108,295 @@
       const res = await fetch("/api/status", { cache: "no-store" });
       if (res.ok) {
         const info = await res.json();
+        state.syncEnabledServer = Boolean(info && info.sync_enabled);
         if (info && info.mode === "sqlite-server") {
           state.hasSqliteServer = true;
-          if (pill) pill.textContent = "⚡ Astro + SQLite FTS5";
+          if (pill) pill.textContent = "⚡ Astro + SQLite FTS5 + Sync";
+          return;
+        }
+        if (info && info.mode === "cloudflare-d1") {
+          if (pill) pill.textContent = "⚡ Cloudflare Edge + D1 Sync";
           return;
         }
       }
     } catch (_) {}
     if (pill) pill.textContent = "⚡ Astro SSG (Edge / Offline)";
+  }
+
+  /* ==================== MULTI-DEVICE CLOUD SYNC ==================== */
+  let syncDebounceTimer = null;
+
+  function scheduleCloudSync() {
+    if (!state.syncAuth || !state.syncAuth.user_key || !state.syncAuth.pin) return;
+    if (syncDebounceTimer) clearTimeout(syncDebounceTimer);
+    syncDebounceTimer = setTimeout(() => {
+      syncWithServer({ silent: true });
+    }, 350);
+  }
+
+  function updateSyncHeaderUI() {
+    const btn = document.getElementById("btnOpenSyncModal");
+    const lbl = document.getElementById("syncBtnLabel");
+    if (!btn || !lbl) return;
+
+    if (state.syncAuth && state.syncAuth.user_key) {
+      btn.classList.add("synced");
+      lbl.textContent = state.isSyncing ? `🔄 @${state.syncAuth.user_key}` : `☁️ @${state.syncAuth.user_key}`;
+    } else {
+      btn.classList.remove("synced");
+      lbl.textContent = "☁️ Sinkronizacija";
+    }
+  }
+
+  function updateSyncModalViews() {
+    const outView = document.getElementById("syncLoggedOutView");
+    const inView = document.getElementById("syncLoggedInView");
+    if (!outView || !inView) return;
+
+    if (state.syncAuth && state.syncAuth.user_key) {
+      outView.style.display = "none";
+      inView.style.display = "block";
+      document.getElementById("syncActiveUserBadge").textContent = `@${state.syncAuth.user_key}`;
+      const lastTime = state.lastSyncedAt
+        ? new Date(state.lastSyncedAt).toLocaleString("hr-HR")
+        : "upravo sada";
+      document.getElementById("syncLastTimeLabel").textContent = `Zadnja sinkronizacija: ${lastTime}`;
+
+      const completedDays = countTotalCompletedDays();
+      const bmCount = getActiveBookmarksList().length;
+      const lastLbl = localStorage.getItem("biblija_last_label") || "Postanak 1";
+      document.getElementById("syncStatsSummary").innerHTML = `
+        <div>✓ Pročitanih dana u planovima: <strong>${completedDays}</strong></div>
+        <div>🔖 Spremljenih oznaka i bilješki: <strong>${bmCount}</strong></div>
+        <div>📖 Zadnje čitano: <strong>${escapeHtml(lastLbl)}</strong></div>
+      `;
+    } else {
+      outView.style.display = "block";
+      inView.style.display = "none";
+    }
+  }
+
+  async function syncWithServer({ silent = false } = {}) {
+    if (!state.syncAuth || !state.syncAuth.user_key || !state.syncAuth.pin) return false;
+    if (state.isSyncing) return false;
+
+    state.isSyncing = true;
+    updateSyncHeaderUI();
+
+    try {
+      const payload = {
+        user_key: state.syncAuth.user_key,
+        pin: state.syncAuth.pin,
+        meta: {
+          active_plan_id: state.currentPlanId,
+          last_url: localStorage.getItem("biblija_last_url") || "/",
+          last_label: localStorage.getItem("biblija_last_label") || "",
+          last_updated_at: localStorage.getItem("biblija_meta_updated_at") || "1970-01-01T00:00:00.000Z",
+        },
+        progress: state.progress,
+        bookmarks: state.bookmarks,
+      };
+
+      const res = await fetch("/api/sync", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+      if (!res.ok || !data.ok) {
+        if (!silent) {
+          alert(data.error || "Pogreška pri sinkronizaciji.");
+        }
+        state.isSyncing = false;
+        updateSyncHeaderUI();
+        return false;
+      }
+
+      if (data.progress) {
+        state.progress = data.progress;
+        localStorage.setItem("biblija_progress", JSON.stringify(state.progress));
+      }
+      if (data.bookmarks) {
+        state.bookmarks = data.bookmarks;
+        localStorage.setItem("biblija_bookmarks", JSON.stringify(state.bookmarks));
+      }
+      if (data.meta) {
+        if (data.meta.active_plan_id) {
+          state.currentPlanId = data.meta.active_plan_id;
+          localStorage.setItem("biblija_plan_id", state.currentPlanId);
+        }
+        if (data.meta.last_url) {
+          localStorage.setItem("biblija_last_url", data.meta.last_url);
+        }
+        if (data.meta.last_label) {
+          localStorage.setItem("biblija_last_label", data.meta.last_label);
+        }
+        if (data.meta.last_updated_at) {
+          localStorage.setItem("biblija_meta_updated_at", data.meta.last_updated_at);
+        }
+      }
+
+      state.lastSyncedAt = data.synced_at || new Date().toISOString();
+      localStorage.setItem("biblija_last_synced_at", state.lastSyncedAt);
+
+      state.isSyncing = false;
+      updateSyncHeaderUI();
+      updateSyncModalViews();
+
+      // Trigger live UI refresh on whichever page is open
+      for (const cb of state.uiRefreshCallbacks) {
+        try {
+          cb();
+        } catch (_) {}
+      }
+      return true;
+    } catch (_) {
+      state.isSyncing = false;
+      updateSyncHeaderUI();
+      return false;
+    }
+  }
+
+  function initSyncModal() {
+    const overlay = document.getElementById("syncModalOverlay");
+    const openBtn = document.getElementById("btnOpenSyncModal");
+    const closeBtn = document.getElementById("btnCloseSyncModal");
+    if (!overlay || !openBtn) return;
+
+    updateSyncHeaderUI();
+
+    openBtn.addEventListener("click", () => {
+      updateSyncModalViews();
+      overlay.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      overlay.classList.remove("open");
+    });
+
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) overlay.classList.remove("open");
+    });
+
+    const genBtn = document.getElementById("btnGenerateSyncKey");
+    if (genBtn) {
+      genBtn.addEventListener("click", () => {
+        const words = ["psalam", "svjetlo", "rijec", "put", "istina", "mir", "zrno", "stijena", "izvor"];
+        const w = words[Math.floor(Math.random() * words.length)];
+        const num = Math.floor(1000 + Math.random() * 9000);
+        document.getElementById("syncUserKeyInput").value = `${w}-${num}`;
+        const pinEl = document.getElementById("syncPinInput");
+        if (!pinEl.value) {
+          pinEl.type = "text";
+          pinEl.value = String(Math.floor(1000 + Math.random() * 9000));
+        }
+      });
+    }
+
+    const connectBtn = document.getElementById("btnConnectSync");
+    if (connectBtn) {
+      connectBtn.addEventListener("click", async () => {
+        const rawKey = document.getElementById("syncUserKeyInput").value.trim();
+        const pin = document.getElementById("syncPinInput").value.trim();
+        const msgEl = document.getElementById("syncAuthMessage");
+
+        function showMsg(txt, isErr = true) {
+          msgEl.style.display = "block";
+          msgEl.style.background = isErr ? "rgba(198, 40, 40, 0.12)" : "rgba(76, 175, 80, 0.14)";
+          msgEl.style.color = isErr ? "#c62828" : "#2e7d32";
+          msgEl.textContent = txt;
+        }
+
+        if (rawKey.length < 3) {
+          return showMsg("Korisničko ime / Sync kod mora imati barem 3 znaka.");
+        }
+        if (pin.length < 4) {
+          return showMsg("PIN mora imati barem 4 znaka.");
+        }
+
+        connectBtn.disabled = true;
+        connectBtn.textContent = "🔄 Povezivanje i sinkronizacija...";
+        msgEl.style.display = "none";
+
+        try {
+          const authRes = await fetch("/api/auth", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ user_key: rawKey, pin }),
+          });
+          const authData = await authRes.json();
+          if (!authRes.ok || !authData.ok) {
+            connectBtn.disabled = false;
+            connectBtn.textContent = "☁️ Poveži uređaj i sinkroniziraj";
+            return showMsg(authData.error || "Neuspješna prijava.");
+          }
+
+          state.syncAuth = {
+            user_key: authData.user_key,
+            display_name: authData.display_name || authData.user_key,
+            pin,
+          };
+          localStorage.setItem("biblija_sync_auth", JSON.stringify(state.syncAuth));
+
+          await syncWithServer({ silent: true });
+
+          connectBtn.disabled = false;
+          connectBtn.textContent = "☁️ Poveži uređaj i sinkroniziraj";
+          updateSyncHeaderUI();
+          updateSyncModalViews();
+        } catch (_) {
+          connectBtn.disabled = false;
+          connectBtn.textContent = "☁️ Poveži uređaj i sinkroniziraj";
+          showMsg("Server za sinkronizaciju trenutno nije dostupan.");
+        }
+      });
+    }
+
+    const syncNowBtn = document.getElementById("btnSyncNow");
+    if (syncNowBtn) {
+      syncNowBtn.addEventListener("click", async () => {
+        syncNowBtn.textContent = "🔄 Sinkroniziram...";
+        await syncWithServer({ silent: false });
+        syncNowBtn.textContent = "✓ Sinkronizirano!";
+        setTimeout(() => {
+          syncNowBtn.textContent = "🔄 Sinkroniziraj sada";
+        }, 1200);
+      });
+    }
+
+    const copyBtn = document.getElementById("btnCopySyncInfo");
+    if (copyBtn) {
+      copyBtn.addEventListener("click", () => {
+        if (!state.syncAuth) return;
+        const text = `Biblija 365 Sync podaci:\nURL: ${window.location.origin}\nSync kod (korisničko ime): ${state.syncAuth.user_key}\nPIN: ${state.syncAuth.pin}`;
+        navigator.clipboard.writeText(text);
+        copyBtn.textContent = "✓ Kopirano u međuspremnik!";
+        setTimeout(() => {
+          copyBtn.textContent = "📋 Kopiraj upute za povezivanje drugog uređaja";
+        }, 1500);
+      });
+    }
+
+    const logoutBtn = document.getElementById("btnLogoutSync");
+    if (logoutBtn) {
+      logoutBtn.addEventListener("click", () => {
+        state.syncAuth = null;
+        localStorage.removeItem("biblija_sync_auth");
+        updateSyncHeaderUI();
+        updateSyncModalViews();
+      });
+    }
+
+    // Auto-sync on startup & when switching back to tab on mobile/laptop
+    if (state.syncAuth && state.syncAuth.user_key) {
+      syncWithServer({ silent: true });
+    }
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible" && state.syncAuth && state.syncAuth.user_key) {
+        syncWithServer({ silent: true });
+      }
+    });
   }
 
   /* ==================== READER ENHANCEMENTS ==================== */
@@ -83,22 +410,32 @@
     const bookTitle = root.getAttribute("data-book-title");
     const chapter = parseInt(root.getAttribute("data-chapter"), 10);
 
-    // Check if on "/" and user had a different last read chapter
-    const resumeBar = document.getElementById("resumeReadingBar");
-    if (resumeBar && window.location.pathname === "/") {
-      const lastUrl = localStorage.getItem("biblija_last_url");
-      const lastLabel = localStorage.getItem("biblija_last_label");
-      if (lastUrl && lastUrl !== "/" && lastUrl !== "/knjiga-postanka/1/") {
-        resumeBar.style.display = "flex";
-        document.getElementById("resumeReadingLabel").textContent = lastLabel || lastUrl;
-        document.getElementById("resumeReadingLink").setAttribute("href", lastUrl);
+    function refreshResumeReadingBar() {
+      const resumeBar = document.getElementById("resumeReadingBar");
+      if (resumeBar && window.location.pathname === "/") {
+        const lastUrl = localStorage.getItem("biblija_last_url");
+        const lastLabel = localStorage.getItem("biblija_last_label");
+        if (lastUrl && lastUrl !== "/" && lastUrl !== "/knjiga-postanka/1/") {
+          resumeBar.style.display = "flex";
+          document.getElementById("resumeReadingLabel").textContent = lastLabel || lastUrl;
+          document.getElementById("resumeReadingLink").setAttribute("href", lastUrl);
+        } else {
+          resumeBar.style.display = "none";
+        }
       }
+    }
+
+    if (window.location.pathname === "/") {
+      refreshResumeReadingBar();
     } else {
-      localStorage.setItem("biblija_last_url", `/${bookId}/${chapter}/`);
-      localStorage.setItem(
-        "biblija_last_label",
-        `${bookTitle} (${bookAbbr} ${chapter === 0 ? "Proslov" : chapter})`
-      );
+      const curUrl = `/${bookId}/${chapter}/`;
+      const curLbl = `${bookTitle} (${bookAbbr} ${chapter === 0 ? "Proslov" : chapter})`;
+      if (localStorage.getItem("biblija_last_url") !== curUrl) {
+        localStorage.setItem("biblija_last_url", curUrl);
+        localStorage.setItem("biblija_last_label", curLbl);
+        touchMetaTimestamp();
+        scheduleCloudSync();
+      }
     }
 
     // Sidebar testament & search filtering
@@ -141,7 +478,7 @@
       document.querySelectorAll("#chapterBody .verse-item").forEach((el) => {
         const vnum = parseInt(el.getAttribute("data-verse"), 10);
         const key = `${bookOrder}:${chapter}:${vnum}`;
-        const bm = state.bookmarks[key];
+        const bm = getActiveBookmark(key);
         el.classList.remove("hl-gold", "hl-green", "hl-blue", "hl-pink");
         const oldBadge = el.querySelector(".verse-note-badge");
         if (oldBadge) oldBadge.remove();
@@ -168,7 +505,7 @@
         const vnum = parseInt(el.getAttribute("data-verse"), 10);
         const vtext = el.getAttribute("data-text") || "";
         const key = `${bookOrder}:${chapter}:${vnum}`;
-        const existing = state.bookmarks[key] || {};
+        const existing = getActiveBookmark(key) || {};
         state.selectedVerseContext = {
           key,
           book_order: bookOrder,
@@ -205,7 +542,7 @@
         return;
       }
       banner.style.display = "flex";
-      const isDone = Boolean((state.progress[ctx.planId] || {})[String(ctx.day)]);
+      const isDone = isDayDone(ctx.planId, ctx.day);
       document.getElementById("bannerPlanDayTitle").textContent = `🗓️ Dan ${ctx.day}: ${ctx.label}`;
       const markBtn = document.getElementById("btnBannerMarkDone");
       markBtn.textContent = isDone ? "✓ Dan je označen pročitanim" : `✓ Označi Dan ${ctx.day} pročitanim`;
@@ -225,6 +562,12 @@
     }
 
     renderPlanBanner();
+
+    state.uiRefreshCallbacks.push(() => {
+      refreshResumeReadingBar();
+      refreshVerseHighlights();
+      renderPlanBanner();
+    });
 
     const btnBannerClose = document.getElementById("btnBannerClose");
     if (btnBannerClose) {
@@ -259,6 +602,7 @@
       if (!ctx) return;
       const color = colorOverride || ctx.color || "gold";
       const note = document.getElementById("popoverNoteInput").value.trim();
+      const now = new Date().toISOString();
       state.bookmarks[ctx.key] = {
         book_order: ctx.book_order,
         book_id: ctx.book_id,
@@ -269,10 +613,12 @@
         color,
         note,
         text: ctx.text,
-        created_at: new Date().toISOString(),
+        deleted: false,
+        updated_at: now,
       };
       localStorage.setItem("biblija_bookmarks", JSON.stringify(state.bookmarks));
       if (ctx.onRefresh) ctx.onRefresh();
+      scheduleCloudSync();
     }
 
     document.querySelectorAll(".color-dot").forEach((dot) => {
@@ -287,10 +633,23 @@
     document.getElementById("btnRemoveBookmark").addEventListener("click", () => {
       const ctx = state.selectedVerseContext;
       if (!ctx) return;
-      delete state.bookmarks[ctx.key];
+      const existing = state.bookmarks[ctx.key] || {
+        book_order: ctx.book_order,
+        book_id: ctx.book_id,
+        book_abbr: ctx.book_abbr,
+        book_title: ctx.book_title,
+        chapter: ctx.chapter,
+        verse: ctx.verse,
+      };
+      state.bookmarks[ctx.key] = {
+        ...existing,
+        deleted: true,
+        updated_at: new Date().toISOString(),
+      };
       localStorage.setItem("biblija_bookmarks", JSON.stringify(state.bookmarks));
       document.getElementById("versePopover").classList.remove("open");
       if (ctx.onRefresh) ctx.onRefresh();
+      scheduleCloudSync();
     });
 
     document.getElementById("btnCopyVerse").addEventListener("click", () => {
@@ -307,14 +666,14 @@
   /* ==================== BIBLIJA 365 PAGE ==================== */
   function togglePlanDayCompleted(planId, dayNum, forceValue = null) {
     if (!state.progress[planId]) state.progress[planId] = {};
-    const cur = Boolean(state.progress[planId][String(dayNum)]);
-    const nextVal = forceValue !== null ? forceValue : !cur;
-    if (nextVal) {
-      state.progress[planId][String(dayNum)] = new Date().toISOString();
-    } else {
-      delete state.progress[planId][String(dayNum)];
-    }
+    const cur = isDayDone(planId, dayNum);
+    const nextVal = forceValue !== null ? Boolean(forceValue) : !cur;
+    state.progress[planId][String(dayNum)] = {
+      completed: nextVal,
+      updated_at: new Date().toISOString(),
+    };
     localStorage.setItem("biblija_progress", JSON.stringify(state.progress));
+    scheduleCloudSync();
   }
 
   async function initPlanPage() {
@@ -327,7 +686,9 @@
       sel.addEventListener("change", () => {
         state.currentPlanId = sel.value;
         localStorage.setItem("biblija_plan_id", state.currentPlanId);
+        touchMetaTimestamp();
         renderPlan();
+        scheduleCloudSync();
       });
     }
 
@@ -349,6 +710,9 @@
     }
 
     async function renderPlan() {
+      if (sel && sel.value !== state.currentPlanId) {
+        sel.value = state.currentPlanId;
+      }
       if (!state.loadedPlans[state.currentPlanId]) {
         const res = await fetch(`/data/json/plans/${state.currentPlanId}.json`);
         state.loadedPlans[state.currentPlanId] = await res.json();
@@ -356,13 +720,12 @@
       const plan = state.loadedPlans[state.currentPlanId];
       document.getElementById("planDescription").textContent = plan.description;
 
-      const doneMap = state.progress[plan.id] || {};
-      const doneCount = plan.days.filter((d) => Boolean(doneMap[String(d.day)])).length;
+      const doneCount = plan.days.filter((d) => isDayDone(plan.id, d.day)).length;
       const pct = Math.round((doneCount / plan.days_count) * 100);
       document.getElementById("planProgressBar").style.width = `${pct}%`;
       document.getElementById("planProgressStats").textContent = `Pročitano: ${doneCount} / ${plan.days_count} dana (${pct}%)`;
 
-      const nextDayObj = plan.days.find((d) => !doneMap[String(d.day)]) || plan.days[plan.days.length - 1];
+      const nextDayObj = plan.days.find((d) => !isDayDone(plan.id, d.day)) || plan.days[plan.days.length - 1];
       document.getElementById("planNextSuggested").textContent =
         doneCount === plan.days_count
           ? "🎉 Čestitamo! Plan je u cijelosti pročitan!"
@@ -409,7 +772,7 @@
       const grid = document.getElementById("planDaysGrid");
       const q = foldHr(state.daySearch.trim());
       const filteredDays = plan.days.filter((d) => {
-        const isDone = Boolean(doneMap[String(d.day)]);
+        const isDone = isDayDone(plan.id, d.day);
         if (state.dayFilter === "todo" && isDone) return false;
         if (state.dayFilter === "done" && !isDone) return false;
         if (!q) return true;
@@ -418,7 +781,7 @@
 
       grid.innerHTML = filteredDays
         .map((d) => {
-          const isDone = Boolean(doneMap[String(d.day)]);
+          const isDone = isDayDone(plan.id, d.day);
           const isCur = nextDayObj && d.day === nextDayObj.day ? "current-day" : "";
           const pills = d.readings
             .map(
@@ -486,6 +849,7 @@
       window.location.href = `/${reading.book_id}/${reading.chapter_start}/`;
     }
 
+    state.uiRefreshCallbacks.push(renderPlan);
     renderPlan();
   }
 
@@ -656,9 +1020,7 @@
 
     function renderBookmarks() {
       const container = document.getElementById("bookmarksListContainer");
-      const items = Object.values(state.bookmarks).sort((a, b) =>
-        String(b.created_at || "").localeCompare(String(a.created_at || ""))
-      );
+      const items = getActiveBookmarksList();
       if (!items.length) {
         container.innerHTML = `<p style="color:var(--text-muted);font-size:0.9rem;">Još nemaš spremljenih oznaka ili bilješki. Tijekom čitanja klikni na bilo koji redak za označavanje.</p>`;
         return;
@@ -683,6 +1045,7 @@
         .join("");
     }
 
+    state.uiRefreshCallbacks.push(renderBookmarks);
     renderBookmarks();
 
     document.getElementById("btnExportData").addEventListener("click", () => {
@@ -714,6 +1077,7 @@
             localStorage.setItem("biblija_bookmarks", JSON.stringify(state.bookmarks));
           }
           renderBookmarks();
+          scheduleCloudSync();
         } catch (_) {
           alert("Neispravna JSON datoteka.");
         }
@@ -756,5 +1120,6 @@
     initPlanPage();
     initSearchPage();
     initNotesPage();
+    initSyncModal();
   });
 })();

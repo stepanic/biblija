@@ -55,6 +55,10 @@ const {
       </nav>
 
       <div class="toolbar-controls">
+        <button class="sync-btn" id="btnOpenSyncModal" title="Sinkronizacija između mobitela, tableta i računala">
+          <span class="sync-dot" id="syncStatusDot"></span>
+          <span id="syncBtnLabel">☁️ Sinkronizacija</span>
+        </button>
         <button class="icon-btn" id="btnFontDec" title="Smanji tekst">A−</button>
         <button class="icon-btn" id="btnFontInc" title="Povećaj tekst">A+</button>
         <button class="icon-btn" id="btnThemeToggle" title="Promijeni temu (Svijetla / Sepia / Tamna)">◐ Tema</button>
@@ -65,6 +69,99 @@ const {
   <main class="app-container">
     <slot />
   </main>
+
+  <!-- Multi-User & Multi-Device Sync Modal -->
+  <div id="syncModalOverlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="syncModalTitle">
+    <div class="modal-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
+        <h3 id="syncModalTitle" style="margin:0;font-size:1.15rem;">☁️ Sinkronizacija uređaja (SaaS / Cloud)</h3>
+        <button class="icon-btn" id="btnCloseSyncModal" title="Zatvori">✕</button>
+      </div>
+
+      <!-- Logged Out View -->
+      <div id="syncLoggedOutView">
+        <p style="font-size:0.86rem;color:var(--text-muted);margin:0 0 0.85rem;">
+          Čitaj na mobitelu, tabletu i laptopu uz uvijek usklađen napredak kroz <strong>Bibliju 365</strong>, zadnje otvoreno poglavlje i osobne bilješke. Bez e-maila: odaberi svoj <strong>Sync kod (korisničko ime)</strong> i <strong>PIN</strong>.
+        </p>
+
+        <div style="margin-bottom:0.65rem;">
+          <label for="syncUserKeyInput" style="display:block;font-size:0.8rem;font-weight:600;margin-bottom:0.25rem;">
+            Korisničko ime / Sync kod (min. 3 znaka)
+          </label>
+          <div style="display:flex;gap:0.4rem;">
+            <input
+              type="text"
+              id="syncUserKeyInput"
+              class="book-filter-input"
+              style="margin:0;flex:1;"
+              placeholder="npr. marko-365 ili obitelj-horvat"
+              autocomplete="username"
+            />
+            <button type="button" class="icon-btn" id="btnGenerateSyncKey" title="Generiraj nasumični Sync kod">🎲 Generiraj</button>
+          </div>
+        </div>
+
+        <div style="margin-bottom:0.85rem;">
+          <label for="syncPinInput" style="display:block;font-size:0.8rem;font-weight:600;margin-bottom:0.25rem;">
+            Osobni PIN (min. 4 znaka)
+          </label>
+          <input
+            type="password"
+            id="syncPinInput"
+            class="book-filter-input"
+            style="margin:0;"
+            placeholder="Upiši PIN (npr. 2407)"
+            autocomplete="current-password"
+          />
+        </div>
+
+        <div id="syncAuthMessage" style="display:none;font-size:0.82rem;padding:0.5rem 0.65rem;border-radius:6px;margin-bottom:0.75rem;"></div>
+
+        <button
+          type="button"
+          class="icon-btn"
+          id="btnConnectSync"
+          style="width:100%;padding:0.6rem;background:var(--accent);color:#fff;border-color:var(--accent);font-size:0.92rem;"
+        >
+          ☁️ Poveži uređaj i sinkroniziraj
+        </button>
+      </div>
+
+      <!-- Logged In View -->
+      <div id="syncLoggedInView" style="display:none;">
+        <div style="background:var(--bg-muted);border:1px solid var(--border);border-radius:8px;padding:0.85rem;margin-bottom:0.85rem;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.35rem;">
+            <span style="font-size:0.8rem;color:var(--text-muted);">Aktivni račun / Sync kod:</span>
+            <span class="badge" style="background:#4caf50;color:#fff;">✓ Povezano</span>
+          </div>
+          <div style="font-size:1.1rem;font-weight:700;color:var(--accent);" id="syncActiveUserBadge">@korisnik</div>
+          <div style="font-size:0.78rem;color:var(--text-muted);margin-top:0.35rem;" id="syncLastTimeLabel">Zadnja sinkronizacija: upravo sada</div>
+          <div style="font-size:0.82rem;margin-top:0.45rem;" id="syncStatsSummary"></div>
+        </div>
+
+        <p style="font-size:0.82rem;color:var(--text-muted);margin:0 0 0.85rem;">
+          Za povezivanje drugog uređaja (npr. mobitela ili laptopa), otvori ovu aplikaciju na tom uređaju, klikni na <strong>☁️ Sinkronizacija</strong> i upiši isti Sync kod i PIN.
+        </p>
+
+        <div style="display:flex;flex-direction:column;gap:0.45rem;">
+          <button
+            type="button"
+            class="icon-btn"
+            id="btnSyncNow"
+            style="background:var(--accent);color:#fff;border-color:var(--accent);padding:0.55rem;"
+          >
+            🔄 Sinkroniziraj sada
+          </button>
+          <button type="button" class="icon-btn" id="btnCopySyncInfo" style="padding:0.5rem;">
+            📋 Kopiraj upute za povezivanje drugog uređaja
+          </button>
+          <button type="button" class="icon-btn" id="btnLogoutSync" style="padding:0.5rem;color:#c62828;">
+            🚪 Odjavi ovaj uređaj iz oblaka
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Global Verse Action Popover -->
   <div id="versePopover" class="verse-popover">
