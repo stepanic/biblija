@@ -3,26 +3,44 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getAllBooks } from "../../lib/bible";
 
 const books = getAllBooks();
+
+const QUICK_EXAMPLES = [
+  { label: "Iv 1,1", query: "Iv 1,1" },
+  { label: "Ps 23", query: "Ps 23" },
+  { label: "Tit 1,1", query: "Tit 1,1" },
+  { label: "Dn 3,91", query: "Dn 3,91" },
+  { label: "1 Kor 13", query: "1 Kor 13" },
+  { label: "»Jahve je pastir moj«", query: '"Jahve je pastir moj"' },
+  { label: "blaženstva", query: "blazenstva" },
+  { label: "ljubav je velikodušna", query: "ljubav je velikodusna" },
+];
 ---
 
 <BaseLayout
   title="Offline Pretraživač Biblije & Brzi skok | Biblija 365"
-  description="Trenutna offline pretraga svih 35.394 redaka hrvatske katoličke Biblije i brzi skok po biblijskim kraticama."
+  description="Trenutna offline pretraga svih 35.410 redaka hrvatske katoličke Biblije i brzi skok po biblijskim kraticama."
   activeNav="search"
 >
   <section id="searchPageRoot">
     <div class="card">
-      <h1 style="margin:0 0 0.35rem;font-size:1.5rem;">Offline Pretraživač Biblije &amp; Brzi skok po kratici</h1>
-      <p style="margin:0 0 0.9rem;color:var(--text-muted);font-size:0.88rem;">
-        Upiši <strong>biblijsku referencu</strong> (npr. <code>Iv 1,19</code>, <code>Ps 23</code>, <code>Post 1,1-5</code>, <code>1 Kor 13</code>) za izravan skok, ili <strong>riječ / frazu</strong> (npr. <code>svjetlost</code>, <code>blazenstva</code> bez kvačica ili <code>"duh Božji"</code>) za pretragu svih 35.394 redaka.
+      <span class="badge badge-accent">SQLite FTS5 + Offline indeks (35.410 redaka)</span>
+      <h1 class="page-hero-title">Pretraživač Biblije &amp; Brzi skok po kratici</h1>
+      <p class="page-hero-sub" style="margin-bottom:1rem;">
+        Upiši <strong>biblijsku kraticu</strong> (npr. <code>Iv 1,19</code>, <code>Ps 23</code>, <code>Tit 1,1</code>, <code>1 Kor 13</code>) za izravan skok u čitač, ili <strong>riječ / frazu</strong> (npr. <code>svjetlost</code>, <code>blazenstva</code> bez dijakritika ili <code>"duh Božji"</code>) za pretragu svih 73 knjiga.
       </p>
 
       <div class="search-bar-wrap">
-        <input type="search" id="searchInput" class="search-input" placeholder="Upiši pojam ili referencu (npr. Iv 3,16 ili blaženstva)..." />
+        <input
+          type="search"
+          id="searchInput"
+          class="search-input"
+          placeholder="Upiši pojam, izraz u navodnicima ili referencu (npr. Iv 3,16 ili blaženstva)..."
+          autofocus
+        />
         <select id="searchTestamentFilter" class="search-select">
           <option value="">Svi zavjeti (SZ + NZ)</option>
-          <option value="SZ">Stari zavjet (SZ)</option>
-          <option value="NZ">Novi zavjet (NZ)</option>
+          <option value="SZ">Stari zavjet (SZ • 46)</option>
+          <option value="NZ">Novi zavjet (NZ • 27)</option>
         </select>
         <select id="searchBookFilter" class="search-select">
           <option value="">Sve knjige (73)</option>
@@ -30,12 +48,24 @@ const books = getAllBooks();
             <option value={b.order}>{b.abbr} — {b.title}</option>
           ))}
         </select>
-        <button class="icon-btn" id="btnRunSearch" style="background:var(--accent);color:#fff;border-color:var(--accent);padding:0.6rem 1.1rem;">Pretraži</button>
+        <button class="icon-btn btn-accent search-submit-btn" id="btnRunSearch">
+          🔍 Pretraži
+        </button>
       </div>
 
-      <div id="directRefCard" style="display:none;margin-bottom:0.8rem;"></div>
-      <div id="searchMetaStatus" style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;"></div>
-      <div id="searchResultsList"></div>
+      <!-- Quick Example Chips -->
+      <div class="search-suggestions-row">
+        <span class="search-suggestions-label">Brzi primjeri:</span>
+        {QUICK_EXAMPLES.map((ex) => (
+          <button type="button" class="plan-reading-pill search-example-chip" data-example-query={ex.query}>
+            {ex.label}
+          </button>
+        ))}
+      </div>
+
+      <div id="directRefCard" style="display:none;margin-top:0.9rem;"></div>
+      <div id="searchMetaStatus" class="search-meta-status"></div>
+      <div id="searchResultsList" class="search-results-list"></div>
     </div>
   </section>
 </BaseLayout>

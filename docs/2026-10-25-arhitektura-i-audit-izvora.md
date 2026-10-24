@@ -74,13 +74,14 @@ Budući da je `eBible / CroSaric` neovisni prijepis iste *Zagrebačke Biblije*, 
 4. **`Job 25,1–4` i `Job 27,1–4`:** Na `biblija.ks.hr` stihovi `Job 25,1` i `Job 27,1` bili su prazni (`""`), a `25,2–4` i `27,2–4` su ispali pri prijelomu premještenih govora iz *Jeruzalemske Biblije*.
 5. **OCR artefakti:** Uklonjeni zaostali znakovi `?` na početku `Job 19,1`, `Job 29,1` i `Iz 10,1`, te tipfeler `"spremi sena propast"` u `Est 1,1`.
 
-### E. Service Worker strategija (`sw.js`)
+### E. Service Worker strategija (`sw.js`) i `sync-public` zamka u buildu
 * Prvotni *cache-first* Service Worker (`biblija365-v1`) sprječavao je prikaz novih UI izmjena na `localhost` bez ručnog brisanja cachea.
-* U [`sw.js`](../sw.js) (`biblija365-astro-v3`) uvedena je **network-first s offline fallbackom** strategija te automatsko čišćenje svih starijih cache ključeva pri aktivaciji.
+* U [`sw.js`](../sw.js) (`biblija365-astro-v4`) uvedena je **network-first s offline fallbackom** strategija te automatsko čišćenje svih starijih cache ključeva pri aktivaciji (bez prisilnog `client.navigate("/")` kako čitatelj ne bi bio prebačen s trenutnog poglavlja).
+* **Zamka `npm run sync-public` skripte:** Skripta `sync-public` u [`package.json`](../package.json) (koja se pokreće kroz `predev` i `prebuild`) kopira korijenske datoteke `styles.css`, `manifest.json` i `sw.js` preko istoimenih datoteka u `public/`. Zato se svaka izmjena CSS-a ili Service Workera mora raditi u korijenskom `styles.css` / `sw.js` (ili u oba), inače će `npm run build` pregaziti promjene u `public/styles.css`.
 
 ---
 
-## 3. Višekorisnička sinkronizacija (Sync kod + PIN)
+## 3. Višekorisnička sinkronizacija (Sync kod + PIN) i brza promjena profila
 
 ```mermaid
 sequenceDiagram
@@ -98,11 +99,22 @@ sequenceDiagram
     API-->>U2: Vraća sve pročitane dane, oznake i zadnje čitano poglavlje s Uređaja 1
 ```
 
+* **Brza promjena profila na istom uređaju (`biblija_saved_profiles`):** Modal za sinkronizaciju pamti do 8 prijavljenih profila na uređaju i omogućuje prebacivanje jednim klikom (`#syncSavedProfilesSection`), pri čemu se prije sinkronizacije novog profila obvezno čisti lokalno stanje (`resetLocalUserData()`) kako podaci prethodnog korisnika ne bi prešli na drugi račun.
+
 ---
 
-## 4. Otvorene stavke za sljedeću sesiju
+## 4. UI/UX arhitektura čitača i navigacije (dovršeno 2026-10-25)
 
-1. **UI Refactor & Vizualno poliranje:**
-   * Aplikacija je funkcionalno kompletna (čitač, 18 planova čitanja, FTS5 pretraživač, oznake/bilješke, multi-user sync s promjenom korisnika); sljedeći korak je modernizacija i poliranje UI/UX dizajna (tipografija, mobilna navigacija, kartice planova, izgled modala za prijavu/sinkronizaciju).
-2. **Produkcijski Cloudflare + D1 Deploy:**
+* **Dva načina prikaza teksta (`data-reading-mode="paragraphs" | "verses"`):**
+  * **Knjiški prikaz (`paragraphs`):** Koristi `p: true` oznake iz JSON kataloga za renderiranje `<span class="para-break" />` odlomaka kao u tiskanom izdanju *Zagrebačke Biblije*, uz očuvane poetske retke (`poetic-block`) i međunaslove (`h2`/`h3`/`h4`).
+  * **Studijski prikaz (`verses`):** Svaki redak počinje u novom retku radi lakšeg proučavanja.
+* **Mobilna i desktop navigacija:**
+  * Na mobilnim ekranima (`<= 960px`) popis od 73 knjige pretvoren je u kliznu ladicu (`#bookSidebarDrawer`) koja se otvara na gumb `📚 Promijeni knjigu ▾` (umjesto statičke kartice iznad teksta poglavlja), uz fiksnu donju navigacijsku traku (`mobile-bottom-nav`).
+  * Dodan je filtar **Deuterokanonske knjige (`DK (7)`)**, kontekstualne kratice prethodnog/sljedećeg poglavlja (`prevLabel` / `nextLabel`) i tipkovnička navigacija strelicama `←` / `→`.
+
+---
+
+## 5. Otvorene stavke za sljedeću sesiju
+
+1. **Produkcijski Cloudflare + D1 Deploy:**
    * Kreirati produkcijsku D1 bazu (`npx wrangler d1 create biblija-365-db`), upisati `database_id` u [`wrangler.jsonc`](../wrangler.jsonc), primijeniti migraciju (`npx wrangler d1 migrations apply biblija-365-db --remote`) i pokrenuti `npm run deploy`.

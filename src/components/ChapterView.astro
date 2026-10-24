@@ -7,9 +7,19 @@ interface Props {
   chapterObj: ChapterData;
   prevUrl: string | null;
   nextUrl: string | null;
+  prevLabel?: string | null;
+  nextLabel?: string | null;
 }
 
-const { books, book, chapterObj, prevUrl, nextUrl } = Astro.props;
+const {
+  books,
+  book,
+  chapterObj,
+  prevUrl,
+  nextUrl,
+  prevLabel = "Prethodno poglavlje",
+  nextLabel = "Sljedeće poglavlje",
+} = Astro.props;
 
 // Group books by category
 const groups = new Map<string, BookMeta[]>();
@@ -18,7 +28,8 @@ for (const b of books) {
   groups.get(b.category)!.push(b);
 }
 
-const chLabel = chapterObj.chapter === 0 ? "Proslov" : `Poglavlje ${chapterObj.chapter}`;
+const chLabel = chapterObj.chapter === 0 ? "Proslov" : `${chapterObj.chapter}. poglavlje`;
+const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.chapter);
 ---
 
 <div
@@ -29,33 +40,55 @@ const chLabel = chapterObj.chapter === 0 ? "Proslov" : `Poglavlje ${chapterObj.c
   data-book-abbr={book.abbr}
   data-book-title={book.title}
   data-chapter={chapterObj.chapter}
+  data-prev-url={prevUrl || ""}
+  data-next-url={nextUrl || ""}
 >
-  <aside class="sidebar-card">
+  <!-- Mobile Drawer Backdrop -->
+  <div id="bookDrawerBackdrop" class="drawer-backdrop"></div>
+
+  <!-- Left Book Navigation Sidebar / Mobile Drawer -->
+  <aside class="sidebar-card" id="bookSidebarDrawer" aria-label="Popis biblijskih knjiga">
+    <div class="sidebar-drawer-header">
+      <strong>📚 Knjige Svetoga pisma (73)</strong>
+      <button type="button" class="icon-btn" id="btnCloseBookDrawer" title="Zatvori popis knjiga">✕</button>
+    </div>
+
     <div class="filter-row">
       <button class="filter-chip active" data-testament="ALL">Sve (73)</button>
       <button class="filter-chip" data-testament="SZ">SZ (46)</button>
       <button class="filter-chip" data-testament="NZ">NZ (27)</button>
+      <button class="filter-chip" data-testament="DEUT" title="Deuterokanonske knjige (7)">DK (7)</button>
     </div>
-    <input type="search" id="bookFilterInput" class="book-filter-input" placeholder="Filtriraj knjige (npr. Iv, Ps, Izl)..." />
+
+    <div class="sidebar-search-wrap">
+      <input
+        type="search"
+        id="bookFilterInput"
+        class="book-filter-input"
+        placeholder="Traži knjigu ili kraticu (npr. Iv, Ps, Sir)..."
+      />
+    </div>
+
     <div id="bookListContainer" class="book-list">
       {Array.from(groups.entries()).map(([cat, items]) => (
         <div class="book-group-section" data-category={cat}>
           <div class="book-group-title">{cat}</div>
           {items.map((b) => {
-            const firstCh = b.id === "knjiga-sirahova" ? 1 : 1;
+            const firstCh = 1;
             const isAct = b.order === book.order ? "active" : "";
             return (
               <a
                 href={`/${b.id}/${firstCh}/`}
                 class={`book-item ${isAct}`}
-                style="text-decoration:none;"
                 data-testament-item={b.testament}
+                data-deut-item={b.deuterocanonical ? "1" : "0"}
                 data-search={`${b.abbr.toLowerCase()} ${b.title.toLowerCase()} ${b.category.toLowerCase()} ${(b.usfm_id || "").toLowerCase()} ${(b.name_en || "").toLowerCase()}`}
               >
-                <span>
-                  <span class="book-item-abbr">{b.abbr}</span> {b.title}
+                <span class="book-item-left">
+                  <span class="book-item-abbr">{b.abbr}</span>
+                  <span class="book-item-name">{b.title}</span>
                 </span>
-                <span class="book-item-count">{b.chapter_count}</span>
+                <span class="book-item-count" title={`${b.chapter_count} poglavlja`}>{b.chapter_count}</span>
               </a>
             );
           })}
@@ -64,34 +97,99 @@ const chLabel = chapterObj.chapter === 0 ? "Proslov" : `Poglavlje ${chapterObj.c
     </div>
   </aside>
 
+  <!-- Main Reader Column -->
   <div class="reader-main">
+    <!-- Mobile Quick Book Selector Bar -->
+    <div class="mobile-reader-bar">
+      <button type="button" class="mobile-book-trigger" id="btnOpenBookDrawer">
+        <span>📚 <strong>{book.abbr} {shortChLabel}</strong> — {book.title}</span>
+        <span class="mobile-book-trigger-chevron">Promijeni knjigu ▾</span>
+      </button>
+      <div class="mobile-quick-arrows">
+        {prevUrl ? (
+          <a href={prevUrl} class="icon-btn" title={`Prethodno: ${prevLabel}`}>←</a>
+        ) : (
+          <button class="icon-btn" disabled>←</button>
+        )}
+        {nextUrl ? (
+          <a href={nextUrl} class="icon-btn" title={`Sljedeće: ${nextLabel}`}>→</a>
+        ) : (
+          <button class="icon-btn" disabled>→</button>
+        )}
+      </div>
+    </div>
+
     <!-- Active Biblija 365 Day Banner inside Reader -->
     <div id="readerPlanBanner" class="active-plan-banner" style="display:none;">
-      <div>
-        <strong id="bannerPlanDayTitle">Biblija 365 — Dan 1</strong>
-        <div id="bannerPlanPills" class="plan-reading-pills" style="margin-top:0.35rem;"></div>
+      <div class="active-plan-banner-info">
+        <div class="active-plan-banner-kicker">Aktivno čitanje iz rasporeda Biblija 365</div>
+        <strong id="bannerPlanDayTitle" class="active-plan-banner-title">Biblija 365 — Dan 1</strong>
+        <div id="bannerPlanPills" class="plan-reading-pills" style="margin-top:0.4rem;"></div>
       </div>
-      <div style="display:flex;gap:0.4rem;align-items:center;">
-        <button class="icon-btn" id="btnBannerMarkDone" style="background:var(--accent);color:#fff;border-color:var(--accent);">✓ Označi dan pročitanim</button>
+      <div class="active-plan-banner-actions">
+        <button class="icon-btn btn-accent" id="btnBannerMarkDone">✓ Označi dan pročitanim</button>
+        <a href="/plan/" class="icon-btn" style="text-decoration:none;" title="Povratak na pregled plana">🗓️ Plan</a>
         <button class="icon-btn" id="btnBannerClose" title="Sakrij traku plana">✕</button>
       </div>
     </div>
 
+    <!-- Chapter Header -->
     <div class="reader-header">
-      <div class="reader-title-row">
-        <div>
-          <div style="display:flex;gap:0.35rem;flex-wrap:wrap;align-items:center;margin-bottom:0.25rem;">
-            <span class="badge">{book.testament} • {book.category}</span>
-            {book.usfm_id && <span class="badge" title={`USFM kod: ${book.usfm_id} (${book.name_en || ""})`}>USFM: {book.usfm_id}</span>}
-            {book.deuterocanonical && <span class="badge" style="background:var(--accent-soft);color:var(--accent);">Deuterokanonska knjiga</span>}
-            {book.deuterocanonical_parts && <span class="badge" style="background:var(--accent-soft);color:var(--accent);">Deuterokanonski dijelovi: {book.deuterocanonical_parts}</span>}
-          </div>
-          <h1 class="reader-book-title">{book.title}</h1>
+      <div class="reader-kicker-row">
+        <div class="reader-badges">
+          <span class="badge">{book.testament === "SZ" ? "Stari zavjet" : "Novi zavjet"} • {book.category}</span>
+          {book.usfm_id && <span class="badge" title={`Međunarodni USFM kod: ${book.usfm_id} (${book.name_en || ""})`}>USFM: {book.usfm_id}</span>}
+          {book.deuterocanonical && <span class="badge badge-accent">Deuterokanonska knjiga</span>}
+          {book.deuterocanonical_parts && <span class="badge badge-accent">Deuterokanonski dodaci: {book.deuterocanonical_parts}</span>}
         </div>
-        <div class="reader-meta">{chLabel} ({chapterObj.verse_count} redaka)</div>
+
+        <div class="reader-mode-controls">
+          <button
+            type="button"
+            class="icon-btn"
+            id="btnReadingModeToggle"
+            title="Prebaci između knjiškog prikaza u odlomcima i studijskog prikaza stih-po-stih"
+          >
+            ¶ Odjeljci
+          </button>
+          <button
+            type="button"
+            class="icon-btn"
+            id="btnShareChapter"
+            title="Kopiraj poveznicu na ovo poglavlje"
+          >
+            🔗 Podijeli
+          </button>
+        </div>
       </div>
 
-      <div class="chapter-grid">
+      <div class="reader-title-row">
+        <div>
+          <h1 class="reader-book-title">{book.title}</h1>
+          <div class="reader-chapter-subtitle">
+            <strong>{book.abbr} {shortChLabel}</strong>
+            <span class="dot-sep">•</span>
+            <span>{chLabel}</span>
+            <span class="dot-sep">•</span>
+            <span>{chapterObj.verse_count} redaka</span>
+          </div>
+        </div>
+
+        <div class="desktop-header-arrows">
+          {prevUrl ? (
+            <a href={prevUrl} class="icon-btn" style="text-decoration:none;" title={`Prethodno: ${prevLabel} (tipka ←)`}>
+              ← {prevLabel}
+            </a>
+          ) : null}
+          {nextUrl ? (
+            <a href={nextUrl} class="icon-btn" style="text-decoration:none;" title={`Sljedeće: ${nextLabel} (tipka →)`}>
+              {nextLabel} →
+            </a>
+          ) : null}
+        </div>
+      </div>
+
+      <div class="chapter-grid" role="navigation" aria-label={`Poglavlja knjige ${book.title}`}>
         {book.chapters.map((c) => {
           const lbl = c.chapter === 0 ? "Proslov" : String(c.chapter);
           const act = c.chapter === chapterObj.chapter ? "active" : "";
@@ -99,7 +197,7 @@ const chLabel = chapterObj.chapter === 0 ? "Proslov" : `Poglavlje ${chapterObj.c
             <a
               href={`/${book.id}/${c.chapter}/`}
               class={`ch-pill ${act}`}
-              style="display:inline-flex;align-items:center;justify-content:center;text-decoration:none;"
+              title={`${book.title} — ${c.chapter === 0 ? "Proslov" : c.chapter + ". poglavlje"} (${c.verse_count} redaka)`}
             >
               {lbl}
             </a>
@@ -108,12 +206,17 @@ const chLabel = chapterObj.chapter === 0 ? "Proslov" : `Poglavlje ${chapterObj.c
       </div>
     </div>
 
+    <!-- Chapter Reading Body -->
     <article id="chapterBody" class="chapter-body">
-      {chapterObj.verses.map((v) => {
+      {chapterObj.verses.map((v, idx) => {
         const vLabel = v.verse_label || String(v.verse);
         const isPoetic = Boolean(v.lines && v.lines.length > 1);
+        const hasHeading = Boolean(v.headings && v.headings.length > 0);
+        const showParaBreak = Boolean(v.p && idx > 0 && !hasHeading && !isPoetic);
+        const firstClass = idx === 0 ? "first-verse" : "";
         return (
           <>
+            {showParaBreak && <span class="para-break" aria-hidden="true" />}
             {v.headings && v.headings.map((h) => {
               if (h.level === "h2") return <h2 class="sec-h2">{h.text}</h2>;
               if (h.level === "h3") return <h3 class="sec-h3">{h.text}</h3>;
@@ -124,27 +227,27 @@ const chLabel = chapterObj.chapter === 0 ? "Proslov" : `Poglavlje ${chapterObj.c
             ))}
             {isPoetic ? (
               <span
-                class="verse-item poetic-block"
+                class={`verse-item poetic-block ${firstClass}`}
                 id={`v-${v.verse}`}
                 data-verse={v.verse}
                 data-text={v.text}
               >
-                {v.lines!.map((ln, idx) => (
+                {v.lines!.map((ln, lIdx) => (
                   <span class="poetic-line">
-                    {idx === 0 && <sup class="verse-sup">{vLabel}</sup>}
+                    {lIdx === 0 && <sup class="verse-sup">{vLabel}</sup>}
                     {ln}
                   </span>
                 ))}
               </span>
             ) : (
               <span
-                class="verse-item"
+                class={`verse-item ${firstClass}`}
                 id={`v-${v.verse}`}
                 data-verse={v.verse}
                 data-text={v.text}
               >
                 <sup class="verse-sup">{vLabel}</sup>
-                {v.text}
+                <span class="verse-text">{v.text}</span>
               </span>
             )}
             {" "}
@@ -153,17 +256,29 @@ const chLabel = chapterObj.chapter === 0 ? "Proslov" : `Poglavlje ${chapterObj.c
       })}
     </article>
 
+    <!-- Chapter Footer Navigation -->
     <div class="chapter-nav-footer">
       {prevUrl ? (
-        <a href={prevUrl} class="icon-btn" style="text-decoration:none;">← Prethodno poglavlje</a>
+        <a href={prevUrl} class="chapter-nav-card prev">
+          <span class="chapter-nav-kicker">← Prethodno poglavlje</span>
+          <strong class="chapter-nav-label">{prevLabel}</strong>
+        </a>
       ) : (
-        <span />
+        <div />
       )}
-      <span class="reader-meta">{book.abbr} {chapterObj.chapter === 0 ? "Proslov" : chapterObj.chapter}</span>
+
+      <div class="chapter-nav-center">
+        <span class="reader-meta">{book.abbr} {shortChLabel}</span>
+        <span class="kbd-hint">Tipkovnica: ← / →</span>
+      </div>
+
       {nextUrl ? (
-        <a href={nextUrl} class="icon-btn" style="text-decoration:none;">Sljedeće poglavlje →</a>
+        <a href={nextUrl} class="chapter-nav-card next">
+          <span class="chapter-nav-kicker">Sljedeće poglavlje →</span>
+          <strong class="chapter-nav-label">{nextLabel}</strong>
+        </a>
       ) : (
-        <span />
+        <div />
       )}
     </div>
   </div>

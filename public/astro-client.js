@@ -32,13 +32,16 @@
     currentPlanId: localStorage.getItem("biblija_plan_id") || "mb-tematski-365",
     dayFilter: "all",
     daySearch: "",
+    bookmarkFilter: "all",
     progress: JSON.parse(localStorage.getItem("biblija_progress") || "{}"),
     bookmarks: JSON.parse(localStorage.getItem("biblija_bookmarks") || "{}"),
     activePlanDayContext: JSON.parse(sessionStorage.getItem("biblija_active_day_ctx") || "null"),
     selectedVerseContext: null,
     fontSize: parseInt(localStorage.getItem("biblija_fontsize") || "19", 10),
     theme: localStorage.getItem("biblija_theme") || "light",
+    readingMode: localStorage.getItem("biblija_reading_mode") || "paragraphs",
     syncAuth: JSON.parse(localStorage.getItem("biblija_sync_auth") || "null"),
+    savedProfiles: JSON.parse(localStorage.getItem("biblija_saved_profiles") || "[]"),
     lastSyncedAt: localStorage.getItem("biblija_last_synced_at") || null,
     isSyncing: false,
     uiRefreshCallbacks: [],
@@ -61,8 +64,9 @@
   }
 
   function getActiveBookmarksList() {
-    return Object.values(state.bookmarks)
-      .filter((bm) => bm && !bm.deleted)
+    return Object.entries(state.bookmarks)
+      .filter(([, bm]) => bm && !bm.deleted)
+      .map(([key, bm]) => ({ ...bm, _key: key }))
       .sort((a, b) =>
         String(b.updated_at || b.created_at || "").localeCompare(String(a.updated_at || a.created_at || ""))
       );
@@ -87,9 +91,29 @@
 
   function applyThemeAndFont() {
     document.documentElement.setAttribute("data-theme", state.theme);
+    document.documentElement.setAttribute("data-reading-mode", state.readingMode);
     document.documentElement.style.setProperty("--font-size-reading", `${state.fontSize}px`);
     localStorage.setItem("biblija_theme", state.theme);
     localStorage.setItem("biblija_fontsize", String(state.fontSize));
+    localStorage.setItem("biblija_reading_mode", state.readingMode);
+
+    const fsInd = document.getElementById("fontSizeIndicator");
+    if (fsInd) fsInd.textContent = String(state.fontSize);
+
+    const themeIcon = document.getElementById("themeToggleIcon");
+    const themeLbl = document.getElementById("themeToggleLabel");
+    const themeMeta = {
+      light: { icon: "☀️", label: "Svijetla" },
+      sepia: { icon: "📜", label: "Sepia" },
+      dark: { icon: "🌙", label: "Tamna" },
+    }[state.theme] || { icon: "☀️", label: "Tema" };
+    if (themeIcon) themeIcon.textContent = themeMeta.icon;
+    if (themeLbl) themeLbl.textContent = themeMeta.label;
+
+    const rmBtn = document.getElementById("btnReadingModeToggle");
+    if (rmBtn) {
+      rmBtn.textContent = state.readingMode === "verses" ? "≡ Stih po stih" : "¶ Knjiški odlomci";
+    }
   }
 
   async function ensureBooksLoaded() {
@@ -123,8 +147,47 @@
     if (pill) pill.textContent = "⚡ Astro SSG (Edge / Offline)";
   }
 
-  /* ==================== MULTI-DEVICE CLOUD SYNC ==================== */
+  /* ==================== MULTI-DEVICE CLOUD SYNC & PROFILE SWITCHER ==================== */
   let syncDebounceTimer = null;
+
+  function saveProfileToDeviceList(authObj) {
+    if (!authObj || !authObj.user_key || !authObj.pin) return;
+    const list = state.savedProfiles.filter((p) => p && p.user_key !== authObj.user_key);
+    list.unshift({
+      user_key: authObj.user_key,
+      display_name: authObj.display_name || authObj.user_key,
+      pin: authObj.pin,
+      saved_at: new Date().toISOString(),
+    });
+    state.savedProfiles = list.slice(0, 8);
+    localStorage.setItem("biblija_saved_profiles", JSON.stringify(state.savedProfiles));
+  }
+
+  function removeProfileFromDeviceList(userKey) {
+    state.savedProfiles = state.savedProfiles.filter((p) => p && p.user_key !== userKey);
+    localStorage.setItem("biblija_saved_profiles", JSON.stringify(state.savedProfiles));
+    renderSavedProfilesSwitcher();
+  }
+
+  function resetLocalUserData() {
+    state.progress = {};
+    state.bookmarks = {};
+    state.lastSyncedAt = null;
+    localStorage.removeItem("biblija_progress");
+    localStorage.removeItem("biblija_bookmarks");
+    localStorage.removeItem("biblija_last_url");
+    localStorage.removeItem("biblija_last_label");
+    localStorage.removeItem("biblija_meta_updated_at");
+    localStorage.removeItem("biblija_last_synced_at");
+  }
+
+  function triggerAllUiRefresh() {
+    for (const cb of state.uiRefreshCallbacks) {
+      try {
+        cb();
+      } catch (_) {}
+    }
+  }
 
   function scheduleCloudSync() {
     if (!state.syncAuth || !state.syncAuth.user_key || !state.syncAuth.pin) return;
@@ -148,10 +211,71 @@
     }
   }
 
+  function renderSavedProfilesSwitcher() {
+    const box = document.getElementById("syncSavedProfilesSection");
+    const listEl = document.getElementById("syncSavedProfilesList");
+    if (!box || !listEl) return;
+
+    if (!state.savedProfiles || state.savedProfiles.length === 0) {
+      box.style.display = "none";
+      return;
+    }
+
+    box.style.display = "block";
+    const curKey = state.syncAuth ? state.syncAuth.user_key : null;
+
+    listEl.innerHTML = state.savedProfiles
+      .map((p) => {
+        const isAct = p.user_key === curKey;
+        return `
+          <div class="saved-profile-chip ${isAct ? "active" : ""}">
+            <span class="saved-profile-switch" data-switch-key="${escapeHtml(p.user_key)}" title="Prebaci na profil @${escapeHtml(p.user_key)}">
+              ${isAct ? "✓ " : "👤 "}@${escapeHtml(p.user_key)}
+            </span>
+            <button type="button" class="saved-profile-remove" data-remove-key="${escapeHtml(p.user_key)}" title="Ukloni spremljeni profil s ovog uređaja">✕</button>
+          </div>
+        `;
+      })
+      .join("");
+
+    listEl.querySelectorAll("[data-switch-key]").forEach((el) => {
+      el.addEventListener("click", async () => {
+        const targetKey = el.getAttribute("data-switch-key");
+        const found = state.savedProfiles.find((x) => x.user_key === targetKey);
+        if (!found) return;
+        if (state.syncAuth && state.syncAuth.user_key === found.user_key) {
+          await syncWithServer({ silent: false });
+          return;
+        }
+        // Clean local state before switching to another user so data never bleeds across users
+        resetLocalUserData();
+        state.syncAuth = {
+          user_key: found.user_key,
+          display_name: found.display_name || found.user_key,
+          pin: found.pin,
+        };
+        localStorage.setItem("biblija_sync_auth", JSON.stringify(state.syncAuth));
+        updateSyncHeaderUI();
+        updateSyncModalViews();
+        await syncWithServer({ silent: true });
+      });
+    });
+
+    listEl.querySelectorAll("[data-remove-key]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const k = btn.getAttribute("data-remove-key");
+        removeProfileFromDeviceList(k);
+      });
+    });
+  }
+
   function updateSyncModalViews() {
     const outView = document.getElementById("syncLoggedOutView");
     const inView = document.getElementById("syncLoggedInView");
     if (!outView || !inView) return;
+
+    renderSavedProfilesSwitcher();
 
     if (state.syncAuth && state.syncAuth.user_key) {
       outView.style.display = "none";
@@ -164,7 +288,7 @@
 
       const completedDays = countTotalCompletedDays();
       const bmCount = getActiveBookmarksList().length;
-      const lastLbl = localStorage.getItem("biblija_last_label") || "Postanak 1";
+      const lastLbl = localStorage.getItem("biblija_last_label") || "Knjiga Postanka (Post 1)";
       document.getElementById("syncStatsSummary").innerHTML = `
         <div>✓ Pročitanih dana u planovima: <strong>${completedDays}</strong></div>
         <div>🔖 Spremljenih oznaka i bilješki: <strong>${bmCount}</strong></div>
@@ -243,13 +367,7 @@
       state.isSyncing = false;
       updateSyncHeaderUI();
       updateSyncModalViews();
-
-      // Trigger live UI refresh on whichever page is open
-      for (const cb of state.uiRefreshCallbacks) {
-        try {
-          cb();
-        } catch (_) {}
-      }
+      triggerAllUiRefresh();
       return true;
     } catch (_) {
       state.isSyncing = false;
@@ -263,6 +381,10 @@
     const openBtn = document.getElementById("btnOpenSyncModal");
     const closeBtn = document.getElementById("btnCloseSyncModal");
     if (!overlay || !openBtn) return;
+
+    if (state.syncAuth && state.syncAuth.user_key) {
+      saveProfileToDeviceList(state.syncAuth);
+    }
 
     updateSyncHeaderUI();
 
@@ -278,6 +400,14 @@
     overlay.addEventListener("click", (e) => {
       if (e.target === overlay) overlay.classList.remove("open");
     });
+
+    const pinToggleBtn = document.getElementById("btnTogglePinVisibility");
+    const pinInputEl = document.getElementById("syncPinInput");
+    if (pinToggleBtn && pinInputEl) {
+      pinToggleBtn.addEventListener("click", () => {
+        pinInputEl.type = pinInputEl.type === "password" ? "text" : "password";
+      });
+    }
 
     const genBtn = document.getElementById("btnGenerateSyncKey");
     if (genBtn) {
@@ -303,8 +433,8 @@
 
         function showMsg(txt, isErr = true) {
           msgEl.style.display = "block";
-          msgEl.style.background = isErr ? "rgba(198, 40, 40, 0.12)" : "rgba(76, 175, 80, 0.14)";
-          msgEl.style.color = isErr ? "#c62828" : "#2e7d32";
+          msgEl.style.background = isErr ? "var(--danger-soft)" : "var(--success-soft)";
+          msgEl.style.color = isErr ? "var(--danger)" : "var(--success)";
           msgEl.textContent = txt;
         }
 
@@ -338,6 +468,7 @@
             pin,
           };
           localStorage.setItem("biblija_sync_auth", JSON.stringify(state.syncAuth));
+          saveProfileToDeviceList(state.syncAuth);
 
           await syncWithServer({ silent: true });
 
@@ -373,7 +504,7 @@
         navigator.clipboard.writeText(text);
         copyBtn.textContent = "✓ Kopirano u međuspremnik!";
         setTimeout(() => {
-          copyBtn.textContent = "📋 Kopiraj upute za povezivanje drugog uređaja";
+          copyBtn.textContent = "📋 Kopiraj podatke za povezivanje drugog uređaja";
         }, 1500);
       });
     }
@@ -382,27 +513,15 @@
     if (logoutBtn) {
       logoutBtn.addEventListener("click", () => {
         state.syncAuth = null;
-        state.progress = {};
-        state.bookmarks = {};
-        state.lastSyncedAt = null;
         localStorage.removeItem("biblija_sync_auth");
-        localStorage.removeItem("biblija_progress");
-        localStorage.removeItem("biblija_bookmarks");
-        localStorage.removeItem("biblija_last_url");
-        localStorage.removeItem("biblija_last_label");
-        localStorage.removeItem("biblija_meta_updated_at");
-        localStorage.removeItem("biblija_last_synced_at");
+        resetLocalUserData();
         const keyInput = document.getElementById("syncUserKeyInput");
         const pinInput = document.getElementById("syncPinInput");
         if (keyInput) keyInput.value = "";
         if (pinInput) pinInput.value = "";
         updateSyncHeaderUI();
         updateSyncModalViews();
-        for (const cb of state.uiRefreshCallbacks) {
-          try {
-            cb();
-          } catch (_) {}
-        }
+        triggerAllUiRefresh();
       });
     }
 
@@ -427,6 +546,75 @@
     const bookAbbr = root.getAttribute("data-book-abbr");
     const bookTitle = root.getAttribute("data-book-title");
     const chapter = parseInt(root.getAttribute("data-chapter"), 10);
+    const prevUrl = root.getAttribute("data-prev-url") || "";
+    const nextUrl = root.getAttribute("data-next-url") || "";
+
+    // Scroll active book item into view inside sidebar on desktop
+    const activeBookEl = document.querySelector("#bookListContainer .book-item.active");
+    if (activeBookEl && window.innerWidth > 960) {
+      setTimeout(() => {
+        activeBookEl.scrollIntoView({ block: "nearest" });
+      }, 60);
+    }
+
+    // Mobile Drawer Open/Close
+    const drawer = document.getElementById("bookSidebarDrawer");
+    const backdrop = document.getElementById("bookDrawerBackdrop");
+    const btnOpenDrawer = document.getElementById("btnOpenBookDrawer");
+    const btnCloseDrawer = document.getElementById("btnCloseBookDrawer");
+
+    function closeBookDrawer() {
+      if (drawer) drawer.classList.remove("open");
+      if (backdrop) backdrop.classList.remove("open");
+    }
+
+    if (btnOpenDrawer && drawer && backdrop) {
+      btnOpenDrawer.addEventListener("click", () => {
+        drawer.classList.add("open");
+        backdrop.classList.add("open");
+        if (activeBookEl) {
+          setTimeout(() => activeBookEl.scrollIntoView({ block: "center" }), 80);
+        }
+      });
+      backdrop.addEventListener("click", closeBookDrawer);
+    }
+    if (btnCloseDrawer) {
+      btnCloseDrawer.addEventListener("click", closeBookDrawer);
+    }
+
+    // Reading mode toggle (Paragraphs vs Verses)
+    const rmToggleBtn = document.getElementById("btnReadingModeToggle");
+    if (rmToggleBtn) {
+      rmToggleBtn.addEventListener("click", () => {
+        state.readingMode = state.readingMode === "paragraphs" ? "verses" : "paragraphs";
+        applyThemeAndFont();
+      });
+    }
+
+    // Share chapter button
+    const shareBtn = document.getElementById("btnShareChapter");
+    if (shareBtn) {
+      shareBtn.addEventListener("click", () => {
+        const shareUrl = `${window.location.origin}/${bookId}/${chapter}/`;
+        navigator.clipboard.writeText(shareUrl);
+        shareBtn.textContent = "✓ Poveznica kopirana!";
+        setTimeout(() => {
+          shareBtn.textContent = "🔗 Podijeli";
+        }, 1400);
+      });
+    }
+
+    // Keyboard navigation (<- / ->) for previous/next chapter
+    document.addEventListener("keydown", (e) => {
+      const tag = (e.target && e.target.tagName) || "";
+      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.key === "ArrowLeft" && prevUrl) {
+        window.location.href = prevUrl;
+      } else if (e.key === "ArrowRight" && nextUrl) {
+        window.location.href = nextUrl;
+      }
+    });
 
     function refreshResumeReadingBar() {
       const resumeBar = document.getElementById("resumeReadingBar");
@@ -465,8 +653,12 @@
         let visibleInGroup = 0;
         sec.querySelectorAll(".book-item").forEach((item) => {
           const t = item.getAttribute("data-testament-item");
+          const isDeut = item.getAttribute("data-deut-item") === "1";
           const s = foldHr(item.getAttribute("data-search") || "");
-          const show = (curTestament === "ALL" || t === curTestament) && (!q || s.includes(q));
+          const matchTab =
+            curTestament === "ALL" ||
+            (curTestament === "DEUT" ? isDeut : t === curTestament);
+          const show = matchTab && (!q || s.includes(q));
           item.style.display = show ? "flex" : "none";
           if (show) visibleInGroup++;
         });
@@ -536,7 +728,10 @@
           color: existing.color || "gold",
           onRefresh: refreshVerseHighlights,
         };
-        document.getElementById("popoverRefTitle").textContent = `${bookAbbr} ${chapter},${vnum} — ${bookTitle}`;
+        const chRef = chapter === 0 ? "Proslov" : chapter;
+        document.getElementById("popoverRefTitle").textContent = `${bookAbbr} ${chRef},${vnum} — ${bookTitle}`;
+        const prevEl = document.getElementById("popoverVersePreview");
+        if (prevEl) prevEl.textContent = `»${vtext}«`;
         document.getElementById("popoverNoteInput").value = existing.note || "";
         document.getElementById("versePopover").classList.add("open");
       });
@@ -564,7 +759,7 @@
       document.getElementById("bannerPlanDayTitle").textContent = `🗓️ Dan ${ctx.day}: ${ctx.label}`;
       const markBtn = document.getElementById("btnBannerMarkDone");
       markBtn.textContent = isDone ? "✓ Dan je označen pročitanim" : `✓ Označi Dan ${ctx.day} pročitanim`;
-      markBtn.style.background = isDone ? "#388e3c" : "var(--accent)";
+      markBtn.style.background = isDone ? "var(--success)" : "var(--accent)";
 
       const pills = [];
       for (const r of ctx.readings) {
@@ -608,11 +803,18 @@
 
   /* ==================== POPOVER ACTIONS ==================== */
   function initPopover() {
+    const popover = document.getElementById("versePopover");
     const closeBtn = document.getElementById("btnClosePopover");
-    if (!closeBtn) return;
+    if (!popover || !closeBtn) return;
 
     closeBtn.addEventListener("click", () => {
-      document.getElementById("versePopover").classList.remove("open");
+      popover.classList.remove("open");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (popover.classList.contains("open") && !popover.contains(e.target)) {
+        popover.classList.remove("open");
+      }
     });
 
     function saveBookmark(colorOverride) {
@@ -645,7 +847,14 @@
 
     document.getElementById("btnSaveNote").addEventListener("click", () => {
       saveBookmark(null);
-      document.getElementById("versePopover").classList.remove("open");
+      popover.classList.remove("open");
+    });
+
+    document.getElementById("popoverNoteInput").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        saveBookmark(null);
+        popover.classList.remove("open");
+      }
     });
 
     document.getElementById("btnRemoveBookmark").addEventListener("click", () => {
@@ -665,7 +874,7 @@
         updated_at: new Date().toISOString(),
       };
       localStorage.setItem("biblija_bookmarks", JSON.stringify(state.bookmarks));
-      document.getElementById("versePopover").classList.remove("open");
+      popover.classList.remove("open");
       if (ctx.onRefresh) ctx.onRefresh();
       scheduleCloudSync();
     });
@@ -710,6 +919,18 @@
       });
     }
 
+    document.querySelectorAll("[data-plan-quick]").forEach((card) => {
+      card.addEventListener("click", () => {
+        const pid = card.getAttribute("data-plan-quick");
+        if (!pid) return;
+        state.currentPlanId = pid;
+        localStorage.setItem("biblija_plan_id", state.currentPlanId);
+        touchMetaTimestamp();
+        renderPlan();
+        scheduleCloudSync();
+      });
+    });
+
     document.querySelectorAll("[data-dayfilter]").forEach((btn) => {
       btn.addEventListener("click", () => {
         document.querySelectorAll("[data-dayfilter]").forEach((b) => b.classList.remove("active"));
@@ -718,6 +939,16 @@
         renderPlan();
       });
     });
+
+    const scrollCurBtn = document.getElementById("btnScrollToCurrentDay");
+    if (scrollCurBtn) {
+      scrollCurBtn.addEventListener("click", () => {
+        const curCard = document.querySelector("#planDaysGrid .day-card.current-day");
+        if (curCard) {
+          curCard.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      });
+    }
 
     const daySearchInput = document.getElementById("daySearchInput");
     if (daySearchInput) {
@@ -731,6 +962,10 @@
       if (sel && sel.value !== state.currentPlanId) {
         sel.value = state.currentPlanId;
       }
+      document.querySelectorAll("[data-plan-quick]").forEach((card) => {
+        card.classList.toggle("active", card.getAttribute("data-plan-quick") === state.currentPlanId);
+      });
+
       if (!state.loadedPlans[state.currentPlanId]) {
         const res = await fetch(`/data/json/plans/${state.currentPlanId}.json`);
         state.loadedPlans[state.currentPlanId] = await res.json();
@@ -754,25 +989,36 @@
         const readingBtns = nextDayObj.readings
           .map(
             (r, idx) =>
-              `<button class="icon-btn hero-read-btn" data-ridx="${idx}" style="border-color:var(--accent);">📖 Čitaj: <strong>${escapeHtml(r.label)}</strong> (${escapeHtml(r.book_title)})</button>`
+              `<button class="icon-btn hero-read-btn" data-ridx="${idx}" style="border-color:var(--accent);">📖 <strong>${escapeHtml(r.label)}</strong> <span style="color:var(--text-muted);font-weight:500;">(${escapeHtml(r.book_title)})</span></button>`
           )
           .join(" ");
 
         hero.innerHTML = `
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.75rem;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.85rem;">
             <div>
-              <span class="badge" style="background:var(--accent);color:#fff;">Današnje čitanje • Dan ${nextDayObj.day} od ${plan.days_count}</span>
-              <h3 style="margin:0.4rem 0 0.25rem;font-size:1.3rem;">${escapeHtml(nextDayObj.label)}</h3>
+              <span class="badge badge-accent">Današnje čitanje • Dan ${nextDayObj.day} od ${plan.days_count}</span>
+              <h3 style="margin:0.35rem 0 0.2rem;font-size:1.35rem;">${escapeHtml(nextDayObj.label)}</h3>
               <div style="font-size:0.84rem;color:var(--text-muted);">Ukupno ~${nextDayObj.verse_count} redaka u današnjem rasporedu</div>
             </div>
-            <button class="icon-btn" id="btnHeroToggleDone" style="background:var(--accent);color:#fff;border-color:var(--accent);padding:0.5rem 0.95rem;">
-              ✓ Označi Dan ${nextDayObj.day} pročitanim
-            </button>
+            <div style="display:flex;gap:0.45rem;flex-wrap:wrap;">
+              <button class="icon-btn btn-accent" id="btnHeroStartFirst" style="padding:0.5rem 0.95rem;">
+                📖 Započni čitanje →
+              </button>
+              <button class="icon-btn" id="btnHeroToggleDone" style="padding:0.5rem 0.9rem;">
+                ✓ Označi Dan ${nextDayObj.day} pročitanim
+              </button>
+            </div>
           </div>
-          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.85rem;">
+          <div style="display:flex;gap:0.45rem;flex-wrap:wrap;margin-top:0.9rem;">
             ${readingBtns}
           </div>
         `;
+
+        hero.querySelector("#btnHeroStartFirst").addEventListener("click", () => {
+          if (nextDayObj.readings.length) {
+            openPlanDayInReader(plan, nextDayObj, nextDayObj.readings[0]);
+          }
+        });
 
         hero.querySelector("#btnHeroToggleDone").addEventListener("click", () => {
           togglePlanDayCompleted(plan.id, nextDayObj.day);
@@ -811,13 +1057,13 @@
           return `
             <div class="day-card ${isDone ? "done" : ""} ${isCur}">
               <div style="display:flex;justify-content:space-between;align-items:center;">
-                <strong>Dan ${d.day}</strong>
+                <strong>Dan ${d.day}${isCur ? " • Danas" : ""}</strong>
                 <span class="badge">${d.verse_count} redaka</span>
               </div>
               <div class="plan-reading-pills">${pills}</div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.25rem;">
                 <button class="icon-btn day-open-first" data-day="${d.day}" style="font-size:0.78rem;">Otvori u čitaču →</button>
-                <label style="font-size:0.82rem;cursor:pointer;display:flex;align-items:center;gap:0.3rem;font-weight:600;">
+                <label style="font-size:0.82rem;cursor:pointer;display:flex;align-items:center;gap:0.35rem;font-weight:600;">
                   <input type="checkbox" class="day-done-checkbox" data-day="${d.day}" ${isDone ? "checked" : ""} />
                   Pročitano
                 </label>
@@ -934,11 +1180,11 @@
         directCard.innerHTML = `
           <div class="active-plan-banner" style="margin:0;">
             <div>
-              <span class="badge">Prepoznata biblijska kratica</span>
+              <span class="badge badge-accent">Prepoznata biblijska kratica</span>
               <strong style="margin-left:0.5rem;">${escapeHtml(parsedRef.book.title)} — ${escapeHtml(refLbl)}</strong>
             </div>
-            <a href="${targetUrl}" class="icon-btn" style="background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none;">
-              Otvori ${escapeHtml(refLbl)} →
+            <a href="${targetUrl}" class="icon-btn btn-accent" style="text-decoration:none;">
+              Otvori ${escapeHtml(refLbl)} u čitaču →
             </a>
           </div>
         `;
@@ -947,7 +1193,7 @@
       }
 
       if (!q) {
-        statusEl.textContent = "Upiši pojam za pretragu.";
+        statusEl.textContent = "Upiši pojam, frazu ili biblijsku kraticu za pretragu.";
         listEl.innerHTML = "";
         return;
       }
@@ -1008,11 +1254,11 @@
           const bId = r.book_id || (state.booksByOrder[r.book_order] && state.booksByOrder[r.book_order].id);
           return `
             <a href="/${escapeHtml(bId)}/${r.chapter}/#v-${r.verse}" class="search-result-item" style="display:block;text-decoration:none;color:inherit;">
-              <div style="display:flex;justify-content:space-between;align-items:baseline;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:0.5rem;">
                 <span class="search-result-ref">${escapeHtml(r.book_abbr)} ${r.chapter},${r.verse} — ${escapeHtml(r.book_title)}</span>
                 <span class="badge">Otvori u čitaču →</span>
               </div>
-              <div style="margin-top:0.25rem;font-family:var(--font-reading);font-size:1.02rem;">
+              <div style="margin-top:0.3rem;font-family:var(--font-reading);font-size:1.04rem;line-height:1.6;">
                 ${highlightMatch(r.text, q)}
               </div>
             </a>
@@ -1021,12 +1267,29 @@
         .join("");
     }
 
+    let searchTimer = null;
+    const searchInputEl = document.getElementById("searchInput");
+
     document.getElementById("btnRunSearch").addEventListener("click", runSearch);
-    document.getElementById("searchInput").addEventListener("keydown", (e) => {
-      if (e.key === "Enter") runSearch();
+    searchInputEl.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        if (searchTimer) clearTimeout(searchTimer);
+        runSearch();
+      }
+    });
+    searchInputEl.addEventListener("input", () => {
+      if (searchTimer) clearTimeout(searchTimer);
+      searchTimer = setTimeout(runSearch, 240);
     });
     document.getElementById("searchTestamentFilter").addEventListener("change", runSearch);
     document.getElementById("searchBookFilter").addEventListener("change", runSearch);
+
+    document.querySelectorAll("[data-example-query]").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        searchInputEl.value = chip.getAttribute("data-example-query") || "";
+        runSearch();
+      });
+    });
   }
 
   /* ==================== NOTES & AUDIT PAGE ==================== */
@@ -1036,31 +1299,75 @@
 
     await ensureBooksLoaded();
 
+    document.querySelectorAll("[data-bmfilter]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("[data-bmfilter]").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        state.bookmarkFilter = btn.getAttribute("data-bmfilter") || "all";
+        renderBookmarks();
+      });
+    });
+
     function renderBookmarks() {
       const container = document.getElementById("bookmarksListContainer");
-      const items = getActiveBookmarksList();
+      const allItems = getActiveBookmarksList();
+      const items = allItems.filter((bm) => {
+        if (state.bookmarkFilter === "all") return true;
+        if (state.bookmarkFilter === "notes") return Boolean(bm.note && bm.note.trim());
+        return (bm.color || "gold") === state.bookmarkFilter;
+      });
+
       if (!items.length) {
-        container.innerHTML = `<p style="color:var(--text-muted);font-size:0.9rem;">Još nemaš spremljenih oznaka ili bilješki. Tijekom čitanja klikni na bilo koji redak za označavanje.</p>`;
+        container.innerHTML = `<p style="color:var(--text-muted);font-size:0.9rem;margin:0.5rem 0;">${
+          allItems.length === 0
+            ? "Još nemaš spremljenih oznaka ili bilješki. Tijekom čitanja klikni na bilo koji redak za označavanje."
+            : "Nema oznaka u odabranom filtru."
+        }</p>`;
         return;
       }
+
       container.innerHTML = items
         .map((bm) => {
           const bmeta = state.booksByOrder[bm.book_order] || {};
           const bId = bm.book_id || bmeta.id || "knjiga-postanka";
           const abbr = bm.book_abbr || bmeta.abbr || "";
           const title = bm.book_title || bmeta.title || "";
+          const key = bm._key || `${bm.book_order}:${bm.chapter}:${bm.verse}`;
           return `
-            <a href="/${escapeHtml(bId)}/${bm.chapter}/#v-${bm.verse}" class="search-result-item" style="display:block;text-decoration:none;color:inherit;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span class="search-result-ref">${escapeHtml(abbr)} ${bm.chapter},${bm.verse} (${escapeHtml(title)})</span>
-                <span class="badge hl-${escapeHtml(bm.color || "gold")}">Oznaka</span>
+            <div class="bookmark-card">
+              <div class="bookmark-card-top">
+                <a href="/${escapeHtml(bId)}/${bm.chapter}/#v-${bm.verse}" class="search-result-ref" style="text-decoration:none;">
+                  ${escapeHtml(abbr)} ${bm.chapter},${bm.verse} — ${escapeHtml(title)}
+                </a>
+                <div class="bookmark-card-actions">
+                  <span class="badge hl-${escapeHtml(bm.color || "gold")}">Oznaka</span>
+                  <a href="/${escapeHtml(bId)}/${bm.chapter}/#v-${bm.verse}" class="icon-btn" style="text-decoration:none;font-size:0.75rem;padding:0.2rem 0.5rem;">Otvori →</a>
+                  <button type="button" class="icon-btn bm-delete-btn" data-bmkey="${escapeHtml(key)}" style="font-size:0.75rem;padding:0.2rem 0.45rem;" title="Ukloni oznaku">🗑</button>
+                </div>
               </div>
-              <div style="margin-top:0.25rem;font-family:var(--font-reading);">${escapeHtml(bm.text || "")}</div>
-              ${bm.note ? `<div style="margin-top:0.35rem;font-size:0.86rem;color:var(--accent);font-weight:600;">✎ Bilješka: ${escapeHtml(bm.note)}</div>` : ""}
-            </a>
+              <div style="font-family:var(--font-reading);font-size:1.02rem;line-height:1.6;">
+                »${escapeHtml(bm.text || "")}«
+              </div>
+              ${bm.note ? `<div style="margin-top:0.2rem;font-size:0.86rem;color:var(--accent);font-weight:600;">✎ Bilješka: ${escapeHtml(bm.note)}</div>` : ""}
+            </div>
           `;
         })
         .join("");
+
+      container.querySelectorAll(".bm-delete-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const k = btn.getAttribute("data-bmkey");
+          if (!k || !state.bookmarks[k]) return;
+          state.bookmarks[k] = {
+            ...state.bookmarks[k],
+            deleted: true,
+            updated_at: new Date().toISOString(),
+          };
+          localStorage.setItem("biblija_bookmarks", JSON.stringify(state.bookmarks));
+          renderBookmarks();
+          scheduleCloudSync();
+        });
+      });
     }
 
     state.uiRefreshCallbacks.push(renderBookmarks);
@@ -1129,6 +1436,20 @@
     if (window.location.hash === "#reader") {
       history.replaceState(null, "", window.location.pathname);
     }
+
+    // Global Escape key handler for modals, drawers, and popovers
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        const syncOverlay = document.getElementById("syncModalOverlay");
+        if (syncOverlay) syncOverlay.classList.remove("open");
+        const popover = document.getElementById("versePopover");
+        if (popover) popover.classList.remove("open");
+        const drawer = document.getElementById("bookSidebarDrawer");
+        const backdrop = document.getElementById("bookDrawerBackdrop");
+        if (drawer) drawer.classList.remove("open");
+        if (backdrop) backdrop.classList.remove("open");
+      }
+    });
 
     applyThemeAndFont();
     detectServer();

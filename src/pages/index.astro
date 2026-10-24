@@ -12,14 +12,14 @@ const chapterObj = book.chapters[0];
   title="Biblija 365 & Offline Pretraživač (Zagrebačka / Jeruzalemska Biblija)"
   activeNav="reader"
 >
-  <div id="resumeReadingBar" class="active-plan-banner" style="display:none;margin-bottom:1rem;">
-    <div>
-      <span class="badge">Nastavi čitanje</span>
-      <strong id="resumeReadingLabel" style="margin-left:0.5rem;"></strong>
+  <div id="resumeReadingBar" class="resume-reading-banner" style="display:none;">
+    <div class="resume-reading-info">
+      <span class="badge badge-accent">Nastavi čitanje</span>
+      <strong id="resumeReadingLabel" class="resume-reading-label"></strong>
     </div>
-    <div style="display:flex;gap:0.4rem;">
-      <a id="resumeReadingLink" href="/" class="icon-btn" style="background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none;">
-        Nastavi gdje si stao →
+    <div class="resume-reading-actions">
+      <a id="resumeReadingLink" href="/" class="icon-btn btn-accent" style="text-decoration:none;">
+        📖 Nastavi gdje si stao →
       </a>
       <a href="/plan/" class="icon-btn" style="text-decoration:none;">🗓️ Biblija 365</a>
     </div>
@@ -31,5 +31,7 @@ const chapterObj = book.chapters[0];
     chapterObj={chapterObj}
     prevUrl={null}
     nextUrl="/knjiga-postanka/2/"
+    prevLabel={null}
+    nextLabel="Post 2"
   />
 </BaseLayout>

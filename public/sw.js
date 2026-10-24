@@ -1,4 +1,4 @@
-const CACHE_NAME = "biblija365-astro-v3";
+const CACHE_NAME = "biblija365-astro-v4";
 const PRECACHE_ASSETS = [
   "/",
   "/plan/",
@@ -26,15 +26,8 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(
     (async () => {
       const keys = await caches.keys();
-      const hadOldCache = keys.some((k) => k !== CACHE_NAME);
       await Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k)));
       await self.clients.claim();
-      if (hadOldCache) {
-        const windowClients = await self.clients.matchAll({ type: "window" });
-        for (const client of windowClients) {
-          client.navigate("/");
-        }
-      }
     })()
   );
 });

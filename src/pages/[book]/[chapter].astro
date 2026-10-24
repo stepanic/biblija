@@ -8,13 +8,15 @@ export function getStaticPaths() {
   const payloads = books.map((b) => getBookPayload(b.order));
 
   // Build flat list of all 1,329 chapters for prev/next navigation
-  const flat: Array<{ bookIdx: number; chIdx: number; url: string }> = [];
+  const flat: Array<{ bookIdx: number; chIdx: number; url: string; label: string }> = [];
   payloads.forEach((bp, bIdx) => {
     bp.chapters.forEach((ch, cIdx) => {
+      const chLbl = ch.chapter === 0 ? "Proslov" : String(ch.chapter);
       flat.push({
         bookIdx: bIdx,
         chIdx: cIdx,
         url: `/${bp.id}/${ch.chapter}/`,
+        label: `${bp.abbr} ${chLbl}`,
       });
     });
   });
@@ -22,8 +24,8 @@ export function getStaticPaths() {
   return flat.map((item, idx) => {
     const bp = payloads[item.bookIdx];
     const chObj = bp.chapters[item.chIdx];
-    const prevUrl = idx > 0 ? flat[idx - 1].url : null;
-    const nextUrl = idx + 1 < flat.length ? flat[idx + 1].url : null;
+    const prevItem = idx > 0 ? flat[idx - 1] : null;
+    const nextItem = idx + 1 < flat.length ? flat[idx + 1] : null;
 
     return {
       params: {
@@ -33,14 +35,16 @@ export function getStaticPaths() {
       props: {
         book: bp,
         chapterObj: chObj,
-        prevUrl,
-        nextUrl,
+        prevUrl: prevItem ? prevItem.url : null,
+        nextUrl: nextItem ? nextItem.url : null,
+        prevLabel: prevItem ? prevItem.label : null,
+        nextLabel: nextItem ? nextItem.label : null,
       },
     };
   });
 }
 
-const { book, chapterObj, prevUrl, nextUrl } = Astro.props;
+const { book, chapterObj, prevUrl, nextUrl, prevLabel, nextLabel } = Astro.props;
 const books = getAllBooks();
 
 const chTitle = chapterObj.chapter === 0 ? "Proslov" : `${chapterObj.chapter}. poglavlje`;
@@ -58,5 +62,7 @@ const previewVerses = chapterObj.verses
     chapterObj={chapterObj}
     prevUrl={prevUrl}
     nextUrl={nextUrl}
+    prevLabel={prevLabel}
+    nextLabel={nextLabel}
   />
 </BaseLayout>

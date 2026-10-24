@@ -7,16 +7,16 @@ interface Props {
 
 const {
   title,
-  description = "Cjeloviti hrvatski katolički prijevod Svetoga pisma (Zagrebačka / Jeruzalemska Biblija, 73 knjige, 35.394 retka) uz program čitanja Biblija kroz 365 dana i brzi offline pretraživač.",
+  description = "Cjeloviti hrvatski katolički prijevod Svetoga pisma (Zagrebačka / Jeruzalemska Biblija, 73 knjige, 1.329 poglavlja, 35.410 redaka) uz program čitanja Biblija kroz 365 dana, brzi offline pretraživač i višekorisničku sinkronizaciju.",
   activeNav = "reader",
 } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="hr" data-theme="light">
+<html lang="hr" data-theme="light" data-reading-mode="paragraphs">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>{title}</title>
   <meta name="description" content={description} />
   <meta property="og:title" content={title} />
@@ -30,7 +30,9 @@ const {
       try {
         var t = localStorage.getItem("biblija_theme") || "light";
         var fs = localStorage.getItem("biblija_fontsize") || "19";
+        var rm = localStorage.getItem("biblija_reading_mode") || "paragraphs";
         document.documentElement.setAttribute("data-theme", t);
+        document.documentElement.setAttribute("data-reading-mode", rm);
         document.documentElement.style.setProperty("--font-size-reading", fs + "px");
       } catch (_) {}
     })();
@@ -39,29 +41,52 @@ const {
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-      <div style="display:flex;align-items:center;gap:0.6rem;">
-        <a href="/" class="brand">
-          <span>Biblija KS</span>
-          <span class="brand-badge">365 &amp; Offline</span>
+      <div class="brand-group">
+        <a href="/" class="brand" aria-label="Biblija KS početna stranica">
+          <span class="brand-icon" aria-hidden="true">📖</span>
+          <span class="brand-text">
+            <span class="brand-title">Biblija KS</span>
+            <span class="brand-subtitle">Zagrebačka • 73 knjige</span>
+          </span>
+          <span class="brand-badge">365</span>
         </a>
-        <span class="engine-pill" id="engineStatusPill" title="Način rada">⚡ Astro SSG + Offline</span>
+        <span class="engine-pill" id="engineStatusPill" title="Aktivni pogon i offline podrška">⚡ Astro SSG + Offline</span>
       </div>
 
       <nav class="nav-tabs" aria-label="Glavna navigacija">
-        <a href="/" class={`nav-tab ${activeNav === "reader" ? "active" : ""}`} style="text-decoration:none;">📖 Čitanje</a>
-        <a href="/plan/" class={`nav-tab ${activeNav === "plan365" ? "active" : ""}`} style="text-decoration:none;">🗓️ Biblija 365</a>
-        <a href="/pretraga/" class={`nav-tab ${activeNav === "search" ? "active" : ""}`} style="text-decoration:none;">🔍 Pretraživač</a>
-        <a href="/oznake/" class={`nav-tab ${activeNav === "notes" ? "active" : ""}`} style="text-decoration:none;">🔖 Oznake &amp; Audit</a>
+        <a href="/" class={`nav-tab ${activeNav === "reader" ? "active" : ""}`}>
+          <span class="nav-tab-icon" aria-hidden="true">📖</span>
+          <span>Čitanje</span>
+        </a>
+        <a href="/plan/" class={`nav-tab ${activeNav === "plan365" ? "active" : ""}`}>
+          <span class="nav-tab-icon" aria-hidden="true">🗓️</span>
+          <span>Biblija 365</span>
+        </a>
+        <a href="/pretraga/" class={`nav-tab ${activeNav === "search" ? "active" : ""}`}>
+          <span class="nav-tab-icon" aria-hidden="true">🔍</span>
+          <span>Pretraživač</span>
+        </a>
+        <a href="/oznake/" class={`nav-tab ${activeNav === "notes" ? "active" : ""}`}>
+          <span class="nav-tab-icon" aria-hidden="true">🔖</span>
+          <span>Oznake &amp; Audit</span>
+        </a>
       </nav>
 
       <div class="toolbar-controls">
-        <button class="sync-btn" id="btnOpenSyncModal" title="Prijava s PIN-om / Promjena korisnika / Sinkronizacija uređaja">
+        <button class="sync-btn" id="btnOpenSyncModal" title="Korisnički profil, brza promjena korisnika i sinkronizacija uređaja">
           <span class="sync-dot" id="syncStatusDot"></span>
           <span id="syncBtnLabel">👤 Prijava / Sync</span>
         </button>
-        <button class="icon-btn" id="btnFontDec" title="Smanji tekst">A−</button>
-        <button class="icon-btn" id="btnFontInc" title="Povećaj tekst">A+</button>
-        <button class="icon-btn" id="btnThemeToggle" title="Promijeni temu (Svijetla / Sepia / Tamna)">◐ Tema</button>
+
+        <div class="typography-pill-group" role="group" aria-label="Postavke prikaza i teksta">
+          <button class="icon-btn" id="btnFontDec" title="Smanji veličinu slova">A−</button>
+          <span class="font-size-indicator" id="fontSizeIndicator" title="Trenutna veličina teksta">19</span>
+          <button class="icon-btn" id="btnFontInc" title="Povećaj veličinu slova">A+</button>
+          <button class="icon-btn" id="btnThemeToggle" title="Promijeni temu (Svijetla / Sepia / Tamna)">
+            <span id="themeToggleIcon">☀️</span>
+            <span class="hide-sm" id="themeToggleLabel">Tema</span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -70,25 +95,56 @@ const {
     <slot />
   </main>
 
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav" aria-label="Mobilna navigacija">
+    <a href="/" class={`mobile-nav-item ${activeNav === "reader" ? "active" : ""}`}>
+      <span class="mobile-nav-icon">📖</span>
+      <span>Čitanje</span>
+    </a>
+    <a href="/plan/" class={`mobile-nav-item ${activeNav === "plan365" ? "active" : ""}`}>
+      <span class="mobile-nav-icon">🗓️</span>
+      <span>Biblija 365</span>
+    </a>
+    <a href="/pretraga/" class={`mobile-nav-item ${activeNav === "search" ? "active" : ""}`}>
+      <span class="mobile-nav-icon">🔍</span>
+      <span>Pretraga</span>
+    </a>
+    <a href="/oznake/" class={`mobile-nav-item ${activeNav === "notes" ? "active" : ""}`}>
+      <span class="mobile-nav-icon">🔖</span>
+      <span>Oznake</span>
+    </a>
+  </nav>
+
   <!-- Multi-User & Multi-Device Sync Modal -->
   <div id="syncModalOverlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="syncModalTitle">
     <div class="modal-card">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
-        <h3 id="syncModalTitle" style="margin:0;font-size:1.15rem;">☁️ Sinkronizacija uređaja (SaaS / Cloud)</h3>
-        <button class="icon-btn" id="btnCloseSyncModal" title="Zatvori">✕</button>
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-accent">Višekorisnički Cloud Sync</span>
+          <h3 id="syncModalTitle" class="modal-title">☁️ Korisnički profil &amp; Sinkronizacija</h3>
+        </div>
+        <button class="icon-btn modal-close-btn" id="btnCloseSyncModal" title="Zatvori (Esc)">✕</button>
+      </div>
+
+      <!-- Saved Profiles Quick Switcher (shown whenever 1+ profiles exist on device) -->
+      <div id="syncSavedProfilesSection" class="saved-profiles-box" style="display:none;">
+        <div class="saved-profiles-header">
+          <span>👥 Spremljeni profili na ovom uređaju (1-klik promjena):</span>
+        </div>
+        <div id="syncSavedProfilesList" class="saved-profiles-list"></div>
       </div>
 
       <!-- Logged Out View -->
       <div id="syncLoggedOutView">
-        <p style="font-size:0.86rem;color:var(--text-muted);margin:0 0 0.85rem;">
-          Čitaj na mobitelu, tabletu i laptopu uz uvijek usklađen napredak kroz <strong>Bibliju 365</strong>, zadnje otvoreno poglavlje i osobne bilješke. Bez e-maila: odaberi svoj <strong>Sync kod (korisničko ime)</strong> i <strong>PIN</strong>.
+        <p class="modal-desc">
+          Čitaj na mobitelu, tabletu i računalu uz uvijek usklađen napredak kroz <strong>Bibliju 365</strong>, zadnje čitano poglavlje i osobne bilješke. Bez e-maila — upiši svoj <strong>Sync kod</strong> i <strong>PIN</strong>.
         </p>
 
-        <div style="margin-bottom:0.65rem;">
-          <label for="syncUserKeyInput" style="display:block;font-size:0.8rem;font-weight:600;margin-bottom:0.25rem;">
+        <div class="form-field">
+          <label for="syncUserKeyInput" class="form-label">
             Korisničko ime / Sync kod (min. 3 znaka)
           </label>
-          <div style="display:flex;gap:0.4rem;">
+          <div class="input-action-row">
             <input
               type="text"
               id="syncUserKeyInput"
@@ -97,31 +153,33 @@ const {
               placeholder="npr. marko-365 ili obitelj-horvat"
               autocomplete="username"
             />
-            <button type="button" class="icon-btn" id="btnGenerateSyncKey" title="Generiraj nasumični Sync kod">🎲 Generiraj</button>
+            <button type="button" class="icon-btn" id="btnGenerateSyncKey" title="Generiraj nasumični Sync kod i PIN">🎲 Generiraj</button>
           </div>
         </div>
 
-        <div style="margin-bottom:0.85rem;">
-          <label for="syncPinInput" style="display:block;font-size:0.8rem;font-weight:600;margin-bottom:0.25rem;">
+        <div class="form-field">
+          <label for="syncPinInput" class="form-label">
             Osobni PIN (min. 4 znaka)
           </label>
-          <input
-            type="password"
-            id="syncPinInput"
-            class="book-filter-input"
-            style="margin:0;"
-            placeholder="Upiši PIN (npr. 2407)"
-            autocomplete="current-password"
-          />
+          <div class="input-action-row">
+            <input
+              type="password"
+              id="syncPinInput"
+              class="book-filter-input"
+              style="margin:0;flex:1;"
+              placeholder="Upiši PIN (npr. 2407)"
+              autocomplete="current-password"
+            />
+            <button type="button" class="icon-btn" id="btnTogglePinVisibility" title="Prikaži ili sakrij PIN">👁️</button>
+          </div>
         </div>
 
-        <div id="syncAuthMessage" style="display:none;font-size:0.82rem;padding:0.5rem 0.65rem;border-radius:6px;margin-bottom:0.75rem;"></div>
+        <div id="syncAuthMessage" class="sync-auth-msg" style="display:none;"></div>
 
         <button
           type="button"
-          class="icon-btn"
+          class="btn-primary-full"
           id="btnConnectSync"
-          style="width:100%;padding:0.6rem;background:var(--accent);color:#fff;border-color:var(--accent);font-size:0.92rem;"
         >
           ☁️ Poveži uređaj i sinkroniziraj
         </button>
@@ -129,34 +187,31 @@ const {
 
       <!-- Logged In View -->
       <div id="syncLoggedInView" style="display:none;">
-        <div style="background:var(--bg-muted);border:1px solid var(--border);border-radius:8px;padding:0.85rem;margin-bottom:0.85rem;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.35rem;">
-            <span style="font-size:0.8rem;color:var(--text-muted);">Aktivni račun / Sync kod:</span>
-            <span class="badge" style="background:#4caf50;color:#fff;">✓ Povezano</span>
+        <div class="active-profile-card">
+          <div class="active-profile-top">
+            <div>
+              <span class="active-profile-kicker">Aktivni korisnički profil</span>
+              <div class="active-profile-handle" id="syncActiveUserBadge">@korisnik</div>
+            </div>
+            <span class="badge badge-success">✓ Povezano</span>
           </div>
-          <div style="font-size:1.1rem;font-weight:700;color:var(--accent);" id="syncActiveUserBadge">@korisnik</div>
-          <div style="font-size:0.78rem;color:var(--text-muted);margin-top:0.35rem;" id="syncLastTimeLabel">Zadnja sinkronizacija: upravo sada</div>
-          <div style="font-size:0.82rem;margin-top:0.45rem;" id="syncStatsSummary"></div>
+          <div class="active-profile-time" id="syncLastTimeLabel">Zadnja sinkronizacija: upravo sada</div>
+          <div class="sync-stats-grid" id="syncStatsSummary"></div>
         </div>
 
-        <p style="font-size:0.82rem;color:var(--text-muted);margin:0 0 0.85rem;">
-          Za povezivanje drugog uređaja (npr. mobitela ili laptopa), otvori ovu aplikaciju na tom uređaju, klikni na <strong>☁️ Sinkronizacija</strong> i upiši isti Sync kod i PIN.
+        <p class="modal-desc" style="margin-bottom:0.9rem;">
+          Za povezivanje drugog uređaja (mobitela ili laptopa), otvori aplikaciju na tom uređaju, klikni na <strong>👤 Profil / Sync</strong> i upiši isti Sync kod i PIN.
         </p>
 
-        <div style="display:flex;flex-direction:column;gap:0.45rem;">
-          <button
-            type="button"
-            class="icon-btn"
-            id="btnSyncNow"
-            style="background:var(--accent);color:#fff;border-color:var(--accent);padding:0.55rem;"
-          >
+        <div class="modal-actions-stack">
+          <button type="button" class="btn-primary-full" id="btnSyncNow">
             🔄 Sinkroniziraj sada
           </button>
-          <button type="button" class="icon-btn" id="btnCopySyncInfo" style="padding:0.5rem;">
-            📋 Kopiraj upute za povezivanje drugog uređaja
+          <button type="button" class="icon-btn modal-secondary-btn" id="btnCopySyncInfo">
+            📋 Kopiraj podatke za povezivanje drugog uređaja
           </button>
-          <button type="button" class="icon-btn" id="btnLogoutSync" style="padding:0.55rem;color:#c62828;border-color:#e57373;">
-            🚪 Odjavi se / Promijeni korisnika
+          <button type="button" class="icon-btn modal-danger-btn" id="btnLogoutSync">
+            🚪 Odjavi se / Prijavi drugog korisnika
           </button>
         </div>
       </div>
@@ -164,27 +219,31 @@ const {
   </div>
 
   <!-- Global Verse Action Popover -->
-  <div id="versePopover" class="verse-popover">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.55rem;">
-      <strong id="popoverRefTitle">Post 1,1</strong>
-      <div style="display:flex;gap:0.4rem;">
+  <div id="versePopover" class="verse-popover" role="dialog" aria-label="Označavanje stiha i bilješka">
+    <div class="popover-header">
+      <div>
+        <span class="badge badge-accent" style="margin-bottom:0.15rem;">Odabrani stih</span>
+        <strong id="popoverRefTitle" class="popover-ref-title">Post 1,1</strong>
+      </div>
+      <div style="display:flex;gap:0.35rem;align-items:center;">
         <button class="icon-btn" id="btnCopyVerse">📋 Kopiraj citat</button>
-        <button class="icon-btn" id="btnClosePopover">✕</button>
+        <button class="icon-btn" id="btnClosePopover" title="Zatvori">✕</button>
       </div>
     </div>
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:0.75rem;margin-bottom:0.55rem;flex-wrap:wrap;">
+    <div id="popoverVersePreview" class="popover-verse-preview"></div>
+    <div class="popover-color-row">
       <div class="color-dots">
-        <span style="font-size:0.8rem;color:var(--text-muted);">Boja oznake:</span>
-        <button class="color-dot gold" data-color="gold" title="Zlatna"></button>
-        <button class="color-dot green" data-color="green" title="Zelena"></button>
-        <button class="color-dot blue" data-color="blue" title="Plava"></button>
-        <button class="color-dot pink" data-color="pink" title="Ružičasta"></button>
-        <button class="icon-btn" id="btnRemoveBookmark" style="font-size:0.75rem;padding:0.2rem 0.45rem;">Ukloni</button>
+        <span class="popover-label">Boja oznake:</span>
+        <button class="color-dot gold" data-color="gold" title="Zlatna oznaka"></button>
+        <button class="color-dot green" data-color="green" title="Zelena oznaka"></button>
+        <button class="color-dot blue" data-color="blue" title="Plava oznaka"></button>
+        <button class="color-dot pink" data-color="pink" title="Ružičasta oznaka"></button>
       </div>
+      <button class="icon-btn popover-remove-btn" id="btnRemoveBookmark">🗑 Ukloni oznaku</button>
     </div>
-    <div style="display:flex;gap:0.4rem;">
-      <input type="text" id="popoverNoteInput" class="book-filter-input" style="margin:0;flex:1;" placeholder="Dodaj osobnu bilješku uz ovaj redak..." />
-      <button class="icon-btn" id="btnSaveNote" style="background:var(--accent);color:#fff;border-color:var(--accent);">Spremi</button>
+    <div class="popover-note-row">
+      <input type="text" id="popoverNoteInput" class="book-filter-input" style="margin:0;flex:1;" placeholder="Dodaj osobnu bilješku ili razmatranje uz ovaj redak..." />
+      <button class="icon-btn btn-accent" id="btnSaveNote">Spremi</button>
     </div>
   </div>
 

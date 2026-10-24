@@ -3,6 +3,41 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getPlansIndex } from "../../lib/bible";
 
 const plans = getPlansIndex();
+const plans365 = plans.filter((p: any) => p.category === "biblija-365");
+const plansThematic = plans.filter((p: any) => p.category !== "biblija-365");
+
+const SHORT_NAMES: Record<string, { badge: string; name: string; sub: string }> = {
+  "mb-tematski-365": {
+    badge: "Muževni budite • #1",
+    name: "Tematski 365 (Velika avantura)",
+    sub: "12 razdoblja povijesti spasenja + Psalmi i Izreke",
+  },
+  "mb-usporedni-365": {
+    badge: "Muževni budite • #2",
+    name: "Usporedni 365 (SZ + Ps + NZ)",
+    sub: "Svaki dan Stari zavjet, Psalmi/Mudrosne i Novi zavjet",
+  },
+  "mb-linearni-365": {
+    badge: "Muževni budite • #3",
+    name: "Linearni 365 (Post → Otk)",
+    sub: "Redom od Knjige Postanka do Otkrivenja",
+  },
+  "biblija-365-visetracni": {
+    badge: "Algoritamski 365",
+    name: "Višetračni 365",
+    sub: "Dinamična kombinacija SZ, NZ i Mudrosnih knjiga",
+  },
+  "biblija-365-kanonski": {
+    badge: "Algoritamski 365",
+    name: "Kanonski 365",
+    sub: "Ravnomjerno ~97 redaka dnevno kroz 73 knjige",
+  },
+  "biblija-365-kronoloski": {
+    badge: "Algoritamski 365",
+    name: "Kronološki 365",
+    sub: "Slijed povijesnih događaja od Stvaranja do Crkve",
+  },
+};
 ---
 
 <BaseLayout
@@ -11,44 +46,89 @@ const plans = getPlansIndex();
   activeNav="plan365"
 >
   <section id="planPageRoot">
-    <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.8rem;">
+    <!-- Plan Overview & Selector Card -->
+    <div class="card plan-header-card">
+      <div class="plan-top-row">
         <div>
-          <h1 style="margin:0 0 0.25rem;font-size:1.5rem;">Program čitanja: Biblija 365</h1>
-          <p style="margin:0;color:var(--text-muted);font-size:0.9rem;">
-            Odaberi 365-dnevni raspored kroz cijelu katoličku Bibliju (73 knjige) ili kraće tematske planove.
+          <span class="badge badge-accent">18 strukturiranih rasporeda čitanja</span>
+          <h1 class="page-hero-title">Program čitanja: Biblija 365</h1>
+          <p class="page-hero-sub">
+            Odaberi jedan od šest 365-dnevnih programa kroz svih 73 knjiga katoličkog kanona ili kraći tematski izazov (15–90 dana).
           </p>
         </div>
-        <select id="planSelector" class="search-select" style="font-weight:600;min-width:300px;">
-          {plans.map((p: any) => (
-            <option value={p.id}>
-              {p.category === "biblija-365" ? "★ " : "• "}{p.title} ({p.days_count} dana)
-            </option>
-          ))}
-        </select>
+
+        <div class="plan-selector-wrap">
+          <label for="planSelector" class="form-label">Aktivni plan čitanja:</label>
+          <select id="planSelector" class="search-select plan-select-dropdown">
+            <optgroup label="★ Cjelovita Biblija kroz 365 dana (6 planova)">
+              {plans365.map((p: any) => (
+                <option value={p.id}>
+                  ★ {p.title} ({p.days_count} dana)
+                </option>
+              ))}
+            </optgroup>
+            <optgroup label="• Kraći tematski planovi (15–90 dana)">
+              {plansThematic.map((p: any) => (
+                <option value={p.id}>
+                  • {p.title} ({p.days_count} dana)
+                </option>
+              ))}
+            </optgroup>
+          </select>
+        </div>
       </div>
 
-      <p id="planDescription" style="margin:0.8rem 0 0.6rem;font-size:0.92rem;color:var(--text-muted);"></p>
-
-      <div class="progress-bar-outer">
-        <div id="planProgressBar" class="progress-bar-inner" style="width:0%;"></div>
+      <!-- Quick 365 Plan Switcher Pills -->
+      <div class="featured-plans-grid" role="tablist" aria-label="Brzi odabir 365-dnevnih planova">
+        {plans365.map((p: any) => {
+          const meta = SHORT_NAMES[p.id] || { badge: "Biblija 365", name: p.title, sub: "" };
+          return (
+            <button
+              type="button"
+              class="featured-plan-card"
+              data-plan-quick={p.id}
+            >
+              <span class="featured-plan-badge">{meta.badge}</span>
+              <strong class="featured-plan-name">{meta.name}</strong>
+              <span class="featured-plan-sub">{meta.sub}</span>
+            </button>
+          );
+        })}
       </div>
-      <div style="display:flex;justify-content:space-between;font-size:0.86rem;color:var(--text-muted);flex-wrap:wrap;gap:0.5rem;">
-        <span id="planProgressStats">Pročitano: 0 / 365 dana (0%)</span>
-        <span id="planNextSuggested">Sljedeći nepročitani dan: Dan 1</span>
+
+      <p id="planDescription" class="plan-description-box"></p>
+
+      <div class="plan-progress-panel">
+        <div class="plan-progress-labels">
+          <strong id="planProgressStats">Pročitano: 0 / 365 dana (0%)</strong>
+          <span id="planNextSuggested" class="plan-next-suggested">Sljedeći nepročitani dan: Dan 1</span>
+        </div>
+        <div class="progress-bar-outer">
+          <div id="planProgressBar" class="progress-bar-inner" style="width:0%;"></div>
+        </div>
       </div>
     </div>
 
-    <div id="currentDayHeroCard" class="card" style="border:2px solid var(--accent);"></div>
+    <!-- Today's Reading Hero Card -->
+    <div id="currentDayHeroCard" class="card current-day-hero-card"></div>
 
+    <!-- All Days Grid Card -->
     <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.6rem;">
-        <div style="display:flex;gap:0.4rem;">
-          <button class="filter-chip active" data-dayfilter="all" style="flex:none;padding:0.35rem 0.8rem;">Svi dani</button>
-          <button class="filter-chip" data-dayfilter="todo" style="flex:none;padding:0.35rem 0.8rem;">Nepročitani</button>
-          <button class="filter-chip" data-dayfilter="done" style="flex:none;padding:0.35rem 0.8rem;">Pročitani ✓</button>
+      <div class="days-toolbar">
+        <div class="days-filter-group">
+          <button class="filter-chip active" data-dayfilter="all">Svi dani</button>
+          <button class="filter-chip" data-dayfilter="todo">Nepročitani</button>
+          <button class="filter-chip" data-dayfilter="done">Pročitani ✓</button>
+          <button type="button" class="icon-btn" id="btnScrollToCurrentDay" title="Pronađi današnji dan u mreži">
+            🎯 Skoči na današnji dan
+          </button>
         </div>
-        <input type="search" id="daySearchInput" class="book-filter-input" style="max-width:260px;margin:0;" placeholder="Traži dan ili kraticu (npr. Dan 12, Iz)..." />
+        <input
+          type="search"
+          id="daySearchInput"
+          class="book-filter-input days-search-input"
+          placeholder="Traži dan ili kraticu (npr. Dan 12, Iz, Ps 23)..."
+        />
       </div>
       <div id="planDaysGrid" class="days-grid"></div>
     </div>

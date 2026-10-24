@@ -14,15 +14,17 @@ const crossErrata = audit.cross_source_errata_fixed || [];
   activeNav="notes"
 >
   <section id="notesPageRoot">
+    <!-- Personal Bookmarks & Notes Card -->
     <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.6rem;">
+      <div class="notes-header-row">
         <div>
-          <h1 style="margin:0 0 0.25rem;font-size:1.5rem;">Moje oznake i bilješke</h1>
-          <p style="margin:0;color:var(--text-muted);font-size:0.88rem;">
-            Klikni na bilo koji redak tijekom čitanja za označavanje bojom ili dodavanje osobne bilješke.
+          <span class="badge badge-accent">Osobni dnevnik čitanja • LWW Sync</span>
+          <h1 class="page-hero-title">Moje oznake i bilješke</h1>
+          <p class="page-hero-sub">
+            Klikni na bilo koji redak tijekom čitanja za označavanje bojom ili spremanje osobne bilješke. Sve promjene se automatski sinkroniziraju između tvojih uređaja.
           </p>
         </div>
-        <div style="display:flex;gap:0.4rem;">
+        <div class="notes-backup-actions">
           <button class="icon-btn" id="btnExportData">⬇ Izvezi JSON backup</button>
           <label class="icon-btn" style="cursor:pointer;">
             ⬆ Uvezi JSON
@@ -30,42 +32,54 @@ const crossErrata = audit.cross_source_errata_fixed || [];
           </label>
         </div>
       </div>
-      <div id="bookmarksListContainer" style="margin-top:1rem;"></div>
+
+      <div class="bookmarks-filter-row" id="bookmarksFilterBar">
+        <button type="button" class="filter-chip active" data-bmfilter="all">Sve oznake</button>
+        <button type="button" class="filter-chip" data-bmfilter="notes">✎ S bilješkom</button>
+        <button type="button" class="filter-chip" data-bmfilter="gold">🟡 Zlatna</button>
+        <button type="button" class="filter-chip" data-bmfilter="green">🟢 Zelena</button>
+        <button type="button" class="filter-chip" data-bmfilter="blue">🔵 Plava</button>
+        <button type="button" class="filter-chip" data-bmfilter="pink">🌸 Ružičasta</button>
+      </div>
+
+      <div id="bookmarksListContainer" class="bookmarks-grid"></div>
     </div>
 
+    <!-- Audit & Cross-Source Integrity Report Card -->
     <div class="card">
-      <h2 style="margin:0 0 0.35rem;">Lokalni Diff &amp; Cross-Source Audit izvještaj</h2>
-      <p style="margin:0 0 0.8rem;color:var(--text-muted);font-size:0.9rem;">
-        Rezultati automatske provjere svih 73 knjiga, 1.329 poglavlja i <strong>{audit.total_verses.toLocaleString("hr-HR")}</strong> redaka između <code>biblija.ks.hr</code> weba, mobilnog API-ja i neovisnog USFM/CrossWire prijepisa Zagrebačke Biblije. Svi dolje navedeni problemi su <strong>automatski ispravljeni i rekonstruirani</strong> u našem determinističkom JSON katalogu (<code>data/errata.json</code>) i SQLite bazi (<code>data/biblija.db</code>).
+      <span class="badge badge-accent">Verifikacija teksta i izvora</span>
+      <h2 style="margin:0.25rem 0 0.35rem;font-size:1.35rem;">Lokalni Diff &amp; Cross-Source Audit izvještaj</h2>
+      <p style="margin:0 0 1rem;color:var(--text-muted);font-size:0.9rem;">
+        Rezultati automatske provjere svih 73 knjiga, 1.329 poglavlja i <strong>{audit.total_verses.toLocaleString("hr-HR")}</strong> redaka između <code>biblija.ks.hr</code> weba, mobilnog API-ja i neovisnog USFM/CrossWire prijepisa Zagrebačke Biblije. Svi dolje navedeni problemi su <strong>automatski ispravljeni i rekonstruirani</strong> u determinističkom JSON katalogu (<code>data/errata.json</code>) i SQLite bazi (<code>data/biblija.db</code>).
       </p>
 
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.75rem;margin-bottom:1.1rem;">
-        <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
-          <div style="font-size:0.78rem;color:var(--text-muted);">Ukupno provjerenih redaka</div>
-          <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">{audit.total_verses.toLocaleString("hr-HR")}</div>
-          <div style="font-size:0.78rem;color:var(--text-muted);">73 knjige • 1.329 poglavlja (s Proslovom Siraha)</div>
+      <div class="audit-metrics-grid">
+        <div class="audit-metric-box">
+          <div class="audit-metric-label">Ukupno provjerenih redaka</div>
+          <div class="audit-metric-val">{audit.total_verses.toLocaleString("hr-HR")}</div>
+          <div class="audit-metric-sub">73 knjige • 1.329 poglavlja (s Proslovom Siraha)</div>
         </div>
-        <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
-          <div style="font-size:0.78rem;color:var(--text-muted);">Rekonstruirani oštećeni stihovi (Errata)</div>
-          <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">{crossErrata.length} stihova</div>
-          <div style="font-size:0.78rem;color:var(--text-muted);">Tit 1,1–2, Dn 3,91–100, Job 25 &amp; 27, OCR</div>
+        <div class="audit-metric-box">
+          <div class="audit-metric-label">Rekonstruirani stihovi (Errata)</div>
+          <div class="audit-metric-val">{crossErrata.length} stihova</div>
+          <div class="audit-metric-sub">Tit 1,1–2, Dn 3,91–100, Job 25 &amp; 27, OCR</div>
         </div>
-        <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
-          <div style="font-size:0.78rem;color:var(--text-muted);">Web vs. Mobilni API razlike</div>
-          <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">{audit.web_vs_mobile_api_discrepancies.length} redaka</div>
-          <div style="font-size:0.78rem;color:var(--text-muted);">Pozicija broja retka i uputnica (popravljeno)</div>
+        <div class="audit-metric-box">
+          <div class="audit-metric-label">Web vs. Mobilni API razlike</div>
+          <div class="audit-metric-val">{audit.web_vs_mobile_api_discrepancies.length} redaka</div>
+          <div class="audit-metric-sub">Pozicija broja retka i uputnica (popravljeno)</div>
         </div>
-        <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
-          <div style="font-size:0.78rem;color:var(--text-muted);">Vraćeno skriveno poglavlje</div>
-          <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">Sirah 0 (Proslov)</div>
-          <div style="font-size:0.78rem;color:var(--text-muted);">8 redaka nedostupnih u WP bible_chapter</div>
+        <div class="audit-metric-box">
+          <div class="audit-metric-label">Vraćeno skriveno poglavlje</div>
+          <div class="audit-metric-val">Sirah 0 (Proslov)</div>
+          <div class="audit-metric-sub">8 redaka nedostupnih u WP bible_chapter</div>
         </div>
       </div>
 
-      <h4 style="margin:0.8rem 0 0.4rem;">1. Rekonstruirani izgubljeni i oštećeni stihovi u bazi <code>biblija.ks.hr</code> (<code>data/errata.json</code>)</h4>
-      <ul style="font-size:0.88rem;margin-top:0.2rem;line-height:1.6;">
+      <h4 style="margin:1.1rem 0 0.4rem;">1. Rekonstruirani izgubljeni i oštećeni stihovi u bazi <code>biblija.ks.hr</code> (<code>data/errata.json</code>)</h4>
+      <ul class="audit-list">
         <li>
-          <strong>Poslanica Titu 1,1–2 (<a href="/poslanica-titu/1/#v-1">Tit 1,1–2</a>):</strong> U službenoj bazi <code>biblija.ks.hr</code> stih <code>Tit 1,1</code> slučajno je pregažen završetkom 2. stiha (<code>"On koji ne laže,"</code>), dok je uvodni apostolski pozdrav (<em>„Pavao, sluga Božji i apostol Isusa Krista poradi vjere izabranika Božjih i spoznanja istine usmjerene k pobožnosti"</em>) potpuno izgubljen! Također su u <a href="/poslanica-titu/1/#v-5">Tit 1,5</a> i <a href="/poslanica-titu/1/#v-10">Tit 1,10</a> međunaslovi bili zalijepljeni u tekst stiha bez <code>&lt;h4&gt;</code> oznake. Sve je rekonstruirano i popravljeno.
+          <strong>Poslanica Titu 1,1–2 (<a href="/poslanica-titu/1/#v-1">Tit 1,1–2</a>):</strong> U službenoj bazi <code>biblija.ks.hr</code> stih <code>Tit 1,1</code> slučajno je pregažen završetkom 2. stiha (<code>"On koji ne laže,"</code>), dok je uvodni apostolski pozdrav (<em>„Pavao, sluga Božji i apostol Isusa Krista poradi vjere izabranika Božjih i spoznanja istine usmjerene k pobožnosti"</em>) potpuno izgubljen. Također su u <a href="/poslanica-titu/1/#v-5">Tit 1,5</a> i <a href="/poslanica-titu/1/#v-10">Tit 1,10</a> međunaslovi bili zalijepljeni u tekst stiha bez <code>&lt;h4&gt;</code> oznake. Sve je rekonstruirano i popravljeno.
         </li>
         <li>
           <strong>Knjiga o Danielu 3,91–100 (<a href="/daniel/3/#v-91">Dn 3,91–100</a>):</strong> Na <code>biblija.ks.hr</code> 3. poglavlje Daniela prekida se na 90. stihu (nedostaje cijeli završetak poglavlja od 10 stihova u kojima Nabukodonozor izvodi Šadraka, Mešaka i Abed Nega iz užarene peći i priznaje Boga Svevišnjega). Svih 10 stihova vraćeno je u <a href="/daniel/3/#v-91">Dn 3,91–100</a>.
@@ -78,13 +92,13 @@ const crossErrata = audit.cross_source_errata_fixed || [];
         </li>
       </ul>
 
-      <h4 style="margin:0.9rem 0 0.4rem;">2. Otkriće o eBible.org (<code>hrv_usfm</code>) / CrossWire (<code>CroSaric</code>) izvorima</h4>
-      <p style="font-size:0.86rem;color:var(--text-muted);margin:0.2rem 0 0.8rem;">
+      <h4 style="margin:1rem 0 0.4rem;">2. Otkriće o eBible.org (<code>hrv_usfm</code>) / CrossWire (<code>CroSaric</code>) izvorima</h4>
+      <p style="font-size:0.86rem;color:var(--text-muted);margin:0.2rem 0 0.9rem;line-height:1.6;">
         Unakrsnom usporedbom svih 73 knjiga utvrđeno je da poznati međunarodni repozitoriji <code>eBible.org (hrv)</code> i <code>CrossWire SWORD (CroSaric)</code> — koji su na internetu desetljećima deklarirani kao <em>„prijevod Ivana Ev. Šarića (1941./42.)"</em> — zapravo sadrže <strong>99,8% identičan tekst Zagrebačke Biblije (Kršćanska sadašnjost, 1968.)</strong> (s tisućama pojavljivanja imena <em>Jahve</em> i prijevodom Novog zavjeta Bonaventure Dude i Jerka Fućka), ali uz brojne greške starog OCR-a i odrezane stihove iz <em>The Unbound Bible</em> projekta (npr. odrezani <code>Post 47,4</code>, <code>Izl 36,37</code>, <code>Jr 25,2</code> te zaostali ukrajinski komentar u <code>2 Mak 15,39</code>).
       </p>
 
-      <h4 style="margin:0.9rem 0 0.4rem;">3. Primjeri od 428 redaka gdje se Web i Mobilni API razlikuju (klikni za skok)</h4>
-      <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:0.8rem;">
+      <h4 style="margin:1rem 0 0.4rem;">3. Primjeri od 428 redaka gdje se Web i Mobilni API razlikuju (klikni za skok)</h4>
+      <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:0.9rem;">
         {sampleDiscrepancies.map((d: any) => (
           <a
             href={`/${d.book_slug}/${d.chapter}/#v-${d.verse}`}
@@ -96,10 +110,10 @@ const crossErrata = audit.cross_source_errata_fixed || [];
         ))}
       </div>
 
-      <h4 style="margin:0.9rem 0 0.4rem;">4. Detektirana preskočena poglavlja u službenim KS planovima čitanja</h4>
-      <div style="max-height:220px;overflow-y:auto;font-size:0.84rem;border:1px solid var(--border);border-radius:6px;padding:0.6rem;">
+      <h4 style="margin:1rem 0 0.4rem;">4. Detektirana preskočena poglavlja u službenim KS planovima čitanja</h4>
+      <div class="plan-bugs-scroll">
         {planBugs.map((b: any) => (
-          <div style="margin-bottom:0.25rem;">
+          <div style="margin-bottom:0.3rem;">
             • <strong>{b.plan_title}</strong> → u knjizi <em>{b.book}</em> preskočena poglavlja: <code>{b.missing_chapters.join(", ")}</code>
           </div>
         ))}
