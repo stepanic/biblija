@@ -31,7 +31,7 @@
     1. Pročitani dani u bilo kojem od 18 planova čitanja (`sync_progress`),
     2. Aktivni plan i zadnje otvoreno poglavlje (*Nastavi čitanje*, `sync_users`),
     3. Osobne oznake u boji i bilješke uz retke (`sync_bookmarks`).
-* **🔍 Provjera integriteta i rekonstrukcija oštećenih stihova ([`AUDIT.md`](AUDIT.md) & [`data/errata.json`](data/errata.json)):**
+* **🔍 Provjera integriteta i rekonstrukcija oštećenih stihova ([`AUDIT.md`](AUDIT.md), [`docs/2026-10-25-arhitektura-i-audit-izvora.md`](docs/2026-10-25-arhitektura-i-audit-izvora.md) & [`data/errata.json`](data/errata.json)):**
   * Automatskim diff checkom između web sučelja `biblija.ks.hr`, mobilnog REST API-ja i neovisnog USFM/CrossWire prijepisa otkriveno je i u ovom katalogu **ispravljeno**:
     * **Rekonstruirano 26 oštećenih ili izgubljenih stihova u bazi `biblija.ks.hr` ([`data/errata.json`](data/errata.json)):** vraćen pregaženi uvodni stih Poslanice Titu (`Tit 1,1–2`) i izdvojeni međunaslovi u `Tit 1,5` i `1,10`, vraćeno **10 odrezanih stihova na kraju 3. poglavlja Daniela (`Dn 3,91–100`)**, te vraćeni prazni i ispali stihovi u Knjizi o Jobu (`Job 25,1–4` i `Job 27,1–4`).
     * **Spašeno skriveno poglavlje *Knjige Sirahove* (`Poglavlje 0 — Proslov prevodiočev`, 8 redaka, ID `871`)** na kojem službeni `/wp/v2/bible_chapter/871` endpoint puca, a web izbornik ga ne prikazuje.
@@ -79,7 +79,7 @@ Otvori **`http://127.0.0.1:8088`** u pregledniku.
 Spremna za izravno korištenje iz bilo kojeg programskog jezika ili alata:
 * `books` — 73 knjige (`book_order`, `id`, `abbr`, `title`, `testament`, `category`, `chapter_count`, `verse_count`)
 * `chapters` — 1.329 poglavlja (`book_order`, `chapter`, `verse_count`)
-* `verses` — 35.394 retka (`book_order`, `book_abbr`, `chapter`, `verse`, `text`, `text_folded`, `headings_json`, `references_json`, `lines_json`)
+* `verses` — 35.410 redaka (`book_order`, `book_abbr`, `chapter`, `verse`, `text`, `text_folded`, `headings_json`, `references_json`, `lines_json`, `paragraph_start`)
 * `verses_fts` — **FTS5 virtualna tablica** (`unicode61 remove_diacritics 2`)
 * `reading_plans` & `reading_plan_days` — 18 planova čitanja
 * `user_progress` & `user_bookmarks` — tablice za lokalno praćenje napretka i bilješki
@@ -93,7 +93,7 @@ sqlite3 data/biblija.db "SELECT book_abbr || ' ' || chapter || ',' || verse, tex
 * [`data/json/books.json`](data/json/books.json) — popis svih 73 knjiga katoličkog kanona.
 * [`data/json/books/`](data/json/books/) — 73 pojedinačne JSON datoteke (`01_knjiga-postanka.json` … `73_otkrivenje.json`).
 * [`data/json/plans/`](data/json/plans/) — JSON definicije svih 365-dnevnih i tematskih planova čitanja.
-* [`data/json/verses_compact.json`](data/json/verses_compact.json) — kompaktni indeks svih 35.394 redaka za trenutnu klijentsku pretragu u statičkom načinu rada.
+* [`data/json/verses_compact.json`](data/json/verses_compact.json) — kompaktni indeks svih 35.410 redaka za trenutnu klijentsku pretragu u statičkom načinu rada.
 
 ---
 
