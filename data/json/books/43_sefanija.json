@@ -1,11 +1,14 @@
 {
   "order": 43,
   "id": "sefanija",
+  "usfm_id": "ZEP",
   "ks_book_id": 54,
   "abbr": "Sef",
   "title": "Sefanija",
+  "name_en": "Zephaniah",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 3,
   "verse_count": 53,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Uvod"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -259,7 +263,8 @@
           "lines": [
             "Saberite se, skupite,",
             "narode bestidni"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -467,7 +472,8 @@
           "lines": [
             "Teško nepokornom, okaljanom,",
             "nasilničkom gradu!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

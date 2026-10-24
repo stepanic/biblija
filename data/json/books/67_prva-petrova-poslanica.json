@@ -1,11 +1,14 @@
 {
   "order": 67,
   "id": "prva-petrova-poslanica",
+  "usfm_id": "1PE",
   "ks_book_id": 78,
   "abbr": "1 Pt",
   "title": "Prva Petrova poslanica",
+  "name_en": "1 Peter",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 5,
   "verse_count": 105,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Naslov i pozdrav"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -179,7 +183,8 @@
               "level": "h4",
               "text": "Jednostavnost"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -350,7 +355,8 @@
               "level": "h4",
               "text": "U braku"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -506,7 +512,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Dakle, budući da je Krist trpio u tijelu, i vi se oboružajte istim mišljenjem – jer tko trpi u tijelu, okanio se grijeha –"
+          "text": "Dakle, budući da je Krist trpio u tijelu, i vi se oboružajte istim mišljenjem – jer tko trpi u tijelu, okanio se grijeha –",
+          "p": true
         },
         {
           "verse": 2,
@@ -610,7 +617,8 @@
               "level": "h4",
               "text": "Pastiri i vjernici"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

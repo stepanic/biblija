@@ -1,11 +1,14 @@
 {
   "order": 66,
   "id": "jakovljeva-poslanica",
+  "usfm_id": "JAS",
   "ks_book_id": 77,
   "abbr": "Jak",
   "title": "Jakovljeva poslanica",
+  "name_en": "James",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 5,
   "verse_count": 108,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Naslov i pozdrav"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -175,7 +179,8 @@
               "level": "h4",
               "text": "Nepristranost"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -297,7 +302,8 @@
               "level": "h4",
               "text": "Obuzdavanje jezika"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -391,7 +397,8 @@
               "level": "h4",
               "text": "Protiv neslogâ"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -502,7 +509,8 @@
               "level": "h4",
               "text": "Opomena bogatašima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

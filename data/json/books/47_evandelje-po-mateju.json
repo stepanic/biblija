@@ -1,11 +1,14 @@
 {
   "order": 47,
   "id": "evandelje-po-mateju",
+  "usfm_id": "MAT",
   "ks_book_id": 58,
   "abbr": "Mt",
   "title": "Evanđelje po Mateju",
+  "name_en": "Matthew",
   "testament": "NZ",
   "category": "Evanđelja i Djela",
+  "deuterocanonical": false,
   "chapter_count": 28,
   "verse_count": 1070,
   "chapters": [
@@ -28,7 +31,8 @@
           ],
           "references": [
             "(Lk 3, 23–38)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -158,7 +162,8 @@
               "level": "h4",
               "text": "Poklon mudraca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -305,7 +310,8 @@
           ],
           "references": [
             "(Mk 1, 1–8; Lk 3, 1–18; Iv 1, 19–28)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -403,7 +409,8 @@
           ],
           "references": [
             "(Mk 1, 12–13; Lk 4, 1–13)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -571,7 +578,8 @@
           ],
           "references": [
             "(Lk 6, 20–23)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -879,7 +887,8 @@
               "level": "h4",
               "text": "Milostinja u skrovitosti"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1109,7 +1118,8 @@
           ],
           "references": [
             "(Lk 6, 37–38, 41–42)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1305,7 +1315,8 @@
           ],
           "references": [
             "(Mk 1, 40–45; Lk 5, 12–16)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1501,7 +1512,8 @@
           ],
           "references": [
             "(Mk 2, 1–12; Lk 5, 17–26)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1717,7 +1729,8 @@
           ],
           "references": [
             "(Mk 3, 13–19; Lk 6, 12–16)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1955,7 +1968,8 @@
               "level": "h3",
               "text": "1. PRIPOVJEDNI DIO"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2139,7 +2153,8 @@
           ],
           "references": [
             "(Mk 2, 23–28; Lk 6, 1–5)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2442,7 +2457,8 @@
           ],
           "references": [
             "(Mk 4, 1–3; Lk 8, 4)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2821,7 +2837,8 @@
           ],
           "references": [
             "(Mk 6, 14–29; Lk 9, 7–9)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3011,7 +3028,8 @@
           ],
           "references": [
             "(Mk 7, 1–23)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3214,7 +3232,8 @@
           ],
           "references": [
             "(Mk 8, 11–13; Lk 12, 54–56)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3374,7 +3393,8 @@
           ],
           "references": [
             "(Mk 9, 2–13; Lk 9, 28–36)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3525,7 +3545,8 @@
           ],
           "references": [
             "(Mk 9, 33–37; Lk 9, 46–48)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3723,7 +3744,8 @@
           ],
           "references": [
             "(Mk 10, 1–12)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3909,7 +3931,8 @@
               "level": "h4",
               "text": "Radnici posljednjeg sata"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4087,7 +4110,8 @@
           ],
           "references": [
             "(Mk 11, 1–11; Lk 19, 28–38; Iv 12, 12–19)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4346,7 +4370,8 @@
           ],
           "references": [
             "(Lk 14, 15–24)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4587,7 +4612,8 @@
           ],
           "references": [
             "(Mk 12, 37–40; Lk 20, 45–47)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4789,7 +4815,8 @@
           ],
           "references": [
             "(Mk 13, 1–2; Lk 21, 5–6)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5057,7 +5084,8 @@
               "level": "h4",
               "text": "Prispodoba o deset djevica"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5275,7 +5303,8 @@
           ],
           "references": [
             "(Mk 14, 1–2; Lk 22, 1–2; Iv 11, 45–53)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5684,7 +5713,8 @@
           ],
           "references": [
             "(Mk 15, 1; Lk 23, 1–2; Iv 18, 28–32)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6023,7 +6053,8 @@
           ],
           "references": [
             "(Mk 16, 1–8; Lk 24, 1–12; Iv 20, 1–10)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

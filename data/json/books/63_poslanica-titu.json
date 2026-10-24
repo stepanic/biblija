@@ -1,11 +1,14 @@
 {
   "order": 63,
   "id": "poslanica-titu",
+  "usfm_id": "TIT",
   "ks_book_id": 74,
   "abbr": "Tit",
   "title": "Poslanica Titu",
+  "name_en": "Titus",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 3,
   "verse_count": 46,
   "chapters": [
@@ -15,11 +18,18 @@
       "verses": [
         {
           "verse": 1,
-          "text": "On koji ne laže,"
+          "text": "Pavao, sluga Božji i apostol Isusa Krista poradi vjere izabranika Božjih i spoznanja istine usmjerene k pobožnosti",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Naslov"
+            }
+          ],
+          "p": true
         },
         {
           "verse": 2,
-          "text": "u nadi života vječnoga što ga, prije vremenâ vjekovječnih, obeća Bog,"
+          "text": "u nadi života vječnoga što ga, prije vremenâ vjekovječnih, obeća Bog, On koji ne laže,"
         },
         {
           "verse": 3,
@@ -31,7 +41,13 @@
         },
         {
           "verse": 5,
-          "text": "Postavljanje starješina Poradi toga ostavih te na Kreti da urediš preostalo te po gradovima postaviš starješine kako sam ti ja odredio:"
+          "text": "Poradi toga ostavih te na Kreti da urediš preostalo te po gradovima postaviš starješine kako sam ti ja odredio:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Postavljanje starješina"
+            }
+          ]
         },
         {
           "verse": 6,
@@ -51,7 +67,13 @@
         },
         {
           "verse": 10,
-          "text": "Borba protiv krivih učitelja Jer mnogi su nepokorni, praznorječni i zavodnici, ponajpače oni iz obrezanja."
+          "text": "Jer mnogi su nepokorni, praznorječni i zavodnici, ponajpače oni iz obrezanja.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Borba protiv krivih učitelja"
+            }
+          ]
         },
         {
           "verse": 11,
@@ -91,7 +113,8 @@
               "level": "h4",
               "text": "Neke staleške dužnosti"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -169,7 +192,8 @@
               "level": "h4",
               "text": "Opće dužnosti vjernikâ"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

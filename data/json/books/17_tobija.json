@@ -1,11 +1,14 @@
 {
   "order": 17,
   "id": "tobija",
+  "usfm_id": "TOB",
   "ks_book_id": 28,
   "abbr": "Tob",
   "title": "Tobija",
+  "name_en": "Tobit",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": true,
   "chapter_count": 14,
   "verse_count": 246,
   "chapters": [
@@ -15,7 +18,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Povijest Tobita, sina Tobielova, sina Ananielova, sina Aduelova, sina Gabaelova, potomka Asielova, iz plemena Naftalijeva –"
+          "text": "Povijest Tobita, sina Tobielova, sina Ananielova, sina Aduelova, sina Gabaelova, potomka Asielova, iz plemena Naftalijeva –",
+          "p": true
         },
         {
           "verse": 2,
@@ -127,7 +131,8 @@
               "level": "h4",
               "text": "Sljepoća"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -211,7 +216,8 @@
               "level": "h4",
               "text": "Tobitova molitva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -371,7 +377,8 @@
               "level": "h4",
               "text": "Tobija upućen u Mediju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -471,7 +478,8 @@
               "level": "h4",
               "text": "Rafael prati Tobiju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -579,7 +587,8 @@
               "level": "h4",
               "text": "Riba"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -673,7 +682,8 @@
               "level": "h4",
               "text": "Dolazak u Raguelovu kuću"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -753,7 +763,8 @@
               "level": "h4",
               "text": "Dobri zaručnici spašeni"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -889,7 +900,8 @@
               "level": "h4",
               "text": "Rafaelov put u Mediju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -925,7 +937,8 @@
               "level": "h4",
               "text": "U očekivanju da se Tobija vrati"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1004,7 +1017,8 @@
               "level": "h4",
               "text": "Tobijin povratak sa Sarom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1115,7 +1129,8 @@
               "level": "h4",
               "text": "Anđeo se otkriva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1219,7 +1234,8 @@
               "level": "h4",
               "text": "Završna Tobitova molitva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1403,7 +1419,8 @@
               "level": "h4",
               "text": "Posljednji Tobitovi savjeti i njegova smrt"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

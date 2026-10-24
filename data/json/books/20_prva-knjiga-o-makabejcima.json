@@ -1,11 +1,14 @@
 {
   "order": 20,
   "id": "prva-knjiga-o-makabejcima",
+  "usfm_id": "1MA",
   "ks_book_id": 31,
   "abbr": "1 Mak",
   "title": "Prva knjiga o Makabejcima",
+  "name_en": "1 Maccabees",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": true,
   "chapter_count": 16,
   "verse_count": 924,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Aleksandar i njegovi nasljednici"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -361,7 +365,8 @@
               "level": "h4",
               "text": "Matatija i sinovi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -710,7 +715,8 @@
               "level": "h4",
               "text": "Pohvala Judi Makabeju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1033,7 +1039,8 @@
               "level": "h4",
               "text": "Bitka kod Emausa"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1301,7 +1308,8 @@
               "level": "h4",
               "text": "Pohod protiv Idumejaca i Amonaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1613,7 +1621,8 @@
               "level": "h4",
               "text": "Smrt Antioha Epifana"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1907,7 +1916,8 @@
               "level": "h4",
               "text": "Zakraljuje se Demetrije I. – Šalje Bakida i Alkima u Judeju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2137,7 +2147,8 @@
               "level": "h4",
               "text": "U pohvalu Rimljanima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2283,7 +2294,8 @@
               "level": "h4",
               "text": "Bitka kod Beerzeta i smrt Jude Makabeja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2627,7 +2639,8 @@
               "level": "h4",
               "text": "Natjecanje Aleksandra Balasa – Jonatan veliki svećenik"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3023,7 +3036,8 @@
               "level": "h4",
               "text": "Ptolemej VI. pomaže Demetriju II. i umire s Aleksandrom Balasom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3355,7 +3369,8 @@
               "level": "h4",
               "text": "Jonatanovi odnosi s Rimom i Spartom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3601,7 +3616,8 @@
               "level": "h4",
               "text": "Šimun preuzima zapovjedništvo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3859,7 +3875,8 @@
               "level": "h4",
               "text": "Pohvala Šimunu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4143,7 +4160,8 @@
               "level": "h4",
               "text": "Antioh VII. priznaje Šimunove časti i Trifona opsjeda u Dori"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4341,7 +4359,8 @@
               "level": "h4",
               "text": "Pobjeda Šimunovih sinova nad Kendebejem"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

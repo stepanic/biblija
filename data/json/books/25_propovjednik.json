@@ -1,11 +1,14 @@
 {
   "order": 25,
   "id": "propovjednik",
+  "usfm_id": "ECC",
   "ks_book_id": 36,
   "abbr": "Prop",
   "title": "Propovjednik",
+  "name_en": "Ecclesiastes",
   "testament": "SZ",
   "category": "Psalmi i mudrosne knjige",
+  "deuterocanonical": false,
   "chapter_count": 12,
   "verse_count": 222,
   "chapters": [
@@ -15,7 +18,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Misli Propovjednika, Davidova sina, kralja u Jeruzalemu."
+          "text": "Misli Propovjednika, Davidova sina, kralja u Jeruzalemu.",
+          "p": true
         },
         {
           "verse": 2,
@@ -117,7 +121,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Tad rekoh u srcu svom: »Daj da okušam užitak i vidim što naslada pruža« – ali gle: i to je ispraznost!"
+          "text": "Tad rekoh u srcu svom: »Daj da okušam užitak i vidim što naslada pruža« – ali gle: i to je ispraznost!",
+          "p": true
         },
         {
           "verse": 2,
@@ -238,7 +243,8 @@
               "level": "h4",
               "text": "2. Smrt"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -380,7 +386,8 @@
               "level": "h4",
               "text": "3. Zajednički život"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -467,7 +474,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Ne nagli ustima svojim i ne žuri se s riječima pred Bogom, jer je Bog na nebu, a ti si na zemlji; zato štedi svoje riječi."
+          "text": "Ne nagli ustima svojim i ne žuri se s riječima pred Bogom, jer je Bog na nebu, a ti si na zemlji; zato štedi svoje riječi.",
+          "p": true
         },
         {
           "verse": 2,
@@ -574,7 +582,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "I vidjeh: ima još jedno zlo pod suncem i teško tišti ljude."
+          "text": "I vidjeh: ima još jedno zlo pod suncem i teško tišti ljude.",
+          "p": true
         },
         {
           "verse": 2,
@@ -651,7 +660,8 @@
               "level": "h4",
               "text": "Proslov"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -836,7 +846,8 @@
             "Tko još umije tumačiti stvari?",
             "Mudrost čovjeku razvedruje lice",
             "i mijenja njegov namršteni lik."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -916,7 +927,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Razmišljah o svemu tome i shvatih kako su i pravednici i mudraci, s djelima svojim, u Božjoj ruci; i čovjek ne razumije ni ljubavi ni mržnje, i njemu su obje ispraznost."
+          "text": "Razmišljah o svemu tome i shvatih kako su i pravednici i mudraci, s djelima svojim, u Božjoj ruci; i čovjek ne razumije ni ljubavi ni mržnje, i njemu su obje ispraznost.",
+          "p": true
         },
         {
           "verse": 2,
@@ -1009,7 +1021,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Uginula muha usmrdi mirisno ulje, a i malo ludosti jače je od mudrosti i časti."
+          "text": "Uginula muha usmrdi mirisno ulje, a i malo ludosti jače je od mudrosti i časti.",
+          "p": true
         },
         {
           "verse": 2,
@@ -1125,7 +1138,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Baci kruh svoj na vodu i naći ćeš ga poslije mnogo vremena."
+          "text": "Baci kruh svoj na vodu i naći ćeš ga poslije mnogo vremena.",
+          "p": true
         },
         {
           "verse": 2,
@@ -1198,7 +1212,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "I sjećaj se svoga Stvoritelja u danima svoje mladosti prije nego dođu zli dani i prispiju godine kad ćeš reći: »Ne mile mi se.«"
+          "text": "I sjećaj se svoga Stvoritelja u danima svoje mladosti prije nego dođu zli dani i prispiju godine kad ćeš reći: »Ne mile mi se.«",
+          "p": true
         },
         {
           "verse": 2,

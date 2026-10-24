@@ -1,11 +1,14 @@
 {
   "order": 54,
   "id": "druga-poslanica-korincanima",
+  "usfm_id": "2CO",
   "ks_book_id": 65,
   "abbr": "2 Kor",
   "title": "Druga poslanica Korinćanima",
+  "name_en": "2 Corinthians",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 13,
   "verse_count": 256,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Naslov, pozdrav i zahvalnica"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -137,7 +141,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Odlučih dakle u sebi da neću k vama opet sa žalošću."
+          "text": "Odlučih dakle u sebi da neću k vama opet sa žalošću.",
+          "p": true
         },
         {
           "verse": 2,
@@ -217,7 +222,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Počinjemo li opet sami sebe preporučivati? Ili trebamo li, kao neki, preporučna pisma na vas ili od vas?"
+          "text": "Počinjemo li opet sami sebe preporučivati? Ili trebamo li, kao neki, preporučna pisma na vas ili od vas?",
+          "p": true
         },
         {
           "verse": 2,
@@ -295,7 +301,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Zato, budući da po milosrđu imamo ovu službu, ne malakšemo."
+          "text": "Zato, budući da po milosrđu imamo ovu službu, ne malakšemo.",
+          "p": true
         },
         {
           "verse": 2,
@@ -379,7 +386,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Znamo doista: ako se razruši naš zemaljski dom, šator, imamo zdanje od Boga, dom nerukotvoren, vječan na nebesima."
+          "text": "Znamo doista: ako se razruši naš zemaljski dom, šator, imamo zdanje od Boga, dom nerukotvoren, vječan na nebesima.",
+          "p": true
         },
         {
           "verse": 2,
@@ -475,7 +483,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Kao suradnici opominjemo vas da ne primite uzalud milosti Božje."
+          "text": "Kao suradnici opominjemo vas da ne primite uzalud milosti Božje.",
+          "p": true
         },
         {
           "verse": 2,
@@ -577,7 +586,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Dakle, budući da imamo ta obećanja, očistimo se, ljubljeni, od svake ljage tijela i duha te dovršimo posvećenje u strahu Božjemu."
+          "text": "Dakle, budući da imamo ta obećanja, očistimo se, ljubljeni, od svake ljage tijela i duha te dovršimo posvećenje u strahu Božjemu.",
+          "p": true
         },
         {
           "verse": 2,
@@ -663,7 +673,8 @@
               "level": "h4",
               "text": "Poticaji na darežljivost"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -771,7 +782,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "A o posluživanju svetih suvišno je da vam pišem."
+          "text": "A o posluživanju svetih suvišno je da vam pišem.",
+          "p": true
         },
         {
           "verse": 2,
@@ -858,7 +870,8 @@
               "level": "h4",
               "text": "Odgovor na optužbu slabosti"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -948,7 +961,8 @@
               "level": "h4",
               "text": "Pavlova prednost pred protivnicima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1086,7 +1100,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Hvaliti se treba? Ne koristi doduše ali – dolazim na viđenje i objave Gospodnje."
+          "text": "Hvaliti se treba? Ne koristi doduše ali – dolazim na viđenje i objave Gospodnje.",
+          "p": true
         },
         {
           "verse": 2,
@@ -1182,7 +1197,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Evo treći put idem k vama. Svaka presuda neka počiva na iskazu dvojice ili trojice svjedoka."
+          "text": "Evo treći put idem k vama. Svaka presuda neka počiva na iskazu dvojice ili trojice svjedoka.",
+          "p": true
         },
         {
           "verse": 2,

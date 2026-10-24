@@ -1,11 +1,14 @@
 {
   "order": 24,
   "id": "mudre-izreke",
+  "usfm_id": "PRO",
   "ks_book_id": 35,
   "abbr": "Izr",
   "title": "Mudre izreke",
+  "name_en": "Proverbs",
   "testament": "SZ",
   "category": "Psalmi i mudrosne knjige",
+  "deuterocanonical": false,
   "chapter_count": 31,
   "verse_count": 915,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Uvodni natpis"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -320,7 +324,8 @@
           "lines": [
             "Sine moj, ako primiš moje riječi",
             "i pohraniš u sebi moje zapovijedi,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -508,7 +513,8 @@
           "lines": [
             "Sine moj, ne zaboravljaj moje pouke,",
             "i tvoje srce neka čuva moje zapovijedi,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -808,7 +814,8 @@
           "lines": [
             "Slušajte, djeco, pouku očevu",
             "i pazite kako biste spoznali mudrost,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1037,7 +1044,8 @@
           "lines": [
             "Sine moj, čuj moju mudrost,",
             "prigni uho mojoj razboritosti"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1234,7 +1242,8 @@
           "lines": [
             "Sine moj, kad jamčiš bližnjemu svojem",
             "i daš svoju ruku drugome,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1545,7 +1554,8 @@
           "lines": [
             "Čuvaj, sine, riječi moje,",
             "i pohrani moje zapovijedi kod sebe."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1775,7 +1785,8 @@
           "lines": [
             "Ne propovijeda li mudrost",
             "i ne diže li razboritost svoj glas?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2092,7 +2103,8 @@
           "lines": [
             "Mudrost je sazidala sebi kuću,",
             "i otesala sedam stupova."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2264,7 +2276,8 @@
           "lines": [
             "Mudar sin veseli oca,",
             "a lud je sin žalost majci svojoj."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2526,7 +2539,8 @@
           "lines": [
             "Lažna je mjera mrska Jahvi,",
             "a puna mjera mila mu je."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2780,7 +2794,8 @@
           "lines": [
             "Tko ljubi pouku, ljubi znanje,",
             "a tko mrzi ukor, lud je."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3010,7 +3025,8 @@
           "lines": [
             "Mudar sin sluša naputak očev,",
             "a podsmjevač ne sluša ukora."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3216,7 +3232,8 @@
           "lines": [
             "Ženska mudrost sagradi kuću,",
             "a ludost je rukama razgrađuje."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3502,7 +3519,8 @@
           "lines": [
             "Blag odgovor ublažava jarost,",
             "a riječ osorna uvećava srdžbu."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3772,7 +3790,8 @@
           "lines": [
             "Čovjek snuje u srcu,",
             "a od Jahve je što će jezik odgovoriti."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4042,7 +4061,8 @@
           "lines": [
             "Bolji je zalogaj suha kruha s mirom",
             "nego sa svađom kuća puna žrtvene pečenke."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4272,7 +4292,8 @@
           "lines": [
             "Vlastitoj požudi popušta onaj tko zastranjuje,",
             "i svađa se usprkos svakom razboru."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4471,7 +4492,8 @@
             "Bolji je siromah koji živi u",
             "nedužnosti",
             "nego čovjek opakih usana i k tomu bezuman."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4710,7 +4732,8 @@
           "lines": [
             "Vino je podsmjevač, žestoko piće bukač,",
             "i tko se njima odaje, neće steći mudrosti."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4956,7 +4979,8 @@
           "lines": [
             "Kraljevo je srce u ruci Jahve kao voda tekućica;",
             "vodi ga kuda god hoće."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5210,7 +5234,8 @@
             "Dobro je ime bolje od velika",
             "bogatstva,",
             "i bolja je naklonost od srebra i zlata."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5455,7 +5480,8 @@
           "lines": [
             "Kad sjedneš blagovati s moćnikom,",
             "dobro pazi što je pred tobom;"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5743,7 +5769,8 @@
           "lines": [
             "Ne zavidi opakim ljudima",
             "niti želi da budeš s njima."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6038,7 +6065,8 @@
           "lines": [
             "I ovo su mudre izreke Salomonove:",
             "sabrali ih ljudi Ezekije, kralja judejskog."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6271,7 +6299,8 @@
           "lines": [
             "Kao snijeg ljeti ili kiša o žetvi,",
             "tako pristaju počasti bezumnomu."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6501,7 +6530,8 @@
           "lines": [
             "Ne hvali se danom sutrašnjim,",
             "jer ne znaš što danas može donijeti."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6725,7 +6755,8 @@
           "lines": [
             "Opaki bježe i kad ih nitko ne progoni,",
             "a pravednici su neustrašivi kao mladi lav."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6956,7 +6987,8 @@
           "lines": [
             "Čovjek koji po opomeni ostaje tvrdoglav,",
             "u tren će se slomiti, i neće mu biti spasa."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7184,7 +7216,8 @@
           "lines": [
             "Riječi Agura, sina Jakeova, iz Mase;",
             "proročanstvo njegovo za Itiela, za Itiela i Ukala."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7482,7 +7515,8 @@
               "level": "h2",
               "text": "VIII. RIJEČI LEMUELOVE"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

@@ -1,11 +1,14 @@
 {
   "order": 8,
   "id": "knjiga-o-ruti",
+  "usfm_id": "RUT",
   "ks_book_id": 19,
   "abbr": "Rut",
   "title": "Knjiga o Ruti",
+  "name_en": "Ruth",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": false,
   "chapter_count": 4,
   "verse_count": 85,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h3",
               "text": "RUTA I NOEMI"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -125,7 +129,8 @@
               "level": "h3",
               "text": "RUTA PABIRČI PO BOAZOVU POLJU"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -237,7 +242,8 @@
               "level": "h3",
               "text": "NOĆ NA GUMNU"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -321,7 +327,8 @@
               "level": "h3",
               "text": "BOAZ SE ŽENI RUTOM"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

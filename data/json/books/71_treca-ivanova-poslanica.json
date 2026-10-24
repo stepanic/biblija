@@ -1,11 +1,14 @@
 {
   "order": 71,
   "id": "treca-ivanova-poslanica",
+  "usfm_id": "3JN",
   "ks_book_id": 82,
   "abbr": "3 Iv",
   "title": "Treća Ivanova poslanica",
+  "name_en": "3 John",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 1,
   "verse_count": 15,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Pozdrav"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

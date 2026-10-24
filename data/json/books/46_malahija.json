@@ -1,11 +1,14 @@
 {
   "order": 46,
   "id": "malahija",
+  "usfm_id": "MAL",
   "ks_book_id": 57,
   "abbr": "Mal",
   "title": "Malahija",
+  "name_en": "Malachi",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 3,
   "verse_count": 55,
   "chapters": [
@@ -15,7 +18,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Proroštvo. Riječ Gospodnja Izraelu po Malahiji."
+          "text": "Proroštvo. Riječ Gospodnja Izraelu po Malahiji.",
+          "p": true
         },
         {
           "verse": 2,
@@ -89,7 +93,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "A sad vas opominjem, svećenici!"
+          "text": "A sad vas opominjem, svećenici!",
+          "p": true
         },
         {
           "verse": 2,
@@ -175,7 +180,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Evo šaljem glasnika da put preda mnom pripravi. I doći će iznenada u hram svoj Gospod koga vi tražite i anđeo Saveza koga žudite. Evo ga, dolazi već – govori Jahve nad vojskama."
+          "text": "Evo šaljem glasnika da put preda mnom pripravi. I doći će iznenada u hram svoj Gospod koga vi tražite i anđeo Saveza koga žudite. Evo ga, dolazi već – govori Jahve nad vojskama.",
+          "p": true
         },
         {
           "verse": 2,

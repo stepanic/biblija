@@ -1,11 +1,14 @@
 {
   "order": 13,
   "id": "prva-knjiga-ljetopisa",
+  "usfm_id": "1CH",
   "ks_book_id": 24,
   "abbr": "1 Ljet",
   "title": "Prva Knjiga Ljetopisa",
+  "name_en": "1 Chronicles",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": false,
   "chapter_count": 29,
   "verse_count": 943,
   "chapters": [
@@ -29,7 +32,8 @@
               "level": "h4",
               "text": "Tri velike skupine"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -315,7 +319,8 @@
               "level": "h4",
               "text": "Izraelovi sinovi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -591,7 +596,8 @@
               "level": "h4",
               "text": "Davidovi sinovi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -715,7 +721,8 @@
               "level": "h4",
               "text": "Juda – Šobal"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -933,7 +940,8 @@
               "level": "h4",
               "text": "Ruben"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1143,7 +1151,8 @@
               "level": "h4",
               "text": "Levijevci"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1451,7 +1460,8 @@
               "level": "h4",
               "text": "Jisakar"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1661,7 +1671,8 @@
               "level": "h4",
               "text": "Benjaminovi potomci"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1879,7 +1890,8 @@
               "level": "h4",
               "text": "Sveti grad Jeruzalem"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2077,7 +2089,8 @@
               "level": "h4",
               "text": "Šaulova smrt"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2153,7 +2166,8 @@
               "level": "h4",
               "text": "David pomazan za kralja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2365,7 +2379,8 @@
               "level": "h4",
               "text": "Prve Davidove pristaše"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2559,7 +2574,8 @@
               "level": "h4",
               "text": "Kovčeg saveza prenose iz Kirjat Jearima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2627,7 +2643,8 @@
               "level": "h4",
               "text": "Davidov dvor"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2717,7 +2734,8 @@
               "level": "h4",
               "text": "Priprave za prijenos"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2845,7 +2863,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Tada unesoše Kovčeg Božji i postaviše ga usred šatora koji mu bijaše razapeo David. Onda su prinijeli paljenice i pričesnice pred Bogom."
+          "text": "Tada unesoše Kovčeg Božji i postaviše ga usred šatora koji mu bijaše razapeo David. Onda su prinijeli paljenice i pričesnice pred Bogom.",
+          "p": true
         },
         {
           "verse": 2,
@@ -3153,7 +3172,8 @@
               "level": "h4",
               "text": "Natanovo proročanstvo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3283,7 +3303,8 @@
               "level": "h4",
               "text": "Davidove pobjede"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3363,7 +3384,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Poslije toga umrije Nahaš, kralj Amonaca, i zakralji mu se sin na njegovo mjesto."
+          "text": "Poslije toga umrije Nahaš, kralj Amonaca, i zakralji mu se sin na njegovo mjesto.",
+          "p": true
         },
         {
           "verse": 2,
@@ -3445,7 +3467,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Sljedeće godine, u doba kad kraljevi izlaze u rat, izvede Joab vojsku i poče pustošiti zemlju amonsku. Došavši, opsjeo je Rabu; David bijaše ostao u Jeruzalemu. Joab je osvojio Rabu i razorio je."
+          "text": "Sljedeće godine, u doba kad kraljevi izlaze u rat, izvede Joab vojsku i poče pustošiti zemlju amonsku. Došavši, opsjeo je Rabu; David bijaše ostao u Jeruzalemu. Joab je osvojio Rabu i razorio je.",
+          "p": true
         },
         {
           "verse": 2,
@@ -3493,7 +3516,8 @@
               "level": "h4",
               "text": "Prebrojavanje naroda"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3635,7 +3659,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Zato David reče: »Ovo je dom Jahve i ovo je žrtvenik za paljenice Izraelu!«"
+          "text": "Zato David reče: »Ovo je dom Jahve i ovo je žrtvenik za paljenice Izraelu!«",
+          "p": true
         },
         {
           "verse": 2,
@@ -3729,7 +3754,8 @@
               "level": "h4",
               "text": "Rodovi i službe levita"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3869,7 +3895,8 @@
               "level": "h4",
               "text": "Svećenički redovi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4009,7 +4036,8 @@
               "level": "h4",
               "text": "Pjevači"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4145,7 +4173,8 @@
               "level": "h4",
               "text": "Vratari"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4291,7 +4320,8 @@
               "level": "h4",
               "text": "Vojničko i civilno uređenje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4439,7 +4469,8 @@
               "level": "h4",
               "text": "David poučava Salomona"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4539,7 +4570,8 @@
               "level": "h4",
               "text": "Prinosi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

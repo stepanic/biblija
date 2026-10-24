@@ -50,7 +50,7 @@ const chLabel = chapterObj.chapter === 0 ? "Proslov" : `Poglavlje ${chapterObj.c
                 class={`book-item ${isAct}`}
                 style="text-decoration:none;"
                 data-testament-item={b.testament}
-                data-search={`${b.abbr.toLowerCase()} ${b.title.toLowerCase()} ${b.category.toLowerCase()}`}
+                data-search={`${b.abbr.toLowerCase()} ${b.title.toLowerCase()} ${b.category.toLowerCase()} ${(b.usfm_id || "").toLowerCase()} ${(b.name_en || "").toLowerCase()}`}
               >
                 <span>
                   <span class="book-item-abbr">{b.abbr}</span> {b.title}
@@ -80,7 +80,12 @@ const chLabel = chapterObj.chapter === 0 ? "Proslov" : `Poglavlje ${chapterObj.c
     <div class="reader-header">
       <div class="reader-title-row">
         <div>
-          <span class="badge">{book.testament} • {book.category}</span>
+          <div style="display:flex;gap:0.35rem;flex-wrap:wrap;align-items:center;margin-bottom:0.25rem;">
+            <span class="badge">{book.testament} • {book.category}</span>
+            {book.usfm_id && <span class="badge" title={`USFM kod: ${book.usfm_id} (${book.name_en || ""})`}>USFM: {book.usfm_id}</span>}
+            {book.deuterocanonical && <span class="badge" style="background:var(--accent-soft);color:var(--accent);">Deuterokanonska knjiga</span>}
+            {book.deuterocanonical_parts && <span class="badge" style="background:var(--accent-soft);color:var(--accent);">Deuterokanonski dijelovi: {book.deuterocanonical_parts}</span>}
+          </div>
           <h1 class="reader-book-title">{book.title}</h1>
         </div>
         <div class="reader-meta">{chLabel} ({chapterObj.verse_count} redaka)</div>

@@ -1,11 +1,14 @@
 {
   "order": 60,
   "id": "druga-poslanica-solunjanima",
+  "usfm_id": "2TH",
   "ks_book_id": 71,
   "abbr": "2 Sol",
   "title": "Druga poslanica Solunjanima",
+  "name_en": "2 Thessalonians",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 3,
   "verse_count": 47,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h2",
               "text": "NASLOV I POZDRAV"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -95,7 +99,8 @@
               "level": "h4",
               "text": "Znakovi Dana Gospodnjega"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -179,7 +184,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Uostalom, molite, braćo, za nas da riječ Gospodnja trči i proslavlja se kao i u vas"
+          "text": "Uostalom, molite, braćo, za nas da riječ Gospodnja trči i proslavlja se kao i u vas",
+          "p": true
         },
         {
           "verse": 2,

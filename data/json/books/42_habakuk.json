@@ -1,11 +1,14 @@
 {
   "order": 42,
   "id": "habakuk",
+  "usfm_id": "HAB",
   "ks_book_id": 53,
   "abbr": "Hab",
   "title": "Habakuk",
+  "name_en": "Habakkuk",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 3,
   "verse_count": 56,
   "chapters": [
@@ -15,7 +18,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Proroštvo koje vidje prorok Habakuk."
+          "text": "Proroštvo koje vidje prorok Habakuk.",
+          "p": true
         },
         {
           "verse": 2,
@@ -212,7 +216,8 @@
             "postavit se na bedem,",
             "paziti što će mi reći,",
             "kako odgovorit’ na moje tužbe."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -430,7 +435,8 @@
           "lines": [
             "Molitva. Od proroka Habakuka.",
             "Na način tužbalice."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

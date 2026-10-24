@@ -1,11 +1,14 @@
 {
   "order": 33,
   "id": "ezekiel",
+  "usfm_id": "EZK",
   "ks_book_id": 44,
   "abbr": "Ez",
   "title": "Ezekiel",
+  "name_en": "Ezekiel",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 48,
   "verse_count": 1273,
   "chapters": [
@@ -15,7 +18,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Godine tridesete, četvrtoga mjeseca, petoga dana, kad bijah među izgnanicima na rijeci Kebaru, otvoriše se nebesa i ja ugledah božanska viđenja."
+          "text": "Godine tridesete, četvrtoga mjeseca, petoga dana, kad bijah među izgnanicima na rijeci Kebaru, otvoriše se nebesa i ja ugledah božanska viđenja.",
+          "p": true
         },
         {
           "verse": 2,
@@ -145,7 +149,8 @@
               "level": "h4",
               "text": "Viđenje knjige"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -191,7 +196,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "I reče mi: »Sine čovječji, progutaj što je pred tobom! Pojedi taj svitak, te idi i propovijedaj domu Izraelovu!«"
+          "text": "I reče mi: »Sine čovječji, progutaj što je pred tobom! Pojedi taj svitak, te idi i propovijedaj domu Izraelovu!«",
+          "p": true
         },
         {
           "verse": 2,
@@ -327,7 +333,8 @@
               "level": "h4",
               "text": "Najava opsade Jeruzalema"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -401,7 +408,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "A ti, sine čovječji, uzmi mač naoštren, uzmi ga kao britvu brijačku i obrij glavu i bradu. Zatim uzmi mjerice i porazdijeli."
+          "text": "A ti, sine čovječji, uzmi mač naoštren, uzmi ga kao britvu brijačku i obrij glavu i bradu. Zatim uzmi mjerice i porazdijeli.",
+          "p": true
         },
         {
           "verse": 2,
@@ -485,7 +493,8 @@
               "level": "h4",
               "text": "Protiv gora Izraelovih"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -563,7 +572,8 @@
               "level": "h4",
               "text": "Skori svršetak"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -687,7 +697,8 @@
               "level": "h4",
               "text": "Opačine Jeruzalema"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -771,7 +782,8 @@
               "level": "h4",
               "text": "Kazna"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -825,7 +837,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Pogledah, i gle: na svodu nad glavama kerubinâ pojavi se nešto kao kamen safir, kao nekakvo prijestolje."
+          "text": "Pogledah, i gle: na svodu nad glavama kerubinâ pojavi se nešto kao kamen safir, kao nekakvo prijestolje.",
+          "p": true
         },
         {
           "verse": 2,
@@ -931,7 +944,8 @@
               "level": "h4",
               "text": "Prispodoba o kotlu i mesu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1055,7 +1069,8 @@
               "level": "h4",
               "text": "Prorok oponaša izgnanstvo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1185,7 +1200,8 @@
               "level": "h4",
               "text": "Protiv lažnih proroka"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1295,7 +1311,8 @@
               "level": "h4",
               "text": "Protiv idolopoklonstva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1405,7 +1422,8 @@
               "level": "h4",
               "text": "Prispodoba o vinovoj lozi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1485,7 +1503,8 @@
               "level": "h4",
               "text": "Povijest Izraela u slici:Jeruzalem – nevjerna zaručnica"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1753,7 +1772,8 @@
               "level": "h4",
               "text": "Prispodoba s orlom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1946,7 +1966,8 @@
               "level": "h4",
               "text": "Osobna odgovornost"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2086,7 +2107,8 @@
               "level": "h4",
               "text": "Tužaljka za knezovima izraelskim"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2237,7 +2259,8 @@
               "level": "h4",
               "text": "Povijest nevjera Izraelovih"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2429,7 +2452,8 @@
               "level": "h4",
               "text": "Jahvin mač nad Izraelom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2653,7 +2677,8 @@
               "level": "h4",
               "text": "Nedjela Jeruzalema"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2789,7 +2814,8 @@
               "level": "h4",
               "text": "Povijest Samarije i Jeruzalema u slici"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3016,7 +3042,8 @@
               "level": "h4",
               "text": "Objava opsade Jeruzalema"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3200,7 +3227,8 @@
               "level": "h4",
               "text": "Protiv Amonaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3298,7 +3326,8 @@
               "level": "h4",
               "text": "Protiv Tira"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3492,7 +3521,8 @@
               "level": "h4",
               "text": "Tužaljka nad propašću Tira"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3751,7 +3781,8 @@
               "level": "h4",
               "text": "Proroštvo protiv tirskoga kralja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4013,7 +4044,8 @@
               "level": "h4",
               "text": "Protiv Egipta"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4157,7 +4189,8 @@
               "level": "h4",
               "text": "Jahvin dan protiv Egipta"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4277,7 +4310,8 @@
               "level": "h4",
               "text": "Faraon – cedar visoki"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4410,7 +4444,8 @@
               "level": "h4",
               "text": "Faraon uspoređen s krokodilom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4601,7 +4636,8 @@
               "level": "h4",
               "text": "Prorok kao stražar grada"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4769,7 +4805,8 @@
               "level": "h4",
               "text": "Pastir Izraelov"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4905,7 +4942,8 @@
               "level": "h4",
               "text": "Protiv gora edomskih"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4985,7 +5023,8 @@
           "lines": [
             "»Sine čovječji, prorokuj gorama Izraelovim i reci:",
             "O gore Izraelove, čujte riječ Jahvinu:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5149,7 +5188,8 @@
               "level": "h4",
               "text": "Prispodoba sa suhim kostima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5279,7 +5319,8 @@
               "level": "h4",
               "text": "Proroštvo protiv Goga, kralja u Magogu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5377,7 +5418,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Sine čovječji, prorokuj protiv Goga i reci: Ovako govori Jahve Gospod: ‘Evo me na te, Gože, veliki kneže Mešeka i Tubala!"
+          "text": "Sine čovječji, prorokuj protiv Goga i reci: Ovako govori Jahve Gospod: ‘Evo me na te, Gože, veliki kneže Mešeka i Tubala!",
+          "p": true
         },
         {
           "verse": 2,
@@ -5515,7 +5557,8 @@
               "level": "h4",
               "text": "Budući Dom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5789,7 +5832,8 @@
               "level": "h4",
               "text": "Glavni dio Doma: Hekal i Debir"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5935,7 +5979,8 @@
               "level": "h4",
               "text": "Svećeničke prostorije"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6033,7 +6078,8 @@
               "level": "h4",
               "text": "Povratak slave Jahvine"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6169,7 +6215,8 @@
               "level": "h4",
               "text": "Upotreba istočnih vrata"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6327,7 +6374,8 @@
               "level": "h4",
               "text": "Podjela zemlje: Jahvin dio"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6463,7 +6511,8 @@
               "level": "h4",
               "text": "Svetkovanje subote i mlađaka"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6577,7 +6626,8 @@
               "level": "h4",
               "text": "Hramski izvor"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6687,7 +6737,8 @@
               "level": "h4",
               "text": "Podjela zemlje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

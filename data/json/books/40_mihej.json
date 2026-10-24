@@ -1,11 +1,14 @@
 {
   "order": 40,
   "id": "mihej",
+  "usfm_id": "MIC",
   "ks_book_id": 51,
   "abbr": "Mih",
   "title": "Mihej",
+  "name_en": "Micah",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 7,
   "verse_count": 105,
   "chapters": [
@@ -15,7 +18,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Riječ Jahvina, upućena Miheju Morešećaninu u vrijeme Jotama, Ahaza i Ezekije, kraljeva judejskih. Njegova viđenja o Samariji i o Jeruzalemu."
+          "text": "Riječ Jahvina, upućena Miheju Morešećaninu u vrijeme Jotama, Ahaza i Ezekije, kraljeva judejskih. Njegova viđenja o Samariji i o Jeruzalemu.",
+          "p": true
         },
         {
           "verse": 2,
@@ -209,7 +213,8 @@
             "i snuju zlo na posteljama svojim!",
             "Kad svane dan, oni ga izvrše,",
             "jer je sila u njihovoj ruci."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -366,7 +371,8 @@
             "suci doma Izraelova!",
             "Nije li na vama da znate što je pravo?",
             "Ali vi mrzite dobro, a ljubite zlo!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -516,7 +522,8 @@
             "Gora doma Jahvina",
             "bit će postavljena vrh svih gora,",
             "uzvišena iznad svih bregova."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -698,7 +705,8 @@
             "onaj koji će vladati Izraelom;",
             "njegov je iskon od davnina,",
             "od vječnih vremena."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -863,7 +871,8 @@
             "Jahve:",
             "»Ustani! Povedi parnicu pred gorama,",
             "i neka bregovi čuju tvoj glas!«"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1038,7 +1047,8 @@
             "kao trgač poslije jematve:",
             "nema bobice grožđa da je pozobljem,",
             "nema smokve ranke za kojom žudim!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

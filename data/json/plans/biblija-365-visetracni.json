@@ -11261,7 +11261,7 @@
     {
       "day": 340,
       "label": "Dn 3; Otk 5; Job 21",
-      "verse_count": 138,
+      "verse_count": 148,
       "readings": [
         {
           "book_order": 34,
@@ -11270,7 +11270,7 @@
           "book_title": "Daniel",
           "chapter_start": 3,
           "chapter_end": 3,
-          "verse_count": 90,
+          "verse_count": 100,
           "label": "Dn 3"
         },
         {
@@ -11426,7 +11426,7 @@
     {
       "day": 345,
       "label": "Dn 12–13; Job 25",
-      "verse_count": 88,
+      "verse_count": 91,
       "readings": [
         {
           "book_order": 34,
@@ -11445,7 +11445,7 @@
           "book_title": "Knjiga o Jobu",
           "chapter_start": 25,
           "chapter_end": 25,
-          "verse_count": 11,
+          "verse_count": 14,
           "label": "Job 25"
         }
       ]
@@ -11500,7 +11500,7 @@
     {
       "day": 347,
       "label": "Hoš 2–4; Otk 10; Job 27",
-      "verse_count": 68,
+      "verse_count": 71,
       "readings": [
         {
           "book_order": 35,
@@ -11529,7 +11529,7 @@
           "book_title": "Knjiga o Jobu",
           "chapter_start": 27,
           "chapter_end": 27,
-          "verse_count": 8,
+          "verse_count": 11,
           "label": "Job 27"
         }
       ]

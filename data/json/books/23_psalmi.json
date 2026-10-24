@@ -1,11 +1,14 @@
 {
   "order": 23,
   "id": "psalmi",
+  "usfm_id": "PSA",
   "ks_book_id": 34,
   "abbr": "Ps",
   "title": "Psalmi",
+  "name_en": "Psalms",
   "testament": "SZ",
   "category": "Psalmi i mudrosne knjige",
+  "deuterocanonical": false,
   "chapter_count": 150,
   "verse_count": 2527,
   "chapters": [
@@ -30,7 +33,8 @@
             "Blago čovjeku koji ne slijedi savjeta opakih,",
             "ne staje na putu grešničkom",
             "i ne sjeda u zbor podrugljivaca,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -97,7 +101,8 @@
           "lines": [
             "Zašto se bune narodi,",
             "zašto puci ludosti snuju?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -212,7 +217,8 @@
           "lines": [
             "Psalam. Davidov.",
             "Kad je David bježao pred sinom Abšalomom."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -302,7 +308,8 @@
           "lines": [
             "Zborovođi. Uz žičana glazbala.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -391,7 +398,8 @@
           "lines": [
             "Zborovođi. Uz frule.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -522,7 +530,8 @@
           "lines": [
             "Zborovođi. Uz žičano glazbalo. U oktavi.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -627,7 +636,8 @@
           "lines": [
             "Tužaljka. Davidova.",
             "Ispjeva je Jahvi zbog Kuša Benjaminovca."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -789,7 +799,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Tijesci«.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -887,7 +898,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Umri za sina«.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1068,7 +1080,8 @@
           "lines": [
             "LAMED Zašto, Jahve, stojiš daleko,",
             "zašto se skrivaš u dane tjeskobe?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1237,7 +1250,8 @@
             "Jahvi se utječem!",
             "Zašto dakle govorite duši mojoj:",
             "»Odleti u goru kao ptica!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1312,7 +1326,8 @@
           "lines": [
             "Zborovođi. U oktavi.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1403,7 +1418,8 @@
           "lines": [
             "Zborovođi.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1473,7 +1489,8 @@
             "Bezumnik reče u srcu:",
             "»Nema Boga.«Pokvareni rade gadosti;",
             "nitko da čini dobro."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1549,7 +1566,8 @@
             "Davidov.",
             "Jahve, tko smije prebivati u šatoru tvome,",
             "tko li stanovati na svetoj gori tvojoj?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1610,7 +1628,8 @@
             "Miktam.",
             "Davidov.",
             "Čuvaj me, Bože, jer se tebi utječem."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1720,7 +1739,8 @@
             "Počuj, Jahve pravedni,",
             "i vapaj mi poslušaj,",
             "usliši molitvu iz usta iskrenih!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1863,7 +1883,8 @@
             "Učitelju zbora. Od Jahvina sluge Davida koji Jahvi",
             "ispjeva ovu pjesmu u onaj dan kad ga Jahve oslobodi",
             "iz ruku neprijatelja i iz ruke Šaulove. On reče:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2299,7 +2320,8 @@
           "lines": [
             "Zborovođi.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2440,7 +2462,8 @@
           "lines": [
             "Zborovođi.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2538,7 +2561,8 @@
           "lines": [
             "Zborovođi.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2668,7 +2692,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Košuta u zoru«.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2953,7 +2978,8 @@
             "Davidov.",
             "Jahve je pastir moj:",
             "ni u čem ja ne oskudijevam;"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3027,7 +3053,8 @@
             "Davidov.",
             "Jahvina je zemlja i sve na njoj,",
             "svijet i svi koji na njemu žive."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3123,7 +3150,8 @@
               "level": "h3",
               "text": "Molitva u pogibelji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3321,7 +3349,8 @@
             "Dosudi mi pravo, Jahve,",
             "jer hodih u nedužnosti,",
             "i uzdajuć’ se u Jahvu ja se ne pokolebah."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3436,7 +3465,8 @@
             "koga da se bojim?",
             "Jahve je štit života moga:",
             "pred kime da strepim?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3584,7 +3614,8 @@
             "hridino moja, ne ogluši se na me:",
             "da neuslišan ne postanem kao oni",
             "koji u grob silaze."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3679,7 +3710,8 @@
             "Davidov.",
             "Prinesite Jahvi, o sinovi Božji,",
             "prinesite Jahvi slavu i moć!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3785,7 +3817,8 @@
           "lines": [
             "Psalam. Pjesma za posvećenje Doma.",
             "Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3910,7 +3943,8 @@
           "lines": [
             "Zborovođi.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4147,7 +4181,8 @@
             "Poučna pjesma.",
             "Blažen onaj kome je grijeh otpušten,",
             "kome je zločin pokriven!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4256,7 +4291,8 @@
           "lines": [
             "Pravednici, Jahvi kličite!",
             "Hvaliti ga pristoji se čestitima."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4448,7 +4484,8 @@
           "lines": [
             "Davidov. Kada se David pravio ludim pred Abimelekom,",
             "a on ga otjera te tako David sretno izmače."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4649,7 +4686,8 @@
             "Davidov.",
             "Optuži, Jahve, tužitelje moje",
             "i napadni one koji mene napadaju!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4899,7 +4937,8 @@
           "lines": [
             "Zborovođi.",
             "Od sluge Jahvina Davida."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5022,7 +5061,8 @@
             "Davidov.",
             "ALEF Nemoj se žestiti na opake,",
             "zavidjet nemoj pakosnicima:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5367,7 +5407,8 @@
           "lines": [
             "Psalam. Davidov.",
             "Za spomen."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5568,7 +5609,8 @@
           "lines": [
             "Zborovođi. Jedutunu.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5706,7 +5748,8 @@
           "lines": [
             "Zborovođi.",
             "Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5885,7 +5928,8 @@
           "lines": [
             "Zborovođi.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6014,7 +6058,8 @@
           "lines": [
             "Zborovođi.",
             "Poučna pjesma. Sinova Korahovih."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6125,7 +6170,8 @@
             "Dosudi mi pravo, Bože,",
             "i povedi parbu moju protiv čeljadi bezbožne,",
             "izbavi me od čovjeka zlobna i opaka!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6186,7 +6232,8 @@
           "lines": [
             "Zborovođi.",
             "Sinova Korahovih. Poučna pjesma."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6423,7 +6470,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Ljiljani«.",
             "Sinova Korahovih. Poučna pjesma. Svadbena pjesma."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6588,7 +6636,8 @@
           "lines": [
             "Zborovođi. Sinova Korahovih.",
             "Po napjevu »Djevice«. Pjesma."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6702,7 +6751,8 @@
           "lines": [
             "Zborovođi.",
             "Sinova Korahovih. Psalam."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6800,7 +6850,8 @@
           "lines": [
             "Pjesma. Psalam.",
             "Sinova Korahovih."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6944,7 +6995,8 @@
           "lines": [
             "Zborovođi.",
             "Sinova Korahovih. Psalam."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7133,7 +7185,8 @@
             "Asafov.",
             "Bog nad bogovima, Jahve, govori i zove zemlju",
             "od izlaza sunčeva do zalaza."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7333,7 +7386,8 @@
               "level": "h3",
               "text": "Ispovijed raskajana grešnika"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7520,7 +7574,8 @@
           "lines": [
             "Zborovođi.",
             "Poučna pjesma. Davidova."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7625,7 +7680,8 @@
           "lines": [
             "Zborovođi. Prema napjevu »Bolest«.",
             "Poučna pjesma. Davidova."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7701,7 +7757,8 @@
           "lines": [
             "Zborovođi. Uza žičana glazbala. Poučna pjesma.",
             "Davidova."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7786,7 +7843,8 @@
           "lines": [
             "Zborovođi. Uza žičana glazbala.",
             "Poučna pjesma. Davidova."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8005,7 +8063,8 @@
           "lines": [
             "Zborovođi. Prema napjevu »Golubica nijema u daljini«.",
             "Davidov. Miktam. Kad su ga u Gatu uhitili Filistejci."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8136,7 +8195,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Ne pogubi!«",
             "Davidov. Miktam. Kad je ispred Šaula pobjegao u pećinu."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8257,7 +8317,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Ne pogubi!«",
             "Davidov. Miktam."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8369,7 +8430,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Ne pogubi!«",
             "Davidov. Miktam. Kad je Šaul opkolio kuću da ubije Davida."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8534,7 +8596,8 @@
               "level": "h3",
               "text": "Molitva naroda nakon poraza"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8660,7 +8723,8 @@
           "lines": [
             "Zborovođi. Uza žičana glazbala.",
             "Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8749,7 +8813,8 @@
           "lines": [
             "Zborovođi. Po Jedutunu.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8876,7 +8941,8 @@
           "lines": [
             "Psalam. Davidov.",
             "Dok David bijaše u Judejskoj pustinji."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8991,7 +9057,8 @@
           "lines": [
             "Zborovođi.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -9096,7 +9163,8 @@
           "lines": [
             "Zborovođi. Psalam.",
             "Davidov. Pjesma."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -9234,7 +9302,8 @@
           "lines": [
             "Zborovođi.",
             "Pjesma. Psalam."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -9414,7 +9483,8 @@
           "lines": [
             "Zborovođi. Uza žičana glazbala.",
             "Psalam. Pjesma."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -9494,7 +9564,8 @@
           "lines": [
             "Zborovođi.",
             "Davidov. Psalam. Pjesma."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -9808,7 +9879,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Ljiljani«.",
             "Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -10133,7 +10205,8 @@
           "lines": [
             "Zborovođi.",
             "Davidov. Za spomen."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -10203,7 +10276,8 @@
           "lines": [
             "Tebi se, Jahve, utječem,",
             "ne daj da se ikada postidim!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -10420,7 +10494,8 @@
             "Salomonov.",
             "Bože, sud svoj daj kralju",
             "i svoju pravdu sinu kraljevu."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -10604,7 +10679,8 @@
             "Asafov.",
             "Kako je dobar Bog čestitima,",
             "Bog onima koji su čista srca!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -10847,7 +10923,8 @@
             "Asafova.",
             "Zašto si, Bože, posve zabacio,",
             "zašto kiptiš gnjevom na ovce paše svoje?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -11046,7 +11123,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Ne razori!«",
             "Psalam. Asafov. Pjesma."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -11154,7 +11232,8 @@
           "lines": [
             "Zborovođi. Uza žičana glazbala.",
             "Psalam. Asafov. Pjesma."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -11275,7 +11354,8 @@
           "lines": [
             "Zborovođi. Po Jedutunu.",
             "Asafov. Psalam."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -11466,7 +11546,8 @@
             "Asafova.",
             "Poslušaj, narode moj, moj nauk,",
             "prikloni uho riječima usta mojih!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12079,7 +12160,8 @@
             "Bože, pogani, evo, provališe u baštinu tvoju,",
             "tvoj sveti hram oskvrnuše,",
             "pretvoriše Jeruzalem u ruševine."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12203,7 +12285,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Ljiljan svjedočanstva«.",
             "Asafov. Psalam."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12381,7 +12464,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Tijesci«.",
             "Asafov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12538,7 +12622,8 @@
             "Asafov.",
             "Bog ustaje u skupštini »bogova«,",
             "usred »bogova« sud održava."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12619,7 +12704,8 @@
           "lines": [
             "Pjesma. Psalam.",
             "Asafov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12787,7 +12873,8 @@
           "lines": [
             "Zborovođi. Po napjevu »Tijesci«.",
             "Sinova Korahovih."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12917,7 +13004,8 @@
           "lines": [
             "Zborovođi.",
             "Sinova Korahovih. Psalam."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -13049,7 +13137,8 @@
             "Davidova.",
             "Prigni uho svoje, Jahve, i usliši me",
             "jer sam bijedan i ubog."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -13207,7 +13296,8 @@
             "Sinova Korahovih.",
             "Psalam. Pjesma.",
             "Zdanje svoje na svetim gorama"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -13283,7 +13373,8 @@
             "Pjesma. Psalam. Sinova Korahovih.",
             "Zborovođi. Po napjevu »Bolest«. Za pjevanje.",
             "Poučna pjesma. Ezrahijca Hemana."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -13455,7 +13546,8 @@
           "lines": [
             "Poučna pjesma.",
             "Ezrahijca Etana."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -13898,7 +13990,8 @@
             "Mojsija, sluge Božjega.",
             "Jahve, ti nam bijaše okrilje",
             "od koljena do koljena."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -14055,7 +14148,8 @@
           "lines": [
             "Ti što prebivaš pod zaštitom Višnjega,",
             "što počivaš u sjeni Svemogućega,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -14202,7 +14296,8 @@
           "lines": [
             "Psalam. Pjesma.",
             "Za dan subotnji."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -14349,7 +14444,8 @@
             "Jahve zaodjeven moći i opasan.",
             "Čvrsto stoji krug zemaljski,",
             "neće se poljuljati."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -14408,7 +14504,8 @@
           "lines": [
             "Bože osvetniče, Jahve,",
             "Bože osvetniče, pokaži se."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -14609,7 +14706,8 @@
           "lines": [
             "Dođite, kličimo Jahvi,",
             "uzvikujmo Hridi, spasitelju svome!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -14715,7 +14813,8 @@
           "lines": [
             "Pjevajte Jahvi pjesmu novu!",
             "Pjevaj Jahvi, sva zemljo!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -14838,7 +14937,8 @@
           "lines": [
             "Jahve kraljuje: neka kliče zemlja,",
             "nek’ se vesele otoci mnogi!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -14956,7 +15056,8 @@
             "jer učini djela čudesna.",
             "Pobjedu mu pribavi desnica njegova",
             "i sveta mišica njegova."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -15048,7 +15149,8 @@
           "lines": [
             "Jahve kraljuje – nek’ zadršću narodi;",
             "sjedi nad kerubima – zemlja nek’ se potrese!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -15143,7 +15245,8 @@
             "Psalam.",
             "Zahvalnica.",
             "Kliči Jahvi, zemljo sva!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -15204,7 +15307,8 @@
             "Psalam.",
             "Da zapjevam o dobroti i pravdi,",
             "tebi, Jahve, da zasviram!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -15296,7 +15400,8 @@
           "lines": [
             "Molitva nevoljnika koji je klonuo pa svoju tugu",
             "izlijeva pred Jahvom."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -15549,7 +15654,8 @@
             "Davidov.",
             "Blagoslivljaj Jahvu, dušo moja,",
             "i sve što je u meni, sveto ime njegovo!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -15744,7 +15850,8 @@
             "Blagoslivljaj Jahvu, dušo moja,",
             "Jahve, Bože moj, silno si velik!",
             "Odjeven veličanstvom i ljepotom,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -16047,7 +16154,8 @@
           "lines": [
             "Aleluja! Hvalite Jahvu, prizivajte mu ime,",
             "navješćujte među narodima djela njegova!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -16424,7 +16532,8 @@
             "Aleluja!",
             "Hvalite Jahvu jer je dobar,",
             "jer je vječna ljubav njegova!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -16836,7 +16945,8 @@
           "lines": [
             "Aleluja! Hvalite Jahvu jer je dobar,",
             "jer je dovijeka ljubav njegova!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -17196,7 +17306,8 @@
           "lines": [
             "Pjesma.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -17329,7 +17440,8 @@
             "Zborovođi.",
             "Psalam. Davidov.",
             "Bože, diko moja, nemoj šutjeti!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -17598,7 +17710,8 @@
             "Davidov.",
             "Riječ Jahvina Gospodinu mojemu: »Sjedi mi zdesna",
             "dok ne položim dušmane za podnožje tvojim nogama!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -17668,7 +17781,8 @@
               "level": "h3",
               "text": "Pohvala Božjim djelima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -17764,7 +17878,8 @@
               "level": "h3",
               "text": "Pohvala pravednika"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -17865,7 +17980,8 @@
             "Aleluja!",
             "Hvalite, sluge Jahvine,",
             "hvalite ime Jahvino!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -17952,7 +18068,8 @@
             "Aleluja!",
             "Kad izađe Izrael iz Egipta",
             "i kuća Jakovljeva iz naroda barbarskog,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -18032,7 +18149,8 @@
             "Ne nama, o Jahve, ne nama,",
             "već svom imenu slavu daj",
             "zbog ljubavi i vjernosti svoje."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -18195,7 +18313,8 @@
           "lines": [
             "Ljubim Jahvu jer čuje",
             "vapaj molitve moje:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -18366,7 +18485,8 @@
             "Aleluja!",
             "Hvalite Jahvu, svi puci,",
             "slavite ga, svi narodi!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -18399,7 +18519,8 @@
             "Aleluja!",
             "Zahvaljujte Jahvi jer je dobar,",
             "jer je vječna ljubav njegova!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -18650,7 +18771,8 @@
           "lines": [
             "ALEF Blaženi oni kojih je put neokaljan,",
             "koji hode po zakonu Jahvinu!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20072,7 +20194,8 @@
             "Hodočasnička pjesma.",
             "Kad bijah u nevolji, Jahvi zavapih",
             "i on me usliša."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20145,7 +20268,8 @@
             "Hodočasnička pjesma.",
             "K brdima oči svoje uzdižem:",
             "odakle će mi doći pomoć?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20227,7 +20351,8 @@
             "Davidova.",
             "Obradovah se kad mi rekoše:",
             "»Hajdemo u dom Jahvin!«"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20317,7 +20442,8 @@
             "Hodočasnička pjesma.",
             "Oči svoje uzdižem k tebi",
             "koji u nebesima prebivaš."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20368,7 +20494,8 @@
             "Hodočasnička pjesma.",
             "Davidova.",
             "Da nije Jahve za nas bio– neka slobodno rekne Izrael –"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20450,7 +20577,8 @@
             "Hodočasnička pjesma.",
             "Tko se uzda u Jahvu, on je kao brdo Sion:",
             "ne pomiče se, ostaje dovijeka."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20511,7 +20639,8 @@
             "Hodočasnička pjesma.",
             "Kad Jahve vraćaše sužnjeve sionske,",
             "bilo nam je k’o da snivamo."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20583,7 +20712,8 @@
             "uzalud se muče graditelji.",
             "Ako Jahve grad ne čuva,",
             "uzalud stražar bdi."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20643,7 +20773,8 @@
             "Hodočasnička pjesma.",
             "Blago svakome koji se Jahve boji,",
             "koji njegovim hodi stazama!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20711,7 +20842,8 @@
             "Hodočasnička pjesma.",
             "»Mnogo su me od mladosti tlačili«",
             "– neka rekne sad Izrael!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20792,7 +20924,8 @@
           "lines": [
             "Hodočasnička pjesma.",
             "Iz dubine, Jahve, vapijem tebi:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20879,7 +21012,8 @@
             "niti se oči uznose.",
             "Ne idem za stvarima velikim",
             "ni za čudima što su iznad mene."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -20917,7 +21051,8 @@
               "level": "h3",
               "text": "Za godišnjicu prijenosa Kovčega saveza"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -21085,7 +21220,8 @@
             "Davidova.",
             "Gle, kako je dobro i kako je milo",
             "kao braća zajedno živjeti:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -21131,7 +21267,8 @@
             "sve sluge Jahvine",
             "što stojite u domu Jahvinu,",
             "u noćnim satima!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -21172,7 +21309,8 @@
             "Aleluja!",
             "Hvalite ime Jahvino,",
             "hvalite, sluge Jahvine"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -21359,7 +21497,8 @@
             "Aleluja!",
             "Hvalite Jahvu jer je dobar:",
             "vječna je ljubav njegova!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -21584,7 +21723,8 @@
             "Na obali rijeka babilonskih",
             "sjeđasmo i plakasmo",
             "spominjući se Siona;"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -21681,7 +21821,8 @@
             "Zahvaljujem ti, Jahve, iz svega srca",
             "jer si čuo riječi mojih usta.",
             "Pred licem anđela pjevam tebi,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -21767,7 +21908,8 @@
             "Zborovođi.",
             "Davidov.",
             "Jahve, proničeš me svega i poznaješ,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -21979,7 +22121,8 @@
           "lines": [
             "Zborovođi.",
             "Psalam. Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -22111,7 +22254,8 @@
             "Davidov.",
             "Prizivljem te, Jahve, k meni pohitaj!",
             "Slušaj glas moj kojim tebi vapijem!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -22210,7 +22354,8 @@
           "lines": [
             "Poučna pjesma. Davidova.",
             "Kad bijaše u špilji. Molitva."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -22302,7 +22447,8 @@
             "Jahve, slušaj moju molitvu,",
             "u vjernosti svojoj prikloni uho mojim vapajima,",
             "u pravednosti me svojoj usliši!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -22425,7 +22571,8 @@
             "Davidov.",
             "Blagoslovljen Jahve, hridina moja:",
             "ruke mi uči boju a prste ratu."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -22572,7 +22719,8 @@
           "lines": [
             "Hvalospjev.",
             "Davidov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -22761,7 +22909,8 @@
           "lines": [
             "Aleluja!",
             "Hvali, dušo moja, Jahvu!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -22864,7 +23013,8 @@
             "Hvalite Jahvu jer je dobar,",
             "pjevajte Bogu našem jer je sladak;",
             "svake hvale on je dostojan!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -23043,7 +23193,8 @@
             "Aleluja!",
             "Hvalite Jahvu s nebesa,",
             "hvalite ga u visinama!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -23174,7 +23325,8 @@
             "Aleluja!",
             "Pjevajte Jahvi pjesmu novu",
             "i u zboru svetih hvalu njegovu!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -23263,7 +23415,8 @@
             "Aleluja!",
             "Hvalite Boga u svetištu njegovu,",
             "slavite ga u veličanstvu svoda nebeskog!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

@@ -1,11 +1,14 @@
 {
   "order": 12,
   "id": "druga-knjiga-o-kraljevima",
+  "usfm_id": "2KI",
   "ks_book_id": 23,
   "abbr": "2 Kr",
   "title": "Druga knjiga o Kraljevima",
+  "name_en": "2 Kings",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": false,
   "chapter_count": 25,
   "verse_count": 719,
   "chapters": [
@@ -15,7 +18,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Poslije smrti Ahabove pobuni se Moab protiv Izraela."
+          "text": "Poslije smrti Ahabove pobuni se Moab protiv Izraela.",
+          "p": true
         },
         {
           "verse": 2,
@@ -111,7 +115,8 @@
               "level": "h4",
               "text": "Uznesenje Ilijino. Njegov nasljednik Elizej"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -233,7 +238,8 @@
               "level": "h4",
               "text": "Uvod u Joramovo kraljevanje u Izraelu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -371,7 +377,8 @@
               "level": "h4",
               "text": "Udovičino ulje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -577,7 +584,8 @@
               "level": "h4",
               "text": "Ozdravljenje Naamana"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -705,7 +713,8 @@
               "level": "h4",
               "text": "Čudo sa sjekirom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -865,7 +874,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Elizej reče tada: »Čuj riječ Jahvinu! Ovako veli Jahve: ‘Sutra će u ovo doba na vratima Samarije biti mjera finoga brašna za šekel, a dvije mjere ječmenog brašna za šekel.’«"
+          "text": "Elizej reče tada: »Čuj riječ Jahvinu! Ovako veli Jahve: ‘Sutra će u ovo doba na vratima Samarije biti mjera finoga brašna za šekel, a dvije mjere ječmenog brašna za šekel.’«",
+          "p": true
         },
         {
           "verse": 2,
@@ -969,7 +979,8 @@
               "level": "h4",
               "text": "Šunamka pred kraljem"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1119,7 +1130,8 @@
               "level": "h4",
               "text": "Elizejev učenik pomazao Jehua za kralja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1309,7 +1321,8 @@
               "level": "h4",
               "text": "Uništenje izraelske kraljevske obitelji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1497,7 +1510,8 @@
               "level": "h4",
               "text": "Povijest Atalije"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1589,7 +1603,8 @@
               "level": "h4",
               "text": "Joaševo kraljevanje u Judeji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1689,7 +1704,8 @@
               "level": "h4",
               "text": "Joahazovo kraljevanje u Izraelu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1823,7 +1839,8 @@
               "level": "h4",
               "text": "Amasjino kraljevanje u Judeji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1957,7 +1974,8 @@
               "level": "h4",
               "text": "Azarjino kraljevanje u Judeji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2161,7 +2179,8 @@
               "level": "h4",
               "text": "Ahazovo kraljevanje u Judeji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2253,7 +2272,8 @@
               "level": "h4",
               "text": "Kraljevanje Hošeino u Izraelu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2455,7 +2475,8 @@
               "level": "h4",
               "text": "Uvod u kraljevanje Ezekijino"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2633,7 +2654,8 @@
               "level": "h4",
               "text": "Pitanja proroku Izaiji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2912,7 +2934,8 @@
               "level": "h4",
               "text": "Ezekijina bolest i ozdravljenje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3024,7 +3047,8 @@
               "level": "h4",
               "text": "Manašeovo kraljevanje u Judeji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3150,7 +3174,8 @@
               "level": "h4",
               "text": "Uvod u Jošijino kraljevanje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3254,7 +3279,8 @@
               "level": "h4",
               "text": "Svečano čitanje Zakona"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3454,7 +3480,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "U njegovo je vrijeme došao Nabukodonozor, kralj babilonski, i Jojakim mu je bio podložan tri godine, zatim se ponovno pobunio protiv njega."
+          "text": "U njegovo je vrijeme došao Nabukodonozor, kralj babilonski, i Jojakim mu je bio podložan tri godine, zatim se ponovno pobunio protiv njega.",
+          "p": true
         },
         {
           "verse": 2,
@@ -3568,7 +3595,8 @@
               "level": "h4",
               "text": "Opsada Jeruzalema"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

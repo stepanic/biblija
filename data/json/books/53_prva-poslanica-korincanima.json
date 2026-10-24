@@ -1,11 +1,14 @@
 {
   "order": 53,
   "id": "prva-poslanica-korincanima",
+  "usfm_id": "1CO",
   "ks_book_id": 64,
   "abbr": "1 Kor",
   "title": "Prva poslanica Korinćanima",
+  "name_en": "1 Corinthians",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 16,
   "verse_count": 437,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Naslov, pozdrav, zahvala"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -175,7 +179,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "I ja kada dođoh k vama, braćo, ne dođoh s uzvišenom besjedom ili mudrošću navješćivati vam svjedočanstvo Božje"
+          "text": "I ja kada dođoh k vama, braćo, ne dođoh s uzvišenom besjedom ili mudrošću navješćivati vam svjedočanstvo Božje",
+          "p": true
         },
         {
           "verse": 2,
@@ -245,7 +250,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "I ja, braćo, nisam mogao govoriti vama kao duhovnima, nego kao tjelesnima, kao nejačadi u Kristu."
+          "text": "I ja, braćo, nisam mogao govoriti vama kao duhovnima, nego kao tjelesnima, kao nejačadi u Kristu.",
+          "p": true
         },
         {
           "verse": 2,
@@ -355,7 +361,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Tako, neka nas svatko smatra službenicima Kristovim i upraviteljima otajstava Božjih."
+          "text": "Tako, neka nas svatko smatra službenicima Kristovim i upraviteljima otajstava Božjih.",
+          "p": true
         },
         {
           "verse": 2,
@@ -457,7 +464,8 @@
               "level": "h3",
               "text": "2. RODOSKVRNUĆE"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -521,7 +529,8 @@
               "level": "h3",
               "text": "3. PRIZIV NA POGANSKE SUDOVE"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -623,7 +632,8 @@
               "level": "h3",
               "text": "1. ŽENIDBA I DJEVIČANSTVO"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -795,7 +805,8 @@
               "level": "h3",
               "text": "2. BLAGOVANJE MESA ŽRTVOVANA IDOLIMA"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -859,7 +870,8 @@
               "level": "h4",
               "text": "Pavlov primjer"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -979,7 +991,8 @@
               "level": "h4",
               "text": "Pouka Izraelove prošlosti"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1139,7 +1152,8 @@
               "level": "h4",
               "text": "Nošenje prijevjesa"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1300,7 +1314,8 @@
               "level": "h4",
               "text": "Dari Duha"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1448,7 +1463,8 @@
             "a ljubavi ne bih imao,",
             "bio bih mjed što ječi",
             "ili cimbal što zveči."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1582,7 +1598,8 @@
               "level": "h4",
               "text": "Dari u zajednici"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1758,7 +1775,8 @@
               "level": "h2",
               "text": "III. USKRSNUĆE MRTVIH"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2018,7 +2036,8 @@
               "level": "h3",
               "text": "ZAKLJUČAK"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

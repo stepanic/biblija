@@ -1,11 +1,14 @@
 {
   "order": 29,
   "id": "izaija",
+  "usfm_id": "ISA",
   "ks_book_id": 40,
   "abbr": "Iz",
   "title": "Izaija",
+  "name_en": "Isaiah",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 66,
   "verse_count": 1292,
   "chapters": [
@@ -29,7 +32,8 @@
               "level": "h4",
               "text": "Naslov"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -365,7 +369,8 @@
               "level": "h4",
               "text": "Vječni mir"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -599,7 +604,8 @@
             "oduzima Jeruzalemu i Judeji",
             "svaku potporu,",
             "pomoć u kruhu i pomoć u vodi,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -827,7 +833,8 @@
             "»i u halje se svoje oblačiti,",
             "daj nam samo da tvoje nosimo ime,",
             "skini sa nas svu sramotu našu.«"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -910,7 +917,8 @@
             "pjesmu svog ljubljenog njegovu vinogradu.",
             "Moj je dragi imao vinograd",
             "na brežuljku rodnome."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1231,7 +1239,8 @@
               "level": "h4",
               "text": "Izaijin poziv"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1346,7 +1355,8 @@
               "level": "h4",
               "text": "Prva opomena Ahazu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1566,7 +1576,8 @@
               "level": "h4",
               "text": "Rođenje Izaijina sina"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1819,7 +1830,8 @@
             "svjetlost vidje veliku;",
             "one što mrklu zemlju obitavahu",
             "svjetlost jarka obasja."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2022,12 +2034,13 @@
       "verses": [
         {
           "verse": 1,
-          "text": "?Jao onima koji izdaju odredbe nepravedne, koji ispisuju propise tlačiteljske;",
+          "text": "Jao onima koji izdaju odredbe nepravedne, koji ispisuju propise tlačiteljske;",
           "lines": [
-            "?Jao onima koji izdaju odredbe",
+            "Jao onima koji izdaju odredbe",
             "nepravedne,",
             "koji ispisuju propise tlačiteljske;"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2376,7 +2389,8 @@
             "Isklijat će mladica iz panja",
             "Jišajeva,",
             "izdanak će izbit’ iz njegova korijena."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2550,7 +2564,8 @@
             "ràzgnjêvi se ti na mene,",
             "ali se odvratio gnjev tvoj",
             "i ti me utješi!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2617,7 +2632,8 @@
               "level": "h4",
               "text": "Protiv Babilona"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2834,7 +2850,8 @@
               "level": "h4",
               "text": "Povratak iz progonstva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3154,7 +3171,8 @@
             "šaptom pade Ar Moab!",
             "Obnoć opustošen,",
             "šaptom pade Kir Moab!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3259,7 +3277,8 @@
             "vladaru zemlje,",
             "od Stijene prema pustinji",
             "do gore Kćeri sionske."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3419,7 +3438,8 @@
             "Proroštvo o Damasku.",
             "»Gle, prestat će Damask biti gradom",
             "i postat će hrpom ruševina;"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3574,7 +3594,8 @@
           "lines": [
             "Jao zemlji krilatih kukaca s one",
             "strane rijeka kuških,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3654,7 +3675,8 @@
             "u Egipat dolazi.",
             "Dršću pred njim idoli egipatski,",
             "u njedrima premire srce Egipćana."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3847,7 +3869,8 @@
               "level": "h4",
               "text": "Vijest o osvajanju Ašdoda"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3890,7 +3913,8 @@
             "hujeći nad Negebom,",
             "dolaze iz pustinje,",
             "kraja strahotna"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4087,7 +4111,8 @@
             "o Dolini viđenja.",
             "Što ti je da uzlaziš",
             "sav na krovove,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4353,7 +4378,8 @@
             "jer vaša je tvrđa razorena!",
             "Javljeno im je",
             "dok se iz kitimske vraćahu zemlje."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4526,7 +4552,8 @@
             "Gle, Jahve razvaljuje zemlju,",
             "razara je, nakazi joj lice,",
             "raspršuje stanovnike njene."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4764,7 +4791,8 @@
             "uznosim te, tvoje ime slavim,",
             "jer si proveo čudesan naum,",
             "smišljen od davnine, istinit i vjeran,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4902,7 +4930,8 @@
             "U onaj dan pjevat ću ovu pjesmu u zemlji Judinoj:",
             "»Tvrd grad mi imamo:",
             "za obranu nam On podiže zidove i predziđa."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5123,7 +5152,8 @@
             "Levijatana, zmiju hitru,",
             "Levijatana, zmiju vijugavu,",
             "i ubit će zmaja morskoga."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5290,7 +5320,8 @@
             "uvelu cvijetu blistava mu nakita –",
             "onima što uvrh plodnog dola",
             "leže vinom opijeni!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5623,7 +5654,8 @@
             "gradu što ga opkoli David!",
             "Nek’ se niže godina na godinu,",
             "nek’ se izredaju blagdani,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5880,7 +5912,8 @@
             "»Oni provode osnove koje nisu moje,",
             "sklapaju saveze koji nisu po mom duhu",
             "i grijeh na grijeh gomilaju."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6205,7 +6238,8 @@
             "i u mnoštvo konjanika,",
             "ne gledajuć’ s uzdanjem u Sveca Izraelova",
             "i od Jahve savjeta ne tražeć’."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6315,7 +6349,8 @@
           "lines": [
             "Evo po pravdi kralj kraljuje,",
             "po pravici vladaju knezovi:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6531,7 +6566,8 @@
             "koji pljačkaš nepljačkan,",
             "kad prestaneš, tebe će opustošiti,",
             "opljačkat’ te kad prestaneš pljačkati."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6779,7 +6815,8 @@
             "pomno slušajte, narodi;",
             "čuj, zemljo, i sve što te ispunja,",
             "kruže zemaljski i sve što raste po tebi!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6958,7 +6995,8 @@
             "Nek’ se uzraduje pustinja,",
             "zemlja sasušena,",
             "neka kliče stepa, nek’ ljiljan procvjeta."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7067,7 +7105,8 @@
               "level": "h4",
               "text": "Sanheribova najezda"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7167,7 +7206,8 @@
               "level": "h4",
               "text": "Utjecanje Izaiji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7463,7 +7503,8 @@
               "level": "h4",
               "text": "Bolest Ezekijina i ozdravljenje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7637,7 +7678,8 @@
               "level": "h4",
               "text": "Babilonsko poslanstvo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7689,7 +7731,8 @@
           "lines": [
             "»Tješite, tješite moj narod,",
             "govori Bog vaš."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8015,7 +8058,8 @@
             "nek’ novu snagu narodi priberu.",
             "Nek’ se primaknu i progovore;",
             "zajedno pristupimo k sudu."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8338,7 +8382,8 @@
             "mog izabranika, miljenika duše moje.",
             "Na njega sam svoga duha izlio",
             "da donosi pravo narodima."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8610,7 +8655,8 @@
             "koji te sazdao, Izraele:",
             "»Ne boj se, jer ja sam te otkupio;",
             "imenom sam te zazvao: ti si moj!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8907,7 +8953,8 @@
           "lines": [
             "Sad čuj, Jakove, slugo moj,",
             "Izraele, kog sam izabrao."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -9162,7 +9209,8 @@
             "i raspašem bokove kraljevima,",
             "da rastvorim pred njim vratnice,",
             "da mu nijedna vrata ne budu zatvorena."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -9463,7 +9511,8 @@
             "Prte svoje kipove na životinje i stoku,",
             "nose ih kao breme,",
             "teret što zamara."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -9613,7 +9662,8 @@
             "kćeri kaldejska!",
             "Jer, neće te više zvati",
             "nježnom i tankoćutnom."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -9791,7 +9841,8 @@
             "Vi koji se Jahvinim imenom kunete",
             "i slavite Boga Izraelova,",
             "ali ne u istini i pravdi."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -10028,7 +10079,8 @@
             "slušajte pomno, narodi daleki!",
             "Jahve me pozvao od krila materina,",
             "od utrobe majke moje spomenuo se moga imena."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -10317,7 +10369,8 @@
             "komu sam vas prodao?",
             "Zbog bezakonja ste svojih prodani,",
             "zbog nevjere je mati vaša otpuštena."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -10457,7 +10510,8 @@
             "koji Jahvu tražite;",
             "pogledajte stijenu iz koje ste isječeni",
             "i jamu duboku iz koje ste izvađeni."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -10721,7 +10775,8 @@
             "Jeruzaleme, grade sveti,",
             "jer više neće k tebi ulaziti",
             "neobrezani i nečisti."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -10869,7 +10924,8 @@
             "»Tko da povjeruje u ono što",
             "nam je objavljeno,",
             "kome se otkri ruka Jahvina?«"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -11006,7 +11062,8 @@
             "podvikuj od radosti, ti što ne znaš za trudove!",
             "Jer osamljena više djece ima",
             "negoli udana, kaže Jahve."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -11192,7 +11249,8 @@
             "ako novaca i nemate, dođite.",
             "Bez novaca i bez naplate",
             "kupite vina i mlijeka!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -11336,7 +11394,8 @@
               "level": "h4",
               "text": "Jahve prihvaća obrednike"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -11427,7 +11486,8 @@
             "Uklanjaju ljude pobožne,",
             "i nitko ne shvaća.",
             "Da, zbog zla uklonjen je pravednik"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -11661,7 +11721,8 @@
             "Glas svoj poput roga podigni.",
             "Objavi mom narodu njegove zločine,",
             "domu Jakovljevu grijehe njegove."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -11827,7 +11888,8 @@
             "Ne, nije ruka Jahvina prekratka",
             "da spasi,",
             "niti mu je uho otvrdlo da ne bi čuo,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12052,7 +12114,8 @@
             "Ustani, zasini, jer svjetlost",
             "tvoja dolazi,",
             "nad tobom blista slava Jahvina."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12286,7 +12349,8 @@
             "da iscijelim srca slomljena;",
             "da zarobljenima navijestim slobodu",
             "i oslobođenje sužnjevima;"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12407,7 +12471,8 @@
             "Jeruzalema radi neću mirovati",
             "dok pravda njegova ne zasine k’o svjetlost,",
             "dok njegovo spasenje ne plane k’o zublja."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12553,7 +12618,8 @@
             "pun snage korača?",
             "– Ja sam to koji naučavam pravdu,",
             "velik kad spašavam!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12761,7 +12827,8 @@
             "kao kad oganj",
             "suho granje zapali",
             "i vatra vodu zakuha!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -12878,7 +12945,8 @@
             "nađoše me koji me ne tražahu;",
             "rekoh: ‘Evo me! Evo me!’",
             "narodu koji ne prizivaše ime moje."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -13146,7 +13214,8 @@
             "a zemlja podnožje nogama!",
             "Kakvu kuću da mi sagradite",
             "i gdje da bude mjesto mog prebivališta?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

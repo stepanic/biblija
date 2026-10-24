@@ -1,11 +1,14 @@
 {
   "order": 64,
   "id": "poslanica-filemonu",
+  "usfm_id": "PHM",
   "ks_book_id": 75,
   "abbr": "Flm",
   "title": "Poslanica Filemonu",
+  "name_en": "Philemon",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 1,
   "verse_count": 25,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Pozdrav"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

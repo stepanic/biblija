@@ -1,11 +1,14 @@
 {
   "order": 58,
   "id": "poslanica-kolosanima",
+  "usfm_id": "COL",
   "ks_book_id": 69,
   "abbr": "Kol",
   "title": "Poslanica Kološanima",
+  "name_en": "Colossians",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 4,
   "verse_count": 95,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Naslov i pozdrav"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -219,7 +223,8 @@
               "level": "h4",
               "text": "Pavlova briga za vjeru Kološana"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -349,7 +354,8 @@
               "level": "h4",
               "text": "Novi život u Kristu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -475,7 +481,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Gospodari, pružajte svojim robovima što je pravo i pravično, znajući da i vi imate Gospodina na nebu!"
+          "text": "Gospodari, pružajte svojim robovima što je pravo i pravično, znajući da i vi imate Gospodina na nebu!",
+          "p": true
         },
         {
           "verse": 2,

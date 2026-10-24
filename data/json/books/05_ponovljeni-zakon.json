@@ -1,11 +1,14 @@
 {
   "order": 5,
   "id": "ponovljeni-zakon",
+  "usfm_id": "DEU",
   "ks_book_id": 16,
   "abbr": "Pnz",
   "title": "Ponovljeni zakon",
+  "name_en": "Deuteronomy",
   "testament": "SZ",
   "category": "Petoknjižje",
+  "deuterocanonical": false,
   "chapter_count": 34,
   "verse_count": 959,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Uvod"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -239,7 +243,8 @@
               "level": "h4",
               "text": "Putovanje kroz područje s onu stranu Jordana"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -403,7 +408,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Tada se okrenusmo i pođosmo prema Bašanu. Presrete nas bašanski kralj Og sa svim svojim narodom i nametnu nam boj kod Edreja."
+          "text": "Tada se okrenusmo i pođosmo prema Bašanu. Presrete nas bašanski kralj Og sa svim svojim narodom i nametnu nam boj kod Edreja.",
+          "p": true
         },
         {
           "verse": 2,
@@ -553,7 +559,8 @@
               "level": "h4",
               "text": "Izraelci treba da slušaju Jahvu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -789,7 +796,8 @@
               "level": "h4",
               "text": "Deset zapovijedi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -943,7 +951,8 @@
               "level": "h4",
               "text": "Svrha Zakona"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1067,7 +1076,8 @@
               "level": "h4",
               "text": "Držanje prema poganstvu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1205,7 +1215,8 @@
               "level": "h4",
               "text": "Stega je potrebna i korisna"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1303,7 +1314,8 @@
               "level": "h4",
               "text": "Pobjeda i spasenje dolazi od Boga, a ne od čovjeka"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1443,7 +1455,8 @@
               "level": "h4",
               "text": "Dvije kamene ploče"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1549,7 +1562,8 @@
               "level": "h4",
               "text": "Poslušnost pribavlja baštinu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1699,7 +1713,8 @@
               "level": "h4",
               "text": "Jedinstvo bogoslužja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1835,7 +1850,8 @@
               "level": "h4",
               "text": "Protiv idolopoklonstva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1923,7 +1939,8 @@
               "level": "h4",
               "text": "Protiv jednoga poganskog običaja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2067,7 +2084,8 @@
               "level": "h4",
               "text": "Godina oproštenja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2183,7 +2201,8 @@
               "level": "h4",
               "text": "Pasha"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2307,7 +2326,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Ne žrtvuj Jahvi, Bogu svome, ni vola ni ovna koji bi na sebi imao manu ili kakvo zlo, jer bi to bilo ružno pred Jahvom, Bogom tvojim."
+          "text": "Ne žrtvuj Jahvi, Bogu svome, ni vola ni ovna koji bi na sebi imao manu ili kakvo zlo, jer bi to bilo ružno pred Jahvom, Bogom tvojim.",
+          "p": true
         },
         {
           "verse": 2,
@@ -2411,7 +2431,8 @@
               "level": "h4",
               "text": "Svećenici"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2521,7 +2542,8 @@
               "level": "h4",
               "text": "Ubojstvo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2633,7 +2655,8 @@
               "level": "h4",
               "text": "Priprava"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2739,7 +2762,8 @@
               "level": "h4",
               "text": "Ako je ubojica nepoznat"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2867,7 +2891,8 @@
               "level": "h4",
               "text": "Propisi o tuđem vlasništvu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3001,7 +3026,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Neka se nitko ne ženi ženom oca svoga i neka ne odgrće očeva pokrivača.«"
+          "text": "Neka se nitko ne ženi ženom oca svoga i neka ne odgrće očeva pokrivača.«",
+          "p": true
         },
         {
           "verse": 2,
@@ -3135,7 +3161,8 @@
               "level": "h4",
               "text": "Rastava"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3235,7 +3262,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Kad nastane svađa među ljudima i dođu na sud da im se sudi, neka se dade pravo onome koji je prav, a krivac neka se osudi."
+          "text": "Kad nastane svađa među ljudima i dođu na sud da im se sudi, neka se dade pravo onome koji je prav, a krivac neka se osudi.",
+          "p": true
         },
         {
           "verse": 2,
@@ -3339,7 +3367,8 @@
               "level": "h4",
               "text": "Prigodom prinošenja prvih plodova"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3439,7 +3468,8 @@
               "level": "h4",
               "text": "Uspostava zakona"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3555,7 +3585,8 @@
               "level": "h4",
               "text": "Blagoslovi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3857,7 +3888,8 @@
           "lines": [
             "Mojsije sazva sav Izrael pa im reče:",
             "»Vidjeli ste na rođene oči sve što je Jahve učinio u zemlji egipatskoj faraonu, svim službenicima njegovim i svoj zemlji njegovoj:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3987,7 +4019,8 @@
               "level": "h4",
               "text": "Povratak k Jahvi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4095,7 +4128,8 @@
               "level": "h4",
               "text": "Jošua određen za vođu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4243,7 +4277,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "»Slušajte, nebesa, sad ću govoriti; čuj, zemljo, riječi usta mojih!"
+          "text": "»Slušajte, nebesa, sad ću govoriti; čuj, zemljo, riječi usta mojih!",
+          "p": true
         },
         {
           "verse": 2,
@@ -4696,7 +4731,8 @@
               "level": "h4",
               "text": "Mojsijev blagoslov"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4991,7 +5027,8 @@
               "level": "h4",
               "text": "Mojsijeva smrt"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

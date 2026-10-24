@@ -5,11 +5,12 @@ import { getAuditReport } from "../../lib/bible";
 const audit = getAuditReport();
 const sampleDiscrepancies = (audit.web_vs_mobile_api_discrepancies || []).slice(0, 16);
 const planBugs = audit.ks_reading_plan_bugs || [];
+const crossErrata = audit.cross_source_errata_fixed || [];
 ---
 
 <BaseLayout
   title="Moje oznake, bilješke i Audit izvještaj | Biblija 365"
-  description="Osobne oznake i bilješke uz biblijske retke te izvještaj o provjeri integriteta baze Kršćanske sadašnjosti."
+  description="Osobne oznake i bilješke uz biblijske retke te izvještaj o provjeri integriteta baze Kršćanske sadašnjosti i unakrsnoj provjeri s eBible/CrossWire izvorima."
   activeNav="notes"
 >
   <section id="notesPageRoot">
@@ -33,16 +34,21 @@ const planBugs = audit.ks_reading_plan_bugs || [];
     </div>
 
     <div class="card">
-      <h2 style="margin:0 0 0.35rem;">Lokalni Diff &amp; Audit izvještaj (KS Web vs. Mobilni API)</h2>
+      <h2 style="margin:0 0 0.35rem;">Lokalni Diff &amp; Cross-Source Audit izvještaj</h2>
       <p style="margin:0 0 0.8rem;color:var(--text-muted);font-size:0.9rem;">
-        Rezultati automatske provjere svih 73 knjiga, 1.329 poglavlja i 35.394 retka između <code>biblija.ks.hr</code> weba i mobilnog API-ja. Svi dolje navedeni problemi su <strong>automatski ispravljeni</strong> u našem determinističkom JSON katalogu i SQLite bazi (<code>data/biblija.db</code>).
+        Rezultati automatske provjere svih 73 knjiga, 1.329 poglavlja i <strong>{audit.total_verses.toLocaleString("hr-HR")}</strong> redaka između <code>biblija.ks.hr</code> weba, mobilnog API-ja i neovisnog USFM/CrossWire prijepisa Zagrebačke Biblije. Svi dolje navedeni problemi su <strong>automatski ispravljeni i rekonstruirani</strong> u našem determinističkom JSON katalogu (<code>data/errata.json</code>) i SQLite bazi (<code>data/biblija.db</code>).
       </p>
 
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0.75rem;margin-bottom:1.1rem;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.75rem;margin-bottom:1.1rem;">
         <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
           <div style="font-size:0.78rem;color:var(--text-muted);">Ukupno provjerenih redaka</div>
           <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">{audit.total_verses.toLocaleString("hr-HR")}</div>
           <div style="font-size:0.78rem;color:var(--text-muted);">73 knjige • 1.329 poglavlja (s Proslovom Siraha)</div>
+        </div>
+        <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
+          <div style="font-size:0.78rem;color:var(--text-muted);">Rekonstruirani oštećeni stihovi (Errata)</div>
+          <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">{crossErrata.length} stihova</div>
+          <div style="font-size:0.78rem;color:var(--text-muted);">Tit 1,1–2, Dn 3,91–100, Job 25 &amp; 27, OCR</div>
         </div>
         <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
           <div style="font-size:0.78rem;color:var(--text-muted);">Web vs. Mobilni API razlike</div>
@@ -54,21 +60,30 @@ const planBugs = audit.ks_reading_plan_bugs || [];
           <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">Sirah 0 (Proslov)</div>
           <div style="font-size:0.78rem;color:var(--text-muted);">8 redaka nedostupnih u WP bible_chapter</div>
         </div>
-        <div style="background:var(--bg);padding:0.85rem;border-radius:8px;border:1px solid var(--border);">
-          <div style="font-size:0.78rem;color:var(--text-muted);">Greške u KS planovima čitanja</div>
-          <div style="font-size:1.5rem;font-weight:700;color:var(--accent);">{planBugs.length} knjiga</div>
-          <div style="font-size:0.78rem;color:var(--text-muted);">Preskočena poglavlja (npr. Dj 2, Mt 26, Mk 14)</div>
-        </div>
       </div>
 
-      <h4 style="margin:0.8rem 0 0.4rem;">1. Metapodaci knjiga i skrivena poglavlja (ispravljeno u katalogu)</h4>
-      <ul style="font-size:0.88rem;margin-top:0.2rem;">
-        <li><strong>Knjiga Izlaska (<code>knjiga-izlaska</code>):</strong> U KS API-ju stoji <code>chapter_count: 41</code> iako postoji samo 40 poglavlja. Ispravljeno na <strong>40</strong>.</li>
-        <li><strong>Knjiga Sirahova — Proslov prevodiočev (<a href="/knjiga-sirahova/0/">Sir Proslov</a>):</strong> U KS bazi postoji 8 redaka Proslova (ID 23140–23147), ali endpoint <code>/wp/v2/bible_chapter/871</code> puca s praznim odgovorom. Kod nas je vraćen kao uvodno poglavlje <a href="/knjiga-sirahova/0/">Knjige Sirahove</a>.</li>
-        <li><strong>Poslanica Kološanima:</strong> U KS API-ju naslov sadrži sirovi HTML entitet <code>Poslanica Kolo&amp;scaron;anima</code>. Očišćeno u <strong>Poslanica Kološanima</strong>.</li>
+      <h4 style="margin:0.8rem 0 0.4rem;">1. Rekonstruirani izgubljeni i oštećeni stihovi u bazi <code>biblija.ks.hr</code> (<code>data/errata.json</code>)</h4>
+      <ul style="font-size:0.88rem;margin-top:0.2rem;line-height:1.6;">
+        <li>
+          <strong>Poslanica Titu 1,1–2 (<a href="/poslanica-titu/1/#v-1">Tit 1,1–2</a>):</strong> U službenoj bazi <code>biblija.ks.hr</code> stih <code>Tit 1,1</code> slučajno je pregažen završetkom 2. stiha (<code>"On koji ne laže,"</code>), dok je uvodni apostolski pozdrav (<em>„Pavao, sluga Božji i apostol Isusa Krista poradi vjere izabranika Božjih i spoznanja istine usmjerene k pobožnosti"</em>) potpuno izgubljen! Također su u <a href="/poslanica-titu/1/#v-5">Tit 1,5</a> i <a href="/poslanica-titu/1/#v-10">Tit 1,10</a> međunaslovi bili zalijepljeni u tekst stiha bez <code>&lt;h4&gt;</code> oznake. Sve je rekonstruirano i popravljeno.
+        </li>
+        <li>
+          <strong>Knjiga o Danielu 3,91–100 (<a href="/daniel/3/#v-91">Dn 3,91–100</a>):</strong> Na <code>biblija.ks.hr</code> 3. poglavlje Daniela prekida se na 90. stihu (nedostaje cijeli završetak poglavlja od 10 stihova u kojima Nabukodonozor izvodi Šadraka, Mešaka i Abed Nega iz užarene peći i priznaje Boga Svevišnjega). Svih 10 stihova vraćeno je u <a href="/daniel/3/#v-91">Dn 3,91–100</a>.
+        </li>
+        <li>
+          <strong>Knjiga o Jobu 25,1–4 (<a href="/knjiga-o-jobu/25/#v-1">Job 25</a>) i 27,1–4 (<a href="/knjiga-o-jobu/27/#v-1">Job 27</a>):</strong> Na <code>biblija.ks.hr</code> stihovi <code>Job 25,1</code> i <code>Job 27,1</code> bili su potpuno prazni (<code>""</code>), a stihovi <code>25,2–4</code> i <code>27,2–4</code> ispali su pri prijelomu premještenih govora iz Jeruzalemske Biblije. Svi su vraćeni na svoja mjesta.
+        </li>
+        <li>
+          <strong>Knjiga Sirahova — Proslov prevodiočev (<a href="/knjiga-sirahova/0/">Sir Proslov</a>) &amp; Knjiga Izlaska:</strong> Spašeno 8 redaka Proslova Knjige Sirahove na kojima službeni endpoint <code>/wp/v2/bible_chapter/871</code> puca, te ispravljen <code>chapter_count: 40</code> za Knjigu Izlaska i zaostali OCR znakovi <code>?</code> u <a href="/knjiga-o-jobu/19/#v-1">Job 19,1</a>, <a href="/knjiga-o-jobu/29/#v-1">Job 29,1</a> i <a href="/izaija/10/#v-1">Iz 10,1</a>.
+        </li>
       </ul>
 
-      <h4 style="margin:0.9rem 0 0.4rem;">2. Primjeri od 428 redaka gdje se Web i Mobilni API razlikuju (klikni za skok)</h4>
+      <h4 style="margin:0.9rem 0 0.4rem;">2. Otkriće o eBible.org (<code>hrv_usfm</code>) / CrossWire (<code>CroSaric</code>) izvorima</h4>
+      <p style="font-size:0.86rem;color:var(--text-muted);margin:0.2rem 0 0.8rem;">
+        Unakrsnom usporedbom svih 73 knjiga utvrđeno je da poznati međunarodni repozitoriji <code>eBible.org (hrv)</code> i <code>CrossWire SWORD (CroSaric)</code> — koji su na internetu desetljećima deklarirani kao <em>„prijevod Ivana Ev. Šarića (1941./42.)"</em> — zapravo sadrže <strong>99,8% identičan tekst Zagrebačke Biblije (Kršćanska sadašnjost, 1968.)</strong> (s tisućama pojavljivanja imena <em>Jahve</em> i prijevodom Novog zavjeta Bonaventure Dude i Jerka Fućka), ali uz brojne greške starog OCR-a i odrezane stihove iz <em>The Unbound Bible</em> projekta (npr. odrezani <code>Post 47,4</code>, <code>Izl 36,37</code>, <code>Jr 25,2</code> te zaostali ukrajinski komentar u <code>2 Mak 15,39</code>).
+      </p>
+
+      <h4 style="margin:0.9rem 0 0.4rem;">3. Primjeri od 428 redaka gdje se Web i Mobilni API razlikuju (klikni za skok)</h4>
       <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:0.8rem;">
         {sampleDiscrepancies.map((d: any) => (
           <a
@@ -81,7 +96,7 @@ const planBugs = audit.ks_reading_plan_bugs || [];
         ))}
       </div>
 
-      <h4 style="margin:0.9rem 0 0.4rem;">3. Detektirana preskočena poglavlja u službenim KS planovima čitanja</h4>
+      <h4 style="margin:0.9rem 0 0.4rem;">4. Detektirana preskočena poglavlja u službenim KS planovima čitanja</h4>
       <div style="max-height:220px;overflow-y:auto;font-size:0.84rem;border:1px solid var(--border);border-radius:6px;padding:0.6rem;">
         {planBugs.map((b: any) => (
           <div style="margin-bottom:0.25rem;">

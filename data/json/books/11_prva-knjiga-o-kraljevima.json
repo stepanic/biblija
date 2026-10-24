@@ -1,11 +1,14 @@
 {
   "order": 11,
   "id": "prva-knjiga-o-kraljevima",
+  "usfm_id": "1KI",
   "ks_book_id": 22,
   "abbr": "1 Kr",
   "title": "Prva knjiga o Kraljevima",
+  "name_en": "1 Kings",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": false,
   "chapter_count": 22,
   "verse_count": 816,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Davidova starost i spletka Adonijina"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -271,7 +275,8 @@
               "level": "h4",
               "text": "Davidova oporuka i smrt"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -497,7 +502,8 @@
               "level": "h4",
               "text": "Uvod"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -633,7 +639,8 @@
               "level": "h4",
               "text": "Salomonovi odličnici"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -754,7 +761,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Ti su se namjesnici brinuli o opskrbi kralja Salomona i sviju koji su imali dijela za kraljevim stolom, svaki po mjesec dana; i nisu dopuštali da ičega ponestane."
+          "text": "Ti su se namjesnici brinuli o opskrbi kralja Salomona i sviju koji su imali dijela za kraljevim stolom, svaki po mjesec dana; i nisu dopuštali da ičega ponestane.",
+          "p": true
         },
         {
           "verse": 2,
@@ -910,7 +918,8 @@
               "level": "h4",
               "text": "Gradnja Hrama"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1092,7 +1101,8 @@
               "level": "h4",
               "text": "Salomonov dvor"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1344,7 +1354,8 @@
               "level": "h4",
               "text": "Prijenos Kovčega saveza"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1679,7 +1690,8 @@
               "level": "h4",
               "text": "Novo ukazanje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1835,7 +1847,8 @@
               "level": "h4",
               "text": "Posjet kraljice od Sabe"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1983,7 +1996,8 @@
               "level": "h4",
               "text": "Salomonove žene"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2193,7 +2207,8 @@
               "level": "h4",
               "text": "Zbor u Šekemu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2361,7 +2376,8 @@
               "level": "h4",
               "text": "Osuda žrtvenika u Betelu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2523,7 +2539,8 @@
               "level": "h4",
               "text": "Svršetak kraljevanja Jeroboama I."
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2665,7 +2682,8 @@
               "level": "h4",
               "text": "Abijamovo kraljevanje u Judeji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2821,7 +2839,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Tada bî upućena riječ Jahvina Jehuu, sinu Hananijevu, protiv Baše:"
+          "text": "Tada bî upućena riječ Jahvina Jehuu, sinu Hananijevu, protiv Baše:",
+          "p": true
         },
         {
           "verse": 2,
@@ -3001,7 +3020,8 @@
               "level": "h4",
               "text": "Navještaj Božje kazne"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3134,7 +3154,8 @@
               "level": "h4",
               "text": "Susret Ilije i Obadije"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3356,7 +3377,8 @@
               "level": "h4",
               "text": "Na putu prema Horebu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3468,7 +3490,8 @@
               "level": "h4",
               "text": "Opsada Samarije"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3686,7 +3709,8 @@
               "level": "h4",
               "text": "Nabot neće da ustupi vinograd"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3842,7 +3866,8 @@
               "level": "h4",
               "text": "Ahab poduzima pohod protiv Ramot Gileada"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

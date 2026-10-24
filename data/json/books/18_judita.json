@@ -1,11 +1,14 @@
 {
   "order": 18,
   "id": "judita",
+  "usfm_id": "JDT",
   "ks_book_id": 29,
   "abbr": "Jdt",
   "title": "Judita",
+  "name_en": "Judith",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": true,
   "chapter_count": 16,
   "verse_count": 339,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Nabukodonozor i Arfaksad"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -107,7 +111,8 @@
               "level": "h4",
               "text": "Vojna protiv Zapada"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -225,7 +230,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Poslaše mu zbog toga glasnike s miroljubivim prijedlozima i poručiše:"
+          "text": "Poslaše mu zbog toga glasnike s miroljubivim prijedlozima i poručiše:",
+          "p": true
         },
         {
           "verse": 2,
@@ -273,7 +279,8 @@
               "level": "h4",
               "text": "Uzbuna u Judeji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -351,7 +358,8 @@
               "level": "h4",
               "text": "Savjetovanje u Holofernovu taboru"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -467,7 +475,8 @@
               "level": "h4",
               "text": "Ahior predan Izraelcima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -567,7 +576,8 @@
               "level": "h2",
               "text": "II. OPSJEDANJE BETULIJE"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -711,7 +721,8 @@
               "level": "h4",
               "text": "Uvod"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -873,7 +884,8 @@
               "level": "h4",
               "text": "Juditina molitva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -949,7 +961,8 @@
               "level": "h4",
               "text": "Judita u neprijateljskom taboru"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1053,7 +1066,8 @@
               "level": "h4",
               "text": "Prvi susret s Holofernom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1151,7 +1165,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Zapovjedi da je odvedu na mjesto gdje je bilo pohranjeno srebrno posuđe i naredi da joj daju od jela njegovih i od vina njegova."
+          "text": "Zapovjedi da je odvedu na mjesto gdje je bilo pohranjeno srebrno posuđe i naredi da joj daju od jela njegovih i od vina njegova.",
+          "p": true
         },
         {
           "verse": 2,
@@ -1249,7 +1264,8 @@
               "level": "h4",
               "text": "Holofernova glava"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1357,7 +1373,8 @@
               "level": "h4",
               "text": "Židovi u asirskom taboru"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1447,7 +1464,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "I oni koji su se još nalazili u šatorima, kad su čuli što se dogodilo, skameniše se."
+          "text": "I oni koji su se još nalazili u šatorima, kad su čuli što se dogodilo, skameniše se.",
+          "p": true
         },
         {
           "verse": 2,
@@ -1543,7 +1561,8 @@
             "Gospodinu pjevajte s cimbalima,",
             "psalam i pohvalu izvijajte mu u čast,",
             "veličajte i zazivajte ime njegovo!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

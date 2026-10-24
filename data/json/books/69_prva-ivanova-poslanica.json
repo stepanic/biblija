@@ -1,11 +1,14 @@
 {
   "order": 69,
   "id": "prva-ivanova-poslanica",
+  "usfm_id": "1JN",
   "ks_book_id": 80,
   "abbr": "1 Iv",
   "title": "Prva Ivanova poslanica",
+  "name_en": "1 John",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 5,
   "verse_count": 105,
   "chapters": [
@@ -32,7 +35,8 @@
             "što smo vidjeli očima svojim,",
             "što razmotrismo i ruke naše opipaše",
             "o Riječi, Životu –"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -146,7 +150,8 @@
             "Ako tko i sagriješi,",
             "zagovornika imamo kod Oca –",
             "Isusa Krista, Pravednika."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -453,7 +458,8 @@
             "djeca se Božja zovemo, i jesmo.",
             "A svijet nas ne poznaje zato",
             "što ne poznaje njega."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -702,7 +708,8 @@
             "ne vjerujte svakom duhu,",
             "nego provjeravajte duhove jesu li od Boga,",
             "jer su mnogi lažni proroci izišli u svijet."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -920,7 +927,8 @@
             "Tko god vjeruje: »Isus je Krist«,",
             "od Boga je rođen.",
             "I tko god ljubi roditelja, ljubi i rođenoga."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

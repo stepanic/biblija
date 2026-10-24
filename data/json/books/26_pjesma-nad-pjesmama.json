@@ -1,11 +1,14 @@
 {
   "order": 26,
   "id": "pjesma-nad-pjesmama",
+  "usfm_id": "SNG",
   "ks_book_id": 37,
   "abbr": "Pj",
   "title": "Pjesma nad pjesmama",
+  "name_en": "Song of Songs",
   "testament": "SZ",
   "category": "Psalmi i mudrosne knjige",
+  "deuterocanonical": false,
   "chapter_count": 8,
   "verse_count": 117,
   "chapters": [
@@ -25,7 +28,8 @@
           "lines": [
             "Salomonova",
             "Pjesma nad pjesmama"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -224,7 +228,8 @@
           "lines": [
             "– Ja sam cvijet šaronski,",
             "ljiljan u dolu."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -407,7 +412,8 @@
             "Po ležaju svome, u noćima, tražila sam",
             "onoga koga ljubi duša moja,",
             "tražila sam ga, ali ga nisam našla."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -541,7 +547,8 @@
             "(kad gledaš) ispod koprene.",
             "Kosa ti je kao stado koza",
             "što izađoše na brdo Gilead."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -727,7 +734,8 @@
             "pijem vino svoje i mlijeko svoje.",
             "Jedite, prijatelji,",
             "pijte i opijte se, mili moji!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -920,7 +928,8 @@
             "o najljepša među ženama?",
             "Kuda je zamakao dragi tvoj,",
             "da ga tražimo s tobom?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1066,7 +1075,8 @@
             "vrati se da te gledamo!",
             "Što ćete vidjeti na Sulamki",
             "koja pleše u dva zbora?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1215,7 +1225,8 @@
             "našla bih te vani,",
             "poljubila bih te",
             "i nitko me zato ne bi prezirao."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

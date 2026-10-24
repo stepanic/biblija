@@ -1,11 +1,14 @@
 {
   "order": 45,
   "id": "zaharija",
+  "usfm_id": "ZEC",
   "ks_book_id": 56,
   "abbr": "Zah",
   "title": "Zaharija",
+  "name_en": "Zechariah",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 14,
   "verse_count": 210,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Jahve potiče na obraćenje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -111,7 +115,8 @@
               "level": "h4",
               "text": "Drugo viđenje: rogovi i kovači"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -235,7 +240,8 @@
               "level": "h4",
               "text": "Četvrto viđenje: Jošuine haljine"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -293,7 +299,8 @@
               "level": "h4",
               "text": "Peto viđenje: svijećnjak i masline"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -363,7 +370,8 @@
               "level": "h4",
               "text": "Šesto viđenje: knjiga koja leti"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -425,7 +433,8 @@
               "level": "h4",
               "text": "Osmo viđenje: kola"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -507,7 +516,8 @@
               "level": "h4",
               "text": "O postu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -581,7 +591,8 @@
               "level": "h4",
               "text": "Spas u Mesiji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -739,7 +750,8 @@
             "Damask mu je počivalište;",
             "jer Jahvini su gradovi Arama",
             "i sva plemena Izraela."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -934,7 +946,8 @@
             "i daje kišu;",
             "čovjeku kruh daje,",
             "a stoci travu."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1072,7 +1085,8 @@
           "lines": [
             "Otvori vrata, Libanone,",
             "nek’ ti oganj sažeže cedrove!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1179,7 +1193,8 @@
               "level": "h4",
               "text": "Oslobođenje i obnova Jeruzalema"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1241,7 +1256,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "U onaj dan otvorit će se izvor domu Davidovu i Jeruzalemcima da se operu od grijeha i nečistoće."
+          "text": "U onaj dan otvorit će se izvor domu Davidovu i Jeruzalemcima da se operu od grijeha i nečistoće.",
+          "p": true
         },
         {
           "verse": 2,
@@ -1316,7 +1332,8 @@
               "level": "h4",
               "text": "Eshatološki boj: Sjaj Jeruzalema"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

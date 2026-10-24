@@ -1,11 +1,14 @@
 {
   "order": 35,
   "id": "hosea",
+  "usfm_id": "HOS",
   "ks_book_id": 46,
   "abbr": "Hoš",
   "title": "Hošea",
+  "name_en": "Hosea",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 14,
   "verse_count": 197,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Natpis"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -84,7 +88,8 @@
             "»A djece Izraelove bit će brojem k’o pijeska u moru što se izmjerit’ ne može ni izbrojit’.",
             "Umjesto da im govore: ‘Vi niste moj narod’,",
             "zvat će ih: ‘Sinovi Boga živoga’."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -336,7 +341,8 @@
               "level": "h4",
               "text": "Hošea prihvaća nevjernicu i stavlja je na kušnju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -377,7 +383,8 @@
             "Čujte riječ Jahvinu, sinovi",
             "Izraelovi,",
             "jer Jahve se parbi sa stanovnicima zemlje."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -593,7 +600,8 @@
             "jer vaš je sud!",
             "Vi ste bili zamka u Mispi",
             "i mreža napeta na Taboru."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -765,7 +773,8 @@
             "»Hajde, vratimo se Jahvi!",
             "On je razderao, on će nas iscijeliti:",
             "on je udario, on će nam poviti rane;"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -878,7 +887,8 @@
             "prijevarom se bave oni:",
             "tat u kuću provaljuje,",
             "a vani napadaju razbojnici."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1056,7 +1066,8 @@
             "poput stražara na domu Jahvinu;",
             "jer oni moj savez prestupiše,",
             "otpadoše od moga zakona."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1228,7 +1239,8 @@
             "jer, ostavivši Boga svoga,",
             "zavolio si plaću bludničku",
             "po svim gumnima žitnim."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1424,7 +1436,8 @@
             "to je više umnažao žrtvenike;",
             "što mu je bogatija zemlja bila,",
             "to je kićenije dizao stupove."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1608,7 +1621,8 @@
             "Dok Izrael bijaše dijete,",
             "ja ga ljubljah,",
             "iz Egipta dozvah sina svoga."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1744,7 +1758,8 @@
             "i prijevarom Izraelov dom.",
             "A i Juda još je nestalan",
             "Bogu, Svecu vjernome."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1924,7 +1939,8 @@
             "strah je zadavao,",
             "jer bijaše on prvak u Izraelu,",
             "al’ ogriješi se Baalom i poginu."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2093,7 +2109,8 @@
             "Od mača past će oni,",
             "djecu će njihovu smrskati,",
             "žene trudne rasporiti."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

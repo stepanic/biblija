@@ -1,11 +1,14 @@
 {
   "order": 30,
   "id": "jeremija",
+  "usfm_id": "JER",
   "ks_book_id": 41,
   "abbr": "Jr",
   "title": "Jeremija",
+  "name_en": "Jeremiah",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 52,
   "verse_count": 1364,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Naslov"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -195,7 +199,8 @@
               "level": "h4",
               "text": "Prve Jeremijine propovijedi:Otpadništvo Izraelovo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -594,7 +599,8 @@
             "Nije li ta žena sasvim oskvrnuta?",
             "A ti si bludničila s mnogim milosnicima,",
             "pa da se meni vratiš?« – riječ je Jahvina."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -806,7 +812,8 @@
             "»k meni se vrati;",
             "ukloniš li grozote svoje,",
             "više ne moraš bježati od mene."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1139,7 +1146,8 @@
             "i traži istinu,",
             "oprostit ću ovom gradu« –",
             "riječ je Jahvina."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1469,7 +1477,8 @@
             "na Bet Hakeremu podignite bojni stijeg!",
             "Jer sa sjevera se nadvija nesreća,",
             "propast velika."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1782,7 +1791,8 @@
               "level": "h4",
               "text": "Pravo čašćenje Bogaa) Napad na Hram"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1948,7 +1958,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "»U ono vrijeme« – riječ je Jahvina – »povadit će iz grobova kosti kraljeva judejskih, kosti knezova njezinih, kosti svećenika, kosti proroka i kosti žitelja jeruzalemskih."
+          "text": "»U ono vrijeme« – riječ je Jahvina – »povadit će iz grobova kosti kraljeva judejskih, kosti knezova njezinih, kosti svećenika, kosti proroka i kosti žitelja jeruzalemskih.",
+          "p": true
         },
         {
           "verse": 2,
@@ -2217,7 +2228,8 @@
             "i daleko od njih otišao.",
             "Jer svi su oni preljubnici,",
             "rulja izdajnička."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2463,7 +2475,8 @@
           "lines": [
             "Slušajte riječ koju vam govori",
             "Jahve, dome Izraelov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2718,7 +2731,8 @@
               "level": "h4",
               "text": "Jeremija i »riječi Saveza«"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2867,7 +2881,8 @@
             "Samo bih jedno s tobom raspravio:",
             "Zašto je put zlikovaca uspješan?",
             "Zašto podmuklice uživaju mir?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3034,7 +3049,8 @@
               "level": "h4",
               "text": "Pojas na Eufratu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3259,7 +3275,8 @@
               "level": "h4",
               "text": "Velika suša"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3444,7 +3461,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "I reče mi Jahve: »Kad bi i Mojsije i Samuel stali pred lice moje, ne bi mi se duša obratila narodu tome. Otjeraj ih ispred lica mojega, neka idu od mene!"
+          "text": "I reče mi Jahve: »Kad bi i Mojsije i Samuel stali pred lice moje, ne bi mi se duša obratila narodu tome. Otjeraj ih ispred lica mojega, neka idu od mene!",
+          "p": true
         },
         {
           "verse": 2,
@@ -3672,7 +3690,8 @@
               "level": "h4",
               "text": "Prorokov život kao znamen"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3811,7 +3830,8 @@
             "urezan dijamantnim vrškom",
             "u pločicu njihova srca",
             "i u rogove njihovih žrtvenika,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4052,7 +4072,8 @@
               "level": "h4",
               "text": "Jeremija kod lončara"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4233,7 +4254,8 @@
               "level": "h4",
               "text": "Razbijeni vrč i prepirka s Pašhurom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4303,7 +4325,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "A svećenik Pašhur, sin Imerov, vrhovni nadzornik doma Jahvina, ču kako Jeremija prorokuje te riječi."
+          "text": "A svećenik Pašhur, sin Imerov, vrhovni nadzornik doma Jahvina, ču kako Jeremija prorokuje te riječi.",
+          "p": true
         },
         {
           "verse": 2,
@@ -4473,7 +4496,8 @@
               "level": "h4",
               "text": "Odgovor izaslanicima Sidkijinim"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4566,7 +4590,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Ovako govori Jahve: »Siđi u palaču kralja judejskoga i objavi ondje ovu riječ."
+          "text": "Ovako govori Jahve: »Siđi u palaču kralja judejskoga i objavi ondje ovu riječ.",
+          "p": true
         },
         {
           "verse": 2,
@@ -4822,7 +4847,8 @@
               "level": "h4",
               "text": "Mesijansko proroštvo.Budući kralj"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5120,7 +5146,8 @@
               "level": "h4",
               "text": "Dvije kotarice smokava"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5172,7 +5199,8 @@
               "level": "h3",
               "text": "4. BABILON – BIČ BOŽJI"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5405,7 +5433,8 @@
               "level": "h4",
               "text": "Jeremija kao prorok"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5523,7 +5552,8 @@
               "level": "h4",
               "text": "Simbolična izrada jarma i obavijest kraljevima Zapada"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5623,7 +5653,8 @@
               "level": "h4",
               "text": "Raspra s prorokom Hananijom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5703,7 +5734,8 @@
               "level": "h4",
               "text": "Poslanica izgnanicima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5853,7 +5885,8 @@
               "level": "h4",
               "text": "Sjeverni će Izrael biti obnovljen"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6075,7 +6108,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "»U ono vrijeme« – riječ je Jahvina – »bit ću Bog svim plemenima Izraelovim i oni će biti narod moj.«"
+          "text": "»U ono vrijeme« – riječ je Jahvina – »bit ću Bog svim plemenima Izraelovim i oni će biti narod moj.«",
+          "p": true
         },
         {
           "verse": 2,
@@ -6463,7 +6497,8 @@
               "level": "h4",
               "text": "Kupnja njive – zalog za Judinu sretnu budućnost"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6651,7 +6686,8 @@
               "level": "h4",
               "text": "Još jedno obećanje o obnoviJeruzalema i Judeje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6788,7 +6824,8 @@
               "level": "h4",
               "text": "Konačna sudbina Sidkijina"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6894,7 +6931,8 @@
               "level": "h4",
               "text": "Primjer Rekabovaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6986,7 +7024,8 @@
               "level": "h4",
               "text": "Svitak proroštava 605.–604. godine"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7126,7 +7165,8 @@
               "level": "h4",
               "text": "Opći sud o Sidkiji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7234,7 +7274,8 @@
               "level": "h4",
               "text": "Jeremija u čatrnji – Ebed-Melek zauzima se za nj"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7375,7 +7416,8 @@
               "level": "h4",
               "text": "Jeremijina sudbina za osvojenja Jeruzalema"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7465,7 +7507,8 @@
               "level": "h4",
               "text": "Još o sudbini Jeremijinoj"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7541,7 +7584,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Ali u sedmom mjesecu dođe Jišmael, sin Elišamina sina Netanije, roda kraljevskoga, s deset ljudi i potraži Gedaliju, sina Ahikamova, u Mispi. I dok su se ondje, u Mispi, zajedno gostili,"
+          "text": "Ali u sedmom mjesecu dođe Jišmael, sin Elišamina sina Netanije, roda kraljevskoga, s deset ljudi i potraži Gedaliju, sina Ahikamova, u Mispi. I dok su se ondje, u Mispi, zajedno gostili,",
+          "p": true
         },
         {
           "verse": 2,
@@ -7625,7 +7669,8 @@
               "level": "h4",
               "text": "Bijeg u Egipat"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7723,7 +7768,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Kad je Jeremija svemu narodu kazao sve riječi Jahve, Boga njihova, sve one riječi radi kojih ga je Jahve, Bog njihov, k njima poslao,"
+          "text": "Kad je Jeremija svemu narodu kazao sve riječi Jahve, Boga njihova, sve one riječi radi kojih ga je Jahve, Bog njihov, k njima poslao,",
+          "p": true
         },
         {
           "verse": 2,
@@ -7799,7 +7845,8 @@
               "level": "h4",
               "text": "Judejci i »Kraljica neba«"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7931,7 +7978,8 @@
               "level": "h4",
               "text": "Riječ utjehe Baruhu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7971,7 +8019,8 @@
               "level": "h4",
               "text": "Proročanstvo protiv Egipta –Poraz kod Karkemiša"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8249,7 +8298,8 @@
               "level": "h4",
               "text": "Proročanstvo protiv Filistejaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8338,7 +8388,8 @@
             "»Jao brdu Nebu jer je opustošeno,",
             "postiđen je Kirjatajim i osvojen,",
             "tvrđa posramljena, razorena,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8725,7 +8776,8 @@
             "nema nasljednika?",
             "Zašto je Milkom baštinio Gad",
             "i narod se njegov nastanio u njegovim gradovima?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -9116,7 +9168,8 @@
               "level": "h4",
               "text": "Proročanstvo protiv Babilona"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -9635,7 +9688,8 @@
             "Ovako govori Jahve: »Gle, ja podižem protiv Babilona",
             "i protiv pučanstva kaldejskog",
             "vjetar zatornički."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -10294,7 +10348,8 @@
               "level": "h4",
               "text": "Propast Jeruzalema –Jojakin pomilovan"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

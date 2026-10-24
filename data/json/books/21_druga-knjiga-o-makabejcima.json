@@ -1,11 +1,14 @@
 {
   "order": 21,
   "id": "druga-knjiga-o-makabejcima",
+  "usfm_id": "2MA",
   "ks_book_id": 32,
   "abbr": "2 Mak",
   "title": "Druga knjiga o Makabejcima",
+  "name_en": "2 Maccabees",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": true,
   "chapter_count": 15,
   "verse_count": 555,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h3",
               "text": "PRVO PISMO"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -203,7 +207,8 @@
               "level": "h4",
               "text": "Jeremija sakriva obredne stvari"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -365,7 +370,8 @@
               "level": "h4",
               "text": "Dolazak Heliodora u Jeruzalem"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -559,7 +565,8 @@
               "level": "h4",
               "text": "Nedjela nadzornika Šimuna"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -807,7 +814,8 @@
               "level": "h4",
               "text": "Druga egipatska vojna"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -945,7 +953,8 @@
               "level": "h4",
               "text": "Uspostava poganskih obreda"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1097,7 +1106,8 @@
               "level": "h4",
               "text": "Mučeništvo sedmorice braće"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1281,7 +1291,8 @@
               "level": "h4",
               "text": "Počeci Makabejskog ustanka"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1455,7 +1466,8 @@
               "level": "h4",
               "text": "Kraj Antioha Epifana"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1589,7 +1601,8 @@
               "level": "h4",
               "text": "Očišćenje Hrama"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1775,7 +1788,8 @@
               "level": "h4",
               "text": "Prva Lizijina vojna"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1945,7 +1959,8 @@
               "level": "h4",
               "text": "Judina odmazda protiv Jope i Jamnije"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2167,7 +2182,8 @@
               "level": "h4",
               "text": "Vojna Antioha i Lizije.Menelajeva smrt"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2303,7 +2319,8 @@
               "level": "h4",
               "text": "Upletanje velikog svećenika Alkima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2517,7 +2534,8 @@
               "level": "h4",
               "text": "Nikanorove hule"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

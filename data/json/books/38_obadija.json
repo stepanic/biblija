@@ -1,11 +1,14 @@
 {
   "order": 38,
   "id": "obadija",
+  "usfm_id": "OBA",
   "ks_book_id": 49,
   "abbr": "Ob",
   "title": "Obadija",
+  "name_en": "Obadiah",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 1,
   "verse_count": 21,
   "chapters": [
@@ -27,7 +30,8 @@
             "Ovako govori Jahve Gospod Edomu!",
             "Čuli smo vijest od Jahve, glasnik bî poslan k narodima:",
             "»Ustajte! Na nj u boj krenimo!«"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

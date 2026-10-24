@@ -1,11 +1,14 @@
 {
   "order": 16,
   "id": "nehemija",
+  "usfm_id": "NEH",
   "ks_book_id": 27,
   "abbr": "Neh",
   "title": "Nehemija",
+  "name_en": "Nehemiah",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": false,
   "chapter_count": 13,
   "verse_count": 405,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Poziv Nehemijin – Njegovo poslanje u Judeji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -75,7 +79,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Mjeseca nisana, dvadesete godine kraljevanja Artakserksova, stajalo je vino pred kraljem. Uzeh ga i ponudih kralju. Nikada pred njim nisam bio tužan."
+          "text": "Mjeseca nisana, dvadesete godine kraljevanja Artakserksova, stajalo je vino pred kraljem. Uzeh ga i ponudih kralju. Nikada pred njim nisam bio tužan.",
+          "p": true
         },
         {
           "verse": 2,
@@ -181,7 +186,8 @@
               "level": "h4",
               "text": "Dragovoljni graditelji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -345,7 +351,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Kad su Sanbalat, Tobija, Arapi, Amonci i Ašdođani čuli da napreduje popravljanje jeruzalemskih zidova – jer su se počele zatvarati pukotine – veoma se ražestiše."
+          "text": "Kad su Sanbalat, Tobija, Arapi, Amonci i Ašdođani čuli da napreduje popravljanje jeruzalemskih zidova – jer su se počele zatvarati pukotine – veoma se ražestiše.",
+          "p": true
         },
         {
           "verse": 2,
@@ -425,7 +432,8 @@
               "level": "h4",
               "text": "Društvene teškoće za Nehemije – Obrana njegove uprave"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -513,7 +521,8 @@
               "level": "h4",
               "text": "Spletke Nehemijinih neprijatelja – Svršetak zida"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -603,7 +612,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "A kad je zid bio sagrađen i kad sam namjestio vratna krila, postavljeni su čuvari na vratima i pjevači i leviti."
+          "text": "A kad je zid bio sagrađen i kad sam namjestio vratna krila, postavljeni su čuvari na vratima i pjevači i leviti.",
+          "p": true
         },
         {
           "verse": 2,
@@ -919,7 +929,8 @@
               "level": "h4",
               "text": "Nastanak židovstva – Ezra čita Zakon – Blagdan sjenicâ"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1003,7 +1014,8 @@
               "level": "h4",
               "text": "Pokorničko bogoslužje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1409,7 +1421,8 @@
               "level": "h4",
               "text": "Obveze zajednice"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1589,7 +1602,8 @@
               "level": "h4",
               "text": "Naseljavanje Židova u Jeruzalemu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1751,7 +1765,8 @@
               "level": "h4",
               "text": "Svećenici i leviti, povratnici iz sužanjstva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1969,7 +1984,8 @@
               "level": "h4",
               "text": "Isključenje stranaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

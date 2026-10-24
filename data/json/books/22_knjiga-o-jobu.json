@@ -1,13 +1,16 @@
 {
   "order": 22,
   "id": "knjiga-o-jobu",
+  "usfm_id": "JOB",
   "ks_book_id": 33,
   "abbr": "Job",
   "title": "Knjiga o Jobu",
+  "name_en": "Job",
   "testament": "SZ",
   "category": "Psalmi i mudrosne knjige",
+  "deuterocanonical": false,
   "chapter_count": 42,
-  "verse_count": 1062,
+  "verse_count": 1068,
   "chapters": [
     {
       "chapter": 1,
@@ -21,7 +24,8 @@
               "level": "h2",
               "text": "I. PROSLOV"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -128,7 +132,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Jednoga dana dođu opet sinovi Božji da stanu pred Jahvu, a među njima pristupi i Satan."
+          "text": "Jednoga dana dođu opet sinovi Božji da stanu pred Jahvu, a među njima pristupi i Satan.",
+          "p": true
         },
         {
           "verse": 2,
@@ -204,7 +209,8 @@
               "level": "h4",
               "text": "Job proklinje dan kada se rodio"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -420,7 +426,8 @@
               "level": "h4",
               "text": "Pouzdanje u Boga"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -596,7 +603,8 @@
           "lines": [
             "Ded zazivlji! Zar će ti se tko odazvat’?",
             "Kojem li se svecu misliš sad obratit’?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -820,7 +828,8 @@
               "level": "h4",
               "text": "Pogođeni čovjek jedini zna svoju nevolju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1068,7 +1077,8 @@
           "lines": [
             "Nije l’ vojska život čovjekov na zemlji?",
             "Ne provodi l’ dane poput najamnika?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1250,7 +1260,8 @@
               "level": "h4",
               "text": "Neumitnost božanske pravde"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1435,7 +1446,8 @@
               "level": "h4",
               "text": "Božja pravednost i ljudsko pravo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1722,7 +1734,8 @@
           "lines": [
             "Kad mi je duši život omrznuo, nek’ mi tužaljka poteče slobodno,",
             "zborit ću u gorčini duše svoje."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1909,7 +1922,8 @@
               "level": "h4",
               "text": "Job treba da prizna mudrost Božju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2079,7 +2093,8 @@
               "level": "h4",
               "text": "Mudrost se Božja očituje u djelima njegove moći"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2288,7 +2303,8 @@
           "lines": [
             "Očima svojim sve to ja vidjeh,",
             "ušima svojim čuh i razumjeh."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2519,7 +2535,8 @@
           "lines": [
             "Čovjek koga je žena rodila",
             "kratka je vijeka i pun nevolja."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2712,7 +2729,8 @@
               "level": "h4",
               "text": "Job sebe osuđuje svojim govorom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3002,7 +3020,8 @@
               "level": "h4",
               "text": "O nepravdi ljudskoj i pravdi Božjoj"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3189,7 +3208,8 @@
           "lines": [
             "Daha mi nestaje, gasnu moji dani",
             "i za mene već se skupljaju grobari."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3325,7 +3345,8 @@
               "level": "h4",
               "text": "Gnjev ne može ništa protiv pravde"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3496,13 +3517,14 @@
       "verses": [
         {
           "verse": 1,
-          "text": "?Job progovori i reče:",
+          "text": "Job progovori i reče:",
           "headings": [
             {
               "level": "h4",
               "text": "Vjera u pravednikovo konačno izbavljenje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3744,7 +3766,8 @@
               "level": "h4",
               "text": "Pravda nikoga ne izuzima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3987,7 +4010,8 @@
               "level": "h4",
               "text": "Činjenice govore suprotno"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4272,7 +4296,8 @@
               "level": "h4",
               "text": "Bog kažnjava samo u ime pravde"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4520,7 +4545,8 @@
               "level": "h4",
               "text": "Bog je daleko – zlo pobjeđuje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4662,7 +4688,8 @@
           "lines": [
             "Zašto Svesilni ne promatra vremena,",
             "a dane njegove ne vide mu vjernici?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4810,11 +4837,24 @@
     },
     {
       "chapter": 25,
-      "verse_count": 11,
+      "verse_count": 14,
       "verses": [
         {
           "verse": 1,
-          "text": ""
+          "text": "Bildad iz Šuaha progovori tad i reče:",
+          "p": true
+        },
+        {
+          "verse": 2,
+          "text": "»Gospodstvo i strah u njegovoj su ruci i on stvara mir u svojim visinama."
+        },
+        {
+          "verse": 3,
+          "text": "Zar se njemu čete izbrojiti mogu i svjetlo njegovo nad kim ne izlazi?"
+        },
+        {
+          "verse": 4,
+          "text": "Pa kako da čovjek prav bude pred Bogom i od žene rođen kako da čist bude?"
         },
         {
           "verse": 5,
@@ -4912,7 +4952,8 @@
               "level": "h4",
               "text": "Bildad govori uprazno"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5100,11 +5141,24 @@
     },
     {
       "chapter": 27,
-      "verse_count": 8,
+      "verse_count": 11,
       "verses": [
         {
           "verse": 1,
-          "text": ""
+          "text": "Job nastavi svoju besjedu i reče:",
+          "p": true
+        },
+        {
+          "verse": 2,
+          "text": "»Živoga mi Boga što mi pravdu krati i Svesilnog koji dušu mi zagorča:"
+        },
+        {
+          "verse": 3,
+          "text": "sve dok duha moga bude još u meni, dok mi dah Božji u nosnicama bude,"
+        },
+        {
+          "verse": 4,
+          "text": "usne moje neće izustiti zloću niti će laž kakva doći na moj jezik."
         },
         {
           "verse": 18,
@@ -5187,7 +5241,8 @@
           "lines": [
             "»Da, srebro ima svoja nalazišta,",
             "a zlato mjesta gdje se pročišćava."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5416,7 +5471,7 @@
       "verses": [
         {
           "verse": 1,
-          "text": "?Job nastavi svoju besjedu i reče:",
+          "text": "Job nastavi svoju besjedu i reče:",
           "headings": [
             {
               "level": "h3",
@@ -5426,7 +5481,8 @@
               "level": "h4",
               "text": "Jobova jadikovka i obrana. Minuli dani"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5641,7 +5697,8 @@
             "ljudi po ljetima mlađi od mene",
             "kojih oce ne bih bio metnuo",
             "ni s ovčarskim psima stada svojega."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5905,7 +5962,8 @@
             "»Sa svojim očima savez sam",
             "sklopio",
             "da pogledat neću nijednu djevicu."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6242,7 +6300,8 @@
               "level": "h4",
               "text": "Elihu uzima riječ"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6424,7 +6483,8 @@
           "lines": [
             "»Čuj dakle, Jobe, što ću ti kazati,",
             "prikloni uho mojim besjedama."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6701,7 +6761,8 @@
               "level": "h4",
               "text": "Neuspjeh trojice mudraca da obrane Boga"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7012,7 +7073,8 @@
               "level": "h4",
               "text": "Bog nije ravnodušan na ono što čovjek čini"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7149,7 +7211,8 @@
               "level": "h4",
               "text": "Pravi smisao Jobovih patnja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7424,7 +7487,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Da, od toga i moje srce drhti i s mjesta svoga iskočiti hoće."
+          "text": "Da, od toga i moje srce drhti i s mjesta svoga iskočiti hoće.",
+          "p": true
         },
         {
           "verse": 2,
@@ -7637,7 +7701,8 @@
               "level": "h4",
               "text": "Stvaralačka Mudrost posramljuje Joba"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7972,7 +8037,8 @@
           "lines": [
             "Znaš li kako se legu divokoze?",
             "Vidje li kako se mlâdê košute?"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8216,7 +8282,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "I Jahve se obrati Jobu i reče mu:"
+          "text": "I Jahve se obrati Jobu i reče mu:",
+          "p": true
         },
         {
           "verse": 2,
@@ -8496,7 +8563,8 @@
           "lines": [
             "Zalud je nadu u njega gojiti,",
             "na pogled njegov čovjek već pogiba."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -8712,7 +8780,8 @@
               "level": "h4",
               "text": "Posljednji Jobov odgovor"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

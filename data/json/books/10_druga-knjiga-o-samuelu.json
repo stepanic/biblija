@@ -1,11 +1,14 @@
 {
   "order": 10,
   "id": "druga-knjiga-o-samuelu",
+  "usfm_id": "2SA",
   "ks_book_id": 21,
   "abbr": "2 Sam",
   "title": "Druga knjiga o Samuelu",
+  "name_en": "2 Samuel",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": false,
   "chapter_count": 24,
   "verse_count": 695,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "David doznaje za smrt Šaulovu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -203,7 +207,8 @@
               "level": "h4",
               "text": "Davidovo pomazanje u Hebronu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -355,7 +360,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Rat između Šaulove kuće i Davidove kuće potrajao je još dugo vremena, ali je David sve više jačao, a Šaulova kuća postajala sve slabija."
+          "text": "Rat između Šaulove kuće i Davidove kuće potrajao je još dugo vremena, ali je David sve više jačao, a Šaulova kuća postajala sve slabija.",
+          "p": true
         },
         {
           "verse": 2,
@@ -557,7 +563,8 @@
               "level": "h4",
               "text": "Umorstvo Išbaalovo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -621,7 +628,8 @@
               "level": "h4",
               "text": "Davidovo pomazanje za kralja nad Izraelom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -751,7 +759,8 @@
               "level": "h4",
               "text": "Kovčeg saveza u Jeruzalemu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -855,7 +864,8 @@
               "level": "h4",
               "text": "Proročanstvo Natanovo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -993,7 +1003,8 @@
               "level": "h4",
               "text": "Davidovi ratovi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1089,7 +1100,8 @@
               "level": "h4",
               "text": "Davidova blagost prema sinu Jonatanovu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1161,7 +1173,8 @@
               "level": "h4",
               "text": "Napad na Davidove poslanike"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1261,7 +1274,8 @@
               "level": "h4",
               "text": "Druga vojna na Amonce – Davidov grijeh"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1385,7 +1399,8 @@
           "lines": [
             "Jahve posla proroka Natana k Davidu. On uđe k njemu i reče mu:",
             "»U nekom gradu živjela dva čovjeka, jedan bogat, a drugi siromašan."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1537,7 +1552,8 @@
               "level": "h4",
               "text": "Amnon osramoćuje svoju sestru Tamaru"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1719,7 +1735,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "A Joab, sin Sarvijin, opazi da se kraljevo srce okreće k Abšalomu."
+          "text": "A Joab, sin Sarvijin, opazi da se kraljevo srce okreće k Abšalomu.",
+          "p": true
         },
         {
           "verse": 2,
@@ -1875,7 +1892,8 @@
               "level": "h4",
               "text": "Abšalomove spletke"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2059,7 +2077,8 @@
               "level": "h4",
               "text": "David i Siba"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2181,7 +2200,8 @@
               "level": "h4",
               "text": "Hušaj sprječava Ahitofelove osnove"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2321,7 +2341,8 @@
               "level": "h4",
               "text": "Poraz Abšalomovih ljudi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2473,7 +2494,8 @@
               "level": "h4",
               "text": "Davidova žalost"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2701,7 +2723,8 @@
             "»Mi nemamo udjela na Davidu",
             "ni baštine na Jišajevu sinu!",
             "Svaki svome šatoru, Izraele!«"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2839,7 +2862,8 @@
               "level": "h4",
               "text": "Velika glad i smaknuće Šaulovih potomaka"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2945,7 +2969,8 @@
               "level": "h4",
               "text": "Psalam Davidov"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3380,7 +3405,8 @@
             "riječ čovjeka koji je bio visoko uzdignut,",
             "pomazanika Boga Jakovljeva,",
             "pjevača pjesama Izraelovih:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3584,7 +3610,8 @@
               "level": "h4",
               "text": "Popis pučanstva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

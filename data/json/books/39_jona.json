@@ -1,11 +1,14 @@
 {
   "order": 39,
   "id": "jona",
+  "usfm_id": "JON",
   "ks_book_id": 50,
   "abbr": "Jon",
   "title": "Jona",
+  "name_en": "Jonah",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 4,
   "verse_count": 48,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Jona protiv svog poslanja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -101,7 +105,8 @@
               "level": "h4",
               "text": "Jona izbavljen"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -204,7 +209,8 @@
               "level": "h4",
               "text": "Obraćenje Ninive i božanski oprost"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -256,7 +262,8 @@
               "level": "h4",
               "text": "Prorokov gnjev i Božji odgovor"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

@@ -587,7 +587,7 @@
     {
       "day": 18,
       "label": "Post 35–36; Job 25–26; Izr 3,19-24",
-      "verse_count": 141,
+      "verse_count": 144,
       "readings": [
         {
           "book_order": 1,
@@ -606,7 +606,7 @@
           "book_title": "Knjiga o Jobu",
           "chapter_start": 25,
           "chapter_end": 26,
-          "verse_count": 34,
+          "verse_count": 37,
           "label": "Job 25–26"
         },
         {
@@ -624,7 +624,7 @@
     {
       "day": 19,
       "label": "Post 37; Job 27–28; Izr 3,25-27",
-      "verse_count": 107,
+      "verse_count": 110,
       "readings": [
         {
           "book_order": 1,
@@ -643,7 +643,7 @@
           "book_title": "Knjiga o Jobu",
           "chapter_start": 27,
           "chapter_end": 28,
-          "verse_count": 36,
+          "verse_count": 39,
           "label": "Job 27–28"
         },
         {
@@ -8314,7 +8314,7 @@
     {
       "day": 239,
       "label": "Jr 22; Dn 3; Izr 15,29-33",
-      "verse_count": 153,
+      "verse_count": 163,
       "readings": [
         {
           "book_order": 30,
@@ -8333,7 +8333,7 @@
           "book_title": "Daniel",
           "chapter_start": 3,
           "chapter_end": 3,
-          "verse_count": 90,
+          "verse_count": 100,
           "label": "Dn 3"
         },
         {

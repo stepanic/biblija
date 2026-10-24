@@ -1,11 +1,14 @@
 {
   "order": 65,
   "id": "poslanica-hebrejima",
+  "usfm_id": "HEB",
   "ks_book_id": 76,
   "abbr": "Heb",
   "title": "Poslanica Hebrejima",
+  "name_en": "Hebrews",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 13,
   "verse_count": 303,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h2",
               "text": "PROSLOV: NARAV I ULOGA KRISTOVA"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -146,7 +150,8 @@
               "level": "h3",
               "text": "2. PRESUDNOST NAVIJEŠTENOGA SPASENJA"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -266,7 +271,8 @@
               "level": "h3",
               "text": "1. VJERNIJI OD MOJSIJA"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -381,7 +387,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Bojmo se dakle da se, dok ostaje obećanje o ulasku u njegov Počinak, za koga od vas ne bi utvrdilo kako je zakasnio."
+          "text": "Bojmo se dakle da se, dok ostaje obećanje o ulasku u njegov Počinak, za koga od vas ne bi utvrdilo kako je zakasnio.",
+          "p": true
         },
         {
           "verse": 2,
@@ -480,7 +487,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Svaki veliki svećenik, zaista, od ljudi uzet, za ljude se postavlja u odnosu prema Bogu da prinosi darove i žrtve za grijehe."
+          "text": "Svaki veliki svećenik, zaista, od ljudi uzet, za ljude se postavlja u odnosu prema Bogu da prinosi darove i žrtve za grijehe.",
+          "p": true
         },
         {
           "verse": 2,
@@ -558,7 +566,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Stoga mimoiđimo početnički nauk o Kristu i uzdignimo se k savršenome ne postavljajući iznovice temelja: obraćenje od mrtvih djela i vjera u Boga,"
+          "text": "Stoga mimoiđimo početnički nauk o Kristu i uzdignimo se k savršenome ne postavljajući iznovice temelja: obraćenje od mrtvih djela i vjera u Boga,",
+          "p": true
         },
         {
           "verse": 2,
@@ -664,7 +673,8 @@
               "level": "h4",
               "text": "Uvod"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -828,7 +838,8 @@
               "level": "h4",
               "text": "Uvod"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -932,7 +943,8 @@
               "level": "h4",
               "text": "Ustanove starog bogoštovlja nedjelotvorne"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1082,7 +1094,8 @@
               "level": "h4",
               "text": "Nedostatnost zakona s ponavljanjem žrtava"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1328,7 +1341,8 @@
               "level": "h3",
               "text": "1. VJERA PRAOTACA"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1504,7 +1518,8 @@
               "level": "h4",
               "text": "Poziv na postojanost"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1658,7 +1673,8 @@
               "level": "h3",
               "text": "2. KRŠĆANSKO VLADANJE"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

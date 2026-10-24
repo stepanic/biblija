@@ -1,11 +1,14 @@
 {
   "order": 2,
   "id": "knjiga-izlaska",
+  "usfm_id": "EXO",
   "ks_book_id": 13,
   "abbr": "Izl",
   "title": "Knjiga Izlaska",
+  "name_en": "Exodus",
   "testament": "SZ",
   "category": "Petoknjižje",
+  "deuterocanonical": false,
   "chapter_count": 40,
   "verse_count": 1212,
   "chapters": [
@@ -29,7 +32,8 @@
               "level": "h4",
               "text": "Nevolje Hebreja u Egiptu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -133,7 +137,8 @@
               "level": "h4",
               "text": "Rođenje Mojsijevo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -257,7 +262,8 @@
               "level": "h4",
               "text": "Gorući grm"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -375,7 +381,8 @@
               "level": "h4",
               "text": "Čudesni znaci Mojsijeva poslanstva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -535,7 +542,8 @@
               "level": "h4",
               "text": "Prvi susret s faraonom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -657,7 +665,8 @@
               "level": "h4",
               "text": "Novo obećanje oslobođenja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -803,7 +812,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Mojsiju je Jahve odgovorio: »Vidi! Faraonu ću te nametnuti kao božanstvo; tvoj brat Aron bit će tvoj prorok."
+          "text": "Mojsiju je Jahve odgovorio: »Vidi! Faraonu ću te nametnuti kao božanstvo; tvoj brat Aron bit će tvoj prorok.",
+          "p": true
         },
         {
           "verse": 2,
@@ -947,7 +957,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Onda Jahve reče Mojsiju: »Reci Aronu neka ispruži svoju ruku sa štapom povrh rijeka, prokopa i jezeraca i učini da žabe navale na egipatsku zemlju.«"
+          "text": "Onda Jahve reče Mojsiju: »Reci Aronu neka ispruži svoju ruku sa štapom povrh rijeka, prokopa i jezeraca i učini da žabe navale na egipatsku zemlju.«",
+          "p": true
         },
         {
           "verse": 2,
@@ -1083,7 +1094,8 @@
               "level": "h4",
               "text": "Pomor stoke"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1247,7 +1259,8 @@
               "level": "h4",
               "text": "Skakavci"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1385,7 +1398,8 @@
               "level": "h4",
               "text": "Najava smrti prvorođenaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1437,7 +1451,8 @@
               "level": "h4",
               "text": "Pasha"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1683,7 +1698,8 @@
               "level": "h4",
               "text": "Zakon o prvorođencima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1805,7 +1821,8 @@
               "level": "h4",
               "text": "Od Etama do Crvenoga mora"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1960,7 +1977,8 @@
             "jer se slavom proslavio!",
             "Konja s konjanikom",
             "u more je survao."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2180,7 +2198,8 @@
               "level": "h4",
               "text": "Mana i prepelice"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2336,7 +2355,8 @@
               "level": "h4",
               "text": "Voda iz pećine"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2418,7 +2438,8 @@
               "level": "h4",
               "text": "Jitro i Mojsije"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2552,7 +2573,8 @@
               "level": "h4",
               "text": "Dolazak do Sinaja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2686,7 +2708,8 @@
               "level": "h4",
               "text": "Deset zapovijedi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2812,7 +2835,8 @@
               "level": "h4",
               "text": "Zakon o robovima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2990,7 +3014,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Ako se lopov zateče gdje probija zid, pa mu se zada smrtan udarac, njegovu krv ne treba osvećivati."
+          "text": "Ako se lopov zateče gdje probija zid, pa mu se zada smrtan udarac, njegovu krv ne treba osvećivati.",
+          "p": true
         },
         {
           "verse": 2,
@@ -3134,7 +3159,8 @@
               "level": "h4",
               "text": "Pravednost prema bližnjemu i prema neprijatelju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3300,7 +3326,8 @@
               "level": "h3",
               "text": "3. SKLAPANJE SAVEZA"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3388,7 +3415,8 @@
               "level": "h4",
               "text": "Doprinosi za Svetište"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3584,7 +3612,8 @@
               "level": "h4",
               "text": "Šator – Prebivalište"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3750,7 +3779,8 @@
               "level": "h4",
               "text": "Žrtvenik za paljenice"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3858,7 +3888,8 @@
               "level": "h4",
               "text": "Svećeničko ruho"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4066,7 +4097,8 @@
               "level": "h4",
               "text": "Posvećenje Arona i njegovih sinova.Pripreme"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4298,7 +4330,8 @@
               "level": "h4",
               "text": "Kadioni žrtvenik"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4486,7 +4519,8 @@
               "level": "h4",
               "text": "Graditelji Svetišta"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4586,7 +4620,8 @@
               "level": "h4",
               "text": "Zlatno tele"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4774,7 +4809,8 @@
               "level": "h4",
               "text": "Nastavlja se put u obećanu zemlju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4896,7 +4932,8 @@
               "level": "h4",
               "text": "Obnova saveza – nove ploče"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5078,7 +5115,8 @@
               "level": "h4",
               "text": "Zakon subotnjeg počinka"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5236,7 +5274,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Stoga neka Besalel, Oholiab i svi vještaci koje je Jahve obdario vještinom i sposobnošću da vješto izvedu sve poslove oko podizanja svetišta obave sve kako je Jahve naredio.«"
+          "text": "Stoga neka Besalel, Oholiab i svi vještaci koje je Jahve obdario vještinom i sposobnošću da vješto izvedu sve poslove oko podizanja svetišta obave sve kako je Jahve naredio.«",
+          "p": true
         },
         {
           "verse": 2,
@@ -5414,7 +5453,8 @@
               "level": "h4",
               "text": "Kovčeg"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5560,7 +5600,8 @@
               "level": "h4",
               "text": "Žrtvenik za paljenice"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5714,7 +5755,8 @@
               "level": "h4",
               "text": "Odijelo velikog svećenika i ostalih svećenika"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5934,7 +5976,8 @@
               "level": "h4",
               "text": "Postavljanje i posveta Svetišta"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

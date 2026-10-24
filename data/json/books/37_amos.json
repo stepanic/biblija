@@ -1,11 +1,14 @@
 {
   "order": 37,
   "id": "amos",
+  "usfm_id": "AMO",
   "ks_book_id": 48,
   "abbr": "Am",
   "title": "Amos",
+  "name_en": "Amos",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 9,
   "verse_count": 146,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Uvod"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -218,7 +222,8 @@
             "»Za tri zločina Moaba, za četiri zločina,",
             "odluka je neopoziva:",
             "jer kosti edomskoga kralja spališe u vapno,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -401,7 +406,8 @@
             "koju Jahve zbori protiv vas,",
             "protiv svakoga roda",
             "što ga izvedoh iz zemlje egipatske:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -575,7 +581,8 @@
             "što boravite na samarijskoj gori,",
             "tlačite potrebite, ugnjetavate siromahe,",
             "govorite muževima: »Donesi da pijemo!«"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -732,7 +739,8 @@
             "Počujte ovu riječ što je iznosim",
             "protiv vas,",
             "naricaljku, dome Izraelov:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1033,7 +1041,8 @@
             "na samarijskoj gori,",
             "nazvanima »prvina narodâ«,",
             "kojima se obraća dom Izraelov."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1189,7 +1198,8 @@
             "gle, sazda skakavce",
             "kad otava poče nicati,",
             "otava nakon kraljevske kosidbe."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1338,7 +1348,8 @@
           "lines": [
             "Evo što mi pokaza Jahve Gospod:",
             "gle, kotarica zrela ploda:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1513,7 +1524,8 @@
             "što ostane, pod mač ću udariti.",
             "Nijedan neće uteći,",
             "nitko se neće spasiti."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

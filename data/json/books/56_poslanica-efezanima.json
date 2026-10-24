@@ -1,11 +1,14 @@
 {
   "order": 56,
   "id": "poslanica-efezanima",
+  "usfm_id": "EPH",
   "ks_book_id": 67,
   "abbr": "Ef",
   "title": "Poslanica Efežanima",
+  "name_en": "Ephesians",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 6,
   "verse_count": 155,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h2",
               "text": "NASLOV I POZDRAV"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -203,7 +207,8 @@
               "level": "h3",
               "text": "2. SPASITELJSKI NAUM BOŽJI OSTVAREN U NAMA"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -313,7 +318,8 @@
               "level": "h4",
               "text": "Pavao poslužitelj otajstva Kristova"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -419,7 +425,8 @@
               "level": "h4",
               "text": "Poticaj na jedinstvo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -564,7 +571,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Budite dakle nasljedovatelji Božji kao djeca ljubljena"
+          "text": "Budite dakle nasljedovatelji Božji kao djeca ljubljena",
+          "p": true
         },
         {
           "verse": 2,
@@ -714,7 +722,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Djeco, slušajte svoje roditelje u Gospodinu jer to je pravedno."
+          "text": "Djeco, slušajte svoje roditelje u Gospodinu jer to je pravedno.",
+          "p": true
         },
         {
           "verse": 2,

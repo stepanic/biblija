@@ -1,11 +1,14 @@
 {
   "order": 27,
   "id": "knjiga-mudrosti",
+  "usfm_id": "WIS",
   "ks_book_id": 38,
   "abbr": "Mudr",
   "title": "Knjiga Mudrosti",
+  "name_en": "Wisdom",
   "testament": "SZ",
   "category": "Psalmi i mudrosne knjige",
+  "deuterocanonical": true,
   "chapter_count": 19,
   "verse_count": 435,
   "chapters": [
@@ -27,7 +30,8 @@
             "vi suci zemaljski,",
             "pravednim mislima mislite o Gospodinu",
             "i tražite ga u jednostavnosti srca."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -179,7 +183,8 @@
             "»Kratkovjek je i tužan život naš",
             "i nema lijeka kad čovjeku dođe kraj",
             "i još nije poznat tko bi se iz podzemlja izbavio."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -403,7 +408,8 @@
           "lines": [
             "A duše su pravednika u ruci Božjoj",
             "i njih se ne dotiče muka nikakva."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -574,7 +580,8 @@
             "a posjedovati krepost,",
             "jer je spomen njezin besmrtan,",
             "i Bog i ljudi je cijene."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -771,7 +778,8 @@
             "A pravednik će se vedro sučeliti",
             "s onima koji ga tlačiše",
             "i koji prezirahu patnje njegove."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1002,7 +1010,8 @@
             "Čujte, dakle, kraljevi,",
             "i urazumite se!",
             "Poučite se, vladari zemalja dalekih!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1244,7 +1253,8 @@
             "I ja sam smrtnik, kao i svi ostali,",
             "i potomak prvog bića od zemlje načinjena",
             "i oblikovan kao tijelo u utrobi majčinoj,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1528,7 +1538,8 @@
           "lines": [
             "Njena se snaga prostire s jednoga kraja svijeta na drugi",
             "i blagotvorno upravlja svemirom."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1747,7 +1758,8 @@
             "Bože otaca naših i Gospode",
             "milosrđa,",
             "ti koji si riječju svojom stvorio svemir"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1922,7 +1934,8 @@
             "oca svijeta,",
             "koji je stvoren sâm,",
             "istrgla ga iz grijeha njegova"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2122,7 +2135,8 @@
           "lines": [
             "Ona im je pothvate k uspjehu vodila",
             "po ruci proroka svetog"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2367,7 +2381,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "i tvoj je besmrtni duh u svemu."
+          "text": "i tvoj je besmrtni duh u svemu.",
+          "p": true
         },
         {
           "verse": 2,
@@ -2646,7 +2661,8 @@
             "koji ne upoznaše Boga,",
             "oni koji iz vidljivih ljepotâ ne mogu spoznati onoga koji jest –",
             "nisu kadri prepoznati umjetnika po djelima njegovim;"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2835,7 +2851,8 @@
             "nakan da prebrodi bijesne valove,",
             "i prizivlje u pomoć drvo",
             "koje je slabije od drvene lađe što ga nosi."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3135,7 +3152,8 @@
           "lines": [
             "A ti si, Bože naš, blag i istinit,",
             "spor na gnjev i svime milostivo upravljaš."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3340,7 +3358,8 @@
             "Zato bijahu primjereno",
             "kažnjeni sličnim životinjama",
             "i mučeni mnoštvom kukaca."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3626,7 +3645,8 @@
             "Veliki su i nedokučivi",
             "sudovi tvoji,",
             "zato lutaju duše nepoučljive."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3824,7 +3844,8 @@
             "a ne videći im obličja,",
             "nazivahu ih blaženima",
             "jer nisu nevolju trpjeli;"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4073,7 +4094,8 @@
             "A grešnike je sasvim pritisnuo",
             "gnjev nemilostiv,",
             "jer je Gospodin znao što će oni:"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

@@ -1,11 +1,14 @@
 {
   "order": 51,
   "id": "djela-apostolska",
+  "usfm_id": "ACT",
   "ks_book_id": 62,
   "abbr": "Dj",
   "title": "Djela apostolska",
+  "name_en": "Acts",
   "testament": "NZ",
   "category": "Evanđelja i Djela",
+  "deuterocanonical": false,
   "chapter_count": 28,
   "verse_count": 1002,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h2",
               "text": "PROSLOV"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -169,7 +173,8 @@
               "level": "h4",
               "text": "Pedesetnica – prvi Duhovi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -445,7 +450,8 @@
               "level": "h4",
               "text": "Ozdravljenje hromoga"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -567,7 +573,8 @@
               "level": "h4",
               "text": "Petar i Ivan pred Vijećem"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -784,7 +791,8 @@
               "level": "h4",
               "text": "Ananija i Safira"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -986,7 +994,8 @@
               "level": "h4",
               "text": "Ustanovljenje sedmorice"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1064,7 +1073,8 @@
               "level": "h4",
               "text": "Stjepanova besjeda"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1344,7 +1354,8 @@
               "level": "h4",
               "text": "Savao progonitelj"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1544,7 +1555,8 @@
           ],
           "references": [
             "(Dj 22, 6–16; 26, 1–18)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1754,7 +1766,8 @@
               "level": "h4",
               "text": "Petar i Kornelije"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1972,7 +1985,8 @@
               "level": "h4",
               "text": "Petar se opravdava u Jeruzalemu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2116,7 +2130,8 @@
               "level": "h4",
               "text": "Petar zatvoren i čudesno oslobođen"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2248,7 +2263,8 @@
               "level": "h4",
               "text": "Barnabino i Savlovo poslanje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2492,7 +2508,8 @@
               "level": "h4",
               "text": "Propovijedanje u Ikoniju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2634,7 +2651,8 @@
               "level": "h4",
               "text": "Raspre u Antiohiji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2854,7 +2872,8 @@
               "level": "h4",
               "text": "U Likaoniji. Timotej"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3050,7 +3069,8 @@
               "level": "h4",
               "text": "U Solunu. Spor sa Židovima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3216,7 +3236,8 @@
               "level": "h4",
               "text": "Pavao u Korintu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3364,7 +3385,8 @@
               "level": "h4",
               "text": "Pavao u Efezu. Ivanovci"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3564,7 +3586,8 @@
               "level": "h4",
               "text": "Pavao u Makedoniji i Grčkoj"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3754,7 +3777,8 @@
               "level": "h4",
               "text": "Iz Mileta u Jeruzalem"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3938,7 +3962,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "»Braćo i oci, poslušajte što ću vam sad u svoju obranu reći.«"
+          "text": "»Braćo i oci, poslušajte što ću vam sad u svoju obranu reći.«",
+          "p": true
         },
         {
           "verse": 2,
@@ -4085,7 +4110,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Pavao uprije pogled u Vijeće i reče: »Braćo, ja sam posve mirne savjesti živio pred Bogom sve do dana današnjega.«"
+          "text": "Pavao uprije pogled u Vijeće i reče: »Braćo, ja sam posve mirne savjesti živio pred Bogom sve do dana današnjega.«",
+          "p": true
         },
         {
           "verse": 2,
@@ -4249,7 +4275,8 @@
               "level": "h4",
               "text": "Rasprava pred Feliksom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4377,7 +4404,8 @@
               "level": "h4",
               "text": "Pavao se priziva na cara"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4503,7 +4531,8 @@
               "level": "h4",
               "text": "Pavao se brani pred Agripom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4658,7 +4687,8 @@
               "level": "h4",
               "text": "Prema Rimu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4852,7 +4882,8 @@
               "level": "h4",
               "text": "Pavao na Malti"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

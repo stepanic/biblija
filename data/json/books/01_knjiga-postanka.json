@@ -1,11 +1,14 @@
 {
   "order": 1,
   "id": "knjiga-postanka",
+  "usfm_id": "GEN",
   "ks_book_id": 12,
   "abbr": "Post",
   "title": "Knjiga Postanka",
+  "name_en": "Genesis",
   "testament": "SZ",
   "category": "Petoknjižje",
+  "deuterocanonical": false,
   "chapter_count": 50,
   "verse_count": 1530,
   "chapters": [
@@ -29,7 +32,8 @@
               "level": "h4",
               "text": "Prvi izvještaj o stvaranju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -164,7 +168,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Tako bude dovršeno nebo i zemlja sa svom svojom vojskom."
+          "text": "Tako bude dovršeno nebo i zemlja sa svom svojom vojskom.",
+          "p": true
         },
         {
           "verse": 2,
@@ -289,7 +294,8 @@
               "level": "h4",
               "text": "Prvi čovjekov grijeh"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -435,7 +441,8 @@
               "level": "h4",
               "text": "Kajin i Abel"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -578,7 +585,8 @@
           "lines": [
             "Ovo je povijest Adamova roda.",
             "Kad je Bog stvorio čovjeka, napravio ga je na priliku svoju;"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -722,7 +730,8 @@
               "level": "h4",
               "text": "Pokvarenost ljudi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -826,7 +835,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Onda Jahve reče Noi: »Uđi ti i sva tvoja obitelj u korablju, jer sam uvidio da si ti jedini preda mnom pravedan u ovom vremenu."
+          "text": "Onda Jahve reče Noi: »Uđi ti i sva tvoja obitelj u korablju, jer sam uvidio da si ti jedini preda mnom pravedan u ovom vremenu.",
+          "p": true
         },
         {
           "verse": 2,
@@ -949,7 +959,8 @@
               "level": "h4",
               "text": "Prestanak potopa"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1067,7 +1078,8 @@
               "level": "h4",
               "text": "Blagoslov i savez"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1254,7 +1266,8 @@
               "level": "h4",
               "text": "Napučivanje zemlje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1398,7 +1411,8 @@
               "level": "h4",
               "text": "Babilonska kula"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1562,7 +1576,8 @@
             "»Idi iz zemlje svoje,",
             "iz zavičaja i doma očinskog,",
             "u krajeve koje ću ti pokazati."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1673,7 +1688,8 @@
               "level": "h4",
               "text": "Lot se dijeli od Abrahama"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1757,7 +1773,8 @@
               "level": "h4",
               "text": "Vojna četvorice velikih kraljeva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1889,7 +1906,8 @@
             "ja sam ti zaštita;",
             "a nagrada tvoja",
             "bit će vrlo velika!«"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2001,7 +2019,8 @@
               "level": "h4",
               "text": "Jišmaelovo rođenje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2095,7 +2114,8 @@
             "Kad je Abramu bilo devedeset i devet godina, ukaza mu se Jahve pa mu reče:",
             "»Ja sam El Šadaj – Bog svesilni.",
             "Mojim hodi putem i neporočan budi."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2228,7 +2248,8 @@
               "level": "h4",
               "text": "Abraham i tajanstveni posjetitelji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2378,7 +2399,8 @@
               "level": "h4",
               "text": "Uništenje Sodome i Lotov bijeg"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2548,7 +2570,8 @@
               "level": "h4",
               "text": "Abraham i Sara u Geraru"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2632,7 +2655,8 @@
               "level": "h4",
               "text": "Izakovo rođenje, Hagara otjerana"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2792,7 +2816,8 @@
               "level": "h4",
               "text": "Bog kuša Abrahama"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2906,7 +2931,8 @@
               "level": "h4",
               "text": "Grob patrijarhâ"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3002,7 +3028,8 @@
               "level": "h4",
               "text": "Izak i Rebeka"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3289,7 +3316,8 @@
               "level": "h4",
               "text": "Keturini sinovi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3466,7 +3494,8 @@
               "level": "h4",
               "text": "Izak u Geraru i Beer Šebi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3625,7 +3654,8 @@
               "level": "h4",
               "text": "Jakov prijevarom dobiva očev blagoslov"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3851,7 +3881,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Stoga Izak pozove Jakova, blagoslovi ga te mu naloži: »Nemoj uzimati ženu od kanaanskih djevojaka."
+          "text": "Stoga Izak pozove Jakova, blagoslovi ga te mu naloži: »Nemoj uzimati ženu od kanaanskih djevojaka.",
+          "p": true
         },
         {
           "verse": 2,
@@ -3957,7 +3988,8 @@
               "level": "h4",
               "text": "Jakov dolazi u Haran"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4121,7 +4153,8 @@
               "level": "h4",
               "text": "Jakovljeve žene"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4311,7 +4344,8 @@
               "level": "h4",
               "text": "Jakov bježi iz Harana"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4545,7 +4579,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Ranim se jutrom Laban digne, izljubi svoje sinove i svoje kćeri te ih blagoslovi; onda se zaputi natrag u svoje mjesto."
+          "text": "Ranim se jutrom Laban digne, izljubi svoje sinove i svoje kćeri te ih blagoslovi; onda se zaputi natrag u svoje mjesto.",
+          "p": true
         },
         {
           "verse": 2,
@@ -4705,7 +4740,8 @@
               "level": "h4",
               "text": "Susret Jakova i Ezava"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4797,7 +4833,8 @@
               "level": "h4",
               "text": "Osramoćena Dina"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4939,7 +4976,8 @@
               "level": "h4",
               "text": "Jakov u Betelu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5083,7 +5121,8 @@
               "level": "h4",
               "text": "Rodoslovlje Edomaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5275,7 +5314,8 @@
               "level": "h4",
               "text": "Josip prodan u Egipat"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5439,7 +5479,8 @@
               "level": "h4",
               "text": "Juda i Tamara"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5571,7 +5612,8 @@
               "level": "h4",
               "text": "Josipova kušnja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5675,7 +5717,8 @@
               "level": "h4",
               "text": "Josip tumači sne faraonovih slugu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5783,7 +5826,8 @@
               "level": "h4",
               "text": "Faraonovi sni"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6035,7 +6079,8 @@
               "level": "h4",
               "text": "Josipova braća dolaze u Egipat"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6205,7 +6250,8 @@
               "level": "h4",
               "text": "Drugi dolazak Jakovljevih sinova u Egipat"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6353,7 +6399,8 @@
               "level": "h4",
               "text": "Posljednja kušnja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6507,7 +6554,8 @@
               "level": "h4",
               "text": "Josip se očituje braći"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6637,7 +6685,8 @@
               "level": "h4",
               "text": "Jakov odlazi u Egipat"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6785,7 +6834,8 @@
               "level": "h4",
               "text": "Jakov pred faraonom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -6923,7 +6973,8 @@
               "level": "h4",
               "text": "Jakov blagoslivlja Josipove sinove Efrajima i Manašea"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7045,7 +7096,8 @@
               "level": "h4",
               "text": "Jakovljeva oporuka"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -7332,7 +7384,8 @@
               "level": "h4",
               "text": "Jakovljev pogreb"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

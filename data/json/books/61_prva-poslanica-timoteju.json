@@ -1,11 +1,14 @@
 {
   "order": 61,
   "id": "prva-poslanica-timoteju",
+  "usfm_id": "1TI",
   "ks_book_id": 72,
   "abbr": "1 Tim",
   "title": "Prva poslanica Timoteju",
+  "name_en": "1 Timothy",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 6,
   "verse_count": 113,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h2",
               "text": "NASLOV I POZDRAV"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -150,7 +154,8 @@
               "level": "h3",
               "text": "2. TIMOTEJ – PROMICATELJ BOGOSLUŽJA I BOGOLJUBNOSTI"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -226,7 +231,8 @@
               "level": "h4",
               "text": "Nadglednici"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -323,7 +329,8 @@
               "level": "h4",
               "text": "Krivi učitelji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -399,7 +406,8 @@
               "level": "h4",
               "text": "Vjernici"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -523,7 +531,8 @@
               "level": "h4",
               "text": "Robovi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

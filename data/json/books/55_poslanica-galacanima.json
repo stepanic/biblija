@@ -1,11 +1,14 @@
 {
   "order": 55,
   "id": "poslanica-galacanima",
+  "usfm_id": "GAL",
   "ks_book_id": 66,
   "abbr": "Gal",
   "title": "Poslanica Galaćanima",
+  "name_en": "Galatians",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 6,
   "verse_count": 149,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Naslov i pozdrav"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -149,7 +153,8 @@
               "level": "h4",
               "text": "Pavao priznat u Jeruzalemu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -261,7 +266,8 @@
               "level": "h4",
               "text": "Vjera opravdava"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -413,7 +419,8 @@
               "level": "h4",
               "text": "Božje posinstvo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -593,7 +600,8 @@
               "level": "h4",
               "text": "Odgovorna sloboda"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -721,7 +729,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Braćo, ako se tko i zatekne u kakvu prijestupu, vi, duhovni, takva ispravljajte u duhu blagosti. A pazi na samoga sebe da i ti ne podlegneš napasti."
+          "text": "Braćo, ako se tko i zatekne u kakvu prijestupu, vi, duhovni, takva ispravljajte u duhu blagosti. A pazi na samoga sebe da i ti ne podlegneš napasti.",
+          "p": true
         },
         {
           "verse": 2,

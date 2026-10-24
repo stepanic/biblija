@@ -1,11 +1,14 @@
 {
   "order": 59,
   "id": "prva-poslanica-solunjanima",
+  "usfm_id": "1TH",
   "ks_book_id": 70,
   "abbr": "1 Sol",
   "title": "Prva poslanica Solunjanima",
+  "name_en": "1 Thessalonians",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 5,
   "verse_count": 89,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h2",
               "text": "NASLOV I POZDRAV"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -87,7 +91,8 @@
               "level": "h4",
               "text": "Pavlovo djelovanje u Solunu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -191,7 +196,8 @@
               "level": "h4",
               "text": "Pavao šalje Timoteja u Solun"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -271,7 +277,8 @@
               "level": "h4",
               "text": "Svetost, čistoća i ljubav"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -361,7 +368,8 @@
               "level": "h4",
               "text": "Budnost u iščekivanju dolaska Gospodinova"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

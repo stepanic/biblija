@@ -1,13 +1,17 @@
 {
   "order": 19,
   "id": "estera",
+  "usfm_id": "EST",
   "ks_book_id": 30,
   "abbr": "Est",
   "title": "Estera",
+  "name_en": "Esther",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": false,
   "chapter_count": 10,
   "verse_count": 167,
+  "deuterocanonical_parts": "grčki dodaci A–F",
   "chapters": [
     {
       "chapter": 1,
@@ -15,7 +19,7 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Druge godine kraljevanja Ahasvera Velikoga, na prvi dan nisana, Mordokaj, sin Jaira, sina Šimejeva, sina Kišova, iz Benjaminova plemena, usni san. Mordokaj je bio Židov koji je živio u gradu Suzi, ugledan čovjek, činovnik na kraljevu dvoru; bio je jedan od onih zarobljenika što ih je Nabukodonozor, babilonski kralj, protjerao iz Jeruzalema zajedno s Jekonijom, judejskim kraljem. Ovo je njegov san. Evo: krikovi i buka, grmljavina i potres; pometenost na zemlji. Zatim: dva golema zmaja, oba spremna za borbu, brekću snažno. Na to brektanje svaki se narod pripremi za vojnu kako bi se borio protiv naroda pravednih. Bio je dan mraka i tame, jada i pečali, čemera i velike pometenosti na zemlji. Sav narod pravednih, smućen od straha pred vlastitim nesrećama, spremi sena propast i zavapi k Bogu. Od toga njihova vapaja neki malen izvor poraste u golemu rijeku, obilatu vodom. Ogranu svjetlo i sunce te se poniženi uzvisiše i proždriješe moćne. Mordokaj, koji je usnio taj san i nazrijevao što Bog kani učiniti, pošto se probudi, zadrža to u srcu trudeći se do noći da svakoj pojedinosti dokuči značenje. Mordokaj je mirno boravio u kraljevskoj palači s Gabatom i Tarom, dvojicom kraljevih eunuha koja su čuvala dvor. Slušao je njihove razgovore. I proniknuvši jednom njihove osnove, otkri da su se spremali podići ruke na kralja Ahasvera, pa ih prokaza kralju. A kralj podvrgnu ispitivanju oba eunuha, koji, pošto su priznali, bijahu usmrćeni. Kralj odredi da se zapišu ti događaji da bi se sačuvao spomen na njih, a opisa ih i Mordokaj. Kralj zbog toga imenova Mordokaja dostojanstvenikom u kraljevskoj palači i obdari ga poklonima. Ali Haman Hamdatin, Agađanin, koji bijaše u časti kod kralja, nastojaše da naudi Mordokaju i njegovu narodu zbog dvaju kraljevih eunuha.",
+          "text": "Druge godine kraljevanja Ahasvera Velikoga, na prvi dan nisana, Mordokaj, sin Jaira, sina Šimejeva, sina Kišova, iz Benjaminova plemena, usni san. Mordokaj je bio Židov koji je živio u gradu Suzi, ugledan čovjek, činovnik na kraljevu dvoru; bio je jedan od onih zarobljenika što ih je Nabukodonozor, babilonski kralj, protjerao iz Jeruzalema zajedno s Jekonijom, judejskim kraljem. Ovo je njegov san. Evo: krikovi i buka, grmljavina i potres; pometenost na zemlji. Zatim: dva golema zmaja, oba spremna za borbu, brekću snažno. Na to brektanje svaki se narod pripremi za vojnu kako bi se borio protiv naroda pravednih. Bio je dan mraka i tame, jada i pečali, čemera i velike pometenosti na zemlji. Sav narod pravednih, smućen od straha pred vlastitim nesrećama, spremi se na propast i zavapi k Bogu. Od toga njihova vapaja neki malen izvor poraste u golemu rijeku, obilatu vodom. Ogranu svjetlo i sunce te se poniženi uzvisiše i proždriješe moćne. Mordokaj, koji je usnio taj san i nazrijevao što Bog kani učiniti, pošto se probudi, zadrža to u srcu trudeći se do noći da svakoj pojedinosti dokuči značenje. Mordokaj je mirno boravio u kraljevskoj palači s Gabatom i Tarom, dvojicom kraljevih eunuha koja su čuvala dvor. Slušao je njihove razgovore. I proniknuvši jednom njihove osnove, otkri da su se spremali podići ruke na kralja Ahasvera, pa ih prokaza kralju. A kralj podvrgnu ispitivanju oba eunuha, koji, pošto su priznali, bijahu usmrćeni. Kralj odredi da se zapišu ti događaji da bi se sačuvao spomen na njih, a opisa ih i Mordokaj. Kralj zbog toga imenova Mordokaja dostojanstvenikom u kraljevskoj palači i obdari ga poklonima. Ali Haman Hamdatin, Agađanin, koji bijaše u časti kod kralja, nastojaše da naudi Mordokaju i njegovu narodu zbog dvaju kraljevih eunuha.",
           "headings": [
             {
               "level": "h2",
@@ -32,7 +36,7 @@
           ],
           "lines": [
             "Druge godine kraljevanja Ahasvera Velikoga, na prvi dan nisana, Mordokaj, sin Jaira, sina Šimejeva, sina Kišova, iz Benjaminova plemena, usni san. Mordokaj je bio Židov koji je živio u gradu Suzi, ugledan čovjek, činovnik na kraljevu dvoru; bio je jedan od onih zarobljenika što ih je Nabukodonozor, babilonski kralj, protjerao iz Jeruzalema zajedno s Jekonijom, judejskim kraljem.",
-            "Ovo je njegov san. Evo: krikovi i buka, grmljavina i potres; pometenost na zemlji. Zatim: dva golema zmaja, oba spremna za borbu, brekću snažno. Na to brektanje svaki se narod pripremi za vojnu kako bi se borio protiv naroda pravednih. Bio je dan mraka i tame, jada i pečali, čemera i velike pometenosti na zemlji. Sav narod pravednih, smućen od straha pred vlastitim nesrećama, spremi sena propast i zavapi k Bogu.",
+            "Ovo je njegov san. Evo: krikovi i buka, grmljavina i potres; pometenost na zemlji. Zatim: dva golema zmaja, oba spremna za borbu, brekću snažno. Na to brektanje svaki se narod pripremi za vojnu kako bi se borio protiv naroda pravednih. Bio je dan mraka i tame, jada i pečali, čemera i velike pometenosti na zemlji. Sav narod pravednih, smućen od straha pred vlastitim nesrećama, spremi se na propast i zavapi k Bogu.",
             "Od toga njihova vapaja neki malen izvor poraste u golemu rijeku, obilatu vodom. Ogranu svjetlo i sunce te se poniženi uzvisiše i proždriješe moćne.",
             "Mordokaj, koji je usnio taj san i nazrijevao što Bog kani učiniti, pošto se probudi, zadrža to u srcu trudeći se do noći da svakoj pojedinosti dokuči značenje. Mordokaj je mirno boravio u kraljevskoj palači s Gabatom i Tarom, dvojicom kraljevih eunuha koja su čuvala dvor. Slušao je njihove razgovore. I proniknuvši jednom njihove osnove, otkri da su se spremali podići ruke na kralja Ahasvera, pa ih prokaza kralju. A kralj podvrgnu ispitivanju oba eunuha, koji, pošto su priznali, bijahu usmrćeni.",
             "Kralj odredi da se zapišu ti događaji da bi se sačuvao spomen na njih, a opisa ih i Mordokaj. Kralj zbog toga imenova Mordokaja dostojanstvenikom u kraljevskoj palači i obdari ga poklonima. Ali Haman Hamdatin, Agađanin, koji bijaše u časti kod kralja, nastojaše da naudi Mordokaju i njegovu narodu zbog dvaju kraljevih eunuha."
@@ -150,7 +154,8 @@
               "level": "h4",
               "text": "Traži se nova kraljica"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -264,7 +269,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Poslije tih događaja kralj Ahasver promaknu Hamana, Hamdatina sina, Agađanina: uzvisi ga i njegovo prijestolje postavi iznad svih ostalih dostojanstvenika koji su bili s njim."
+          "text": "Poslije tih događaja kralj Ahasver promaknu Hamana, Hamdatina sina, Agađanina: uzvisi ga i njegovo prijestolje postavi iznad svih ostalih dostojanstvenika koji su bili s njim.",
+          "p": true
         },
         {
           "verse": 2,
@@ -354,7 +360,8 @@
               "level": "h4",
               "text": "Mordokaj i Estera predusreću opasnost"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -466,7 +473,8 @@
               "level": "h4",
               "text": "Estera pred kraljem"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -542,7 +550,8 @@
               "level": "h4",
               "text": "Haman u stisci"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -610,7 +619,8 @@
               "level": "h4",
               "text": "Haman na Esterinoj gozbi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -662,7 +672,8 @@
               "level": "h4",
               "text": "Ahasver sklon Židovima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -755,7 +766,8 @@
               "level": "h4",
               "text": "Veliki dan Purima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -901,7 +913,8 @@
               "level": "h4",
               "text": "Pohvala Mordokaja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

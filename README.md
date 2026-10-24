@@ -12,8 +12,8 @@
 
 ## ✨ Ključne značajke
 
-* **📚 Cjeloviti katolički kanon (73 knjige, 1.329 poglavlja, 35.394 retka):**
-  * Uključuje sve protokanonske i deuterokanonske knjige Staroga zavjeta (46) i Novoga zavjeta (27).
+* **📚 Cjeloviti katolički kanon (73 knjige, 1.329 poglavlja, 35.410 redaka):**
+  * Uključuje sve protokanonske i deuterokanonske knjige Staroga zavjeta (46) i Novoga zavjeta (27), s međunarodnim **USFM kodovima** (`GEN`…`REV`), engleskim nazivima, oznakama deuterokanonskih knjiga/dodataka i oznakama početka odlomka (`p: true`).
   * Strogo deterministički i očišćeni JSON katalog ([`data/json/`](data/json/)) u kojem su međunaslovi (`h2`, `h3`, `h4`), sinoptičke uputnice (`(Mt 3, 1–17...)`) i poetski prijelomi stihova (`lines` za Psalme i mudrosne knjige) čisto strukturirani i odvojeni od samog teksta retka.
 * **🗓️ Program „Biblija kroz 365 dana" (6 cjelovitih godišnjih planova + 12 tematskih planova):**
   * Ugrađena su sva tri službena plana inicijative **[Muževni budite — Biblija kroz 365 dana](https://muzevnibudite.com/1163/biblija_kroz_365_dana)**:
@@ -22,7 +22,7 @@
     3. **Linearni plan (*Muževni budite*)** — čitanje od korica do korica, od *Knjige Postanka* do *Otkrivenja* (`mb-linearni-365`).
   * Dodana su i 3 algoritamski balansirana 365-dnevna plana (*Višetračni*, *Kanonski po broju redaka*, *Kronološki*) te 12 kraćih tematskih planova (15–90 dana).
 * **⚡ Trenutni Offline Pretraživač (SQLite FTS5 + Statički JSON fallback):**
-  * Pretraživanje svih **35.394 redaka** u `< 15 ms` — podržava upite **sa i bez hrvatskih dijakritičkih znakova** (`blazenstva` ili `blaženstva`, `pocetku` ili `početku`), točne fraze pod navodnicima (`"duh Božji"`) te filtriranje po zavjetu i knjizi.
+  * Pretraživanje svih **35.410 redaka** u `< 15 ms` — podržava upite **sa i bez hrvatskih dijakritičkih znakova** (`blazenstva` ili `blaženstva`, `pocetku` ili `početku`), točne fraze pod navodnicima (`"duh Božji"`) te filtriranje po zavjetu i knjizi.
   * **Pametni parser biblijskih kratica:** Upiši npr. `Iv 1,19`, `Ps 23`, `Post 1,1-5` ili `1 Kor 13` za trenutni skok na traženo poglavlje i redak.
 * **☁️ Višekorisnička sinkronizacija na više uređaja (Cloudflare D1 / SQLite Sync):**
   * Podržava neograničen broj korisnika (**SaaS mod**) koji čitaju na više uređaja (mobitel, tablet, laptop) bez potrebe za registracijom e-mailom:
@@ -31,8 +31,9 @@
     1. Pročitani dani u bilo kojem od 18 planova čitanja (`sync_progress`),
     2. Aktivni plan i zadnje otvoreno poglavlje (*Nastavi čitanje*, `sync_users`),
     3. Osobne oznake u boji i bilješke uz retke (`sync_bookmarks`).
-* **🔍 Provjera integriteta i ispravci pogrešaka ([`AUDIT.md`](AUDIT.md)):**
-  * Automatskim diff checkom između web sučelja `biblija.ks.hr` i mobilnog REST API-ja otkriveno je i u ovom katalogu **ispravljeno**:
+* **🔍 Provjera integriteta i rekonstrukcija oštećenih stihova ([`AUDIT.md`](AUDIT.md) & [`data/errata.json`](data/errata.json)):**
+  * Automatskim diff checkom između web sučelja `biblija.ks.hr`, mobilnog REST API-ja i neovisnog USFM/CrossWire prijepisa otkriveno je i u ovom katalogu **ispravljeno**:
+    * **Rekonstruirano 26 oštećenih ili izgubljenih stihova u bazi `biblija.ks.hr` ([`data/errata.json`](data/errata.json)):** vraćen pregaženi uvodni stih Poslanice Titu (`Tit 1,1–2`) i izdvojeni međunaslovi u `Tit 1,5` i `1,10`, vraćeno **10 odrezanih stihova na kraju 3. poglavlja Daniela (`Dn 3,91–100`)**, te vraćeni prazni i ispali stihovi u Knjizi o Jobu (`Job 25,1–4` i `Job 27,1–4`).
     * **Spašeno skriveno poglavlje *Knjige Sirahove* (`Poglavlje 0 — Proslov prevodiočev`, 8 redaka, ID `871`)** na kojem službeni `/wp/v2/bible_chapter/871` endpoint puca, a web izbornik ga ne prikazuje.
     * **428 redaka** u kojima mobilni API umeće broj retka prije sinoptičke uputnice (`<span class="Izvor">`), dok ga web prikaz stavlja nakon uputnice (npr. *Iv 1,19*).
     * Ispravljen netočan metapodatak `chapter_count: 41` za *Knjigu Izlaska* (stvarnih **40** poglavlja) i nerazriješeni HTML entiteti u naslovu *Poslanice Kološanima*.

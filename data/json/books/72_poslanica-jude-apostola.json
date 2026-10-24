@@ -1,11 +1,14 @@
 {
   "order": 72,
   "id": "poslanica-jude-apostola",
+  "usfm_id": "JUD",
   "ks_book_id": 83,
   "abbr": "Jd",
   "title": "Poslanica Jude apostola",
+  "name_en": "Jude",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 1,
   "verse_count": 25,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Pozdrav"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

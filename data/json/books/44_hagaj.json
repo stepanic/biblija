@@ -1,11 +1,14 @@
 {
   "order": 44,
   "id": "hagaj",
+  "usfm_id": "HAG",
   "ks_book_id": 55,
   "abbr": "Hag",
   "title": "Hagaj",
+  "name_en": "Haggai",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 2,
   "verse_count": 38,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Obnova Hrama"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -133,7 +137,8 @@
               "level": "h4",
               "text": "Slava Hrama"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

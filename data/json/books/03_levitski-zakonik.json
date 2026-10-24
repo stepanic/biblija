@@ -1,11 +1,14 @@
 {
   "order": 3,
   "id": "levitski-zakonik",
+  "usfm_id": "LEV",
   "ks_book_id": 14,
   "abbr": "Lev",
   "title": "Levitski zakonik",
+  "name_en": "Leviticus",
   "testament": "SZ",
   "category": "Petoknjižje",
+  "deuterocanonical": false,
   "chapter_count": 27,
   "verse_count": 859,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Žrtva paljenica"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -105,7 +109,8 @@
               "level": "h4",
               "text": "Žrtva prinosnica"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -181,7 +186,8 @@
               "level": "h4",
               "text": "Žrtva pričesnica"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -261,7 +267,8 @@
               "level": "h4",
               "text": "Žrtve okajnice"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -437,7 +444,8 @@
               "level": "h4",
               "text": "5. Žrtva naknadnica i okajnica"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -569,7 +577,8 @@
               "level": "h4",
               "text": "1. Žrtva paljenica"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -685,7 +694,8 @@
               "level": "h4",
               "text": "4. Žrtva naknadnica"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -883,7 +893,8 @@
               "level": "h4",
               "text": "Obred svećeničkog posvećenja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1039,7 +1050,8 @@
               "level": "h4",
               "text": "Nastup u svećeničku službu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1147,7 +1159,8 @@
               "level": "h4",
               "text": "Vjernost obrednim propisima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1272,7 +1285,8 @@
               "level": "h4",
               "text": "1. Kopnene životinje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1506,7 +1520,8 @@
               "level": "h4",
               "text": "Očišćenje žene poslije poroda"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1550,7 +1565,8 @@
               "level": "h4",
               "text": "Guba"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1840,7 +1856,8 @@
               "level": "h4",
               "text": "Očišćenje gubavoga"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2090,7 +2107,8 @@
               "level": "h4",
               "text": "Spolna nečistoća muškarca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2246,7 +2264,8 @@
               "level": "h3",
               "text": "DAN VELIKOG POMIRENJA"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2418,7 +2437,8 @@
               "level": "h4",
               "text": "Jedno Prebivalište – jedan žrtvenik"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2500,7 +2520,8 @@
               "level": "h4",
               "text": "Svetost bračnih odnosa"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2632,7 +2653,8 @@
               "level": "h4",
               "text": "»Budite sveti!«"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2800,7 +2822,8 @@
               "level": "h4",
               "text": "Kazne za nedopušteni obred"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2936,7 +2959,8 @@
               "level": "h4",
               "text": "Svećenička svetost"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3056,7 +3080,8 @@
               "level": "h4",
               "text": "Svetost pričesnika svetih žrtava1. Svećenici"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3218,7 +3243,8 @@
               "level": "h3",
               "text": "SVETKOVINE"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3464,7 +3490,8 @@
               "level": "h4",
               "text": "Vječna vatra"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3584,7 +3611,8 @@
               "level": "h4",
               "text": "Sedma godina"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3842,7 +3870,8 @@
               "level": "h4",
               "text": "Zaključak"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4060,7 +4089,8 @@
               "level": "h4",
               "text": "Otkup zavjetovanih osoba i stvari"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

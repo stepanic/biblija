@@ -1,11 +1,14 @@
 {
   "order": 32,
   "id": "baruh",
+  "usfm_id": "BAR",
   "ks_book_id": 43,
   "abbr": "Bar",
   "title": "Baruh",
+  "name_en": "Baruch",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": true,
   "chapter_count": 6,
   "verse_count": 213,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Baruh i židovska zajednica u Babilonu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -129,7 +133,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Zato je Gospod izvršio prijetnju koju je naviještao protiv nas, protiv naših sudaca koji su sudili Izraelu, protiv naših kraljeva i knezova, protiv naroda Izraelova i Judina:"
+          "text": "Zato je Gospod izvršio prijetnju koju je naviještao protiv nas, protiv naših sudaca koji su sudili Izraelu, protiv naših kraljeva i knezova, protiv naroda Izraelova i Judina:",
+          "p": true
         },
         {
           "verse": 2,
@@ -281,7 +286,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Svevladaru Gospode, Bože Izraelov, tebi viče duša tjeskobna, duh uznemiren:"
+          "text": "Svevladaru Gospode, Bože Izraelov, tebi viče duša tjeskobna, duh uznemiren:",
+          "p": true
         },
         {
           "verse": 2,
@@ -585,7 +591,8 @@
             "Zakon koji će trajati dovijeka:",
             "tko ga se držao bude, taj će živjeti;",
             "tko ga napusti, taj će umrijeti."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -916,7 +923,8 @@
             "Skini, Jeruzaleme, haljinu",
             "tugovanja i nesreće,",
             "odjeni se zauvijek ljepotom slave Božje,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1004,7 +1012,8 @@
           "lines": [
             "Prijepis poslanice koju je poslao Jeremija sužnjima koje je kralj Babilonaca uskoro imao odvesti u Babilon da im saopći preporuke što mu ih je povjerio Bog.",
             "Zbog grijeha što ste ih pred Bogom počinili, Nabukodonozor, kralj Babilonaca, odvest će vas kao sužnje u Babilon."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

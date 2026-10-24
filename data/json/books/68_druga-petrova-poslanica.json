@@ -1,11 +1,14 @@
 {
   "order": 68,
   "id": "druga-petrova-poslanica",
+  "usfm_id": "2PE",
   "ks_book_id": 79,
   "abbr": "2 Pt",
   "title": "Druga Petrova poslanica",
+  "name_en": "2 Peter",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 3,
   "verse_count": 61,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Naslov"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -135,7 +139,8 @@
               "level": "h4",
               "text": "Krivi učitelji"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -247,7 +252,8 @@
               "level": "h4",
               "text": "Dan Gospodnji: Proroci i apostoli"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

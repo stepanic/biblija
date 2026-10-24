@@ -1,11 +1,14 @@
 {
   "order": 6,
   "id": "josua",
+  "usfm_id": "JOS",
   "ks_book_id": 17,
   "abbr": "Jš",
   "title": "Jošua",
+  "name_en": "Joshua",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": false,
   "chapter_count": 24,
   "verse_count": 658,
   "chapters": [
@@ -29,7 +32,8 @@
               "level": "h4",
               "text": "Poziv za polazak u obećanu zemlju"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -125,7 +129,8 @@
               "level": "h4",
               "text": "Jošuine uhode u Jerihonu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -249,7 +254,8 @@
               "level": "h4",
               "text": "Priprave za prijelaz"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -341,7 +347,8 @@
               "level": "h4",
               "text": "Dvanaest spomen-kamenova"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -461,7 +468,8 @@
               "level": "h4",
               "text": "Strah narodâ na zapadnoj obali Jordana"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -555,7 +563,8 @@
               "level": "h4",
               "text": "Pad Jerihona"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -691,7 +700,8 @@
               "level": "h4",
               "text": "Kršenje kletve i neuspjeh kod Aja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -823,7 +833,8 @@
               "level": "h4",
               "text": "Jahvine zapovijedi Jošui"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1013,7 +1024,8 @@
               "level": "h4",
               "text": "Savez protiv Izraela"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1149,7 +1161,8 @@
               "level": "h4",
               "text": "Pet kraljeva protiv Gibeona"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1372,7 +1385,8 @@
               "level": "h4",
               "text": "Savez kraljeva sa sjevera"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1508,7 +1522,8 @@
               "level": "h4",
               "text": "Pobijeđeni kraljevi istočno od Jordana"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1690,7 +1705,8 @@
               "level": "h4",
               "text": "Neosvojena područja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1866,7 +1882,8 @@
               "level": "h4",
               "text": "Uvod"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1948,7 +1965,8 @@
               "level": "h4",
               "text": "Baština plemena Judina"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2228,7 +2246,8 @@
               "level": "h4",
               "text": "Baština plemena Efrajimova"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2280,7 +2299,8 @@
               "level": "h4",
               "text": "Baština plemena Manašeova"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2370,7 +2390,8 @@
               "level": "h3",
               "text": "3. SEDAM OSTALIH PLEMENA"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2506,7 +2527,8 @@
               "level": "h4",
               "text": "Baština plemena Šimunova"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2756,7 +2778,8 @@
               "level": "h4",
               "text": "Gradovi-utočišta"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2804,7 +2827,8 @@
               "level": "h4",
               "text": "Levitski gradovi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3028,7 +3052,8 @@
               "level": "h4",
               "text": "Otpuštanje prekojordanskih plemena"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3204,7 +3229,8 @@
               "level": "h4",
               "text": "Jošua o svome djelu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3290,7 +3316,8 @@
               "level": "h4",
               "text": "Jahvina ljubav prema Izraelu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

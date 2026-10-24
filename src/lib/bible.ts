@@ -7,11 +7,15 @@ const JSON_DIR = path.join(DATA_DIR, "json");
 export interface BookMeta {
   order: number;
   id: string;
+  usfm_id: string;
   ks_book_id: number;
   abbr: string;
   title: string;
+  name_en: string;
   testament: "SZ" | "NZ";
   category: string;
+  deuterocanonical: boolean;
+  deuterocanonical_parts?: string;
   chapter_count: number;
   verse_count: number;
 }
@@ -25,6 +29,7 @@ export interface VerseItem {
   verse: number;
   verse_label?: string;
   text: string;
+  p?: boolean;
   headings?: VerseHeading[];
   references?: string[];
   lines?: string[];

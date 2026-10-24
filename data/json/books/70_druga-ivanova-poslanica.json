@@ -1,11 +1,14 @@
 {
   "order": 70,
   "id": "druga-ivanova-poslanica",
+  "usfm_id": "2JN",
   "ks_book_id": 81,
   "abbr": "2 Iv",
   "title": "Druga Ivanova poslanica",
+  "name_en": "2 John",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 1,
   "verse_count": 13,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h4",
               "text": "Pozdrav"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

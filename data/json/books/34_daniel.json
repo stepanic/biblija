@@ -1,13 +1,17 @@
 {
   "order": 34,
   "id": "daniel",
+  "usfm_id": "DAN",
   "ks_book_id": 45,
   "abbr": "Dn",
   "title": "Daniel",
+  "name_en": "Daniel",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 14,
-  "verse_count": 520,
+  "verse_count": 530,
+  "deuterocanonical_parts": "3,24–90; 13; 14",
   "chapters": [
     {
       "chapter": 1,
@@ -21,7 +25,8 @@
               "level": "h2",
               "text": "DANIEL NA KRALJEVSKOM DVORU U BABILONU"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -139,7 +144,8 @@
               "level": "h4",
               "text": "Mudraci ne mogu protumačiti sna"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -387,7 +393,7 @@
     },
     {
       "chapter": 3,
-      "verse_count": 90,
+      "verse_count": 100,
       "verses": [
         {
           "verse": 1,
@@ -401,7 +407,8 @@
               "level": "h4",
               "text": "Postavljanje zlatnoga kipa"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1053,6 +1060,62 @@
             "hvalite i zahvaljujte,",
             "jer vječna je ljubav njegova!«"
           ]
+        },
+        {
+          "verse": 91,
+          "text": "Tada se kralj Nabukodonozor zaprepasti i brzo ustade. Zapita svoje savjetnike: »Nismo li bacili ova tri čovjeka svezana u oganj?« Oni odgovoriše: »Jesmo, kralju!«",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Nabukodonozor priznaje čudo"
+            }
+          ]
+        },
+        {
+          "verse": 92,
+          "text": "On reče: »Ali ja vidim četiri čovjeka, odriješeni šeću po vatri i ništa im se zlo ne događa; četvrti je sličan sinu Božjemu.«"
+        },
+        {
+          "verse": 93,
+          "text": "Nabukodonozor priđe vratima užarene peći i viknu: »Šadrače, Mešače i Abed Nego, sluge Boga Višnjega, iziđite i dođite ovamo!« Tada iziđoše iz ognja Šadrak, Mešak i Abed Nego."
+        },
+        {
+          "verse": 94,
+          "text": "Sakupiše se satrapi, starješine, upravitelji i kraljevi savjetnici da vide te ljude: oganj ne bijaše naudio njihovu tijelu, kosa im na glavi neopaljena, plaštevi im neoštećeni, nikakav se zadah ognja ne bijaše uhvatio njih."
+        },
+        {
+          "verse": 95,
+          "text": "Nabukodonozor viknu: »Blagoslovljen bio Bog Šadrakov, Mešakov i Abed Negov, koji je poslao svog anđela i izbavio svoje sluge, one koji se uzdahu u njega te se ne pokoriše kraljevoj naredbi, već radije predadoše svoje tijelo ognju negoli da štuju ili se klanjaju drugome osim svome Bogu!"
+        },
+        {
+          "verse": 96,
+          "text": "Naređujem dakle: O narodi, plemena i jezici, svatko između vas tko bi pogrdio Boga Šadrakova, Mešakova i Abed Negova neka bude raskomadan, a njegova kuća pretvorena u smetlište, jer nema boga koji bi mogao izbaviti kao ovaj.«"
+        },
+        {
+          "verse": 97,
+          "text": "Tada kralj uzvisi Šadraka, Mešaka i Abed Nega na visoke položaje u pokrajini babilonskoj."
+        },
+        {
+          "verse": 98,
+          "text": "Nabukodonozor, kralj, svim plemenima, narodima i jezicima po svoj zemlji: Obilovali mirom!",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "4. NABUKODONOZOROV SAN O VELIKOM STABLU"
+            },
+            {
+              "level": "h4",
+              "text": "Kraljeva poslanica"
+            }
+          ]
+        },
+        {
+          "verse": 99,
+          "text": "Svidjelo mi se obznaniti vam znakove i čudesa što ih na meni učini Bog Svevišnji."
+        },
+        {
+          "verse": 100,
+          "text": "Znakovi njegovi kako su veliki! Čudesa njegova kako silna! Kraljevstvo njegovo – kraljevstvo vječno! Vlast njegova za sva pokoljenja!"
         }
       ]
     },
@@ -1068,7 +1131,8 @@
               "level": "h4",
               "text": "Nabukodonozor pripovijeda svoj san"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1335,7 +1399,8 @@
               "level": "h4",
               "text": "Oskvrnuće svetog suđa"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1497,7 +1562,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "A Darije Medijac preuze kraljevstvo, star već šezdeset i dvije godine."
+          "text": "A Darije Medijac preuze kraljevstvo, star već šezdeset i dvije godine.",
+          "p": true
         },
         {
           "verse": 2,
@@ -1674,7 +1740,8 @@
               "level": "h4",
               "text": "Četiri nemani"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1890,7 +1957,8 @@
               "level": "h4",
               "text": "Borba ovna i jarca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2056,7 +2124,8 @@
               "level": "h4",
               "text": "Povod i vrijeme proročanstva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2247,7 +2316,8 @@
               "level": "h4",
               "text": "Čovjek u lanenim haljinama"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2355,7 +2425,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "moje potpore i moga okrilja."
+          "text": "moje potpore i moga okrilja.",
+          "p": true
         },
         {
           "verse": 2,
@@ -2589,7 +2660,8 @@
               "level": "h4",
               "text": "Uskrsnuće i plaća"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2659,7 +2731,8 @@
               "level": "h2",
               "text": "DANIEL IZBAVLJA SUZANU"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2941,7 +3014,8 @@
               "level": "h4",
               "text": "Daniel se ne klanja Belu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

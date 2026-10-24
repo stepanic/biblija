@@ -1,11 +1,14 @@
 {
   "order": 41,
   "id": "nahum",
+  "usfm_id": "NAM",
   "ks_book_id": 52,
   "abbr": "Nah",
   "title": "Nahum",
+  "name_en": "Nahum",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 3,
   "verse_count": 47,
   "chapters": [
@@ -19,7 +22,8 @@
           "lines": [
             "Proročanstvo nad Ninivom.",
             "Knjiga viđenja Nahuma Elkošanina."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -201,7 +205,8 @@
             "ispuni svoje zavjete,",
             "jer Belijal više neće prolaziti po tebi,",
             "on je sasvim zatrt."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -370,7 +375,8 @@
             "pun je laži,",
             "prepun grabeža,",
             "s pljačkanjem on ne prestaje!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

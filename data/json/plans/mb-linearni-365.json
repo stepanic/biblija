@@ -3033,7 +3033,7 @@
       "day": 169,
       "date_label": "17. lipnja",
       "label": "17. lipnja — Job 25–27",
-      "verse_count": 42,
+      "verse_count": 48,
       "readings": [
         {
           "book_order": 22,
@@ -3042,7 +3042,7 @@
           "book_title": "Knjiga o Jobu",
           "chapter_start": 25,
           "chapter_end": 27,
-          "verse_count": 42,
+          "verse_count": 48,
           "label": "Job 25–27"
         }
       ]
@@ -4905,7 +4905,7 @@
       "day": 273,
       "date_label": "29. rujna",
       "label": "29. rujna — Dn 1–5",
-      "verse_count": 224,
+      "verse_count": 234,
       "readings": [
         {
           "book_order": 34,
@@ -4914,7 +4914,7 @@
           "book_title": "Daniel",
           "chapter_start": 1,
           "chapter_end": 5,
-          "verse_count": 224,
+          "verse_count": 234,
           "label": "Dn 1–5"
         }
       ]

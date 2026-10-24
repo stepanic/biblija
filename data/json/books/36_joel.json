@@ -1,11 +1,14 @@
 {
   "order": 36,
   "id": "joel",
+  "usfm_id": "JOL",
   "ks_book_id": 47,
   "abbr": "Jl",
   "title": "Joel",
+  "name_en": "Joel",
   "testament": "SZ",
   "category": "Proroci",
+  "deuterocanonical": false,
   "chapter_count": 4,
   "verse_count": 73,
   "chapters": [
@@ -15,7 +18,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Riječ Jahvina koja dođe Joelu, sinu Petuelovu."
+          "text": "Riječ Jahvina koja dođe Joelu, sinu Petuelovu.",
+          "p": true
         },
         {
           "verse": 2,
@@ -249,7 +253,8 @@
             "Neka svi stanovnici zemlje dršću,",
             "jer dolazi Jahvin dan.",
             "Da, on je blizu."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -584,7 +589,8 @@
             "i proricat će vaši sinovi i kćeri,",
             "vaši će starci sanjati sne,",
             "a vaši mladići gledati viđenja."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -647,7 +653,8 @@
             "»Jer, gle, u one dane",
             "i u ono vrijeme,",
             "kad okrenem udes Judeji i Jeruzalemu,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

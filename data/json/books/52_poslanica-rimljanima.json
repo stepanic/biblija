@@ -1,11 +1,14 @@
 {
   "order": 52,
   "id": "poslanica-rimljanima",
+  "usfm_id": "ROM",
   "ks_book_id": 63,
   "abbr": "Rim",
   "title": "Poslanica Rimljanima",
+  "name_en": "Romans",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 16,
   "verse_count": 432,
   "chapters": [
@@ -31,7 +34,8 @@
             "sluga Krista Isusa,",
             "pozvan za apostola,",
             "odlučen za evanđelje Božje –"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -236,7 +240,8 @@
               "level": "h4",
               "text": "Nad Židovima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -382,7 +387,8 @@
               "level": "h4",
               "text": "Unatoč obećanjima Božjim"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -582,7 +588,8 @@
               "level": "h4",
               "text": "Abraham opravdan vjerom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -724,7 +731,8 @@
               "level": "h4",
               "text": "Opravdanje zalog spasenja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -830,7 +838,8 @@
               "level": "h4",
               "text": "Krst"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -940,7 +949,8 @@
               "level": "h4",
               "text": "Kršćanin oslobođen Zakona"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1068,7 +1078,8 @@
               "level": "h3",
               "text": "2. ŽIVOT PO DUHU"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1269,7 +1280,8 @@
               "level": "h4",
               "text": "Povlastice Izraelove"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1455,7 +1467,8 @@
               "level": "h4",
               "text": "Židovi nisu priznali pravednosti Božje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1595,7 +1608,8 @@
               "level": "h4",
               "text": "Izraelova je nevjernost samo djelomična"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1818,7 +1832,8 @@
               "level": "h4",
               "text": "Duhovno bogoslužje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1927,7 +1942,8 @@
               "level": "h4",
               "text": "Poslušnost vlastima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2007,7 +2023,8 @@
               "level": "h4",
               "text": "Ljubav prema slabima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2123,7 +2140,8 @@
               "level": "h4",
               "text": "Treba ugađati drugima, ne sebi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2314,7 +2332,8 @@
               "level": "h4",
               "text": "Preporuke i pozdravi"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

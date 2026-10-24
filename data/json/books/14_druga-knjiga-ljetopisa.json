@@ -1,11 +1,14 @@
 {
   "order": 14,
   "id": "druga-knjiga-ljetopisa",
+  "usfm_id": "2CH",
   "ks_book_id": 25,
   "abbr": "2 Ljet",
   "title": "Druga Knjiga Ljetopisa",
+  "name_en": "2 Chronicles",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": false,
   "chapter_count": 36,
   "verse_count": 822,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Salomon prima Mudrost"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -109,7 +113,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Odbroji sedamdeset tisuća nosača, osamdeset tisuća kamenolomaca u gori i tri tisuće i šest stotina poslovođa."
+          "text": "Odbroji sedamdeset tisuća nosača, osamdeset tisuća kamenolomaca u gori i tri tisuće i šest stotina poslovođa.",
+          "p": true
         },
         {
           "verse": 2,
@@ -189,7 +194,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Salomon tada poče graditi dom Jahvi u Jeruzalemu, na Morijskoj gori, ondje gdje je njegov otac David imao viđenje. To je mjesto koje je pripravio David, gumno Jebusejca Ornana."
+          "text": "Salomon tada poče graditi dom Jahvi u Jeruzalemu, na Morijskoj gori, ondje gdje je njegov otac David imao viđenje. To je mjesto koje je pripravio David, gumno Jebusejca Ornana.",
+          "p": true
         },
         {
           "verse": 2,
@@ -263,7 +269,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Napravi mjedeni žrtvenik duga čak dvadeset lakata, širok dvadeset i visok deset."
+          "text": "Napravi mjedeni žrtvenik duga čak dvadeset lakata, širok dvadeset i visok deset.",
+          "p": true
         },
         {
           "verse": 2,
@@ -357,7 +364,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Tako bi priveden kraju posao što ga Salomon obavi za dom Jahvin. Salomon unese sve svete darove oca svoga Davida – srebro, zlato i sve posuđe – i stavi ih u riznicu Božjega doma."
+          "text": "Tako bi priveden kraju posao što ga Salomon obavi za dom Jahvin. Salomon unese sve svete darove oca svoga Davida – srebro, zlato i sve posuđe – i stavi ih u riznicu Božjega doma.",
+          "p": true
         },
         {
           "verse": 2,
@@ -435,7 +443,8 @@
           "lines": [
             "Tada reče Salomon:",
             "»Jahve odluči prebivati u tmastu oblaku,"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -651,7 +660,8 @@
               "level": "h4",
               "text": "Posveta Hrama"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -757,7 +767,8 @@
               "level": "h4",
               "text": "Završetak gradnje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -841,7 +852,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Uto kraljica od Sabe ču glas o Salomonu. Hoteći iskušati Salomona zagonetkama, dođe u Jeruzalem s mnogobrojnom pratnjom i s devama koje su nosile miomirise, mnogo zlata i dragulja. Došavši k Salomonu, porazgovori se s njim o svemu što joj bijaše na srcu."
+          "text": "Uto kraljica od Sabe ču glas o Salomonu. Hoteći iskušati Salomona zagonetkama, dođe u Jeruzalem s mnogobrojnom pratnjom i s devama koje su nosile miomirise, mnogo zlata i dragulja. Došavši k Salomonu, porazgovori se s njim o svemu što joj bijaše na srcu.",
+          "p": true
         },
         {
           "verse": 2,
@@ -995,7 +1007,8 @@
               "level": "h4",
               "text": "Rascjep"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1091,7 +1104,8 @@
               "level": "h4",
               "text": "Roboamovo vladanje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1205,7 +1219,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Kad je Roboam utvrdio kraljevstvo i ojačao, napustio je Jahvin zakon i on i sav Izrael s njim."
+          "text": "Kad je Roboam utvrdio kraljevstvo i ojačao, napustio je Jahvin zakon i on i sav Izrael s njim.",
+          "p": true
         },
         {
           "verse": 2,
@@ -1285,7 +1300,8 @@
               "level": "h4",
               "text": "Rat"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1411,7 +1427,8 @@
               "level": "h4",
               "text": "Asin mir"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1489,7 +1506,8 @@
               "level": "h4",
               "text": "Proroštvo Azarjino i obnova"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1577,7 +1595,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Trideset i šeste godine Asina kraljevanja navali izraelski kralj Baša na Judeju i stade utvrđivati Ramu da spriječi svako kretanje judejskom kralju Asi."
+          "text": "Trideset i šeste godine Asina kraljevanja navali izraelski kralj Baša na Judeju i stade utvrđivati Ramu da spriječi svako kretanje judejskom kralju Asi.",
+          "p": true
         },
         {
           "verse": 2,
@@ -1655,7 +1674,8 @@
               "level": "h4",
               "text": "Jošafatova moć"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1755,7 +1775,8 @@
               "level": "h4",
               "text": "Savez s Ahabom i proroci"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1912,7 +1933,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Kad se judejski kralj Jošafat sretno vrati kući u Jeruzalem,"
+          "text": "Kad se judejski kralj Jošafat sretno vrati kući u Jeruzalem,",
+          "p": true
         },
         {
           "verse": 2,
@@ -1974,7 +1996,8 @@
               "level": "h4",
               "text": "Vjera i sveto pjevanje u edomskom ratu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2138,7 +2161,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Jošafat počinu kraj svojih otaca i bî sahranjen uz njih u Davidovu gradu. Na njegovo se mjesto zakraljio sin mu Joram."
+          "text": "Jošafat počinu kraj svojih otaca i bî sahranjen uz njih u Davidovu gradu. Na njegovo se mjesto zakraljio sin mu Joram.",
+          "p": true
         },
         {
           "verse": 2,
@@ -2246,7 +2270,8 @@
               "level": "h4",
               "text": "Ahazjina vladavina"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2316,7 +2341,8 @@
               "level": "h4",
               "text": "Svećenstvo protiv Atalije"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2418,7 +2444,8 @@
               "level": "h4",
               "text": "Joaš obnavlja Hram"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2556,7 +2583,8 @@
               "level": "h4",
               "text": "Amasjini vjerski nazori"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2698,7 +2726,8 @@
               "level": "h4",
               "text": "Početak Uzijina kraljevanja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2814,7 +2843,8 @@
               "level": "h4",
               "text": "Jotamovo kraljevanje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2866,7 +2896,8 @@
               "level": "h3",
               "text": "1. AHAZOVA BEZBOŽNOST"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3004,7 +3035,8 @@
               "level": "h3",
               "text": "2. EZEKIJIN OBNOVITELJSKI RAD"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3176,7 +3208,8 @@
               "level": "h4",
               "text": "Poziv na Pashu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3302,7 +3335,8 @@
               "level": "h4",
               "text": "Obnova bogoštovlja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3404,7 +3438,8 @@
               "level": "h4",
               "text": "Sanheribova najezda"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3570,7 +3605,8 @@
               "level": "h4",
               "text": "Manaše razara Ezekijino djelo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3694,7 +3730,8 @@
               "level": "h3",
               "text": "4. JOŠIJINA OBNOVA"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3862,7 +3899,8 @@
               "level": "h4",
               "text": "Priprava za Pashu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3998,7 +4036,8 @@
               "level": "h4",
               "text": "Joahaz"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

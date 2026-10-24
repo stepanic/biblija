@@ -1,11 +1,14 @@
 {
   "order": 57,
   "id": "poslanica-filipljanima",
+  "usfm_id": "PHP",
   "ks_book_id": 68,
   "abbr": "Fil",
   "title": "Poslanica Filipljanima",
+  "name_en": "Philippians",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 4,
   "verse_count": 104,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Naslov i pozdrav"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -179,7 +183,8 @@
               "level": "h4",
               "text": "Jedinstvo u poniznosti"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -354,7 +359,8 @@
               "level": "h4",
               "text": "Pravi put spasenja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -444,7 +450,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Stoga, braćo moja ljubljena i željkovana, radosti moja i vijenče moj, tako – čvrsto stojte u Gospodinu."
+          "text": "Stoga, braćo moja ljubljena i željkovana, radosti moja i vijenče moj, tako – čvrsto stojte u Gospodinu.",
+          "p": true
         },
         {
           "verse": 2,

@@ -1,11 +1,14 @@
 {
   "order": 62,
   "id": "druga-poslanica-timoteju",
+  "usfm_id": "2TI",
   "ks_book_id": 73,
   "abbr": "2 Tim",
   "title": "Druga poslanica Timoteju",
+  "name_en": "2 Timothy",
   "testament": "NZ",
   "category": "Poslanice",
+  "deuterocanonical": false,
   "chapter_count": 4,
   "verse_count": 83,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h2",
               "text": "NASLOV I POZDRAV"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -121,7 +125,8 @@
               "level": "h4",
               "text": "Smisao patnjâ kršćanskog apostola"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -263,7 +268,8 @@
               "level": "h4",
               "text": "Opasnosti budućih vremena"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -343,7 +349,8 @@
               "level": "h4",
               "text": "Svečano zaklinjanje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

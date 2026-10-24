@@ -1,11 +1,14 @@
 {
   "order": 15,
   "id": "ezra",
+  "usfm_id": "EZR",
   "ks_book_id": 26,
   "abbr": "Ezr",
   "title": "Ezra",
+  "name_en": "Ezra",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": false,
   "chapter_count": 10,
   "verse_count": 280,
   "chapters": [
@@ -25,7 +28,8 @@
               "level": "h4",
               "text": "Povratak sionista"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -81,7 +85,8 @@
               "level": "h4",
               "text": "Popis sionista"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -377,7 +382,8 @@
               "level": "h4",
               "text": "Obnova bogoslužja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -441,7 +447,8 @@
               "level": "h4",
               "text": "Protusamarijansko raspoloženje – samarijanske smetnje pod Kirom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -555,7 +562,8 @@
               "level": "h4",
               "text": "Gradnja Hrama (520.–515.)"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -637,7 +645,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Tada, po naredbi kralja Darija, uzeše tražiti u Babilonu, u spremištu gdje je bila pismohrana,"
+          "text": "Tada, po naredbi kralja Darija, uzeše tražiti u Babilonu, u spremištu gdje je bila pismohrana,",
+          "p": true
         },
         {
           "verse": 2,
@@ -755,7 +764,8 @@
               "level": "h4",
               "text": "Zadaća i ličnost Ezrina"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -885,7 +895,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Evo glavara obitelji s rodoslovljem koji su sa mnom pošli iz Babilona za vladavine kralja Artakserksa:"
+          "text": "Evo glavara obitelji s rodoslovljem koji su sa mnom pošli iz Babilona za vladavine kralja Artakserksa:",
+          "p": true
         },
         {
           "verse": 2,
@@ -1045,7 +1056,8 @@
               "level": "h4",
               "text": "Prekid brakova sa strancima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1115,7 +1127,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Dok je Ezra molio i priznavao grijehe, plačući i ležeći pred domom Božjim, skupilo se oko njega mnoštvo Izraelaca, ljudi, žena i djece: i taj je narod gorko plakao."
+          "text": "Dok je Ezra molio i priznavao grijehe, plačući i ležeći pred domom Božjim, skupilo se oko njega mnoštvo Izraelaca, ljudi, žena i djece: i taj je narod gorko plakao.",
+          "p": true
         },
         {
           "verse": 2,

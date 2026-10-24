@@ -1,11 +1,14 @@
 {
   "order": 50,
   "id": "evandelje-po-ivanu",
+  "usfm_id": "JHN",
   "ks_book_id": 61,
   "abbr": "Iv",
   "title": "Evanđelje po Ivanu",
+  "name_en": "John",
   "testament": "NZ",
   "category": "Evanđelja i Djela",
+  "deuterocanonical": false,
   "chapter_count": 21,
   "verse_count": 878,
   "chapters": [
@@ -26,7 +29,8 @@
             "U početku bijaše Riječ",
             "i Riječ bijaše u Boga",
             "i Riječ bijaše Bog."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -363,7 +367,8 @@
               "level": "h4",
               "text": "Svadba u Kani"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -500,7 +505,8 @@
               "level": "h4",
               "text": "Razgovor s Nikodemom"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -803,7 +809,8 @@
               "level": "h4",
               "text": "Spasitelj svijeta objavljuje se Samarijancima"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1119,7 +1126,8 @@
               "level": "h4",
               "text": "Ozdravljenje uzetoga"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1487,7 +1495,8 @@
           ],
           "references": [
             "(Mt 14, 13–21; Mk 6, 30–34; Lk 9, 10–17)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1965,7 +1974,8 @@
               "level": "h4",
               "text": "Isus ide u Jeruzalem"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2280,7 +2290,8 @@
               "level": "h4",
               "text": "Preljubnica"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2755,7 +2766,8 @@
               "level": "h4",
               "text": "Ozdravljenje slijepa od rođenja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2949,7 +2961,8 @@
               "level": "h4",
               "text": "Isus – Dobri pastir"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3268,7 +3281,8 @@
               "level": "h4",
               "text": "Lazarova bolest i smrt"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3572,7 +3586,8 @@
           ],
           "references": [
             "(Mt 26, 6–13; Mk 14, 3–9)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3936,7 +3951,8 @@
           ],
           "references": [
             "(Mt 23, 6–12; 10, 24–40; Lk 22, 24–28; 6, 40)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4185,7 +4201,8 @@
             "»Neka se ne uznemiruje srce vaše!",
             "Vjerujte u Boga",
             "i u mene vjerujte!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4481,7 +4498,8 @@
           "lines": [
             "»Ja sam istinski trs,",
             "a Otac moj – vinogradar."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -4753,7 +4771,8 @@
           "lines": [
             "To sam vam govorio",
             "da se ne sablaznite."
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5073,7 +5092,8 @@
             "»Oče, došao je čas:",
             "proslavi Sina svoga",
             "da Sin proslavi tebe"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5341,7 +5361,8 @@
           ],
           "references": [
             "(Mt 26, 47–56; Mk 14, 43–50; Lk 22, 47–53)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5558,7 +5579,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "Tada Pilat uze i izbičeva Isusa."
+          "text": "Tada Pilat uze i izbičeva Isusa.",
+          "p": true
         },
         {
           "verse": 2,
@@ -5801,7 +5823,8 @@
           ],
           "references": [
             "(Mt 28, 1–8; Mk 16, 1–8; Lk 24, 1–12)"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -5992,7 +6015,8 @@
               "level": "h4",
               "text": "Ukazanje Isusovo kod Tiberijadskog jezera"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

@@ -1,11 +1,14 @@
 {
   "order": 7,
   "id": "knjiga-o-sucima",
+  "usfm_id": "JDG",
   "ks_book_id": 18,
   "abbr": "Suci",
   "title": "Knjiga o Sucima",
+  "name_en": "Judges",
   "testament": "SZ",
   "category": "Povijesne knjige",
+  "deuterocanonical": false,
   "chapter_count": 21,
   "verse_count": 618,
   "chapters": [
@@ -29,7 +32,8 @@
               "level": "h4",
               "text": "Naseljenje Jude, Šimuna, Kaleba i Kenijaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -197,7 +201,8 @@
               "level": "h4",
               "text": "Anđeo Jahvin naviješta Izraelu nevolje"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -333,7 +338,8 @@
               "level": "h4",
               "text": "Narodi koji su se održali"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -495,7 +501,8 @@
               "level": "h4",
               "text": "Izrael pod jarmom Kanaanaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -633,7 +640,8 @@
               "level": "h4",
               "text": "Pjesma Debore i Baraka"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -933,7 +941,8 @@
               "level": "h4",
               "text": "Izrael pod jarmom Midjanaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1135,7 +1144,8 @@
               "level": "h4",
               "text": "Jahve smanjuje Gideonovu vojsku"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1269,7 +1279,8 @@
               "level": "h4",
               "text": "Zavist Efrajimovaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1455,7 +1466,8 @@
               "level": "h4",
               "text": "Abimelek postaje kraljem"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1766,7 +1778,8 @@
               "level": "h3",
               "text": "7. TOLA"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1866,7 +1879,8 @@
               "level": "h4",
               "text": "Jiftah stavlja uvjete"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2054,7 +2068,8 @@
               "level": "h4",
               "text": "Rat između Efrajima i Gileada – Smrt Jiftaha"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2148,7 +2163,8 @@
               "level": "h4",
               "text": "Navještenje Samsonova rođenja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2270,7 +2286,8 @@
               "level": "h4",
               "text": "Samsonova ženidba"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2386,7 +2403,8 @@
               "level": "h4",
               "text": "Samson pali Filistejcima ljetinu"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2489,7 +2507,8 @@
               "level": "h4",
               "text": "Zgoda s vratima Gaze"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2657,7 +2676,8 @@
               "level": "h4",
               "text": "Mikino kućno svetište"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2721,7 +2741,8 @@
               "level": "h4",
               "text": "Danovci traže zemljište"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2873,7 +2894,8 @@
               "level": "h4",
               "text": "Efrajimov levit i njegova inoča"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3011,7 +3033,8 @@
               "level": "h4",
               "text": "Izraelci odlučuju osvetiti zločin u Gibei"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -3237,7 +3260,8 @@
               "level": "h4",
               "text": "Sažaljenje Izraelaca"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,

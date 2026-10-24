@@ -1,11 +1,14 @@
 {
   "order": 73,
   "id": "otkrivenje",
+  "usfm_id": "REV",
   "ks_book_id": 84,
   "abbr": "Otk",
   "title": "Otkrivenje",
+  "name_en": "Revelation",
   "testament": "NZ",
   "category": "Otkrivenje",
+  "deuterocanonical": false,
   "chapter_count": 22,
   "verse_count": 405,
   "chapters": [
@@ -21,7 +24,8 @@
               "level": "h2",
               "text": "PROSLOV"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -129,7 +133,8 @@
               "level": "h4",
               "text": "Crkvi u Efezu: ohladnjela ljubav"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -275,7 +280,8 @@
               "level": "h4",
               "text": "Crkvi u Sardu: prividno kršćanstvo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -395,7 +401,8 @@
               "level": "h4",
               "text": "Bog Janjetu povjerava sudbinu svijeta"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -458,7 +465,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "I vidjeh: na desnici Onoga koji sjedi na prijestolju – knjiga, iznutra i izvana ispisana, zapečaćena sa sedam pečata!"
+          "text": "I vidjeh: na desnici Onoga koji sjedi na prijestolju – knjiga, iznutra i izvana ispisana, zapečaćena sa sedam pečata!",
+          "p": true
         },
         {
           "verse": 2,
@@ -555,7 +563,8 @@
               "level": "h4",
               "text": "Jaganjac otvara sedam pečata"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -635,7 +644,8 @@
               "level": "h4",
               "text": "Sluge Božje bit će pošteđene"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -758,7 +768,8 @@
               "level": "h4",
               "text": "Sedmi pečat"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -834,7 +845,8 @@
               "level": "h4",
               "text": "Peta trublja"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -936,7 +948,8 @@
               "level": "h4",
               "text": "Prijeti konačna kazna"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -992,7 +1005,8 @@
               "level": "h4",
               "text": "Dva svjedoka"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1112,7 +1126,8 @@
               "level": "h4",
               "text": "Žena i Zmaj"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1196,7 +1211,8 @@
               "level": "h4",
               "text": "Zmaj i Zvijer"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1280,7 +1296,8 @@
               "level": "h4",
               "text": "Pratnja Jaganjčeva"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1384,7 +1401,8 @@
               "level": "h4",
               "text": "Mojsijev i Jaganjčev hvalospjev"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1443,7 +1461,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "I začujem iz hrama jak glas koji viknu sedmorici anđela: »Hajdete, izlijte sedam čaša gnjeva Božjega na zemlju!«"
+          "text": "I začujem iz hrama jak glas koji viknu sedmorici anđela: »Hajdete, izlijte sedam čaša gnjeva Božjega na zemlju!«",
+          "p": true
         },
         {
           "verse": 2,
@@ -1543,7 +1562,8 @@
               "level": "h4",
               "text": "Bludnica velika"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1633,7 +1653,8 @@
               "level": "h4",
               "text": "Anđeo navješćuje pad Babilona – Bludnice"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1783,7 +1804,8 @@
             "Nakon toga začujem kao jak glas silnoga mnoštva na nebu:",
             "»Aleluja!",
             "Spasenje i slava i moć Bogu našemu!"
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -1924,7 +1946,8 @@
               "level": "h4",
               "text": "Tisućgodišnje kraljevstvo"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2012,7 +2035,8 @@
               "level": "h4",
               "text": "Nebeski Jeruzalem"
             }
-          ]
+          ],
+          "p": true
         },
         {
           "verse": 2,
@@ -2173,7 +2197,8 @@
       "verses": [
         {
           "verse": 1,
-          "text": "I pokaza mi rijeku vode života, bistru kao prozirac: izvire iz prijestolja Božjeg i Jaganjčeva."
+          "text": "I pokaza mi rijeku vode života, bistru kao prozirac: izvire iz prijestolja Božjeg i Jaganjčeva.",
+          "p": true
         },
         {
           "verse": 2,
