@@ -108,6 +108,10 @@ class BiblijaRequestHandler(SimpleHTTPRequestHandler):
         if len(args) >= 2 and str(args[1]).startswith(("4", "5")):
             super().log_message(fmt, *args)
 
+    def end_headers(self):
+        self.send_header("Cache-Control", "no-cache, must-revalidate")
+        super().end_headers()
+
     def send_json(self, payload, status=200):
         body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
         self.send_response(status)

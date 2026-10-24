@@ -141,10 +141,10 @@
 
     if (state.syncAuth && state.syncAuth.user_key) {
       btn.classList.add("synced");
-      lbl.textContent = state.isSyncing ? `🔄 @${state.syncAuth.user_key}` : `☁️ @${state.syncAuth.user_key}`;
+      lbl.textContent = state.isSyncing ? `🔄 @${state.syncAuth.user_key}` : `👤 @${state.syncAuth.user_key}`;
     } else {
       btn.classList.remove("synced");
-      lbl.textContent = "☁️ Sinkronizacija";
+      lbl.textContent = "👤 Prijava / Sync";
     }
   }
 
@@ -382,9 +382,27 @@
     if (logoutBtn) {
       logoutBtn.addEventListener("click", () => {
         state.syncAuth = null;
+        state.progress = {};
+        state.bookmarks = {};
+        state.lastSyncedAt = null;
         localStorage.removeItem("biblija_sync_auth");
+        localStorage.removeItem("biblija_progress");
+        localStorage.removeItem("biblija_bookmarks");
+        localStorage.removeItem("biblija_last_url");
+        localStorage.removeItem("biblija_last_label");
+        localStorage.removeItem("biblija_meta_updated_at");
+        localStorage.removeItem("biblija_last_synced_at");
+        const keyInput = document.getElementById("syncUserKeyInput");
+        const pinInput = document.getElementById("syncPinInput");
+        if (keyInput) keyInput.value = "";
+        if (pinInput) pinInput.value = "";
         updateSyncHeaderUI();
         updateSyncModalViews();
+        for (const cb of state.uiRefreshCallbacks) {
+          try {
+            cb();
+          } catch (_) {}
+        }
       });
     }
 
@@ -1088,6 +1106,30 @@
 
   /* ==================== GLOBAL INIT ==================== */
   window.addEventListener("DOMContentLoaded", () => {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("/sw.js", { updateViaCache: "none" })
+        .then((reg) => reg.update().catch(() => {}))
+        .catch(() => {});
+    }
+
+    // Redirect legacy single-page hashes (#reader, #plan365, #search, #notes) to clean Astro routes
+    if (window.location.hash === "#plan365") {
+      window.location.replace("/plan/");
+      return;
+    }
+    if (window.location.hash === "#search") {
+      window.location.replace("/pretraga/");
+      return;
+    }
+    if (window.location.hash === "#notes") {
+      window.location.replace("/oznake/");
+      return;
+    }
+    if (window.location.hash === "#reader") {
+      history.replaceState(null, "", window.location.pathname);
+    }
+
     applyThemeAndFont();
     detectServer();
 
