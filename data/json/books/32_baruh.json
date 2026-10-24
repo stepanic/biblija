@@ -1,0 +1,1296 @@
+{
+  "order": 32,
+  "id": "baruh",
+  "ks_book_id": 43,
+  "abbr": "Bar",
+  "title": "Baruh",
+  "testament": "SZ",
+  "category": "Proroci",
+  "chapter_count": 6,
+  "verse_count": 213,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 22,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Ovo su riječi knjige koju u Babilonu napisa Baruh, sin Nerije, sina Maaseje, sina Sidkije, sina Hasadije, sina Hilkije,",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "I. UVOD"
+            },
+            {
+              "level": "h4",
+              "text": "Baruh i židovska zajednica u Babilonu"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "pete godine, sedmoga dana u mjesecu, u vrijeme kada su Kaldejci osvojili Jeruzalem i spalili ga."
+        },
+        {
+          "verse": 3,
+          "text": "Baruh pročita riječi ove knjige pred Jekonijom, sinom Jojakimovim, kraljem Judinim, i pred čitavim narodom koji bijaše došao na čitanje knjige;"
+        },
+        {
+          "verse": 4,
+          "text": "pred mogućnicima i kraljevim sinovima, pred starješinama, ukratko, pred svim narodom, malim i velikim, pred svima koji su živjeli u Babilonu, na obalama rijeke Suda."
+        },
+        {
+          "verse": 5,
+          "text": "Čuvši, plakali su, postili i molili se pred Gospodom."
+        },
+        {
+          "verse": 6,
+          "text": "Sabraše i novca, koliko tko mogaše,"
+        },
+        {
+          "verse": 7,
+          "text": "i poslaše ga u Jeruzalem svećeniku Jojakimu, sinu Hilkije, Šalumova sina, i ostalim svećenicima i svemu narodu koji se s njim nalazio u Jeruzalemu."
+        },
+        {
+          "verse": 8,
+          "text": "Desetoga dana mjeseca sivana Baruh je spasio posuđe kuće Gospodnje što bijaše ugrabljeno iz Hrama da bi ga odnio natrag u zemlju Judinu – srebrno posuđe što ga je načinio Sidkija, sin Jošijin, kralj Judin,"
+        },
+        {
+          "verse": 9,
+          "text": "kad je Nabukodonozor, kralj babilonski, odveo iz Jeruzalema i u Babilon doveo Jekoniju s knezovima, ključarima, mogućnicima i svim narodom."
+        },
+        {
+          "verse": 10,
+          "text": "I napisaše: »Evo, šaljemo vam novac da njime kupite žrtve paljenice i tamjan; pripravite žrtve i prinesite ih za grijehe na žrtveniku Gospoda, Boga našega."
+        },
+        {
+          "verse": 11,
+          "text": "I molite se za život Nabukodonozora, kralja babilonskog, i za život sina njegova Baltazara da im dani na zemlji budu kao dani neba;"
+        },
+        {
+          "verse": 12,
+          "text": "neka nam Gospod dade snage i prosvijetli oči naše da bismo živjeli u sjeni Nabukodonozora, kralja babilonskog, i u sjeni njegova sina Baltazara, da bismo ih dugo služili te našli milost pred njima."
+        },
+        {
+          "verse": 13,
+          "text": "Molite se i za nas Gospodu, Bogu našem, jer smo ga uvrijedili i do danas se gnjev i srdžba Gospodnja nije odvratila od nas."
+        },
+        {
+          "verse": 14,
+          "text": "Čitajte, dakle, knjigu koju vam šaljemo i obznanite je u kući Gospodnjoj, na blagdan i u dane zborovanja."
+        },
+        {
+          "verse": 15,
+          "text": "Recite tada:« »‘Pravedan je Gospod, Bog naš! Ali nama treba da se danas zacrvene od stida obrazi – nama Judejcima i žiteljima jeruzalemskim,",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "II. MOLITVA IZGNANIKA"
+            },
+            {
+              "level": "h4",
+              "text": "Ispovijed grijeha"
+            }
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "našim kraljevima i knezovima, našim svećenicima i prorocima i našim ocima,"
+        },
+        {
+          "verse": 17,
+          "text": "jer smo griješili pred Gospodom, bili mu nepokorni"
+        },
+        {
+          "verse": 18,
+          "text": "i nismo slušali glasa Gospoda, Boga svojega, da hodimo po zapovijedima koje Gospod bijaše stavio pred nas."
+        },
+        {
+          "verse": 19,
+          "text": "Od dana kada je oce naše izveo iz Egipta pa do dana današnjega nepokorni smo bili Gospodu, Bogu svojem, i nismo marili da čujemo njegov glas."
+        },
+        {
+          "verse": 20,
+          "text": "Tada navališe na nas nevolje i prokletstva kojima se Gospod zaprijetio sluzi svome Mojsiju u dan kada je izveo oce naše iz Egipta da bi nam dao zemlju kojom teče med i mlijeko. I tako je to do danas."
+        },
+        {
+          "verse": 21,
+          "text": "Nismo bili poslušali glas Gospoda, Boga svojega, ni riječi njegovih preko proroka koje nam je on slao;"
+        },
+        {
+          "verse": 22,
+          "text": "svaki je od nas hodio po nagnuću svoga opakog srca, služeći drugim bogovima i čineći što nije po volji Gospodu, Bogu našem."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 35,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Zato je Gospod izvršio prijetnju koju je naviještao protiv nas, protiv naših sudaca koji su sudili Izraelu, protiv naših kraljeva i knezova, protiv naroda Izraelova i Judina:"
+        },
+        {
+          "verse": 2,
+          "text": "pod čitavim nebom nije se još dogodilo ništa slično onome što se dogodilo u Jeruzalemu, prema onome što bijaše zapisano u Mojsijevu zakonu –"
+        },
+        {
+          "verse": 3,
+          "text": "da se jelo meso sina i kćeri."
+        },
+        {
+          "verse": 4,
+          "text": "Predao ih je vlasti svih kraljevstava oko nas, na porugu i prokletstvo među svim okolnim narodima kamo ih je raspršio Gospod."
+        },
+        {
+          "verse": 5,
+          "text": "Bijahu podjarmljeni umjesto da budu gospodari, jer – sagriješismo Gospodu, Bogu svojemu, ne poslušavši glasa njegova."
+        },
+        {
+          "verse": 6,
+          "text": "Da, pravedan je Gospod, Bog naš! Ali nama – nama treba da se danas zacrvene od stida obrazi, nama i ocima našim."
+        },
+        {
+          "verse": 7,
+          "text": "Oborila se na nas sva zla kojima nam Gospod bijaše zaprijetio."
+        },
+        {
+          "verse": 8,
+          "text": "Mi pak nismo umolili lice Gospodnje odvrativši se od misli svojih opakih srdaca."
+        },
+        {
+          "verse": 9,
+          "text": "Gospod tada uze bdjeti nad nevoljama koje je navalio na nas; jer pravedan je Gospod u svim djelima koja nam je naložio,"
+        },
+        {
+          "verse": 10,
+          "text": "ali mi nismo slušali njegova glasa niti smo hodili po zapovijedima koje je Gospod pred nas stavio.’«"
+        },
+        {
+          "verse": 11,
+          "text": "»‘A sada, Gospode, Bože Izraelov, koji si snažnom rukom izveo narod svoj iz Egipta znamenjima i čudesima, velikom snagom i ispruženom desnicom, proslavivši tako ime svoje do dana današnjega:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Molitva za smilovanje"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "mi smo sagriješili, bezbožni smo bili i nepravedni pred svim tvojim zapovijedima, Gospode, Bože naš!"
+        },
+        {
+          "verse": 13,
+          "text": "Neka se odvrati gnjev tvoj od nas, jer smo samo malen ostatak među narodima kamo si nas raspršio."
+        },
+        {
+          "verse": 14,
+          "text": "Usliši, Gospode, molitvu našu i vapaj: izbavi nas poradi sebe i udijeli nam milost svoju, pred licem onih koji su nas u sužanjstvo odveli,"
+        },
+        {
+          "verse": 15,
+          "text": "da sva zemlja zna da si ti Gospod, Bog naš, jer Izrael i njegov rod nosi tvoje ime."
+        },
+        {
+          "verse": 16,
+          "text": "Obazri se, Gospode, iz svetoga svoga prebivališta i svrni misao na nas, prikloni uho i poslušaj,"
+        },
+        {
+          "verse": 17,
+          "text": "otvori oči i pogledaj: ta mrtvi u podzemnom svijetu – kojima je iz utrobe oduzet dah – ne, oni više ne kazuju slave i pravednosti Gospodnje;"
+        },
+        {
+          "verse": 18,
+          "text": "samo duša ojađena, koja hodi pognuto i iznemoglo, ugaslih očiju, duša pregladnjela, Gospode, iskazuje tvoju slavu i pravednost!"
+        },
+        {
+          "verse": 19,
+          "text": "O Gospode, Bože naš! Ne upravljamo svoje prošnje tvome licu zbog zasluga svojih otaca i svojih kraljeva;"
+        },
+        {
+          "verse": 20,
+          "text": "nego jer si ti poslao na nas gnjev svoj i srdžbu svoju, kako si bio navijestio po prorocima, slugama svojim, ovim riječima:"
+        },
+        {
+          "verse": 21,
+          "text": "‘Ovako govori Gospod: Prignite šiju i služite kralju babilonskom, da ostanete u zemlji koju sam dao ocima vašim."
+        },
+        {
+          "verse": 22,
+          "text": "Ne poslušate li nalog Gospodnji da služite kralju babilonskom,"
+        },
+        {
+          "verse": 23,
+          "text": "učinit ću da iz gradova judejskih i s trgova jeruzalemskih nestane pjesme radosti i pjesme veselja, pjesme zaručnika i pjesme zaručnice, i sva će zemlja postati pustoš bez stanovnika.’"
+        },
+        {
+          "verse": 24,
+          "text": "Ali mi nismo poslušali glasa tvog da služimo kralju babilonskom, i ti si tada izvršio prijetnje koje si navijestio po prorocima, slugama svojim, da će kosti kraljeva naših i kosti naših otaca biti izbačene iz svog počivališta."
+        },
+        {
+          "verse": 25,
+          "text": "I doista, one bjehu izbačene na žegu dana i studen noći. I umiralo se u strašnim mukama od kuge, gladi i mača."
+        },
+        {
+          "verse": 26,
+          "text": "A od kuće koja nosi ime tvoje učinio si ono što je ona danas, zbog zloće kuće Izraelove i kuće Judine."
+        },
+        {
+          "verse": 27,
+          "text": "Pa ipak, Gospode, Bože naš, postupio si s nama po svoj svojoj dobroti i prevelikoj blagosti,"
+        },
+        {
+          "verse": 28,
+          "text": "kako si obećao po sluzi svome Mojsiju onoga dana kada si mu zapovjedio da napiše Zakon tvoj za sinove Izraela ovim riječima:"
+        },
+        {
+          "verse": 29,
+          "text": "‘Ako ne poslušate glasa mog, ovo veliko i bezbrojno mnoštvo zacijelo će se smanjiti među narodima kamo ću ih raspršiti;"
+        },
+        {
+          "verse": 30,
+          "text": "a znam, taj narod tvrde šije neće poslušati. Ali u zemlji svog sužanjstva oni će se opametiti"
+        },
+        {
+          "verse": 31,
+          "text": "i spoznati da sam ja Gospod, Bog njihov. I dat ću im srce i uši da čuju."
+        },
+        {
+          "verse": 32,
+          "text": "Oni će me hvaliti u zemlji svog izgnanstva i spominjat će se moga imena; obratit će se, i smekšat će im se tvrda šija,"
+        },
+        {
+          "verse": 33,
+          "text": "i odvratit će se od opakih svojih djela, jer sjetit će se sudbine otaca svojih kad su griješili Gospodu."
+        },
+        {
+          "verse": 34,
+          "text": "Tada ću ih dovesti natrag u zemlju koju sam obećao zaklevši se njihovim ocima Abrahamu, Izaku i Jakovu, da gospodare njome. I umnožit ću ih, i oni se više neće smanjivati."
+        },
+        {
+          "verse": 35,
+          "text": "I uspostavit ću s njima vječni savez: ja ću biti njihov Bog, a oni će biti moj narod. I neću više izgoniti svog naroda Izraela iz zemlje koju sam im dao.’"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 38,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Svevladaru Gospode, Bože Izraelov, tebi viče duša tjeskobna, duh uznemiren:"
+        },
+        {
+          "verse": 2,
+          "text": "Čuj, Gospode, i smiluj se jer smo sagriješili pred tobom."
+        },
+        {
+          "verse": 3,
+          "text": "Ti vladaš vječito, a mi propadamo bez prestanka."
+        },
+        {
+          "verse": 4,
+          "text": "Gospode svemogući, Bože Izraelov, čuj, dakle, molitvu samrtnika Izraelovih, sinova onih koji su protiv tebe sagriješili, koji nisu slušali glasa Gospoda, Boga svojega, pa zato navališe na nas nevolje."
+        },
+        {
+          "verse": 5,
+          "text": "Ne spominji se opačina naših otaca, već se spomeni u ovo vrijeme ruke svoje i imena svoga."
+        },
+        {
+          "verse": 6,
+          "text": "Da, ti si Gospod, Bog naš, i mi te hoćemo slaviti, Gospode."
+        },
+        {
+          "verse": 7,
+          "text": "Ta zato si nam u srce usadio strah svoj da bismo zazvali ime tvoje i da bismo te proslavili u izgnanstvu uklonivši iz srca svu zloću naših otaca, koji su sagriješili pred tobom."
+        },
+        {
+          "verse": 8,
+          "text": "Evo nas još danas u ovom izgnanstvu kamo si nas raspršio na užas, prokletstvo i pokaranje zbog svih opačina naših.’«"
+        },
+        {
+          "verse": 9,
+          "text": "Čuj, Izraele, životne propise, prisluhni da naučiš mudrost.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "III. POHVALA MUDROSTI"
+            }
+          ],
+          "lines": [
+            "Čuj, Izraele, životne propise,",
+            "prisluhni da naučiš mudrost."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Zašto, o Izraele, zašto si u zemlji neprijateljâ i zašto stariš u tuđini,",
+          "lines": [
+            "Zašto, o Izraele, zašto si u zemlji neprijateljâ",
+            "i zašto stariš u tuđini,"
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "onečišćujuć’ se mrtvacima, ubrojen među one koji su u podzemlju?",
+          "lines": [
+            "onečišćujuć’ se mrtvacima,",
+            "ubrojen među one koji su u podzemlju?"
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Zato što si vrelo mudrosti ostavio!",
+          "lines": [
+            "Zato što si vrelo mudrosti ostavio!"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Da si Božjim hodio putem, zauvijek bi prebivao u miru.",
+          "lines": [
+            "Da si Božjim hodio putem,",
+            "zauvijek bi prebivao u miru."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Nauči stoga gdje je mudrost, gdje snaga, gdje li razboritost, pa da ujedno spoznaš u čemu je dugovječnost i život i gdje je svjetlost očinja i mir.",
+          "lines": [
+            "Nauči stoga gdje je mudrost,",
+            "gdje snaga, gdje li razboritost,",
+            "pa da ujedno spoznaš",
+            "u čemu je dugovječnost i život",
+            "i gdje je svjetlost očinja i mir."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Ali tko je otkrio prebivalište mudrosti, tko li prodro u njene riznice?",
+          "lines": [
+            "Ali tko je otkrio prebivalište mudrosti,",
+            "tko li prodro u njene riznice?"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Gdje su vladari narodâ, gdje gospodari zvijeri zemaljskih,",
+          "lines": [
+            "Gdje su vladari narodâ,",
+            "gdje gospodari zvijeri zemaljskih,"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "gdje oni koji se igrahu pticâ nebeskih i oni koji zgrtahu srebro i zlato – u što se ljudi uzdaju – te ne bijaše kraja zgrtanju njihovu?",
+          "lines": [
+            "gdje oni koji se igrahu pticâ nebeskih",
+            "i oni koji zgrtahu srebro i zlato",
+            "– u što se ljudi uzdaju –",
+            "te ne bijaše kraja zgrtanju njihovu?"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "I gdje su oni koji s tolikim trudom srebro kovahu da im djela nitko natkriliti ne može?",
+          "lines": [
+            "I gdje su oni koji s tolikim trudom srebro kovahu",
+            "da im djela nitko natkriliti ne može?"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Iščezli su, otišli u podzemlje! Na njihovo mjesto dođoše drugi.",
+          "lines": [
+            "Iščezli su, otišli u podzemlje!",
+            "Na njihovo mjesto dođoše drugi."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Mlađi ugledaše svjetlo dana, nastaniše zemlju, no puta mudrosti ni oni ne otkriše;",
+          "lines": [
+            "Mlađi ugledaše svjetlo dana,",
+            "nastaniše zemlju,",
+            "no puta mudrosti ni oni ne otkriše;"
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "staza njenih ni oni ne razumješe, ne doumiše joj se – sinovi njeni daleko ostadoše od puta njezina.",
+          "lines": [
+            "staza njenih ni oni ne razumješe,",
+            "ne doumiše joj se –",
+            "sinovi njeni daleko ostadoše od puta njezina."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Nije se čulo o njoj u Kanaanu niti se vidjela u Temanu;",
+          "lines": [
+            "Nije se čulo o njoj u Kanaanu",
+            "niti se vidjela u Temanu;"
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "ni sinovi Hagarini što zemsku umnost ištu, ni trgovci iz Midjana i Teme, ni pjesnici priča, ni istraživači umnosti ne spoznaše puta mudrosti, ne dovinuše se staza njezinih.",
+          "lines": [
+            "ni sinovi Hagarini što zemsku umnost ištu,",
+            "ni trgovci iz Midjana i Teme,",
+            "ni pjesnici priča, ni istraživači umnosti",
+            "ne spoznaše puta mudrosti,",
+            "ne dovinuše se staza njezinih."
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Kako je veliko, o Izraele, kako je veliko Božje prebivalište i kako je prostrano mjesto posjeda njegova?",
+          "lines": [
+            "Kako je veliko, o Izraele,",
+            "kako je veliko Božje prebivalište",
+            "i kako je prostrano mjesto posjeda njegova?"
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "Veliko i bezgranično, visoko – neizmjerno!",
+          "lines": [
+            "Veliko i bezgranično,",
+            "visoko – neizmjerno!"
+          ]
+        },
+        {
+          "verse": 26,
+          "text": "Ondje se rodiše divovi, čuveni od davnine, rastom golemi, vješti u boju;",
+          "lines": [
+            "Ondje se rodiše divovi, čuveni od davnine,",
+            "rastom golemi, vješti u boju;"
+          ]
+        },
+        {
+          "verse": 27,
+          "text": "ali njih ne izabra Bog niti im povjeri put spoznanja;",
+          "lines": [
+            "ali njih ne izabra Bog",
+            "niti im povjeri put spoznanja;"
+          ]
+        },
+        {
+          "verse": 28,
+          "text": "izginuše jer ne imaše mudrosti, izginuše sa svoje ludosti.",
+          "lines": [
+            "izginuše jer ne imaše mudrosti,",
+            "izginuše sa svoje ludosti."
+          ]
+        },
+        {
+          "verse": 29,
+          "text": "Tko se na nebo pope, pa da je dohvati – na oblake, pa da je skine?",
+          "lines": [
+            "Tko se na nebo pope, pa da je dohvati –",
+            "na oblake, pa da je skine?"
+          ]
+        },
+        {
+          "verse": 30,
+          "text": "Tko prebrodi more da bi je otkrio pa da je kupi za najčistije zlato?",
+          "lines": [
+            "Tko prebrodi more da bi je otkrio",
+            "pa da je kupi za najčistije zlato?"
+          ]
+        },
+        {
+          "verse": 31,
+          "text": "Nitko ne zna njezina puta i nitko njezine staze ne shvaća.",
+          "lines": [
+            "Nitko ne zna njezina puta",
+            "i nitko njezine staze ne shvaća."
+          ]
+        },
+        {
+          "verse": 32,
+          "text": "Sveznajući – samo je on poznaje, svojim je umom proniče: on koji je za sva vremena sazdao zemlju i svu je životinjama naselio;",
+          "lines": [
+            "Sveznajući – samo je on poznaje,",
+            "svojim je umom proniče:",
+            "on koji je za sva vremena sazdao zemlju",
+            "i svu je životinjama naselio;"
+          ]
+        },
+        {
+          "verse": 33,
+          "text": "on koji pošalje svjetlost, i ona, gle, pođe; natrag je zovne, i dršćuć’ ona ga posluša.",
+          "lines": [
+            "on koji pošalje svjetlost,",
+            "i ona, gle, pođe;",
+            "natrag je zovne,",
+            "i dršćuć’ ona ga posluša."
+          ]
+        },
+        {
+          "verse": 34,
+          "text": "Zvijezde mu veselo sjaju na svojim postajama;",
+          "lines": [
+            "Zvijezde mu veselo sjaju na svojim postajama;"
+          ]
+        },
+        {
+          "verse": 35,
+          "text": "zovne li ih, one mu odgovore: »Evo nas!« – i radosno sjaju svom Stvoritelju.",
+          "lines": [
+            "zovne li ih, one mu odgovore: »Evo nas!« –",
+            "i radosno sjaju svom Stvoritelju."
+          ]
+        },
+        {
+          "verse": 36,
+          "text": "On je naš Bog: nitko se drugi s njim usporedit’ ne može.",
+          "lines": [
+            "On je naš Bog:",
+            "nitko se drugi s njim usporedit’ ne može."
+          ]
+        },
+        {
+          "verse": 37,
+          "text": "On je pronikao sav put spoznaje i predao je sluzi svom Jakovu – Izraelu, svome ljubimcu.",
+          "lines": [
+            "On je pronikao sav put spoznaje",
+            "i predao je sluzi svom Jakovu",
+            "– Izraelu, svome ljubimcu."
+          ]
+        },
+        {
+          "verse": 38,
+          "text": "Potom se ona na zemlji pojavila, među ljudima udomila.",
+          "lines": [
+            "Potom se ona na zemlji pojavila,",
+            "među ljudima udomila."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 37,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Ona je knjiga Božjih zapovijedi, Zakon koji će trajati dovijeka: tko ga se držao bude, taj će živjeti; tko ga napusti, taj će umrijeti.",
+          "lines": [
+            "Ona je knjiga Božjih zapovijedi,",
+            "Zakon koji će trajati dovijeka:",
+            "tko ga se držao bude, taj će živjeti;",
+            "tko ga napusti, taj će umrijeti."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Vrati se, Jakove, i prihvati je, hodi k sjaju, k njenoj svjetlosti:",
+          "lines": [
+            "Vrati se, Jakove, i prihvati je,",
+            "hodi k sjaju, k njenoj svjetlosti:"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "ne ustupaj slavu svoju drugomu, ni dostojanstvo svoje narodu tuđemu.",
+          "lines": [
+            "ne ustupaj slavu svoju drugomu,",
+            "ni dostojanstvo svoje narodu tuđemu."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Blago nama, Izraele, jer nam je otkriveno što je Bogu po volji!",
+          "lines": [
+            "Blago nama, Izraele,",
+            "jer nam je otkriveno što je Bogu po volji!"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Ohrabri se, narode moj, spomene Izraelov!",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "IV. PLAČ I NADA JERUZALEMA"
+            }
+          ],
+          "lines": [
+            "Ohrabri se, narode moj,",
+            "spomene Izraelov!"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Bili ste prodani narodima, ali ne na uništenje. Boga ste razgnjevili, stoga biste izručeni neprijateljima;",
+          "lines": [
+            "Bili ste prodani narodima,",
+            "ali ne na uništenje.",
+            "Boga ste razgnjevili,",
+            "stoga biste izručeni neprijateljima;"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Stvoritelja svog ste izazvali žrtvujući zlodusima, a ne Bogu.",
+          "lines": [
+            "Stvoritelja svog ste izazvali",
+            "žrtvujući zlodusima, a ne Bogu."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Zaboravili ste Boga vječnog, svoga hranioca! Ožalostili ste i Jeruzalem – majku koja vas je othranila.",
+          "lines": [
+            "Zaboravili ste Boga vječnog, svoga hranioca!",
+            "Ožalostili ste i Jeruzalem – majku koja vas je othranila."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Kada je vidjela gdje se na vas obara gnjev od Boga, stade naricati: »Slušajte, susjede sionske: u tugu veliku zavi me Gospod.",
+          "lines": [
+            "Kada je vidjela gdje se na vas obara gnjev od Boga,",
+            "stade naricati:",
+            "»Slušajte, susjede sionske:",
+            "u tugu veliku zavi me Gospod."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Vidjeh gdje mi u sužanjstvo izruči Vječni sinove i kćeri.",
+          "lines": [
+            "Vidjeh gdje mi u sužanjstvo",
+            "izruči Vječni sinove i kćeri."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "S radošću sam ih hranila, s tugom i plačem gledam gdje odlaze.",
+          "lines": [
+            "S radošću sam ih hranila,",
+            "s tugom i plačem gledam gdje odlaze."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Nitko nek’ se nada mnom ne raduje što obudovjeh i ostadoh sama. Zbog grijeha djece svoje opustjeh, jer se okrenuše od Božjeg zakona.",
+          "lines": [
+            "Nitko nek’ se nada mnom ne raduje",
+            "što obudovjeh i ostadoh sama.",
+            "Zbog grijeha djece svoje opustjeh,",
+            "jer se okrenuše od Božjeg zakona."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Nisu marili za njegove zapovijedi niti išli putovima njegovih propisa, niti stupali stazom stege u njegovoj pravednosti.",
+          "lines": [
+            "Nisu marili za njegove zapovijedi",
+            "niti išli putovima njegovih propisa,",
+            "niti stupali stazom stege u njegovoj pravednosti."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Dođite, susjede sionske! Gledajte gdje mi u sužanjstvo predaje Vječni sinove i kćeri!",
+          "lines": [
+            "Dođite, susjede sionske!",
+            "Gledajte gdje mi u sužanjstvo",
+            "predaje Vječni sinove i kćeri!"
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Doveo je na njih narod iz daljine, narod drzak, tuđega jezika, bez poštovanja prema starcu, bez smilovanja prema djetetu;",
+          "lines": [
+            "Doveo je na njih narod iz daljine,",
+            "narod drzak, tuđega jezika,",
+            "bez poštovanja prema starcu,",
+            "bez smilovanja prema djetetu;"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "odvedoše udovi ljubimce, ostaviše je samu, bez kćeri.",
+          "lines": [
+            "odvedoše udovi ljubimce,",
+            "ostaviše je samu, bez kćeri."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Kako bih vam mogla ja pomoći?",
+          "lines": [
+            "Kako bih vam mogla ja pomoći?"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Samo onaj koji dovede na vas ove nevolje izbavit’ vas može iz ruku neprijatelja.",
+          "lines": [
+            "Samo onaj koji dovede na vas ove nevolje",
+            "izbavit’ vas može iz ruku neprijatelja."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Idite, djeco, otiđite svojim putem! Ja ostajem napuštena, samotna;",
+          "lines": [
+            "Idite, djeco, otiđite svojim putem!",
+            "Ja ostajem napuštena, samotna;"
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "skinuh haljinu mira, odjenuh se u kostrijet svojih vapaja: sve dane svoje zazivat ću Vječnoga.",
+          "lines": [
+            "skinuh haljinu mira,",
+            "odjenuh se u kostrijet svojih vapaja:",
+            "sve dane svoje zazivat ću Vječnoga."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "Ohrabrite se, djeco, zavapite Bogu: on će vas izbaviti iz nasilja, iz ruku neprijateljâ.",
+          "lines": [
+            "Ohrabrite se, djeco, zavapite Bogu:",
+            "on će vas izbaviti iz nasilja,",
+            "iz ruku neprijateljâ."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Jer u Vječnog se uzdam, on će vas spasiti; od Svetoga očekujem radost: uskoro na vas će se smilovati, Vječni, spasitelj vaš.",
+          "lines": [
+            "Jer u Vječnog se uzdam,",
+            "on će vas spasiti;",
+            "od Svetoga očekujem radost:",
+            "uskoro na vas će se smilovati,",
+            "Vječni, spasitelj vaš."
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "S tugom i plačem vidjeh vas gdje odlazite, ali Bog će vas meni vratiti s radošću i klicanjem za sva vremena.",
+          "lines": [
+            "S tugom i plačem vidjeh vas gdje odlazite,",
+            "ali Bog će vas meni vratiti",
+            "s radošću i klicanjem za sva vremena."
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Kao što susjede sionske vidješe gdje vas zasužnjuju, tako će naskoro vidjeti gdje će vas izbaviti Bog, koji će doći u velikoj slavi i sjaju Vječnoga.",
+          "lines": [
+            "Kao što susjede sionske vidješe gdje vas zasužnjuju,",
+            "tako će naskoro vidjeti gdje će vas izbaviti Bog,",
+            "koji će doći u velikoj slavi i sjaju Vječnoga."
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "Djeco moja, podnesite pokaranje što se obori na vas od Boga. Neprijatelj te progonio, al’ uskoro vidjet ćeš njegovu propast, na njegovu ćeš šiju staviti nogu.",
+          "lines": [
+            "Djeco moja, podnesite pokaranje",
+            "što se obori na vas od Boga.",
+            "Neprijatelj te progonio,",
+            "al’ uskoro vidjet ćeš njegovu propast,",
+            "na njegovu ćeš šiju staviti nogu."
+          ]
+        },
+        {
+          "verse": 26,
+          "text": "Moja su nježna djeca hodila grubim putovima, otjerana kao stado što ga ote neprijatelj.",
+          "lines": [
+            "Moja su nježna djeca hodila grubim putovima,",
+            "otjerana kao stado što ga ote neprijatelj."
+          ]
+        },
+        {
+          "verse": 27,
+          "text": "Ohrabrite se, djeco, zavapite Bogu: Onaj koji vas stavi na kušnju, on će vas se spomenuti.",
+          "lines": [
+            "Ohrabrite se, djeco, zavapite Bogu:",
+            "Onaj koji vas stavi na kušnju, on će vas se spomenuti."
+          ]
+        },
+        {
+          "verse": 28,
+          "text": "Ako vam je misao, zastranivši, bila daleko od Boga, vratite se i tražite ga revnošću deseterostrukom.",
+          "lines": [
+            "Ako vam je misao, zastranivši, bila daleko od Boga,",
+            "vratite se i tražite ga revnošću deseterostrukom."
+          ]
+        },
+        {
+          "verse": 29,
+          "text": "Jer onaj koji je na vas nesreću doveo, vašim će spasenjem vratiti vam vječnu radost.",
+          "lines": [
+            "Jer onaj koji je na vas nesreću doveo,",
+            "vašim će spasenjem vratiti vam vječnu radost."
+          ]
+        },
+        {
+          "verse": 30,
+          "text": "Ohrabri se, Jeruzaleme, utješit će te onaj koji ti dade ime.",
+          "lines": [
+            "Ohrabri se, Jeruzaleme,",
+            "utješit će te onaj koji ti dade ime."
+          ]
+        },
+        {
+          "verse": 31,
+          "text": "Jao onima koji te zlostavljaju, koji se vesele tvojoj propasti!",
+          "lines": [
+            "Jao onima koji te zlostavljaju,",
+            "koji se vesele tvojoj propasti!"
+          ]
+        },
+        {
+          "verse": 32,
+          "text": "Jao gradovima kojima su tvoja djeca robovala, teško onom koji ti odvede sinove!",
+          "lines": [
+            "Jao gradovima kojima su tvoja djeca robovala,",
+            "teško onom koji ti odvede sinove!"
+          ]
+        },
+        {
+          "verse": 33,
+          "text": "Jer kao što je uživao u tvojemu padu i tvojoj se propasti radovao, tako će tugovati nad svojim opustošenjem.",
+          "lines": [
+            "Jer kao što je uživao u tvojemu padu",
+            "i tvojoj se propasti radovao,",
+            "tako će tugovati nad svojim opustošenjem."
+          ]
+        },
+        {
+          "verse": 34,
+          "text": "Neće se veseliti mnogome pučanstvu, obijest će mu se preobratit’ u tugovanje,",
+          "lines": [
+            "Neće se veseliti mnogome pučanstvu,",
+            "obijest će mu se preobratit’ u tugovanje,"
+          ]
+        },
+        {
+          "verse": 35,
+          "text": "od Vječnoga na nj će doći oganj za mnogo dana, i za dugo vrijeme bit će stan zlodusima.",
+          "lines": [
+            "od Vječnoga na nj će doći oganj za mnogo dana,",
+            "i za dugo vrijeme bit će stan zlodusima."
+          ]
+        },
+        {
+          "verse": 36,
+          "text": "Obazri se na istok, Jeruzaleme, vidi radost što ti dolazi od Boga.",
+          "lines": [
+            "Obazri se na istok, Jeruzaleme,",
+            "vidi radost što ti dolazi od Boga."
+          ]
+        },
+        {
+          "verse": 37,
+          "text": "Evo, vraćaju ti se sinovi koje si vidio gdje odlaze, sabiru se u tebi od istoka do zapada na zapovijed Svetoga i kliču u slavu Božju.",
+          "lines": [
+            "Evo, vraćaju ti se sinovi koje si vidio gdje odlaze,",
+            "sabiru se u tebi od istoka do zapada",
+            "na zapovijed Svetoga",
+            "i kliču u slavu Božju."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verse_count": 9,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Skini, Jeruzaleme, haljinu tugovanja i nesreće, odjeni se zauvijek ljepotom slave Božje,",
+          "lines": [
+            "Skini, Jeruzaleme, haljinu",
+            "tugovanja i nesreće,",
+            "odjeni se zauvijek ljepotom slave Božje,"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "ogrni se plaštem Božje pravednosti, stavi na glavu vijenac slave Vječnoga;",
+          "lines": [
+            "ogrni se plaštem Božje pravednosti,",
+            "stavi na glavu vijenac slave Vječnoga;"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "jer Bog hoće pokazati sjaj tvoj svemu pod nebom",
+          "lines": [
+            "jer Bog hoće pokazati sjaj tvoj svemu pod nebom"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "i zasvagda ti hoće dati ime: ‘Mir pravednosti’ i ‘Slava bogoljubnosti’.",
+          "lines": [
+            "i zasvagda ti hoće dati ime:",
+            "‘Mir pravednosti’ i ‘Slava bogoljubnosti’."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Ustani, Jeruzaleme, stani na visoko i obazri se na istok: Pogledaj! Djeca se tvoja sabiru, od istoka do zapada, na zapovijed Svetoga, radujuć’ se što ih se spomenuo Bog.",
+          "lines": [
+            "Ustani, Jeruzaleme, stani na visoko",
+            "i obazri se na istok:",
+            "Pogledaj! Djeca se tvoja sabiru, od istoka do zapada,",
+            "na zapovijed Svetoga, radujuć’ se što ih se spomenuo Bog."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Otišli su od tebe pješice, vodio ih neprijatelj, a gle, Bog ih tebi vraća nošene u slavlju, kao djecu kraljevsku.",
+          "lines": [
+            "Otišli su od tebe pješice, vodio ih neprijatelj,",
+            "a gle, Bog ih tebi vraća",
+            "nošene u slavlju, kao djecu kraljevsku."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "I naredi Bog: neka se snize sve visoke gore i vječne klisure; nek’ se doline ispune i poravna zemlja da Izrael čvrsto kroči u sjaju slave Božje.",
+          "lines": [
+            "I naredi Bog: neka se snize",
+            "sve visoke gore i vječne klisure;",
+            "nek’ se doline ispune i poravna zemlja",
+            "da Izrael čvrsto kroči u sjaju slave Božje."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "A šume i sva stabla mirisna činit će sjenu Izraelu po Božjoj zapovijedi;",
+          "lines": [
+            "A šume i sva stabla mirisna činit će sjenu",
+            "Izraelu po Božjoj zapovijedi;"
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "jer Bog će voditi Izraela u radosti, u svjetlu njegove slave, prateć’ ga milosrđem svojim i pravednošću.«",
+          "lines": [
+            "jer Bog će voditi Izraela u radosti, u svjetlu njegove slave,",
+            "prateć’ ga milosrđem svojim i pravednošću.«"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verse_count": 72,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Prijepis poslanice koju je poslao Jeremija sužnjima koje je kralj Babilonaca uskoro imao odvesti u Babilon da im saopći preporuke što mu ih je povjerio Bog. Zbog grijeha što ste ih pred Bogom počinili, Nabukodonozor, kralj Babilonaca, odvest će vas kao sužnje u Babilon.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "V. PISMO JEREMIJE PROROKA"
+            }
+          ],
+          "lines": [
+            "Prijepis poslanice koju je poslao Jeremija sužnjima koje je kralj Babilonaca uskoro imao odvesti u Babilon da im saopći preporuke što mu ih je povjerio Bog.",
+            "Zbog grijeha što ste ih pred Bogom počinili, Nabukodonozor, kralj Babilonaca, odvest će vas kao sužnje u Babilon."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Kada stignete u Babilon, ostat ćete ondje mnogo godina i za dugo vrijeme, do sedmog naraštaja, a potom ću vas odande u miru izvesti."
+        },
+        {
+          "verse": 3,
+          "text": "A u Babilonu vidjet ćete bogove – srebrne, zlatne i drvene – koji se nose na leđima i koji neznabošcima strah zadaju."
+        },
+        {
+          "verse": 4,
+          "text": "Čuvajte se! Ne povodite se za tuđim narodima i nemojte da vas pred tim bogovima strah obuzme"
+        },
+        {
+          "verse": 5,
+          "text": "kad opazite pred njima i za njima mnoštvo koje im se klanja. Recite u srcu: »Tebi se, Gospode, jedinomu treba klanjati.«"
+        },
+        {
+          "verse": 6,
+          "text": "Jer s vama je moj anđeo – njemu ste životom svojim odgovorni."
+        },
+        {
+          "verse": 7,
+          "text": "Jezik im je izgladio umjetnik, drugi su ih obložili zlatom i srebrom: obmana su i govoriti ne mogu."
+        },
+        {
+          "verse": 8,
+          "text": "Kao za gizdavu djevojku, uzimaju zlato i prave krune za glave svojih bogova."
+        },
+        {
+          "verse": 9,
+          "text": "A dogodi se te svećenici potkradaju sa svojih bogova zlato i srebro i troše ga za sebe;"
+        },
+        {
+          "verse": 10,
+          "text": "daruju ga čak i bludnicama u bludilištima. Ukrašuju ih haljinama kao ljude –"
+        },
+        {
+          "verse": 11,
+          "text": "te bogove, srebrne, zlatne i drvene, no oni se od rđe i crvotoči obraniti ne mogu"
+        },
+        {
+          "verse": 12,
+          "text": "usprkos grimizu kojim ih odijevaju. Potrebno im je čistiti lica od hramske prašine koja napada na njih."
+        },
+        {
+          "verse": 13,
+          "text": "Jedan drži žezlo kao poglavar pokrajine, ali nikog tko bi ga uvrijedio ne može pogubiti;"
+        },
+        {
+          "verse": 14,
+          "text": "drugi u desnici drži mač i sjekiru, ali se ne može obraniti ni od rata ni od razbojnika. Po tom jasno slijedi: to bogovi nisu – njih se, dakle, ne bojte!"
+        },
+        {
+          "verse": 15,
+          "text": "Kao što posuda kojom se čovjek služi postaje beskorisnom kada se razbije, tako je i s njihovim bogovima koji su postavljeni u hramovima."
+        },
+        {
+          "verse": 16,
+          "text": "Oči su im pune prašine što je dižu noge onih koji ulaze."
+        },
+        {
+          "verse": 17,
+          "text": "I kao što su na sve strane zatvorena vrata onome koji se ogriješio o kralja te ima biti pogubljen, tako svećenici utvrđuju hramove ovih bogova vratima, bravama i zasunima, bojeći se da ih razbojnici ne opljačkaju."
+        },
+        {
+          "verse": 18,
+          "text": "Užižu im svjetiljke u mnogo većem broju negoli sebi samima, ali nijedne od njih bogovi ne mogu vidjeti."
+        },
+        {
+          "verse": 19,
+          "text": "Nalik su na grede hrama: srce im iznutra, kažu, crvi rastaču – crvi koji gmižu iz zemlje te rastaču njih i njihove haljine."
+        },
+        {
+          "verse": 20,
+          "text": "Oni i ne osjećaju da im je lice pocrnjelo od dima što se diže u hramu."
+        },
+        {
+          "verse": 21,
+          "text": "Na njihova tijela i glave dolijeću šišmiši, lastavice i druge ptice; a ima i mačaka."
+        },
+        {
+          "verse": 22,
+          "text": "Po tim ćete znacima prepoznati da to bogovi nisu – njih se, dakle, ne bojte!"
+        },
+        {
+          "verse": 23,
+          "text": "Ne očiste li im naslagu sa zlata kojim su obloženi za ukras, sami ga neće osvjetlati. Nisu ni osjećali dok su ih salijevali."
+        },
+        {
+          "verse": 24,
+          "text": "Kupovali su ih za najvišu cijenu, a nema u njima životnoga daha."
+        },
+        {
+          "verse": 25,
+          "text": "Bez nogu su, pa ih na ramenima nose i tad pokazuju svoje ruglo ljudima; stide ih se i oni koji im služe,"
+        },
+        {
+          "verse": 26,
+          "text": "jer padne li koji bog na zemlju, oni ga moraju podići; usprave li ih, oni se sami od sebe neće pomaći; ako se nagnu, ne mogu se uspraviti."
+        },
+        {
+          "verse": 27,
+          "text": "Kao mrtvacima darove im prinose. Svećenici im njihovi tada odnose žrtve da izvuku korist prodajući ih. Isto tako i njihove žene prigrabe po dio, ne dijeleći ništa siromasima i nemoćnima. Njihovih se žrtava dotiču žene u čišćenju, a i rodilje."
+        },
+        {
+          "verse": 28,
+          "text": "Po tom dobro znate: to bogovi nisu – ništa ih se ne bojte!"
+        },
+        {
+          "verse": 29,
+          "text": "Ta kako biste ih mogli zvati bogovima? Tima srebrnim, zlatnim i drvenim bogovima žrtve prinose žene."
+        },
+        {
+          "verse": 30,
+          "text": "U njihovim hramovima svećenici sjede poderanih haljina, obrijane glave i brade, ne pokrivajući glave;"
+        },
+        {
+          "verse": 31,
+          "text": "tule i viču pred svojim bogovima, kao na mrtvačkim gozbama."
+        },
+        {
+          "verse": 32,
+          "text": "Svećenici im skidaju haljine te njima odijevaju svoje žene i djecu."
+        },
+        {
+          "verse": 33,
+          "text": "Učine li im kakvo dobro ili zlo, oni to ne mogu uzvratiti;"
+        },
+        {
+          "verse": 34,
+          "text": "niti mogu koga učiniti kraljem ili ga svrgnuti; niti mogu dati bogatstvo ili novac. Učini li im tko zavjet pa ga ne održi, oni ga ne mogu prisiliti da za to odgovara."
+        },
+        {
+          "verse": 35,
+          "text": "Oni ne mogu čovjeka spasiti od smrti niti slabijeg osloboditi od jačeg;"
+        },
+        {
+          "verse": 36,
+          "text": "ne mogu slijepcu vratiti vid niti izbaviti čovjeka iz nevolje;"
+        },
+        {
+          "verse": 37,
+          "text": "ne mogu se smilovati udovici niti učiniti dobro siroti."
+        },
+        {
+          "verse": 38,
+          "text": "Nalik su na kamenje iz planine, ti bogovi obloženi zlatom i srebrom. Oni koji ih štuju stidjet će se!"
+        },
+        {
+          "verse": 39,
+          "text": "Kako se, dakle, mogu smatrati ili nazivati bogovima!"
+        },
+        {
+          "verse": 40,
+          "text": "I sami ih Kaldejci obeščašćuju; jer videći nijema čovjeka koji ne može govoriti, oni ga dovode Belu i traže da čovjek progovori, kao da bi ga bog mogao čuti;"
+        },
+        {
+          "verse": 41,
+          "text": "i nesposobni su promisliti o tome i ostaviti te bogove, toliko su lišeni razbora!"
+        },
+        {
+          "verse": 42,
+          "text": "Žene opasane užetom sjede na putovima i pale kâd od maslinovih ljusaka;"
+        },
+        {
+          "verse": 43,
+          "text": "kada koju od njih snubi prolaznik da mu se poda, ona se ruga svojoj susjedi što je nisu zapazili kao nju i što joj uže nije prekinuto."
+        },
+        {
+          "verse": 44,
+          "text": "Sve što se događa u blizini tih bogova prijevara je; kako ih, dakle, mogu smatrati ili nazivati bogovima?!"
+        },
+        {
+          "verse": 45,
+          "text": "Načiniše ih drvodjelje i zlatari, i nisu drugo doli tvorevina njihova."
+        },
+        {
+          "verse": 46,
+          "text": "Njihovi izrađivači ne žive dugo; kako bi njihove rukotvorine bile bogovi?"
+        },
+        {
+          "verse": 47,
+          "text": "Jer svojim će potomcima ostaviti samo obmanu i sramotu."
+        },
+        {
+          "verse": 48,
+          "text": "Ako ljude pogodi rat ili nevolja, svećenici se među sobom savjetuju gdje da se s njima sakriju;"
+        },
+        {
+          "verse": 49,
+          "text": "kako ne uvidjeti da to nisu bogovi kad ni sami sebe ne mogu izbaviti od rata i od nevolja?"
+        },
+        {
+          "verse": 50,
+          "text": "Po svemu tomu znat će se: ti drveni idoli, obloženi zlatom ili srebrom, samo su prijevara! Svima, narodima i kraljevima, bit će jasno: nisu to bogovi, nego su djela ruku ljudskih: nikakva Božjeg udjela u njima nema!"
+        },
+        {
+          "verse": 51,
+          "text": "Kome, dakle, neće biti jasno: to bogovi nisu?"
+        },
+        {
+          "verse": 52,
+          "text": "Ta ne mogu oni postaviti kralja u nekoj zemlji niti dati kišu ljudima;"
+        },
+        {
+          "verse": 53,
+          "text": "ne mogu presuditi u svojim poslovima niti izbaviti potlačenog; nemoćni su oni poput vrana između neba i zemlje."
+        },
+        {
+          "verse": 54,
+          "text": "Neka padne vatra na hram tih drvenih bogova obloženih zlatom ili srebrom, njihovi će svećenici pobjeći i spasiti se, dok će oni ondje izgorjeti kao grede."
+        },
+        {
+          "verse": 55,
+          "text": "Oni se ne mogu opirati ni kralju ni neprijatelju."
+        },
+        {
+          "verse": 56,
+          "text": "Kako onda pomisliti ili povjerovati da su to bogovi?"
+        },
+        {
+          "verse": 57,
+          "text": "Ti drveni bogovi obloženi srebrom i zlatom ne mogu se obraniti ni od kradljivaca ni od razbojnika: kako su ovi jači od njih, opljačkat će im zlato i srebro i otići s haljinama u koje su odjeveni; oni su nesposobni sebi samima pomoći."
+        },
+        {
+          "verse": 58,
+          "text": "Zato je bolje biti kralj koji dokazuje svoju hrabrost, ili u kući korisna posuda kojom se vlasnik služi nego lažni bogovi; bolja su i vrata u kući koja čuvaju ono što je u njoj nego lažni bogovi; i drveni stup u kakvoj palači bolji je nego lažni bogovi."
+        },
+        {
+          "verse": 59,
+          "text": "Sunce, mjesec i zvijezde, dok sjaju da izvrše službu, poslušni su."
+        },
+        {
+          "verse": 60,
+          "text": "Milina je vidjeti i munju kada sijevne. A vjetar donosi dah svoj zemlji,"
+        },
+        {
+          "verse": 61,
+          "text": "i oblaci, kada im Gospod zapovjedi da oblete svu zemlju, odmah izvrše nalog Božji. Vatra, poslana odozgo da sažeže gore i šume, izvršava što joj je naloženo."
+        },
+        {
+          "verse": 62,
+          "text": "Sa svim ovim ti se bogovi ni ljepotom ni snagom usporediti ne mogu."
+        },
+        {
+          "verse": 63,
+          "text": "Zato se ne može misliti ni reći da su to bogovi, jer nisu sposobni kazniti niti učiniti dobra ljudima."
+        },
+        {
+          "verse": 64,
+          "text": "Kada, dakle, znate da to bogovi nisu, njih se ne bojte!"
+        },
+        {
+          "verse": 65,
+          "text": "Oni ne mogu ni prokleti ni blagosloviti kraljeva;"
+        },
+        {
+          "verse": 66,
+          "text": "niti mogu narodima pokazati znamenja na nebu; oni ne sjaju kao sunce niti svijetle kao mjesec."
+        },
+        {
+          "verse": 67,
+          "text": "Zvijeri su od njih bolje; pobjeći one mogu u skrovište i sebi pomoći."
+        },
+        {
+          "verse": 68,
+          "text": "Nikako nam, dakle, nije jasno da su to bogovi; stoga ih se ne bojte!"
+        },
+        {
+          "verse": 69,
+          "text": "Kao ptičje strašilo u nečuvanu polju lubenica, takvi su njihovi drveni bogovi obloženi zlatom i srebrom."
+        },
+        {
+          "verse": 70,
+          "text": "Jednako su slični glogovu grmu u vrtu na koji sjeda svaka ptica ili mrtvacu bačenu u mrak – ti drveni bogovi obloženi zlatom i srebrom."
+        },
+        {
+          "verse": 71,
+          "text": "Po grimizu i crvenilu što na njima trune prepoznat ćete da to nisu bogovi. Napokon i sami budu izjedeni te postanu na sramotu zemlji."
+        },
+        {
+          "verse": 72,
+          "text": "Koliko je bolji pravednik koji nema kumirâ; sramota je daleko od njega!"
+        }
+      ]
+    }
+  ]
+}

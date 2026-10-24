@@ -1,0 +1,763 @@
+{
+  "id": "ks-39040",
+  "title": "Otkrivenje u četrdeset i pet dana",
+  "category": "ks-tematski",
+  "days_count": 45,
+  "description": "Otkrivenje se odnosi na razdoblje sedam careva od Nerona do Domicijana i predstavlja uskipjeli protest protiv imperatorskog kulta i rimskog imperijalizma.",
+  "days": [
+    {
+      "day": 1,
+      "label": "Otk 1,1-10",
+      "verse_count": 20,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 20,
+          "label": "Otk 1"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "label": "Otk 1,11-20",
+      "verse_count": 20,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 20,
+          "label": "Otk 1"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "label": "Otk 2,1-10",
+      "verse_count": 29,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 29,
+          "label": "Otk 2"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "label": "Otk 2,11-20",
+      "verse_count": 29,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 29,
+          "label": "Otk 2"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "label": "Otk 2,21-29",
+      "verse_count": 29,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 29,
+          "label": "Otk 2"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "label": "Otk 3,1-8",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 22,
+          "label": "Otk 3"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "label": "Otk 3,9-15",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 22,
+          "label": "Otk 3"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "label": "Otk 3,16-22",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 22,
+          "label": "Otk 3"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "label": "Otk 4",
+      "verse_count": 11,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 11,
+          "label": "Otk 4"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "label": "Otk 5,1-7",
+      "verse_count": 14,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 14,
+          "label": "Otk 5"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "label": "Otk 5,8-14",
+      "verse_count": 14,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 14,
+          "label": "Otk 5"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "label": "Otk 6,1-9",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 17,
+          "label": "Otk 6"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "label": "Otk 6,10-17",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 17,
+          "label": "Otk 6"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "label": "Otk 7,1-9",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 7,
+          "chapter_end": 7,
+          "verse_count": 17,
+          "label": "Otk 7"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "label": "Otk 7,10-17",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 7,
+          "chapter_end": 7,
+          "verse_count": 17,
+          "label": "Otk 7"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "label": "Otk 8,1-7",
+      "verse_count": 13,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 8,
+          "chapter_end": 8,
+          "verse_count": 13,
+          "label": "Otk 8"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "label": "Otk 8,8-13",
+      "verse_count": 13,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 8,
+          "chapter_end": 8,
+          "verse_count": 13,
+          "label": "Otk 8"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "label": "Otk 9,1-11",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 9,
+          "chapter_end": 9,
+          "verse_count": 21,
+          "label": "Otk 9"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "label": "Otk 9,12-21",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 9,
+          "chapter_end": 9,
+          "verse_count": 21,
+          "label": "Otk 9"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "label": "Otk 10",
+      "verse_count": 11,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 10,
+          "chapter_end": 10,
+          "verse_count": 11,
+          "label": "Otk 10"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "label": "Otk 11,1-10",
+      "verse_count": 19,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 11,
+          "chapter_end": 11,
+          "verse_count": 19,
+          "label": "Otk 11"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "label": "Otk 11,11-19",
+      "verse_count": 19,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 11,
+          "chapter_end": 11,
+          "verse_count": 19,
+          "label": "Otk 11"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "label": "Otk 12,1-9",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 12,
+          "chapter_end": 12,
+          "verse_count": 18,
+          "label": "Otk 12"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "label": "Otk 12,10-17",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 12,
+          "chapter_end": 12,
+          "verse_count": 18,
+          "label": "Otk 12"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "label": "Otk 13,1-9",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 13,
+          "chapter_end": 13,
+          "verse_count": 18,
+          "label": "Otk 13"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "label": "Otk 13,10-18",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 13,
+          "chapter_end": 13,
+          "verse_count": 18,
+          "label": "Otk 13"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "label": "Otk 14,1-10",
+      "verse_count": 20,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 14,
+          "chapter_end": 14,
+          "verse_count": 20,
+          "label": "Otk 14"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "label": "Otk 14,11-20",
+      "verse_count": 20,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 14,
+          "chapter_end": 14,
+          "verse_count": 20,
+          "label": "Otk 14"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "label": "Otk 15",
+      "verse_count": 8,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 15,
+          "chapter_end": 15,
+          "verse_count": 8,
+          "label": "Otk 15"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "label": "Otk 16,1-11",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 16,
+          "chapter_end": 16,
+          "verse_count": 21,
+          "label": "Otk 16"
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "label": "Otk 16,12-21",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 16,
+          "chapter_end": 16,
+          "verse_count": 21,
+          "label": "Otk 16"
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "label": "Otk 17,1-9",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 17,
+          "chapter_end": 17,
+          "verse_count": 18,
+          "label": "Otk 17"
+        }
+      ]
+    },
+    {
+      "day": 33,
+      "label": "Otk 17,10-18",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 17,
+          "chapter_end": 17,
+          "verse_count": 18,
+          "label": "Otk 17"
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "label": "Otk 18,1-9",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 18,
+          "chapter_end": 18,
+          "verse_count": 24,
+          "label": "Otk 18"
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "label": "Otk 18,9-16",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 18,
+          "chapter_end": 18,
+          "verse_count": 24,
+          "label": "Otk 18"
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "label": "Otk 18,17-24",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 18,
+          "chapter_end": 18,
+          "verse_count": 24,
+          "label": "Otk 18"
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "label": "Otk 19,1-11",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 19,
+          "chapter_end": 19,
+          "verse_count": 21,
+          "label": "Otk 19"
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "label": "Otk 19,12-21",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 19,
+          "chapter_end": 19,
+          "verse_count": 21,
+          "label": "Otk 19"
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "label": "Otk 20,1-8",
+      "verse_count": 15,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 20,
+          "chapter_end": 20,
+          "verse_count": 15,
+          "label": "Otk 20"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "label": "Otk 20,9-15",
+      "verse_count": 15,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 20,
+          "chapter_end": 20,
+          "verse_count": 15,
+          "label": "Otk 20"
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "label": "Otk 21,1-9",
+      "verse_count": 27,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 21,
+          "chapter_end": 21,
+          "verse_count": 27,
+          "label": "Otk 21"
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "label": "Otk 21,10-18",
+      "verse_count": 27,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 21,
+          "chapter_end": 21,
+          "verse_count": 27,
+          "label": "Otk 21"
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "label": "Otk 21,19-27",
+      "verse_count": 27,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 21,
+          "chapter_end": 21,
+          "verse_count": 27,
+          "label": "Otk 21"
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "label": "Otk 22,1-11",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 22,
+          "chapter_end": 22,
+          "verse_count": 21,
+          "label": "Otk 22"
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "label": "",
+      "verse_count": 0,
+      "readings": []
+    }
+  ]
+}

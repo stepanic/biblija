@@ -1,0 +1,6617 @@
+{
+  "id": "mb-linearni-365",
+  "title": "Muževni budite — Linearni plan (od Postanka do Otkrivenja)",
+  "category": "biblija-365",
+  "days_count": 366,
+  "description": "Službeni linearni plan čitanja Biblije portala Muževni budite: svakog dana čita se nekoliko poglavlja redom od Knjige Postanka do Otkrivenja (5–10 minuta dnevno).",
+  "days": [
+    {
+      "day": 1,
+      "date_label": "1. siječnja",
+      "label": "1. siječnja — Post 1–3",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 80,
+          "label": "Post 1–3"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date_label": "2. siječnja",
+      "label": "2. siječnja — Post 4–6",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 80,
+          "label": "Post 4–6"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date_label": "3. siječnja",
+      "label": "3. siječnja — Post 7–9",
+      "verse_count": 75,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 75,
+          "label": "Post 7–9"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date_label": "4. siječnja",
+      "label": "4. siječnja — Post 10–12",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 84,
+          "label": "Post 10–12"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date_label": "5. siječnja",
+      "label": "5. siječnja — Post 13–15",
+      "verse_count": 63,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 63,
+          "label": "Post 13–15"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date_label": "6. siječnja",
+      "label": "6. siječnja — Post 16–18",
+      "verse_count": 76,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 76,
+          "label": "Post 16–18"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "date_label": "7. siječnja",
+      "label": "7. siječnja — Post 19–21",
+      "verse_count": 90,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 90,
+          "label": "Post 19–21"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "date_label": "8. siječnja",
+      "label": "8. siječnja — Post 22–24",
+      "verse_count": 111,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 111,
+          "label": "Post 22–24"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "date_label": "9. siječnja",
+      "label": "9. siječnja — Post 25–27",
+      "verse_count": 115,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 25,
+          "chapter_end": 27,
+          "verse_count": 115,
+          "label": "Post 25–27"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "date_label": "10. siječnja",
+      "label": "10. siječnja — Post 28–30",
+      "verse_count": 100,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 28,
+          "chapter_end": 30,
+          "verse_count": 100,
+          "label": "Post 28–30"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "date_label": "11. siječnja",
+      "label": "11. siječnja — Post 31–33",
+      "verse_count": 107,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 31,
+          "chapter_end": 33,
+          "verse_count": 107,
+          "label": "Post 31–33"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "date_label": "12. siječnja",
+      "label": "12. siječnja — Post 34–36",
+      "verse_count": 103,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 34,
+          "chapter_end": 36,
+          "verse_count": 103,
+          "label": "Post 34–36"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "date_label": "13. siječnja",
+      "label": "13. siječnja — Post 37–39",
+      "verse_count": 89,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 37,
+          "chapter_end": 39,
+          "verse_count": 89,
+          "label": "Post 37–39"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "date_label": "14. siječnja",
+      "label": "14. siječnja — Post 40–42",
+      "verse_count": 118,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 40,
+          "chapter_end": 42,
+          "verse_count": 118,
+          "label": "Post 40–42"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "date_label": "15. siječnja",
+      "label": "15. siječnja — Post 43–46",
+      "verse_count": 130,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 43,
+          "chapter_end": 46,
+          "verse_count": 130,
+          "label": "Post 43–46"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "date_label": "16. siječnja",
+      "label": "16. siječnja — Post 47–50",
+      "verse_count": 109,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 47,
+          "chapter_end": 50,
+          "verse_count": 109,
+          "label": "Post 47–50"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "date_label": "17. siječnja",
+      "label": "17. siječnja — Izl 1–3",
+      "verse_count": 69,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 69,
+          "label": "Izl 1–3"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "date_label": "18. siječnja",
+      "label": "18. siječnja — Izl 4–6",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 84,
+          "label": "Izl 4–6"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "date_label": "19. siječnja",
+      "label": "19. siječnja — Izl 7–9",
+      "verse_count": 92,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 92,
+          "label": "Izl 7–9"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "date_label": "20. siječnja",
+      "label": "20. siječnja — Izl 10–12",
+      "verse_count": 90,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 90,
+          "label": "Izl 10–12"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "date_label": "21. siječnja",
+      "label": "21. siječnja — Izl 13–15",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 80,
+          "label": "Izl 13–15"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "date_label": "22. siječnja",
+      "label": "22. siječnja — Izl 16–18",
+      "verse_count": 79,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 79,
+          "label": "Izl 16–18"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "date_label": "23. siječnja",
+      "label": "23. siječnja — Izl 19–21",
+      "verse_count": 88,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 88,
+          "label": "Izl 19–21"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "date_label": "24. siječnja",
+      "label": "24. siječnja — Izl 22–24",
+      "verse_count": 81,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 81,
+          "label": "Izl 22–24"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "date_label": "25. siječnja",
+      "label": "25. siječnja — Izl 25–27",
+      "verse_count": 98,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 25,
+          "chapter_end": 27,
+          "verse_count": 98,
+          "label": "Izl 25–27"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "date_label": "26. siječnja",
+      "label": "26. siječnja — Izl 28–30",
+      "verse_count": 127,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 28,
+          "chapter_end": 30,
+          "verse_count": 127,
+          "label": "Izl 28–30"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "date_label": "27. siječnja",
+      "label": "27. siječnja — Izl 31–33",
+      "verse_count": 76,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 31,
+          "chapter_end": 33,
+          "verse_count": 76,
+          "label": "Izl 31–33"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "date_label": "28. siječnja",
+      "label": "28. siječnja — Izl 34–36",
+      "verse_count": 107,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 34,
+          "chapter_end": 36,
+          "verse_count": 107,
+          "label": "Izl 34–36"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "date_label": "29. siječnja",
+      "label": "29. siječnja — Izl 37–40",
+      "verse_count": 141,
+      "readings": [
+        {
+          "book_order": 2,
+          "book_id": "knjiga-izlaska",
+          "book_abbr": "Izl",
+          "book_title": "Knjiga Izlaska",
+          "chapter_start": 37,
+          "chapter_end": 40,
+          "verse_count": 141,
+          "label": "Izl 37–40"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "date_label": "30. siječnja",
+      "label": "30. siječnja — Lev 1–3",
+      "verse_count": 50,
+      "readings": [
+        {
+          "book_order": 3,
+          "book_id": "levitski-zakonik",
+          "book_abbr": "Lev",
+          "book_title": "Levitski zakonik",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 50,
+          "label": "Lev 1–3"
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "date_label": "31. siječnja",
+      "label": "31. siječnja — Lev 4–6",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 3,
+          "book_id": "levitski-zakonik",
+          "book_abbr": "Lev",
+          "book_title": "Levitski zakonik",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 84,
+          "label": "Lev 4–6"
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "date_label": "1. veljače",
+      "label": "1. veljače — Lev 7–9",
+      "verse_count": 98,
+      "readings": [
+        {
+          "book_order": 3,
+          "book_id": "levitski-zakonik",
+          "book_abbr": "Lev",
+          "book_title": "Levitski zakonik",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 98,
+          "label": "Lev 7–9"
+        }
+      ]
+    },
+    {
+      "day": 33,
+      "date_label": "2. veljače",
+      "label": "2. veljače — Lev 10–12",
+      "verse_count": 75,
+      "readings": [
+        {
+          "book_order": 3,
+          "book_id": "levitski-zakonik",
+          "book_abbr": "Lev",
+          "book_title": "Levitski zakonik",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 75,
+          "label": "Lev 10–12"
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "date_label": "3. veljače",
+      "label": "3. veljače — Lev 13–15",
+      "verse_count": 149,
+      "readings": [
+        {
+          "book_order": 3,
+          "book_id": "levitski-zakonik",
+          "book_abbr": "Lev",
+          "book_title": "Levitski zakonik",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 149,
+          "label": "Lev 13–15"
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "date_label": "4. veljače",
+      "label": "4. veljače — Lev 16–18",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 3,
+          "book_id": "levitski-zakonik",
+          "book_abbr": "Lev",
+          "book_title": "Levitski zakonik",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 80,
+          "label": "Lev 16–18"
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "date_label": "5. veljače",
+      "label": "5. veljače — Lev 19–21",
+      "verse_count": 88,
+      "readings": [
+        {
+          "book_order": 3,
+          "book_id": "levitski-zakonik",
+          "book_abbr": "Lev",
+          "book_title": "Levitski zakonik",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 88,
+          "label": "Lev 19–21"
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "date_label": "6. veljače",
+      "label": "6. veljače — Lev 22–24",
+      "verse_count": 100,
+      "readings": [
+        {
+          "book_order": 3,
+          "book_id": "levitski-zakonik",
+          "book_abbr": "Lev",
+          "book_title": "Levitski zakonik",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 100,
+          "label": "Lev 22–24"
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "date_label": "7. veljače",
+      "label": "7. veljače — Lev 25–27",
+      "verse_count": 135,
+      "readings": [
+        {
+          "book_order": 3,
+          "book_id": "levitski-zakonik",
+          "book_abbr": "Lev",
+          "book_title": "Levitski zakonik",
+          "chapter_start": 25,
+          "chapter_end": 27,
+          "verse_count": 135,
+          "label": "Lev 25–27"
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "date_label": "8. veljače",
+      "label": "8. veljače — Br 1–3",
+      "verse_count": 139,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 139,
+          "label": "Br 1–3"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "date_label": "9. veljače",
+      "label": "9. veljače — Br 4–6",
+      "verse_count": 106,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 106,
+          "label": "Br 4–6"
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "date_label": "10. veljače",
+      "label": "10. veljače — Br 7–9",
+      "verse_count": 138,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 138,
+          "label": "Br 7–9"
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "date_label": "11. veljače",
+      "label": "11. veljače — Br 10–12",
+      "verse_count": 87,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 87,
+          "label": "Br 10–12"
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "date_label": "12. veljače",
+      "label": "12. veljače — Br 13–15",
+      "verse_count": 119,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 119,
+          "label": "Br 13–15"
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "date_label": "13. veljače",
+      "label": "13. veljače — Br 16–18",
+      "verse_count": 95,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 95,
+          "label": "Br 16–18"
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "date_label": "14. veljače",
+      "label": "14. veljače — Br 19–21",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 86,
+          "label": "Br 19–21"
+        }
+      ]
+    },
+    {
+      "day": 46,
+      "date_label": "15. veljače",
+      "label": "15. veljače — Br 22–24",
+      "verse_count": 96,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 96,
+          "label": "Br 22–24"
+        }
+      ]
+    },
+    {
+      "day": 47,
+      "date_label": "16. veljače",
+      "label": "16. veljače — Br 25–27",
+      "verse_count": 106,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 25,
+          "chapter_end": 27,
+          "verse_count": 106,
+          "label": "Br 25–27"
+        }
+      ]
+    },
+    {
+      "day": 48,
+      "date_label": "17. veljače",
+      "label": "17. veljače — Br 28–30",
+      "verse_count": 87,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 28,
+          "chapter_end": 30,
+          "verse_count": 87,
+          "label": "Br 28–30"
+        }
+      ]
+    },
+    {
+      "day": 49,
+      "date_label": "18. veljače",
+      "label": "18. veljače — Br 31–33",
+      "verse_count": 152,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 31,
+          "chapter_end": 33,
+          "verse_count": 152,
+          "label": "Br 31–33"
+        }
+      ]
+    },
+    {
+      "day": 50,
+      "date_label": "19. veljače",
+      "label": "19. veljače — Br 34–36",
+      "verse_count": 76,
+      "readings": [
+        {
+          "book_order": 4,
+          "book_id": "knjiga-brojeva",
+          "book_abbr": "Br",
+          "book_title": "Knjiga Brojeva",
+          "chapter_start": 34,
+          "chapter_end": 36,
+          "verse_count": 76,
+          "label": "Br 34–36"
+        }
+      ]
+    },
+    {
+      "day": 51,
+      "date_label": "20. veljače",
+      "label": "20. veljače — Pnz 1–3",
+      "verse_count": 112,
+      "readings": [
+        {
+          "book_order": 5,
+          "book_id": "ponovljeni-zakon",
+          "book_abbr": "Pnz",
+          "book_title": "Ponovljeni zakon",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 112,
+          "label": "Pnz 1–3"
+        }
+      ]
+    },
+    {
+      "day": 52,
+      "date_label": "21. veljače",
+      "label": "21. veljače — Pnz 4–6",
+      "verse_count": 107,
+      "readings": [
+        {
+          "book_order": 5,
+          "book_id": "ponovljeni-zakon",
+          "book_abbr": "Pnz",
+          "book_title": "Ponovljeni zakon",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 107,
+          "label": "Pnz 4–6"
+        }
+      ]
+    },
+    {
+      "day": 53,
+      "date_label": "22. veljače",
+      "label": "22. veljače — Pnz 7–9",
+      "verse_count": 75,
+      "readings": [
+        {
+          "book_order": 5,
+          "book_id": "ponovljeni-zakon",
+          "book_abbr": "Pnz",
+          "book_title": "Ponovljeni zakon",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 75,
+          "label": "Pnz 7–9"
+        }
+      ]
+    },
+    {
+      "day": 54,
+      "date_label": "23. veljače",
+      "label": "23. veljače — Pnz 10–12",
+      "verse_count": 85,
+      "readings": [
+        {
+          "book_order": 5,
+          "book_id": "ponovljeni-zakon",
+          "book_abbr": "Pnz",
+          "book_title": "Ponovljeni zakon",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 85,
+          "label": "Pnz 10–12"
+        }
+      ]
+    },
+    {
+      "day": 55,
+      "date_label": "24. veljače",
+      "label": "24. veljače — Pnz 13–15",
+      "verse_count": 71,
+      "readings": [
+        {
+          "book_order": 5,
+          "book_id": "ponovljeni-zakon",
+          "book_abbr": "Pnz",
+          "book_title": "Ponovljeni zakon",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 71,
+          "label": "Pnz 13–15"
+        }
+      ]
+    },
+    {
+      "day": 56,
+      "date_label": "25. veljače",
+      "label": "25. veljače — Pnz 16–18",
+      "verse_count": 64,
+      "readings": [
+        {
+          "book_order": 5,
+          "book_id": "ponovljeni-zakon",
+          "book_abbr": "Pnz",
+          "book_title": "Ponovljeni zakon",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 64,
+          "label": "Pnz 16–18"
+        }
+      ]
+    },
+    {
+      "day": 57,
+      "date_label": "26. veljače",
+      "label": "26. veljače — Pnz 19–21",
+      "verse_count": 64,
+      "readings": [
+        {
+          "book_order": 5,
+          "book_id": "ponovljeni-zakon",
+          "book_abbr": "Pnz",
+          "book_title": "Ponovljeni zakon",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 64,
+          "label": "Pnz 19–21"
+        }
+      ]
+    },
+    {
+      "day": 58,
+      "date_label": "27. veljače",
+      "label": "27. veljače — Pnz 22–24",
+      "verse_count": 77,
+      "readings": [
+        {
+          "book_order": 5,
+          "book_id": "ponovljeni-zakon",
+          "book_abbr": "Pnz",
+          "book_title": "Ponovljeni zakon",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 77,
+          "label": "Pnz 22–24"
+        }
+      ]
+    },
+    {
+      "day": 59,
+      "date_label": "28. veljače",
+      "label": "28. veljače — Pnz 25–27",
+      "verse_count": 64,
+      "readings": [
+        {
+          "book_order": 5,
+          "book_id": "ponovljeni-zakon",
+          "book_abbr": "Pnz",
+          "book_title": "Ponovljeni zakon",
+          "chapter_start": 25,
+          "chapter_end": 27,
+          "verse_count": 64,
+          "label": "Pnz 25–27"
+        }
+      ]
+    },
+    {
+      "day": 60,
+      "date_label": "29. veljače",
+      "label": "29. veljače — Pnz 28–30",
+      "verse_count": 117,
+      "readings": [
+        {
+          "book_order": 5,
+          "book_id": "ponovljeni-zakon",
+          "book_abbr": "Pnz",
+          "book_title": "Ponovljeni zakon",
+          "chapter_start": 28,
+          "chapter_end": 30,
+          "verse_count": 117,
+          "label": "Pnz 28–30"
+        }
+      ]
+    },
+    {
+      "day": 61,
+      "date_label": "1. ožujka",
+      "label": "1. ožujka — Pnz 31–34",
+      "verse_count": 123,
+      "readings": [
+        {
+          "book_order": 5,
+          "book_id": "ponovljeni-zakon",
+          "book_abbr": "Pnz",
+          "book_title": "Ponovljeni zakon",
+          "chapter_start": 31,
+          "chapter_end": 34,
+          "verse_count": 123,
+          "label": "Pnz 31–34"
+        }
+      ]
+    },
+    {
+      "day": 62,
+      "date_label": "2. ožujka",
+      "label": "2. ožujka — Jš 1–3",
+      "verse_count": 59,
+      "readings": [
+        {
+          "book_order": 6,
+          "book_id": "josua",
+          "book_abbr": "Jš",
+          "book_title": "Jošua",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 59,
+          "label": "Jš 1–3"
+        }
+      ]
+    },
+    {
+      "day": 63,
+      "date_label": "3. ožujka",
+      "label": "3. ožujka — Jš 4–6",
+      "verse_count": 66,
+      "readings": [
+        {
+          "book_order": 6,
+          "book_id": "josua",
+          "book_abbr": "Jš",
+          "book_title": "Jošua",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 66,
+          "label": "Jš 4–6"
+        }
+      ]
+    },
+    {
+      "day": 64,
+      "date_label": "4. ožujka",
+      "label": "4. ožujka — Jš 7–9",
+      "verse_count": 88,
+      "readings": [
+        {
+          "book_order": 6,
+          "book_id": "josua",
+          "book_abbr": "Jš",
+          "book_title": "Jošua",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 88,
+          "label": "Jš 7–9"
+        }
+      ]
+    },
+    {
+      "day": 65,
+      "date_label": "5. ožujka",
+      "label": "5. ožujka — Jš 10–12",
+      "verse_count": 90,
+      "readings": [
+        {
+          "book_order": 6,
+          "book_id": "josua",
+          "book_abbr": "Jš",
+          "book_title": "Jošua",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 90,
+          "label": "Jš 10–12"
+        }
+      ]
+    },
+    {
+      "day": 66,
+      "date_label": "6. ožujka",
+      "label": "6. ožujka — Jš 13–15",
+      "verse_count": 111,
+      "readings": [
+        {
+          "book_order": 6,
+          "book_id": "josua",
+          "book_abbr": "Jš",
+          "book_title": "Jošua",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 111,
+          "label": "Jš 13–15"
+        }
+      ]
+    },
+    {
+      "day": 67,
+      "date_label": "7. ožujka",
+      "label": "7. ožujka — Jš 16–18",
+      "verse_count": 56,
+      "readings": [
+        {
+          "book_order": 6,
+          "book_id": "josua",
+          "book_abbr": "Jš",
+          "book_title": "Jošua",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 56,
+          "label": "Jš 16–18"
+        }
+      ]
+    },
+    {
+      "day": 68,
+      "date_label": "8. ožujka",
+      "label": "8. ožujka — Jš 19–21",
+      "verse_count": 105,
+      "readings": [
+        {
+          "book_order": 6,
+          "book_id": "josua",
+          "book_abbr": "Jš",
+          "book_title": "Jošua",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 105,
+          "label": "Jš 19–21"
+        }
+      ]
+    },
+    {
+      "day": 69,
+      "date_label": "9. ožujka",
+      "label": "9. ožujka — Jš 22–24",
+      "verse_count": 83,
+      "readings": [
+        {
+          "book_order": 6,
+          "book_id": "josua",
+          "book_abbr": "Jš",
+          "book_title": "Jošua",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 83,
+          "label": "Jš 22–24"
+        }
+      ]
+    },
+    {
+      "day": 70,
+      "date_label": "10. ožujka",
+      "label": "10. ožujka — Suci 1–3",
+      "verse_count": 90,
+      "readings": [
+        {
+          "book_order": 7,
+          "book_id": "knjiga-o-sucima",
+          "book_abbr": "Suci",
+          "book_title": "Knjiga o Sucima",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 90,
+          "label": "Suci 1–3"
+        }
+      ]
+    },
+    {
+      "day": 71,
+      "date_label": "11. ožujka",
+      "label": "11. ožujka — Suci 4–6",
+      "verse_count": 95,
+      "readings": [
+        {
+          "book_order": 7,
+          "book_id": "knjiga-o-sucima",
+          "book_abbr": "Suci",
+          "book_title": "Knjiga o Sucima",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 95,
+          "label": "Suci 4–6"
+        }
+      ]
+    },
+    {
+      "day": 72,
+      "date_label": "12. ožujka",
+      "label": "12. ožujka — Suci 7–9",
+      "verse_count": 117,
+      "readings": [
+        {
+          "book_order": 7,
+          "book_id": "knjiga-o-sucima",
+          "book_abbr": "Suci",
+          "book_title": "Knjiga o Sucima",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 117,
+          "label": "Suci 7–9"
+        }
+      ]
+    },
+    {
+      "day": 73,
+      "date_label": "13. ožujka",
+      "label": "13. ožujka — Suci 10–12",
+      "verse_count": 73,
+      "readings": [
+        {
+          "book_order": 7,
+          "book_id": "knjiga-o-sucima",
+          "book_abbr": "Suci",
+          "book_title": "Knjiga o Sucima",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 73,
+          "label": "Suci 10–12"
+        }
+      ]
+    },
+    {
+      "day": 74,
+      "date_label": "14. ožujka",
+      "label": "14. ožujka — Suci 13–15",
+      "verse_count": 65,
+      "readings": [
+        {
+          "book_order": 7,
+          "book_id": "knjiga-o-sucima",
+          "book_abbr": "Suci",
+          "book_title": "Knjiga o Sucima",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 65,
+          "label": "Suci 13–15"
+        }
+      ]
+    },
+    {
+      "day": 75,
+      "date_label": "15. ožujka",
+      "label": "15. ožujka — Suci 16–18",
+      "verse_count": 75,
+      "readings": [
+        {
+          "book_order": 7,
+          "book_id": "knjiga-o-sucima",
+          "book_abbr": "Suci",
+          "book_title": "Knjiga o Sucima",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 75,
+          "label": "Suci 16–18"
+        }
+      ]
+    },
+    {
+      "day": 76,
+      "date_label": "16. ožujka",
+      "label": "16. ožujka — Suci 19–21",
+      "verse_count": 103,
+      "readings": [
+        {
+          "book_order": 7,
+          "book_id": "knjiga-o-sucima",
+          "book_abbr": "Suci",
+          "book_title": "Knjiga o Sucima",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 103,
+          "label": "Suci 19–21"
+        }
+      ]
+    },
+    {
+      "day": 77,
+      "date_label": "17. ožujka",
+      "label": "17. ožujka — Rut 1–4",
+      "verse_count": 85,
+      "readings": [
+        {
+          "book_order": 8,
+          "book_id": "knjiga-o-ruti",
+          "book_abbr": "Rut",
+          "book_title": "Knjiga o Ruti",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 85,
+          "label": "Rut 1–4"
+        }
+      ]
+    },
+    {
+      "day": 78,
+      "date_label": "18. ožujka",
+      "label": "18. ožujka — 1 Sam 1–3",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 9,
+          "book_id": "prva-knjiga-o-samuelu",
+          "book_abbr": "1 Sam",
+          "book_title": "Prva knjiga o Samuelu",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 86,
+          "label": "1 Sam 1–3"
+        }
+      ]
+    },
+    {
+      "day": 79,
+      "date_label": "19. ožujka",
+      "label": "19. ožujka — 1 Sam 4–6",
+      "verse_count": 55,
+      "readings": [
+        {
+          "book_order": 9,
+          "book_id": "prva-knjiga-o-samuelu",
+          "book_abbr": "1 Sam",
+          "book_title": "Prva knjiga o Samuelu",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 55,
+          "label": "1 Sam 4–6"
+        }
+      ]
+    },
+    {
+      "day": 80,
+      "date_label": "20. ožujka",
+      "label": "20. ožujka — 1 Sam 7–9",
+      "verse_count": 66,
+      "readings": [
+        {
+          "book_order": 9,
+          "book_id": "prva-knjiga-o-samuelu",
+          "book_abbr": "1 Sam",
+          "book_title": "Prva knjiga o Samuelu",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 66,
+          "label": "1 Sam 7–9"
+        }
+      ]
+    },
+    {
+      "day": 81,
+      "date_label": "21. ožujka",
+      "label": "21. ožujka — 1 Sam 10–12",
+      "verse_count": 67,
+      "readings": [
+        {
+          "book_order": 9,
+          "book_id": "prva-knjiga-o-samuelu",
+          "book_abbr": "1 Sam",
+          "book_title": "Prva knjiga o Samuelu",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 67,
+          "label": "1 Sam 10–12"
+        }
+      ]
+    },
+    {
+      "day": 82,
+      "date_label": "22. ožujka",
+      "label": "22. ožujka — 1 Sam 13–15",
+      "verse_count": 110,
+      "readings": [
+        {
+          "book_order": 9,
+          "book_id": "prva-knjiga-o-samuelu",
+          "book_abbr": "1 Sam",
+          "book_title": "Prva knjiga o Samuelu",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 110,
+          "label": "1 Sam 13–15"
+        }
+      ]
+    },
+    {
+      "day": 83,
+      "date_label": "23. ožujka",
+      "label": "23. ožujka — 1 Sam 16–18",
+      "verse_count": 111,
+      "readings": [
+        {
+          "book_order": 9,
+          "book_id": "prva-knjiga-o-samuelu",
+          "book_abbr": "1 Sam",
+          "book_title": "Prva knjiga o Samuelu",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 111,
+          "label": "1 Sam 16–18"
+        }
+      ]
+    },
+    {
+      "day": 84,
+      "date_label": "24. ožujka",
+      "label": "24. ožujka — 1 Sam 19–21",
+      "verse_count": 82,
+      "readings": [
+        {
+          "book_order": 9,
+          "book_id": "prva-knjiga-o-samuelu",
+          "book_abbr": "1 Sam",
+          "book_title": "Prva knjiga o Samuelu",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 82,
+          "label": "1 Sam 19–21"
+        }
+      ]
+    },
+    {
+      "day": 85,
+      "date_label": "25. ožujka",
+      "label": "25. ožujka — 1 Sam 22–24",
+      "verse_count": 74,
+      "readings": [
+        {
+          "book_order": 9,
+          "book_id": "prva-knjiga-o-samuelu",
+          "book_abbr": "1 Sam",
+          "book_title": "Prva knjiga o Samuelu",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 74,
+          "label": "1 Sam 22–24"
+        }
+      ]
+    },
+    {
+      "day": 86,
+      "date_label": "26. ožujka",
+      "label": "26. ožujka — 1 Sam 25–27",
+      "verse_count": 81,
+      "readings": [
+        {
+          "book_order": 9,
+          "book_id": "prva-knjiga-o-samuelu",
+          "book_abbr": "1 Sam",
+          "book_title": "Prva knjiga o Samuelu",
+          "chapter_start": 25,
+          "chapter_end": 27,
+          "verse_count": 81,
+          "label": "1 Sam 25–27"
+        }
+      ]
+    },
+    {
+      "day": 87,
+      "date_label": "27. ožujka",
+      "label": "27. ožujka — 1 Sam 28–31",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 9,
+          "book_id": "prva-knjiga-o-samuelu",
+          "book_abbr": "1 Sam",
+          "book_title": "Prva knjiga o Samuelu",
+          "chapter_start": 28,
+          "chapter_end": 31,
+          "verse_count": 80,
+          "label": "1 Sam 28–31"
+        }
+      ]
+    },
+    {
+      "day": 88,
+      "date_label": "28. ožujka",
+      "label": "28. ožujka — 2 Sam 1–3",
+      "verse_count": 98,
+      "readings": [
+        {
+          "book_order": 10,
+          "book_id": "druga-knjiga-o-samuelu",
+          "book_abbr": "2 Sam",
+          "book_title": "Druga knjiga o Samuelu",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 98,
+          "label": "2 Sam 1–3"
+        }
+      ]
+    },
+    {
+      "day": 89,
+      "date_label": "29. ožujka",
+      "label": "29. ožujka — 2 Sam 4–6",
+      "verse_count": 60,
+      "readings": [
+        {
+          "book_order": 10,
+          "book_id": "druga-knjiga-o-samuelu",
+          "book_abbr": "2 Sam",
+          "book_title": "Druga knjiga o Samuelu",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 60,
+          "label": "2 Sam 4–6"
+        }
+      ]
+    },
+    {
+      "day": 90,
+      "date_label": "30. ožujka",
+      "label": "30. ožujka — 2 Sam 7–9",
+      "verse_count": 60,
+      "readings": [
+        {
+          "book_order": 10,
+          "book_id": "druga-knjiga-o-samuelu",
+          "book_abbr": "2 Sam",
+          "book_title": "Druga knjiga o Samuelu",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 60,
+          "label": "2 Sam 7–9"
+        }
+      ]
+    },
+    {
+      "day": 91,
+      "date_label": "31. ožujka",
+      "label": "31. ožujka — 2 Sam 10–12",
+      "verse_count": 77,
+      "readings": [
+        {
+          "book_order": 10,
+          "book_id": "druga-knjiga-o-samuelu",
+          "book_abbr": "2 Sam",
+          "book_title": "Druga knjiga o Samuelu",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 77,
+          "label": "2 Sam 10–12"
+        }
+      ]
+    },
+    {
+      "day": 92,
+      "date_label": "1. travnja",
+      "label": "1. travnja — 2 Sam 13–15",
+      "verse_count": 109,
+      "readings": [
+        {
+          "book_order": 10,
+          "book_id": "druga-knjiga-o-samuelu",
+          "book_abbr": "2 Sam",
+          "book_title": "Druga knjiga o Samuelu",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 109,
+          "label": "2 Sam 13–15"
+        }
+      ]
+    },
+    {
+      "day": 93,
+      "date_label": "2. travnja",
+      "label": "2. travnja — 2 Sam 16–18",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 10,
+          "book_id": "druga-knjiga-o-samuelu",
+          "book_abbr": "2 Sam",
+          "book_title": "Druga knjiga o Samuelu",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 84,
+          "label": "2 Sam 16–18"
+        }
+      ]
+    },
+    {
+      "day": 94,
+      "date_label": "3. travnja",
+      "label": "3. travnja — 2 Sam 19–21",
+      "verse_count": 92,
+      "readings": [
+        {
+          "book_order": 10,
+          "book_id": "druga-knjiga-o-samuelu",
+          "book_abbr": "2 Sam",
+          "book_title": "Druga knjiga o Samuelu",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 92,
+          "label": "2 Sam 19–21"
+        }
+      ]
+    },
+    {
+      "day": 95,
+      "date_label": "4. travnja",
+      "label": "4. travnja — 2 Sam 22–24",
+      "verse_count": 115,
+      "readings": [
+        {
+          "book_order": 10,
+          "book_id": "druga-knjiga-o-samuelu",
+          "book_abbr": "2 Sam",
+          "book_title": "Druga knjiga o Samuelu",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 115,
+          "label": "2 Sam 22–24"
+        }
+      ]
+    },
+    {
+      "day": 96,
+      "date_label": "5. travnja",
+      "label": "5. travnja — 1 Kr 1–3",
+      "verse_count": 127,
+      "readings": [
+        {
+          "book_order": 11,
+          "book_id": "prva-knjiga-o-kraljevima",
+          "book_abbr": "1 Kr",
+          "book_title": "Prva knjiga o Kraljevima",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 127,
+          "label": "1 Kr 1–3"
+        }
+      ]
+    },
+    {
+      "day": 97,
+      "date_label": "6. travnja",
+      "label": "6. travnja — 1 Kr 4–6",
+      "verse_count": 90,
+      "readings": [
+        {
+          "book_order": 11,
+          "book_id": "prva-knjiga-o-kraljevima",
+          "book_abbr": "1 Kr",
+          "book_title": "Prva knjiga o Kraljevima",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 90,
+          "label": "1 Kr 4–6"
+        }
+      ]
+    },
+    {
+      "day": 98,
+      "date_label": "7. travnja",
+      "label": "7. travnja — 1 Kr 7–9",
+      "verse_count": 145,
+      "readings": [
+        {
+          "book_order": 11,
+          "book_id": "prva-knjiga-o-kraljevima",
+          "book_abbr": "1 Kr",
+          "book_title": "Prva knjiga o Kraljevima",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 145,
+          "label": "1 Kr 7–9"
+        }
+      ]
+    },
+    {
+      "day": 99,
+      "date_label": "8. travnja",
+      "label": "8. travnja — 1 Kr 10–12",
+      "verse_count": 105,
+      "readings": [
+        {
+          "book_order": 11,
+          "book_id": "prva-knjiga-o-kraljevima",
+          "book_abbr": "1 Kr",
+          "book_title": "Prva knjiga o Kraljevima",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 105,
+          "label": "1 Kr 10–12"
+        }
+      ]
+    },
+    {
+      "day": 100,
+      "date_label": "9. travnja",
+      "label": "9. travnja — 1 Kr 13–15",
+      "verse_count": 98,
+      "readings": [
+        {
+          "book_order": 11,
+          "book_id": "prva-knjiga-o-kraljevima",
+          "book_abbr": "1 Kr",
+          "book_title": "Prva knjiga o Kraljevima",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 98,
+          "label": "1 Kr 13–15"
+        }
+      ]
+    },
+    {
+      "day": 101,
+      "date_label": "10. travnja",
+      "label": "10. travnja — 1 Kr 16–18",
+      "verse_count": 104,
+      "readings": [
+        {
+          "book_order": 11,
+          "book_id": "prva-knjiga-o-kraljevima",
+          "book_abbr": "1 Kr",
+          "book_title": "Prva knjiga o Kraljevima",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 104,
+          "label": "1 Kr 16–18"
+        }
+      ]
+    },
+    {
+      "day": 102,
+      "date_label": "11. travnja",
+      "label": "11. travnja — 1 Kr 19–22",
+      "verse_count": 147,
+      "readings": [
+        {
+          "book_order": 11,
+          "book_id": "prva-knjiga-o-kraljevima",
+          "book_abbr": "1 Kr",
+          "book_title": "Prva knjiga o Kraljevima",
+          "chapter_start": 19,
+          "chapter_end": 22,
+          "verse_count": 147,
+          "label": "1 Kr 19–22"
+        }
+      ]
+    },
+    {
+      "day": 103,
+      "date_label": "12. travnja",
+      "label": "12. travnja — 2 Kr 1–3",
+      "verse_count": 70,
+      "readings": [
+        {
+          "book_order": 12,
+          "book_id": "druga-knjiga-o-kraljevima",
+          "book_abbr": "2 Kr",
+          "book_title": "Druga knjiga o Kraljevima",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 70,
+          "label": "2 Kr 1–3"
+        }
+      ]
+    },
+    {
+      "day": 104,
+      "date_label": "13. travnja",
+      "label": "13. travnja — 2 Kr 4–6",
+      "verse_count": 104,
+      "readings": [
+        {
+          "book_order": 12,
+          "book_id": "druga-knjiga-o-kraljevima",
+          "book_abbr": "2 Kr",
+          "book_title": "Druga knjiga o Kraljevima",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 104,
+          "label": "2 Kr 4–6"
+        }
+      ]
+    },
+    {
+      "day": 105,
+      "date_label": "14. travnja",
+      "label": "14. travnja — 2 Kr 7–9",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 12,
+          "book_id": "druga-knjiga-o-kraljevima",
+          "book_abbr": "2 Kr",
+          "book_title": "Druga knjiga o Kraljevima",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 86,
+          "label": "2 Kr 7–9"
+        }
+      ]
+    },
+    {
+      "day": 106,
+      "date_label": "15. travnja",
+      "label": "15. travnja — 2 Kr 10–12",
+      "verse_count": 78,
+      "readings": [
+        {
+          "book_order": 12,
+          "book_id": "druga-knjiga-o-kraljevima",
+          "book_abbr": "2 Kr",
+          "book_title": "Druga knjiga o Kraljevima",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 78,
+          "label": "2 Kr 10–12"
+        }
+      ]
+    },
+    {
+      "day": 107,
+      "date_label": "16. travnja",
+      "label": "16. travnja — 2 Kr 13–15",
+      "verse_count": 92,
+      "readings": [
+        {
+          "book_order": 12,
+          "book_id": "druga-knjiga-o-kraljevima",
+          "book_abbr": "2 Kr",
+          "book_title": "Druga knjiga o Kraljevima",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 92,
+          "label": "2 Kr 13–15"
+        }
+      ]
+    },
+    {
+      "day": 108,
+      "date_label": "17. travnja",
+      "label": "17. travnja — 2 Kr 16–18",
+      "verse_count": 98,
+      "readings": [
+        {
+          "book_order": 12,
+          "book_id": "druga-knjiga-o-kraljevima",
+          "book_abbr": "2 Kr",
+          "book_title": "Druga knjiga o Kraljevima",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 98,
+          "label": "2 Kr 16–18"
+        }
+      ]
+    },
+    {
+      "day": 109,
+      "date_label": "18. travnja",
+      "label": "18. travnja — 2 Kr 19–21",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 12,
+          "book_id": "druga-knjiga-o-kraljevima",
+          "book_abbr": "2 Kr",
+          "book_title": "Druga knjiga o Kraljevima",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 84,
+          "label": "2 Kr 19–21"
+        }
+      ]
+    },
+    {
+      "day": 110,
+      "date_label": "19. travnja",
+      "label": "19. travnja — 2 Kr 22–25",
+      "verse_count": 107,
+      "readings": [
+        {
+          "book_order": 12,
+          "book_id": "druga-knjiga-o-kraljevima",
+          "book_abbr": "2 Kr",
+          "book_title": "Druga knjiga o Kraljevima",
+          "chapter_start": 22,
+          "chapter_end": 25,
+          "verse_count": 107,
+          "label": "2 Kr 22–25"
+        }
+      ]
+    },
+    {
+      "day": 111,
+      "date_label": "20. travnja",
+      "label": "20. travnja — 1 Ljet 1–3",
+      "verse_count": 133,
+      "readings": [
+        {
+          "book_order": 13,
+          "book_id": "prva-knjiga-ljetopisa",
+          "book_abbr": "1 Ljet",
+          "book_title": "Prva Knjiga Ljetopisa",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 133,
+          "label": "1 Ljet 1–3"
+        }
+      ]
+    },
+    {
+      "day": 112,
+      "date_label": "21. travnja",
+      "label": "21. travnja — 1 Ljet 4–6",
+      "verse_count": 150,
+      "readings": [
+        {
+          "book_order": 13,
+          "book_id": "prva-knjiga-ljetopisa",
+          "book_abbr": "1 Ljet",
+          "book_title": "Prva Knjiga Ljetopisa",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 150,
+          "label": "1 Ljet 4–6"
+        }
+      ]
+    },
+    {
+      "day": 113,
+      "date_label": "22. travnja",
+      "label": "22. travnja — 1 Ljet 7–9",
+      "verse_count": 124,
+      "readings": [
+        {
+          "book_order": 13,
+          "book_id": "prva-knjiga-ljetopisa",
+          "book_abbr": "1 Ljet",
+          "book_title": "Prva Knjiga Ljetopisa",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 124,
+          "label": "1 Ljet 7–9"
+        }
+      ]
+    },
+    {
+      "day": 114,
+      "date_label": "23. travnja",
+      "label": "23. travnja — 1 Ljet 10–12",
+      "verse_count": 102,
+      "readings": [
+        {
+          "book_order": 13,
+          "book_id": "prva-knjiga-ljetopisa",
+          "book_abbr": "1 Ljet",
+          "book_title": "Prva Knjiga Ljetopisa",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 102,
+          "label": "1 Ljet 10–12"
+        }
+      ]
+    },
+    {
+      "day": 115,
+      "date_label": "24. travnja",
+      "label": "24. travnja — 1 Ljet 13–15",
+      "verse_count": 60,
+      "readings": [
+        {
+          "book_order": 13,
+          "book_id": "prva-knjiga-ljetopisa",
+          "book_abbr": "1 Ljet",
+          "book_title": "Prva Knjiga Ljetopisa",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 60,
+          "label": "1 Ljet 13–15"
+        }
+      ]
+    },
+    {
+      "day": 116,
+      "date_label": "25. travnja",
+      "label": "25. travnja — 1 Ljet 16–18",
+      "verse_count": 87,
+      "readings": [
+        {
+          "book_order": 13,
+          "book_id": "prva-knjiga-ljetopisa",
+          "book_abbr": "1 Ljet",
+          "book_title": "Prva Knjiga Ljetopisa",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 87,
+          "label": "1 Ljet 16–18"
+        }
+      ]
+    },
+    {
+      "day": 117,
+      "date_label": "26. travnja",
+      "label": "26. travnja — 1 Ljet 19–22",
+      "verse_count": 76,
+      "readings": [
+        {
+          "book_order": 13,
+          "book_id": "prva-knjiga-ljetopisa",
+          "book_abbr": "1 Ljet",
+          "book_title": "Prva Knjiga Ljetopisa",
+          "chapter_start": 19,
+          "chapter_end": 22,
+          "verse_count": 76,
+          "label": "1 Ljet 19–22"
+        }
+      ]
+    },
+    {
+      "day": 118,
+      "date_label": "27. travnja",
+      "label": "27. travnja — 1 Ljet 22–25",
+      "verse_count": 113,
+      "readings": [
+        {
+          "book_order": 13,
+          "book_id": "prva-knjiga-ljetopisa",
+          "book_abbr": "1 Ljet",
+          "book_title": "Prva Knjiga Ljetopisa",
+          "chapter_start": 22,
+          "chapter_end": 25,
+          "verse_count": 113,
+          "label": "1 Ljet 22–25"
+        }
+      ]
+    },
+    {
+      "day": 119,
+      "date_label": "28. travnja",
+      "label": "28. travnja — 1 Ljet 26–29",
+      "verse_count": 117,
+      "readings": [
+        {
+          "book_order": 13,
+          "book_id": "prva-knjiga-ljetopisa",
+          "book_abbr": "1 Ljet",
+          "book_title": "Prva Knjiga Ljetopisa",
+          "chapter_start": 26,
+          "chapter_end": 29,
+          "verse_count": 117,
+          "label": "1 Ljet 26–29"
+        }
+      ]
+    },
+    {
+      "day": 120,
+      "date_label": "29. travnja",
+      "label": "29. travnja — 2 Ljet 1–3",
+      "verse_count": 52,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 52,
+          "label": "2 Ljet 1–3"
+        }
+      ]
+    },
+    {
+      "day": 121,
+      "date_label": "30. travnja",
+      "label": "30. travnja — 2 Ljet 4–6",
+      "verse_count": 78,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 78,
+          "label": "2 Ljet 4–6"
+        }
+      ]
+    },
+    {
+      "day": 122,
+      "date_label": "1. svibnja",
+      "label": "1. svibnja — 2 Ljet 7–9",
+      "verse_count": 71,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 71,
+          "label": "2 Ljet 7–9"
+        }
+      ]
+    },
+    {
+      "day": 123,
+      "date_label": "2. svibnja",
+      "label": "2. svibnja — 2 Ljet 10–12",
+      "verse_count": 58,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 58,
+          "label": "2 Ljet 10–12"
+        }
+      ]
+    },
+    {
+      "day": 124,
+      "date_label": "3. svibnja",
+      "label": "3. svibnja — 2 Ljet 13–15",
+      "verse_count": 56,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 56,
+          "label": "2 Ljet 13–15"
+        }
+      ]
+    },
+    {
+      "day": 125,
+      "date_label": "4. svibnja",
+      "label": "4. svibnja — 2 Ljet 16–18",
+      "verse_count": 67,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 67,
+          "label": "2 Ljet 16–18"
+        }
+      ]
+    },
+    {
+      "day": 126,
+      "date_label": "5. svibnja",
+      "label": "5. svibnja — 2 Ljet 19–21",
+      "verse_count": 68,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 68,
+          "label": "2 Ljet 19–21"
+        }
+      ]
+    },
+    {
+      "day": 127,
+      "date_label": "6. svibnja",
+      "label": "6. svibnja — 2 Ljet 22–24",
+      "verse_count": 60,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 60,
+          "label": "2 Ljet 22–24"
+        }
+      ]
+    },
+    {
+      "day": 128,
+      "date_label": "7. svibnja",
+      "label": "7. svibnja — 2 Ljet 25–27",
+      "verse_count": 60,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 25,
+          "chapter_end": 27,
+          "verse_count": 60,
+          "label": "2 Ljet 25–27"
+        }
+      ]
+    },
+    {
+      "day": 129,
+      "date_label": "8. svibnja",
+      "label": "8. svibnja — 2 Ljet 28–30",
+      "verse_count": 90,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 28,
+          "chapter_end": 30,
+          "verse_count": 90,
+          "label": "2 Ljet 28–30"
+        }
+      ]
+    },
+    {
+      "day": 130,
+      "date_label": "9. svibnja",
+      "label": "9. svibnja — 2 Ljet 31–33",
+      "verse_count": 79,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 31,
+          "chapter_end": 33,
+          "verse_count": 79,
+          "label": "2 Ljet 31–33"
+        }
+      ]
+    },
+    {
+      "day": 131,
+      "date_label": "10. svibnja",
+      "label": "10. svibnja — 2 Ljet 34–36",
+      "verse_count": 83,
+      "readings": [
+        {
+          "book_order": 14,
+          "book_id": "druga-knjiga-ljetopisa",
+          "book_abbr": "2 Ljet",
+          "book_title": "Druga Knjiga Ljetopisa",
+          "chapter_start": 34,
+          "chapter_end": 36,
+          "verse_count": 83,
+          "label": "2 Ljet 34–36"
+        }
+      ]
+    },
+    {
+      "day": 132,
+      "date_label": "11. svibnja",
+      "label": "11. svibnja — Ezr 1–3",
+      "verse_count": 94,
+      "readings": [
+        {
+          "book_order": 15,
+          "book_id": "ezra",
+          "book_abbr": "Ezr",
+          "book_title": "Ezra",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 94,
+          "label": "Ezr 1–3"
+        }
+      ]
+    },
+    {
+      "day": 133,
+      "date_label": "12. svibnja",
+      "label": "12. svibnja — Ezr 4–6",
+      "verse_count": 63,
+      "readings": [
+        {
+          "book_order": 15,
+          "book_id": "ezra",
+          "book_abbr": "Ezr",
+          "book_title": "Ezra",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 63,
+          "label": "Ezr 4–6"
+        }
+      ]
+    },
+    {
+      "day": 134,
+      "date_label": "13. svibnja",
+      "label": "13. svibnja — Ezr 7–10",
+      "verse_count": 123,
+      "readings": [
+        {
+          "book_order": 15,
+          "book_id": "ezra",
+          "book_abbr": "Ezr",
+          "book_title": "Ezra",
+          "chapter_start": 7,
+          "chapter_end": 10,
+          "verse_count": 123,
+          "label": "Ezr 7–10"
+        }
+      ]
+    },
+    {
+      "day": 135,
+      "date_label": "14. svibnja",
+      "label": "14. svibnja — Neh 1–3",
+      "verse_count": 69,
+      "readings": [
+        {
+          "book_order": 16,
+          "book_id": "nehemija",
+          "book_abbr": "Neh",
+          "book_title": "Nehemija",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 69,
+          "label": "Neh 1–3"
+        }
+      ]
+    },
+    {
+      "day": 136,
+      "date_label": "15. svibnja",
+      "label": "15. svibnja — Neh 4–6",
+      "verse_count": 55,
+      "readings": [
+        {
+          "book_order": 16,
+          "book_id": "nehemija",
+          "book_abbr": "Neh",
+          "book_title": "Nehemija",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 55,
+          "label": "Neh 4–6"
+        }
+      ]
+    },
+    {
+      "day": 137,
+      "date_label": "16. svibnja",
+      "label": "16. svibnja — Neh 7–9",
+      "verse_count": 127,
+      "readings": [
+        {
+          "book_order": 16,
+          "book_id": "nehemija",
+          "book_abbr": "Neh",
+          "book_title": "Nehemija",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 127,
+          "label": "Neh 7–9"
+        }
+      ]
+    },
+    {
+      "day": 138,
+      "date_label": "17. svibnja",
+      "label": "17. svibnja — Neh 10–13",
+      "verse_count": 154,
+      "readings": [
+        {
+          "book_order": 16,
+          "book_id": "nehemija",
+          "book_abbr": "Neh",
+          "book_title": "Nehemija",
+          "chapter_start": 10,
+          "chapter_end": 13,
+          "verse_count": 154,
+          "label": "Neh 10–13"
+        }
+      ]
+    },
+    {
+      "day": 139,
+      "date_label": "18. svibnja",
+      "label": "18. svibnja — Tob 1–3",
+      "verse_count": 53,
+      "readings": [
+        {
+          "book_order": 17,
+          "book_id": "tobija",
+          "book_abbr": "Tob",
+          "book_title": "Tobija",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 53,
+          "label": "Tob 1–3"
+        }
+      ]
+    },
+    {
+      "day": 140,
+      "date_label": "19. svibnja",
+      "label": "19. svibnja — Tob 4–6",
+      "verse_count": 62,
+      "readings": [
+        {
+          "book_order": 17,
+          "book_id": "tobija",
+          "book_abbr": "Tob",
+          "book_title": "Tobija",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 62,
+          "label": "Tob 4–6"
+        }
+      ]
+    },
+    {
+      "day": 141,
+      "date_label": "20. svibnja",
+      "label": "20. svibnja — Tob 7–9",
+      "verse_count": 44,
+      "readings": [
+        {
+          "book_order": 17,
+          "book_id": "tobija",
+          "book_abbr": "Tob",
+          "book_title": "Tobija",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 44,
+          "label": "Tob 7–9"
+        }
+      ]
+    },
+    {
+      "day": 142,
+      "date_label": "21. svibnja",
+      "label": "21. svibnja — Tob 10–14",
+      "verse_count": 87,
+      "readings": [
+        {
+          "book_order": 17,
+          "book_id": "tobija",
+          "book_abbr": "Tob",
+          "book_title": "Tobija",
+          "chapter_start": 10,
+          "chapter_end": 14,
+          "verse_count": 87,
+          "label": "Tob 10–14"
+        }
+      ]
+    },
+    {
+      "day": 143,
+      "date_label": "22. svibnja",
+      "label": "22. svibnja — Jdt 1–3",
+      "verse_count": 53,
+      "readings": [
+        {
+          "book_order": 18,
+          "book_id": "judita",
+          "book_abbr": "Jdt",
+          "book_title": "Judita",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 53,
+          "label": "Jdt 1–3"
+        }
+      ]
+    },
+    {
+      "day": 144,
+      "date_label": "23. svibnja",
+      "label": "23. svibnja — Jdt 4–6",
+      "verse_count": 60,
+      "readings": [
+        {
+          "book_order": 18,
+          "book_id": "judita",
+          "book_abbr": "Jdt",
+          "book_title": "Judita",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 60,
+          "label": "Jdt 4–6"
+        }
+      ]
+    },
+    {
+      "day": 145,
+      "date_label": "24. svibnja",
+      "label": "24. svibnja — Jdt 7–9",
+      "verse_count": 82,
+      "readings": [
+        {
+          "book_order": 18,
+          "book_id": "judita",
+          "book_abbr": "Jdt",
+          "book_title": "Judita",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 82,
+          "label": "Jdt 7–9"
+        }
+      ]
+    },
+    {
+      "day": 146,
+      "date_label": "25. svibnja",
+      "label": "25. svibnja — Jdt 10–12",
+      "verse_count": 66,
+      "readings": [
+        {
+          "book_order": 18,
+          "book_id": "judita",
+          "book_abbr": "Jdt",
+          "book_title": "Judita",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 66,
+          "label": "Jdt 10–12"
+        }
+      ]
+    },
+    {
+      "day": 147,
+      "date_label": "26. svibnja",
+      "label": "26. svibnja — Jdt 13–16",
+      "verse_count": 78,
+      "readings": [
+        {
+          "book_order": 18,
+          "book_id": "judita",
+          "book_abbr": "Jdt",
+          "book_title": "Judita",
+          "chapter_start": 13,
+          "chapter_end": 16,
+          "verse_count": 78,
+          "label": "Jdt 13–16"
+        }
+      ]
+    },
+    {
+      "day": 148,
+      "date_label": "27. svibnja",
+      "label": "27. svibnja — Est 1–3",
+      "verse_count": 60,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 60,
+          "label": "Est 1–3"
+        }
+      ]
+    },
+    {
+      "day": 149,
+      "date_label": "28. svibnja",
+      "label": "28. svibnja — Est 4–6",
+      "verse_count": 45,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 45,
+          "label": "Est 4–6"
+        }
+      ]
+    },
+    {
+      "day": 150,
+      "date_label": "29. svibnja",
+      "label": "29. svibnja — Est 7–10",
+      "verse_count": 62,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 7,
+          "chapter_end": 10,
+          "verse_count": 62,
+          "label": "Est 7–10"
+        }
+      ]
+    },
+    {
+      "day": 151,
+      "date_label": "30. svibnja",
+      "label": "30. svibnja — 1 Mak 1–3",
+      "verse_count": 194,
+      "readings": [
+        {
+          "book_order": 20,
+          "book_id": "prva-knjiga-o-makabejcima",
+          "book_abbr": "1 Mak",
+          "book_title": "Prva knjiga o Makabejcima",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 194,
+          "label": "1 Mak 1–3"
+        }
+      ]
+    },
+    {
+      "day": 152,
+      "date_label": "31. svibnja",
+      "label": "31. svibnja — 1 Mak 4–6",
+      "verse_count": 192,
+      "readings": [
+        {
+          "book_order": 20,
+          "book_id": "prva-knjiga-o-makabejcima",
+          "book_abbr": "1 Mak",
+          "book_title": "Prva knjiga o Makabejcima",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 192,
+          "label": "1 Mak 4–6"
+        }
+      ]
+    },
+    {
+      "day": 153,
+      "date_label": "1. lipnja",
+      "label": "1. lipnja — 1 Mak 7–9",
+      "verse_count": 155,
+      "readings": [
+        {
+          "book_order": 20,
+          "book_id": "prva-knjiga-o-makabejcima",
+          "book_abbr": "1 Mak",
+          "book_title": "Prva knjiga o Makabejcima",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 155,
+          "label": "1 Mak 7–9"
+        }
+      ]
+    },
+    {
+      "day": 154,
+      "date_label": "2. lipnja",
+      "label": "2. lipnja — 1 Mak 10–12",
+      "verse_count": 216,
+      "readings": [
+        {
+          "book_order": 20,
+          "book_id": "prva-knjiga-o-makabejcima",
+          "book_abbr": "1 Mak",
+          "book_title": "Prva knjiga o Makabejcima",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 216,
+          "label": "1 Mak 10–12"
+        }
+      ]
+    },
+    {
+      "day": 155,
+      "date_label": "3. lipnja",
+      "label": "3. lipnja — 1 Mak 13–16",
+      "verse_count": 167,
+      "readings": [
+        {
+          "book_order": 20,
+          "book_id": "prva-knjiga-o-makabejcima",
+          "book_abbr": "1 Mak",
+          "book_title": "Prva knjiga o Makabejcima",
+          "chapter_start": 13,
+          "chapter_end": 16,
+          "verse_count": 167,
+          "label": "1 Mak 13–16"
+        }
+      ]
+    },
+    {
+      "day": 156,
+      "date_label": "4. lipnja",
+      "label": "4. lipnja — 2 Mak 1–3",
+      "verse_count": 108,
+      "readings": [
+        {
+          "book_order": 21,
+          "book_id": "druga-knjiga-o-makabejcima",
+          "book_abbr": "2 Mak",
+          "book_title": "Druga knjiga o Makabejcima",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 108,
+          "label": "2 Mak 1–3"
+        }
+      ]
+    },
+    {
+      "day": 157,
+      "date_label": "5. lipnja",
+      "label": "5. lipnja — 2 Mak 4–6",
+      "verse_count": 108,
+      "readings": [
+        {
+          "book_order": 21,
+          "book_id": "druga-knjiga-o-makabejcima",
+          "book_abbr": "2 Mak",
+          "book_title": "Druga knjiga o Makabejcima",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 108,
+          "label": "2 Mak 4–6"
+        }
+      ]
+    },
+    {
+      "day": 158,
+      "date_label": "6. lipnja",
+      "label": "6. lipnja — 2 Mak 7–9",
+      "verse_count": 107,
+      "readings": [
+        {
+          "book_order": 21,
+          "book_id": "druga-knjiga-o-makabejcima",
+          "book_abbr": "2 Mak",
+          "book_title": "Druga knjiga o Makabejcima",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 107,
+          "label": "2 Mak 7–9"
+        }
+      ]
+    },
+    {
+      "day": 159,
+      "date_label": "7. lipnja",
+      "label": "7. lipnja — 2 Mak 10–12",
+      "verse_count": 121,
+      "readings": [
+        {
+          "book_order": 21,
+          "book_id": "druga-knjiga-o-makabejcima",
+          "book_abbr": "2 Mak",
+          "book_title": "Druga knjiga o Makabejcima",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 121,
+          "label": "2 Mak 10–12"
+        }
+      ]
+    },
+    {
+      "day": 160,
+      "date_label": "8. lipnja",
+      "label": "8. lipnja — 2 Mak 13–15",
+      "verse_count": 111,
+      "readings": [
+        {
+          "book_order": 21,
+          "book_id": "druga-knjiga-o-makabejcima",
+          "book_abbr": "2 Mak",
+          "book_title": "Druga knjiga o Makabejcima",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 111,
+          "label": "2 Mak 13–15"
+        }
+      ]
+    },
+    {
+      "day": 161,
+      "date_label": "9. lipnja",
+      "label": "9. lipnja — Job 1–3",
+      "verse_count": 61,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 61,
+          "label": "Job 1–3"
+        }
+      ]
+    },
+    {
+      "day": 162,
+      "date_label": "10. lipnja",
+      "label": "10. lipnja — Job 4–6",
+      "verse_count": 78,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 78,
+          "label": "Job 4–6"
+        }
+      ]
+    },
+    {
+      "day": 163,
+      "date_label": "11. lipnja",
+      "label": "11. lipnja — Job 7–9",
+      "verse_count": 78,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 78,
+          "label": "Job 7–9"
+        }
+      ]
+    },
+    {
+      "day": 164,
+      "date_label": "12. lipnja",
+      "label": "12. lipnja — Job 10–12",
+      "verse_count": 67,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 67,
+          "label": "Job 10–12"
+        }
+      ]
+    },
+    {
+      "day": 165,
+      "date_label": "13. lipnja",
+      "label": "13. lipnja — Job 13–15",
+      "verse_count": 85,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 85,
+          "label": "Job 13–15"
+        }
+      ]
+    },
+    {
+      "day": 166,
+      "date_label": "14. lipnja",
+      "label": "14. lipnja — Job 16–18",
+      "verse_count": 59,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 59,
+          "label": "Job 16–18"
+        }
+      ]
+    },
+    {
+      "day": 167,
+      "date_label": "15. lipnja",
+      "label": "15. lipnja — Job 19–21",
+      "verse_count": 92,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 92,
+          "label": "Job 19–21"
+        }
+      ]
+    },
+    {
+      "day": 168,
+      "date_label": "16. lipnja",
+      "label": "16. lipnja — Job 22–24",
+      "verse_count": 65,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 65,
+          "label": "Job 22–24"
+        }
+      ]
+    },
+    {
+      "day": 169,
+      "date_label": "17. lipnja",
+      "label": "17. lipnja — Job 25–27",
+      "verse_count": 42,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 25,
+          "chapter_end": 27,
+          "verse_count": 42,
+          "label": "Job 25–27"
+        }
+      ]
+    },
+    {
+      "day": 170,
+      "date_label": "18. lipnja",
+      "label": "18. lipnja — Job 28–30",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 28,
+          "chapter_end": 30,
+          "verse_count": 84,
+          "label": "Job 28–30"
+        }
+      ]
+    },
+    {
+      "day": 171,
+      "date_label": "19. lipnja",
+      "label": "19. lipnja — Job 31–33",
+      "verse_count": 95,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 31,
+          "chapter_end": 33,
+          "verse_count": 95,
+          "label": "Job 31–33"
+        }
+      ]
+    },
+    {
+      "day": 172,
+      "date_label": "20. lipnja",
+      "label": "20. lipnja — Job 34–36",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 34,
+          "chapter_end": 36,
+          "verse_count": 86,
+          "label": "Job 34–36"
+        }
+      ]
+    },
+    {
+      "day": 173,
+      "date_label": "21. lipnja",
+      "label": "21. lipnja — Job 37–39",
+      "verse_count": 95,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 37,
+          "chapter_end": 39,
+          "verse_count": 95,
+          "label": "Job 37–39"
+        }
+      ]
+    },
+    {
+      "day": 174,
+      "date_label": "22. lipnja",
+      "label": "22. lipnja — Job 40–42",
+      "verse_count": 75,
+      "readings": [
+        {
+          "book_order": 22,
+          "book_id": "knjiga-o-jobu",
+          "book_abbr": "Job",
+          "book_title": "Knjiga o Jobu",
+          "chapter_start": 40,
+          "chapter_end": 42,
+          "verse_count": 75,
+          "label": "Job 40–42"
+        }
+      ]
+    },
+    {
+      "day": 175,
+      "date_label": "23. lipnja",
+      "label": "23. lipnja — Ps 1–5",
+      "verse_count": 49,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 49,
+          "label": "Ps 1–5"
+        }
+      ]
+    },
+    {
+      "day": 176,
+      "date_label": "24. lipnja",
+      "label": "24. lipnja — Ps 6–10",
+      "verse_count": 78,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 6,
+          "chapter_end": 10,
+          "verse_count": 78,
+          "label": "Ps 6–10"
+        }
+      ]
+    },
+    {
+      "day": 177,
+      "date_label": "25. lipnja",
+      "label": "25. lipnja — Ps 11–15",
+      "verse_count": 34,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 11,
+          "chapter_end": 15,
+          "verse_count": 34,
+          "label": "Ps 11–15"
+        }
+      ]
+    },
+    {
+      "day": 178,
+      "date_label": "26. lipnja",
+      "label": "26. lipnja — Ps 16–20",
+      "verse_count": 102,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 16,
+          "chapter_end": 20,
+          "verse_count": 102,
+          "label": "Ps 16–20"
+        }
+      ]
+    },
+    {
+      "day": 179,
+      "date_label": "27. lipnja",
+      "label": "27. lipnja — Ps 21–25",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 21,
+          "chapter_end": 25,
+          "verse_count": 84,
+          "label": "Ps 21–25"
+        }
+      ]
+    },
+    {
+      "day": 180,
+      "date_label": "28. lipnja",
+      "label": "28. lipnja — Ps 26–30",
+      "verse_count": 59,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 26,
+          "chapter_end": 30,
+          "verse_count": 59,
+          "label": "Ps 26–30"
+        }
+      ]
+    },
+    {
+      "day": 181,
+      "date_label": "29. lipnja",
+      "label": "29. lipnja — Ps 31–35",
+      "verse_count": 109,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 31,
+          "chapter_end": 35,
+          "verse_count": 109,
+          "label": "Ps 31–35"
+        }
+      ]
+    },
+    {
+      "day": 182,
+      "date_label": "30. lipnja",
+      "label": "30. lipnja — Ps 36–40",
+      "verse_count": 108,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 36,
+          "chapter_end": 40,
+          "verse_count": 108,
+          "label": "Ps 36–40"
+        }
+      ]
+    },
+    {
+      "day": 183,
+      "date_label": "1. srpnja",
+      "label": "1. srpnja — Ps 41–45",
+      "verse_count": 76,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 41,
+          "chapter_end": 45,
+          "verse_count": 76,
+          "label": "Ps 41–45"
+        }
+      ]
+    },
+    {
+      "day": 184,
+      "date_label": "2. srpnja",
+      "label": "2. srpnja — Ps 46–50",
+      "verse_count": 81,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 46,
+          "chapter_end": 50,
+          "verse_count": 81,
+          "label": "Ps 46–50"
+        }
+      ]
+    },
+    {
+      "day": 185,
+      "date_label": "3. srpnja",
+      "label": "3. srpnja — Ps 51–55",
+      "verse_count": 72,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 51,
+          "chapter_end": 55,
+          "verse_count": 72,
+          "label": "Ps 51–55"
+        }
+      ]
+    },
+    {
+      "day": 186,
+      "date_label": "4. srpnja",
+      "label": "4. srpnja — Ps 56–60",
+      "verse_count": 70,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 56,
+          "chapter_end": 60,
+          "verse_count": 70,
+          "label": "Ps 56–60"
+        }
+      ]
+    },
+    {
+      "day": 187,
+      "date_label": "5. srpnja",
+      "label": "5. srpnja — Ps 61–65",
+      "verse_count": 59,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 61,
+          "chapter_end": 65,
+          "verse_count": 59,
+          "label": "Ps 61–65"
+        }
+      ]
+    },
+    {
+      "day": 188,
+      "date_label": "6. srpnja",
+      "label": "6. srpnja — Ps 66–70",
+      "verse_count": 107,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 66,
+          "chapter_end": 70,
+          "verse_count": 107,
+          "label": "Ps 66–70"
+        }
+      ]
+    },
+    {
+      "day": 189,
+      "date_label": "7. srpnja",
+      "label": "7. srpnja — Ps 71–75",
+      "verse_count": 106,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 71,
+          "chapter_end": 75,
+          "verse_count": 106,
+          "label": "Ps 71–75"
+        }
+      ]
+    },
+    {
+      "day": 190,
+      "date_label": "8. srpnja",
+      "label": "8. srpnja — Ps 76–80",
+      "verse_count": 139,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 76,
+          "chapter_end": 80,
+          "verse_count": 139,
+          "label": "Ps 76–80"
+        }
+      ]
+    },
+    {
+      "day": 191,
+      "date_label": "9. srpnja",
+      "label": "9. srpnja — Ps 81–85",
+      "verse_count": 71,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 81,
+          "chapter_end": 85,
+          "verse_count": 71,
+          "label": "Ps 81–85"
+        }
+      ]
+    },
+    {
+      "day": 192,
+      "date_label": "10. srpnja",
+      "label": "10. srpnja — Ps 86–90",
+      "verse_count": 113,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 86,
+          "chapter_end": 90,
+          "verse_count": 113,
+          "label": "Ps 86–90"
+        }
+      ]
+    },
+    {
+      "day": 193,
+      "date_label": "11. srpnja",
+      "label": "11. srpnja — Ps 91–95",
+      "verse_count": 71,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 91,
+          "chapter_end": 95,
+          "verse_count": 71,
+          "label": "Ps 91–95"
+        }
+      ]
+    },
+    {
+      "day": 194,
+      "date_label": "12. srpnja",
+      "label": "12. srpnja — Ps 96–100",
+      "verse_count": 48,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 96,
+          "chapter_end": 100,
+          "verse_count": 48,
+          "label": "Ps 96–100"
+        }
+      ]
+    },
+    {
+      "day": 195,
+      "date_label": "13. srpnja",
+      "label": "13. srpnja — Ps 101–105",
+      "verse_count": 139,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 101,
+          "chapter_end": 105,
+          "verse_count": 139,
+          "label": "Ps 101–105"
+        }
+      ]
+    },
+    {
+      "day": 196,
+      "date_label": "14. srpnja",
+      "label": "14. srpnja — Ps 106–110",
+      "verse_count": 143,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 106,
+          "chapter_end": 110,
+          "verse_count": 143,
+          "label": "Ps 106–110"
+        }
+      ]
+    },
+    {
+      "day": 197,
+      "date_label": "15. srpnja",
+      "label": "15. srpnja — Ps 111–115",
+      "verse_count": 55,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 111,
+          "chapter_end": 115,
+          "verse_count": 55,
+          "label": "Ps 111–115"
+        }
+      ]
+    },
+    {
+      "day": 198,
+      "date_label": "16. srpnja",
+      "label": "16. srpnja — Ps 116–120",
+      "verse_count": 233,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 116,
+          "chapter_end": 120,
+          "verse_count": 233,
+          "label": "Ps 116–120"
+        }
+      ]
+    },
+    {
+      "day": 199,
+      "date_label": "17. srpnja",
+      "label": "17. srpnja — Ps 121–125",
+      "verse_count": 34,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 121,
+          "chapter_end": 125,
+          "verse_count": 34,
+          "label": "Ps 121–125"
+        }
+      ]
+    },
+    {
+      "day": 200,
+      "date_label": "18. srpnja",
+      "label": "18. srpnja — Ps 126–130",
+      "verse_count": 33,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 126,
+          "chapter_end": 130,
+          "verse_count": 33,
+          "label": "Ps 126–130"
+        }
+      ]
+    },
+    {
+      "day": 201,
+      "date_label": "19. srpnja",
+      "label": "19. srpnja — Ps 131–135",
+      "verse_count": 48,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 131,
+          "chapter_end": 135,
+          "verse_count": 48,
+          "label": "Ps 131–135"
+        }
+      ]
+    },
+    {
+      "day": 202,
+      "date_label": "20. srpnja",
+      "label": "20. srpnja — Ps 136–140",
+      "verse_count": 81,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 136,
+          "chapter_end": 140,
+          "verse_count": 81,
+          "label": "Ps 136–140"
+        }
+      ]
+    },
+    {
+      "day": 203,
+      "date_label": "21. srpnja",
+      "label": "21. srpnja — Ps 141–145",
+      "verse_count": 66,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 141,
+          "chapter_end": 145,
+          "verse_count": 66,
+          "label": "Ps 141–145"
+        }
+      ]
+    },
+    {
+      "day": 204,
+      "date_label": "22. srpnja",
+      "label": "22. srpnja — Ps 146–150",
+      "verse_count": 59,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 146,
+          "chapter_end": 150,
+          "verse_count": 59,
+          "label": "Ps 146–150"
+        }
+      ]
+    },
+    {
+      "day": 205,
+      "date_label": "23. srpnja",
+      "label": "23. srpnja — Izr 1–5",
+      "verse_count": 140,
+      "readings": [
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 140,
+          "label": "Izr 1–5"
+        }
+      ]
+    },
+    {
+      "day": 206,
+      "date_label": "24. srpnja",
+      "label": "24. srpnja — Izr 6–10",
+      "verse_count": 148,
+      "readings": [
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 6,
+          "chapter_end": 10,
+          "verse_count": 148,
+          "label": "Izr 6–10"
+        }
+      ]
+    },
+    {
+      "day": 207,
+      "date_label": "25. srpnja",
+      "label": "25. srpnja — Izr 11–15",
+      "verse_count": 152,
+      "readings": [
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 11,
+          "chapter_end": 15,
+          "verse_count": 152,
+          "label": "Izr 11–15"
+        }
+      ]
+    },
+    {
+      "day": 208,
+      "date_label": "26. srpnja",
+      "label": "26. srpnja — Izr 16–20",
+      "verse_count": 144,
+      "readings": [
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 16,
+          "chapter_end": 20,
+          "verse_count": 144,
+          "label": "Izr 16–20"
+        }
+      ]
+    },
+    {
+      "day": 209,
+      "date_label": "27. srpnja",
+      "label": "27. srpnja — Izr 21–25",
+      "verse_count": 157,
+      "readings": [
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 21,
+          "chapter_end": 25,
+          "verse_count": 157,
+          "label": "Izr 21–25"
+        }
+      ]
+    },
+    {
+      "day": 210,
+      "date_label": "28. srpnja",
+      "label": "28. srpnja — Izr 26–31",
+      "verse_count": 174,
+      "readings": [
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 26,
+          "chapter_end": 31,
+          "verse_count": 174,
+          "label": "Izr 26–31"
+        }
+      ]
+    },
+    {
+      "day": 211,
+      "date_label": "29. srpnja",
+      "label": "29. srpnja — Prop 1–4",
+      "verse_count": 83,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 83,
+          "label": "Prop 1–4"
+        }
+      ]
+    },
+    {
+      "day": 212,
+      "date_label": "30. srpnja",
+      "label": "30. srpnja — Prop 5–8",
+      "verse_count": 77,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 77,
+          "label": "Prop 5–8"
+        }
+      ]
+    },
+    {
+      "day": 213,
+      "date_label": "31. srpnja",
+      "label": "31. srpnja — Prop 9–12",
+      "verse_count": 62,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 9,
+          "chapter_end": 12,
+          "verse_count": 62,
+          "label": "Prop 9–12"
+        }
+      ]
+    },
+    {
+      "day": 214,
+      "date_label": "1. kolovoza",
+      "label": "1. kolovoza — Pj 1–4",
+      "verse_count": 61,
+      "readings": [
+        {
+          "book_order": 26,
+          "book_id": "pjesma-nad-pjesmama",
+          "book_abbr": "Pj",
+          "book_title": "Pjesma nad pjesmama",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 61,
+          "label": "Pj 1–4"
+        }
+      ]
+    },
+    {
+      "day": 215,
+      "date_label": "2. kolovoza",
+      "label": "2. kolovoza — Pj 5–8",
+      "verse_count": 56,
+      "readings": [
+        {
+          "book_order": 26,
+          "book_id": "pjesma-nad-pjesmama",
+          "book_abbr": "Pj",
+          "book_title": "Pjesma nad pjesmama",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 56,
+          "label": "Pj 5–8"
+        }
+      ]
+    },
+    {
+      "day": 216,
+      "date_label": "3. kolovoza",
+      "label": "3. kolovoza — Mudr 1–6",
+      "verse_count": 127,
+      "readings": [
+        {
+          "book_order": 27,
+          "book_id": "knjiga-mudrosti",
+          "book_abbr": "Mudr",
+          "book_title": "Knjiga Mudrosti",
+          "chapter_start": 1,
+          "chapter_end": 6,
+          "verse_count": 127,
+          "label": "Mudr 1–6"
+        }
+      ]
+    },
+    {
+      "day": 217,
+      "date_label": "4. kolovoza",
+      "label": "4. kolovoza — Mudr 6–10",
+      "verse_count": 115,
+      "readings": [
+        {
+          "book_order": 27,
+          "book_id": "knjiga-mudrosti",
+          "book_abbr": "Mudr",
+          "book_title": "Knjiga Mudrosti",
+          "chapter_start": 6,
+          "chapter_end": 10,
+          "verse_count": 115,
+          "label": "Mudr 6–10"
+        }
+      ]
+    },
+    {
+      "day": 218,
+      "date_label": "5. kolovoza",
+      "label": "5. kolovoza — Mudr 11–15",
+      "verse_count": 122,
+      "readings": [
+        {
+          "book_order": 27,
+          "book_id": "knjiga-mudrosti",
+          "book_abbr": "Mudr",
+          "book_title": "Knjiga Mudrosti",
+          "chapter_start": 11,
+          "chapter_end": 15,
+          "verse_count": 122,
+          "label": "Mudr 11–15"
+        }
+      ]
+    },
+    {
+      "day": 219,
+      "date_label": "6. kolovoza",
+      "label": "6. kolovoza — Mudr 16–19",
+      "verse_count": 96,
+      "readings": [
+        {
+          "book_order": 27,
+          "book_id": "knjiga-mudrosti",
+          "book_abbr": "Mudr",
+          "book_title": "Knjiga Mudrosti",
+          "chapter_start": 16,
+          "chapter_end": 19,
+          "verse_count": 96,
+          "label": "Mudr 16–19"
+        }
+      ]
+    },
+    {
+      "day": 220,
+      "date_label": "7. kolovoza",
+      "label": "7. kolovoza — Sir 1–5",
+      "verse_count": 121,
+      "readings": [
+        {
+          "book_order": 28,
+          "book_id": "knjiga-sirahova",
+          "book_abbr": "Sir",
+          "book_title": "Knjiga Sirahova",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 121,
+          "label": "Sir 1–5"
+        }
+      ]
+    },
+    {
+      "day": 221,
+      "date_label": "8. kolovoza",
+      "label": "8. kolovoza — Sir 6–10",
+      "verse_count": 140,
+      "readings": [
+        {
+          "book_order": 28,
+          "book_id": "knjiga-sirahova",
+          "book_abbr": "Sir",
+          "book_title": "Knjiga Sirahova",
+          "chapter_start": 6,
+          "chapter_end": 10,
+          "verse_count": 140,
+          "label": "Sir 6–10"
+        }
+      ]
+    },
+    {
+      "day": 222,
+      "date_label": "9. kolovoza",
+      "label": "9. kolovoza — Sir 11–15",
+      "verse_count": 122,
+      "readings": [
+        {
+          "book_order": 28,
+          "book_id": "knjiga-sirahova",
+          "book_abbr": "Sir",
+          "book_title": "Knjiga Sirahova",
+          "chapter_start": 11,
+          "chapter_end": 15,
+          "verse_count": 122,
+          "label": "Sir 11–15"
+        }
+      ]
+    },
+    {
+      "day": 223,
+      "date_label": "10. kolovoza",
+      "label": "10. kolovoza — Sir 16–20",
+      "verse_count": 145,
+      "readings": [
+        {
+          "book_order": 28,
+          "book_id": "knjiga-sirahova",
+          "book_abbr": "Sir",
+          "book_title": "Knjiga Sirahova",
+          "chapter_start": 16,
+          "chapter_end": 20,
+          "verse_count": 145,
+          "label": "Sir 16–20"
+        }
+      ]
+    },
+    {
+      "day": 224,
+      "date_label": "11. kolovoza",
+      "label": "11. kolovoza — Sir 21–25",
+      "verse_count": 137,
+      "readings": [
+        {
+          "book_order": 28,
+          "book_id": "knjiga-sirahova",
+          "book_abbr": "Sir",
+          "book_title": "Knjiga Sirahova",
+          "chapter_start": 21,
+          "chapter_end": 25,
+          "verse_count": 137,
+          "label": "Sir 21–25"
+        }
+      ]
+    },
+    {
+      "day": 225,
+      "date_label": "12. kolovoza",
+      "label": "12. kolovoza — Sir 26–30",
+      "verse_count": 129,
+      "readings": [
+        {
+          "book_order": 28,
+          "book_id": "knjiga-sirahova",
+          "book_abbr": "Sir",
+          "book_title": "Knjiga Sirahova",
+          "chapter_start": 26,
+          "chapter_end": 30,
+          "verse_count": 129,
+          "label": "Sir 26–30"
+        }
+      ]
+    },
+    {
+      "day": 226,
+      "date_label": "13. kolovoza",
+      "label": "13. kolovoza — Sir 31–35",
+      "verse_count": 138,
+      "readings": [
+        {
+          "book_order": 28,
+          "book_id": "knjiga-sirahova",
+          "book_abbr": "Sir",
+          "book_title": "Knjiga Sirahova",
+          "chapter_start": 31,
+          "chapter_end": 35,
+          "verse_count": 138,
+          "label": "Sir 31–35"
+        }
+      ]
+    },
+    {
+      "day": 227,
+      "date_label": "14. kolovoza",
+      "label": "14. kolovoza — Sir 36–40",
+      "verse_count": 157,
+      "readings": [
+        {
+          "book_order": 28,
+          "book_id": "knjiga-sirahova",
+          "book_abbr": "Sir",
+          "book_title": "Knjiga Sirahova",
+          "chapter_start": 36,
+          "chapter_end": 40,
+          "verse_count": 157,
+          "label": "Sir 36–40"
+        }
+      ]
+    },
+    {
+      "day": 228,
+      "date_label": "15. kolovoza",
+      "label": "15. kolovoza — Sir 41–45",
+      "verse_count": 134,
+      "readings": [
+        {
+          "book_order": 28,
+          "book_id": "knjiga-sirahova",
+          "book_abbr": "Sir",
+          "book_title": "Knjiga Sirahova",
+          "chapter_start": 41,
+          "chapter_end": 45,
+          "verse_count": 134,
+          "label": "Sir 41–45"
+        }
+      ]
+    },
+    {
+      "day": 229,
+      "date_label": "16. kolovoza",
+      "label": "16. kolovoza — Sir 46–51",
+      "verse_count": 145,
+      "readings": [
+        {
+          "book_order": 28,
+          "book_id": "knjiga-sirahova",
+          "book_abbr": "Sir",
+          "book_title": "Knjiga Sirahova",
+          "chapter_start": 46,
+          "chapter_end": 51,
+          "verse_count": 145,
+          "label": "Sir 46–51"
+        }
+      ]
+    },
+    {
+      "day": 230,
+      "date_label": "17. kolovoza",
+      "label": "17. kolovoza — Iz 1–4",
+      "verse_count": 85,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 85,
+          "label": "Iz 1–4"
+        }
+      ]
+    },
+    {
+      "day": 231,
+      "date_label": "18. kolovoza",
+      "label": "18. kolovoza — Iz 5–8",
+      "verse_count": 92,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 92,
+          "label": "Iz 5–8"
+        }
+      ]
+    },
+    {
+      "day": 232,
+      "date_label": "19. kolovoza",
+      "label": "19. kolovoza — Iz 9–12",
+      "verse_count": 76,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 9,
+          "chapter_end": 12,
+          "verse_count": 76,
+          "label": "Iz 9–12"
+        }
+      ]
+    },
+    {
+      "day": 233,
+      "date_label": "20. kolovoza",
+      "label": "20. kolovoza — Iz 13–16",
+      "verse_count": 77,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 13,
+          "chapter_end": 16,
+          "verse_count": 77,
+          "label": "Iz 13–16"
+        }
+      ]
+    },
+    {
+      "day": 234,
+      "date_label": "21. kolovoza",
+      "label": "21. kolovoza — Iz 17–20",
+      "verse_count": 52,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 17,
+          "chapter_end": 20,
+          "verse_count": 52,
+          "label": "Iz 17–20"
+        }
+      ]
+    },
+    {
+      "day": 235,
+      "date_label": "22. kolovoza",
+      "label": "22. kolovoza — Iz 21–24",
+      "verse_count": 83,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 21,
+          "chapter_end": 24,
+          "verse_count": 83,
+          "label": "Iz 21–24"
+        }
+      ]
+    },
+    {
+      "day": 236,
+      "date_label": "23. kolovoza",
+      "label": "23. kolovoza — Iz 25–28",
+      "verse_count": 75,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 25,
+          "chapter_end": 28,
+          "verse_count": 75,
+          "label": "Iz 25–28"
+        }
+      ]
+    },
+    {
+      "day": 237,
+      "date_label": "24. kolovoza",
+      "label": "24. kolovoza — Iz 29–32",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 29,
+          "chapter_end": 32,
+          "verse_count": 86,
+          "label": "Iz 29–32"
+        }
+      ]
+    },
+    {
+      "day": 238,
+      "date_label": "25. kolovoza",
+      "label": "25. kolovoza — Iz 33–36",
+      "verse_count": 73,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 33,
+          "chapter_end": 36,
+          "verse_count": 73,
+          "label": "Iz 33–36"
+        }
+      ]
+    },
+    {
+      "day": 239,
+      "date_label": "26. kolovoza",
+      "label": "26. kolovoza — Iz 37–39",
+      "verse_count": 68,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 37,
+          "chapter_end": 39,
+          "verse_count": 68,
+          "label": "Iz 37–39"
+        }
+      ]
+    },
+    {
+      "day": 240,
+      "date_label": "27. kolovoza",
+      "label": "27. kolovoza — Iz 40–43",
+      "verse_count": 113,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 40,
+          "chapter_end": 43,
+          "verse_count": 113,
+          "label": "Iz 40–43"
+        }
+      ]
+    },
+    {
+      "day": 241,
+      "date_label": "28. kolovoza",
+      "label": "28. kolovoza — Iz 44–47",
+      "verse_count": 81,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 44,
+          "chapter_end": 47,
+          "verse_count": 81,
+          "label": "Iz 44–47"
+        }
+      ]
+    },
+    {
+      "day": 242,
+      "date_label": "29. kolovoza",
+      "label": "29. kolovoza — Iz 48–51",
+      "verse_count": 82,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 48,
+          "chapter_end": 51,
+          "verse_count": 82,
+          "label": "Iz 48–51"
+        }
+      ]
+    },
+    {
+      "day": 243,
+      "date_label": "30. kolovoza",
+      "label": "30. kolovoza — Iz 52–55",
+      "verse_count": 57,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 52,
+          "chapter_end": 55,
+          "verse_count": 57,
+          "label": "Iz 52–55"
+        }
+      ]
+    },
+    {
+      "day": 244,
+      "date_label": "31. kolovoza",
+      "label": "31. kolovoza — Iz 56–59",
+      "verse_count": 68,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 56,
+          "chapter_end": 59,
+          "verse_count": 68,
+          "label": "Iz 56–59"
+        }
+      ]
+    },
+    {
+      "day": 245,
+      "date_label": "1. rujna",
+      "label": "1. rujna — Iz 60–66",
+      "verse_count": 124,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 60,
+          "chapter_end": 66,
+          "verse_count": 124,
+          "label": "Iz 60–66"
+        }
+      ]
+    },
+    {
+      "day": 246,
+      "date_label": "2. rujna",
+      "label": "2. rujna — Jr 1–4",
+      "verse_count": 112,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 112,
+          "label": "Jr 1–4"
+        }
+      ]
+    },
+    {
+      "day": 247,
+      "date_label": "3. rujna",
+      "label": "3. rujna — Jr 5–8",
+      "verse_count": 118,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 118,
+          "label": "Jr 5–8"
+        }
+      ]
+    },
+    {
+      "day": 248,
+      "date_label": "4. rujna",
+      "label": "4. rujna — Jr 9–12",
+      "verse_count": 90,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 9,
+          "chapter_end": 12,
+          "verse_count": 90,
+          "label": "Jr 9–12"
+        }
+      ]
+    },
+    {
+      "day": 249,
+      "date_label": "5. rujna",
+      "label": "5. rujna — Jr 13–17",
+      "verse_count": 118,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 13,
+          "chapter_end": 17,
+          "verse_count": 118,
+          "label": "Jr 13–17"
+        }
+      ]
+    },
+    {
+      "day": 250,
+      "date_label": "6. rujna",
+      "label": "6. rujna — Jr 18–21",
+      "verse_count": 70,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 18,
+          "chapter_end": 21,
+          "verse_count": 70,
+          "label": "Jr 18–21"
+        }
+      ]
+    },
+    {
+      "day": 251,
+      "date_label": "7. rujna",
+      "label": "7. rujna — Jr 22–25",
+      "verse_count": 118,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 22,
+          "chapter_end": 25,
+          "verse_count": 118,
+          "label": "Jr 22–25"
+        }
+      ]
+    },
+    {
+      "day": 252,
+      "date_label": "8. rujna",
+      "label": "8. rujna — Jr 26–29",
+      "verse_count": 95,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 26,
+          "chapter_end": 29,
+          "verse_count": 95,
+          "label": "Jr 26–29"
+        }
+      ]
+    },
+    {
+      "day": 253,
+      "date_label": "9. rujna",
+      "label": "9. rujna — Jr 30–33",
+      "verse_count": 134,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 30,
+          "chapter_end": 33,
+          "verse_count": 134,
+          "label": "Jr 30–33"
+        }
+      ]
+    },
+    {
+      "day": 254,
+      "date_label": "10. rujna",
+      "label": "10. rujna — Jr 34–37",
+      "verse_count": 94,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 34,
+          "chapter_end": 37,
+          "verse_count": 94,
+          "label": "Jr 34–37"
+        }
+      ]
+    },
+    {
+      "day": 255,
+      "date_label": "11. rujna",
+      "label": "11. rujna — Jr 38–41",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 38,
+          "chapter_end": 41,
+          "verse_count": 80,
+          "label": "Jr 38–41"
+        }
+      ]
+    },
+    {
+      "day": 256,
+      "date_label": "12. rujna",
+      "label": "12. rujna — Jr 42–45",
+      "verse_count": 70,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 42,
+          "chapter_end": 45,
+          "verse_count": 70,
+          "label": "Jr 42–45"
+        }
+      ]
+    },
+    {
+      "day": 257,
+      "date_label": "13. rujna",
+      "label": "13. rujna — Jr 46–49",
+      "verse_count": 121,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 46,
+          "chapter_end": 49,
+          "verse_count": 121,
+          "label": "Jr 46–49"
+        }
+      ]
+    },
+    {
+      "day": 258,
+      "date_label": "14. rujna",
+      "label": "14. rujna — Jr 50–52",
+      "verse_count": 144,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 50,
+          "chapter_end": 52,
+          "verse_count": 144,
+          "label": "Jr 50–52"
+        }
+      ]
+    },
+    {
+      "day": 259,
+      "date_label": "15. rujna",
+      "label": "15. rujna — Tuž 1–5",
+      "verse_count": 154,
+      "readings": [
+        {
+          "book_order": 31,
+          "book_id": "tuzaljke",
+          "book_abbr": "Tuž",
+          "book_title": "Tužaljke",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 154,
+          "label": "Tuž 1–5"
+        }
+      ]
+    },
+    {
+      "day": 260,
+      "date_label": "16. rujna",
+      "label": "16. rujna — Bar 1–6",
+      "verse_count": 213,
+      "readings": [
+        {
+          "book_order": 32,
+          "book_id": "baruh",
+          "book_abbr": "Bar",
+          "book_title": "Baruh",
+          "chapter_start": 1,
+          "chapter_end": 6,
+          "verse_count": 213,
+          "label": "Bar 1–6"
+        }
+      ]
+    },
+    {
+      "day": 261,
+      "date_label": "17. rujna",
+      "label": "17. rujna — Ez 1–4",
+      "verse_count": 82,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 82,
+          "label": "Ez 1–4"
+        }
+      ]
+    },
+    {
+      "day": 262,
+      "date_label": "18. rujna",
+      "label": "18. rujna — Ez 5–8",
+      "verse_count": 76,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 76,
+          "label": "Ez 5–8"
+        }
+      ]
+    },
+    {
+      "day": 263,
+      "date_label": "19. rujna",
+      "label": "19. rujna — Ez 9–12",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 9,
+          "chapter_end": 12,
+          "verse_count": 86,
+          "label": "Ez 9–12"
+        }
+      ]
+    },
+    {
+      "day": 264,
+      "date_label": "20. rujna",
+      "label": "20. rujna — Ez 13–16",
+      "verse_count": 117,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 13,
+          "chapter_end": 16,
+          "verse_count": 117,
+          "label": "Ez 13–16"
+        }
+      ]
+    },
+    {
+      "day": 265,
+      "date_label": "21. rujna",
+      "label": "21. rujna — Ez 17–20",
+      "verse_count": 114,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 17,
+          "chapter_end": 20,
+          "verse_count": 114,
+          "label": "Ez 17–20"
+        }
+      ]
+    },
+    {
+      "day": 266,
+      "date_label": "22. rujna",
+      "label": "22. rujna — Ez 21–24",
+      "verse_count": 144,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 21,
+          "chapter_end": 24,
+          "verse_count": 144,
+          "label": "Ez 21–24"
+        }
+      ]
+    },
+    {
+      "day": 267,
+      "date_label": "23. rujna",
+      "label": "23. rujna — Ez 25–28",
+      "verse_count": 100,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 25,
+          "chapter_end": 28,
+          "verse_count": 100,
+          "label": "Ez 25–28"
+        }
+      ]
+    },
+    {
+      "day": 268,
+      "date_label": "24. rujna",
+      "label": "24. rujna — Ez 29–32",
+      "verse_count": 97,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 29,
+          "chapter_end": 32,
+          "verse_count": 97,
+          "label": "Ez 29–32"
+        }
+      ]
+    },
+    {
+      "day": 269,
+      "date_label": "25. rujna",
+      "label": "25. rujna — Ez 33–36",
+      "verse_count": 117,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 33,
+          "chapter_end": 36,
+          "verse_count": 117,
+          "label": "Ez 33–36"
+        }
+      ]
+    },
+    {
+      "day": 270,
+      "date_label": "26. rujna",
+      "label": "26. rujna — Ez 37–40",
+      "verse_count": 129,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 37,
+          "chapter_end": 40,
+          "verse_count": 129,
+          "label": "Ez 37–40"
+        }
+      ]
+    },
+    {
+      "day": 271,
+      "date_label": "27. rujna",
+      "label": "27. rujna — Ez 41–44",
+      "verse_count": 104,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 41,
+          "chapter_end": 44,
+          "verse_count": 104,
+          "label": "Ez 41–44"
+        }
+      ]
+    },
+    {
+      "day": 272,
+      "date_label": "28. rujna",
+      "label": "28. rujna — Ez 45–48",
+      "verse_count": 107,
+      "readings": [
+        {
+          "book_order": 33,
+          "book_id": "ezekiel",
+          "book_abbr": "Ez",
+          "book_title": "Ezekiel",
+          "chapter_start": 45,
+          "chapter_end": 48,
+          "verse_count": 107,
+          "label": "Ez 45–48"
+        }
+      ]
+    },
+    {
+      "day": 273,
+      "date_label": "29. rujna",
+      "label": "29. rujna — Dn 1–5",
+      "verse_count": 224,
+      "readings": [
+        {
+          "book_order": 34,
+          "book_id": "daniel",
+          "book_abbr": "Dn",
+          "book_title": "Daniel",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 224,
+          "label": "Dn 1–5"
+        }
+      ]
+    },
+    {
+      "day": 274,
+      "date_label": "30. rujna",
+      "label": "30. rujna — Dn 6–10",
+      "verse_count": 132,
+      "readings": [
+        {
+          "book_order": 34,
+          "book_id": "daniel",
+          "book_abbr": "Dn",
+          "book_title": "Daniel",
+          "chapter_start": 6,
+          "chapter_end": 10,
+          "verse_count": 132,
+          "label": "Dn 6–10"
+        }
+      ]
+    },
+    {
+      "day": 275,
+      "date_label": "1. listopada",
+      "label": "1. listopada — Dn 11–14",
+      "verse_count": 164,
+      "readings": [
+        {
+          "book_order": 34,
+          "book_id": "daniel",
+          "book_abbr": "Dn",
+          "book_title": "Daniel",
+          "chapter_start": 11,
+          "chapter_end": 14,
+          "verse_count": 164,
+          "label": "Dn 11–14"
+        }
+      ]
+    },
+    {
+      "day": 276,
+      "date_label": "2. listopada",
+      "label": "2. listopada — Hoš 1–4",
+      "verse_count": 58,
+      "readings": [
+        {
+          "book_order": 35,
+          "book_id": "hosea",
+          "book_abbr": "Hoš",
+          "book_title": "Hošea",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 58,
+          "label": "Hoš 1–4"
+        }
+      ]
+    },
+    {
+      "day": 277,
+      "date_label": "3. listopada",
+      "label": "3. listopada — Hoš 5–8",
+      "verse_count": 56,
+      "readings": [
+        {
+          "book_order": 35,
+          "book_id": "hosea",
+          "book_abbr": "Hoš",
+          "book_title": "Hošea",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 56,
+          "label": "Hoš 5–8"
+        }
+      ]
+    },
+    {
+      "day": 278,
+      "date_label": "4. listopada",
+      "label": "4. listopada — Hoš 9–14",
+      "verse_count": 83,
+      "readings": [
+        {
+          "book_order": 35,
+          "book_id": "hosea",
+          "book_abbr": "Hoš",
+          "book_title": "Hošea",
+          "chapter_start": 9,
+          "chapter_end": 14,
+          "verse_count": 83,
+          "label": "Hoš 9–14"
+        }
+      ]
+    },
+    {
+      "day": 279,
+      "date_label": "5. listopada",
+      "label": "5. listopada — Jl 1–4",
+      "verse_count": 73,
+      "readings": [
+        {
+          "book_order": 36,
+          "book_id": "joel",
+          "book_abbr": "Jl",
+          "book_title": "Joel",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 73,
+          "label": "Jl 1–4"
+        }
+      ]
+    },
+    {
+      "day": 280,
+      "date_label": "6. listopada",
+      "label": "6. listopada — Am 1–4",
+      "verse_count": 59,
+      "readings": [
+        {
+          "book_order": 37,
+          "book_id": "amos",
+          "book_abbr": "Am",
+          "book_title": "Amos",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 59,
+          "label": "Am 1–4"
+        }
+      ]
+    },
+    {
+      "day": 281,
+      "date_label": "7. listopada",
+      "label": "7. listopada — Am 5–9",
+      "verse_count": 87,
+      "readings": [
+        {
+          "book_order": 37,
+          "book_id": "amos",
+          "book_abbr": "Am",
+          "book_title": "Amos",
+          "chapter_start": 5,
+          "chapter_end": 9,
+          "verse_count": 87,
+          "label": "Am 5–9"
+        }
+      ]
+    },
+    {
+      "day": 282,
+      "date_label": "8. listopada",
+      "label": "8. listopada — Ob 1",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 38,
+          "book_id": "obadija",
+          "book_abbr": "Ob",
+          "book_title": "Obadija",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 21,
+          "label": "Ob 1"
+        }
+      ]
+    },
+    {
+      "day": 283,
+      "date_label": "9. listopada",
+      "label": "9. listopada — Jon 1–4",
+      "verse_count": 48,
+      "readings": [
+        {
+          "book_order": 39,
+          "book_id": "jona",
+          "book_abbr": "Jon",
+          "book_title": "Jona",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 48,
+          "label": "Jon 1–4"
+        }
+      ]
+    },
+    {
+      "day": 284,
+      "date_label": "10. listopada",
+      "label": "10. listopada — Mih 1–4",
+      "verse_count": 55,
+      "readings": [
+        {
+          "book_order": 40,
+          "book_id": "mihej",
+          "book_abbr": "Mih",
+          "book_title": "Mihej",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 55,
+          "label": "Mih 1–4"
+        }
+      ]
+    },
+    {
+      "day": 285,
+      "date_label": "11. listopada",
+      "label": "11. listopada — Mih 5–7",
+      "verse_count": 50,
+      "readings": [
+        {
+          "book_order": 40,
+          "book_id": "mihej",
+          "book_abbr": "Mih",
+          "book_title": "Mihej",
+          "chapter_start": 5,
+          "chapter_end": 7,
+          "verse_count": 50,
+          "label": "Mih 5–7"
+        }
+      ]
+    },
+    {
+      "day": 286,
+      "date_label": "12. listopada",
+      "label": "12. listopada — Nah 1–3",
+      "verse_count": 47,
+      "readings": [
+        {
+          "book_order": 41,
+          "book_id": "nahum",
+          "book_abbr": "Nah",
+          "book_title": "Nahum",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 47,
+          "label": "Nah 1–3"
+        }
+      ]
+    },
+    {
+      "day": 287,
+      "date_label": "13. listopada",
+      "label": "13. listopada — Hab 1–3",
+      "verse_count": 56,
+      "readings": [
+        {
+          "book_order": 42,
+          "book_id": "habakuk",
+          "book_abbr": "Hab",
+          "book_title": "Habakuk",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 56,
+          "label": "Hab 1–3"
+        }
+      ]
+    },
+    {
+      "day": 288,
+      "date_label": "14. listopada",
+      "label": "14. listopada — Sef 1–3",
+      "verse_count": 53,
+      "readings": [
+        {
+          "book_order": 43,
+          "book_id": "sefanija",
+          "book_abbr": "Sef",
+          "book_title": "Sefanija",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 53,
+          "label": "Sef 1–3"
+        }
+      ]
+    },
+    {
+      "day": 289,
+      "date_label": "15. listopada",
+      "label": "15. listopada — Hag 1–2",
+      "verse_count": 38,
+      "readings": [
+        {
+          "book_order": 44,
+          "book_id": "hagaj",
+          "book_abbr": "Hag",
+          "book_title": "Hagaj",
+          "chapter_start": 1,
+          "chapter_end": 2,
+          "verse_count": 38,
+          "label": "Hag 1–2"
+        }
+      ]
+    },
+    {
+      "day": 290,
+      "date_label": "16. listopada",
+      "label": "16. listopada — Zah 1–3",
+      "verse_count": 44,
+      "readings": [
+        {
+          "book_order": 45,
+          "book_id": "zaharija",
+          "book_abbr": "Zah",
+          "book_title": "Zaharija",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 44,
+          "label": "Zah 1–3"
+        }
+      ]
+    },
+    {
+      "day": 291,
+      "date_label": "17. listopada",
+      "label": "17. listopada — Zah 4–6",
+      "verse_count": 39,
+      "readings": [
+        {
+          "book_order": 45,
+          "book_id": "zaharija",
+          "book_abbr": "Zah",
+          "book_title": "Zaharija",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 39,
+          "label": "Zah 4–6"
+        }
+      ]
+    },
+    {
+      "day": 292,
+      "date_label": "18. listopada",
+      "label": "18. listopada — Zah 7–9",
+      "verse_count": 54,
+      "readings": [
+        {
+          "book_order": 45,
+          "book_id": "zaharija",
+          "book_abbr": "Zah",
+          "book_title": "Zaharija",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 54,
+          "label": "Zah 7–9"
+        }
+      ]
+    },
+    {
+      "day": 293,
+      "date_label": "19. listopada",
+      "label": "19. listopada — Zah 10–14",
+      "verse_count": 73,
+      "readings": [
+        {
+          "book_order": 45,
+          "book_id": "zaharija",
+          "book_abbr": "Zah",
+          "book_title": "Zaharija",
+          "chapter_start": 10,
+          "chapter_end": 14,
+          "verse_count": 73,
+          "label": "Zah 10–14"
+        }
+      ]
+    },
+    {
+      "day": 294,
+      "date_label": "20. listopada",
+      "label": "20. listopada — Mal 1–3",
+      "verse_count": 55,
+      "readings": [
+        {
+          "book_order": 46,
+          "book_id": "malahija",
+          "book_abbr": "Mal",
+          "book_title": "Malahija",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 55,
+          "label": "Mal 1–3"
+        }
+      ]
+    },
+    {
+      "day": 295,
+      "date_label": "21. listopada",
+      "label": "21. listopada — Mt 1–3",
+      "verse_count": 65,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 65,
+          "label": "Mt 1–3"
+        }
+      ]
+    },
+    {
+      "day": 296,
+      "date_label": "22. listopada",
+      "label": "22. listopada — Mt 4–6",
+      "verse_count": 107,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 107,
+          "label": "Mt 4–6"
+        }
+      ]
+    },
+    {
+      "day": 297,
+      "date_label": "23. listopada",
+      "label": "23. listopada — Mt 7–9",
+      "verse_count": 101,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 101,
+          "label": "Mt 7–9"
+        }
+      ]
+    },
+    {
+      "day": 298,
+      "date_label": "24. listopada",
+      "label": "24. listopada — Mt 10–12",
+      "verse_count": 122,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 122,
+          "label": "Mt 10–12"
+        }
+      ]
+    },
+    {
+      "day": 299,
+      "date_label": "25. listopada",
+      "label": "25. listopada — Mt 13–15",
+      "verse_count": 133,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 133,
+          "label": "Mt 13–15"
+        }
+      ]
+    },
+    {
+      "day": 300,
+      "date_label": "26. listopada",
+      "label": "26. listopada — Mt 16–18",
+      "verse_count": 89,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 89,
+          "label": "Mt 16–18"
+        }
+      ]
+    },
+    {
+      "day": 301,
+      "date_label": "27. listopada",
+      "label": "27. listopada — Mt 19–21",
+      "verse_count": 110,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 110,
+          "label": "Mt 19–21"
+        }
+      ]
+    },
+    {
+      "day": 302,
+      "date_label": "28. listopada",
+      "label": "28. listopada — Mt 22–24",
+      "verse_count": 136,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 136,
+          "label": "Mt 22–24"
+        }
+      ]
+    },
+    {
+      "day": 303,
+      "date_label": "29. listopada",
+      "label": "29. listopada — Mt 25–28",
+      "verse_count": 207,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 25,
+          "chapter_end": 28,
+          "verse_count": 207,
+          "label": "Mt 25–28"
+        }
+      ]
+    },
+    {
+      "day": 304,
+      "date_label": "30. listopada",
+      "label": "30. listopada — Mk 1–3",
+      "verse_count": 108,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 108,
+          "label": "Mk 1–3"
+        }
+      ]
+    },
+    {
+      "day": 305,
+      "date_label": "31. listopada",
+      "label": "31. listopada — Mk 4–6",
+      "verse_count": 140,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 140,
+          "label": "Mk 4–6"
+        }
+      ]
+    },
+    {
+      "day": 306,
+      "date_label": "1. studenoga",
+      "label": "1. studenoga — Mk 7–9",
+      "verse_count": 123,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 123,
+          "label": "Mk 7–9"
+        }
+      ]
+    },
+    {
+      "day": 307,
+      "date_label": "2. studenoga",
+      "label": "2. studenoga — Mk 10–12",
+      "verse_count": 128,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 128,
+          "label": "Mk 10–12"
+        }
+      ]
+    },
+    {
+      "day": 308,
+      "date_label": "3. studenoga",
+      "label": "3. studenoga — Mk 13–16",
+      "verse_count": 175,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 13,
+          "chapter_end": 16,
+          "verse_count": 175,
+          "label": "Mk 13–16"
+        }
+      ]
+    },
+    {
+      "day": 309,
+      "date_label": "4. studenoga",
+      "label": "4. studenoga — Lk 1–3",
+      "verse_count": 170,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 170,
+          "label": "Lk 1–3"
+        }
+      ]
+    },
+    {
+      "day": 310,
+      "date_label": "5. studenoga",
+      "label": "5. studenoga — Lk 4–6",
+      "verse_count": 132,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 132,
+          "label": "Lk 4–6"
+        }
+      ]
+    },
+    {
+      "day": 311,
+      "date_label": "6. studenoga",
+      "label": "6. studenoga — Lk 7–9",
+      "verse_count": 168,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 168,
+          "label": "Lk 7–9"
+        }
+      ]
+    },
+    {
+      "day": 312,
+      "date_label": "7. studenoga",
+      "label": "7. studenoga — Lk 10–12",
+      "verse_count": 155,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 155,
+          "label": "Lk 10–12"
+        }
+      ]
+    },
+    {
+      "day": 313,
+      "date_label": "8. studenoga",
+      "label": "8. studenoga — Lk 13–15",
+      "verse_count": 102,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 102,
+          "label": "Lk 13–15"
+        }
+      ]
+    },
+    {
+      "day": 314,
+      "date_label": "9. studenoga",
+      "label": "9. studenoga — Lk 16–18",
+      "verse_count": 110,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 110,
+          "label": "Lk 16–18"
+        }
+      ]
+    },
+    {
+      "day": 315,
+      "date_label": "10. studenoga",
+      "label": "10. studenoga — Lk 19–21",
+      "verse_count": 133,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 133,
+          "label": "Lk 19–21"
+        }
+      ]
+    },
+    {
+      "day": 316,
+      "date_label": "11. studenoga",
+      "label": "11. studenoga — Lk 22–24",
+      "verse_count": 179,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 179,
+          "label": "Lk 22–24"
+        }
+      ]
+    },
+    {
+      "day": 317,
+      "date_label": "12. studenoga",
+      "label": "12. studenoga — Iv 1–3",
+      "verse_count": 112,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 112,
+          "label": "Iv 1–3"
+        }
+      ]
+    },
+    {
+      "day": 318,
+      "date_label": "13. studenoga",
+      "label": "13. studenoga — Iv 4–6",
+      "verse_count": 171,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 171,
+          "label": "Iv 4–6"
+        }
+      ]
+    },
+    {
+      "day": 319,
+      "date_label": "14. studenoga",
+      "label": "14. studenoga — Iv 7–9",
+      "verse_count": 153,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 153,
+          "label": "Iv 7–9"
+        }
+      ]
+    },
+    {
+      "day": 320,
+      "date_label": "15. studenoga",
+      "label": "15. studenoga — Iv 10–12",
+      "verse_count": 149,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 149,
+          "label": "Iv 10–12"
+        }
+      ]
+    },
+    {
+      "day": 321,
+      "date_label": "16. studenoga",
+      "label": "16. studenoga — Iv 13–15",
+      "verse_count": 96,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 96,
+          "label": "Iv 13–15"
+        }
+      ]
+    },
+    {
+      "day": 322,
+      "date_label": "17. studenoga",
+      "label": "17. studenoga — Iv 16–18",
+      "verse_count": 99,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 99,
+          "label": "Iv 16–18"
+        }
+      ]
+    },
+    {
+      "day": 323,
+      "date_label": "18. studenoga",
+      "label": "18. studenoga — Iv 19–21",
+      "verse_count": 98,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 98,
+          "label": "Iv 19–21"
+        }
+      ]
+    },
+    {
+      "day": 324,
+      "date_label": "19. studenoga",
+      "label": "19. studenoga — Dj 1–4",
+      "verse_count": 136,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 136,
+          "label": "Dj 1–4"
+        }
+      ]
+    },
+    {
+      "day": 325,
+      "date_label": "20. studenoga",
+      "label": "20. studenoga — Dj 5–8",
+      "verse_count": 156,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 156,
+          "label": "Dj 5–8"
+        }
+      ]
+    },
+    {
+      "day": 326,
+      "date_label": "21. studenoga",
+      "label": "21. studenoga — Dj 9–12",
+      "verse_count": 146,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 9,
+          "chapter_end": 12,
+          "verse_count": 146,
+          "label": "Dj 9–12"
+        }
+      ]
+    },
+    {
+      "day": 327,
+      "date_label": "22. studenoga",
+      "label": "22. studenoga — Dj 13–15",
+      "verse_count": 120,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 120,
+          "label": "Dj 13–15"
+        }
+      ]
+    },
+    {
+      "day": 328,
+      "date_label": "23. studenoga",
+      "label": "23. studenoga — Dj 16–18",
+      "verse_count": 102,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 102,
+          "label": "Dj 16–18"
+        }
+      ]
+    },
+    {
+      "day": 329,
+      "date_label": "24. studenoga",
+      "label": "24. studenoga — Dj 19–21",
+      "verse_count": 118,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 118,
+          "label": "Dj 19–21"
+        }
+      ]
+    },
+    {
+      "day": 330,
+      "date_label": "25. studenoga",
+      "label": "25. studenoga — Dj 22–24",
+      "verse_count": 91,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 91,
+          "label": "Dj 22–24"
+        }
+      ]
+    },
+    {
+      "day": 331,
+      "date_label": "26. studenoga",
+      "label": "26. studenoga — Dj 25–28",
+      "verse_count": 133,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 25,
+          "chapter_end": 28,
+          "verse_count": 133,
+          "label": "Dj 25–28"
+        }
+      ]
+    },
+    {
+      "day": 332,
+      "date_label": "27. studenoga",
+      "label": "27. studenoga — Rim 1–4",
+      "verse_count": 117,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 117,
+          "label": "Rim 1–4"
+        }
+      ]
+    },
+    {
+      "day": 333,
+      "date_label": "28. studenoga",
+      "label": "28. studenoga — Rim 5–8",
+      "verse_count": 108,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 108,
+          "label": "Rim 5–8"
+        }
+      ]
+    },
+    {
+      "day": 334,
+      "date_label": "29. studenoga",
+      "label": "29. studenoga — Rim 9–12",
+      "verse_count": 111,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 9,
+          "chapter_end": 12,
+          "verse_count": 111,
+          "label": "Rim 9–12"
+        }
+      ]
+    },
+    {
+      "day": 335,
+      "date_label": "30. studenoga",
+      "label": "30. studenoga — Rim 13–16",
+      "verse_count": 96,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 13,
+          "chapter_end": 16,
+          "verse_count": 96,
+          "label": "Rim 13–16"
+        }
+      ]
+    },
+    {
+      "day": 336,
+      "date_label": "1. prosinca",
+      "label": "1. prosinca — 1 Kor 1–4",
+      "verse_count": 91,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 91,
+          "label": "1 Kor 1–4"
+        }
+      ]
+    },
+    {
+      "day": 337,
+      "date_label": "2. prosinca",
+      "label": "2. prosinca — 1 Kor 5–8",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 86,
+          "label": "1 Kor 5–8"
+        }
+      ]
+    },
+    {
+      "day": 338,
+      "date_label": "3. prosinca",
+      "label": "3. prosinca — 1 Kor 9–12",
+      "verse_count": 125,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 9,
+          "chapter_end": 12,
+          "verse_count": 125,
+          "label": "1 Kor 9–12"
+        }
+      ]
+    },
+    {
+      "day": 339,
+      "date_label": "4. prosinca",
+      "label": "4. prosinca — 1 Kor 13–16",
+      "verse_count": 135,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 13,
+          "chapter_end": 16,
+          "verse_count": 135,
+          "label": "1 Kor 13–16"
+        }
+      ]
+    },
+    {
+      "day": 340,
+      "date_label": "5. prosinca",
+      "label": "5. prosinca — 2 Kor 1–4",
+      "verse_count": 77,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 77,
+          "label": "2 Kor 1–4"
+        }
+      ]
+    },
+    {
+      "day": 341,
+      "date_label": "6. prosinca",
+      "label": "6. prosinca — 2 Kor 5–8",
+      "verse_count": 79,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 79,
+          "label": "2 Kor 5–8"
+        }
+      ]
+    },
+    {
+      "day": 342,
+      "date_label": "7. prosinca",
+      "label": "7. prosinca — 2 Kor 9–13",
+      "verse_count": 100,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 9,
+          "chapter_end": 13,
+          "verse_count": 100,
+          "label": "2 Kor 9–13"
+        }
+      ]
+    },
+    {
+      "day": 343,
+      "date_label": "8. prosinca",
+      "label": "8. prosinca — Gal 1–3",
+      "verse_count": 74,
+      "readings": [
+        {
+          "book_order": 55,
+          "book_id": "poslanica-galacanima",
+          "book_abbr": "Gal",
+          "book_title": "Poslanica Galaćanima",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 74,
+          "label": "Gal 1–3"
+        }
+      ]
+    },
+    {
+      "day": 344,
+      "date_label": "9. prosinca",
+      "label": "9. prosinca — Gal 4–6",
+      "verse_count": 75,
+      "readings": [
+        {
+          "book_order": 55,
+          "book_id": "poslanica-galacanima",
+          "book_abbr": "Gal",
+          "book_title": "Poslanica Galaćanima",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 75,
+          "label": "Gal 4–6"
+        }
+      ]
+    },
+    {
+      "day": 345,
+      "date_label": "10. prosinca",
+      "label": "10. prosinca — Ef 1–3",
+      "verse_count": 66,
+      "readings": [
+        {
+          "book_order": 56,
+          "book_id": "poslanica-efezanima",
+          "book_abbr": "Ef",
+          "book_title": "Poslanica Efežanima",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 66,
+          "label": "Ef 1–3"
+        }
+      ]
+    },
+    {
+      "day": 346,
+      "date_label": "11. prosinca",
+      "label": "11. prosinca — Ef 4–6",
+      "verse_count": 89,
+      "readings": [
+        {
+          "book_order": 56,
+          "book_id": "poslanica-efezanima",
+          "book_abbr": "Ef",
+          "book_title": "Poslanica Efežanima",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 89,
+          "label": "Ef 4–6"
+        }
+      ]
+    },
+    {
+      "day": 347,
+      "date_label": "12. prosinca",
+      "label": "12. prosinca — Fil 1–4",
+      "verse_count": 104,
+      "readings": [
+        {
+          "book_order": 57,
+          "book_id": "poslanica-filipljanima",
+          "book_abbr": "Fil",
+          "book_title": "Poslanica Filipljanima",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 104,
+          "label": "Fil 1–4"
+        }
+      ]
+    },
+    {
+      "day": 348,
+      "date_label": "13. prosinca",
+      "label": "13. prosinca — Kol 1–4",
+      "verse_count": 95,
+      "readings": [
+        {
+          "book_order": 58,
+          "book_id": "poslanica-kolosanima",
+          "book_abbr": "Kol",
+          "book_title": "Poslanica Kološanima",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 95,
+          "label": "Kol 1–4"
+        }
+      ]
+    },
+    {
+      "day": 349,
+      "date_label": "14. prosinca",
+      "label": "14. prosinca — 1 Sol 1–5",
+      "verse_count": 89,
+      "readings": [
+        {
+          "book_order": 59,
+          "book_id": "prva-poslanica-solunjanima",
+          "book_abbr": "1 Sol",
+          "book_title": "Prva poslanica Solunjanima",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 89,
+          "label": "1 Sol 1–5"
+        }
+      ]
+    },
+    {
+      "day": 350,
+      "date_label": "15. prosinca",
+      "label": "15. prosinca — 2 Sol 1–3",
+      "verse_count": 47,
+      "readings": [
+        {
+          "book_order": 60,
+          "book_id": "druga-poslanica-solunjanima",
+          "book_abbr": "2 Sol",
+          "book_title": "Druga poslanica Solunjanima",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 47,
+          "label": "2 Sol 1–3"
+        }
+      ]
+    },
+    {
+      "day": 351,
+      "date_label": "16. prosinca",
+      "label": "16. prosinca — 1 Tim 1–3",
+      "verse_count": 51,
+      "readings": [
+        {
+          "book_order": 61,
+          "book_id": "prva-poslanica-timoteju",
+          "book_abbr": "1 Tim",
+          "book_title": "Prva poslanica Timoteju",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 51,
+          "label": "1 Tim 1–3"
+        }
+      ]
+    },
+    {
+      "day": 352,
+      "date_label": "17. prosinca",
+      "label": "17. prosinca — 1 Tim 4–6",
+      "verse_count": 62,
+      "readings": [
+        {
+          "book_order": 61,
+          "book_id": "prva-poslanica-timoteju",
+          "book_abbr": "1 Tim",
+          "book_title": "Prva poslanica Timoteju",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 62,
+          "label": "1 Tim 4–6"
+        }
+      ]
+    },
+    {
+      "day": 353,
+      "date_label": "18. prosinca",
+      "label": "18. prosinca — 2 Tim 1–4",
+      "verse_count": 83,
+      "readings": [
+        {
+          "book_order": 62,
+          "book_id": "druga-poslanica-timoteju",
+          "book_abbr": "2 Tim",
+          "book_title": "Druga poslanica Timoteju",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 83,
+          "label": "2 Tim 1–4"
+        }
+      ]
+    },
+    {
+      "day": 354,
+      "date_label": "19. prosinca",
+      "label": "19. prosinca — Tit 1–3",
+      "verse_count": 46,
+      "readings": [
+        {
+          "book_order": 63,
+          "book_id": "poslanica-titu",
+          "book_abbr": "Tit",
+          "book_title": "Poslanica Titu",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 46,
+          "label": "Tit 1–3"
+        }
+      ]
+    },
+    {
+      "day": 355,
+      "date_label": "20. prosinca",
+      "label": "20. prosinca — Flm 1",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 64,
+          "book_id": "poslanica-filemonu",
+          "book_abbr": "Flm",
+          "book_title": "Poslanica Filemonu",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 25,
+          "label": "Flm 1"
+        }
+      ]
+    },
+    {
+      "day": 356,
+      "date_label": "21. prosinca",
+      "label": "21. prosinca — Heb 1–4",
+      "verse_count": 67,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 67,
+          "label": "Heb 1–4"
+        }
+      ]
+    },
+    {
+      "day": 357,
+      "date_label": "22. prosinca",
+      "label": "22. prosinca — Heb 5–8",
+      "verse_count": 75,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 75,
+          "label": "Heb 5–8"
+        }
+      ]
+    },
+    {
+      "day": 358,
+      "date_label": "23. prosinca",
+      "label": "23. prosinca — Heb 9–13",
+      "verse_count": 161,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 9,
+          "chapter_end": 13,
+          "verse_count": 161,
+          "label": "Heb 9–13"
+        }
+      ]
+    },
+    {
+      "day": 359,
+      "date_label": "24. prosinca",
+      "label": "24. prosinca — Jak 1–5",
+      "verse_count": 108,
+      "readings": [
+        {
+          "book_order": 66,
+          "book_id": "jakovljeva-poslanica",
+          "book_abbr": "Jak",
+          "book_title": "Jakovljeva poslanica",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 108,
+          "label": "Jak 1–5"
+        }
+      ]
+    },
+    {
+      "day": 360,
+      "date_label": "25. prosinca",
+      "label": "25. prosinca — 1 Pt 1–5",
+      "verse_count": 105,
+      "readings": [
+        {
+          "book_order": 67,
+          "book_id": "prva-petrova-poslanica",
+          "book_abbr": "1 Pt",
+          "book_title": "Prva Petrova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 105,
+          "label": "1 Pt 1–5"
+        }
+      ]
+    },
+    {
+      "day": 361,
+      "date_label": "26. prosinca",
+      "label": "26. prosinca — 2 Pt 1–3",
+      "verse_count": 61,
+      "readings": [
+        {
+          "book_order": 68,
+          "book_id": "druga-petrova-poslanica",
+          "book_abbr": "2 Pt",
+          "book_title": "Druga Petrova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 61,
+          "label": "2 Pt 1–3"
+        }
+      ]
+    },
+    {
+      "day": 362,
+      "date_label": "27. prosinca",
+      "label": "27. prosinca — 1 Iv 1–5",
+      "verse_count": 105,
+      "readings": [
+        {
+          "book_order": 69,
+          "book_id": "prva-ivanova-poslanica",
+          "book_abbr": "1 Iv",
+          "book_title": "Prva Ivanova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 105,
+          "label": "1 Iv 1–5"
+        }
+      ]
+    },
+    {
+      "day": 363,
+      "date_label": "28. prosinca",
+      "label": "28. prosinca — 2 Iv 1 –; 3 Iv 1 –; Jd 1",
+      "verse_count": 53,
+      "readings": [
+        {
+          "book_order": 70,
+          "book_id": "druga-ivanova-poslanica",
+          "book_abbr": "2 Iv",
+          "book_title": "Druga Ivanova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 13,
+          "label": "2 Iv 1 –"
+        },
+        {
+          "book_order": 71,
+          "book_id": "treca-ivanova-poslanica",
+          "book_abbr": "3 Iv",
+          "book_title": "Treća Ivanova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 15,
+          "label": "3 Iv 1 –"
+        },
+        {
+          "book_order": 72,
+          "book_id": "poslanica-jude-apostola",
+          "book_abbr": "Jd",
+          "book_title": "Poslanica Jude apostola",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 25,
+          "label": "Jd 1"
+        }
+      ]
+    },
+    {
+      "day": 364,
+      "date_label": "29. prosinca",
+      "label": "29. prosinca — Otk 1–7",
+      "verse_count": 130,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 1,
+          "chapter_end": 7,
+          "verse_count": 130,
+          "label": "Otk 1–7"
+        }
+      ]
+    },
+    {
+      "day": 365,
+      "date_label": "30. prosinca",
+      "label": "30. prosinca — Otk 8–15",
+      "verse_count": 128,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 8,
+          "chapter_end": 15,
+          "verse_count": 128,
+          "label": "Otk 8–15"
+        }
+      ]
+    },
+    {
+      "day": 366,
+      "date_label": "31. prosinca",
+      "label": "31. prosinca — Otk 16–22",
+      "verse_count": 147,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 16,
+          "chapter_end": 22,
+          "verse_count": 147,
+          "label": "Otk 16–22"
+        }
+      ]
+    }
+  ]
+}

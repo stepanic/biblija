@@ -1,0 +1,1709 @@
+{
+  "id": "ks-39067",
+  "title": "Novi zavjet u devedeset dana",
+  "category": "ks-tematski",
+  "days_count": 90,
+  "description": "Tko čita Novi zavjet, ne ulazi u muzejsku zgradu, ulazi u Savez koji još traje. Uvijek je isti glas: Riječ je postala tijelom.",
+  "days": [
+    {
+      "day": 1,
+      "label": "Mt 1-4",
+      "verse_count": 90,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 90,
+          "label": "Mt 1–4"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "label": "Mt 5-6",
+      "verse_count": 82,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 5,
+          "chapter_end": 6,
+          "verse_count": 82,
+          "label": "Mt 5–6"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "label": "Mt 7-8",
+      "verse_count": 63,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 7,
+          "chapter_end": 8,
+          "verse_count": 63,
+          "label": "Mt 7–8"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "label": "Mt 9-10",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 9,
+          "chapter_end": 10,
+          "verse_count": 80,
+          "label": "Mt 9–10"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "label": "Mt 11-12",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 11,
+          "chapter_end": 12,
+          "verse_count": 80,
+          "label": "Mt 11–12"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "label": "Mt 13-14",
+      "verse_count": 94,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 13,
+          "chapter_end": 14,
+          "verse_count": 94,
+          "label": "Mt 13–14"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "label": "Mt 15-16",
+      "verse_count": 67,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 15,
+          "chapter_end": 16,
+          "verse_count": 67,
+          "label": "Mt 15–16"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "label": "Mt 17-19",
+      "verse_count": 91,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 17,
+          "chapter_end": 19,
+          "verse_count": 91,
+          "label": "Mt 17–19"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "label": "Mt 20-21",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 20,
+          "chapter_end": 21,
+          "verse_count": 80,
+          "label": "Mt 20–21"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "label": "Mt 22-23",
+      "verse_count": 85,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 22,
+          "chapter_end": 23,
+          "verse_count": 85,
+          "label": "Mt 22–23"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "label": "Mt 24-25",
+      "verse_count": 97,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 24,
+          "chapter_end": 25,
+          "verse_count": 97,
+          "label": "Mt 24–25"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "label": "Mt 26",
+      "verse_count": 75,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 26,
+          "chapter_end": 26,
+          "verse_count": 75,
+          "label": "Mt 26"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "label": "Mt 27-28",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 27,
+          "chapter_end": 28,
+          "verse_count": 86,
+          "label": "Mt 27–28"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "label": "Mk 1-3",
+      "verse_count": 108,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 108,
+          "label": "Mk 1–3"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "label": "Mk 4-5",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 4,
+          "chapter_end": 5,
+          "verse_count": 84,
+          "label": "Mk 4–5"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "label": "Mk 6-7",
+      "verse_count": 93,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 6,
+          "chapter_end": 7,
+          "verse_count": 93,
+          "label": "Mk 6–7"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "label": "Mk 8-9",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 8,
+          "chapter_end": 9,
+          "verse_count": 86,
+          "label": "Mk 8–9"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "label": "Mk 10-11",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 10,
+          "chapter_end": 11,
+          "verse_count": 84,
+          "label": "Mk 10–11"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "label": "Mk 12-13",
+      "verse_count": 81,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 12,
+          "chapter_end": 13,
+          "verse_count": 81,
+          "label": "Mk 12–13"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "label": "Mk 14",
+      "verse_count": 72,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 14,
+          "chapter_end": 14,
+          "verse_count": 72,
+          "label": "Mk 14"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "label": "Mk 15-16",
+      "verse_count": 66,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 15,
+          "chapter_end": 16,
+          "verse_count": 66,
+          "label": "Mk 15–16"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "label": "Lk 1",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 80,
+          "label": "Lk 1"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "label": "Lk 2-3",
+      "verse_count": 90,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 2,
+          "chapter_end": 3,
+          "verse_count": 90,
+          "label": "Lk 2–3"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "label": "Lk 4-5",
+      "verse_count": 83,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 4,
+          "chapter_end": 5,
+          "verse_count": 83,
+          "label": "Lk 4–5"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "label": "Lk 6-7",
+      "verse_count": 99,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 6,
+          "chapter_end": 7,
+          "verse_count": 99,
+          "label": "Lk 6–7"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "label": "Lk 8-9",
+      "verse_count": 118,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 8,
+          "chapter_end": 9,
+          "verse_count": 118,
+          "label": "Lk 8–9"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "label": "Lk 10-11",
+      "verse_count": 96,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 10,
+          "chapter_end": 11,
+          "verse_count": 96,
+          "label": "Lk 10–11"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "label": "Lk 12-13",
+      "verse_count": 94,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 12,
+          "chapter_end": 13,
+          "verse_count": 94,
+          "label": "Lk 12–13"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "label": "Lk 14-16",
+      "verse_count": 98,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 14,
+          "chapter_end": 16,
+          "verse_count": 98,
+          "label": "Lk 14–16"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "label": "Lk 17-18",
+      "verse_count": 79,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 17,
+          "chapter_end": 18,
+          "verse_count": 79,
+          "label": "Lk 17–18"
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "label": "Lk 19-20",
+      "verse_count": 95,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 19,
+          "chapter_end": 20,
+          "verse_count": 95,
+          "label": "Lk 19–20"
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "label": "Lk 21-22",
+      "verse_count": 109,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 21,
+          "chapter_end": 22,
+          "verse_count": 109,
+          "label": "Lk 21–22"
+        }
+      ]
+    },
+    {
+      "day": 33,
+      "label": "Lk 23-24",
+      "verse_count": 108,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 23,
+          "chapter_end": 24,
+          "verse_count": 108,
+          "label": "Lk 23–24"
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "label": "Iv 1-3",
+      "verse_count": 112,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 112,
+          "label": "Iv 1–3"
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "label": "Iv 4-5",
+      "verse_count": 100,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 4,
+          "chapter_end": 5,
+          "verse_count": 100,
+          "label": "Iv 4–5"
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "label": "Iv 6",
+      "verse_count": 71,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 71,
+          "label": "Iv 6"
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "label": "Iv 7-8",
+      "verse_count": 112,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 7,
+          "chapter_end": 8,
+          "verse_count": 112,
+          "label": "Iv 7–8"
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "label": "Iv 9-10",
+      "verse_count": 83,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 9,
+          "chapter_end": 10,
+          "verse_count": 83,
+          "label": "Iv 9–10"
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "label": "Iv 11-12",
+      "verse_count": 107,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 11,
+          "chapter_end": 12,
+          "verse_count": 107,
+          "label": "Iv 11–12"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "label": "Iv 13-14",
+      "verse_count": 69,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 13,
+          "chapter_end": 14,
+          "verse_count": 69,
+          "label": "Iv 13–14"
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "label": "Iv 15-17",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 15,
+          "chapter_end": 17,
+          "verse_count": 86,
+          "label": "Iv 15–17"
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "label": "Iv 18-19",
+      "verse_count": 82,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 18,
+          "chapter_end": 19,
+          "verse_count": 82,
+          "label": "Iv 18–19"
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "label": "Iv 20; Dj 1",
+      "verse_count": 57,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 20,
+          "chapter_end": 20,
+          "verse_count": 31,
+          "label": "Iv 20"
+        },
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 26,
+          "label": "Dj 1"
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "label": "Dj 2-3",
+      "verse_count": 73,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 2,
+          "chapter_end": 3,
+          "verse_count": 73,
+          "label": "Dj 2–3"
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "label": "Dj 4-5",
+      "verse_count": 79,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 4,
+          "chapter_end": 5,
+          "verse_count": 79,
+          "label": "Dj 4–5"
+        }
+      ]
+    },
+    {
+      "day": 46,
+      "label": "Dj 6-7",
+      "verse_count": 75,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 6,
+          "chapter_end": 7,
+          "verse_count": 75,
+          "label": "Dj 6–7"
+        }
+      ]
+    },
+    {
+      "day": 47,
+      "label": "Dj 8-9",
+      "verse_count": 82,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 8,
+          "chapter_end": 9,
+          "verse_count": 82,
+          "label": "Dj 8–9"
+        }
+      ]
+    },
+    {
+      "day": 48,
+      "label": "Dj 10-12",
+      "verse_count": 103,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 103,
+          "label": "Dj 10–12"
+        }
+      ]
+    },
+    {
+      "day": 49,
+      "label": "Dj 13-14",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 13,
+          "chapter_end": 14,
+          "verse_count": 80,
+          "label": "Dj 13–14"
+        }
+      ]
+    },
+    {
+      "day": 50,
+      "label": "Dj 15-16",
+      "verse_count": 80,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 15,
+          "chapter_end": 16,
+          "verse_count": 80,
+          "label": "Dj 15–16"
+        }
+      ]
+    },
+    {
+      "day": 51,
+      "label": "Dj 17-19",
+      "verse_count": 102,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 17,
+          "chapter_end": 19,
+          "verse_count": 102,
+          "label": "Dj 17–19"
+        }
+      ]
+    },
+    {
+      "day": 52,
+      "label": "Dj 20-21",
+      "verse_count": 78,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 20,
+          "chapter_end": 21,
+          "verse_count": 78,
+          "label": "Dj 20–21"
+        }
+      ]
+    },
+    {
+      "day": 53,
+      "label": "Dj 22-24",
+      "verse_count": 91,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 91,
+          "label": "Dj 22–24"
+        }
+      ]
+    },
+    {
+      "day": 54,
+      "label": "Dj 25-27",
+      "verse_count": 103,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 25,
+          "chapter_end": 27,
+          "verse_count": 103,
+          "label": "Dj 25–27"
+        }
+      ]
+    },
+    {
+      "day": 55,
+      "label": "Dj 28; Rim 1-2",
+      "verse_count": 91,
+      "readings": [
+        {
+          "book_order": 51,
+          "book_id": "djela-apostolska",
+          "book_abbr": "Dj",
+          "book_title": "Djela apostolska",
+          "chapter_start": 28,
+          "chapter_end": 28,
+          "verse_count": 30,
+          "label": "Dj 28"
+        },
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 1,
+          "chapter_end": 2,
+          "verse_count": 61,
+          "label": "Rim 1–2"
+        }
+      ]
+    },
+    {
+      "day": 56,
+      "label": "Rim 3-6",
+      "verse_count": 100,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 3,
+          "chapter_end": 6,
+          "verse_count": 100,
+          "label": "Rim 3–6"
+        }
+      ]
+    },
+    {
+      "day": 57,
+      "label": "Rim 7-9",
+      "verse_count": 97,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 97,
+          "label": "Rim 7–9"
+        }
+      ]
+    },
+    {
+      "day": 58,
+      "label": "Rim 10-13",
+      "verse_count": 92,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 10,
+          "chapter_end": 13,
+          "verse_count": 92,
+          "label": "Rim 10–13"
+        }
+      ]
+    },
+    {
+      "day": 59,
+      "label": "Rim 14-16",
+      "verse_count": 82,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 14,
+          "chapter_end": 16,
+          "verse_count": 82,
+          "label": "Rim 14–16"
+        }
+      ]
+    },
+    {
+      "day": 60,
+      "label": "1 Kor 1-4",
+      "verse_count": 91,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 91,
+          "label": "1 Kor 1–4"
+        }
+      ]
+    },
+    {
+      "day": 61,
+      "label": "1 Kor 5-8",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 5,
+          "chapter_end": 8,
+          "verse_count": 86,
+          "label": "1 Kor 5–8"
+        }
+      ]
+    },
+    {
+      "day": 62,
+      "label": "1 Kor 9-11",
+      "verse_count": 94,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 9,
+          "chapter_end": 11,
+          "verse_count": 94,
+          "label": "1 Kor 9–11"
+        }
+      ]
+    },
+    {
+      "day": 63,
+      "label": "1 Kor 12-14",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 12,
+          "chapter_end": 14,
+          "verse_count": 84,
+          "label": "1 Kor 12–14"
+        }
+      ]
+    },
+    {
+      "day": 64,
+      "label": "1 Kor 15-16",
+      "verse_count": 82,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 15,
+          "chapter_end": 16,
+          "verse_count": 82,
+          "label": "1 Kor 15–16"
+        }
+      ]
+    },
+    {
+      "day": 65,
+      "label": "2 Kor 1-5",
+      "verse_count": 98,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 98,
+          "label": "2 Kor 1–5"
+        }
+      ]
+    },
+    {
+      "day": 66,
+      "label": "2 Kor 6-10",
+      "verse_count": 91,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 6,
+          "chapter_end": 10,
+          "verse_count": 91,
+          "label": "2 Kor 6–10"
+        }
+      ]
+    },
+    {
+      "day": 67,
+      "label": "2 Kor 11-13; Gal 1",
+      "verse_count": 91,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 11,
+          "chapter_end": 13,
+          "verse_count": 67,
+          "label": "2 Kor 11–13"
+        },
+        {
+          "book_order": 55,
+          "book_id": "poslanica-galacanima",
+          "book_abbr": "Gal",
+          "book_title": "Poslanica Galaćanima",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 24,
+          "label": "Gal 1"
+        }
+      ]
+    },
+    {
+      "day": 68,
+      "label": "Gal 2-4",
+      "verse_count": 81,
+      "readings": [
+        {
+          "book_order": 55,
+          "book_id": "poslanica-galacanima",
+          "book_abbr": "Gal",
+          "book_title": "Poslanica Galaćanima",
+          "chapter_start": 2,
+          "chapter_end": 4,
+          "verse_count": 81,
+          "label": "Gal 2–4"
+        }
+      ]
+    },
+    {
+      "day": 69,
+      "label": "Gal 5-6; Ef 1-2",
+      "verse_count": 89,
+      "readings": [
+        {
+          "book_order": 55,
+          "book_id": "poslanica-galacanima",
+          "book_abbr": "Gal",
+          "book_title": "Poslanica Galaćanima",
+          "chapter_start": 5,
+          "chapter_end": 6,
+          "verse_count": 44,
+          "label": "Gal 5–6"
+        },
+        {
+          "book_order": 56,
+          "book_id": "poslanica-efezanima",
+          "book_abbr": "Ef",
+          "book_title": "Poslanica Efežanima",
+          "chapter_start": 1,
+          "chapter_end": 2,
+          "verse_count": 45,
+          "label": "Ef 1–2"
+        }
+      ]
+    },
+    {
+      "day": 70,
+      "label": "Ef 3-5",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 56,
+          "book_id": "poslanica-efezanima",
+          "book_abbr": "Ef",
+          "book_title": "Poslanica Efežanima",
+          "chapter_start": 3,
+          "chapter_end": 5,
+          "verse_count": 86,
+          "label": "Ef 3–5"
+        }
+      ]
+    },
+    {
+      "day": 71,
+      "label": "Ef 6; Fil 1-2",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 56,
+          "book_id": "poslanica-efezanima",
+          "book_abbr": "Ef",
+          "book_title": "Poslanica Efežanima",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 24,
+          "label": "Ef 6"
+        },
+        {
+          "book_order": 57,
+          "book_id": "poslanica-filipljanima",
+          "book_abbr": "Fil",
+          "book_title": "Poslanica Filipljanima",
+          "chapter_start": 1,
+          "chapter_end": 2,
+          "verse_count": 60,
+          "label": "Fil 1–2"
+        }
+      ]
+    },
+    {
+      "day": 72,
+      "label": "Fil 3-4; Kol 1-2",
+      "verse_count": 96,
+      "readings": [
+        {
+          "book_order": 57,
+          "book_id": "poslanica-filipljanima",
+          "book_abbr": "Fil",
+          "book_title": "Poslanica Filipljanima",
+          "chapter_start": 3,
+          "chapter_end": 4,
+          "verse_count": 44,
+          "label": "Fil 3–4"
+        },
+        {
+          "book_order": 58,
+          "book_id": "poslanica-kolosanima",
+          "book_abbr": "Kol",
+          "book_title": "Poslanica Kološanima",
+          "chapter_start": 1,
+          "chapter_end": 2,
+          "verse_count": 52,
+          "label": "Kol 1–2"
+        }
+      ]
+    },
+    {
+      "day": 73,
+      "label": "Kol 3-4; 1 Sol 1-3",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 58,
+          "book_id": "poslanica-kolosanima",
+          "book_abbr": "Kol",
+          "book_title": "Poslanica Kološanima",
+          "chapter_start": 3,
+          "chapter_end": 4,
+          "verse_count": 43,
+          "label": "Kol 3–4"
+        },
+        {
+          "book_order": 59,
+          "book_id": "prva-poslanica-solunjanima",
+          "book_abbr": "1 Sol",
+          "book_title": "Prva poslanica Solunjanima",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 43,
+          "label": "1 Sol 1–3"
+        }
+      ]
+    },
+    {
+      "day": 74,
+      "label": "1 Sol 4-5; 2 Sol 1-3",
+      "verse_count": 93,
+      "readings": [
+        {
+          "book_order": 59,
+          "book_id": "prva-poslanica-solunjanima",
+          "book_abbr": "1 Sol",
+          "book_title": "Prva poslanica Solunjanima",
+          "chapter_start": 4,
+          "chapter_end": 5,
+          "verse_count": 46,
+          "label": "1 Sol 4–5"
+        },
+        {
+          "book_order": 60,
+          "book_id": "druga-poslanica-solunjanima",
+          "book_abbr": "2 Sol",
+          "book_title": "Druga poslanica Solunjanima",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 47,
+          "label": "2 Sol 1–3"
+        }
+      ]
+    },
+    {
+      "day": 75,
+      "label": "1 Tim 1-5",
+      "verse_count": 92,
+      "readings": [
+        {
+          "book_order": 61,
+          "book_id": "prva-poslanica-timoteju",
+          "book_abbr": "1 Tim",
+          "book_title": "Prva poslanica Timoteju",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 92,
+          "label": "1 Tim 1–5"
+        }
+      ]
+    },
+    {
+      "day": 76,
+      "label": "1 Tim 6; 2 Tim 1-3",
+      "verse_count": 82,
+      "readings": [
+        {
+          "book_order": 61,
+          "book_id": "prva-poslanica-timoteju",
+          "book_abbr": "1 Tim",
+          "book_title": "Prva poslanica Timoteju",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 21,
+          "label": "1 Tim 6"
+        },
+        {
+          "book_order": 62,
+          "book_id": "druga-poslanica-timoteju",
+          "book_abbr": "2 Tim",
+          "book_title": "Druga poslanica Timoteju",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 61,
+          "label": "2 Tim 1–3"
+        }
+      ]
+    },
+    {
+      "day": 77,
+      "label": "2 Tim 4; Tit 1,3; Flm 1",
+      "verse_count": 63,
+      "readings": [
+        {
+          "book_order": 62,
+          "book_id": "druga-poslanica-timoteju",
+          "book_abbr": "2 Tim",
+          "book_title": "Druga poslanica Timoteju",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 22,
+          "label": "2 Tim 4"
+        },
+        {
+          "book_order": 63,
+          "book_id": "poslanica-titu",
+          "book_abbr": "Tit",
+          "book_title": "Poslanica Titu",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 16,
+          "label": "Tit 1"
+        },
+        {
+          "book_order": 64,
+          "book_id": "poslanica-filemonu",
+          "book_abbr": "Flm",
+          "book_title": "Poslanica Filemonu",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 25,
+          "label": "Flm 1"
+        }
+      ]
+    },
+    {
+      "day": 78,
+      "label": "Heb 1-5",
+      "verse_count": 81,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 1,
+          "chapter_end": 5,
+          "verse_count": 81,
+          "label": "Heb 1–5"
+        }
+      ]
+    },
+    {
+      "day": 79,
+      "label": "Heb 6-9",
+      "verse_count": 89,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 6,
+          "chapter_end": 9,
+          "verse_count": 89,
+          "label": "Heb 6–9"
+        }
+      ]
+    },
+    {
+      "day": 80,
+      "label": "Heb 10-11",
+      "verse_count": 79,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 10,
+          "chapter_end": 11,
+          "verse_count": 79,
+          "label": "Heb 10–11"
+        }
+      ]
+    },
+    {
+      "day": 81,
+      "label": "Heb 12-13; Jak 1",
+      "verse_count": 81,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 12,
+          "chapter_end": 13,
+          "verse_count": 54,
+          "label": "Heb 12–13"
+        },
+        {
+          "book_order": 66,
+          "book_id": "jakovljeva-poslanica",
+          "book_abbr": "Jak",
+          "book_title": "Jakovljeva poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 27,
+          "label": "Jak 1"
+        }
+      ]
+    },
+    {
+      "day": 82,
+      "label": "Jak 2-5",
+      "verse_count": 81,
+      "readings": [
+        {
+          "book_order": 66,
+          "book_id": "jakovljeva-poslanica",
+          "book_abbr": "Jak",
+          "book_title": "Jakovljeva poslanica",
+          "chapter_start": 2,
+          "chapter_end": 5,
+          "verse_count": 81,
+          "label": "Jak 2–5"
+        }
+      ]
+    },
+    {
+      "day": 83,
+      "label": "1 Pt 1-4",
+      "verse_count": 91,
+      "readings": [
+        {
+          "book_order": 67,
+          "book_id": "prva-petrova-poslanica",
+          "book_abbr": "1 Pt",
+          "book_title": "Prva Petrova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 4,
+          "verse_count": 91,
+          "label": "1 Pt 1–4"
+        }
+      ]
+    },
+    {
+      "day": 84,
+      "label": "1 Pt 5; 2 Pt 1-3; 1 Iv 1",
+      "verse_count": 85,
+      "readings": [
+        {
+          "book_order": 67,
+          "book_id": "prva-petrova-poslanica",
+          "book_abbr": "1 Pt",
+          "book_title": "Prva Petrova poslanica",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 14,
+          "label": "1 Pt 5"
+        },
+        {
+          "book_order": 68,
+          "book_id": "druga-petrova-poslanica",
+          "book_abbr": "2 Pt",
+          "book_title": "Druga Petrova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 61,
+          "label": "2 Pt 1–3"
+        },
+        {
+          "book_order": 69,
+          "book_id": "prva-ivanova-poslanica",
+          "book_abbr": "1 Iv",
+          "book_title": "Prva Ivanova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 10,
+          "label": "1 Iv 1"
+        }
+      ]
+    },
+    {
+      "day": 85,
+      "label": "1 Iv 2-5",
+      "verse_count": 95,
+      "readings": [
+        {
+          "book_order": 69,
+          "book_id": "prva-ivanova-poslanica",
+          "book_abbr": "1 Iv",
+          "book_title": "Prva Ivanova poslanica",
+          "chapter_start": 2,
+          "chapter_end": 5,
+          "verse_count": 95,
+          "label": "1 Iv 2–5"
+        }
+      ]
+    },
+    {
+      "day": 86,
+      "label": "2 Iv 1; 3 Iv 1; Jd 1; Otk 1-2",
+      "verse_count": 102,
+      "readings": [
+        {
+          "book_order": 70,
+          "book_id": "druga-ivanova-poslanica",
+          "book_abbr": "2 Iv",
+          "book_title": "Druga Ivanova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 13,
+          "label": "2 Iv 1"
+        },
+        {
+          "book_order": 71,
+          "book_id": "treca-ivanova-poslanica",
+          "book_abbr": "3 Iv",
+          "book_title": "Treća Ivanova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 15,
+          "label": "3 Iv 1"
+        },
+        {
+          "book_order": 72,
+          "book_id": "poslanica-jude-apostola",
+          "book_abbr": "Jd",
+          "book_title": "Poslanica Jude apostola",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 25,
+          "label": "Jd 1"
+        },
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 1,
+          "chapter_end": 2,
+          "verse_count": 49,
+          "label": "Otk 1–2"
+        }
+      ]
+    },
+    {
+      "day": 87,
+      "label": "Otk 3-8",
+      "verse_count": 94,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 3,
+          "chapter_end": 8,
+          "verse_count": 94,
+          "label": "Otk 3–8"
+        }
+      ]
+    },
+    {
+      "day": 88,
+      "label": "Otk 9-13",
+      "verse_count": 87,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 9,
+          "chapter_end": 13,
+          "verse_count": 87,
+          "label": "Otk 9–13"
+        }
+      ]
+    },
+    {
+      "day": 89,
+      "label": "Otk 14-18",
+      "verse_count": 91,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 14,
+          "chapter_end": 18,
+          "verse_count": 91,
+          "label": "Otk 14–18"
+        }
+      ]
+    },
+    {
+      "day": 90,
+      "label": "Otk 19-22",
+      "verse_count": 84,
+      "readings": [
+        {
+          "book_order": 73,
+          "book_id": "otkrivenje",
+          "book_abbr": "Otk",
+          "book_title": "Otkrivenje",
+          "chapter_start": 19,
+          "chapter_end": 22,
+          "verse_count": 84,
+          "label": "Otk 19–22"
+        }
+      ]
+    }
+  ]
+}

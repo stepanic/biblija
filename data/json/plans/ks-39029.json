@@ -1,0 +1,819 @@
+{
+  "id": "ks-39029",
+  "title": "Psalmi i Mudre izreke u trideset dana",
+  "category": "ks-tematski",
+  "days_count": 30,
+  "description": "Biseri starozavjetne ljepote i mudrosti, dvije klasične starozavjetne knjige u trideset dana.",
+  "days": [
+    {
+      "day": 1,
+      "label": "Ps 1-7; Izr 1",
+      "verse_count": 111,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 1,
+          "chapter_end": 7,
+          "verse_count": 78,
+          "label": "Ps 1–7"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 33,
+          "label": "Izr 1"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "label": "Ps 8-15; Izr 2",
+      "verse_count": 105,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 8,
+          "chapter_end": 15,
+          "verse_count": 83,
+          "label": "Ps 8–15"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 22,
+          "label": "Izr 2"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "label": "Ps 16-18; Izr 3",
+      "verse_count": 112,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 77,
+          "label": "Ps 16–18"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 35,
+          "label": "Izr 3"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "label": "Ps 19-24; Izr 4",
+      "verse_count": 114,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 19,
+          "chapter_end": 24,
+          "verse_count": 87,
+          "label": "Ps 19–24"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 27,
+          "label": "Izr 4"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "label": "Ps 25-30; Izr 5",
+      "verse_count": 104,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 25,
+          "chapter_end": 30,
+          "verse_count": 81,
+          "label": "Ps 25–30"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 23,
+          "label": "Izr 5"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "label": "Ps 31-34; Izr 6",
+      "verse_count": 116,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 31,
+          "chapter_end": 34,
+          "verse_count": 81,
+          "label": "Ps 31–34"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 35,
+          "label": "Izr 6"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "label": "Ps 35-37; Izr 7",
+      "verse_count": 108,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 35,
+          "chapter_end": 37,
+          "verse_count": 81,
+          "label": "Ps 35–37"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 7,
+          "chapter_end": 7,
+          "verse_count": 27,
+          "label": "Izr 7"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "label": "Ps 38-43; Izr 8",
+      "verse_count": 122,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 38,
+          "chapter_end": 43,
+          "verse_count": 86,
+          "label": "Ps 38–43"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 8,
+          "chapter_end": 8,
+          "verse_count": 36,
+          "label": "Izr 8"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "label": "Ps 44-48; Izr 9-10",
+      "verse_count": 132,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 44,
+          "chapter_end": 48,
+          "verse_count": 82,
+          "label": "Ps 44–48"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 9,
+          "chapter_end": 10,
+          "verse_count": 50,
+          "label": "Izr 9–10"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "label": "Ps 49-53; Izr 11",
+      "verse_count": 114,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 49,
+          "chapter_end": 53,
+          "verse_count": 83,
+          "label": "Ps 49–53"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 11,
+          "chapter_end": 11,
+          "verse_count": 31,
+          "label": "Izr 11"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "label": "Ps 54-59; Izr 12",
+      "verse_count": 117,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 54,
+          "chapter_end": 59,
+          "verse_count": 89,
+          "label": "Ps 54–59"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 12,
+          "chapter_end": 12,
+          "verse_count": 28,
+          "label": "Izr 12"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "label": "Ps 60-61; Izr 13",
+      "verse_count": 48,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 60,
+          "chapter_end": 61,
+          "verse_count": 23,
+          "label": "Ps 60–61"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 13,
+          "chapter_end": 13,
+          "verse_count": 25,
+          "label": "Izr 13"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "label": "Ps 67-69; Izr 14",
+      "verse_count": 116,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 67,
+          "chapter_end": 69,
+          "verse_count": 81,
+          "label": "Ps 67–69"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 14,
+          "chapter_end": 14,
+          "verse_count": 35,
+          "label": "Izr 14"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "label": "Ps 70-73; Izr 15",
+      "verse_count": 111,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 70,
+          "chapter_end": 73,
+          "verse_count": 78,
+          "label": "Ps 70–73"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 15,
+          "chapter_end": 15,
+          "verse_count": 33,
+          "label": "Izr 15"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "label": "Ps 74-77; Izr 16",
+      "verse_count": 101,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 74,
+          "chapter_end": 77,
+          "verse_count": 68,
+          "label": "Ps 74–77"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 16,
+          "chapter_end": 16,
+          "verse_count": 33,
+          "label": "Izr 16"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "label": "Ps 78; Izr 17",
+      "verse_count": 100,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 78,
+          "chapter_end": 78,
+          "verse_count": 72,
+          "label": "Ps 78"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 17,
+          "chapter_end": 17,
+          "verse_count": 28,
+          "label": "Izr 17"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "label": "Ps 79-83; Izr 18",
+      "verse_count": 101,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 79,
+          "chapter_end": 83,
+          "verse_count": 77,
+          "label": "Ps 79–83"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 18,
+          "chapter_end": 18,
+          "verse_count": 24,
+          "label": "Izr 18"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "label": "Ps 84-88; Izr 19",
+      "verse_count": 99,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 84,
+          "chapter_end": 88,
+          "verse_count": 70,
+          "label": "Ps 84–88"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 19,
+          "chapter_end": 19,
+          "verse_count": 29,
+          "label": "Izr 19"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "label": "Ps 89-91; Izr 20",
+      "verse_count": 116,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 89,
+          "chapter_end": 91,
+          "verse_count": 86,
+          "label": "Ps 89–91"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 20,
+          "chapter_end": 20,
+          "verse_count": 30,
+          "label": "Izr 20"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "label": "Ps 92-97; Izr 21",
+      "verse_count": 111,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 92,
+          "chapter_end": 97,
+          "verse_count": 80,
+          "label": "Ps 92–97"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 21,
+          "chapter_end": 21,
+          "verse_count": 31,
+          "label": "Izr 21"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "label": "Ps 98-103; Izr 22",
+      "verse_count": 111,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 98,
+          "chapter_end": 103,
+          "verse_count": 82,
+          "label": "Ps 98–103"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 22,
+          "chapter_end": 22,
+          "verse_count": 29,
+          "label": "Izr 22"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "label": "Ps 104-105; Izr 23",
+      "verse_count": 115,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 104,
+          "chapter_end": 105,
+          "verse_count": 80,
+          "label": "Ps 104–105"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 23,
+          "chapter_end": 23,
+          "verse_count": 35,
+          "label": "Izr 23"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "label": "Ps 106-107; Izr 24",
+      "verse_count": 125,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 106,
+          "chapter_end": 107,
+          "verse_count": 91,
+          "label": "Ps 106–107"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 24,
+          "chapter_end": 24,
+          "verse_count": 34,
+          "label": "Izr 24"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "label": "Ps 108-113; Izr 25",
+      "verse_count": 109,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 108,
+          "chapter_end": 113,
+          "verse_count": 81,
+          "label": "Ps 108–113"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 25,
+          "chapter_end": 25,
+          "verse_count": 28,
+          "label": "Izr 25"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "label": "Ps 114-118; Izr 26",
+      "verse_count": 104,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 114,
+          "chapter_end": 118,
+          "verse_count": 76,
+          "label": "Ps 114–118"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 26,
+          "chapter_end": 26,
+          "verse_count": 28,
+          "label": "Izr 26"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "label": "Ps 119; Izr 27",
+      "verse_count": 203,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 119,
+          "chapter_end": 119,
+          "verse_count": 176,
+          "label": "Ps 119"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 27,
+          "chapter_end": 27,
+          "verse_count": 27,
+          "label": "Izr 27"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "label": "Ps 120-131; Izr 28",
+      "verse_count": 105,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 120,
+          "chapter_end": 131,
+          "verse_count": 77,
+          "label": "Ps 120–131"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 28,
+          "chapter_end": 28,
+          "verse_count": 28,
+          "label": "Izr 28"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "label": "Ps 132-138; Izr 29",
+      "verse_count": 115,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 132,
+          "chapter_end": 138,
+          "verse_count": 88,
+          "label": "Ps 132–138"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 29,
+          "chapter_end": 29,
+          "verse_count": 27,
+          "label": "Izr 29"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "label": "Ps 139-144; Izr 30",
+      "verse_count": 116,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 139,
+          "chapter_end": 144,
+          "verse_count": 83,
+          "label": "Ps 139–144"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 30,
+          "chapter_end": 30,
+          "verse_count": 33,
+          "label": "Izr 30"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "label": "Ps 145-150; Izr 31",
+      "verse_count": 111,
+      "readings": [
+        {
+          "book_order": 23,
+          "book_id": "psalmi",
+          "book_abbr": "Ps",
+          "book_title": "Psalmi",
+          "chapter_start": 145,
+          "chapter_end": 150,
+          "verse_count": 80,
+          "label": "Ps 145–150"
+        },
+        {
+          "book_order": 24,
+          "book_id": "mudre-izreke",
+          "book_abbr": "Izr",
+          "book_title": "Mudre izreke",
+          "chapter_start": 31,
+          "chapter_end": 31,
+          "verse_count": 31,
+          "label": "Izr 31"
+        }
+      ]
+    }
+  ]
+}

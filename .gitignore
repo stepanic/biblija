@@ -1,0 +1,8 @@
+# Downloaded mobile apps and extracted payloads
+downloads/
+extracted/
+*.ipa
+*.apk
+*.xapk
+*.apkm
+.DS_Store

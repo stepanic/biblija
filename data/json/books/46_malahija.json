@@ -1,0 +1,293 @@
+{
+  "order": 46,
+  "id": "malahija",
+  "ks_book_id": 57,
+  "abbr": "Mal",
+  "title": "Malahija",
+  "testament": "SZ",
+  "category": "Proroci",
+  "chapter_count": 3,
+  "verse_count": 55,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 14,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Proroštvo. Riječ Gospodnja Izraelu po Malahiji."
+        },
+        {
+          "verse": 2,
+          "text": "Ljubio sam vas – govori Jahve, a vi pitate: »Po čemu si nas ljubio?« Ne bijaše li Ezav brat Jakovljev? – riječ je Jahvina –",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Ljubav Gospodnja prema Izraelu"
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "ali Jakova sam zavolio, a Ezav mi omrznu: gradove mu u pustoš pretvorih, a baštinu njegovu dadoh pustinjskim šakalima."
+        },
+        {
+          "verse": 4,
+          "text": "Jer, rekne li Edom: »Bili smo smrvljeni, ali ćemo opet podići ruševine!« ovako kaže Jahve nad vojskama: Neka grade oni, a ja ću razgraditi! Zvat će ih zemljom bezbožničkom i narodom na koji se Jahve srdi dovijeka!"
+        },
+        {
+          "verse": 5,
+          "text": "Vaše će oči vidjeti, i reći ćete: »Velik je Jahve preko granica zemlje izraelske.«",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Optužba protiv svećenikâ"
+            }
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Sin časti oca, a sluga gospodara. Ali, ako sam ja otac, gdje je čast moja? Ako sam gospodar, gdje je strah od mene? To govori Jahve nad vojskama vama, svećenici, koji moje ime prezirete, a pitate: »Čime smo prezreli ime tvoje?«"
+        },
+        {
+          "verse": 7,
+          "text": "Oskvrnjen kruh na mome prinosite žrtveniku i još pitate: »Čime te oskvrnusmo?« Time što kažete: »Stol je Jahvin stvar nevažna!«"
+        },
+        {
+          "verse": 8,
+          "text": "A kada za žrtvu slijepu stoku prinosite, zar to nije zlo? I kad prinosite hromo i bolesno, zar to nije zlo? Donesi takvo što svome namjesniku, hoće li biti zadovoljan i dobro te primiti? – govori Jahve nad vojskama."
+        },
+        {
+          "verse": 9,
+          "text": "Sada umilostivite lice Božje da nam se smiluje. To donose ruke vaše, hoće li vas dobro primiti? – govori Jahve nad vojskama."
+        },
+        {
+          "verse": 10,
+          "text": "O kada bi tko od vas zatvorio vrata da mi zaludu ne palite ognja na žrtveniku! Niste mi mili – govori Jahve nad vojskama – i ne primam žrtve iz ruke vaše."
+        },
+        {
+          "verse": 11,
+          "text": "Jer od istoka do zapada veliko je ime moje među narodima, i na svakom mjestu prinosi se kâd i žrtva čista imenu mojemu, jer veliko je ime moje među narodima – govori Jahve nad vojskama."
+        },
+        {
+          "verse": 12,
+          "text": "Ali vi ga skvrnite kada govorite: »Stol je Gospodnji okaljan i hrana na njemu ni za što nije!«"
+        },
+        {
+          "verse": 13,
+          "text": "Kažete još: »Gle, šteta truda!« i prezirete ga – govori Jahve nad vojskama. Kada dovodite stoku otetu, hromu i bolesnu, te je prinosite kao dar žrtveni, zar da to iz vaše ruke milostivo primim? – govori Jahve nad vojskama."
+        },
+        {
+          "verse": 14,
+          "text": "Proklet bio varalica koji u stadu ima ovna što mi ga je zavjetovao, a žrtvuje mi ovcu jalovicu. Jer ja sam velik kralj – govori Jahve nad vojskama – i strašno je ime moje među narodima."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 17,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "A sad vas opominjem, svećenici!"
+        },
+        {
+          "verse": 2,
+          "text": "Ako ne budete poslušali, ako ne budete k srcu uzeli da proslavite ime moje – govori Jahve nad vojskama – kletvu ću na vas svaliti i proklet ću vaš blagoslov. I već ga prokleh jer to niste k srcu uzeli."
+        },
+        {
+          "verse": 3,
+          "text": "I slomit ću vam ruku, bacit ću vam u lice izmetine, izmetine vaših svetkovina, i s njima ću vas splaviti."
+        },
+        {
+          "verse": 4,
+          "text": "Po tom ćete znati: to je bila moja opomena da ostane savez moj s Levijem – govori Jahve nad vojskama."
+        },
+        {
+          "verse": 5,
+          "text": "A moj savez s njim, to bijaše život i mir – ja sam mu ih dao: bijaše to strah – i on me se bojao, Imena se moga plašio."
+        },
+        {
+          "verse": 6,
+          "text": "Zakon istine bijaše u njegovim ustima i pakost mu ne kaljaše usana; u miru i pravičnosti hodio je sa mnom i mnoge je od grijeha odvratio."
+        },
+        {
+          "verse": 7,
+          "text": "Da, usne svećenikove treba da čuvaju znanje, a iz njegovih usta treba tražiti Zakon: ta on je glasnik Jahve nad vojskama."
+        },
+        {
+          "verse": 8,
+          "text": "Ali vi ste s puta zašli, učinili ste da se mnogi o Zakon spotiču, raskinuli ste Savez Levijev – govori Jahve nad vojskama."
+        },
+        {
+          "verse": 9,
+          "text": "Zato učinih da vas preziru i ponizuju svi narodi jer se putova mojih vi držali niste, nego ste bili pristrani primjenjujuć’ Zakon."
+        },
+        {
+          "verse": 10,
+          "text": "Nemamo li svi jednog Oca? Nije li nas jedan Bog stvorio? Zašto smo onda jedan drugome nevjerni te skvrnimo Savez svojih otaca?",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Mješovita vjenčanja i razvodi"
+            }
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Iznevjerio se Juda: učinili su sramotu u Izraelu i Jeruzalemu, jer Juda je oskvrnuo Svetinju, Jahvi dragu, i ženi se kćerju tuđega božanstva."
+        },
+        {
+          "verse": 12,
+          "text": "Svakog tko tako učini, ma tko bio on, nek’ iskorijeni Jahve iz šatora Jakovljevih i izmeđ’ onih koji prinose žrtvu Jahvi nad vojskama!"
+        },
+        {
+          "verse": 13,
+          "text": "I ovo još vi činite: zalijevate suzama Jahvin žrtvenik tužeći i ridajući, jer on više neće da se žrtvi prikloni, iz ruke mu vaše ona nije ugodna."
+        },
+        {
+          "verse": 14,
+          "text": "I vi pitate: »Zašto?« Zato što je Jahve bio svjedok između tebe i žene mladosti tvoje kojoj si nevjeran premda ti drugarica bijaše i žena tvoga saveza."
+        },
+        {
+          "verse": 15,
+          "text": "Nije li On načinio jedno jedino biće dahom životnim obdareno? A što to jedino biće traži? Božanski naraštaj! Poštuj, dakle, život svoj i ne budi nevjeran ženi svoje mladosti."
+        },
+        {
+          "verse": 16,
+          "text": "Jer ja mrzim otpuštanje žena – govori Jahve, Bog Izraelov – i onog koji nevjerom haljine svoje kalja – govori Jahve nad vojskama! Poštujte dakle život svoj, ne budite nevjerni!"
+        },
+        {
+          "verse": 17,
+          "text": "Dosađujete Jahvi svojim riječima, a pitate: »U čemu mu dosađujemo?« Time što govorite: »Svi koji zlo čine dobro su viđeni u očima Jahvinim i takvi su mu mili!« ili: »Gdje je Bog pravde?«",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Dan Gospodnji"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 24,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Evo šaljem glasnika da put preda mnom pripravi. I doći će iznenada u hram svoj Gospod koga vi tražite i anđeo Saveza koga žudite. Evo ga, dolazi već – govori Jahve nad vojskama."
+        },
+        {
+          "verse": 2,
+          "text": "Ali tko će podnijeti dan njegova dolaska i tko će opstati kad se on pojavi? Jer on je kao oganj ljevačev i kao lužina bjeliočeva."
+        },
+        {
+          "verse": 3,
+          "text": "I zasjest će kao onaj što topi srebro i pročišćava. Očistit će sinove Levijeve i pročistit će ih kao zlato i srebro, da prinose Jahvi žrtvu u pravednosti."
+        },
+        {
+          "verse": 4,
+          "text": "Tad će biti draga Jahvi žrtva Judina i jeruzalemska kao u drevne dane i kao prvih godina."
+        },
+        {
+          "verse": 5,
+          "text": "Doći ću k vama na sud i bit ću spreman svjedok protiv vračeva i preljubnika, protiv onih koji se lažno kunu, protiv onih koji zakidaju plaću radniku, udovici i siroti, protiv onih koji gaze pravo stranaca i mene se ne boje – govori Jahve nad vojskama.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Desetina za Hram"
+            }
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Jer ja, Jahve, ne mijenjam se, a vi se, sinovi Jakovljevi, mijenjate bez prestanka!"
+        },
+        {
+          "verse": 7,
+          "text": "Od vremena svojih otaca odstupate od mojih uredaba i ne čuvate ih. Vratite se meni, i ja ću se vratiti vama – govori Jahve nad vojskama. Pitate: »Kako da se vratimo?«"
+        },
+        {
+          "verse": 8,
+          "text": "Smije li čovjek prikraćivati Boga? A vi mene prikraćujete. I pitate: »U čemu te prikratismo?« U desetini i u prinosu."
+        },
+        {
+          "verse": 9,
+          "text": "Udareni ste prokletstvom jer me prikraćujete vi, sav narod!"
+        },
+        {
+          "verse": 10,
+          "text": "Donesite čitavu desetinu u riznicu da u mojoj kući bude hrane. Tada me iskušajte – govori Jahve nad vojskama – neću li vam otvoriti ustave nebeske i neću li izliti na vas punom mjerom blagoslov,"
+        },
+        {
+          "verse": 11,
+          "text": "neću li zbog vas zaprijetit’ skakavcu da vam više ne kvari usjeva i da vam ne bude nerodna loza u polju – govori Jahve nad vojskama."
+        },
+        {
+          "verse": 12,
+          "text": "Svi će vas narodi tad držati sretnima, jer ćete biti zemlja blaženstva – govori Jahve nad vojskama."
+        },
+        {
+          "verse": 13,
+          "text": "Teške su besjede vaše protiv mene – govori Jahve.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Slavlje pravednika na Dan Gospodnji"
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Vi ipak pitate: »Što smo između sebe govorili protiv tebe?« Govorili ste: »Zaludu je Bogu služiti i kakva je korist što njegove čuvamo propise i žalosni hodimo pred Jahvom nad vojskama."
+        },
+        {
+          "verse": 15,
+          "text": "Odsad ćemo sretnim zvati oholice: napreduju oni koji zlo čine, i premda Boga iskušavaju, izvuku se!«"
+        },
+        {
+          "verse": 16,
+          "text": "Ali kad se razgovaraju oni koji se Boga boje, Jahve pazi, sluša ih, i to se pred njim piše u knjigu spomenicu u korist onih koji se boje Jahve i štuju ime njegovo."
+        },
+        {
+          "verse": 17,
+          "text": "Moji će biti, moja stečevina – govori Jahve nad vojskama. U dan koji spremam bit ću im milostiv kao što je milostiv otac sinu koji mu služi."
+        },
+        {
+          "verse": 18,
+          "text": "I tada ćete opet razlikovati pravednika od grešnika, onoga koji služi Bogu od onoga koji mu ne služi."
+        },
+        {
+          "verse": 19,
+          "text": "Jer evo dan dolazi poput peći užaren; oholi i zlikovci bit će kao strnjika: dan koji se bliži spalit će ih – govori Jahve nad vojskama – da im neće ostati ni korijena ni grančice."
+        },
+        {
+          "verse": 20,
+          "text": "A vama koji se imena moga bojite sunce pravde će ogranuti sa zdravljem u zrakama, i vi ćete izlaziti poskakujući kao telad na pašu."
+        },
+        {
+          "verse": 21,
+          "text": "I gazit ćete bezbožnike kao prah pod nogama u dan koji spremam – govori Jahve nad vojskama."
+        },
+        {
+          "verse": 22,
+          "text": "»Spomenite se Zakona Mojsija, sluge moga, kome sam na Horebu propisao zakone i uredbe za sav Izrael.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Dodaci"
+            }
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "Evo, poslat ću vam proroka Iliju prije nego dođe dan Jahvin, dan velik i strašan."
+        },
+        {
+          "verse": 24,
+          "text": "On će obratiti srce otaca k sinovima, a srce sinova k ocima, da ne dođem i ne udarim prokletstvom zemlju.«"
+        }
+      ]
+    }
+  ]
+}

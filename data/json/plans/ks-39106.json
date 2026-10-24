@@ -1,0 +1,1029 @@
+{
+  "id": "ks-39106",
+  "title": "Izaija u šezdeset dana",
+  "category": "ks-tematski",
+  "days_count": 60,
+  "description": "Čuveni starozavjetni prorok. S tempom od jednog do dva poglavlja dnevno, ovo je predivan i dubok dvomjesečni duhovni izazov za one koji žele više.",
+  "days": [
+    {
+      "day": 1,
+      "label": "Iz 1",
+      "verse_count": 31,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 31,
+          "label": "Iz 1"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "label": "Iz 2",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 22,
+          "label": "Iz 2"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "label": "Iz 3",
+      "verse_count": 26,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 26,
+          "label": "Iz 3"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "label": "Iz 4",
+      "verse_count": 6,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 6,
+          "label": "Iz 4"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "label": "Iz 5",
+      "verse_count": 30,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 30,
+          "label": "Iz 5"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "label": "Iz 6",
+      "verse_count": 13,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 13,
+          "label": "Iz 6"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "label": "Iz 7",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 7,
+          "chapter_end": 7,
+          "verse_count": 25,
+          "label": "Iz 7"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "label": "Iz 8",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 8,
+          "chapter_end": 8,
+          "verse_count": 24,
+          "label": "Iz 8"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "label": "Iz 9",
+      "verse_count": 20,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 9,
+          "chapter_end": 9,
+          "verse_count": 20,
+          "label": "Iz 9"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "label": "Iz 10",
+      "verse_count": 34,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 10,
+          "chapter_end": 10,
+          "verse_count": 34,
+          "label": "Iz 10"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "label": "Iz 11-12",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 11,
+          "chapter_end": 12,
+          "verse_count": 22,
+          "label": "Iz 11–12"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "label": "Iz 13",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 13,
+          "chapter_end": 13,
+          "verse_count": 22,
+          "label": "Iz 13"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "label": "Iz 14",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 14,
+          "chapter_end": 14,
+          "verse_count": 32,
+          "label": "Iz 14"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "label": "Iz 15-16",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 15,
+          "chapter_end": 16,
+          "verse_count": 23,
+          "label": "Iz 15–16"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "label": "Iz 17-18",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 17,
+          "chapter_end": 18,
+          "verse_count": 21,
+          "label": "Iz 17–18"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "label": "Iz 19",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 19,
+          "chapter_end": 19,
+          "verse_count": 25,
+          "label": "Iz 19"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "label": "Iz 20-21",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 20,
+          "chapter_end": 21,
+          "verse_count": 23,
+          "label": "Iz 20–21"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "label": "Iz 22",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 22,
+          "chapter_end": 22,
+          "verse_count": 25,
+          "label": "Iz 22"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "label": "Iz 23",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 23,
+          "chapter_end": 23,
+          "verse_count": 18,
+          "label": "Iz 23"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "label": "Iz 24",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 24,
+          "chapter_end": 24,
+          "verse_count": 23,
+          "label": "Iz 24"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "label": "Iz 25",
+      "verse_count": 12,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 25,
+          "chapter_end": 25,
+          "verse_count": 12,
+          "label": "Iz 25"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "label": "Iz 26",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 26,
+          "chapter_end": 26,
+          "verse_count": 21,
+          "label": "Iz 26"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "label": "Iz 27",
+      "verse_count": 13,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 27,
+          "chapter_end": 27,
+          "verse_count": 13,
+          "label": "Iz 27"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "label": "Iz 28",
+      "verse_count": 29,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 28,
+          "chapter_end": 28,
+          "verse_count": 29,
+          "label": "Iz 28"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "label": "Iz 29",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 29,
+          "chapter_end": 29,
+          "verse_count": 24,
+          "label": "Iz 29"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "label": "Iz 30",
+      "verse_count": 33,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 30,
+          "chapter_end": 30,
+          "verse_count": 33,
+          "label": "Iz 30"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "label": "Iz 31",
+      "verse_count": 9,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 31,
+          "chapter_end": 31,
+          "verse_count": 9,
+          "label": "Iz 31"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "label": "Iz 32",
+      "verse_count": 20,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 32,
+          "chapter_end": 32,
+          "verse_count": 20,
+          "label": "Iz 32"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "label": "Iz 33",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 33,
+          "chapter_end": 33,
+          "verse_count": 24,
+          "label": "Iz 33"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "label": "Iz 34",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 34,
+          "chapter_end": 34,
+          "verse_count": 17,
+          "label": "Iz 34"
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "label": "Iz 35",
+      "verse_count": 10,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 35,
+          "chapter_end": 35,
+          "verse_count": 10,
+          "label": "Iz 35"
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "label": "Iz 36",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 36,
+          "chapter_end": 36,
+          "verse_count": 22,
+          "label": "Iz 36"
+        }
+      ]
+    },
+    {
+      "day": 33,
+      "label": "Iz 37",
+      "verse_count": 38,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 37,
+          "chapter_end": 37,
+          "verse_count": 38,
+          "label": "Iz 37"
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "label": "Iz 38",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 38,
+          "chapter_end": 38,
+          "verse_count": 22,
+          "label": "Iz 38"
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "label": "Iz 39",
+      "verse_count": 8,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 39,
+          "chapter_end": 39,
+          "verse_count": 8,
+          "label": "Iz 39"
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "label": "Iz 40",
+      "verse_count": 31,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 40,
+          "chapter_end": 40,
+          "verse_count": 31,
+          "label": "Iz 40"
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "label": "Iz 41",
+      "verse_count": 29,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 41,
+          "chapter_end": 41,
+          "verse_count": 29,
+          "label": "Iz 41"
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "label": "Iz 42",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 42,
+          "chapter_end": 42,
+          "verse_count": 25,
+          "label": "Iz 42"
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "label": "Iz 43",
+      "verse_count": 28,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 43,
+          "chapter_end": 43,
+          "verse_count": 28,
+          "label": "Iz 43"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "label": "Iz 44",
+      "verse_count": 28,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 44,
+          "chapter_end": 44,
+          "verse_count": 28,
+          "label": "Iz 44"
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "label": "Iz 45",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 45,
+          "chapter_end": 45,
+          "verse_count": 25,
+          "label": "Iz 45"
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "label": "Iz 46",
+      "verse_count": 13,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 46,
+          "chapter_end": 46,
+          "verse_count": 13,
+          "label": "Iz 46"
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "label": "Iz 47",
+      "verse_count": 15,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 47,
+          "chapter_end": 47,
+          "verse_count": 15,
+          "label": "Iz 47"
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "label": "Iz 48",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 48,
+          "chapter_end": 48,
+          "verse_count": 22,
+          "label": "Iz 48"
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "label": "Iz 49",
+      "verse_count": 26,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 49,
+          "chapter_end": 49,
+          "verse_count": 26,
+          "label": "Iz 49"
+        }
+      ]
+    },
+    {
+      "day": 46,
+      "label": "Iz 50",
+      "verse_count": 11,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 50,
+          "chapter_end": 50,
+          "verse_count": 11,
+          "label": "Iz 50"
+        }
+      ]
+    },
+    {
+      "day": 47,
+      "label": "Iz 51",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 51,
+          "chapter_end": 51,
+          "verse_count": 23,
+          "label": "Iz 51"
+        }
+      ]
+    },
+    {
+      "day": 48,
+      "label": "Iz 52",
+      "verse_count": 15,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 52,
+          "chapter_end": 52,
+          "verse_count": 15,
+          "label": "Iz 52"
+        }
+      ]
+    },
+    {
+      "day": 49,
+      "label": "Iz 53",
+      "verse_count": 12,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 53,
+          "chapter_end": 53,
+          "verse_count": 12,
+          "label": "Iz 53"
+        }
+      ]
+    },
+    {
+      "day": 50,
+      "label": "Iz 54",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 54,
+          "chapter_end": 54,
+          "verse_count": 17,
+          "label": "Iz 54"
+        }
+      ]
+    },
+    {
+      "day": 51,
+      "label": "Iz 55-56",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 55,
+          "chapter_end": 56,
+          "verse_count": 25,
+          "label": "Iz 55–56"
+        }
+      ]
+    },
+    {
+      "day": 52,
+      "label": "Iz 57",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 57,
+          "chapter_end": 57,
+          "verse_count": 21,
+          "label": "Iz 57"
+        }
+      ]
+    },
+    {
+      "day": 53,
+      "label": "Iz 58",
+      "verse_count": 14,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 58,
+          "chapter_end": 58,
+          "verse_count": 14,
+          "label": "Iz 58"
+        }
+      ]
+    },
+    {
+      "day": 54,
+      "label": "Iz 59",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 59,
+          "chapter_end": 59,
+          "verse_count": 21,
+          "label": "Iz 59"
+        }
+      ]
+    },
+    {
+      "day": 55,
+      "label": "Iz 60",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 60,
+          "chapter_end": 60,
+          "verse_count": 22,
+          "label": "Iz 60"
+        }
+      ]
+    },
+    {
+      "day": 56,
+      "label": "Iz 61-62",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 61,
+          "chapter_end": 62,
+          "verse_count": 23,
+          "label": "Iz 61–62"
+        }
+      ]
+    },
+    {
+      "day": 57,
+      "label": "Iz 63",
+      "verse_count": 19,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 63,
+          "chapter_end": 63,
+          "verse_count": 19,
+          "label": "Iz 63"
+        }
+      ]
+    },
+    {
+      "day": 58,
+      "label": "Iz 64",
+      "verse_count": 11,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 64,
+          "chapter_end": 64,
+          "verse_count": 11,
+          "label": "Iz 64"
+        }
+      ]
+    },
+    {
+      "day": 59,
+      "label": "Iz 65",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 65,
+          "chapter_end": 65,
+          "verse_count": 25,
+          "label": "Iz 65"
+        }
+      ]
+    },
+    {
+      "day": 60,
+      "label": "Iz 66",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 29,
+          "book_id": "izaija",
+          "book_abbr": "Iz",
+          "book_title": "Izaija",
+          "chapter_start": 66,
+          "chapter_end": 66,
+          "verse_count": 24,
+          "label": "Iz 66"
+        }
+      ]
+    }
+  ]
+}

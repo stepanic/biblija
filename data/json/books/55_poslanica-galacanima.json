@@ -1,0 +1,803 @@
+{
+  "order": 55,
+  "id": "poslanica-galacanima",
+  "ks_book_id": 66,
+  "abbr": "Gal",
+  "title": "Poslanica Galaćanima",
+  "testament": "NZ",
+  "category": "Poslanice",
+  "chapter_count": 6,
+  "verse_count": 149,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 24,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Pavao, apostol – ne od ljudi ni po kojem čovjeku, nego po Isusu Kristu i Bogu Ocu koji ga uskrisi od mrtvih –",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "UVOD"
+            },
+            {
+              "level": "h4",
+              "text": "Naslov i pozdrav"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "i sva braća koja su sa mnom: Crkvama u Galaciji."
+        },
+        {
+          "verse": 3,
+          "text": "Milost vam i mir od Boga, Oca našega, i Gospodina Isusa Krista,"
+        },
+        {
+          "verse": 4,
+          "text": "koji sam sebe dade za grijehe naše da nas istrgne iz sadašnjega svijeta opakoga kao što je volja Boga i Oca našega,"
+        },
+        {
+          "verse": 5,
+          "text": "komu slava u vijeke vjekova! Amen."
+        },
+        {
+          "verse": 6,
+          "text": "Čudim se da od Onoga koji vas pozva na milost Kristovu tako brzo prelazite na neko drugo evanđelje,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Evanđelje je samo jedno"
+            }
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "koje uostalom i ne postoji. Postoje samo neki koji vas zbunjuju i hoće prevratiti evanđelje Kristovo."
+        },
+        {
+          "verse": 8,
+          "text": "Ali kad bismo vam mi, ili kad bi vam anđeo s neba navješćivao neko evanđelje mimo onoga koje vam mi navijestismo, neka je proklet!"
+        },
+        {
+          "verse": 9,
+          "text": "Što smo već rekli, to sad i ponavljam: navješćuje li vam tko neko evanđelje mimo onoga koje primiste, neka je proklet."
+        },
+        {
+          "verse": 10,
+          "text": "Doista, nastojim li ovo pridobiti ljude ili Boga? Ili idem li za tim da ljudima ugodim? Kad bih sveudilj nastojao ljudima ugađati, ne bih bio Kristov sluga."
+        },
+        {
+          "verse": 11,
+          "text": "Obznanjujem vam, braćo: evanđelje koje sam navješćivao nije od ljudi,",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "I. PAVLOVA OSOBNA OBRANA"
+            },
+            {
+              "level": "h4",
+              "text": "Božji poziv"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "niti ga ja od kojeg čovjeka primih ili naučih, nego objavom Isusa Krista."
+        },
+        {
+          "verse": 13,
+          "text": "Ta čuli ste za moje negdašnje ponašanje u židovstvu: preko svake sam mjere progonio i pustošio Crkvu Božju"
+        },
+        {
+          "verse": 14,
+          "text": "te sam u židovstvu, prerevno odan otačkim predajama, nadmašio mnoge vršnjake u svojem narodu."
+        },
+        {
+          "verse": 15,
+          "text": "Ali kad se Onomu koji me odvoji već od majčine utrobe i pozva milošću svojom, svidjelo"
+        },
+        {
+          "verse": 16,
+          "text": "otkriti mi Sina svoga da ga navješćujem među poganima, odmah, ne posavjetovah se s tijelom i krvlju"
+        },
+        {
+          "verse": 17,
+          "text": "i ne uziđoh u Jeruzalem k onima koji bijahu apostoli prije mene, nego odoh u Arabiju pa se opet vratih u Damask."
+        },
+        {
+          "verse": 18,
+          "text": "Onda nakon tri godine uziđoh u Jeruzalem potražiti Kefu i ostadoh kod njega petnaest dana."
+        },
+        {
+          "verse": 19,
+          "text": "Od apostola ne vidjeh nikoga drugog osim Jakova, brata Gospodinova."
+        },
+        {
+          "verse": 20,
+          "text": "Što vam pišem, Bog mi je svjedok, ne lažem."
+        },
+        {
+          "verse": 21,
+          "text": "Zatim dođoh u krajeve sirijske i cilicijske."
+        },
+        {
+          "verse": 22,
+          "text": "Osobno pak bijah nepoznat Kristovim crkvama u Judeji."
+        },
+        {
+          "verse": 23,
+          "text": "One su samo čule: »Negdašnji naš progonitelj sada navješćuje vjeru koju je nekoć pustošio«"
+        },
+        {
+          "verse": 24,
+          "text": "i slavile su Boga zbog mene."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 21,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Zatim nakon četrnaest godina opet uziđoh u Jeruzalem s Barnabom, a povedoh sa sobom i Tita.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavao priznat u Jeruzalemu"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Uziđoh po objavi i izložih im – napose uglednijima – evanđelje koje propovijedam među poganima da ne bih možda, ili da nisam, trčao uzalud."
+        },
+        {
+          "verse": 3,
+          "text": "Čak ni Tit, pratilac moj, premda Grk, nije bio prisiljen obrezati se,"
+        },
+        {
+          "verse": 4,
+          "text": "i to radi uljezâ, lažne braće, koja se ušuljaše da vrebaju slobodu koju imamo u Kristu Isusu, ne bi li nas učinili robovima."
+        },
+        {
+          "verse": 5,
+          "text": "Ne, ni načas im nismo popustili, nismo se podložili: da istina evanđelja ostane kod vas!"
+        },
+        {
+          "verse": 6,
+          "text": "A oni koji štogod znače – bili oni što bili, nije mi do toga, Bog ne gleda tko je tko – ti uglednici, uistinu, ništa nisu pridometnuli."
+        },
+        {
+          "verse": 7,
+          "text": "Nego, naprotiv, vidjevši da mi je povjereno evanđelje za neobrezane, kao Petru za obrezane –"
+        },
+        {
+          "verse": 8,
+          "text": "jer Onaj koji je bio na djelu po Petrovu apostolstvu među obrezanima, bio je na djelu i po meni među poganima –"
+        },
+        {
+          "verse": 9,
+          "text": "i spoznavši milost koja mi je dana, Jakov, Kefa i Ivan, smatrani stupovima, pružiše meni i Barnabi desnice zajedništva: mi ćemo među pogane, a oni među obrezane!"
+        },
+        {
+          "verse": 10,
+          "text": "Samo neka se sjećamo siromaha, što sam revno i činio."
+        },
+        {
+          "verse": 11,
+          "text": "A kad Kefa stiže u Antiohiju, u lice mu se usprotivih jer je zavrijedio osudu:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Petar i Pavao u Antiohiji"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "doista, prije nego stigoše neki od Jakova, blagovao je zajedno s poganima; a kad oni dođoše, počeo se povlačiti i odvajati bojeći se onih iz obrezanja."
+        },
+        {
+          "verse": 13,
+          "text": "Za njim se povedoše i ostali Židovi te je i Barnaba zaveden tom prijetvornošću."
+        },
+        {
+          "verse": 14,
+          "text": "Ali kad vidjeh da ne hode ravno, po istini evanđelja, rekoh Kefi pred svima: »Ako ti, Židov, poganski živiš, a ne židovski, kako možeš siliti pogane da se požidove?«"
+        },
+        {
+          "verse": 15,
+          "text": "Mi smo podrijetlom Židovi, a ne »grešnici iz poganstva«.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavlovo evanđelje"
+            }
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Ali znamo: čovjek se ne opravdava po djelima Zakona, nego vjerom u Isusa Krista. Zato i mi u Krista Isusa povjerovasmo da se opravdamo po vjeri u Krista, a ne po djelima Zakona jer se po djelima Zakona nitko neće opravdati."
+        },
+        {
+          "verse": 17,
+          "text": "Ako se pak po tome što zaiskasmo opravdati se u Kristu očitovalo da smo i mi grešnici, nije li onda Krist u službi grijeha? Nipošto!"
+        },
+        {
+          "verse": 18,
+          "text": "Doista, ako ponovno gradim što sam bio srušio, pokazujem da sam prijestupnik."
+        },
+        {
+          "verse": 19,
+          "text": "Ta po Zakonu ja Zakonu umrijeh da Bogu živim. S Kristom sam razapet."
+        },
+        {
+          "verse": 20,
+          "text": "Živim, ali ne više ja, nego živi u meni Krist. A što sada živim u tijelu, u vjeri živim u Sina Božjega koji me ljubio i predao samoga sebe za mene."
+        },
+        {
+          "verse": 21,
+          "text": "Ne dokidam milosti Božje! Doista, ako je opravdanje po Zakonu, onda je Krist uzalud umro."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 29,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "O bezumni Galaćani, tko li vas opčara? A pred očima vam je Isus Krist bio ocrtan kao Raspeti.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "II. ZAKON I VJERA"
+            },
+            {
+              "level": "h4",
+              "text": "Vjera opravdava"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ovo bih samo htio doznati od vas: jeste li primili Duha po djelima Zakona ili po vjeri u Poruku?"
+        },
+        {
+          "verse": 3,
+          "text": "Tako li ste bezumni? Započeli ste u Duhu pa da sada u tijelu dovršite?"
+        },
+        {
+          "verse": 4,
+          "text": "Zar ste toliko toga uzalud doživjeli? A kad bi doista bilo uzalud!"
+        },
+        {
+          "verse": 5,
+          "text": "Onaj dakle koji vam daje Duha i čini među vama silna djela, čini li to zbog djelâ Zakona ili zbog vjere u Poruku?"
+        },
+        {
+          "verse": 6,
+          "text": "Tako Abraham povjerova Bogu i uračuna mu se u pravednost."
+        },
+        {
+          "verse": 7,
+          "text": "Shvatite dakle: oni od vjere, to su sinovi Abrahamovi."
+        },
+        {
+          "verse": 8,
+          "text": "A Pismo, predvidjevši da Bog po vjeri opravdava pogane, unaprijed navijesti Abrahamu: U tebi će blagoslovljeni biti svi narodi."
+        },
+        {
+          "verse": 9,
+          "text": "Tako: oni od vjere blagoslivlju se s vjernikom Abrahamom."
+        },
+        {
+          "verse": 10,
+          "text": "Doista, koji su god od djelâ Zakona, pod prokletstvom su. Ta pisano je: Proklet tko se god ne drži i tko ne vrši svega što je napisano u Knjizi Zakona.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Zakon, izvor prokletstva"
+            }
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "A da se pred Bogom nitko ne opravdava Zakonom, očito je jer: Pravednik će od vjere živjeti."
+        },
+        {
+          "verse": 12,
+          "text": "Zakon pak nije od vjere, nego veli: Tko ga vrši, u njemu će naći život."
+        },
+        {
+          "verse": 13,
+          "text": "Krist nas otkupi od prokletstva Zakona, postavši za nas prokletstvom – jer pisano je: Proklet je tko god visi na drvetu –"
+        },
+        {
+          "verse": 14,
+          "text": "da u Kristu Isusu na pogane dođe blagoslov Abrahamov: da Obećanje, Duha, primimo po vjeri."
+        },
+        {
+          "verse": 15,
+          "text": "Braćo, po ljudsku govorim: već i ljudski valjan savez nitko ne poništava niti mu što dodaje.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Zakon ne dokida obećanja"
+            }
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "A ova su obećanja dana Abrahamu i potomstvu njegovu. Ne veli se: »i potomcima« kao o mnogima, nego kao o jednomu: I potomstvu tvojem, to jest Kristu."
+        },
+        {
+          "verse": 17,
+          "text": "Ovo hoću kazati: Saveza koji je Bog valjano sklopio ne obeskrepljuje Zakon, koji je nastao četiri stotine i trideset godina poslije, i ne dokida obećanjâ."
+        },
+        {
+          "verse": 18,
+          "text": "Doista, ako se baština zadobiva po Zakonu, ne zadobiva se po obećanju. A Abrahama je Bog po obećanju obdario."
+        },
+        {
+          "verse": 19,
+          "text": "Čemu onda Zakon? Dometnut je poradi prekršaja dok ne dođe potomstvo komu je namijenjeno obećanje; sastavljen je po anđelima preko posrednika.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Uloga Zakona"
+            }
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Posrednika pak nema gdje je samo jedan. A Bog je jedan."
+        },
+        {
+          "verse": 21,
+          "text": "Zar je dakle Zakon protiv obećanja Božjih? Nipošto! Jer da je dan Zakon koji bi mogao oživljavati, pravednost bi doista proizlazila iz Zakona."
+        },
+        {
+          "verse": 22,
+          "text": "Ali je Pismo sve zatvorilo pod grijeh da se, po vjeri u Isusa Krista, obećano dade onima koji vjeruju."
+        },
+        {
+          "verse": 23,
+          "text": "Prije dolaska vjere, pod Zakonom zatvoreni, bili smo čuvani za vjeru koja se imala objaviti.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Doba vjere"
+            }
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Tako nam je Zakon bio nadzirateljem sve do Krista da se po vjeri opravdamo."
+        },
+        {
+          "verse": 25,
+          "text": "A otkako je nadošla vjera, nismo više pod nadzirateljem."
+        },
+        {
+          "verse": 26,
+          "text": "Uistinu, svi ste sinovi Božji, po vjeri u Kristu Isusu."
+        },
+        {
+          "verse": 27,
+          "text": "Doista, koji ste god u Krista kršteni, Kristom se zaodjenuste."
+        },
+        {
+          "verse": 28,
+          "text": "Nema više: Židov – Grk! Nema više: rob – slobodnjak! Nema više: muško – žensko! Svi ste vi Jedan u Kristu Isusu!"
+        },
+        {
+          "verse": 29,
+          "text": "Ako li ste Kristovi, onda ste Abrahamovo potomstvo, baštinici po obećanju."
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 31,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Hoću reći: sve dok je baštinik maloljetan, ništa se ne razlikuje od roba premda je gospodar svega:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Božje posinstvo"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "pod skrbnicima je i upraviteljima sve do dana koji je odredio otac."
+        },
+        {
+          "verse": 3,
+          "text": "Tako i mi: dok bijasmo maloljetni, robovasmo počelima svijeta."
+        },
+        {
+          "verse": 4,
+          "text": "A kada dođe punina vremena, odasla Bog Sina svoga: od žene bî rođen, Zakonu podložan",
+          "lines": [
+            "A kada dođe punina vremena,",
+            "odasla Bog Sina svoga:",
+            "od žene bî rođen,",
+            "Zakonu podložan"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "da podložnike Zakona otkupi te primimo posinstvo.",
+          "lines": [
+            "da podložnike Zakona otkupi",
+            "te primimo posinstvo."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "A budući da ste sinovi, odasla Bog u srca vaša Duha Sina svoga koji kliče: »Abba! Oče!«",
+          "lines": [
+            "A budući da ste sinovi,",
+            "odasla Bog u srca vaša Duha Sina svoga",
+            "koji kliče: »Abba! Oče!«"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Tako više nisi rob nego sin; ako pak sin, onda i baštinik po Bogu.",
+          "lines": [
+            "Tako više nisi rob nego sin;",
+            "ako pak sin,",
+            "onda i baštinik po Bogu."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Onda dok još niste poznavali Boga, služili ste bogovima koji po naravi to nisu."
+        },
+        {
+          "verse": 9,
+          "text": "Ali sada kad ste spoznali Boga – zapravo, kad je Bog spoznao vas – kako se sad opet vraćate k nemoćnim i bijednim počelima i opet im, ponovno, hoćete robovati?"
+        },
+        {
+          "verse": 10,
+          "text": "Dane pomno opslužujete, i mjesece, i vremena, i godine!"
+        },
+        {
+          "verse": 11,
+          "text": "Sve se bojim za vas! Da se možda nisam uzalud trudio oko vas!"
+        },
+        {
+          "verse": 12,
+          "text": "Postanite, braćo, molim vas, kao ja jer i ja postadoh kao vi. Ničim me niste povrijedili.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavao i Galaćani"
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Znate: prvi sam vam put za bolesti navješćivao evanđelje."
+        },
+        {
+          "verse": 14,
+          "text": "Svoju kušnju, moje tijelo, niste ni prezreli ni odbacili, nego ste me primili kao anđela Božjega, kao Krista Isusa."
+        },
+        {
+          "verse": 15,
+          "text": "Gdje je sada ono vaše blaženstvo? Svjedočim vam doista: kad bi bilo moguće, oči biste svoje bili iskopali i dali mi ih."
+        },
+        {
+          "verse": 16,
+          "text": "Tako? Postadoh li vam neprijateljem propovijedajući vam istinu?"
+        },
+        {
+          "verse": 17,
+          "text": "Oni revnuju za vas, ne časno, nego – odvojiti vas hoće da onda vi za njih revnujete."
+        },
+        {
+          "verse": 18,
+          "text": "Dobro je da se za vas revnuje u dobru uvijek, a ne samo kad sam nazočan kod vas,"
+        },
+        {
+          "verse": 19,
+          "text": "dječice moja, koju ponovno u trudovima rađam dok se Krist ne oblikuje u vama."
+        },
+        {
+          "verse": 20,
+          "text": "Htio bih sada biti kod vas, pa i jezik promijeniti, jer ne znam što bih s vama."
+        },
+        {
+          "verse": 21,
+          "text": "Recite mi vi, koji želite biti pod Zakonom, zar ne čujete Zakona?",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Dva Saveza: Hagara i Sara"
+            }
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Ta pisano je da je Abraham imao dva sina, jednoga od ropkinje i jednoga od slobodne."
+        },
+        {
+          "verse": 23,
+          "text": "Ali onaj od ropkinje rođen je po tijelu, a onaj od slobodne snagom obećanja."
+        },
+        {
+          "verse": 24,
+          "text": "To je slika. Doista, te žene dva su Saveza: jedan s brda Sinaja, koji rađa za ropstvo – to je Hagara."
+        },
+        {
+          "verse": 25,
+          "text": "Jer Hagara znači brdo Sinaj u Arabiji i odgovara sadašnjem Jeruzalemu jer robuje zajedno sa svojom djecom."
+        },
+        {
+          "verse": 26,
+          "text": "Onaj pak Jeruzalem gore slobodan je; on je majka naša."
+        },
+        {
+          "verse": 27,
+          "text": "Pisano je doista: Kliči, nerotkinjo, koja ne rađaš, podvikuj od radosti, ti što ne znaš za trudove! Jer osamljena više djece ima negoli udana.",
+          "lines": [
+            "Pisano je doista:",
+            "Kliči, nerotkinjo, koja ne rađaš,",
+            "podvikuj od radosti,",
+            "ti što ne znaš za trudove!",
+            "Jer osamljena više djece ima",
+            "negoli udana."
+          ]
+        },
+        {
+          "verse": 28,
+          "text": "Vi ste, braćo, kao Izak, djeca obećanja."
+        },
+        {
+          "verse": 29,
+          "text": "I kao što je onda onaj po tijelu rođeni progonio onoga po duhu rođenoga, tako je i sada."
+        },
+        {
+          "verse": 30,
+          "text": "Nego, što veli Pismo? Otjeraj sluškinju i sina njezina jer sin sluškinje ne smije biti baštinik sa sinom slobodne."
+        },
+        {
+          "verse": 31,
+          "text": "Zato, braćo, nismo djeca ropkinje, nego slobodne."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verse_count": 26,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Za slobodu nas Krist oslobodi! Držite se dakle i ne dajte se ponovno u jaram ropstva!",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "III. EVANĐELJE KRŠĆANSKE SLOBODE"
+            },
+            {
+              "level": "h4",
+              "text": "Odgovorna sloboda"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Evo ja, Pavao, velim vam: ako se obrežete, Krist vam ništa neće koristiti."
+        },
+        {
+          "verse": 3,
+          "text": "I ponovno jamčim svakom čovjeku koji se obreže: dužan je opsluživati sav Zakon."
+        },
+        {
+          "verse": 4,
+          "text": "Prekinuli ste s Kristom vi koji se u Zakonu mislite opravdati; iz milosti ste ispali."
+        },
+        {
+          "verse": 5,
+          "text": "Jer mi po Duhu iz vjere očekujemo pravednost, nadu svoju."
+        },
+        {
+          "verse": 6,
+          "text": "Uistinu, u Kristu Isusu ništa ne vrijedi ni obrezanje ni neobrezanje, nego – vjera ljubavlju djelotvorna."
+        },
+        {
+          "verse": 7,
+          "text": "Dobro ste trčali; tko li vas je samo spriječio da se više ne pokoravate istini?"
+        },
+        {
+          "verse": 8,
+          "text": "Ta pobuda nije od Onoga koji vas zove!"
+        },
+        {
+          "verse": 9,
+          "text": "Malo kvasca cijelo tijesto ukvasa."
+        },
+        {
+          "verse": 10,
+          "text": "Ja se uzdam u vas u Gospodinu: vi nećete drukčije misliti. A tko vas zbunjuje, snosit će osudu, tko god bio."
+        },
+        {
+          "verse": 11,
+          "text": "A ja, braćo, ako sveudilj propovijedam obrezanje, zašto me sveudilj progone? Onda je obeskrijepljena sablazan križa!"
+        },
+        {
+          "verse": 12,
+          "text": "Uškopili se oni koji vas podbunjuju!"
+        },
+        {
+          "verse": 13,
+          "text": "Doista vi ste, braćo, na slobodu pozvani! Samo neka ta sloboda ne bude izlikom tijelu, nego – ljubavlju služite jedni drugima.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Sloboda i ljubav"
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Ta sav je Zakon ispunjen u jednoj jedinoj riječi, u ovoj: Ljubi bližnjega svoga kao sebe samoga!"
+        },
+        {
+          "verse": 15,
+          "text": "Ako li pak jedni druge grizete i glođete, pazite da jedni druge ne proždrete."
+        },
+        {
+          "verse": 16,
+          "text": "Hoću reći: po Duhu živite pa nećete ugađati požudi tijela!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Živjeti po Duhu"
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Jer tijelo žudi protiv Duha, a Duh protiv tijela. Doista, to se jedno drugomu protivi da ne činite što hoćete."
+        },
+        {
+          "verse": 18,
+          "text": "Ali ako vas Duh vodi, niste pod Zakonom."
+        },
+        {
+          "verse": 19,
+          "text": "A očita su djela tijela. To su: bludnost, nečistoća, razvratnost,"
+        },
+        {
+          "verse": 20,
+          "text": "idolopoklonstvo, vračanje, neprijateljstva, svađa, ljubomor, srdžbe, spletkarenja, razdori, strančarenja,"
+        },
+        {
+          "verse": 21,
+          "text": "zavisti, pijančevanja, pijanke i tome slično. Unaprijed vam kažem, kao što vam već rekoh: koji takvo što čine, kraljevstva Božjega neće baštiniti."
+        },
+        {
+          "verse": 22,
+          "text": "Plod je pak Duha: ljubav, radost, mir, velikodušnost, uslužnost, dobrota, vjernost,"
+        },
+        {
+          "verse": 23,
+          "text": "blagost, uzdržljivost. Protiv tih nema zakona."
+        },
+        {
+          "verse": 24,
+          "text": "Koji su Kristovi, razapeše tijelo sa strastima i požudama."
+        },
+        {
+          "verse": 25,
+          "text": "Ako živimo po Duhu, po Duhu se i ravnajmo!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Primjena načela ljubavi"
+            }
+          ]
+        },
+        {
+          "verse": 26,
+          "text": "Ne hlepimo za taštom slavom! Ne izazivajmo jedni druge, ne zaviđajmo jedni drugima!"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Braćo, ako se tko i zatekne u kakvu prijestupu, vi, duhovni, takva ispravljajte u duhu blagosti. A pazi na samoga sebe da i ti ne podlegneš napasti."
+        },
+        {
+          "verse": 2,
+          "text": "Nosite jedni bremena drugih i tako ćete ispuniti zakon Kristov!"
+        },
+        {
+          "verse": 3,
+          "text": "Jer misli li tko da jest štogod, a nije ništa, sam sebe vara."
+        },
+        {
+          "verse": 4,
+          "text": "Svatko neka ispita sam svoje djelo pa će onda u samom sebi imati čime se dičiti, a ne u usporedbi s drugim."
+        },
+        {
+          "verse": 5,
+          "text": "Ta svatko će nositi svoj teret."
+        },
+        {
+          "verse": 6,
+          "text": "Koji se uči Riječi, neka sva dobra dijeli sa svojim učiteljem."
+        },
+        {
+          "verse": 7,
+          "text": "Ne varajte se: Bog se ne da izrugivati! Što tko sije, to će i žeti!"
+        },
+        {
+          "verse": 8,
+          "text": "Doista, tko sije u tijelo svoje, iz tijela će žeti raspadljivost, a tko sije u duh, iz duha će žeti život vječni."
+        },
+        {
+          "verse": 9,
+          "text": "Neka nam ne dozlogrdi činiti dobro: ako ne sustanemo, u svoje ćemo vrijeme žeti!"
+        },
+        {
+          "verse": 10,
+          "text": "Dakle, dok imamo vremena, činimo dobro svima, ponajpače domaćima u vjeri."
+        },
+        {
+          "verse": 11,
+          "text": "Gledajte kolikim vam slovima pišem svojom rukom.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "VLASTORUČNI ZAKLJUČAK"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Svi koji se hoće praviti važni tijelom, sile vas na obrezanje, samo da zbog križa Kristova ne bi trpjeli progonstvo."
+        },
+        {
+          "verse": 13,
+          "text": "Ta ni sami obrezani ne opslužuju Zakona, ali hoće da se vi obrežete da bi se mogli ponositi vašim tijelom."
+        },
+        {
+          "verse": 14,
+          "text": "A ja, Bože sačuvaj da bih se ičim ponosio osim križem Gospodina našega Isusa Krista po kojem je meni svijet raspet i ja svijetu."
+        },
+        {
+          "verse": 15,
+          "text": "Uistinu, niti je što obrezanje niti neobrezanje, nego – novo stvorenje."
+        },
+        {
+          "verse": 16,
+          "text": "A na sve koji se ovoga pravila budu držali, i na sveg Izraela Božjega – mir i milosrđe!"
+        },
+        {
+          "verse": 17,
+          "text": "Ubuduće neka mi nitko ne dodijava jer ja na svom tijelu nosim biljege Isusove!"
+        },
+        {
+          "verse": 18,
+          "text": "Milost Gospodina našega Isusa Krista s duhom vašim, braćo! Amen."
+        }
+      ]
+    }
+  ]
+}

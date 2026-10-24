@@ -1,0 +1,774 @@
+{
+  "id": "ks-39091",
+  "title": "Jeremija i Tužaljke u četrdeset i pet dana",
+  "category": "ks-tematski",
+  "days_count": 45,
+  "description": "Jeremija je glas koji nije smio šutjeti dok se rušio Jeruzalem, i srce koje nije prestalo govoriti s Bogom. Tužaljke vas uče kako plakati pred Bogom, ne mimo Njega, i još uvijek Mu vjerovati.",
+  "days": [
+    {
+      "day": 1,
+      "label": "Jr 1",
+      "verse_count": 19,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 19,
+          "label": "Jr 1"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "label": "Jr 2",
+      "verse_count": 37,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 37,
+          "label": "Jr 2"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "label": "Jr 3",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 25,
+          "label": "Jr 3"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "label": "Jr 4",
+      "verse_count": 31,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 31,
+          "label": "Jr 4"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "label": "Jr 5",
+      "verse_count": 31,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 31,
+          "label": "Jr 5"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "label": "Jr 6",
+      "verse_count": 30,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 30,
+          "label": "Jr 6"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "label": "Jr 7",
+      "verse_count": 34,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 7,
+          "chapter_end": 7,
+          "verse_count": 34,
+          "label": "Jr 7"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "label": "Jr 8",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 8,
+          "chapter_end": 8,
+          "verse_count": 23,
+          "label": "Jr 8"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "label": "Jr 9",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 9,
+          "chapter_end": 9,
+          "verse_count": 25,
+          "label": "Jr 9"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "label": "Jr 10",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 10,
+          "chapter_end": 10,
+          "verse_count": 25,
+          "label": "Jr 10"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "label": "Jr 11-12",
+      "verse_count": 40,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 11,
+          "chapter_end": 12,
+          "verse_count": 40,
+          "label": "Jr 11–12"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "label": "Jr 13",
+      "verse_count": 27,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 13,
+          "chapter_end": 13,
+          "verse_count": 27,
+          "label": "Jr 13"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "label": "Jr 14",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 14,
+          "chapter_end": 14,
+          "verse_count": 22,
+          "label": "Jr 14"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "label": "Jr 15-16",
+      "verse_count": 42,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 15,
+          "chapter_end": 16,
+          "verse_count": 42,
+          "label": "Jr 15–16"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "label": "Jr 17",
+      "verse_count": 27,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 17,
+          "chapter_end": 17,
+          "verse_count": 27,
+          "label": "Jr 17"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "label": "Jr 18-19",
+      "verse_count": 38,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 18,
+          "chapter_end": 19,
+          "verse_count": 38,
+          "label": "Jr 18–19"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "label": "Jr 20-21",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 20,
+          "chapter_end": 21,
+          "verse_count": 32,
+          "label": "Jr 20–21"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "label": "Jr 22",
+      "verse_count": 30,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 22,
+          "chapter_end": 22,
+          "verse_count": 30,
+          "label": "Jr 22"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "label": "Jr 23",
+      "verse_count": 40,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 23,
+          "chapter_end": 23,
+          "verse_count": 40,
+          "label": "Jr 23"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "label": "Jr 24-25",
+      "verse_count": 48,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 24,
+          "chapter_end": 25,
+          "verse_count": 48,
+          "label": "Jr 24–25"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "label": "Jr 26",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 26,
+          "chapter_end": 26,
+          "verse_count": 24,
+          "label": "Jr 26"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "label": "Jr 27-28",
+      "verse_count": 39,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 27,
+          "chapter_end": 28,
+          "verse_count": 39,
+          "label": "Jr 27–28"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "label": "Jr 29",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 29,
+          "chapter_end": 29,
+          "verse_count": 32,
+          "label": "Jr 29"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "label": "Jr 30",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 30,
+          "chapter_end": 30,
+          "verse_count": 24,
+          "label": "Jr 30"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "label": "Jr 31",
+      "verse_count": 40,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 31,
+          "chapter_end": 31,
+          "verse_count": 40,
+          "label": "Jr 31"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "label": "Jr 32",
+      "verse_count": 44,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 32,
+          "chapter_end": 32,
+          "verse_count": 44,
+          "label": "Jr 32"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "label": "Jr 33",
+      "verse_count": 26,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 33,
+          "chapter_end": 33,
+          "verse_count": 26,
+          "label": "Jr 33"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "label": "Jr 34-35",
+      "verse_count": 41,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 34,
+          "chapter_end": 35,
+          "verse_count": 41,
+          "label": "Jr 34–35"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "label": "Jr 36",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 36,
+          "chapter_end": 36,
+          "verse_count": 32,
+          "label": "Jr 36"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "label": "Jr 37",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 37,
+          "chapter_end": 37,
+          "verse_count": 21,
+          "label": "Jr 37"
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "label": "Jr 38",
+      "verse_count": 28,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 38,
+          "chapter_end": 38,
+          "verse_count": 28,
+          "label": "Jr 38"
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "label": "Jr 39",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 39,
+          "chapter_end": 39,
+          "verse_count": 18,
+          "label": "Jr 39"
+        }
+      ]
+    },
+    {
+      "day": 33,
+      "label": "Jr 40-41",
+      "verse_count": 34,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 40,
+          "chapter_end": 41,
+          "verse_count": 34,
+          "label": "Jr 40–41"
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "label": "Jr 42-43",
+      "verse_count": 35,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 42,
+          "chapter_end": 43,
+          "verse_count": 35,
+          "label": "Jr 42–43"
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "label": "Jr 44-45",
+      "verse_count": 35,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 44,
+          "chapter_end": 45,
+          "verse_count": 35,
+          "label": "Jr 44–45"
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "label": "Jr 46-47",
+      "verse_count": 35,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 46,
+          "chapter_end": 47,
+          "verse_count": 35,
+          "label": "Jr 46–47"
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "label": "Jr 48",
+      "verse_count": 47,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 48,
+          "chapter_end": 48,
+          "verse_count": 47,
+          "label": "Jr 48"
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "label": "Jr 49",
+      "verse_count": 39,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 49,
+          "chapter_end": 49,
+          "verse_count": 39,
+          "label": "Jr 49"
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "label": "Jr 50",
+      "verse_count": 46,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 50,
+          "chapter_end": 50,
+          "verse_count": 46,
+          "label": "Jr 50"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "label": "Jr 51",
+      "verse_count": 64,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 51,
+          "chapter_end": 51,
+          "verse_count": 64,
+          "label": "Jr 51"
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "label": "Jr 52",
+      "verse_count": 34,
+      "readings": [
+        {
+          "book_order": 30,
+          "book_id": "jeremija",
+          "book_abbr": "Jr",
+          "book_title": "Jeremija",
+          "chapter_start": 52,
+          "chapter_end": 52,
+          "verse_count": 34,
+          "label": "Jr 52"
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "label": "Tuž 1-2",
+      "verse_count": 44,
+      "readings": [
+        {
+          "book_order": 31,
+          "book_id": "tuzaljke",
+          "book_abbr": "Tuž",
+          "book_title": "Tužaljke",
+          "chapter_start": 1,
+          "chapter_end": 2,
+          "verse_count": 44,
+          "label": "Tuž 1–2"
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "label": "Tuž 3",
+      "verse_count": 66,
+      "readings": [
+        {
+          "book_order": 31,
+          "book_id": "tuzaljke",
+          "book_abbr": "Tuž",
+          "book_title": "Tužaljke",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 66,
+          "label": "Tuž 3"
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "label": "Tuž 4",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 31,
+          "book_id": "tuzaljke",
+          "book_abbr": "Tuž",
+          "book_title": "Tužaljke",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 22,
+          "label": "Tuž 4"
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "label": "Tuž 5",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 31,
+          "book_id": "tuzaljke",
+          "book_abbr": "Tuž",
+          "book_title": "Tužaljke",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 22,
+          "label": "Tuž 5"
+        }
+      ]
+    }
+  ]
+}

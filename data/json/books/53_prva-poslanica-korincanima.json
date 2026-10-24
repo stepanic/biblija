@@ -1,0 +1,2118 @@
+{
+  "order": 53,
+  "id": "prva-poslanica-korincanima",
+  "ks_book_id": 64,
+  "abbr": "1 Kor",
+  "title": "Prva poslanica Korinćanima",
+  "testament": "NZ",
+  "category": "Poslanice",
+  "chapter_count": 16,
+  "verse_count": 437,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 31,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Pavao, po Božjoj volji pozvan za apostola Krista Isusa, i brat Sosten",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "UVOD"
+            },
+            {
+              "level": "h4",
+              "text": "Naslov, pozdrav, zahvala"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Crkvi Božjoj u Korintu – posvećenima u Kristu Isusu, pozvanicima, svetima, sa svima što na bilo kojemu mjestu prizivlju ime Isusa Krista, Gospodina našega, njihova i našega."
+        },
+        {
+          "verse": 3,
+          "text": "Milost vam i mir od Boga, Oca našega, i Gospodina Isusa Krista!"
+        },
+        {
+          "verse": 4,
+          "text": "Zahvaljujem Bogu svojemu svagda za vas zbog milosti Božje koja vam je dana u Kristu Isusu:"
+        },
+        {
+          "verse": 5,
+          "text": "u njemu se obogatiste u svemu – u svakoj riječi i svakom spoznanju."
+        },
+        {
+          "verse": 6,
+          "text": "Kako li se svjedočanstvo o Kristu utvrdilo u vama"
+        },
+        {
+          "verse": 7,
+          "text": "te ne oskudijevate ni na jednom daru čekajući Objavljenje Gospodina našega Isusa Krista!"
+        },
+        {
+          "verse": 8,
+          "text": "On će vas učiniti i postojanima do kraja, besprigovornima u Dan Gospodina našega Isusa Krista."
+        },
+        {
+          "verse": 9,
+          "text": "Vjeran je Bog koji vas pozva u zajedništvo Sina svojega Isusa Krista, Gospodina našega."
+        },
+        {
+          "verse": 10,
+          "text": "Zaklinjem vas, braćo, imenom Gospodina našega Isusa Krista: svi budite iste misli; neka ne bude među vama razdora, nego budite savršeno istog osjećanja i istog mišljenja.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "I. RAZDORI I SABLAZNI"
+            },
+            {
+              "level": "h3",
+              "text": "1. STRANKE U KORINTSKOJ CRKVI"
+            },
+            {
+              "level": "h4",
+              "text": "Podjela među vjernicima"
+            }
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Jer Klojini mi, braćo moja, o vama rekoše da među vama ima svađa."
+        },
+        {
+          "verse": 12,
+          "text": "Mislim to što svaki od vas govori: »Ja sam Pavlov«, »A ja Apolonov«, »A ja Kefin«, »A ja Kristov«."
+        },
+        {
+          "verse": 13,
+          "text": "Zar je Krist razdijeljen? Zar je Pavao raspet za vas? Ili ste u Pavlovo ime kršteni?"
+        },
+        {
+          "verse": 14,
+          "text": "Hvala Bogu što ne krstih nikoga od vas, osim Krispa i Gaja;"
+        },
+        {
+          "verse": 15,
+          "text": "da ne bi tko rekao da ste u moje ime kršteni."
+        },
+        {
+          "verse": 16,
+          "text": "A da, krstih i Stefanin dom. Inače ne znam krstih li koga drugoga."
+        },
+        {
+          "verse": 17,
+          "text": "Jer ne posla me Krist krstiti, nego navješćivati evanđelje, i to ne mudrošću besjede, da se ne obeskrijepi križ Kristov.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Svjetska i kršćanska mudrost"
+            }
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Uistinu, besjeda o križu ludost je onima koji propadaju, a nama spašenicima sila je Božja."
+        },
+        {
+          "verse": 19,
+          "text": "Ta pisano je: Upropastit ću mudrost mudrih i odbacit ću umnost umnih."
+        },
+        {
+          "verse": 20,
+          "text": "Gdje je mudrac? Gdje je književnik? Gdje je istraživač ovoga svijeta? Zar ne izludi Bog mudrost svijeta?"
+        },
+        {
+          "verse": 21,
+          "text": "Doista, kad svijet u mudrosti Božjoj Boga ne upozna mudrošću, svidjelo se Bogu ludošću propovijedanja spasiti vjernike."
+        },
+        {
+          "verse": 22,
+          "text": "Jer i Židovi znake ištu i Grci mudrost traže,"
+        },
+        {
+          "verse": 23,
+          "text": "a mi propovijedamo Krista raspetoga: Židovima sablazan, poganima ludost,"
+        },
+        {
+          "verse": 24,
+          "text": "pozvanima pak – i Židovima i Grcima – Krista, Božju snagu i Božju mudrost."
+        },
+        {
+          "verse": 25,
+          "text": "Jer lûdo Božje mudrije je od ljudi i slabo Božje jače je od ljudi."
+        },
+        {
+          "verse": 26,
+          "text": "Ta gledajte, braćo, sebe, pozvane: nema mnogo mudrih po tijelu, nema mnogo snažnih, nema mnogo plemenitih."
+        },
+        {
+          "verse": 27,
+          "text": "Nego lûde svijeta izabra Bog da posrami mudre, i slabe svijeta izabra Bog da posrami jake;"
+        },
+        {
+          "verse": 28,
+          "text": "i neplemenite svijeta i prezrene izabra Bog, i ono što nije, da uništi ono što jest,"
+        },
+        {
+          "verse": 29,
+          "text": "da se nijedan smrtnik ne bi hvalio pred Bogom."
+        },
+        {
+          "verse": 30,
+          "text": "Od njega je da vi jeste u Kristu Isusu, koji nama posta mudrost od Boga, i pravednost, i posvećenje, i otkupljenje,"
+        },
+        {
+          "verse": 31,
+          "text": "da bude kako je pisano: Tko se hvali, u Gospodu neka se hvali."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 16,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "I ja kada dođoh k vama, braćo, ne dođoh s uzvišenom besjedom ili mudrošću navješćivati vam svjedočanstvo Božje"
+        },
+        {
+          "verse": 2,
+          "text": "jer ne htjedoh među vama znati što drugo osim Isusa Krista, i to raspetoga."
+        },
+        {
+          "verse": 3,
+          "text": "I ja priđoh k vama slab, u strahu i u veliku drhtanju."
+        },
+        {
+          "verse": 4,
+          "text": "I besjeda moja i propovijedanje moje ne bijaše u uvjerljivim riječima mudrosti, nego u pokazivanju Duha i snage"
+        },
+        {
+          "verse": 5,
+          "text": "da se vjera vaša ne temelji na mudrosti ljudskoj nego na snazi Božjoj."
+        },
+        {
+          "verse": 6,
+          "text": "Mudrost doduše navješćujemo među zrelima, ali ne mudrost ovoga svijeta, ni knezova ovoga svijeta koji propadaju,"
+        },
+        {
+          "verse": 7,
+          "text": "nego navješćujemo Mudrost Božju, u Otajstvu, sakrivenu; onu koju predodredi Bog prije vjekova za slavu našu,"
+        },
+        {
+          "verse": 8,
+          "text": "a koje nijedan od knezova ovoga svijeta nije upoznao. Jer da su je upoznali, ne bi Gospodina slave razapeli."
+        },
+        {
+          "verse": 9,
+          "text": "Nego, kako je pisano: Što oko ne vidje, i uho ne ču, i u srce čovječje ne uđe, to pripravi Bog onima koji ga ljube."
+        },
+        {
+          "verse": 10,
+          "text": "A nama to Bog objavi po Duhu jer Duh sve proniče, i dubine Božje."
+        },
+        {
+          "verse": 11,
+          "text": "Jer tko od ljudi zna što je u čovjeku osim duha čovječjega u njemu? Tako i što je u Bogu, nitko ne zna osim Duha Božjega."
+        },
+        {
+          "verse": 12,
+          "text": "A mi, mi ne primismo duha svijeta, nego Duha koji je od Boga da znamo čime nas je obdario Bog."
+        },
+        {
+          "verse": 13,
+          "text": "To i navješćujemo, ne naučenim riječima čovječje mudrosti, nego naukom Duha izlažući duhovno duhovnima."
+        },
+        {
+          "verse": 14,
+          "text": "Naravan čovjek ne prima što je od Duha Božjega; njemu je to ludost i ne može spoznati jer po Duhu valja prosuđivati."
+        },
+        {
+          "verse": 15,
+          "text": "Duhovan pak prosuđuje sve, a njega nitko ne prosuđuje."
+        },
+        {
+          "verse": 16,
+          "text": "Jer tko spozna misao Gospodnju, tko da ga pouči? A mi imamo misao Kristovu."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 23,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "I ja, braćo, nisam mogao govoriti vama kao duhovnima, nego kao tjelesnima, kao nejačadi u Kristu."
+        },
+        {
+          "verse": 2,
+          "text": "Mlijekom vas napojih, ne jelom: još ne mogoste, a ni sada još ne možete"
+        },
+        {
+          "verse": 3,
+          "text": "jer još ste tjelesni. Doista, dok je među vama zavist i prepiranje, zar niste tjelesni, zar po ljudsku ne postupate?"
+        },
+        {
+          "verse": 4,
+          "text": "Jer kad jedan govori: »Ja sam Pavlov«, a drugi: »Ja Apolonov«, niste li odveć ljudi?"
+        },
+        {
+          "verse": 5,
+          "text": "Ta što je Apolon? Što je Pavao? Poslužitelji po kojima povjerovaste – kako već komu Gospodin dade.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prava uloga propovjednikova"
+            }
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Ja zasadih, Apolon zali, ali Bog dade rasti."
+        },
+        {
+          "verse": 7,
+          "text": "Tako niti je što onaj tko sadi ni onaj tko zalijeva, nego Bog koji daje rasti."
+        },
+        {
+          "verse": 8,
+          "text": "Tko sadi i tko zalijeva, jedno su; a svaki će po svome trudu primiti plaću."
+        },
+        {
+          "verse": 9,
+          "text": "Jer Božji smo suradnici: Božja ste njiva, Božja građevina."
+        },
+        {
+          "verse": 10,
+          "text": "Po milosti Božjoj koja mi je dana ja kao mudri graditelj postavih temelj, a drugi naziđuje; ali svaki neka pazi kako naziđuje."
+        },
+        {
+          "verse": 11,
+          "text": "Jer nitko ne može postaviti drugoga temelja osim onoga koji je postavljen, a taj je Isus Krist."
+        },
+        {
+          "verse": 12,
+          "text": "Naziđuje li tko na ovom temelju zlatom, srebrom, dragim kamenjem, drvom, sijenom, slamom –"
+        },
+        {
+          "verse": 13,
+          "text": "svačije će djelo izići na svjetlo. Onaj će Dan pokazati jer će se u ognju očitovati. I kakvo je čije djelo, oganj će iskušati."
+        },
+        {
+          "verse": 14,
+          "text": "Ostane li djelo, primit će plaću onaj tko ga je nazidao."
+        },
+        {
+          "verse": 15,
+          "text": "Izgori li čije djelo, taj će štetovati; ipak, on će se sam spasiti, ali kao kroz oganj."
+        },
+        {
+          "verse": 16,
+          "text": "Ne znate li? Hram ste Božji i Duh Božji prebiva u vama."
+        },
+        {
+          "verse": 17,
+          "text": "Ako tko upropašćuje hram Božji, upropastit će njega Bog. Jer hram je Božji svet, a to ste vi."
+        },
+        {
+          "verse": 18,
+          "text": "Nitko neka se ne vara. Ako tko misli da je mudar među vama na ovome svijetu, neka bude lud da bude mudar.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Zaključak"
+            }
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Jer mudrost ovoga svijeta ludost je pred Bogom. Ta pisano je: On hvata mudre u njihovu lukavstvu."
+        },
+        {
+          "verse": 20,
+          "text": "I opet: Gospodin poznaje namisli mudrih, one su isprazne."
+        },
+        {
+          "verse": 21,
+          "text": "Zato neka se nitko ne hvasta ljudima jer sve je vaše."
+        },
+        {
+          "verse": 22,
+          "text": "Bio Pavao, ili Apolon, ili Kefa, bio svijet, ili život, ili smrt, ili sadašnje, ili buduće: sve je vaše,"
+        },
+        {
+          "verse": 23,
+          "text": "vi Kristovi, a Krist Božji."
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 21,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Tako, neka nas svatko smatra službenicima Kristovim i upraviteljima otajstava Božjih."
+        },
+        {
+          "verse": 2,
+          "text": "A od upravitelja iziskuje se napokon da budu vjerni."
+        },
+        {
+          "verse": 3,
+          "text": "Meni pak nije nimalo do toga da me sudite vi ili bilo koji ljudski sud; a ni ja sam sebe ne sudim."
+        },
+        {
+          "verse": 4,
+          "text": "Doista, ničega sebi nisam svjestan, no time nisam opravdan: moj je sudac Gospodin."
+        },
+        {
+          "verse": 5,
+          "text": "Zato ne sudite ništa prije vremena dok ne dođe Gospodin koji će iznijeti na vidjelo što je sakriveno u tami i razotkriti nakane srdaca. I tada će svatko primiti pohvalu od Boga."
+        },
+        {
+          "verse": 6,
+          "text": "Time, braćo, smjerah na sebe i Apolona radi vas: da na nama naučite onu »Ne preko onoga što je pisano« te se ne nadimate jednim protiv drugoga."
+        },
+        {
+          "verse": 7,
+          "text": "Ta tko tebi daje prednost? Što imaš da nisi primio? Ako si primio, što se hvastaš kao da nisi primio?"
+        },
+        {
+          "verse": 8,
+          "text": "Već ste siti, već se obogatiste, bez nas se zakraljiste! Kamo sreće da se zakraljiste da i mi s vama zajedno kraljujemo!"
+        },
+        {
+          "verse": 9,
+          "text": "Jer Bog je, čini mi se, nas apostole prikazao posljednje, kao na smrt osuđene, jer postali smo prizor svijetu, i anđelima, i ljudima –"
+        },
+        {
+          "verse": 10,
+          "text": "mi ludi poradi Krista, vi mudri u Kristu; mi slabi, vi jaki; vi čašćeni, mi prezreni;"
+        },
+        {
+          "verse": 11,
+          "text": "sve do ovoga časa i gladujemo, i žeđamo, i goli smo, i pljuskaju nas, i beskućnici smo,"
+        },
+        {
+          "verse": 12,
+          "text": "i patimo se radeći svojim rukama. Proklinjani blagoslivljamo, proganjani ustrajavamo,"
+        },
+        {
+          "verse": 13,
+          "text": "pogrđivani tješimo. Kao smeće svijeta postasmo, svačiji izmet sve do sada."
+        },
+        {
+          "verse": 14,
+          "text": "Ne pišem ovoga da vas postidim, nego da vas kao ljubljenu svoju djecu urazumim.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Opomena"
+            }
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Jer da imate u Kristu i deset tisuća učitelja, ipak ne biste imali više otaca. Ta u Kristu Isusu po evanđelju ja vas rodih!"
+        },
+        {
+          "verse": 16,
+          "text": "Zaklinjem vas, dakle: nasljedovatelji moji budite."
+        },
+        {
+          "verse": 17,
+          "text": "Zato upravo poslah k vama Timoteja, koji mi je dijete ljubljeno i vjerno u Gospodinu, da vas podsjeti na naputke moje, u Kristu, kako posvuda u svakoj crkvi učim."
+        },
+        {
+          "verse": 18,
+          "text": "Neki se uzniješe kao da ja neću doći k vama."
+        },
+        {
+          "verse": 19,
+          "text": "Ipak, eto me ubrzo k vama, ako Gospodin htjedne, i rasudit ću ne riječi onih nadutih, nego krepost."
+        },
+        {
+          "verse": 20,
+          "text": "Ta nije u riječi kraljevstvo Božje, nego u kreposti."
+        },
+        {
+          "verse": 21,
+          "text": "Što želite? Da k vama dođem sa šibom ili s ljubavlju i duhom blagosti?"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verse_count": 13,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Općenito se čuje o bludnosti među vama, i to takvoj bludnosti kakve nema ni među poganima: da netko ima očevu ženu.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "2. RODOSKVRNUĆE"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "I vi mi se uznijeli, mjesto da žalujete pa da se iskorijeni iz vaše sredine onaj koji takvo djelo počini."
+        },
+        {
+          "verse": 3,
+          "text": "A ja, i nenazočan tijelom, ali nazočan duhom, već sam presudio kao nazočan onoga koji je takvo što počinio."
+        },
+        {
+          "verse": 4,
+          "text": "Pošto se u ime Gospodina našega Isusa Krista okupite vi i moj duh, snagom Gospodina našega Isusa,"
+        },
+        {
+          "verse": 5,
+          "text": "neka se takav preda Sotoni na propast tijela da bi se spasio duh u Dan Gospodina Isusa."
+        },
+        {
+          "verse": 6,
+          "text": "Ne valja vam hvastanje! Zar ne znate da malo kvasca sve tijesto ukvasa?"
+        },
+        {
+          "verse": 7,
+          "text": "Očistite stari kvasac da budete novo tijesto, kao što i jeste beskvasni jer već je žrtvovana Pasha naša, Krist."
+        },
+        {
+          "verse": 8,
+          "text": "Zato svetkujmo, ne sa starim kvascem ni s kvascem zloće i pakosti, nego s beskvasnim kruhovima čistoće i istine."
+        },
+        {
+          "verse": 9,
+          "text": "Napisah vam u poslanici da se ne miješate s bludnicima –"
+        },
+        {
+          "verse": 10,
+          "text": "ne općenito s bludnicima ovoga svijeta, ili lakomcima, ili razbojnicima, ili idolopoklonicima jer biste inače morali iz svijeta izići."
+        },
+        {
+          "verse": 11,
+          "text": "Napisah vam zapravo da se ne miješate s nazovibratom koji bi bio bludnik, ili lakomac, ili idolopoklonik, ili pogrđivač, ili pijanica, ili razbojnik. S takvim ni za stol!"
+        },
+        {
+          "verse": 12,
+          "text": "Što spada na me suditi one vani? Ne sudite li vi one koji su unutra?"
+        },
+        {
+          "verse": 13,
+          "text": "A one vani sudit će Bog. Iskorijenite opakoga iz svoje sredine."
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verse_count": 20,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Tko bi se od vas u sporu s drugim usudio parničiti se pred nepravednima, a ne pred svetima?",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "3. PRIZIV NA POGANSKE SUDOVE"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ili zar ne znate da će sveti suditi svijet? Pa ako ćete vi suditi svijet, zar niste vrijedni suditi sitnice?"
+        },
+        {
+          "verse": 3,
+          "text": "Ne znate li da ćemo suditi anđele, kamoli ne ono svagdanje?"
+        },
+        {
+          "verse": 4,
+          "text": "A vi, kad imate sporove o svagdanjem, sucima postavljate one do kojih Crkva ništa ne drži!"
+        },
+        {
+          "verse": 5,
+          "text": "Vama na sramotu govorim. Tako? Zar nema među vama ni jednoga mudra koji bi mogao rasuditi među braćom?"
+        },
+        {
+          "verse": 6,
+          "text": "Nego brat se s bratom parniči, i to pred nevjernicima?"
+        },
+        {
+          "verse": 7,
+          "text": "Zapravo, već vam je to nedostatak što se parničite među sobom. Zašto radije ne trpite nepravdu? Zašto se radije ne pustite oplijeniti?"
+        },
+        {
+          "verse": 8,
+          "text": "Nego vi činite nepravdu i plijenite, i to braću."
+        },
+        {
+          "verse": 9,
+          "text": "Ili zar ne znate da nepravednici neće baštiniti kraljevstva Božjega? Ne varajte se! Ni bludnici, ni idolopoklonici, ni preljubnici, ni mekoputnici, ni muškoložnici,"
+        },
+        {
+          "verse": 10,
+          "text": "ni kradljivci, ni lakomci, ni pijanice, ni psovači, ni razbojnici neće baštiniti kraljevstva Božjega."
+        },
+        {
+          "verse": 11,
+          "text": "To, evo, bijahu neki od vas, ali oprali ste se, ali posvetili ste se, ali opravdali ste se u imenu Gospodina našega Isusa Krista i u Duhu Boga našega."
+        },
+        {
+          "verse": 12,
+          "text": "»Sve mi je dopušteno!« Ali – sve ne koristi. »Sve mi je dopušteno!« Ali – neću da mnome išta vlada.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "4. BLUDNOST"
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "»Jela trbuhu, a trbuh jelima; Bog će i jedno i drugo uništiti.« Ali ne tijelo bludnosti, nego Gospodinu, i Gospodin tijelu!"
+        },
+        {
+          "verse": 14,
+          "text": "Ta Bog koji je Gospodina uskrisio i nas će uskrisiti snagom njegovom."
+        },
+        {
+          "verse": 15,
+          "text": "Ne znate li da su tijela vaša udovi Kristovi? Hoću li dakle uzeti udove Kristove i učiniti ih udovima bludničinim? Nipošto!"
+        },
+        {
+          "verse": 16,
+          "text": "Ili zar ne znate: tko uz bludnicu prione, jedno je tijelo? Jer veli se: Bit će njih dvoje jedno tijelo."
+        },
+        {
+          "verse": 17,
+          "text": "A tko prione uz Gospodina, jedan je duh."
+        },
+        {
+          "verse": 18,
+          "text": "Bježite od bludnosti! Svaki grijeh koji učini čovjek, izvan tijela je, a bludnik griješi protiv svojega tijela."
+        },
+        {
+          "verse": 19,
+          "text": "Ili zar ne znate? Tijelo vaše hram je Duha Svetoga koji je u vama, koga imate od Boga, te niste svoji."
+        },
+        {
+          "verse": 20,
+          "text": "Jer kupljeni ste otkupninom. Proslavite dakle Boga u tijelu svojem!"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "verse_count": 40,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Sada o onome što ste mi pisali. Dobro je čovjeku ne dotaći ženu.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "II. ODGOVORI NA RAZLIČITA PITANJA"
+            },
+            {
+              "level": "h3",
+              "text": "1. ŽENIDBA I DJEVIČANSTVO"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ipak, zbog bludnosti, neka svaki ima svoju ženu i svaka neka ima svoga muža."
+        },
+        {
+          "verse": 3,
+          "text": "Muž neka vrši dužnost prema ženi, a tako i žena prema mužu."
+        },
+        {
+          "verse": 4,
+          "text": "Žena nije gospodar svoga tijela, nego muž, a tako ni muž nije gospodar svoga tijela, nego žena."
+        },
+        {
+          "verse": 5,
+          "text": "Ne uskraćujte se jedno drugome, osim po dogovoru, povremeno, da se posvetite molitvi pa se opet združite da vas Sotona ne bi napastovao zbog vaše neizdržljivosti."
+        },
+        {
+          "verse": 6,
+          "text": "Ali to velim kao dopuštenje, ne kao zapovijed."
+        },
+        {
+          "verse": 7,
+          "text": "A htio bih da svi ljudi budu kao i ja; ali svatko ima svoj dar od Boga, ovaj ovako, onaj onako."
+        },
+        {
+          "verse": 8,
+          "text": "Neoženjenima pak i udovicama velim: dobro im je ako ostanu kao i ja."
+        },
+        {
+          "verse": 9,
+          "text": "Ako li se ne mogu suzdržati, neka se žene, udaju. Jer bolje je ženiti se negoli izgarati."
+        },
+        {
+          "verse": 10,
+          "text": "A oženjenima zapovijedam, ne ja, nego Gospodin: žena neka se od muža ne rastavlja –"
+        },
+        {
+          "verse": 11,
+          "text": "ako se ipak rastavi, neka ostane neudana ili neka se s mužem pomiri – i muž neka ne otpušta žene."
+        },
+        {
+          "verse": 12,
+          "text": "Ostalima pak velim – ja, ne Gospodin: ima li koji brat ženu nevjernicu i ona privoli stanovati s njime, neka je ne otpušta."
+        },
+        {
+          "verse": 13,
+          "text": "I žena koja ima muža nevjernika te on privoli stanovati s njome, neka ne otpušta muža."
+        },
+        {
+          "verse": 14,
+          "text": "Ta muž nevjernik posvećen je ženom i žena nevjernica posvećena je bratom. Inače bi djeca vaša bila nečista, a ovako – sveta su."
+        },
+        {
+          "verse": 15,
+          "text": "Ako li se nevjernik hoće rastaviti, neka se rastavi; brat ili sestra u takvim prilikama nisu vezani: ta na mir nas je pozvao Bog."
+        },
+        {
+          "verse": 16,
+          "text": "Jer što znaš, ženo, hoćeš li spasiti muža? Ili što znaš, mužu, hoćeš li spasiti ženu?"
+        },
+        {
+          "verse": 17,
+          "text": "U drugome svatko neka živi kako mu je Gospodin dodijelio, kako ga je Bog pozvao. Tako određujem po svim crkvama."
+        },
+        {
+          "verse": 18,
+          "text": "Je li tko pozvan kao obrezan, neka ne prepravlja obrezanja. Ako je pozvan kao neobrezan, neka se ne obrezuje."
+        },
+        {
+          "verse": 19,
+          "text": "Obrezanje nije ništa i neobrezanje nije ništa, nego – držanje Božjih zapovijedi."
+        },
+        {
+          "verse": 20,
+          "text": "Svatko neka ostane u onom zvanju u koje je pozvan."
+        },
+        {
+          "verse": 21,
+          "text": "Jesi li pozvan kao rob? Ne brini! Nego, ako i možeš postati slobodan, radije se okoristi."
+        },
+        {
+          "verse": 22,
+          "text": "Jer tko je u Gospodinu pozvan kao rob, slobodnjak je Gospodnji. Tako i tko je pozvan kao slobodnjak, rob je Kristov."
+        },
+        {
+          "verse": 23,
+          "text": "Otkupninom ste kupljeni: ne budite robovi ljudima."
+        },
+        {
+          "verse": 24,
+          "text": "Svatko u čemu je pozvan, braćo, u tome neka i ostane pred Bogom."
+        },
+        {
+          "verse": 25,
+          "text": "O djevicama nemam zapovijedi, nego dajem savjet kao čovjek po milosrđu Gospodnjem vrijedan povjerenja."
+        },
+        {
+          "verse": 26,
+          "text": "Smatram dakle: dobro je to zbog sadašnje nevolje, dobro je čovjeku tako biti."
+        },
+        {
+          "verse": 27,
+          "text": "Jesi li vezan za ženu? Ne traži rastave. Jesi li slobodan od žene? Ne traži žene."
+        },
+        {
+          "verse": 28,
+          "text": "Ali ako se i oženiš, nisi sagriješio; i djevica ako se uda, nije sagriješila. Ali takvi će imati tjelesnu nevolju, a ja bih vas rado poštedio."
+        },
+        {
+          "verse": 29,
+          "text": "Ovo hoću reći, braćo: Vrijeme je kratko. Odsad i koji imaju žene, neka budu kao da ih nemaju;"
+        },
+        {
+          "verse": 30,
+          "text": "i koji plaču, kao da ne plaču; i koji se vesele, kao da se ne vesele; i koji kupuju, kao da ne posjeduju;"
+        },
+        {
+          "verse": 31,
+          "text": "i koji uživaju ovaj svijet, kao da ga ne uživaju, jer – prolazi obličje ovoga svijeta."
+        },
+        {
+          "verse": 32,
+          "text": "A rado bih da budete bezbrižni. Neoženjen se brine za Gospodnje, kako da ugodi Gospodinu."
+        },
+        {
+          "verse": 33,
+          "text": "A oženjen se brine za svjetovno, kako da ugodi ženi,"
+        },
+        {
+          "verse": 34,
+          "text": "pa je razdijeljen. I žena neudana i djevica brine se za Gospodnje, da bude sveta i tijelom i duhom; a udana se brine za svjetovno, kako da ugodi mužu."
+        },
+        {
+          "verse": 35,
+          "text": "Ovo pak govorim vama na korist, ne da vam postavim zamku, nego da primjerno i nesmetano budete privrženi Gospodinu."
+        },
+        {
+          "verse": 36,
+          "text": "Misli li tko da je nepriličan prema svojoj djevici kad je preživotan i s njome mora biti, neka čini što je nakanio, ne griješi: neka se uzmu."
+        },
+        {
+          "verse": 37,
+          "text": "Tko je pak nepokolebljivo stalan u srcu te nema potrebe, a u vlasti mu je volja pa to odluči u svom srcu – čuvati svoju djevicu – dobro čini."
+        },
+        {
+          "verse": 38,
+          "text": "Tako, tko se oženi svojom djevicom, dobro čini, a tko se ne oženi, bolje čini."
+        },
+        {
+          "verse": 39,
+          "text": "Žena je vezana dokle živi muž njezin. Umre li muž, slobodna je: neka se uda za koga hoće, samo u Gospodinu."
+        },
+        {
+          "verse": 40,
+          "text": "Bit će ipak blaženija ostane li onako, po mojem savjetu. A mislim da i ja imam Duha Božjega."
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "verse_count": 13,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "U pogledu mesa žrtvovana idolima, znamo, svi posjedujemo znanje. Ali znanje nadima, a ljubav izgrađuje.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "2. BLAGOVANJE MESA ŽRTVOVANA IDOLIMA"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ako tko misli da što zna, još ne zna kako treba znati."
+        },
+        {
+          "verse": 3,
+          "text": "A ljubi li tko Boga, Bog ga poznaje."
+        },
+        {
+          "verse": 4,
+          "text": "Dakle, u pogledu blagovanja mesa žrtvovana idolima, znamo: nema idola na svijetu i nema Boga do Jednoga."
+        },
+        {
+          "verse": 5,
+          "text": "Jer sve kad bi i bilo nazovibogova ili na nebu ili na zemlji – kao što ima mnogo »bogova« i mnogo »gospodara«! –"
+        },
+        {
+          "verse": 6,
+          "text": "nama je jedan Bog, Otac, od koga je sve, a mi za njega; i jedan Gospodin, Isus Krist, po kome je sve, i mi po njemu."
+        },
+        {
+          "verse": 7,
+          "text": "Ali nemaju svi toga znanja. Neki, navikli na idole, još jedu meso kao idolima žrtvovano i njihova se savjest kalja jer je nejaka."
+        },
+        {
+          "verse": 8,
+          "text": "A k Bogu nas ne privodi jelo. Niti što gubimo ako ne jedemo; niti što dobivamo ako jedemo."
+        },
+        {
+          "verse": 9,
+          "text": "A pazite da ne bi možda ta vaša sloboda bila spoticaj nejakima."
+        },
+        {
+          "verse": 10,
+          "text": "Jer vidi li tko tebe koji imaš znanje za stolom u hramu idolskomu, neće li se njegova savjest, jer je nejaka, »izgraditi« da jede žrtvovano idolima?"
+        },
+        {
+          "verse": 11,
+          "text": "I s tvoga znanja propada nejaki, brat za kojega je Krist umro."
+        },
+        {
+          "verse": 12,
+          "text": "Tako griješeći protiv braće i ranjavajući njihovu nejaku savjest, protiv Krista griješite."
+        },
+        {
+          "verse": 13,
+          "text": "Zato ako jelo sablažnjava brata moga, ne, neću jesti mesa dovijeka da brata svoga ne sablaznim."
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "verse_count": 27,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Nisam li ja slobodan? Nisam li apostol? Nisam li vidio Isusa, Gospodina našega? Niste li vi djelo moje u Gospodinu?",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavlov primjer"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ako drugima nisam apostol, vama svakako jesam. Ta vi ste pečat mojega apostolstva u Gospodinu."
+        },
+        {
+          "verse": 3,
+          "text": "Moj odgovor mojim tužiteljima jest ovo:"
+        },
+        {
+          "verse": 4,
+          "text": "Zar nemamo prava jesti i piti?"
+        },
+        {
+          "verse": 5,
+          "text": "Zar nemamo prava ženu vjernicu voditi sa sobom kao i drugi apostoli i braća Gospodnja i Kefa?"
+        },
+        {
+          "verse": 6,
+          "text": "Ili samo ja i Barnaba nemamo prava ne raditi?"
+        },
+        {
+          "verse": 7,
+          "text": "Tko ikada vojuje o svojem trošku? Tko sadi vinograd pa roda njegova ne jede? Ili tko pase stado pa od mlijeka stada ne jede?"
+        },
+        {
+          "verse": 8,
+          "text": "Zar to govorim po ljudsku? Ne kaže li to i Zakon?"
+        },
+        {
+          "verse": 9,
+          "text": "Jer u Mojsijevu zakonu piše: Ne zavezuj usta volu koji vrši! Zar je Bogu do volova?"
+        },
+        {
+          "verse": 10,
+          "text": "Ne govori li on baš radi nas? Doista, radi nas je napisano, jer tko ore, u nadi treba da ore; i tko vrši, u nadi da će dobiti dio."
+        },
+        {
+          "verse": 11,
+          "text": "Ako smo mi vama sijali dobra duhovna, veliko li je nešto ako vam požanjemo tjelesna?"
+        },
+        {
+          "verse": 12,
+          "text": "Ako drugi sudjeluju u vašim dobrima, zašto ne bismo mi mogli još većma. Ali nismo se poslužili tim pravom, nego sve teglimo da ne bismo postavili kakvu zapreku evanđelju Kristovu?"
+        },
+        {
+          "verse": 13,
+          "text": "Ne znate li: koji obavljaju svetinje, od svetišta se hrane; i koji žrtveniku služe, sa žrtvenikom dijele?"
+        },
+        {
+          "verse": 14,
+          "text": "Tako je i Gospodin onima koji evanđelje navješćuju odredio od evanđelja živjeti."
+        },
+        {
+          "verse": 15,
+          "text": "No ja se ničim od toga nisam poslužio. A i ne napisah toga da bi se tako postupilo prema meni. Radije umrijeti, nego… Te mi slave nitko neće oduzeti!"
+        },
+        {
+          "verse": 16,
+          "text": "Jer što navješćujem evanđelje, nije mi na hvalu, ta dužnost mi je. Doista, jao meni ako evanđelja ne navješćujem."
+        },
+        {
+          "verse": 17,
+          "text": "Jer ako to činim iz vlastite pobude, ide me plaća; ako li ne iz vlastite pobude – služba je to koja mi je povjerena."
+        },
+        {
+          "verse": 18,
+          "text": "Koja mi je dakle plaća? Da propovijedajući pružam evanđelje besplatno, ne služeći se svojim pravom u evanđelju."
+        },
+        {
+          "verse": 19,
+          "text": "Jer premda slobodan od sviju, sâm sebe svima učinih slugom da ih što više steknem."
+        },
+        {
+          "verse": 20,
+          "text": "Bijah Židovima Židov da Židove steknem; onima pod Zakonom, kao da sam pod Zakonom – premda ja nisam pod Zakonom – da one pod Zakonom steknem;"
+        },
+        {
+          "verse": 21,
+          "text": "onima bez Zakona, kao da sam bez zakona – premda nisam bez Božjega zakona, nego u Kristovu zakonu – da steknem one bez Zakona;"
+        },
+        {
+          "verse": 22,
+          "text": "bijah nejakima nejak da nejake steknem. Svima bijah sve da pošto-poto neke spasim."
+        },
+        {
+          "verse": 23,
+          "text": "A sve činim poradi evanđelja da bih i ja bio suzajedničar u njemu."
+        },
+        {
+          "verse": 24,
+          "text": "Ne znate li: trkači u trkalištu svi doduše trče, ali jedan prima nagradu? Tako trčite da dobijete."
+        },
+        {
+          "verse": 25,
+          "text": "Svaki natjecatelj sve moguće izdržava; oni da dobiju raspadljiv vijenac, mi neraspadljiv."
+        },
+        {
+          "verse": 26,
+          "text": "Ja dakle tako trčim – ne kao besciljno, tako udaram šakom – ne kao da mlatim vjetar,"
+        },
+        {
+          "verse": 27,
+          "text": "nego krotim svoje tijelo i zarobljavam da sâm ne budem isključen pošto sam drugima propovijedao."
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "verse_count": 33,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Jer ne bih, braćo, htio da budete u neznanju: oci naši svi bijahu pod oblakom i svi prijeđoše kroz more,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pouka Izraelove prošlosti"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "i svi su se na Mojsija krstili u oblaku i u moru,"
+        },
+        {
+          "verse": 3,
+          "text": "i svi su isto duhovno jelo jeli,"
+        },
+        {
+          "verse": 4,
+          "text": "i svi su isto duhovno piće pili. A pili su iz duhovne stijene koja ih je pratila; stijena bijaše Krist."
+        },
+        {
+          "verse": 5,
+          "text": "Ali većina njih nije bila po volji Bogu: ta poubijani su po pustinji."
+        },
+        {
+          "verse": 6,
+          "text": "To bijahu pralikovi naši: da ne žudimo za zlima kao što su žudjeli oni."
+        },
+        {
+          "verse": 7,
+          "text": "I ne budite idolopoklonici kao neki od njih, kako je pisano: Posjeda narod da jede i pije pa ustadoše da igraju."
+        },
+        {
+          "verse": 8,
+          "text": "I ne podajimo se bludu kao što se neki od njih bludu podaše i padoše u jednom danu dvadeset i tri tisuće."
+        },
+        {
+          "verse": 9,
+          "text": "I ne iskušavajmo Gospodina kao što su ga neki od njih iskušavali te od zmija izginuli."
+        },
+        {
+          "verse": 10,
+          "text": "I ne mrmljajte kao što neki od njih mrmljahu te izgiboše od Zatornika."
+        },
+        {
+          "verse": 11,
+          "text": "Sve se to, kao pralik, događalo njima, a napisano je za upozorenje nama, koje su zapala posljednja vremena."
+        },
+        {
+          "verse": 12,
+          "text": "Tko dakle misli da stoji, neka pazi da ne padne."
+        },
+        {
+          "verse": 13,
+          "text": "Nije vas zahvatila druga kušnja osim ljudske. Ta vjeran je Bog: neće pustiti da budete kušani preko svojih sila, nego će s kušnjom dati i ishod da možete izdržati."
+        },
+        {
+          "verse": 14,
+          "text": "Zato, ljubljeni moji, bježite od idolopoklonstva.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Sveta gozba"
+            }
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Kao razumnima velim: sudite sami što govorim."
+        },
+        {
+          "verse": 16,
+          "text": "Čaša blagoslovna koju blagoslivljamo nije li zajedništvo krvi Kristove? Kruh koji lomimo nije li zajedništvo tijela Kristova?"
+        },
+        {
+          "verse": 17,
+          "text": "Budući da je jedan kruh, jedno smo tijelo mi mnogi; ta svi smo dionici jednoga kruha."
+        },
+        {
+          "verse": 18,
+          "text": "Gledajte Izraela po tijelu! Koji blaguju žrtve nisu li zajedničari žrtvenika?"
+        },
+        {
+          "verse": 19,
+          "text": "Što dakle hoću reći? Idolska žrtva da je nešto? Ili idol da je nešto?"
+        },
+        {
+          "verse": 20,
+          "text": "Naprotiv, da pogani vrazima žrtvuju, ne Bogu. A neću da budete zajedničari vražji."
+        },
+        {
+          "verse": 21,
+          "text": "Ne možete piti čašu Gospodnju i čašu vražju. Ne možete biti sudionici stola Gospodnjega i stola vražjega."
+        },
+        {
+          "verse": 22,
+          "text": "Ili da izazivamo ljubomor Gospodnji? Zar smo jači od njega?"
+        },
+        {
+          "verse": 23,
+          "text": "»Sve je slobodno!« Ali – sve ne koristi. »Sve je dopušteno!« Ali – sve ne saziđuje.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Rješenje poteškoća"
+            }
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Nitko neka ne traži svoje, nego dobro drugoga."
+        },
+        {
+          "verse": 25,
+          "text": "Sve što se prodaje na tržnici, jedite, ništa ne ispitujući poradi savjesti."
+        },
+        {
+          "verse": 26,
+          "text": "Ta Gospodnja je zemlja i sve na njoj!"
+        },
+        {
+          "verse": 27,
+          "text": "Pozove li vas koji nevjernik i želite se odazvati, jedite što vam se ponudi, ništa ne ispitujući poradi savjesti."
+        },
+        {
+          "verse": 28,
+          "text": "Ako vam tko reče: »To je žrtvovano«, ne jedite poradi onoga koji vas je upozorio, i savjesti."
+        },
+        {
+          "verse": 29,
+          "text": "Savjesti mislim, ne svoje, nego onoga drugoga. Ta zašto da moju slobodu druga savjest sudi?"
+        },
+        {
+          "verse": 30,
+          "text": "Ako sa zahvalom sudjelujem, zašto da me grde zbog onoga za što zahvaljujem?"
+        },
+        {
+          "verse": 31,
+          "text": "Dakle, ili jeli, ili pili, ili drugo što činili, sve na slavu Božju činite."
+        },
+        {
+          "verse": 32,
+          "text": "Ne budite na sablazan ni Židovima, ni Grcima, ni Crkvi Božjoj,"
+        },
+        {
+          "verse": 33,
+          "text": "kao što i ja svima u svemu ugađam ne tražeći svoju korist, nego što koristi mnogima na spasenje."
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "verse_count": 34,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Nasljedovatelji moji budite, kao što sam i ja Kristov.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "3. RED NA VJERSKIM SASTANCIMA"
+            },
+            {
+              "level": "h4",
+              "text": "Nošenje prijevjesa"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Hvalim vas što me se u svemu sjećate i držite se predajâ kako vam predadoh."
+        },
+        {
+          "verse": 3,
+          "text": "Ali htio bih da znate: svakomu je mužu glava Krist, glava ženi muž, a glava Kristu Bog."
+        },
+        {
+          "verse": 4,
+          "text": "Svaki muž koji se moli ili prorokuje pokrivene glave, sramoti glavu svoju."
+        },
+        {
+          "verse": 5,
+          "text": "Svaka pak žena koja se moli ili prorokuje gologlava, sramoti glavu svoju. Ta to je isto kao da je obrijana."
+        },
+        {
+          "verse": 6,
+          "text": "Jer ako se žena ne pokriva, neka se šiša; ako li je pak ružno ženi šišati se ili brijati, neka se pokrije."
+        },
+        {
+          "verse": 7,
+          "text": "A muž ne mora pokrivati glave, ta slika je i slava Božja; a žena je slava muževa."
+        },
+        {
+          "verse": 8,
+          "text": "Jer nije muž od žene, nego žena od muža."
+        },
+        {
+          "verse": 9,
+          "text": "I nije stvoren muž radi žene, nego žena radi muža."
+        },
+        {
+          "verse": 10,
+          "text": "Zato žena treba da ima »vlast« na glavi poradi anđela."
+        },
+        {
+          "verse": 11,
+          "text": "Ipak, u Gospodinu – ni žena bez muža, ni muž bez žene!"
+        },
+        {
+          "verse": 12,
+          "text": "Jer kao što je žena od muža, tako je i muž po ženi; a sve je od Boga."
+        },
+        {
+          "verse": 13,
+          "text": "Sami sudite dolikuje li da se žena gologlava Bogu moli?"
+        },
+        {
+          "verse": 14,
+          "text": "Ne uči li nas i sama narav da je mužu sramota ako goji kosu?"
+        },
+        {
+          "verse": 15,
+          "text": "A ženi je dika ako je goji jer kosa joj je dana mjesto prijevjesa."
+        },
+        {
+          "verse": 16,
+          "text": "Ako je kome do prepirke, takva običaja mi nemamo, a ni Crkve Božje."
+        },
+        {
+          "verse": 17,
+          "text": "Kad već dajem ta upozorenja, ne mogu pohvaliti što se ne sastajete na bolje, nego na gore.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Gospodnja večera"
+            }
+          ],
+          "references": [
+            "(Mt 26, 26–29; Mk 14, 22–25; Lk 22, 15–20)"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Ponajprije čujem, djelomično i vjerujem: kad se okupite na Sastanak, da su među vama razdori."
+        },
+        {
+          "verse": 19,
+          "text": "Treba doista da i podjelâ bude među vama da se očituju prokušani među vama."
+        },
+        {
+          "verse": 20,
+          "text": "Kad se dakle tako zajedno sastajete, to nije blagovanje Gospodnje večere:"
+        },
+        {
+          "verse": 21,
+          "text": "ta svatko se pri blagovanju prihvati svoje večere te jedan gladuje, a drugi se opija."
+        },
+        {
+          "verse": 22,
+          "text": "Zar nemate kuća da jedete i pijete? Ili Crkvu Božju prezirete i postiđujete one koji nemaju? Što da vam kažem? Da vas pohvalim? U tom vas ne hvalim."
+        },
+        {
+          "verse": 23,
+          "text": "Doista, ja od Gospodina primih što vama predadoh: Gospodin Isus one noći kad bijaše predan uze kruh,"
+        },
+        {
+          "verse": 24,
+          "text": "zahvalivši razlomi i reče: »Ovo je tijelo moje – za vas. Ovo činite meni na spomen.«"
+        },
+        {
+          "verse": 25,
+          "text": "Tako i čašu po večeri govoreći: »Ova čaša novi je Savez u mojoj krvi. Ovo činite kad god pijete, meni na spomen.«"
+        },
+        {
+          "verse": 26,
+          "text": "Doista, kad god jedete ovaj kruh i pijete čašu, smrt Gospodnju navješćujete dok on ne dođe."
+        },
+        {
+          "verse": 27,
+          "text": "Stoga, tko god jede kruh ili pije čašu Gospodnju nedostojno, bit će krivac tijela i krvi Gospodnje."
+        },
+        {
+          "verse": 28,
+          "text": "Neka se dakle svatko ispita pa tada od kruha jede i iz čaše pije."
+        },
+        {
+          "verse": 29,
+          "text": "Jer tko jede i pije, sud sebi jede i pije ako ne razlikuje Tijela."
+        },
+        {
+          "verse": 30,
+          "text": "Zato su među vama mnogi nejaki i nemoćni, i spavaju mnogi."
+        },
+        {
+          "verse": 31,
+          "text": "Jer kad bismo sami sebe sudili, ne bismo bili suđeni."
+        },
+        {
+          "verse": 32,
+          "text": "A kad nas sudi Gospodin, odgaja nas da ne budemo sa svijetom osuđeni."
+        },
+        {
+          "verse": 33,
+          "text": "Zato, braćo moja, kad se sastajete na blagovanje, pričekajte jedni druge."
+        },
+        {
+          "verse": 34,
+          "text": "Je li tko gladan, kod kuće neka jede da se ne sastajete na osudu. Drugo ću urediti kada dođem.",
+          "lines": [
+            "Je li tko gladan, kod kuće neka jede da se ne sastajete na osudu.",
+            "Drugo ću urediti kada dođem."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "verse_count": 31,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "O darima Duha ne bih, braćo, htio da budete u neznanju.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Dari Duha"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Znate kako ste se dok bijaste pogani, zavedeni, zanosili nijemim idolima."
+        },
+        {
+          "verse": 3,
+          "text": "Zato vam obznanjujem: nitko tko u Duhu Božjem govori ne kaže: »Prokletstvo Isusu«. I nitko ne može reći: »Gospodin Isus« osim u Duhu Svetom."
+        },
+        {
+          "verse": 4,
+          "text": "Različiti su dari, a isti Duh;"
+        },
+        {
+          "verse": 5,
+          "text": "i različite službe, a isti Gospodin;"
+        },
+        {
+          "verse": 6,
+          "text": "i različita djelovanja, a isti Bog koji čini sve u svima."
+        },
+        {
+          "verse": 7,
+          "text": "A svakomu se daje očitovanje Duha na korist."
+        },
+        {
+          "verse": 8,
+          "text": "Doista, jednomu se po Duhu daje riječ mudrosti, drugomu riječ spoznanja po tom istom Duhu;"
+        },
+        {
+          "verse": 9,
+          "text": "drugomu vjera u tom istom Duhu, drugomu dari liječenja u tom jednom Duhu;"
+        },
+        {
+          "verse": 10,
+          "text": "drugomu čudotvorstva, drugomu prorokovanje, drugomu razlučivanje duhova, drugomu različiti jezici, drugomu tumačenje jezika."
+        },
+        {
+          "verse": 11,
+          "text": "A sve to djeluje jedan te isti Duh dijeleći svakomu napose kako hoće."
+        },
+        {
+          "verse": 12,
+          "text": "Doista, kao što je tijelo jedno te ima mnogo udova, a svi udovi tijela iako mnogi, jedno su tijelo – tako i Krist.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Usporedba s tijelom"
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Ta u jednom Duhu svi smo u jedno tijelo kršteni, bilo Židovi, bilo Grci, bilo robovi, bilo slobodni. I svi smo jednim Duhom napojeni."
+        },
+        {
+          "verse": 14,
+          "text": "Ta ni tijelo nije jedan ud, nego mnogi."
+        },
+        {
+          "verse": 15,
+          "text": "Rekne li noga: »Nisam ruka, nisam od tijela«, zar zbog toga nije od tijela?"
+        },
+        {
+          "verse": 16,
+          "text": "I rekne li uho: »Nisam oko, nisam od tijela«, zar zbog toga nije od tijela?"
+        },
+        {
+          "verse": 17,
+          "text": "Kad bi sve tijelo bilo oko, gdje bi bio sluh? Kad bi sve bilo sluh, gdje bi bio njuh?"
+        },
+        {
+          "verse": 18,
+          "text": "A ovako, Bog je rasporedio udove, svaki od njih u tijelu, kako je htio."
+        },
+        {
+          "verse": 19,
+          "text": "Kad bi svi bili jedan ud, gdje bi bilo tijelo?"
+        },
+        {
+          "verse": 20,
+          "text": "A ovako, mnogi udovi – jedno tijelo!"
+        },
+        {
+          "verse": 21,
+          "text": "Ne može oko reći ruci: »Ne trebam te«, ili pak glava nogama: »Ne trebam vas.«"
+        },
+        {
+          "verse": 22,
+          "text": "Naprotiv, mnogo su potrebniji udovi tijela koji izgledaju slabiji."
+        },
+        {
+          "verse": 23,
+          "text": "A udove koje smatramo nečasnijima, okružujemo većom čašću. I s nepristojnima se pristojnije postupa,"
+        },
+        {
+          "verse": 24,
+          "text": "a pristojni toga ne trebaju. Nego, Bog je tako sastavio tijelo da je posljednjem udu dao izobilniju čast"
+        },
+        {
+          "verse": 25,
+          "text": "da ne bude razdora u tijelu, nego da se udovi jednako brinu jedni za druge."
+        },
+        {
+          "verse": 26,
+          "text": "I ako trpi jedan ud, trpe zajedno svi udovi; ako li se slavi jedan ud, raduju se zajedno svi udovi."
+        },
+        {
+          "verse": 27,
+          "text": "A vi ste tijelo Kristovo i, pojedinačno, udovi."
+        },
+        {
+          "verse": 28,
+          "text": "I neke postavi Bog u Crkvi: prvo za apostole, drugo za proroke, treće za učitelje; onda čudesa, onda dari liječenja; zbrinjavanja, upravljanja, razni jezici."
+        },
+        {
+          "verse": 29,
+          "text": "Zar su svi apostoli? Zar svi proroci? Zar svi učitelji? Zar svi čudotvorci?"
+        },
+        {
+          "verse": 30,
+          "text": "Zar svi imaju dare liječenja? Zar svi govore jezike? Zar svi tumače?"
+        },
+        {
+          "verse": 31,
+          "text": "Čeznite za višim darima! A evo vam puta najizvrsnijega!"
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "verse_count": 13,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Kad bih sve jezike ljudske govorio i anđeoske, a ljubavi ne bih imao, bio bih mjed što ječi ili cimbal što zveči.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Hvalospjev ljubavi"
+            }
+          ],
+          "lines": [
+            "Kad bih sve jezike ljudske govorio i anđeoske,",
+            "a ljubavi ne bih imao,",
+            "bio bih mjed što ječi",
+            "ili cimbal što zveči."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Kad bih imao dar prorokovanja i znao sva otajstva i sve spoznanje; i kad bih imao svu vjeru da bih i gore premještao, a ljubavi ne bih imao – ništa sam!",
+          "lines": [
+            "Kad bih imao dar prorokovanja",
+            "i znao sva otajstva",
+            "i sve spoznanje;",
+            "i kad bih imao svu vjeru",
+            "da bih i gore premještao,",
+            "a ljubavi ne bih imao – ništa sam!"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "I kad bih razdao sav svoj imutak i kad bih predao tijelo svoje da se sažeže, a ljubavi ne bih imao – ništa mi ne bi koristilo.",
+          "lines": [
+            "I kad bih razdao sav svoj imutak",
+            "i kad bih predao tijelo svoje da se sažeže,",
+            "a ljubavi ne bih imao –",
+            "ništa mi ne bi koristilo."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Ljubav je velikodušna, dobrostiva je ljubav, ne zavidi, ljubav se ne hvasta, ne nadima se;",
+          "lines": [
+            "Ljubav je velikodušna,",
+            "dobrostiva je ljubav,",
+            "ne zavidi,",
+            "ljubav se ne hvasta,",
+            "ne nadima se;"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "nije nepristojna, ne traži svoje, nije razdražljiva, ne pamti zlo;",
+          "lines": [
+            "nije nepristojna,",
+            "ne traži svoje,",
+            "nije razdražljiva,",
+            "ne pamti zlo;"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "ne raduje se nepravdi, a raduje se istini;",
+          "lines": [
+            "ne raduje se nepravdi,",
+            "a raduje se istini;"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "sve pokriva, sve vjeruje, svemu se nada, sve podnosi.",
+          "lines": [
+            "sve pokriva, sve vjeruje,",
+            "svemu se nada, sve podnosi."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Ljubav nikad ne prestaje. Prorokovanja? Uminut će. Jezici? Umuknut će. Spoznanje? Uminut će.",
+          "lines": [
+            "Ljubav nikad ne prestaje.",
+            "Prorokovanja? Uminut će.",
+            "Jezici? Umuknut će.",
+            "Spoznanje? Uminut će."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Jer djelomično je naše spoznanje, i djelomično prorokovanje.",
+          "lines": [
+            "Jer djelomično je naše spoznanje,",
+            "i djelomično prorokovanje."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "A kada dođe ono savršeno, uminut će ovo djelomično.",
+          "lines": [
+            "A kada dođe ono savršeno,",
+            "uminut će ovo djelomično."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Kad bijah nejače, govorah kao nejače, mišljah kao nejače, rasuđivah kao nejače. A kad postadoh zreo čovjek, odbacih ono nejačko.",
+          "lines": [
+            "Kad bijah nejače,",
+            "govorah kao nejače,",
+            "mišljah kao nejače,",
+            "rasuđivah kao nejače.",
+            "A kad postadoh zreo čovjek,",
+            "odbacih ono nejačko."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Doista, sada gledamo kroza zrcalo, u zagonetki, a tada – licem u lice! Sada spoznajem djelomično, a tada ću spoznati savršeno, kao što sam i spoznat!",
+          "lines": [
+            "Doista, sada gledamo kroza zrcalo,",
+            "u zagonetki,",
+            "a tada – licem u lice!",
+            "Sada spoznajem djelomično,",
+            "a tada ću spoznati savršeno,",
+            "kao što sam i spoznat!"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "A sada: ostaju vjera, ufanje i ljubav – to troje – ali najveća je među njima ljubav.",
+          "lines": [
+            "A sada: ostaju vjera, ufanje i ljubav",
+            "– to troje –",
+            "ali najveća je među njima ljubav."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "verse_count": 40,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Težite za ljubavlju, čeznite za darima Duha, a najvećma da prorokujete.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Dari u zajednici"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Jer tko govori drugim jezikom, ne govori ljudima, nego Bogu: nitko ga ne razumije jer Duhom govori stvari tajanstvene."
+        },
+        {
+          "verse": 3,
+          "text": "Tko pak prorokuje, ljudima govori: izgrađuje, hrabri, tješi."
+        },
+        {
+          "verse": 4,
+          "text": "Tko govori drugim jezikom, sam sebe izgrađuje, a tko prorokuje, Crkvu izgrađuje."
+        },
+        {
+          "verse": 5,
+          "text": "A htio bih da vi svi govorite drugim jezicima, ali većma da prorokujete. Jer veći je tko prorokuje, negoli tko govori drugim jezicima, osim ako protumači Crkvi radi izgrađivanja."
+        },
+        {
+          "verse": 6,
+          "text": "A sada, braćo, kad bih došao k vama govoreći drugim jezicima, što bi vam koristilo kad vam ne bih priopćio bilo otkrivenje, bilo spoznanje, bilo proroštvo, bilo nauk?"
+        },
+        {
+          "verse": 7,
+          "text": "Ako neživa glazbala, svirala ili citra, ne daju razgovijetna glasa, kako će se razabrati što se to izvodi na svirali ili citri?"
+        },
+        {
+          "verse": 8,
+          "text": "Ili ako trublja daje nejasan glas, tko će se spremiti na boj?"
+        },
+        {
+          "verse": 9,
+          "text": "Tako i vi, ako jezikom ne budete jasno zborili, kako će se razabrati što se govori? Govorit ćete u vjetar."
+        },
+        {
+          "verse": 10,
+          "text": "Toliko, recimo, ima na svijetu vrsta glasova i – nijedan bez značenja."
+        },
+        {
+          "verse": 11,
+          "text": "Ako dakle ne znam značenja glasa, bit ću sugovorniku tuđinac, a sugovornik tuđinac meni."
+        },
+        {
+          "verse": 12,
+          "text": "Tako i vi, budući da čeznete za darima Duha, nastojte njima obilovati radi izgrađivanja Crkve."
+        },
+        {
+          "verse": 13,
+          "text": "Stoga tko govori drugim jezikom, neka se moli da može protumačiti."
+        },
+        {
+          "verse": 14,
+          "text": "Jer ako se drugim jezikom molim, moj se duh moli, ali um je moj neplodan."
+        },
+        {
+          "verse": 15,
+          "text": "Što dakle? Molit ću se duhom, molit ću se i umom; pjevat ću hvalospjeve duhom, ali pjevat ću ih i umom."
+        },
+        {
+          "verse": 16,
+          "text": "Jer ako Boga blagoslivljaš duhom, kako će neupućen reći »Amen« na tvoju zahvalnicu? Ne zna što govoriš."
+        },
+        {
+          "verse": 17,
+          "text": "Ti doduše lijepo zahvaljuješ, ali se drugi ne izgrađuje."
+        },
+        {
+          "verse": 18,
+          "text": "Hvala Bogu, ja govorim drugim jezicima većma nego svi vi."
+        },
+        {
+          "verse": 19,
+          "text": "Ali draže mi je u Crkvi reći pet riječi po svojoj pameti, da i druge poučim, negoli deset tisuća riječi drugim jezikom."
+        },
+        {
+          "verse": 20,
+          "text": "Braćo, ne budite djeca pameću, nego nejačad pakošću, a zreli pameću!"
+        },
+        {
+          "verse": 21,
+          "text": "U Zakonu je pisano: Drugim jezicima i drugim usnama govorit ću ovomu narodu pa me ni tako neće poslušati, govori Gospodin."
+        },
+        {
+          "verse": 22,
+          "text": "Tako drugi jezici nisu znak vjernicima, nego nevjernicima; a prorokovanje vjernicima, ne nevjernicima."
+        },
+        {
+          "verse": 23,
+          "text": "Ako se dakle skupi sva Crkva zajedno i svi govore drugim jezicima, a uđu neupućeni ili nevjernici, neće li reći da mahnitate?"
+        },
+        {
+          "verse": 24,
+          "text": "Ako pak svi prorokuju, a uđe koji nevjernik ili neupućen, sve ga prekorava, sve ga osuđuje."
+        },
+        {
+          "verse": 25,
+          "text": "Tajne se njegova srca očituju te će pasti ničice i pokloniti se Bogu priznajući: Zaista, Bog je u vama."
+        },
+        {
+          "verse": 26,
+          "text": "Što dakle, braćo? Kad se skupite te poneki ima hvalospjev, poneki ima nauk, ima otkrivenje, ima jezik, ima tumačenje – sve neka bude radi izgrađivanja."
+        },
+        {
+          "verse": 27,
+          "text": "Ako tko govori drugim jezikom – dvojica, najviše trojica, i to jedan za drugim – jedan neka tumači;"
+        },
+        {
+          "verse": 28,
+          "text": "ako pak ne bi bilo tumača, neka šuti u Crkvi, neka govori sam sebi i Bogu."
+        },
+        {
+          "verse": 29,
+          "text": "Od proroka pak neka govore dvojica ili trojica, drugi neka rasuđuju."
+        },
+        {
+          "verse": 30,
+          "text": "Ali ako drugomu uza nj bude što objavljeno, prvi neka šuti."
+        },
+        {
+          "verse": 31,
+          "text": "A možete jedan po jedan svi prorokovati da svi budu poučeni i svi ohrabreni."
+        },
+        {
+          "verse": 32,
+          "text": "Proročki su duhovi prorocima podložni"
+        },
+        {
+          "verse": 33,
+          "text": "jer Bog nije Bog nesklada, nego Bog mira. Kao u svim Crkvama svetih, žene na sastancima neka šute.",
+          "lines": [
+            "jer Bog nije Bog nesklada, nego Bog mira.",
+            "Kao u svim Crkvama svetih, žene na sastancima neka šute."
+          ]
+        },
+        {
+          "verse": 34,
+          "text": "Nije im dopušteno govoriti, nego neka budu podložne, kako i Zakon govori."
+        },
+        {
+          "verse": 35,
+          "text": "Žele li što saznati, neka kod kuće pitaju svoje muževe jer ružno je da žena govori na sastanku."
+        },
+        {
+          "verse": 36,
+          "text": "Ili zar je riječ Božja od vas proizašla, zar je samo k vama došla?"
+        },
+        {
+          "verse": 37,
+          "text": "Smatra li tko da je prorok ili duhom obdaren, neka zna: što vam pišem, Gospodnja je zapovijed."
+        },
+        {
+          "verse": 38,
+          "text": "Tko to ne prizna, ne priznaje se."
+        },
+        {
+          "verse": 39,
+          "text": "Zato, braćo moja, težite prorokovati i ne priječite da se govori drugim jezicima!"
+        },
+        {
+          "verse": 40,
+          "text": "A sve neka bude dostojno i uredno."
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "verse_count": 58,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Dozivljem vam, braćo, u pamet evanđelje koje vam navijestih, koje primiste, u kome stojite,",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "III. USKRSNUĆE MRTVIH"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "po kojem se spašavate, ako držite što sam vam navijestio; osim ako uzalud povjerovaste."
+        },
+        {
+          "verse": 3,
+          "text": "Doista, predadoh vam ponajprije što i primih: Krist umrije za grijehe naše po Pismima;"
+        },
+        {
+          "verse": 4,
+          "text": "bî pokopan i uskrišen treći dan po Pismima;"
+        },
+        {
+          "verse": 5,
+          "text": "ukaza se Kefi, zatim dvanaestorici."
+        },
+        {
+          "verse": 6,
+          "text": "Potom se ukaza braći, kojih bijaše više od pet stotina zajedno; većina ih još i sada živi, a neki usnuše."
+        },
+        {
+          "verse": 7,
+          "text": "Zatim se ukaza Jakovu, onda svim apostolima."
+        },
+        {
+          "verse": 8,
+          "text": "Najposlije, kao nedonoščetu, ukaza se i meni."
+        },
+        {
+          "verse": 9,
+          "text": "Da, ja sam najmanji među apostolima i nisam dostojan zvati se apostolom jer sam progonio Crkvu Božju."
+        },
+        {
+          "verse": 10,
+          "text": "Ali milošću Božjom jesam što jesam i njegova milost prema meni ne bijaše zaludna; štoviše, trudio sam se više nego svi oni – ali ne ja, nego milost Božja sa mnom."
+        },
+        {
+          "verse": 11,
+          "text": "Ili dakle ja ili oni: tako propovijedamo, tako vjerujete."
+        },
+        {
+          "verse": 12,
+          "text": "No ako se propovijeda da je Krist od mrtvih uskrsnuo, kako neki među vama govore da nema uskrsnuća mrtvih?"
+        },
+        {
+          "verse": 13,
+          "text": "Ako nema uskrsnuća mrtvih, ni Krist nije uskrsnuo."
+        },
+        {
+          "verse": 14,
+          "text": "Ako pak Krist nije uskrsnuo, uzalud je doista propovijedanje naše, uzalud i vjera vaša."
+        },
+        {
+          "verse": 15,
+          "text": "Zatekli bismo se i kao lažni svjedoci Božji što posvjedočismo protiv Boga: da je uskrisio Krista, kojega nije uskrisio, ako doista mrtvi ne uskršavaju."
+        },
+        {
+          "verse": 16,
+          "text": "Jer ako mrtvi ne uskršavaju, ni Krist nije uskrsnuo."
+        },
+        {
+          "verse": 17,
+          "text": "A ako Krist nije uskrsnuo, uzaludna je vjera vaša, još ste u grijesima."
+        },
+        {
+          "verse": 18,
+          "text": "Onda i oni koji usnuše u Kristu, propadoše."
+        },
+        {
+          "verse": 19,
+          "text": "Ako se samo u ovom životu u Krista ufamo, najbjedniji smo od svih ljudi."
+        },
+        {
+          "verse": 20,
+          "text": "Ali sada: Krist uskrsnu od mrtvih, prvina usnulih!"
+        },
+        {
+          "verse": 21,
+          "text": "Doista, po čovjeku smrt, po Čovjeku i uskrsnuće od mrtvih!"
+        },
+        {
+          "verse": 22,
+          "text": "Jer kao što u Adamu svi umiru, tako će i u Kristu svi biti oživljeni."
+        },
+        {
+          "verse": 23,
+          "text": "Ali svatko u svom redu: prvina Krist, a zatim koji su Kristovi, o njegovu Dolasku;"
+        },
+        {
+          "verse": 24,
+          "text": "potom – svršetak, kad preda kraljevstvo Bogu i Ocu, pošto obeskrijepi svako Vrhovništvo, svaku Vlast i Silu."
+        },
+        {
+          "verse": 25,
+          "text": "Doista, on treba da kraljuje dok ne podloži sve neprijatelje pod noge svoje."
+        },
+        {
+          "verse": 26,
+          "text": "Kao posljednji neprijatelj bit će obeskrijepljena Smrt"
+        },
+        {
+          "verse": 27,
+          "text": "jer sve podloži nogama njegovim. A kad veli: Sve je podloženo, jasno – sve osim Onoga koji mu je sve podložio."
+        },
+        {
+          "verse": 28,
+          "text": "I kad mu sve bude podloženo, tada će se i on sam, Sin, podložiti Onomu koji je njemu sve podložio da Bog bude sve u svemu."
+        },
+        {
+          "verse": 29,
+          "text": "Što onda čine oni koji se krste za mrtve? Ako mrtvi uopće ne uskršavaju, što se krste za njih?"
+        },
+        {
+          "verse": 30,
+          "text": "Što se onda i mi svaki čas izlažemo pogiblima?"
+        },
+        {
+          "verse": 31,
+          "text": "Dan za danom umirem, tako mi slave vaše, braćo, koju imam u Kristu Isusu, Gospodinu našem!"
+        },
+        {
+          "verse": 32,
+          "text": "Ako sam se po ljudsku borio sa zvijerima u Efezu, kakva mi korist? Ako mrtvi ne uskršavaju, jedimo i pijmo jer sutra nam je umrijeti."
+        },
+        {
+          "verse": 33,
+          "text": "Ne varajte se: »Zli razgovori kvare dobre običaje.«"
+        },
+        {
+          "verse": 34,
+          "text": "Otrijeznite se kako valja i ne griješite jer neki, na sramotu vam kažem, ne znaju za Boga."
+        },
+        {
+          "verse": 35,
+          "text": "Ali reći će netko: Kako uskršavaju mrtvi? I s kakvim li će tijelom doći?",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Način uskrsnuća"
+            }
+          ]
+        },
+        {
+          "verse": 36,
+          "text": "Bezumniče! Što siješ, ne oživljuje ako ne umre."
+        },
+        {
+          "verse": 37,
+          "text": "I što siješ, ne siješ tijelo buduće, već golo zrno, pšenice – recimo – ili čega drugoga."
+        },
+        {
+          "verse": 38,
+          "text": "A Bog mu daje tijelo kakvo hoće, i to svakom sjemenu svoje tijelo."
+        },
+        {
+          "verse": 39,
+          "text": "Nije svako tijelo isto tijelo; drugo je tijelo čovječje, drugo tijelo stoke, drugo tijelo ptičje, a drugo riblje."
+        },
+        {
+          "verse": 40,
+          "text": "Ima tjelesa nebeskih i tjelesa zemaljskih, ali drugi je sjaj nebeskih, a drugi zemaljskih."
+        },
+        {
+          "verse": 41,
+          "text": "Drugi je sjaj sunca, drugi sjaj mjeseca i drugi sjaj zvijezda; jer zvijezda se od zvijezde razlikuje u sjaju."
+        },
+        {
+          "verse": 42,
+          "text": "Tako i uskrsnuće mrtvih: sije se u raspadljivosti, uskršava u neraspadljivosti;"
+        },
+        {
+          "verse": 43,
+          "text": "sije se u sramoti, uskršava u slavi; sije se u slabosti, uskršava u snazi;"
+        },
+        {
+          "verse": 44,
+          "text": "sije se tijelo naravno, uskršava tijelo duhovno. Ako ima tijelo naravno, ima i duhovno.",
+          "lines": [
+            "sije se tijelo naravno, uskršava tijelo duhovno.",
+            "Ako ima tijelo naravno, ima i duhovno."
+          ]
+        },
+        {
+          "verse": 45,
+          "text": "Tako je i pisano: Prvi čovjek, Adam, postade živa duša, posljednji Adam – duh životvorni."
+        },
+        {
+          "verse": 46,
+          "text": "Ali ne bî najprije duhovno, nego naravno pa onda duhovno."
+        },
+        {
+          "verse": 47,
+          "text": "Prvi je čovjek od zemlje, zemljan; drugi čovjek – s neba."
+        },
+        {
+          "verse": 48,
+          "text": "Kakav je zemljani takvi su i zemljani, a kakav je nebeski takvi su i nebeski."
+        },
+        {
+          "verse": 49,
+          "text": "I kao što smo nosili sliku zemljanoga, nosit ćemo i sliku nebeskoga."
+        },
+        {
+          "verse": 50,
+          "text": "A ovo, braćo, tvrdim: tijelo i krv ne mogu baštiniti kraljevstva Božjega i raspadljivost ne baštini neraspadljivosti."
+        },
+        {
+          "verse": 51,
+          "text": "Evo otajstvo vam kazujem: svi doduše nećemo usnuti, ali svi ćemo se izmijeniti."
+        },
+        {
+          "verse": 52,
+          "text": "Odjednom, u tren oka, na posljednju trublju – jer zatrubit će – i mrtvi će uskrsnuti neraspadljivi i mi ćemo se izmijeniti."
+        },
+        {
+          "verse": 53,
+          "text": "Jer ovo raspadljivo treba da se obuče u neraspadljivost i ovo smrtno da se obuče u besmrtnost."
+        },
+        {
+          "verse": 54,
+          "text": "A kad se ovo raspadljivo obuče u neraspadljivost i ovo smrtno obuče u besmrtnost, tada će se obistiniti riječ napisana: Pobjeda iskapi smrt.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pobjednički hvalospjev"
+            }
+          ]
+        },
+        {
+          "verse": 55,
+          "text": "Gdje je, smrti, pobjeda tvoja? Gdje je, smrti, žalac tvoj?"
+        },
+        {
+          "verse": 56,
+          "text": "Žalac je smrti grijeh, snaga je grijeha Zakon."
+        },
+        {
+          "verse": 57,
+          "text": "A hvala Bogu koji nam daje pobjedu po Gospodinu našem Isusu Kristu!"
+        },
+        {
+          "verse": 58,
+          "text": "Tako, braćo moja ljubljena, budite postojani, nepokolebljivi, i obilujte svagda u djelu Gospodnjem znajući da trud vaš nije neplodan u Gospodinu."
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "verse_count": 24,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "U pogledu sabiranja za svete, i vi činite kako odredih crkvama galacijskim.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "ZAKLJUČAK"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Svakoga prvog dana u tjednu neka svaki od vas kod sebe na stranu stavlja i skuplja što uzmogne da se ne sabire istom kada dođem."
+        },
+        {
+          "verse": 3,
+          "text": "A kada dođem, poslat ću s preporučnicom one koje odaberete da odnesu vašu ljubav u Jeruzalem."
+        },
+        {
+          "verse": 4,
+          "text": "Bude li vrijedno da i ja pođem, poći će sa mnom."
+        },
+        {
+          "verse": 5,
+          "text": "A k vama ću doći kad prođem Makedoniju; Makedonijom ću samo proći,"
+        },
+        {
+          "verse": 6,
+          "text": "a kod vas ću se možda zadržati ili čak zimovati da me otpratite kamo god pođem."
+        },
+        {
+          "verse": 7,
+          "text": "Ne bih vas doista htio tek na prolazu vidjeti jer se nadam neko vrijeme proboraviti kod vas, dopusti li Gospodin."
+        },
+        {
+          "verse": 8,
+          "text": "U Efezu ću ostati do Pedesetnice"
+        },
+        {
+          "verse": 9,
+          "text": "jer vrata mi se otvoriše velika i uspješna, a protivnika mnogo."
+        },
+        {
+          "verse": 10,
+          "text": "Ako dođe Timotej, gledajte da bude kod vas bez bojazni jer radi djelo Gospodnje kao i ja."
+        },
+        {
+          "verse": 11,
+          "text": "Neka ga dakle nitko ne prezre. A ispratite ga u miru da dođe k meni jer ga s braćom iščekujem."
+        },
+        {
+          "verse": 12,
+          "text": "A što se tiče brata Apolona: mnogo sam ga nagovarao da ode k vama s braćom. I nikako mu ne bijaše s voljom da sada dođe, no doći će kad mu bude zgodno."
+        },
+        {
+          "verse": 13,
+          "text": "Bdijte postojani u vjeri, muževni budite, čvrsti."
+        },
+        {
+          "verse": 14,
+          "text": "Sve vaše neka bude u ljubavi!"
+        },
+        {
+          "verse": 15,
+          "text": "Zaklinjem vas, braćo – znate dom Stefanin, da je prvina Ahaje i da se posvetiše posluživanju svetih –"
+        },
+        {
+          "verse": 16,
+          "text": "da se i vi pokoravate takvima i svakomu tko surađuje i trudi se."
+        },
+        {
+          "verse": 17,
+          "text": "Radujem se s dolaska Stefanina i Fortunatova i Ahajikova jer oni nadoknadiše vašu nenazočnost:"
+        },
+        {
+          "verse": 18,
+          "text": "umiriše duh moj i vaš. Cijenite dakle takve."
+        },
+        {
+          "verse": 19,
+          "text": "Pozdravljaju vas crkve azijske. Pozdravljaju vas mnogo u Gospodinu Akvila i Priska zajedno s Crkvom u njihovu domu."
+        },
+        {
+          "verse": 20,
+          "text": "Pozdravljaju vas sva braća. Pozdravite jedni druge cjelovom svetim."
+        },
+        {
+          "verse": 21,
+          "text": "Pozdrav mojom rukom, Pavlovom."
+        },
+        {
+          "verse": 22,
+          "text": "Ako tko ne ljubi Gospodina, neka bude proklet. Marana tha!"
+        },
+        {
+          "verse": 23,
+          "text": "Milost Gospodina Isusa s vama!"
+        },
+        {
+          "verse": 24,
+          "text": "Ljubav moja sa svima vama u Kristu Isusu!"
+        }
+      ]
+    }
+  ]
+}

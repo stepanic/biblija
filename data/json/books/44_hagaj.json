@@ -1,0 +1,346 @@
+{
+  "order": 44,
+  "id": "hagaj",
+  "ks_book_id": 55,
+  "abbr": "Hag",
+  "title": "Hagaj",
+  "testament": "SZ",
+  "category": "Proroci",
+  "chapter_count": 2,
+  "verse_count": 38,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 15,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Druge godine kralja Darija, šestoga mjeseca, prvoga dana u mjesecu, dođe riječ Jahvina preko proroka Hagaja Zerubabelu, sinu Šealtielovu, namjesniku judejskom, i Jošui, sinu Josadakovu, velikom svećeniku:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Obnova Hrama"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "»Ovako govori Jahve nad vojskama. Narod ovaj govori: ‘Nije još došlo vrijeme da se opet sazda dom Jahvin!’"
+        },
+        {
+          "verse": 3,
+          "text": "Zato je došla riječ Jahvina preko proroka Hagaja:"
+        },
+        {
+          "verse": 4,
+          "text": "A vama je vrijeme da stanujete u pokrivenim kućama, dok je ovaj Dom razvaljen."
+        },
+        {
+          "verse": 5,
+          "text": "I zato, ovako sada govori Jahve nad vojskama: ‘Razmotrite svoje putove!",
+          "lines": [
+            "I zato, ovako sada govori Jahve nad vojskama:",
+            "‘Razmotrite svoje putove!"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Sijete mnogo, malo dovozite; jedete, a niste siti; pijete, a napojit’ se ne možete; odijevate se, a nije vam toplo. Poslenik zarađuje plaću, a stavlja je u prodrt tobolac!’«",
+          "lines": [
+            "Sijete mnogo, malo dovozite;",
+            "jedete, a niste siti;",
+            "pijete, a napojit’ se ne možete;",
+            "odijevate se, a nije vam toplo.",
+            "Poslenik zarađuje plaću,",
+            "a stavlja je u prodrt tobolac!’«"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Ovako govori Jahve nad vojskama: »Razmotrite svoje putove!",
+          "lines": [
+            "Ovako govori Jahve nad vojskama:",
+            "»Razmotrite svoje putove!"
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Idite na goru, dovezite drva i podignite opet Dom; bit će mi to milo i proslavit ću se« – govori Jahve.",
+          "lines": [
+            "Idite na goru, dovezite drva",
+            "i podignite opet Dom;",
+            "bit će mi to milo i proslavit ću se« –",
+            "govori Jahve."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "»Nadaste se obilju, a gle, malo je; što dovezete kući, ja otpuhnem. A zašto?« – riječ je Jahve nad vojskama. »Zato što je dom moj razvaljen, dok se svaki od vas brine za dom svoj.",
+          "lines": [
+            "»Nadaste se obilju, a gle, malo je;",
+            "što dovezete kući, ja otpuhnem.",
+            "A zašto?« – riječ je Jahve nad vojskama.",
+            "»Zato što je dom moj razvaljen,",
+            "dok se svaki od vas brine za dom svoj."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Stog je nebo uskratilo rosu, a zemlja uskratila usjeve.",
+          "lines": [
+            "Stog je nebo uskratilo rosu,",
+            "a zemlja uskratila usjeve."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Ja dozvah sušu na zemlju i gore, na žito i vino, na ulje i na sve što zemlja rađa, na ljude i stoku i na svaki trudno stečen plod.«",
+          "lines": [
+            "Ja dozvah sušu",
+            "na zemlju i gore, na žito i vino,",
+            "na ulje i na sve što zemlja rađa,",
+            "na ljude i stoku",
+            "i na svaki trudno stečen plod.«"
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "A Zerubabel, sin Šealtielov, i Jošua, sin Josadakov, veliki svećenik, i sav ostali narod poslušaše glas Jahve, Boga svojega, i riječi proroka Hagaja u onome radi čega ga Jahve njima posla: i narod se poboja Jahve."
+        },
+        {
+          "verse": 13,
+          "text": "Tada Hagaj, glasnik Jahvin, po Jahvinu nalogu ovako reče narodu: »Ja sam s vama« – riječ je Jahvina."
+        },
+        {
+          "verse": 14,
+          "text": "Jahve probudi duh Zerubabelu, sinu Šealtielovu, namjesniku judejskom, i duh Jošui, sinu Josadakovu, velikom svećeniku, i duh svemu ostalom narodu te oni dođoše i prionuše na posao u domu Jahve nad vojskama, Boga svojega."
+        },
+        {
+          "verse": 15,
+          "text": "Bijaše to dvadeset i četvrtoga dana šestog mjeseca."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 23,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Druge godine kralja Darija, sedmoga mjeseca, dvadeset i prvoga dana u mjesecu, dođe riječ Jahvina preko proroka Hagaja:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Slava Hrama"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "»Reci ovako Zerubabelu, sinu Šealtielovu, namjesniku judejskom, i Jošui, sinu Josadakovu, velikom svećeniku, i ostalom narodu:"
+        },
+        {
+          "verse": 3,
+          "text": "‘Ima li još koga među vama koji vidje ovaj dom u njegovoj staroj slavi? A kakva ga sada vi vidite? Prema onome, nije li to k’o ništa u vašim očima?",
+          "lines": [
+            "‘Ima li još koga među vama",
+            "koji vidje ovaj dom",
+            "u njegovoj staroj slavi?",
+            "A kakva ga sada vi vidite?",
+            "Prema onome, nije li to k’o ništa u vašim očima?"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Budi, dakle, junak, Zerubabele’ – riječ je Jahvina – ‘budi junak, Jošua, sine Josadakov, veliki svećeniče! Budi junak, narode sve zemlje’ – riječ je Jahvina. ‘Na posao! Jer ja sam s vama!’ – riječ je Jahve nad vojskama!",
+          "lines": [
+            "Budi, dakle, junak, Zerubabele’ – riječ je Jahvina –",
+            "‘budi junak, Jošua, sine Josadakov, veliki svećeniče!",
+            "Budi junak, narode sve zemlje’ – riječ je Jahvina.",
+            "‘Na posao! Jer ja sam s vama!’ –",
+            "riječ je Jahve nad vojskama!"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "‘Po obećanju što ga vama dadoh kad izađoste iz Egipta, duh moj posred vas ostaje. Ne bojte se!’",
+          "lines": [
+            "‘Po obećanju što ga vama dadoh",
+            "kad izađoste iz Egipta,",
+            "duh moj posred vas ostaje.",
+            "Ne bojte se!’"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Jer ovako govori Jahve nad vojskama: ‘Zamalo, i ja ću potresti nebesa i zemlju, i more i kopno.",
+          "lines": [
+            "Jer ovako govori Jahve nad vojskama:",
+            "‘Zamalo, i ja ću potresti",
+            "nebesa i zemlju,",
+            "i more i kopno."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Potrest ću sve narode da dođe blago svih naroda, i slavom ću napunit’ ovaj dom’ – kaže Jahve nad vojskama.",
+          "lines": [
+            "Potrest ću sve narode",
+            "da dođe blago svih naroda,",
+            "i slavom ću napunit’ ovaj dom’ –",
+            "kaže Jahve nad vojskama."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "‘Moje je zlato, moje je srebro’ – riječ je Jahve nad vojskama.",
+          "lines": [
+            "‘Moje je zlato, moje je srebro’ –",
+            "riječ je Jahve nad vojskama."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "‘Slava ovoga drugog Doma bit će veća nego prvoga’ – riječ je Jahve nad vojskama. ‘I na ovom ću mjestu dati mir’ – riječ je Jahve nad vojskama.«",
+          "lines": [
+            "‘Slava ovoga drugog Doma",
+            "bit će veća nego prvoga’ –",
+            "riječ je Jahve nad vojskama.",
+            "‘I na ovom ću mjestu dati mir’ –",
+            "riječ je Jahve nad vojskama.«"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Dvadeset i četvrtoga dana devetoga mjeseca, druge godine kralja Darija, dođe riječ Jahvina preko proroka Hagaja:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Savjetovanje sa svećenicima"
+            }
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Ovako govori Jahve nad vojskama. »Pitaj svećenike što kaže Zakon i reci:"
+        },
+        {
+          "verse": 12,
+          "text": "‘Kad bi tko u skutu svoje haljine nosio posvećeno meso, ili bi se skutom dotakao kruha, jela, vina, ulja ili kakve god hrane, bi li to postalo sveto?’« Svećenici odgovoriše: »Ne!«"
+        },
+        {
+          "verse": 13,
+          "text": "Hagaj dalje upita: »Kad bi netko koji se onečistio dodirnuvši mrtvaca dotakao nešto od onoga, bi li to postalo nečisto?« Svećenici odgovoriše: »Bilo bi nečisto.«"
+        },
+        {
+          "verse": 14,
+          "text": "Onda Hagaj ovako reče: »Takav je i ovaj puk, takav je ovaj narod preda mnom« – riječ je Jahvina – »takvo je svako djelo ruku njihovih, i sve što ovdje prinose: sve je nečisto!«",
+          "lines": [
+            "Onda Hagaj ovako reče:",
+            "»Takav je i ovaj puk,",
+            "takav je ovaj narod preda mnom« – riječ je Jahvina –",
+            "»takvo je svako djelo ruku njihovih,",
+            "i sve što ovdje prinose: sve je nečisto!«"
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "»A sada, promislite u srcu, od današnjega dana unapredak: Prije negoli se poče stavljati kamen na kamen u Jahvinu svetištu,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Obećanje žetve"
+            }
+          ],
+          "lines": [
+            "»A sada, promislite u srcu,",
+            "od današnjega dana unapredak:",
+            "Prije negoli se poče stavljati",
+            "kamen na kamen u Jahvinu svetištu,"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "kakvi ono bijaste? Dolažaste hrpi od dvadeset mjerica, a bješe ih samo deset! Dolažaste kaci da zahvatite pedeset mjerica, a bješe ih samo dvadeset!",
+          "lines": [
+            "kakvi ono bijaste?",
+            "Dolažaste hrpi od dvadeset mjerica,",
+            "a bješe ih samo deset!",
+            "Dolažaste kaci da zahvatite pedeset mjerica,",
+            "a bješe ih samo dvadeset!"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Udarao sam snijeću, medljikom i gradom svako djelo vaših ruku, ali nikoga nema k meni« – riječ je Jahvina.",
+          "lines": [
+            "Udarao sam snijeću,",
+            "medljikom i gradom",
+            "svako djelo vaših ruku, ali nikoga nema k meni« –",
+            "riječ je Jahvina."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "»Stoga dobro pripazite od današnjeg dana unapredak – od dvadeset i četvrtoga dana devetoga mjeseca, kad se stao graditi hram Jahvin, pripazite dobro",
+          "lines": [
+            "»Stoga dobro pripazite od današnjeg dana unapredak –",
+            "od dvadeset i četvrtoga dana devetoga mjeseca,",
+            "kad se stao graditi hram Jahvin,",
+            "pripazite dobro"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "ima li još žita u žitnici? Ni vinova loza ni smokva, ni mogranj ni maslina nisu rađali! Al’ od ovog dana ja ću blagosloviti.«",
+          "lines": [
+            "ima li još žita u žitnici?",
+            "Ni vinova loza ni smokva,",
+            "ni mogranj ni maslina nisu rađali!",
+            "Al’ od ovog dana ja ću blagosloviti.«"
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Dvadeset i četvrtoga dana istoga mjeseca dođe riječ Jahvina Hagaju drugi put:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Obećanje Zerubabelu"
+            }
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "»Reci ovako Zerubabelu, namjesniku judejskom: ‘Ja ću potresti nebesa i zemlju!",
+          "lines": [
+            "»Reci ovako Zerubabelu, namjesniku judejskom:",
+            "‘Ja ću potresti nebesa i zemlju!"
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Oborit ću prijestolja kraljevstvima i uništit ću moć kraljevima naroda. Prevrnut ću bojna kola i one na njima, konji i konjanici njihovi bit će oboreni, past će od mača brata svojega.’«",
+          "lines": [
+            "Oborit ću prijestolja kraljevstvima",
+            "i uništit ću moć kraljevima naroda.",
+            "Prevrnut ću bojna kola i one na njima,",
+            "konji i konjanici njihovi bit će oboreni,",
+            "past će od mača brata svojega.’«"
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "»Toga dana« – riječ je Jahve nad vojskama – »uzet ću te, Zerubabele, sine Šealtielov, slugo moja« – riječ je Jahvina – »i stavit ću te kao pečatnjak, jer tebe izabrah« – riječ je Jahve nad vojskama.",
+          "lines": [
+            "»Toga dana« – riječ je Jahve nad vojskama –",
+            "»uzet ću te, Zerubabele, sine Šealtielov,",
+            "slugo moja« – riječ je Jahvina –",
+            "»i stavit ću te kao pečatnjak,",
+            "jer tebe izabrah« – riječ je Jahve nad vojskama."
+          ]
+        }
+      ]
+    }
+  ]
+}

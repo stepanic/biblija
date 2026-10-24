@@ -1,0 +1,508 @@
+{
+  "id": "ks-39094",
+  "title": "Estera i Ruta u trideset dana",
+  "category": "ks-tematski",
+  "days_count": 30,
+  "description": "Estera na perzijskom dvoru spašava svoj narod, ali Boga ne imenuje, Providnost ipak vodi sve. Ruta Moapka ulazi u Betlehem i u Davidovo rodoslovlje. Ona je tuđinka koju milosrđe uvodi u baštinu obećanja.",
+  "days": [
+    {
+      "day": 1,
+      "label": "Est 1,1-8",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 22,
+          "label": "Est 1"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "label": "Est 1,9-15",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 22,
+          "label": "Est 1"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "label": "Est 1,16-22",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 22,
+          "label": "Est 1"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "label": "Est 2,1-8",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 23,
+          "label": "Est 2"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "label": "Est 2,9-16",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 23,
+          "label": "Est 2"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "label": "Est 2,17-23",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 23,
+          "label": "Est 2"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "label": "Est 3,1-8",
+      "verse_count": 15,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 15,
+          "label": "Est 3"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "label": "Est 3,9-15",
+      "verse_count": 15,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 15,
+          "label": "Est 3"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "label": "Est 4,1-9",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 17,
+          "label": "Est 4"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "label": "Est 4,10-17",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 17,
+          "label": "Est 4"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "label": "Est 5,1-7",
+      "verse_count": 14,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 14,
+          "label": "Est 5"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "label": "Est 5,8-14",
+      "verse_count": 14,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 14,
+          "label": "Est 5"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "label": "Est 6,1-17",
+      "verse_count": 14,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 14,
+          "label": "Est 6"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "label": "Est 6,8-14",
+      "verse_count": 14,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 14,
+          "label": "Est 6"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "label": "Est 7",
+      "verse_count": 10,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 7,
+          "chapter_end": 7,
+          "verse_count": 10,
+          "label": "Est 7"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "label": "Est 8,1-9",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 8,
+          "chapter_end": 8,
+          "verse_count": 17,
+          "label": "Est 8"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "label": "Est 8,10-17",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 8,
+          "chapter_end": 8,
+          "verse_count": 17,
+          "label": "Est 8"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "label": "Est 9,1-11",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 9,
+          "chapter_end": 9,
+          "verse_count": 32,
+          "label": "Est 9"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "label": "Est 9,12-22",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 9,
+          "chapter_end": 9,
+          "verse_count": 32,
+          "label": "Est 9"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "label": "Est 9,23-32",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 9,
+          "chapter_end": 9,
+          "verse_count": 32,
+          "label": "Est 9"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "label": "Est 10",
+      "verse_count": 3,
+      "readings": [
+        {
+          "book_order": 19,
+          "book_id": "estera",
+          "book_abbr": "Est",
+          "book_title": "Estera",
+          "chapter_start": 10,
+          "chapter_end": 10,
+          "verse_count": 3,
+          "label": "Est 10"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "label": "Rut 1,1-11",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 8,
+          "book_id": "knjiga-o-ruti",
+          "book_abbr": "Rut",
+          "book_title": "Knjiga o Ruti",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 22,
+          "label": "Rut 1"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "label": "Rut 1,12-22",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 8,
+          "book_id": "knjiga-o-ruti",
+          "book_abbr": "Rut",
+          "book_title": "Knjiga o Ruti",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 22,
+          "label": "Rut 1"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "label": "Rut 2,1-8",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 8,
+          "book_id": "knjiga-o-ruti",
+          "book_abbr": "Rut",
+          "book_title": "Knjiga o Ruti",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 23,
+          "label": "Rut 2"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "label": "Rut 2,9-16",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 8,
+          "book_id": "knjiga-o-ruti",
+          "book_abbr": "Rut",
+          "book_title": "Knjiga o Ruti",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 23,
+          "label": "Rut 2"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "label": "Rut 2,17-23",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 8,
+          "book_id": "knjiga-o-ruti",
+          "book_abbr": "Rut",
+          "book_title": "Knjiga o Ruti",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 23,
+          "label": "Rut 2"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "label": "Rut 3,1-9",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 8,
+          "book_id": "knjiga-o-ruti",
+          "book_abbr": "Rut",
+          "book_title": "Knjiga o Ruti",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 18,
+          "label": "Rut 3"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "label": "Rut 3,10-18",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 8,
+          "book_id": "knjiga-o-ruti",
+          "book_abbr": "Rut",
+          "book_title": "Knjiga o Ruti",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 18,
+          "label": "Rut 3"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "label": "Rut 4,1-11",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 8,
+          "book_id": "knjiga-o-ruti",
+          "book_abbr": "Rut",
+          "book_title": "Knjiga o Ruti",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 22,
+          "label": "Rut 4"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "label": "",
+      "verse_count": 0,
+      "readings": []
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+{
+  "id": "ks-38882",
+  "title": "Evanđelja u trideset dana",
+  "category": "ks-tematski",
+  "days_count": 30,
+  "description": "Sva četiri evanđelja u 30 dana – Matej, Marko, Luka, Ivan. Otprilike 3 poglavlja dnevno.",
+  "days": [
+    {
+      "day": 1,
+      "label": "Mt 1-3",
+      "verse_count": 65,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 65,
+          "label": "Mt 1–3"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "label": "Mt 4-6",
+      "verse_count": 107,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 107,
+          "label": "Mt 4–6"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "label": "Mt 7-9",
+      "verse_count": 101,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 101,
+          "label": "Mt 7–9"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "label": "Mt 10-12",
+      "verse_count": 122,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 122,
+          "label": "Mt 10–12"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "label": "Mt 13-15",
+      "verse_count": 133,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 133,
+          "label": "Mt 13–15"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "label": "Mt 16-18",
+      "verse_count": 89,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 89,
+          "label": "Mt 16–18"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "label": "Mt 19-21",
+      "verse_count": 110,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 110,
+          "label": "Mt 19–21"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "label": "Mt 22-24",
+      "verse_count": 136,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 136,
+          "label": "Mt 22–24"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "label": "Mt 25-26",
+      "verse_count": 121,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 25,
+          "chapter_end": 26,
+          "verse_count": 121,
+          "label": "Mt 25–26"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "label": "Mt 27-28",
+      "verse_count": 86,
+      "readings": [
+        {
+          "book_order": 47,
+          "book_id": "evandelje-po-mateju",
+          "book_abbr": "Mt",
+          "book_title": "Evanđelje po Mateju",
+          "chapter_start": 27,
+          "chapter_end": 28,
+          "verse_count": 86,
+          "label": "Mt 27–28"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "label": "Mk 1-3",
+      "verse_count": 108,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 108,
+          "label": "Mk 1–3"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "label": "Mk 4-6",
+      "verse_count": 140,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 140,
+          "label": "Mk 4–6"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "label": "Mk 7-9",
+      "verse_count": 123,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 123,
+          "label": "Mk 7–9"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "label": "Mk 10-12",
+      "verse_count": 128,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 128,
+          "label": "Mk 10–12"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "label": "Mk 13-14",
+      "verse_count": 109,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 13,
+          "chapter_end": 14,
+          "verse_count": 109,
+          "label": "Mk 13–14"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "label": "Mk 15-16",
+      "verse_count": 66,
+      "readings": [
+        {
+          "book_order": 48,
+          "book_id": "evandelje-po-marku",
+          "book_abbr": "Mk",
+          "book_title": "Evanđelje po Marku",
+          "chapter_start": 15,
+          "chapter_end": 16,
+          "verse_count": 66,
+          "label": "Mk 15–16"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "label": "Lk 1-3",
+      "verse_count": 170,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 170,
+          "label": "Lk 1–3"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "label": "Lk 4-6",
+      "verse_count": 132,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 132,
+          "label": "Lk 4–6"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "label": "Lk 7-10",
+      "verse_count": 210,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 7,
+          "chapter_end": 10,
+          "verse_count": 210,
+          "label": "Lk 7–10"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "label": "Lk 11-13",
+      "verse_count": 148,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 11,
+          "chapter_end": 13,
+          "verse_count": 148,
+          "label": "Lk 11–13"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "label": "Lk 14-17",
+      "verse_count": 134,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 14,
+          "chapter_end": 17,
+          "verse_count": 134,
+          "label": "Lk 14–17"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "label": "Lk 18-21",
+      "verse_count": 176,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 18,
+          "chapter_end": 21,
+          "verse_count": 176,
+          "label": "Lk 18–21"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "label": "Lk 22-24",
+      "verse_count": 179,
+      "readings": [
+        {
+          "book_order": 49,
+          "book_id": "evandelje-po-luki",
+          "book_abbr": "Lk",
+          "book_title": "Evanđelje po Luki",
+          "chapter_start": 22,
+          "chapter_end": 24,
+          "verse_count": 179,
+          "label": "Lk 22–24"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "label": "Iv 1-3",
+      "verse_count": 112,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 1,
+          "chapter_end": 3,
+          "verse_count": 112,
+          "label": "Iv 1–3"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "label": "Iv 4-6",
+      "verse_count": 171,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 4,
+          "chapter_end": 6,
+          "verse_count": 171,
+          "label": "Iv 4–6"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "label": "Iv 7-9",
+      "verse_count": 153,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 7,
+          "chapter_end": 9,
+          "verse_count": 153,
+          "label": "Iv 7–9"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "label": "Iv 10-12",
+      "verse_count": 149,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 10,
+          "chapter_end": 12,
+          "verse_count": 149,
+          "label": "Iv 10–12"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "label": "Iv 13-15",
+      "verse_count": 96,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 13,
+          "chapter_end": 15,
+          "verse_count": 96,
+          "label": "Iv 13–15"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "label": "Iv 16-18",
+      "verse_count": 99,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 16,
+          "chapter_end": 18,
+          "verse_count": 99,
+          "label": "Iv 16–18"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "label": "Iv 19-21",
+      "verse_count": 98,
+      "readings": [
+        {
+          "book_order": 50,
+          "book_id": "evandelje-po-ivanu",
+          "book_abbr": "Iv",
+          "book_title": "Evanđelje po Ivanu",
+          "chapter_start": 19,
+          "chapter_end": 21,
+          "verse_count": 98,
+          "label": "Iv 19–21"
+        }
+      ]
+    }
+  ]
+}

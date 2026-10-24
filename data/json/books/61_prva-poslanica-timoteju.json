@@ -1,0 +1,656 @@
+{
+  "order": 61,
+  "id": "prva-poslanica-timoteju",
+  "ks_book_id": 72,
+  "abbr": "1 Tim",
+  "title": "Prva poslanica Timoteju",
+  "testament": "NZ",
+  "category": "Poslanice",
+  "chapter_count": 6,
+  "verse_count": 113,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 20,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Pavao, apostol Krista Isusa po nalogu Boga, Spasitelja našega, i Krista Isusa, nade naše,",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "NASLOV I POZDRAV"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Timoteju, pravomu sinu u vjeri: milost, milosrđe i mir od Boga Oca i Krista Isusa, Gospodina našega!"
+        },
+        {
+          "verse": 3,
+          "text": "Kao što sam te zamolio kad sam odlazio u Makedoniju, ostani u Efezu da zapovjediš nekima neka ne naučavaju drugih nauka",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "1. TIMOTEJ – POBORNIK ISTINE"
+            },
+            {
+              "level": "h4",
+              "text": "Prijetnje lažnih učitelja"
+            }
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "i neka se ne zanose beskrajnim bajkama i rodoslovljima, koja više pogoduju rasprama negoli rasporedbi Božjoj po vjeri."
+        },
+        {
+          "verse": 5,
+          "text": "Svrha je te zapovijedi ljubav iz čista srca, dobre savjesti i vjere neprijetvorne."
+        },
+        {
+          "verse": 6,
+          "text": "To su neki promašili i zastranili u praznorječje;"
+        },
+        {
+          "verse": 7,
+          "text": "htjeli bi biti učitelji Zakona, a ne razumiju ni što govore ni što tvrde."
+        },
+        {
+          "verse": 8,
+          "text": "A mi znamo da je Zakon dobar ako se tko njime služi zakonito,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prava uloga Zakona"
+            }
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "svjestan toga da je Zakon tu ne za pravednika nego za bezakonike i nepokornike, nepobožnike i grešnike, bezbožnike i svetogrdnike, ocoubojice i materoubojice, koljače,"
+        },
+        {
+          "verse": 10,
+          "text": "bludnike, muškoložnike, trgovce ljudima, varalice, krivokletnike, i ima li još što protivno zdravom nauku –"
+        },
+        {
+          "verse": 11,
+          "text": "po evanđelju Slave blaženoga Boga koje je meni povjereno."
+        },
+        {
+          "verse": 12,
+          "text": "Zahvalan sam Onome koji mi dade snagu – Kristu Isusu, Gospodinu našemu – jer me smatrao vrijednim povjerenja, kad u službu postavi mene",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavlov životni hvalospjev Bogu"
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "koji prije bijah hulitelj, progonitelj i nasilnik. Ali pomilovan sam jer sam to u neznanju učinio, još u nevjeri."
+        },
+        {
+          "verse": 14,
+          "text": "I milost Gospodina našega preobilovala je zajedno s vjerom i ljubavlju, u Kristu Isusu."
+        },
+        {
+          "verse": 15,
+          "text": "Vjerodostojna je riječ i vrijedna da se posve prihvati: Isus Krist dođe na svijet spasiti grešnike, od kojih sam prvi ja."
+        },
+        {
+          "verse": 16,
+          "text": "A pomilovan sam zato da na meni prvome Isus Krist pokaže svu strpljivost i pruži primjer svima koji će povjerovati u njega za život vječni."
+        },
+        {
+          "verse": 17,
+          "text": "A Kralju vjekova, besmrtnome, nevidljivome, jedinome Bogu čast i slava u vijeke vjekova. Amen.",
+          "lines": [
+            "A Kralju vjekova,",
+            "besmrtnome,",
+            "nevidljivome,",
+            "jedinome Bogu",
+            "čast i slava",
+            "u vijeke vjekova.",
+            "Amen."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Taj ti zadatak predajem, sine Timoteju, u skladu s proroštvima nekoć nad tobom izrečenima: na njih oslonjen, bij boj plemeniti",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Timotejeva odgovornost"
+            }
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "imajući vjeru i dobru savjest, koju su neki odbacili i doživjeli brodolom vjere."
+        },
+        {
+          "verse": 20,
+          "text": "Među njima su Himenej i Aleksandar, koje sam predao Sotoni da nauče ne huliti."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 15,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Dakle, preporučujem prije svega da se obavljaju prošnje, molitve, molbenice i zahvalnice za sve ljude,",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "2. TIMOTEJ – PROMICATELJ BOGOSLUŽJA I BOGOLJUBNOSTI"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "za kraljeve i sve koji su na vlasti, da provodimo miran i spokojan život u svoj bogoljubnosti i ozbiljnosti."
+        },
+        {
+          "verse": 3,
+          "text": "To je dobro i ugodno pred Spasiteljem našim Bogom,"
+        },
+        {
+          "verse": 4,
+          "text": "koji hoće da se svi ljudi spase i dođu do spoznanja istine."
+        },
+        {
+          "verse": 5,
+          "text": "Jer jedan je Bog, jedan je i posrednik između Boga i ljudi, čovjek – Krist Isus,"
+        },
+        {
+          "verse": 6,
+          "text": "koji sebe samoga dade kao otkup za sve. To je u svoje vrijeme dano svjedočanstvo,"
+        },
+        {
+          "verse": 7,
+          "text": "za koje sam ja postavljen propovjednikom i apostolom – istinu govorim, ne lažem – učiteljem narodâ u vjeri i istini."
+        },
+        {
+          "verse": 8,
+          "text": "Hoću dakle da muškarci mole na svakome mjestu, podižući čiste ruke bez srdžbe i raspre;"
+        },
+        {
+          "verse": 9,
+          "text": "isto tako žene – u doličnu držanju: neka se rese stidljivošću i razborom, ne pletenicama i zlatom ili biserjem ili skupocjenim odijelom,"
+        },
+        {
+          "verse": 10,
+          "text": "nego – dobrim djelima, kako dolikuje ženama koje ispovijedaju bogoljubnost."
+        },
+        {
+          "verse": 11,
+          "text": "Žena neka u miru prima pouku sa svom podložnošću."
+        },
+        {
+          "verse": 12,
+          "text": "Poučavati pak ženi ne dopuštam, ni vladati nad mužem, nego – neka bude na miru."
+        },
+        {
+          "verse": 13,
+          "text": "Jer prvi je oblikovan Adam, onda Eva;"
+        },
+        {
+          "verse": 14,
+          "text": "i Adam nije zaveden, a žena je zavedena, učinila prekršaj."
+        },
+        {
+          "verse": 15,
+          "text": "A spasit će se rađanjem djece ako ustraje u vjeri, ljubavi i posvećivanju, s razborom."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 16,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Vjerodostojna je riječ: teži li tko za nadgledništvom, časnu službu želi.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "3. TIMOTEJ – PASTIR"
+            },
+            {
+              "level": "h4",
+              "text": "Nadglednici"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Treba stoga da nadglednik bude besprijekoran, jedne žene muž, trijezan, razuman, sređen, gostoljubiv, sposoban poučavati,"
+        },
+        {
+          "verse": 3,
+          "text": "ne vinu sklon, ne nasilan, nego popustljiv, ne ratoboran, ne srebroljubac;"
+        },
+        {
+          "verse": 4,
+          "text": "da svojom kućom dobro upravlja i sinove drži u pokornosti sa svom ozbiljnošću –"
+        },
+        {
+          "verse": 5,
+          "text": "a ne zna li netko svojom kućom upravljati, kako će se brinuti za Crkvu Božju? –"
+        },
+        {
+          "verse": 6,
+          "text": "ne novoobraćenik da se ne bi uzoholio i pao pod osudu đavlovu."
+        },
+        {
+          "verse": 7,
+          "text": "A treba da ima i lijepo svjedočanstvo od onih vani, da ne bi u rug upao i zamku đavlovu."
+        },
+        {
+          "verse": 8,
+          "text": "Đakoni isto tako treba da budu ozbiljni, ne dvolični, ne odani mnogom vinu ni prljavu dobitku –",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Đakoni"
+            }
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "imajući otajstvo vjere u čistoj savjesti."
+        },
+        {
+          "verse": 10,
+          "text": "I neka se najprije iskušavaju, pa onda, budu li besprigovorni, neka obavljaju službu."
+        },
+        {
+          "verse": 11,
+          "text": "Žene isto tako neka budu ozbiljne, ne klevetnice, nego trijezne, vjerne u svemu."
+        },
+        {
+          "verse": 12,
+          "text": "Đakoni neka budu jedne žene muževi, neka dobro upravljaju djecom i svojim kućama."
+        },
+        {
+          "verse": 13,
+          "text": "Jer oni koji dobro obavljaju službu, stječu častan položaj i veliku smjelost u vjeri, vjeri u Isusu Kristu."
+        },
+        {
+          "verse": 14,
+          "text": "Ovo ti pišem u nadi da ću ubrzo doći k tebi,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Crkva i Otajstvo pobožnosti"
+            }
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "a okasnim li, da znaš kako se treba vladati u kući Božjoj, koja je Crkva Boga živoga, stup i uporište istine."
+        },
+        {
+          "verse": 16,
+          "text": "Da, po sveopćem uvjerenju, veliko je Otajstvo pobožnosti: On, očitovan u tijelu, opravdan u Duhu, viđen od anđelâ, propovijedan među narodima, vjerovan u svijetu, uznesen u slavu.",
+          "lines": [
+            "Da, po sveopćem uvjerenju, veliko je Otajstvo pobožnosti:",
+            "On, očitovan u tijelu,",
+            "opravdan u Duhu,",
+            "viđen od anđelâ,",
+            "propovijedan među narodima,",
+            "vjerovan u svijetu,",
+            "uznesen u slavu."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 16,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Duh izričito govori da će u posljednja vremena neki otpasti od vjere i prikloniti se prijevarnim duhovima i zloduhovskim naucima.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Krivi učitelji"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "A sve to pod utjecajem himbe lažljivaca otupjele savjesti"
+        },
+        {
+          "verse": 3,
+          "text": "koji zabranjuju ženiti se i nameću suzdržavati se od jelâ što ih je Bog stvorio da ih sa zahvalnošću uzimaju oni koji vjeruju i znaju istinu."
+        },
+        {
+          "verse": 4,
+          "text": "Doista, svako je Božje stvorenje dobro i ne valja odbaciti ništa što se uzima sa zahvalnošću"
+        },
+        {
+          "verse": 5,
+          "text": "jer se posvećuje riječju Božjom i molitvom."
+        },
+        {
+          "verse": 6,
+          "text": "To izlaži braći i bit ćeš dobar poslužitelj Krista Isusa, hranjen riječima vjere i dobroga nauka za kojim postojano ideš."
+        },
+        {
+          "verse": 7,
+          "text": "Svjetovne pak i bablje priče odbijaj! Vježbaj se u pobožnosti!"
+        },
+        {
+          "verse": 8,
+          "text": "Uistinu, tjelesno vježbanje malo čemu koristi, a pobožnost je svemu korisna jer joj je obećan život – sadašnji i budući."
+        },
+        {
+          "verse": 9,
+          "text": "Vjerodostojna je to riječ i vrijedna da se posve prihvati."
+        },
+        {
+          "verse": 10,
+          "text": "Ta za to se trudimo i borimo jer se pouzdajemo u Boga živoga, koji je Spasitelj svih ljudi, ponajpače vjernikâ."
+        },
+        {
+          "verse": 11,
+          "text": "Zapovijedaj to i naučavaj!"
+        },
+        {
+          "verse": 12,
+          "text": "Nitko neka ne prezire tvoje mladosti, nego budi uzor vjernicima u riječi, u vladanju, u ljubavi, u vjeri, u čistoći."
+        },
+        {
+          "verse": 13,
+          "text": "Dok ne dođem, posveti se čitanju, poticanju, poučavanju."
+        },
+        {
+          "verse": 14,
+          "text": "Ne zanemari milosnog dara koji je u tebi, koji ti je dan po proroštvu zajedno s polaganjem ruku starješinstva."
+        },
+        {
+          "verse": 15,
+          "text": "Oko toga nastoj, sav u tom budi da tvoj napredak bude svima očit."
+        },
+        {
+          "verse": 16,
+          "text": "Pripazi na samog sebe i na poučavanje! Ustraj u tome! Jer to vršeći, spasit ćeš i sebe i one koji te slušaju."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verse_count": 25,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Na starca se ne otresaj, nego ga nagovaraj kao oca, mladiće kao braću,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Vjernici"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "starice kao majke, djevojke kao sestre – u svoj čistoći."
+        },
+        {
+          "verse": 3,
+          "text": "Udovice poštuj – one koje su zaista udovice.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Udovice"
+            }
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Ako li ipak koja udovica ima djecu ili unuke, neka najprije oni znaju očitovati svoju pobožnost prema vlastitom domu i uzdarjem uzvraćati roditeljima, jer to je ugodno Bogu."
+        },
+        {
+          "verse": 5,
+          "text": "A ona koja je zaista udovica, posve sama, pouzdaje se u Boga, odana prošnjama i molitvama noć i dan;"
+        },
+        {
+          "verse": 6,
+          "text": "ona, naprotiv, koja provodi lagodan život, živa je već umrla."
+        },
+        {
+          "verse": 7,
+          "text": "I to naglašuj da budu besprijekorne."
+        },
+        {
+          "verse": 8,
+          "text": "Ako li se tkogod za svoje, navlastito za ukućane, ne stara, zanijekao je vjeru i gori je od nevjernika."
+        },
+        {
+          "verse": 9,
+          "text": "U popis neka se unosi udovica ne mlađa od šezdeset godina, jednog muža žena,"
+        },
+        {
+          "verse": 10,
+          "text": "koja ima svjedočanstvo dobrih djela: da je djecu odgojila, da je bila gostoljubiva, da je svetima noge prala, da je nevoljnima pomagala, da se svakom dobru djelu posvećivala."
+        },
+        {
+          "verse": 11,
+          "text": "Mlađe pak udovice odbijaj jer kad ih požuda odvrati od Krista, hoće se udati"
+        },
+        {
+          "verse": 12,
+          "text": "pa zasluže osudu što su pogazile prvotnu vjernost."
+        },
+        {
+          "verse": 13,
+          "text": "A uz to se, obilazeći po kućama, nauče biti besposlene, i ne samo besposlene nego i brbljave i nametljive, govoreći što ne bi smjele."
+        },
+        {
+          "verse": 14,
+          "text": "Hoću dakle da se mlađe udaju, djecu rađaju, da budu kućevne te ne daju protivniku nikakva povoda za pogrđivanje."
+        },
+        {
+          "verse": 15,
+          "text": "Jer već su neke zastranile za Sotonom."
+        },
+        {
+          "verse": 16,
+          "text": "Ako koja vjernica ima udovicâ, neka im pomaže, a neka se ne opterećuje Crkva, da uzmogne pomoći onima koje su zaista udovice."
+        },
+        {
+          "verse": 17,
+          "text": "Starješine koji su dobri predstojnici dostojni su dvostruke časti, ponajpače oni koji se trude oko Riječi i poučavanja.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prezbiteri – starješine"
+            }
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Pismo doista veli: Volu koji vrši ne zavezuj usta! I: Vrijedan je radnik plaće svoje."
+        },
+        {
+          "verse": 19,
+          "text": "Protiv starješine ne primaj tužbe, osim na osnovi dvaju ili triju svjedoka."
+        },
+        {
+          "verse": 20,
+          "text": "One koji griješe, pred svima ukori da i drugi imaju straha!"
+        },
+        {
+          "verse": 21,
+          "text": "Zaklinjem te pred Bogom i Kristom Isusom i izabranim anđelima da se toga držiš bez predrasude i ništa ne činiš po naklonosti."
+        },
+        {
+          "verse": 22,
+          "text": "Rukû prebrzo ni na koga ne polaži i ne budi dionikom tuđih grijeha! Sebe čistim čuvaj!"
+        },
+        {
+          "verse": 23,
+          "text": "Ne pij više samo vode, nego uzimaj malo vina poradi želuca i čestih svojih slabosti."
+        },
+        {
+          "verse": 24,
+          "text": "Grijesi nekih ljúdi očiti su i prije suda, nekih pak samo nakon njega."
+        },
+        {
+          "verse": 25,
+          "text": "Tako su i dobra djela očita, a bila i drukčija, ne mogu se sakriti."
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verse_count": 21,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Koji su pod jarmom, robovi, neka svoje gospodare smatraju svake časti dostojnima da se ne bi pogrđivalo ime Božje i nauk.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Robovi"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "A oni kojima su gospodari vjernici, neka ih ne cijene manje zato što su braća, nego neka im još više služe, jer ti koji primaju njihovo dobročinstvo vjernici su i ljubljena braća. To naučavaj i preporučuj!",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "ZAKLJUČAK"
+            },
+            {
+              "level": "h4",
+              "text": "Pravi i krivi učitelji"
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "A tko drukčije naučava i ne prianja uza zdrave riječi, riječi Gospodina našega Isusa Krista, i nauk u skladu s pobožnošću,"
+        },
+        {
+          "verse": 4,
+          "text": "nadut je, puka neznalica, samo boluje od rasprâ i rječoborstava, od kojih nastaje zavist, svađa, pogrde, zla sumnjičenja,"
+        },
+        {
+          "verse": 5,
+          "text": "razračunavanja ljudi pokvarene pameti i lišenih istine, što pobožnost smatraju dobitkom."
+        },
+        {
+          "verse": 6,
+          "text": "Pa i jest dobitak velik pobožnost, zadovoljna onim što ima!"
+        },
+        {
+          "verse": 7,
+          "text": "Ta ništa nismo donijeli na svijet te iz njega ništa ni iznijeti ne možemo!"
+        },
+        {
+          "verse": 8,
+          "text": "Imamo li dakle hranu i odjeću, zadovoljimo se time."
+        },
+        {
+          "verse": 9,
+          "text": "Jer oni koji se hoće bogatiti, upadaju u napast, zamku i mnoge nerazumne i štetne požude što ljude strovaljuju u zator i propast."
+        },
+        {
+          "verse": 10,
+          "text": "Zaista, korijen svih zala jest srebroljublje; njemu odani, mnogi odlutaše od vjere i sami sebe isprobadaše mukama mnogima."
+        },
+        {
+          "verse": 11,
+          "text": "A ti se, Božji čovječe, toga kloni! Teži za pravednošću, pobožnošću, vjerom, ljubavlju, postojanošću, krotkošću!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Usrdni poticaji Timoteju"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Bij dobar boj vjere, osvoji vječni život na koji si pozvan i radi kojega si dao ono lijepo svjedočanstvo pred mnogim svjedocima!"
+        },
+        {
+          "verse": 13,
+          "text": "Zapovijedam pred Bogom koji svemu život daje i pred Kristom Isusom, koji pred Poncijem Pilatom posvjedoči lijepo svjedočanstvo:"
+        },
+        {
+          "verse": 14,
+          "text": "čuvaj Zapovijed, neokaljano i besprijekorno, do Pojavka Gospodina našega Isusa Krista."
+        },
+        {
+          "verse": 15,
+          "text": "Njega će u svoje vrijeme pokazati On, Blaženi i jedini Vladar, Kralj kraljevâ i Gospodar gospodarâ,",
+          "lines": [
+            "Njega će u svoje vrijeme pokazati On,",
+            "Blaženi i jedini Vladar,",
+            "Kralj kraljevâ i Gospodar gospodarâ,"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "koji jedini ima besmrtnost, prebiva u svjetlu nedostupnu, koga nitko od ljudi ne vidje niti ga vidjeti može. Njemu čast i vlast vjekovječna! Amen.",
+          "lines": [
+            "koji jedini ima besmrtnost,",
+            "prebiva u svjetlu nedostupnu,",
+            "koga nitko od ljudi ne vidje",
+            "niti ga vidjeti može.",
+            "Njemu čast i vlast vjekovječna!",
+            "Amen."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Onima koji su u sadašnjem svijetu bogati zapovijedaj neka ne budu bahati i neka se ne uzdaju u nesigurno bogatstvo, nego u Boga koji nam sve bogato daje na uživanje;",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Bogati kršćani"
+            }
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "neka dobro čine, neka se bogate dobrim djelima, neka budu darežljivi, zajedničari –"
+        },
+        {
+          "verse": 19,
+          "text": "prikupljajući sebi lijepu glavnicu za budućnost da osvoje onaj pravi život."
+        },
+        {
+          "verse": 20,
+          "text": "Timoteju, poklad čuvaj kloneći se svjetovnoga praznoglasja i proturječjâ nekog nazovispoznanja,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Završni poticaj i pozdrav"
+            }
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "koje su neki ispovijedali pa od vjere zastranili. Milost s vama!",
+          "lines": [
+            "koje su neki ispovijedali pa od vjere zastranili.",
+            "Milost s vama!"
+          ]
+        }
+      ]
+    }
+  ]
+}

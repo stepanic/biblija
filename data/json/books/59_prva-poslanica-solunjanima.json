@@ -1,0 +1,493 @@
+{
+  "order": 59,
+  "id": "prva-poslanica-solunjanima",
+  "ks_book_id": 70,
+  "abbr": "1 Sol",
+  "title": "Prva poslanica Solunjanima",
+  "testament": "NZ",
+  "category": "Poslanice",
+  "chapter_count": 5,
+  "verse_count": 89,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 10,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Pavao, Silvan i Timotej Crkvi Solunjanâ u Bogu Ocu i Gospodinu Isusu Kristu. Milost vam i mir!",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "NASLOV I POZDRAV"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Zahvaljujemo uvijek Bogu za sve vas i bez prestanka vas se sjećamo u svojim molitvama",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "I. ODNOS MISIONARA PAVLA I SOLUNJANA"
+            },
+            {
+              "level": "h3",
+              "text": "1. OSNUTAK CRKVE"
+            },
+            {
+              "level": "h4",
+              "text": "Zahvala Bogu za obraćenje Solunjana"
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "spominjući se vaše djelotvorne vjere, zauzete ljubavi i postojane nade u Gospodinu našem Isusu Kristu, pred Bogom i Ocem našim."
+        },
+        {
+          "verse": 4,
+          "text": "Svjesni smo, braćo od Boga ljubljena, vašeg izabranja"
+        },
+        {
+          "verse": 5,
+          "text": "jer evanđelje naše nije k vama došlo samo u riječi nego i u snazi, u Duhu Svetome i mnogostrukoj punini. Takvi smo, kao što znate, poradi vas među vama bili."
+        },
+        {
+          "verse": 6,
+          "text": "I vi postadoste nasljedovatelji naši i Gospodinovi: sve u nevolji mnogoj prigrliste Riječ s radošću Duha Svetoga"
+        },
+        {
+          "verse": 7,
+          "text": "tako da postadoste uzorom svim vjernicima u Makedoniji i Ahaji."
+        },
+        {
+          "verse": 8,
+          "text": "Od vas je doista ne samo riječ Gospodnja odjeknula po Makedoniji i Ahaji nego se i vaša vjera u Boga posvuda tako proširila te nije potrebno da o tome govorimo."
+        },
+        {
+          "verse": 9,
+          "text": "Oni sami o nama pripovijedaju: kako dođosmo k vama, kako se od idola obratiste k Bogu da biste služili Bogu živomu i istinskomu"
+        },
+        {
+          "verse": 10,
+          "text": "i iščekivali s nebesa Sina njegova koga uskrisi od mrtvih, Isusa koji nas izbavlja od gnjeva što dolazi."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 20,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Sami doista znate, braćo: naš dolazak k vama nije bio uzaludan.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavlovo djelovanje u Solunu"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Naprotiv, i pošto smo, kako znate, u Filipima trpjeli i bili pogrđeni, odvažismo se u Bogu našemu iznijeti vam, uz tešku borbu, evanđelje Božje."
+        },
+        {
+          "verse": 3,
+          "text": "Uistinu, naše poticanje ne proistječe iz zablude, ni nečistoće, ni prijevare,"
+        },
+        {
+          "verse": 4,
+          "text": "nego kako je Bog prosudio povjeriti nam evanđelje, tako ga i navješćujemo – ne kao da želimo ugoditi ljudima, nego Bogu koji prosuđuje srca naša."
+        },
+        {
+          "verse": 5,
+          "text": "Nikada se zaista, kako znate, ne poslužismo ni laskavom riječju ni – Bog nam je svjedok – prikrivenom pohlepom."
+        },
+        {
+          "verse": 6,
+          "text": "Niti smo od ljudi iskali slavu – ni od vas, ni od drugih –"
+        },
+        {
+          "verse": 7,
+          "text": "premda smo se mogli nametnuti kao Kristovi apostoli. Ali bili smo među vama nježni kao majka što hrani i njeguje svoju djecu."
+        },
+        {
+          "verse": 8,
+          "text": "Tako, puni ljubavi prema vama, htjedosmo vam predati ne samo evanđelje Božje nego i naše duše jer ste nam omiljeli."
+        },
+        {
+          "verse": 9,
+          "text": "Sjećate se doista, braćo, našega truda i napora. Propovijedali smo vam evanđelje Božje i radili noću i danju da ne bismo opteretili koga od vas."
+        },
+        {
+          "verse": 10,
+          "text": "Svjedoci ste vi i Bog kako smo se sveto, pravedno i besprijekorno vladali prema vama, vjernicima."
+        },
+        {
+          "verse": 11,
+          "text": "Kao što znate, svakoga smo od vas kao otac svoju djecu,"
+        },
+        {
+          "verse": 12,
+          "text": "poticali, sokolili i zaklinjali da živite dostojno Boga koji vas pozva u svoje kraljevstvo i slavu."
+        },
+        {
+          "verse": 13,
+          "text": "Zato, eto, i mi bez prestanka zahvaljujemo Bogu što ste, kad od nas primiste riječ poruke Božje, primili ne riječ ljudsku, nego kakva uistinu jest, riječ Božju koja i djeluje u vama, vjernicima.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Vjera i strpljivost Solunjana"
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Doista, vi ste, braćo, postali nasljedovatelji crkava Božjih koje su u Judeji u Kristu Isusu: i vi isto trpite od svojih suplemenika što i oni od Židova,"
+        },
+        {
+          "verse": 15,
+          "text": "koji su i Gospodina Isusa i proroke ubili, i nas progonili, te Bogu ne ugađaju i svim se ljudima protive"
+        },
+        {
+          "verse": 16,
+          "text": "kad nam priječe propovijedati poganima da se spase, da bi tako u svako vrijeme navršili mjeru zlodjela svojih. Ali sručio se na njih konačni gnjev."
+        },
+        {
+          "verse": 17,
+          "text": "A mi, braćo, pošto smo za kratko vrijeme ostali bez vas – licem, ne srcem – brže se bolje, u silnoj čežnji, požurismo ugledati vaše lice.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "2. NAKON ODLASKA VJEROVJESNIKA"
+            }
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Zaista, htjedosmo k vama – ja, Pavao, i jednom i dvaput – ali nas je spriječio Sotona."
+        },
+        {
+          "verse": 19,
+          "text": "Ta tko li će biti naša nada, radost ili vijenac dični – zar možda ne i vi? – pred Gospodinom našim Isusom o njegovu dolasku?"
+        },
+        {
+          "verse": 20,
+          "text": "Vi ste doista slava naša i radost!"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 13,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Zato kad više ne mogosmo izdržati, pristadosmo ostati u Ateni sami",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavao šalje Timoteja u Solun"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "te poslasmo Timoteja, brata našega i suradnika Božjega u Kristovu evanđelju, da vas učvrsti i ohrabri u vjeri"
+        },
+        {
+          "verse": 3,
+          "text": "da se nitko ne pokoleba u tim nevoljama. Ta i sami znate da smo za to određeni:"
+        },
+        {
+          "verse": 4,
+          "text": "doista, kad smo bili kod vas, pretkazivali smo kako nas imaju zadesiti nevolje, što se, kako znate, i dogodilo."
+        },
+        {
+          "verse": 5,
+          "text": "Zbog toga i ja, ne mogavši više izdržati, poslah da saznam o vašoj vjeri, da vas možda Zavodnik nije zaveo te je naš trud postao uzaludan."
+        },
+        {
+          "verse": 6,
+          "text": "A sada kad se Timotej od vas k nama vratio i donio nam radosnu vijest o vašoj vjeri i ljubavi, i da nas se sveudilj ugodno sjećate i čeznete vidjeti nas, kao i mi vas –",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Zahvala za dobre vijesti"
+            }
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "zbog toga smo, braćo, nad vama, vašom vjerom, bili utješeni uza svu svoju tjeskobu i nevolju."
+        },
+        {
+          "verse": 8,
+          "text": "Da, sada živimo kada ste vi postojani u Gospodinu!"
+        },
+        {
+          "verse": 9,
+          "text": "I kojom bismo zahvalom mogli Bogu uzvratiti za vas, za svu radost kojom se zbog vas radujemo pred Bogom svojim,"
+        },
+        {
+          "verse": 10,
+          "text": "dok noću i danju najusrdnije molimo da vidimo vaše lice i nadoknadimo manjkavosti vaše vjere?"
+        },
+        {
+          "verse": 11,
+          "text": "A sam Bog i Otac naš i Gospodin naš Isus upravio naš put prema vama!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavlova molitva"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Vama pak Gospodin dao te jedni prema drugima i prema svima rasli i obilovali ljubavlju kakva je i naša prema vama."
+        },
+        {
+          "verse": 13,
+          "text": "Učvrstio vam srca da budu besprijekorno sveta pred Bogom i Ocem našim o dolasku Gospodina našega Isusa i svih svetih njegovih s njime."
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Uostalom, braćo, molimo vas i zaklinjemo u Gospodinu Isusu: primili ste od nas kako treba da živite da biste ugodili Bogu. Vi tako i živite pa sve više napredujete!",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "II. SMJERNICE I POTICAJI"
+            },
+            {
+              "level": "h4",
+              "text": "Svetost, čistoća i ljubav"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ta znate koje smo vam zapovijedi dali u Gospodinu Isusu."
+        },
+        {
+          "verse": 3,
+          "text": "Doista, ovo je volja Božja: vaše posvećenje – da se suzdržavate od bludnosti,"
+        },
+        {
+          "verse": 4,
+          "text": "da svatko od vas zna svoje tijelo posjedovati u svetosti i poštovanju,"
+        },
+        {
+          "verse": 5,
+          "text": "a ne u pohotnoj strasti kao pogani koji ne poznaju Boga,"
+        },
+        {
+          "verse": 6,
+          "text": "pa time ne prikraćivati i varati svoga brata. Jer Gospodin je osvetnik za sve to, kao što vam već rekosmo i posvjedočismo."
+        },
+        {
+          "verse": 7,
+          "text": "Bog nas, doista, nije pozvao na nečistoću, nego na svetost."
+        },
+        {
+          "verse": 8,
+          "text": "Prema tome, tko to odbacuje, ne odbacuje čovjeka, nego Boga koji svoga Duha Svetoga udahnjuje u vas."
+        },
+        {
+          "verse": 9,
+          "text": "A o bratoljublju vam nije potrebno pisati. Ta i sami ste od Boga naučili ljubiti jedni druge,"
+        },
+        {
+          "verse": 10,
+          "text": "a to doista i činite prema svoj braći u cijeloj Makedoniji. Samo vas, braćo, potičemo da u tom još više uznapredujete"
+        },
+        {
+          "verse": 11,
+          "text": "pa da se trsite mirno živjeti, svoje činiti i raditi svojim rukama, kako smo vam zapovjedili,"
+        },
+        {
+          "verse": 12,
+          "text": "te tako časno živite prema onima vani i nikoga ne trebate."
+        },
+        {
+          "verse": 13,
+          "text": "Nećemo da budete u neznanju, braćo, o onima koji su usnuli, da ne tugujete kao drugi koji nemaju nade.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Uskrsnuće o Kristovu dolasku"
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Doista, ako vjerujemo da je Isus umro i uskrsnuo, onda će Bog i one koji usnuše u Isusu, privesti zajedno s njime."
+        },
+        {
+          "verse": 15,
+          "text": "Ovo vam uistinu velimo po riječi Gospodnjoj: mi živi, preostali za dolazak Gospodnji, nećemo preteći onih koji su usnuli."
+        },
+        {
+          "verse": 16,
+          "text": "Jer sam će Gospodin – na zapovijed, na glas arkanđelov, na zov trublje Božje – sići s neba. I najprije će uskrsnuti mrtvi u Kristu,"
+        },
+        {
+          "verse": 17,
+          "text": "a zatim ćemo mi živi, preostali, zajedno s njima biti poneseni na oblacima u susret Gospodinu, u zrak. I tako ćemo uvijek biti s Gospodinom."
+        },
+        {
+          "verse": 18,
+          "text": "Tješite se dakle uzajamno ovim riječima!"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verse_count": 28,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "A o vremenima i trenucima nije, braćo, potrebno pisati vam.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Budnost u iščekivanju dolaska Gospodinova"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ta i sami dobro znate da Dan Gospodnji dolazi baš kao kradljivac u noći."
+        },
+        {
+          "verse": 3,
+          "text": "Dok još budu govorili: »Mir i sigurnost«, zadesit će ih iznenadna propast kao trudovi trudnicu i neće umaći."
+        },
+        {
+          "verse": 4,
+          "text": "Ali vi, braćo, niste u tami, da bi vas Dan mogao zaskočiti kao kradljivac:"
+        },
+        {
+          "verse": 5,
+          "text": "ta svi ste vi sinovi svjetlosti i sinovi dana. Nismo doista od noći ni od tame."
+        },
+        {
+          "verse": 6,
+          "text": "Onda i ne spavajmo kao ostali, nego bdijmo i trijezni budimo."
+        },
+        {
+          "verse": 7,
+          "text": "Jer koji spavaju, noću spavaju; i koji se opijaju, noću se opijaju."
+        },
+        {
+          "verse": 8,
+          "text": "A mi koji smo od dana, budimo trijezni, obucimo oklop vjere i ljubavi i stavimo kacigu, nadu spasenja!"
+        },
+        {
+          "verse": 9,
+          "text": "Ta Bog nas nije odredio za gnjev, nego da imamo spasenje po Gospodinu našem Isusu Kristu,"
+        },
+        {
+          "verse": 10,
+          "text": "koji je za nas umro da – bdjeli ili spavali – zajedno s njime živimo."
+        },
+        {
+          "verse": 11,
+          "text": "Zato, tješite se uzajamno i izgrađujte jedan drugoga, kako i činite."
+        },
+        {
+          "verse": 12,
+          "text": "Molimo vas, braćo: priznajte one koji se trude među vama, koji su vam predstojnici u Gospodinu i opominju vas;",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Nekoliko zahtjeva zajedničkog života"
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "s ljubavlju ih nadasve cijenite poradi njihova djela! Gajite mir među sobom!",
+          "lines": [
+            "s ljubavlju ih nadasve cijenite poradi njihova djela!",
+            "Gajite mir među sobom!"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Potičemo vas, braćo: opominjite neuredne, sokolite malodušne, podržavajte slabe, budite velikodušni prema svima!"
+        },
+        {
+          "verse": 15,
+          "text": "Pazite da tko komu zlo zlom ne uzvrati, nego uvijek promičite dobro jedni prema drugima i prema svima."
+        },
+        {
+          "verse": 16,
+          "text": "Uvijek se radujte!"
+        },
+        {
+          "verse": 17,
+          "text": "Bez prestanka se molite!"
+        },
+        {
+          "verse": 18,
+          "text": "U svemu zahvaljujte! Jer to je za vas volja Božja u Kristu Isusu."
+        },
+        {
+          "verse": 19,
+          "text": "Duha ne trnite,"
+        },
+        {
+          "verse": 20,
+          "text": "proroštava ne prezirite!"
+        },
+        {
+          "verse": 21,
+          "text": "Sve provjeravajte: dobro zadržite,"
+        },
+        {
+          "verse": 22,
+          "text": "svake se sjene zla klonite!"
+        },
+        {
+          "verse": 23,
+          "text": "A sam Bog mira neka vas posvema posveti i cijelo vaše biće – duh vaš i duša i tijelo – neka se besprijekornim, savršenim sačuva za dolazak Gospodina našega Isusa Krista.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "ZAVRŠNA ŽELJA I POZDRAV"
+            }
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Vjeran je Onaj tko vas poziva: on će to i učiniti."
+        },
+        {
+          "verse": 25,
+          "text": "Braćo, molite i za nas!"
+        },
+        {
+          "verse": 26,
+          "text": "Pozdravite svu braću cjelovom svetim."
+        },
+        {
+          "verse": 27,
+          "text": "Zaklinjem vas u Gospodinu: neka se ova poslanica pročita svoj braći."
+        },
+        {
+          "verse": 28,
+          "text": "Milost Gospodina našega Isusa Krista s vama!"
+        }
+      ]
+    }
+  ]
+}

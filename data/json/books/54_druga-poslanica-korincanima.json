@@ -1,0 +1,1252 @@
+{
+  "order": 54,
+  "id": "druga-poslanica-korincanima",
+  "ks_book_id": 65,
+  "abbr": "2 Kor",
+  "title": "Druga poslanica Korinćanima",
+  "testament": "NZ",
+  "category": "Poslanice",
+  "chapter_count": 13,
+  "verse_count": 256,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 24,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Pavao, po volji Božjoj apostol Krista Isusa, i brat Timotej: Crkvi Božjoj u Korintu sa svima svetima u svoj Ahaji.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "UVOD"
+            },
+            {
+              "level": "h4",
+              "text": "Naslov, pozdrav i zahvalnica"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Milost vam i mir od Boga, Oca našega, i Gospodina Isusa Krista!"
+        },
+        {
+          "verse": 3,
+          "text": "Blagoslovljen Bog i Otac Gospodina našega Isusa Krista, Otac milosrđa i Bog svake utjehe!"
+        },
+        {
+          "verse": 4,
+          "text": "On nas tješi u svakoj našoj nevolji da bismo i mi sve koji su u nevolji mogli tješiti onom utjehom kojom nas same tješi Bog."
+        },
+        {
+          "verse": 5,
+          "text": "Jer kao što su obilate patnje Kristove u nama, tako je po Kristu obilata i utjeha naša."
+        },
+        {
+          "verse": 6,
+          "text": "Bili mi nevoljama pritisnuti, za vašu je to utjehu i spasenje; bili utješeni, za vašu je utjehu – djelotvornu: da strpljivo podnesete iste patnje koje i mi podnosimo."
+        },
+        {
+          "verse": 7,
+          "text": "I tako je stamena nada naša o vama jer znamo: kao što ste zajedničari patnja tako ste i utjehe."
+        },
+        {
+          "verse": 8,
+          "text": "Ne bismo doista htjeli, braćo, da ne znate za nevolju koja nas je snašla u Aziji. Bijasmo prekomjerno, preko snage, opterećeni te smo već strepili i za život."
+        },
+        {
+          "verse": 9,
+          "text": "Ali u sebi prihvatismo i smrtnu osudu da se ne bismo uzdali u same sebe, nego u Boga koji uskrisuje mrtve."
+        },
+        {
+          "verse": 10,
+          "text": "On nas je od takve smrti izbavio i izbavit će nas; u njega se uzdamo, on će nas i dalje izbavljati."
+        },
+        {
+          "verse": 11,
+          "text": "A i vi ćete nam pomagati molitvom da bi mnogi za nas zahvaljivali Bogu na milosti koja nam je darovana posredovanjem mnogih."
+        },
+        {
+          "verse": 12,
+          "text": "A ovo je naša slava: svjedočanstvo naše savjesti da smo u svijetu živjeli – osobito prema vama – u svetosti i iskrenosti Božjoj, ne u mudrosti tjelesnoj, nego u Božjoj milosti.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "I. OSVRT NA MINULE NEVOLJE"
+            },
+            {
+              "level": "h4",
+              "text": "Zašto je Pavao promijenio naum o putovanju?"
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Ta i ne pišemo vam drugo doli ovo što čitate i razumijete; a nadam se da ćete i do kraja razumjeti,"
+        },
+        {
+          "verse": 14,
+          "text": "kao što nas djelomično i razumjeste: da smo mi vaša slava kao i vi naša u Dan Gospodina našega Isusa."
+        },
+        {
+          "verse": 15,
+          "text": "U tom uvjerenju namjeravao sam najprije doći k vama"
+        },
+        {
+          "verse": 16,
+          "text": "i preko vas prijeći u Makedoniju pa se opet, da biste imali i drugu milost, iz Makedonije vratiti k vama da me vi otpratite u Judeju."
+        },
+        {
+          "verse": 17,
+          "text": "Pa jesam li možda bio lakomislen kad sam to namjeravao? Ili što namjeravam, po tijelu namjeravam te je u mene istodobno »Da, da!« i »Ne, ne!«"
+        },
+        {
+          "verse": 18,
+          "text": "Bog je svjedok: naša riječ vama nije »Da!« i »Ne!«"
+        },
+        {
+          "verse": 19,
+          "text": "jer Sin Božji, Isus Krist, koga mi – ja i Silvan i Timotej – vama navijestismo nije bio »Da!« i »Ne!«, nego u njemu bijaše »Da!«."
+        },
+        {
+          "verse": 20,
+          "text": "Doista, sva obećanja Božja u njemu su »Da!«. I stoga po njemu i naš »Amen!« Bogu na slavu!"
+        },
+        {
+          "verse": 21,
+          "text": "A Bog je onaj koji nas zajedno s vama utvrđuje za Krista; on nas i pomaza,"
+        },
+        {
+          "verse": 22,
+          "text": "on nas i zapečati i u srca naša dade zalog – Duha."
+        },
+        {
+          "verse": 23,
+          "text": "A ja prizivljem Boga za svjedoka: duše mi, da vas poštedim, nisam više dolazio u Korint."
+        },
+        {
+          "verse": 24,
+          "text": "Ta mi nismo gospodari vaše vjere, nego suradnici vaše radosti. Ta u vjeri ste postojani."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 17,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Odlučih dakle u sebi da neću k vama opet sa žalošću."
+        },
+        {
+          "verse": 2,
+          "text": "Jer ako ja vas ražalostim, a tko će mene obradovati ako ne onaj koga ja žalostim?"
+        },
+        {
+          "verse": 3,
+          "text": "Zato vam to i napisah da me, kada dođem, ne ražaloste oni koji bi mi imali biti na radost. Uzdam se doista u sve vas, da je moja radost – radost svih vas."
+        },
+        {
+          "verse": 4,
+          "text": "Pisah vam uistinu uz mnoge suze, iz velike nevolje i tjeskobe srca, ne da se ražalostite, nego da upoznate moju preveliku ljubav prema vama."
+        },
+        {
+          "verse": 5,
+          "text": "Ako me tko ražalostio, nije ražalostio mene, nego u neku ruku – da ne pretjeram – sve vas."
+        },
+        {
+          "verse": 6,
+          "text": "Dosta je takvu ona kazna od većine"
+        },
+        {
+          "verse": 7,
+          "text": "pa ga vi radije pomilujte i utješite da ga pretjerana žalost ne shrva."
+        },
+        {
+          "verse": 8,
+          "text": "Zato vas molim, iskažite mu ljubav."
+        },
+        {
+          "verse": 9,
+          "text": "Ta zato vam i pisah da vidim jeste li prokušani, jeste li u svemu poslušni."
+        },
+        {
+          "verse": 10,
+          "text": "Komu dakle vi što oprostite, tomu i ja; jer i ja, ako kome što oprostih, oprostih poradi vas – pred Kristom,"
+        },
+        {
+          "verse": 11,
+          "text": "da nas ne nadmudri Sotona. Ta znamo njegove namjere!"
+        },
+        {
+          "verse": 12,
+          "text": "Kada dođoh u Troadu poradi evanđelja Kristova, premda mi se otvoriše vrata u Gospodinu,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Apostolsko služenje"
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "ne bijaše mi duši spokoja što ne nađoh Tita, brata svoga; oprostih se stoga s njima i pođoh u Makedoniju."
+        },
+        {
+          "verse": 14,
+          "text": "Ali hvala Bogu koji nas u Kristu uvijek proslavlja te širi po nama na svakome mjestu miris svoga spoznanja."
+        },
+        {
+          "verse": 15,
+          "text": "Da, Kristov smo miomiris Bogu i među onima koji se spašavaju i među onima koji propadaju:"
+        },
+        {
+          "verse": 16,
+          "text": "ovima miris iz smrti za smrt, onima miris iz života za život. A tko je za to podoban?"
+        },
+        {
+          "verse": 17,
+          "text": "Uistinu, mi nismo kao mnogi koji trguju riječju Božjom, nego iskreno – kao od Boga pred Bogom – u Kristu govorimo."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Počinjemo li opet sami sebe preporučivati? Ili trebamo li, kao neki, preporučna pisma na vas ili od vas?"
+        },
+        {
+          "verse": 2,
+          "text": "Vi ste pismo naše, upisano u srcima vašim; znaju ga i čitaju svi ljudi."
+        },
+        {
+          "verse": 3,
+          "text": "Vi ste, očito, pismo Kristovo kojemu mi poslužismo, napisano ne crnilom, nego Duhom Boga živoga; ne na pločama kamenim, nego na pločama od mesa, u srcima."
+        },
+        {
+          "verse": 4,
+          "text": "Takvo pouzdanje imamo po Kristu u Boga."
+        },
+        {
+          "verse": 5,
+          "text": "Ne kao da smo sami sobom, kao od sebe, sposobni što pomisliti, nego naša je sposobnost od Boga."
+        },
+        {
+          "verse": 6,
+          "text": "On nas osposobi za poslužitelje novoga Saveza, ne slova, nego Duha; jer slovo ubija, a Duh oživljuje."
+        },
+        {
+          "verse": 7,
+          "text": "Pa ako je smrtonosna služba, slovima uklesana u kamenju, bila tako slavna da sinovi Izraelovi nisu mogli pogledati u lice Mojsijevo zbog prolazne slave lica njegova,"
+        },
+        {
+          "verse": 8,
+          "text": "koliko li će slavnija biti služba Duha."
+        },
+        {
+          "verse": 9,
+          "text": "Jer ako je služba osude bila slavna, mnogo je slavnija služba pravednosti."
+        },
+        {
+          "verse": 10,
+          "text": "I zbilja, nije ni bilo proslavljeno ono što je u toj mjeri proslavljeno, ako se usporedi s uzvišenijom slavom."
+        },
+        {
+          "verse": 11,
+          "text": "Jer ako je ono prolazno bilo slavno, mnogo je slavnije ovo što ostaje."
+        },
+        {
+          "verse": 12,
+          "text": "Imajući dakle takvo pouzdanje, nastupamo sa svom otvorenošću,"
+        },
+        {
+          "verse": 13,
+          "text": "a ne kao Mojsije, koji je stavljao prijevjes na lice da sinovi Izraelovi ne vide svršetak prolaznoga."
+        },
+        {
+          "verse": 14,
+          "text": "Ali otvrdnu im pamet. Doista, do dana današnjega zastire taj prijevjes čitanje Staroga zavjeta: nije im otkriveno da je u Kristu prestao."
+        },
+        {
+          "verse": 15,
+          "text": "Naprotiv, kad god se čita Mojsije, do danas prijevjes zastire srce njihovo."
+        },
+        {
+          "verse": 16,
+          "text": "Ali kad se Izrael obrati Gospodinu, skinut će se prijevjes."
+        },
+        {
+          "verse": 17,
+          "text": "Gospodin je Duh, a gdje je Duh Gospodnji, ondje je sloboda."
+        },
+        {
+          "verse": 18,
+          "text": "A svi mi, koji otkrivenim licem odrazujemo slavu Gospodnju, po Duhu se Gospodnjem preobražavamo u istu sliku – iz slave u slavu."
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Zato, budući da po milosrđu imamo ovu službu, ne malakšemo."
+        },
+        {
+          "verse": 2,
+          "text": "Ali odrekosmo se sramotnoga prikrivanja: ne nastupamo lukavo niti izopačujemo riječ Božju, nego se objavljivanjem istine preporučujemo svakoj savjesti ljudskoj pred Bogom."
+        },
+        {
+          "verse": 3,
+          "text": "Ako je i zastrto evanđelje naše, u onima je zastrto koji propadaju:"
+        },
+        {
+          "verse": 4,
+          "text": "u onima kojima bog ovoga svijeta oslijepi pameti nevjerničke da ne zasvijetli svjetlost evanđelja slave Krista koji je slika Božja."
+        },
+        {
+          "verse": 5,
+          "text": "Jer ne propovijedamo same sebe, nego Krista Isusa Gospodinom, a sebe slugama vašim poradi Isusa."
+        },
+        {
+          "verse": 6,
+          "text": "Ta Bog koji reče: Neka iz tame svjetlost zasine!, on zasvijetli u srcima našim da nam spoznanje slave Božje zasvijetli na licu Kristovu."
+        },
+        {
+          "verse": 7,
+          "text": "To pak blago imamo u glinenim posudama da izvanredna ona snaga bude očito Božja, a ne od nas.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Apostolske tegobe i nade"
+            }
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "U svemu pritisnuti, ali ne pritiješnjeni; dvoumeći, ali ne zdvajajući;"
+        },
+        {
+          "verse": 9,
+          "text": "progonjeni, ali ne napušteni; obarani, ali ne oboreni –"
+        },
+        {
+          "verse": 10,
+          "text": "uvijek umiranje Isusovo u tijelu pronosimo da se i život Isusov u tijelu našem očituje."
+        },
+        {
+          "verse": 11,
+          "text": "Doista, mi se živi uvijek na smrt predajemo poradi Isusa da se i život Isusov očituje u našem smrtnom tijelu."
+        },
+        {
+          "verse": 12,
+          "text": "Tako smrt djeluje u nama, život u vama."
+        },
+        {
+          "verse": 13,
+          "text": "A budući da imamo isti duh vjere kao što je pisano: Uzvjerovah, zato besjedim, i mi vjerujemo pa zato i besjedimo."
+        },
+        {
+          "verse": 14,
+          "text": "Ta znamo: onaj koji je uskrisio Gospodina Isusa i nas će s Isusom uskrisiti i zajedno s vama uza se postaviti."
+        },
+        {
+          "verse": 15,
+          "text": "A sve je to za vas: da milost – umnožena – zahvaljivanjem mnogih izobiluje Bogu na slavu."
+        },
+        {
+          "verse": 16,
+          "text": "Zato ne malakšemo. Naprotiv, ako se naš izvanji čovjek i raspada, nutarnji se iz dana u dan obnavlja."
+        },
+        {
+          "verse": 17,
+          "text": "Ta ova malenkost naše časovite nevolje donosi nam obilato, sve obilatije, breme vječne slave"
+        },
+        {
+          "verse": 18,
+          "text": "jer nama nije do vidljivog nego do nevidljivog: ta vidljivo je privremeno, a nevidljivo – vječno."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verse_count": 21,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Znamo doista: ako se razruši naš zemaljski dom, šator, imamo zdanje od Boga, dom nerukotvoren, vječan na nebesima."
+        },
+        {
+          "verse": 2,
+          "text": "U ovome doista stenjemo i čeznemo da se povrh njega zaodjenemo svojim nebeskim obitavalištem;"
+        },
+        {
+          "verse": 3,
+          "text": "dakako, ako se nađemo obučeni, ne goli."
+        },
+        {
+          "verse": 4,
+          "text": "Da, i mi koji smo u ovom šatoru, stenjemo opterećeni jer nećemo da budemo svučeni, nego da se još obučemo da život iskapi što je smrtno."
+        },
+        {
+          "verse": 5,
+          "text": "A zato nas je sazdao Bog – on koji nam dade zalog Duha."
+        },
+        {
+          "verse": 6,
+          "text": "Uvijek smo stoga puni pouzdanja makar i znamo: naseljeni u tijelu, iseljeni smo od Gospodina."
+        },
+        {
+          "verse": 7,
+          "text": "Ta u vjeri hodimo, ne u gledanju."
+        },
+        {
+          "verse": 8,
+          "text": "Da, puni smo pouzdanja i najradije bismo se iselili iz tijela i naselili kod Gospodina."
+        },
+        {
+          "verse": 9,
+          "text": "Zato se i trsimo da mu omilimo, bilo naseljeni, bilo iseljeni."
+        },
+        {
+          "verse": 10,
+          "text": "Jer svima nam se pojaviti pred sudištem Kristovim da svaki dobije što je kroz tijelo zaradio, bilo dobro, bilo zlo."
+        },
+        {
+          "verse": 11,
+          "text": "Prožeti dakle strahom Gospodnjim uvjeravamo ljude; razotkriveni smo Bogu, a nadam se – i vašim savjestima.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Apostolsko služenje na djelu"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Ne preporučujemo vam opet sami sebe, nego vam dajemo prigodu ponositi se nama, da imate odgovor za one koji se diče licem, a ne srcem."
+        },
+        {
+          "verse": 13,
+          "text": "Doista, ako bijasmo »izvan sebe« – Bogu bijasmo; ako li »pri sebi« – vama bijasmo."
+        },
+        {
+          "verse": 14,
+          "text": "Jer ljubav nas Kristova obuzima kad promatramo ovo: jedan za sve umrije, svi dakle umriješe;"
+        },
+        {
+          "verse": 15,
+          "text": "i za sve umrije da oni koji žive ne žive više sebi, nego onomu koji za njih umrije i uskrsnu."
+        },
+        {
+          "verse": 16,
+          "text": "Stoga mi od sada nikoga ne poznajemo po tijelu; ako smo i poznavali po tijelu Krista, sada ga tako više ne poznajemo."
+        },
+        {
+          "verse": 17,
+          "text": "Dakle, je li tko u Kristu, nov je stvor. Staro uminu, novo, gle, nasta!"
+        },
+        {
+          "verse": 18,
+          "text": "A sve je od Boga koji nas sa sobom pomiri po Kristu i povjeri nam službu pomirenja."
+        },
+        {
+          "verse": 19,
+          "text": "Jer Bog je u Kristu svijet sa sobom pomirio ne ubrajajući im opačina njihovih i polažući u nas riječ pomirenja."
+        },
+        {
+          "verse": 20,
+          "text": "Kristovi smo dakle poslanici; Bog vas po nama nagovara. Umjesto Krista zaklinjemo: dajte, pomirite se s Bogom!"
+        },
+        {
+          "verse": 21,
+          "text": "Njega koji ne okusi grijeha Bog za nas grijehom učini da mi budemo pravednost Božja u njemu."
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Kao suradnici opominjemo vas da ne primite uzalud milosti Božje."
+        },
+        {
+          "verse": 2,
+          "text": "Jer on veli: U vrijeme milosti usliših te i u dan spasa pomogoh ti. Evo sad je vrijeme milosno, evo sad je vrijeme spasa."
+        },
+        {
+          "verse": 3,
+          "text": "Ni u čemu ne dajemo nikakve sablazni da se ne kudi ova služba,"
+        },
+        {
+          "verse": 4,
+          "text": "nego se u svemu iskazujemo kao poslužitelji Božji: velikom postojanošću u nevoljama, u potrebama, u tjeskobama,"
+        },
+        {
+          "verse": 5,
+          "text": "pod udarcima, u tamnicama, u bunama, u naporima, u bdjenjima, u postovima,"
+        },
+        {
+          "verse": 6,
+          "text": "u čistoći, u spoznanju, u velikodušnosti, u dobroti, u Duhu Svetomu, u ljubavi nehinjenoj,"
+        },
+        {
+          "verse": 7,
+          "text": "u riječi istinitoj, u snazi Božjoj; oružjem pravde zdesna i slijeva;"
+        },
+        {
+          "verse": 8,
+          "text": "slavom i sramotom; zlim i dobrim glasom; kao zavodnici, a istiniti;"
+        },
+        {
+          "verse": 9,
+          "text": "kao nepoznati, a poznati; kao umirući, a evo živimo; kao kažnjeni, a ne ubijeni;"
+        },
+        {
+          "verse": 10,
+          "text": "kao žalosni, a uvijek radosni; kao siromašni, a mnoge obogaćujemo; kao oni koji ništa nemaju, a sve posjeduju."
+        },
+        {
+          "verse": 11,
+          "text": "Usta su naša otvorena vama, Korinćani, srce naše rašireno."
+        },
+        {
+          "verse": 12,
+          "text": "Nije vam tijesno u nama, ali je tijesno u vašim grudima."
+        },
+        {
+          "verse": 13,
+          "text": "Za uzdarje – kao djeci govorim – raširite se i vi."
+        },
+        {
+          "verse": 14,
+          "text": "Ne ujarmljujte se s nevjernicima. Ta što ima pravednost s bezakonjem? Ili kakvo zajedništvo svjetlo s tamom?",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Hram Boga živoga"
+            }
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Kakvu slogu Krist s Belijarom? Ili kakav dio vjernik s nevjernikom?"
+        },
+        {
+          "verse": 16,
+          "text": "Kakav sporazum hram Božji s idolima? Jer mi smo hram Boga živoga, kao što reče Bog: Prebivat ću u njima i hoditi među njima; i bit ću Bog njihov, a oni narod moj.",
+          "lines": [
+            "Kakav sporazum hram Božji s idolima? Jer mi smo hram Boga živoga, kao što reče Bog:",
+            "Prebivat ću u njima",
+            "i hoditi među njima;",
+            "i bit ću Bog njihov,",
+            "a oni narod moj."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Zato iziđite iz njihove sredine i odvojite se, govori Gospodin, i ništa nečisto ne dotičite i ja ću vas primiti.",
+          "lines": [
+            "Zato iziđite iz njihove sredine",
+            "i odvojite se, govori Gospodin,",
+            "i ništa nečisto ne dotičite",
+            "i ja ću vas primiti."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "I bit ću vam otac i vi ćete mi biti sinovi i kćeri, veli Gospodin Svemogući.",
+          "lines": [
+            "I bit ću vam otac",
+            "i vi ćete mi biti sinovi i kćeri,",
+            "veli Gospodin Svemogući."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "verse_count": 16,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Dakle, budući da imamo ta obećanja, očistimo se, ljubljeni, od svake ljage tijela i duha te dovršimo posvećenje u strahu Božjemu."
+        },
+        {
+          "verse": 2,
+          "text": "Shvatite nas! Nikomu nismo nanijeli nepravde, nikoga nismo upropastili, nikoga zakinuli.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavlova radost zbog pokajanja Crkve"
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Ne govorim da osudim. Ta rekoh već: u srcima ste našim te umiremo i živimo zajedno."
+        },
+        {
+          "verse": 4,
+          "text": "Veliko je moje pouzdanje u vas, uvelike se vama ponosim. Pun sam utjehe, obilujem radošću uza svu nevolju našu."
+        },
+        {
+          "verse": 5,
+          "text": "Doista, i kada dođosmo u Makedoniju, nikakva spokoja nije imalo tijelo naše, nego nevolje odasvud: izvana borbe, iznutra strepnje."
+        },
+        {
+          "verse": 6,
+          "text": "Ali Bog, tješitelj poniznih, utješi nas dolaskom Titovim."
+        },
+        {
+          "verse": 7,
+          "text": "Ne samo dolaskom njegovim nego i utjehom kojom se utješi zbog vas: obavijesti nas o vašoj čežnji, vašem jadikovanju, vašoj žarkoj ljubavi prema meni tako da se još većma obradovah."
+        },
+        {
+          "verse": 8,
+          "text": "Doista, ako sam vas i ožalostio onom poslanicom, nije mi žao; ako mi i bijaše žao – vidim uistinu da vas je ta poslanica makar i načas ožalostila –"
+        },
+        {
+          "verse": 9,
+          "text": "sad se radujem, ne što ste se ožalostili, nego što ste se ožalostili na obraćenje. Jer ožalostili ste se po Božju te zbog nas ni u čemu niste štetovali."
+        },
+        {
+          "verse": 10,
+          "text": "Jer žalost po Božju rađa neopozivo spasonosnim obraćenjem, a žalost svjetovna rađa smrću."
+        },
+        {
+          "verse": 11,
+          "text": "Gle, doista baš to što ste se po Božju ožalostili, kolikom gorljivošću urodi među vama, pa opravdavanjem, pa ogorčenjem, pa strahom, pa čežnjom, pa revnošću, pa kažnjavanjem. Svime ste time pokazali da ste u onome nedužni."
+        },
+        {
+          "verse": 12,
+          "text": "Ako sam vam dakle pisao, nisam to zbog uvreditelja ni zbog uvrijeđenoga, nego zbog toga da vam se očituje vaša gorljivost za nas pred Bogom."
+        },
+        {
+          "verse": 13,
+          "text": "To nas je utješilo. A povrh te naše utjehe još se mnogo više obradovasmo zbog radosti Titove jer svi vi okrijepiste duh njegov."
+        },
+        {
+          "verse": 14,
+          "text": "Doista, ako sam mu se što vama pohvalio, ne postidjeh se, nego kao što smo po istini vama govorili, tako je istina bila i pohvala naša pred Titom."
+        },
+        {
+          "verse": 15,
+          "text": "I njegovo je srce prema vama još nježnije kad se sjeti poslušnosti svih vas, kako ga sa strahom i trepetom primiste."
+        },
+        {
+          "verse": 16,
+          "text": "Radujem se što se u svemu mogu pouzdati u vas."
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "verse_count": 24,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Priopćujemo vam, braćo, milost Božju koja je dana crkvama makedonskim:",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "II. SABIRANJE MILOSTINJE ZA CRKVU U JERUZALEMU"
+            },
+            {
+              "level": "h4",
+              "text": "Poticaji na darežljivost"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "unatoč mnogim kušnjama i nevoljama, izobilna njihova radost i skrajnje siromaštvo preli se u bogatstvo darežljivosti."
+        },
+        {
+          "verse": 3,
+          "text": "Svjedočim uistinu: oni su nas dragovoljno – po svojim mogućnostima i preko mogućnosti –"
+        },
+        {
+          "verse": 4,
+          "text": "veoma usrdno molili za milost zajedništva u ovom posluživanju svetih."
+        },
+        {
+          "verse": 5,
+          "text": "I to ne samo kako se nadasmo nego same sebe predadoše najprvo Gospodinu, a onda nama, po volji Božjoj."
+        },
+        {
+          "verse": 6,
+          "text": "Zato zamolismo Tita da kao što je započeo, tako i dovrši među vama i to djelo darežljivosti."
+        },
+        {
+          "verse": 7,
+          "text": "Stoga kao što se u svemu odlikujete – u vjeri, i riječi, i spoznanju, i svakoj gorljivosti, i u ljubavi svojoj prema nama – odlikujte se i u ovoj darežljivosti."
+        },
+        {
+          "verse": 8,
+          "text": "Ne zapovijedam, nego gorljivošću drugih prokušavam istinitost vaše ljubavi."
+        },
+        {
+          "verse": 9,
+          "text": "Ta poznate darežljivost Gospodina našega Isusa Krista! Premda bogat, radi vas posta siromašan, da se vi njegovim siromaštvom obogatite."
+        },
+        {
+          "verse": 10,
+          "text": "Time dajem samo savjet: to doista dolikuje vama koji već prošle godine prvi to započeste, ne samo činom nego i odlukom."
+        },
+        {
+          "verse": 11,
+          "text": "Sada dovršite to djelo da kao što spremno odlučiste, tako prema mogućnostima i dovršite."
+        },
+        {
+          "verse": 12,
+          "text": "Jer ima li spremnosti, mila je po onom što ima, a ne po onom čega nema."
+        },
+        {
+          "verse": 13,
+          "text": "Ne dakako: drugima olakšica, vama oskudica, nego – jednakost!"
+        },
+        {
+          "verse": 14,
+          "text": "U sadašnjem trenutku vaš suvišak za njihovu oskudicu da jednom njihov suvišak bude za vašu oskudicu – te bude jednakost,"
+        },
+        {
+          "verse": 15,
+          "text": "kao što je pisano: Nije ništa preteklo onome koji bijaše nakupio mnogo, a niti je nedostajalo onome koji bijaše nakupio manje."
+        },
+        {
+          "verse": 16,
+          "text": "A hvala Bogu koji je stavio jednaku gorljivost za vas u srce Titovo.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavao preporučuje sabirače milostinje"
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "On je prihvatio i molbu, ali budući da je veoma revan, otiđe k vama i dragovoljno."
+        },
+        {
+          "verse": 18,
+          "text": "S njime pak šaljemo brata kojega s evanđelja slave sve crkve."
+        },
+        {
+          "verse": 19,
+          "text": "Štoviše, crkve ga izabraše za našeg suputnika u ovom djelu darežljivosti kojemu služimo – na slavu samoga Gospodina i na našu želju"
+        },
+        {
+          "verse": 20,
+          "text": "kako bismo izbjegli da nas tko ne prekori zbog ovog obilja kojim raspolažemo."
+        },
+        {
+          "verse": 21,
+          "text": "Doista, revno nastojimo oko dobra ne samo pred Gospodinom nego i pred ljudima."
+        },
+        {
+          "verse": 22,
+          "text": "Šaljemo s njima i našega brata koji je, kako smo u mnogome često iskusili, gorljiv, a sada je još mnogo gorljiviji zbog velikoga pouzdanja u vas."
+        },
+        {
+          "verse": 23,
+          "text": "A Tito? Moj je drug i suradnik za vas. A braća naša? Poslanici su crkava, slava Kristova."
+        },
+        {
+          "verse": 24,
+          "text": "Pružite im dakle pred crkvama dokaz svoje ljubavi i toga da se s pravom vama ponosimo."
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "verse_count": 15,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "A o posluživanju svetih suvišno je da vam pišem."
+        },
+        {
+          "verse": 2,
+          "text": "Ta poznajem vašu spremnost s koje se vama ponosim pred Makedoncima: »Ahaja je spremna od prošle godine.« I vaša gorljivost potaknu mnoge."
+        },
+        {
+          "verse": 3,
+          "text": "Ipak šaljem braću da se u tome pogledu ne opovrgne što se vama ponosimo; da budete spremni kao što sam tvrdio te se –"
+        },
+        {
+          "verse": 4,
+          "text": "ako sa mnom dođu Makedonci i nađu vas nespremne – ne osramotimo s preuzetnosti mi, da ne kažemo vi."
+        },
+        {
+          "verse": 5,
+          "text": "Smatrao sam dakle potrebnim zamoliti braću da unaprijed pođu k vama i da pripreme vaš još prije obećani dar te bude pripravan – kao dar darežljivosti, a ne škrtosti."
+        },
+        {
+          "verse": 6,
+          "text": "Ta eno: tko sije oskudno, oskudno će i žeti; a tko sije obilato, obilato će i žeti.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Korist darežljivosti"
+            }
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Svatko neka dade kako je srcem odlučio; ne sa žalošću ili na silu jer Bog ljubi vesela darivatelja."
+        },
+        {
+          "verse": 8,
+          "text": "A Bog vas može obilato obdariti svakovrsnim darom da u svemu svagda imate svega dovoljno za se i izobilno za svako dobro djelo –"
+        },
+        {
+          "verse": 9,
+          "text": "kao što je pisano: Rasipno dijeli, daje sirotinji, pravednost njegova ostaje dovijeka.",
+          "lines": [
+            "kao što je pisano:",
+            "Rasipno dijeli, daje sirotinji,",
+            "pravednost njegova ostaje dovijeka."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "A onaj koji pribavlja sjeme sijaču i kruh za jelo, pribavit će i umnožiti sjeme vaše i povećati plodove pravednosti vaše."
+        },
+        {
+          "verse": 11,
+          "text": "Tako ćete se u svemu obogatiti za svakovrsnu darežljivost koja se, našim posredovanjem, izvija u zahvalnicu Bogu."
+        },
+        {
+          "verse": 12,
+          "text": "Jer ovo bogoslužno posluživanje ne samo da podmiruje oskudicu svetih nego se i obilno prelijeva u mnoge zahvalnice Bogu."
+        },
+        {
+          "verse": 13,
+          "text": "Osvjedočeni ovim posluživanjem, slave Boga zbog vašega pokornog ispovijedanja evanđelja Kristova i zbog velikodušnog zajedništva prema njima i prema svima."
+        },
+        {
+          "verse": 14,
+          "text": "A moleći se za vas, čeznu za vama zbog preobilne milosti Božje na vama."
+        },
+        {
+          "verse": 15,
+          "text": "Hvala Bogu na njegovu neizrecivom daru!"
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Ja, Pavao, osobno vas zaklinjem blagošću i obazrivošću Kristovom – ja koji sam licem u lice među vama »skroman«, a nenazočan prema vama »odvažan« –",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "III. PAVLOVA OSOBNA OBRANA"
+            },
+            {
+              "level": "h4",
+              "text": "Odgovor na optužbu slabosti"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "molim da, jednom nazočan, ne moram biti odvažan smionošću kojom se kanim osmjeliti protiv nekih što smatraju da mi po tijelu živimo."
+        },
+        {
+          "verse": 3,
+          "text": "Jer iako živimo u tijelu, ne vojujemo po tijelu."
+        },
+        {
+          "verse": 4,
+          "text": "Ta oružje našega vojevanja nije tjelesno, nego božanski snažno za rušenje utvrda. Obaramo mudrovanja"
+        },
+        {
+          "verse": 5,
+          "text": "i svaku oholost koja se podiže protiv spoznanja Boga i zarobljujemo svaki um na pokornost Kristu;"
+        },
+        {
+          "verse": 6,
+          "text": "i spremni smo kazniti svaku nepokornost čim bude savršena vaša pokornost."
+        },
+        {
+          "verse": 7,
+          "text": "Gledajte što je očito! Ako je tko uvjeren da je »Kristov«, neka sâm ponovno promisli ovo: kako je on Kristov, tako smo i mi."
+        },
+        {
+          "verse": 8,
+          "text": "Kad bih se doista i malo više pohvalio našom vlašću – koju nam Gospodin dade za vaše izgrađivanje, a ne rušenje – ne bih se morao stidjeti."
+        },
+        {
+          "verse": 9,
+          "text": "Samo da se ne bi činilo kao da vas zastrašujem poslanicama!"
+        },
+        {
+          "verse": 10,
+          "text": "Jer »poslanice su, kaže, stroge i snažne, ali tjelesna nazočnost nemoćna i riječ bezvrijedna«."
+        },
+        {
+          "verse": 11,
+          "text": "Takav neka promisli ovo: kakvi smo nenazočni riječju u poslanicama, takvi smo i nazočni djelom."
+        },
+        {
+          "verse": 12,
+          "text": "Ne usuđujemo se, doista, izjednačiti ili usporediti s nekima koji sami sebe preporučuju, ali nisu razumni jer sami sebe sobom mjere i sami sebe sa sobom uspoređuju.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Odgovor na optužbu častohleplja"
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Mi se pak nećemo hvaliti u bezmjerje, nego po mjeri, mjerilu što nam ga odmjeri Bog kao mjeru: doprijeti sve do vas."
+        },
+        {
+          "verse": 14,
+          "text": "Jer mi ne posežemo preko svoga, kao da još nismo stigli do vas. Ta prvi doista doprijesmo do vas s evanđeljem Kristovim."
+        },
+        {
+          "verse": 15,
+          "text": "Ne hvalimo se u bezmjerje, tuđim naporima. A nadamo se da ćemo s uzrastom vaše vjere među vama i mi – po našem mjerilu – prerasti u izobilje:"
+        },
+        {
+          "verse": 16,
+          "text": "i preko vaših granica navijestiti evanđelje, a ne hvastati se onim što je već učinjeno na tuđem području."
+        },
+        {
+          "verse": 17,
+          "text": "Tko se hvali, u Gospodinu neka se hvali."
+        },
+        {
+          "verse": 18,
+          "text": "Ta nije prokušan tko sam sebe preporučuje, nego koga preporučuje Gospodin."
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "verse_count": 33,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "O kad biste podnijeli nešto malo bezumlja mojega! Da, podnesite me!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavlova prednost pred protivnicima"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ljubomoran sam doista na vas Božjim ljubomorom: ta zaručih vas s jednim mužem, kao čistu djevicu privedoh vas Kristu."
+        },
+        {
+          "verse": 3,
+          "text": "Ali se bojim da se – kao što zmija zavede Evu svojom lukavštinom – misli vaše ne pokvare i odmetnu od iskrenosti prema Kristu."
+        },
+        {
+          "verse": 4,
+          "text": "Uistinu, ako tko dođe i propovijeda drugog Isusa, kojega mi nismo propovijedali – ili ako drugoga Duha primate, kojega niste primili; ili drugo evanđelje, koje niste prigrlili – takva lijepo pòdnosîte."
+        },
+        {
+          "verse": 5,
+          "text": "Smatram, eto, da ni u čemu nisam manji od »nadapostola«."
+        },
+        {
+          "verse": 6,
+          "text": "Jer ako sam i nevješt u govoru, nisam u znanju; naprotiv, u svemu vam ga i pred svima očitovasmo."
+        },
+        {
+          "verse": 7,
+          "text": "Ili sam grijeh počinio što sam vam – ponizujući sebe da se vi uzvisite – besplatno navješćivao Božje evanđelje?"
+        },
+        {
+          "verse": 8,
+          "text": "Druge sam crkve plijenio, od njih primao potporu da bih mogao vama služiti. I dok bijah u vas, premda u oskudici, nikomu nisam bio na teret."
+        },
+        {
+          "verse": 9,
+          "text": "U oskudici su mi pomogla braća koja dođoše iz Makedonije. U svemu sam se čuvao da vam ne budem težak, a i čuvat ću se."
+        },
+        {
+          "verse": 10,
+          "text": "Istine mi Kristove u meni, ove mi hvale nitko neće oduzeti u ahajskim krajevima."
+        },
+        {
+          "verse": 11,
+          "text": "Zašto? Jer vas ne ljubim? Bog znade!"
+        },
+        {
+          "verse": 12,
+          "text": "A što činim, i dalje ću činiti da izbijem izliku onima koji izliku traže ne bi li se s nama izjednačili u onom čime se hvastaju."
+        },
+        {
+          "verse": 13,
+          "text": "Jer takvi su ljudi lažni apostoli, himbeni radnici, prerušuju se u apostole Kristove."
+        },
+        {
+          "verse": 14,
+          "text": "I nikakvo čudo! Ta sam se Sotona prerušuje u anđela svjetla."
+        },
+        {
+          "verse": 15,
+          "text": "Ništa osobito dakle ako se i službenici njegovi prerušuju u službenike pravednosti. Svršetak će im biti po djelima njihovim."
+        },
+        {
+          "verse": 16,
+          "text": "Opet velim: da me tko ne bi smatrao bezumnim! Uostalom, primite me makar i kao bezumna da se i ja nešto malo pohvalim."
+        },
+        {
+          "verse": 17,
+          "text": "Što govorim, ne govorim po Gospodnju, nego kao u bezumlju, u ovoj hvalisavoj smionosti."
+        },
+        {
+          "verse": 18,
+          "text": "Budući da se mnogi hvale po ljudsku, i ja ću se hvaliti."
+        },
+        {
+          "verse": 19,
+          "text": "Ta rado pòdnosîte bezumne, vi umni!"
+        },
+        {
+          "verse": 20,
+          "text": "Da, pòdnosîte ako vas tko zarobljava, ako vas tko proždire, ako tko otima, ako se tko uznosi, ako vas tko po obrazu bije."
+        },
+        {
+          "verse": 21,
+          "text": "Na sramotu govorim: bili smo, biva, slabi! Ipak, čime se god tko osmjeljuje – u bezumlju govorim – osmjeljujem se i ja!"
+        },
+        {
+          "verse": 22,
+          "text": "Hebreji su? I ja sam! Izraelci su? I ja sam! Potomstvo su Abrahamovo? I ja sam!"
+        },
+        {
+          "verse": 23,
+          "text": "Poslužitelji su Kristovi? Kao mahnit govorim: ja još više! U naporima – preobilno; u tamnicama – preobilno; u batinama – prekomjerno; u smrtnim pogiblima – često."
+        },
+        {
+          "verse": 24,
+          "text": "Od Židova primio sam pet puta po četrdeset manje jednu."
+        },
+        {
+          "verse": 25,
+          "text": "Triput sam bio šiban, jednom kamenovan, triput doživio brodolom, jednu noć i dan proveo sam u bezdanu."
+        },
+        {
+          "verse": 26,
+          "text": "Česta putovanja, pogibli od rijeka, pogibli od razbojnika, pogibli od sunarodnjaka, pogibli od pogana, pogibli u gradu, pogibli u pustinji, pogibli na moru, pogibli od lažne braće;"
+        },
+        {
+          "verse": 27,
+          "text": "u trudu i naporu, često u nespavanju, u gladu i žeđi, često u postovima, u studeni i golotinji!"
+        },
+        {
+          "verse": 28,
+          "text": "Osim toga, uz drugo, salijetanje svakodnevno, briga za sve crkve."
+        },
+        {
+          "verse": 29,
+          "text": "Tko je slab, a ja da ne budem slab? Tko se sablažnjuje, a ja da ne izgaram?"
+        },
+        {
+          "verse": 30,
+          "text": "Treba li se hvaliti, svojom ću se slabošću hvaliti."
+        },
+        {
+          "verse": 31,
+          "text": "Bog i Otac Gospodina Isusa, blagoslovljen u vijeke, zna da ne lažem."
+        },
+        {
+          "verse": 32,
+          "text": "U Damasku namjesnik kralja Arete čuvaše grad damaščanski hoteći me uhvatiti."
+        },
+        {
+          "verse": 33,
+          "text": "Ali kroz prozor spustiše me u košari preko zida te umakoh njegovim rukama."
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "verse_count": 21,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Hvaliti se treba? Ne koristi doduše ali – dolazim na viđenje i objave Gospodnje."
+        },
+        {
+          "verse": 2,
+          "text": "Znam čovjeka u Kristu: prije četrnaest godina – da li u tijelu, ne znam; da li izvan tijela, ne znam, Bog zna – taj je bio ponesen do trećeg neba."
+        },
+        {
+          "verse": 3,
+          "text": "I znam da je taj čovjek – da li u tijelu, da li izvan tijela, ne znam, Bog zna –"
+        },
+        {
+          "verse": 4,
+          "text": "bio ponesen u raj i čuo neizrecive riječi, kojih čovjek ne smije govoriti."
+        },
+        {
+          "verse": 5,
+          "text": "Time ću se hvaliti, a samim se sobom neću hvaliti osim slabostima svojim."
+        },
+        {
+          "verse": 6,
+          "text": "Uistinu, kad bih se i htio hvaliti, ne bih bio bezuman; istinu bih govorio. Ali se suzdržavam da ne bi tko mislio o meni više nego što vidi na meni ili što čuje od mene."
+        },
+        {
+          "verse": 7,
+          "text": "I da se zbog uzvišenosti objavâ ne bih uzoholio, dan mi je trn u tijelu, anđeo Sotonin, da me udara da se ne uzoholim."
+        },
+        {
+          "verse": 8,
+          "text": "Za to sam triput molio Gospodina, da odstupi od mene. A on mi reče:"
+        },
+        {
+          "verse": 9,
+          "text": "»Dosta ti je moja milost jer snaga se u slabosti usavršuje.« Najradije ću se dakle još više hvaliti svojim slabostima da se nastani u meni snaga Kristova."
+        },
+        {
+          "verse": 10,
+          "text": "Zato uživam u slabostima, uvredama, poteškoćama, progonstvima, tjeskobama poradi Krista. Jer kad sam slab, onda sam jak."
+        },
+        {
+          "verse": 11,
+          "text": "Postao sam bezuman! Vi me natjeraste. Ta trebalo je da me vi preporučite jer ni u čemu nisam manji od »nadapostola«, premda nisam ništa."
+        },
+        {
+          "verse": 12,
+          "text": "Znamenja apostolstva moga ostvarena su među vama u posvemašnjoj postojanosti: znakovima i čudesima i silnim djelima."
+        },
+        {
+          "verse": 13,
+          "text": "Ta u čemu ste to manji od drugih crkava, osim što vam ja nisam bio na teret? Oprostite mi ovu »nepravdu«."
+        },
+        {
+          "verse": 14,
+          "text": "Evo, spremam se treći put doći k vama i neću vam biti na teret jer ne ištem vaše, nego vas. Djeca doista nisu dužna stjecati roditeljima, nego roditelji djeci."
+        },
+        {
+          "verse": 15,
+          "text": "A ja ću najradije trošiti i istrošiti se za duše vaše. Ako vas više ljubim, zar da budem manje ljubljen?"
+        },
+        {
+          "verse": 16,
+          "text": "Ali neka! Ja vas nisam opterećivao, nego, »lukav« kako jesam, »na prijevaru vas uhvatih«."
+        },
+        {
+          "verse": 17,
+          "text": "Da vas možda nisam zakinuo po kome od onih koje poslah k vama?"
+        },
+        {
+          "verse": 18,
+          "text": "Zamolio sam Tita i poslao s njime brata. Da vas možda Tit nije u čemu zakinuo? Zar nismo hodili u istom duhu? I istim stopama?"
+        },
+        {
+          "verse": 19,
+          "text": "Odavna smatrate da se pred vama branimo. Pred Bogom u Kristu govorimo: sve je to, ljubljeni, za vaše izgrađivanje.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavlova bojazan i briga"
+            }
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Bojim se doista da vas kada dođem, možda neću naći kakve bih htio i da ćete vi mene naći kakva ne biste htjeli: da ne bi možda bilo svađâ, zavisti, žestinâ, spletkarenjâ, klevetanjâ, došaptavanjâ, nadimanjâ, bunâ;"
+        },
+        {
+          "verse": 21,
+          "text": "da me opet kada dođem, ne bi ponizio Bog moj kod vas kako ne bih morao oplakivati mnoge koji su prije sagriješili, a nisu se pokajali za nečistoću i bludnost i razvratnost koju počiniše."
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "verse_count": 13,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Evo treći put idem k vama. Svaka presuda neka počiva na iskazu dvojice ili trojice svjedoka."
+        },
+        {
+          "verse": 2,
+          "text": "Onima koji su prije sagriješili i svima drugima rekoh već i opet – kao onda drugi put nazočan, tako i sada nenazočan – unaprijed velim: ako opet dođem, neću štedjeti."
+        },
+        {
+          "verse": 3,
+          "text": "Jer vi tražite dokaz da u meni govori Krist koji prema vama nije nemoćan, nego je snažan među vama."
+        },
+        {
+          "verse": 4,
+          "text": "I raspet bî, istina, po slabosti, ali živi po snazi Božjoj. I mi smo, istina, slabi u njemu, ali ćemo po snazi Božjoj živjeti s njime za vas."
+        },
+        {
+          "verse": 5,
+          "text": "Same sebe ispitujte, jeste li u vjeri! Same sebe provjeravajte! Zar ne spoznajete sami sebe: da je Isus Krist u vama? Inače niste prâvi."
+        },
+        {
+          "verse": 6,
+          "text": "A spoznat ćete, nadam se, da smo mi prâvi."
+        },
+        {
+          "verse": 7,
+          "text": "Molimo se Bogu da ne činite nikakva zla; ne da se mi pokažemo prâvi, nego da vi dobro činite, pa izašli mi i kao nepravi."
+        },
+        {
+          "verse": 8,
+          "text": "Ta ništa ne možemo protiv istine, nego samo za istinu."
+        },
+        {
+          "verse": 9,
+          "text": "Da, radujemo se kad smo mi slabi, a vi jaki. Za to se i molimo, za vaše usavršavanje."
+        },
+        {
+          "verse": 10,
+          "text": "To vam nenazočan pišem zato da nazočan ne bih morao oštro nastupiti vlašću koju mi Gospodin dade za izgrađivanje, a ne za rušenje."
+        },
+        {
+          "verse": 11,
+          "text": "Uostalom, braćo, radujte se, usavršujte se, tješite se, složni budite, mir njegujte i Bog ljubavi i mira bit će s vama.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "ZAKLJUČAK"
+            },
+            {
+              "level": "h4",
+              "text": "Poticaji. Pozdravi. Želje"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Pozdravite jedni druge svetim cjelovom. Pozdravljaju vas svi sveti.",
+          "lines": [
+            "Pozdravite jedni druge svetim cjelovom.",
+            "Pozdravljaju vas svi sveti."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Milost Gospodina Isusa Krista, ljubav Boga i zajedništvo Duha Svetoga sa svima vama!"
+        }
+      ]
+    }
+  ]
+}

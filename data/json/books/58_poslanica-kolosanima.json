@@ -1,0 +1,569 @@
+{
+  "order": 58,
+  "id": "poslanica-kolosanima",
+  "ks_book_id": 69,
+  "abbr": "Kol",
+  "title": "Poslanica Kološanima",
+  "testament": "NZ",
+  "category": "Poslanice",
+  "chapter_count": 4,
+  "verse_count": 95,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 29,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Pavao, po volji Božjoj apostol Krista Isusa, i brat Timotej:",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "UVOD"
+            },
+            {
+              "level": "h4",
+              "text": "Naslov i pozdrav"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Kološanima, svetoj i vjernoj braći u Kristu. Milost vam i mir od Boga, Oca našega!"
+        },
+        {
+          "verse": 3,
+          "text": "Zahvaljujemo Bogu, Ocu Gospodina našega Isusa Krista, svagda za vas moleći.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Zahvala za vjeru i dobročinstvo"
+            }
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Jer čuli smo za vašu vjeru u Kristu Isusu i za ljubav koju gajite prema svima svetima"
+        },
+        {
+          "verse": 5,
+          "text": "poradi nade koja vam je pohranjena u nebesima. Za nju ste već čuli u Riječi istine –"
+        },
+        {
+          "verse": 6,
+          "text": "evanđelju koje je do vas doprlo te plodove nosi i raste, kao što po svem svijetu, tako i među vama od dana kad ste čuli i spoznali milost Božju po istini,"
+        },
+        {
+          "verse": 7,
+          "text": "kako ste naučili od ljubljenog Epafre, sluge zajedno s nama; on je umjesto nas, vjeran poslužitelj Kristov,"
+        },
+        {
+          "verse": 8,
+          "text": "on nas je i obavijestio o vašoj ljubavi u Duhu."
+        },
+        {
+          "verse": 9,
+          "text": "Zato i mi, od dana kada to čusmo, neprestano za vas molimo i ištemo da se ispunite spoznajom volje Njegove u svoj mudrosti i shvaćanju duhovnome:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Molitva za napredak Kološana"
+            }
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "da živite dostojno Gospodina i posve mu ugodite, plodni svakim dobrim djelom i rastući u spoznaji Božjoj;"
+        },
+        {
+          "verse": 11,
+          "text": "osnaženi svakom snagom, po sili Slave njegove, za svaku postojanost i strpljivost;"
+        },
+        {
+          "verse": 12,
+          "text": "s radošću zahvaljujući Ocu koji vas osposobi za dioništvo u baštini svetih u svjetlosti."
+        },
+        {
+          "verse": 13,
+          "text": "On nas izbavi iz vlasti tame i prenese u kraljevstvo Sina, ljubavi svoje,"
+        },
+        {
+          "verse": 14,
+          "text": "u kome imamo otkupljenje, otpuštenje grijeha."
+        },
+        {
+          "verse": 15,
+          "text": "On je slika Boga nevidljivoga, Prvorođenac svakog stvorenja.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "I. DOGMATSKI DIO"
+            },
+            {
+              "level": "h4",
+              "text": "Kristovo prvenstvo"
+            }
+          ],
+          "lines": [
+            "On je slika Boga nevidljivoga,",
+            "Prvorođenac svakog stvorenja."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Ta u njemu je sve stvoreno na nebesima i na zemlji, vidljivo i nevidljivo, bilo Prijestolja, bilo Gospodstva, bilo Vrhovništva, bilo Vlasti – sve je po njemu i za njega stvoreno:",
+          "lines": [
+            "Ta u njemu je sve stvoreno",
+            "na nebesima i na zemlji,",
+            "vidljivo i nevidljivo,",
+            "bilo Prijestolja, bilo Gospodstva,",
+            "bilo Vrhovništva, bilo Vlasti –",
+            "sve je po njemu i za njega stvoreno:"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "on je prije svega i sve stoji u njemu.",
+          "lines": [
+            "on je prije svega",
+            "i sve stoji u njemu."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "On je Glava Tijela, Crkve; on je Početak, Prvorođenac od mrtvih, da u svemu bude Prvak.",
+          "lines": [
+            "On je Glava Tijela, Crkve;",
+            "on je Početak,",
+            "Prvorođenac od mrtvih,",
+            "da u svemu bude Prvak."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Jer svidjelo se Bogu u njemu nastaniti svu Puninu",
+          "lines": [
+            "Jer svidjelo se Bogu",
+            "u njemu nastaniti svu Puninu"
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "i po njemu – uspostavivši mir krvlju križa njegova – izmiriti sa sobom sve, bilo na zemlji, bilo na nebesima.",
+          "lines": [
+            "i po njemu",
+            "– uspostavivši mir krvlju križa njegova –",
+            "izmiriti sa sobom sve,",
+            "bilo na zemlji, bilo na nebesima."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "I vas, nekoć po zlim djelima udaljene i neprijateljski raspoložene,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Kološani dionici spasenja"
+            }
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "sada u ljudskom tijelu Kristovu, po smrti, sa sobom izmiri da vas k sebi privede svete, bez mane i besprigovorne."
+        },
+        {
+          "verse": 23,
+          "text": "Samo ako ostanete u vjeri utemeljeni, stalni i nepoljuljani u nadi evanđelja koje čuste, koje se propovijeda svakom stvorenju pod nebom, a ja mu, Pavao, postadoh poslužiteljem."
+        },
+        {
+          "verse": 24,
+          "text": "Radujem se sada dok trpim za vas i u svom tijelu dopunjam što nedostaje mukama Kristovim za Tijelo njegovo, za Crkvu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavlovo nastojanje oko pogana"
+            }
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "Njoj ja postadoh poslužiteljem po rasporedbi Božjoj koja mi je dana za vas da potpuno pronesem Riječ Božju –"
+        },
+        {
+          "verse": 26,
+          "text": "otajstvo pred vjekovima i pred naraštajima skriveno, a sada očitovano svetima njegovim."
+        },
+        {
+          "verse": 27,
+          "text": "Njima Bog htjede obznaniti kako li je slavom bogato to otajstvo među poganima: to jest Krist u vama, nada slave!"
+        },
+        {
+          "verse": 28,
+          "text": "Njega mi navješćujemo, opominjući svakoga čovjeka, poučavajući svakoga čovjeka u svoj mudrosti da bismo svakoga čovjeka doveli do savršenstva u Kristu."
+        },
+        {
+          "verse": 29,
+          "text": "Za to se i trudim i borim njegovom djelotvornošću koja u meni snažno djeluje."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 23,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Htio bih uistinu da znate koliko mi se boriti za vas, za one u Laodiceji i za sve koji me nisu vidjeli licem u lice:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pavlova briga za vjeru Kološana"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "da se ohrabre srca njihova, povezana u ljubavi, te se vinu do svega bogatstva, punine shvaćanja, do spoznanja otajstva Božjega – Krista,"
+        },
+        {
+          "verse": 3,
+          "text": "u kojem su sva bogatstva mudrosti i spoznaje skrivena."
+        },
+        {
+          "verse": 4,
+          "text": "To govorim zato da vas tko ne prevari zavodljivim riječima."
+        },
+        {
+          "verse": 5,
+          "text": "Jer ako sam tijelom nenazočan, duhom sam ipak s vama: s radošću promatram vaš red i čvrstoću vaše vjere u Krista."
+        },
+        {
+          "verse": 6,
+          "text": "Kao što primiste Krista Isusa, Gospodina, tako u njemu živite:",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "II. UPOZORENJE PROTIV ZABLUDA"
+            },
+            {
+              "level": "h4",
+              "text": "Živjeti po pravoj vjeri"
+            }
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "ukorijenjeni i nazidani na njemu i učvršćeni vjerom kako ste poučeni, obilujte zahvaljivanjem."
+        },
+        {
+          "verse": 8,
+          "text": "Pazite da vas tko ne odvuče mudrovanjem i ispraznim zavaravanjem što se oslanja na predaju ljudsku, na »počela svijeta«, a ne na Krista."
+        },
+        {
+          "verse": 9,
+          "text": "Jer u njemu tjelesno prebiva sva punina božanstva; te ste i vi",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Krist gospodar ljudi i anđelâ"
+            }
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "ispunjeni u njemu, koji je glava svakoga Vrhovništva i Vlasti."
+        },
+        {
+          "verse": 11,
+          "text": "U njemu ste i obrezani obrezanjem nerukotvorenim – svukoste tijelo puteno – obrezanjem Kristovim:"
+        },
+        {
+          "verse": 12,
+          "text": "s njime suukopani u krštenju, u njemu ste i suuskrsli po vjeri u snagu Boga koji ga uskrisi od mrtvih."
+        },
+        {
+          "verse": 13,
+          "text": "On i vas, koji bijaste mrtvi zbog prijestupâ i neobrezanosti svoga tijela, i vas on oživi zajedno s njime. Milostivo nam je oprostio sve prijestupe,",
+          "lines": [
+            "On i vas, koji bijaste mrtvi zbog prijestupâ i neobrezanosti svoga tijela, i vas on oživi zajedno s njime.",
+            "Milostivo nam je oprostio sve prijestupe,"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "izbrisao zadužnicu koja propisima bijaše protiv nas, protivila nam se. Nju on ukloni pribivši je na križ."
+        },
+        {
+          "verse": 15,
+          "text": "Skinu Vrhovništva i Vlasti, javno to pokaza: u pobjedničkoj ih povorci s njime vodi."
+        },
+        {
+          "verse": 16,
+          "text": "Neka vas dakle nitko ne sudi po jelu ili po piću, po blagdanima, mlađacima ili subotama.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Krivo i pravo bogoštovlje"
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "To je tek sjena onoga što dolazi, a zbiljnost jest – tijelo Kristovo."
+        },
+        {
+          "verse": 18,
+          "text": "Nitko neka vas ne podcjenjuje zato što on sam uživa u »poniznosti i štovanju anđela«, zadubljuje se u svoja viđenja, bezrazložno se nadima tjelesnom pameću svojom,"
+        },
+        {
+          "verse": 19,
+          "text": "a ne drži se Glave, Njega od kojeg sve Tijelo, zglobovima i svezama zbrinuto i povezano, raste rastom Božjim."
+        },
+        {
+          "verse": 20,
+          "text": "Ako ste s Kristom umrli za počela svijeta, zašto se, kao da još u ovom svijetu živite, dajete pod propise:"
+        },
+        {
+          "verse": 21,
+          "text": "»Ne diraj, ne kušaj, ne dotiči«?"
+        },
+        {
+          "verse": 22,
+          "text": "Sve će to uporabom propasti. Uredbe i nauci ljudski!"
+        },
+        {
+          "verse": 23,
+          "text": "Po samozvanu bogoštovlju, poniznosti i trapljenju tijela sve to doduše slovi kao mudrost, ali nema nikakve vrijednosti, samo zasićuje tijelo."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 25,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Ako ste suuskrsli s Kristom, tražite što je gore, gdje Krist sjedi zdesna Bogu!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Novi život u Kristu"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Za onim gore težite, ne za zemaljskim!"
+        },
+        {
+          "verse": 3,
+          "text": "Ta umrijeste i život je vaš skriven s Kristom u Bogu!"
+        },
+        {
+          "verse": 4,
+          "text": "Kad se pojavi Krist, život vaš, tada ćete se i vi s njime pojaviti u slavi."
+        },
+        {
+          "verse": 5,
+          "text": "Umrtvite dakle udove svoje zemaljske: bludnost, nečistoću, strasti, zlu požudu i pohlepu – to idolopoklonstvo!",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "III. POTICAJI"
+            },
+            {
+              "level": "h4",
+              "text": "Velikodušnost novog života"
+            }
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Zbog toga dolazi gnjev Božji na sinove neposlušne."
+        },
+        {
+          "verse": 7,
+          "text": "Tim ste putom i vi nekoć hodili, kad ste u tome živjeli."
+        },
+        {
+          "verse": 8,
+          "text": "Ali sada i vi odložite sve! Gnjev, srdžba, opakost, hula, prostota van iz vaših usta!"
+        },
+        {
+          "verse": 9,
+          "text": "Ne varajte jedni druge! Jer svukoste staroga čovjeka s njegovim djelima",
+          "lines": [
+            "Ne varajte jedni druge!",
+            "Jer svukoste staroga čovjeka s njegovim djelima"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "i obukoste novoga, koji se obnavlja za spoznanje po slici svoga Stvoritelja!"
+        },
+        {
+          "verse": 11,
+          "text": "Tu više nema: Grk – Židov, obrezanje – neobrezanje, barbar – skit, rob – slobodnjak, nego sve i u svima – Krist."
+        },
+        {
+          "verse": 12,
+          "text": "Zaodjenite se dakle – kao izabranici Božji, sveti i ljubljeni – u milosrdno srce, dobrostivost, poniznost, blagost, strpljivost"
+        },
+        {
+          "verse": 13,
+          "text": "te podnosite jedni druge praštajući ako tko ima protiv koga kakvu pritužbu! Kao što je Gospodin vama oprostio, tako i vi!"
+        },
+        {
+          "verse": 14,
+          "text": "A povrh svega – ljubav! To je sveza savršenstva."
+        },
+        {
+          "verse": 15,
+          "text": "I mir Kristov neka upravlja srcima vašim – mir na koji ste pozvani u jednom tijelu! I zahvalni budite!"
+        },
+        {
+          "verse": 16,
+          "text": "Riječ Kristova neka u svem bogatstvu prebiva u vama! U svakoj se mudrosti poučavajte i urazumljujte! Psalmima, hvalospjevima, pjesmama duhovnim od srca pjevajte hvalu Bogu!"
+        },
+        {
+          "verse": 17,
+          "text": "I sve što god riječju ili djelom činite, sve činite u imenu Gospodina Isusa, zahvaljujući Bogu Ocu po njemu!"
+        },
+        {
+          "verse": 18,
+          "text": "Žene, pokoravajte se svojim muževima kao što dolikuje u Gospodinu!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Obiteljsko ćudoređe"
+            }
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Muževi, ljubite svoje žene i ne budite osorni prema njima."
+        },
+        {
+          "verse": 20,
+          "text": "Djeco, slušajte roditelje u svemu, ta to je milo u Gospodinu!"
+        },
+        {
+          "verse": 21,
+          "text": "Očevi, ne ogorčujte svoje djece da ne klonu duhom."
+        },
+        {
+          "verse": 22,
+          "text": "Robovi, slušajte u svemu svoje zemaljske gospodare! Ne naoko, kao oni koji se ulaguju ljudima, nego u jednostavnosti srca, bojeći se Gospodina."
+        },
+        {
+          "verse": 23,
+          "text": "Što god radite, zdušno činite, kao Gospodinu, a ne ljudima,"
+        },
+        {
+          "verse": 24,
+          "text": "znajući da ćete od Gospodina primiti nagradu, baštinu. Gospodinu Kristu služite."
+        },
+        {
+          "verse": 25,
+          "text": "Doista, nepravedniku će se uzvratiti što je nepravedno učinio. Ne, nema pristranosti!"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Gospodari, pružajte svojim robovima što je pravo i pravično, znajući da i vi imate Gospodina na nebu!"
+        },
+        {
+          "verse": 2,
+          "text": "U molitvi ustrajte, bdijte u njoj u zahvaljivanju!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Apostolski duh"
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Molite ujedno i za nas: da nam Bog otvori vrata riječi te propovijedamo otajstvo Kristovo, za koje sam i okovan;"
+        },
+        {
+          "verse": 4,
+          "text": "da ga očitujem propovijedajući kako treba."
+        },
+        {
+          "verse": 5,
+          "text": "Mudro se ponašajte prema onima vani: iskupljujte vrijeme!"
+        },
+        {
+          "verse": 6,
+          "text": "Riječ neka vam je uvijek ljubazna, solju začinjena: znajte svakomu odgovoriti kako treba."
+        },
+        {
+          "verse": 7,
+          "text": "Što je sa mnom – o svemu će vas obavijestiti Tihik, ljubljeni brat, vjerni poslužitelj i sa mnom sluga u Gospodinu.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "OSOBNE OBAVIJESTI"
+            }
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Njega šaljem k vama baš zato da znate kako smo i da ohrabri srca vaša."
+        },
+        {
+          "verse": 9,
+          "text": "Šaljem ga s Onezimom, vjernim i ljubljenim bratom, koji je vaš zemljak: oni će vam priopćiti kako je ovdje."
+        },
+        {
+          "verse": 10,
+          "text": "Pozdravlja vas Aristarh, suuznik moj. I Marko, nećak Barnabin, o kome primiste naredbe: dođe li k vama, lijepo ga primite.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pozdravi i blagoslov"
+            }
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Pozdravlja vas i Isus, zvani Just. Od onih koji su iz obrezanja samo su mi ovi suradnici na kraljevstvu Božjemu, oni mi bijahu utjehom."
+        },
+        {
+          "verse": 12,
+          "text": "Pozdravlja vas Epafra, vaš zemljak, sluga Krista Isusa; on se uvijek bori za vas u molitvama: da se održite, savršeni i ispunjeni, u posvemašnjoj volji Božjoj."
+        },
+        {
+          "verse": 13,
+          "text": "Svjedočim doista za nj: mnogo se trudi za vas i za one u Laodiceji i one u Hierapolu."
+        },
+        {
+          "verse": 14,
+          "text": "Pozdravlja vas Luka, ljubljeni liječnik, i Dema."
+        },
+        {
+          "verse": 15,
+          "text": "Pozdravite braću u Laodiceji, i Nimfu i Crkvu u njezinoj kući."
+        },
+        {
+          "verse": 16,
+          "text": "A kad se ova poslanica pročita kod vas, pobrinite se da se pročita i u Laodicejskoj crkvi, i vi da pročitate onu iz Laodiceje."
+        },
+        {
+          "verse": 17,
+          "text": "I recite Arhipu: »Pazi na službu koju si primio u Gospodinu: ispuni je!«"
+        },
+        {
+          "verse": 18,
+          "text": "Pozdrav mojom rukom, Pavlovom! Spominjite se mojih okova! Milost s vama!"
+        }
+      ]
+    }
+  ]
+}

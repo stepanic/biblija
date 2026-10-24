@@ -1,0 +1,118 @@
+{
+  "order": 71,
+  "id": "treca-ivanova-poslanica",
+  "ks_book_id": 82,
+  "abbr": "3 Iv",
+  "title": "Treća Ivanova poslanica",
+  "testament": "NZ",
+  "category": "Poslanice",
+  "chapter_count": 1,
+  "verse_count": 15,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 15,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Starješina ljubljenom Gaju koga ljubim u Istini.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pozdrav"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ljubljeni! Želim ti u svemu dobro i da budeš zdrav, kao što je dobro tvojoj duši.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pohvala Gaju"
+            }
+          ],
+          "lines": [
+            "Ljubljeni!",
+            "Želim ti u svemu dobro i da budeš zdrav, kao što je dobro tvojoj duši."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Veoma se obradovah kada dođoše braća i posvjedočiše za tvoju istinu: kako ti živiš po Istini."
+        },
+        {
+          "verse": 4,
+          "text": "Čuti da moja djeca po Istini žive! – nema mi veće radosti od toga."
+        },
+        {
+          "verse": 5,
+          "text": "Ljubljeni, pravi si vjernik u svemu što činiš za braću, i to za došljake."
+        },
+        {
+          "verse": 6,
+          "text": "Oni posvjedočiše tvoju ljubav pred Crkvom i dobro ćeš učiniti ako ih ispratiš Boga dostojno."
+        },
+        {
+          "verse": 7,
+          "text": "Jer poradi Imena iziđoše i ne primaju ništa od pogana."
+        },
+        {
+          "verse": 8,
+          "text": "Mi smo dakle dužni takve primati da budemo suradnici Istine."
+        },
+        {
+          "verse": 9,
+          "text": "Pisao sam nešto Crkvi: ali Diotref, koji hoće da bude prvi među njima, ne prima nas.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prijekor Diotrefu"
+            }
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Zato ako dođem, spočitnut ću mu djela koja čini naklapajući zlobne riječi o nama. Ni to mu nije dosta, nego ne prima braće, a onima koji bi to htjeli, brani i izgoni ih iz Crkve."
+        },
+        {
+          "verse": 11,
+          "text": "Ljubljeni! Ne nasljeduj zlo, nego dobro. Tko dobro čini, od Boga je; tko zlo čini, nije vidio Boga.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Svjedočanstvo o Demetriju"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Za Demetrija svjedoče svi, i sama Istina, a i mi svjedočimo. A znaš da je naše svjedočanstvo istinito."
+        },
+        {
+          "verse": 13,
+          "text": "Mnogo bih ti imao pisati, ali neću da ti pišem crnilom i perom.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Zaglavak"
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Nadam se da ću te uskoro vidjeti pa ćemo iz usta u usta govoriti."
+        },
+        {
+          "verse": 15,
+          "text": "Mir tebi! Pozdravljaju te prijatelji. Pozdravi prijatelje poimence.",
+          "lines": [
+            "Mir tebi!",
+            "Pozdravljaju te prijatelji.",
+            "Pozdravi prijatelje poimence."
+          ]
+        }
+      ]
+    }
+  ]
+}

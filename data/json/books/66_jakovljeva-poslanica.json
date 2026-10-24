@@ -1,0 +1,592 @@
+{
+  "order": 66,
+  "id": "jakovljeva-poslanica",
+  "ks_book_id": 77,
+  "abbr": "Jak",
+  "title": "Jakovljeva poslanica",
+  "testament": "NZ",
+  "category": "Poslanice",
+  "chapter_count": 5,
+  "verse_count": 108,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 27,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Jakov, sluga Boga i Gospodina Isusa Krista: dvanaestorim plemenima raseljeništva pozdrav.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Naslov i pozdrav"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Pravom radošću smatrajte, braćo moja, kad upadnete u razne kušnje",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Korist kušnje"
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "znajući da prokušanost vaše vjere rađa postojanošću."
+        },
+        {
+          "verse": 4,
+          "text": "Ali neka postojanost bude na djelu savršena da budete savršeni i potpuni, bez ikakva nedostatka."
+        },
+        {
+          "verse": 5,
+          "text": "Nedostaje li komu od vas mudrosti, neka ište od Boga, koji svima daje rado i bez negodovanja, i dat će mu se."
+        },
+        {
+          "verse": 6,
+          "text": "Ali neka ište s vjerom, bez ikakva kolebanja. Jer kolebljivac je sličan morskom valovlju, uzburkanu i gonjenu."
+        },
+        {
+          "verse": 7,
+          "text": "Neka takav ne misli da će primiti što od Gospodina –"
+        },
+        {
+          "verse": 8,
+          "text": "čovjek duše dvoumne, nepostojan na svim putovima svojim."
+        },
+        {
+          "verse": 9,
+          "text": "Neka se brat niska soja ponosi svojim uzvišenjem,"
+        },
+        {
+          "verse": 10,
+          "text": "a bogataš svojim poniženjem. Ta proći će kao cvijet trave :"
+        },
+        {
+          "verse": 11,
+          "text": "sunce ogranu žarko te usahnu trava i cvijet njezin uvenu ; dražest mu lica propade. Tako će i bogataš na stazama svojim usahnuti."
+        },
+        {
+          "verse": 12,
+          "text": "Blago čovjeku koji trpi kušnju: prokušan, primit će vijenac života koji je Gospodin obećao onima što ga ljube."
+        },
+        {
+          "verse": 13,
+          "text": "Neka nitko u napasti ne rekne: »Bog me napastuje.« Ta Bog ne može biti napastovan na zlo, i ne napastuje nikoga.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Božja svetost"
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Nego svakoga napastuje njegova požuda koja ga privlači i mami."
+        },
+        {
+          "verse": 15,
+          "text": "Požuda zatim, zatrudnjevši, rađa grijehom, a grijeh izvršen rađa smrću."
+        },
+        {
+          "verse": 16,
+          "text": "Ne varajte se, braćo moja ljubljena!",
+          "lines": [
+            "Ne varajte se, braćo moja ljubljena!"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Svaki dobar dar, svaki savršen poklon odozgor je, silazi od Oca svjetlilâ u kome nema promjene ni sjene od mijene.",
+          "lines": [
+            "Svaki dobar dar,",
+            "svaki savršen poklon odozgor je,",
+            "silazi od Oca svjetlilâ",
+            "u kome nema promjene",
+            "ni sjene od mijene."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Po svom naumu on nas porodi riječju Istine da budemo prvina neka njegovih stvorova.",
+          "lines": [
+            "Po svom naumu on nas porodi",
+            "riječju Istine",
+            "da budemo prvina neka",
+            "njegovih stvorova."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Znajte, braćo moja ljubljena! Svatko neka bude brz da sluša, spor da govori, spor na srdžbu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prava bogoljubnost"
+            }
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Jer srdžba čovjekova ne čini pravde Božje."
+        },
+        {
+          "verse": 21,
+          "text": "Zato odložite svaku prljavštinu i preostalu zloću i sa svom krotkošću primite usađenu riječ koja ima moć spasiti duše vaše."
+        },
+        {
+          "verse": 22,
+          "text": "Budite vršitelji riječi, a ne samo slušatelji, zavaravajući sami sebe."
+        },
+        {
+          "verse": 23,
+          "text": "Jer ako je tko slušatelj riječi, a ne i izvršitelj, sličan je čovjeku koji motri svoje rođeno lice u zrcalu:"
+        },
+        {
+          "verse": 24,
+          "text": "promotri se, ode i odmah zaboravi kakav bijaše."
+        },
+        {
+          "verse": 25,
+          "text": "A koji se òglêdâ u savršenom zakonu slobode i uza nj prione, ne kao zaboravan slušatelj nego djelotvoran izvršitelj, blažen će biti u svem djelovanju svome."
+        },
+        {
+          "verse": 26,
+          "text": "Smatra li se tko bogoljubnim, a ne obuzdava svoga jezika, nego zavarava srce svoje, isprazna je njegova bogoljubnost."
+        },
+        {
+          "verse": 27,
+          "text": "Bogoljubnost čista i neokaljana jest: zauzimati se za sirote i udovice u njihovoj nevolji, čuvati se neokaljanim od ovoga svijeta."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 26,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Braćo moja, vjeru Gospodina našega Isusa Krista slavnoga ne miješajte s pristranošću!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Nepristranost"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Dođe li na vaš sastanak čovjek sa zlatnim prstenjem, u sjajnoj odjeći, a dođe i siromah u bijednoj odjeći"
+        },
+        {
+          "verse": 3,
+          "text": "i vi se zagledate u onoga što nosi sjajnu odjeću te reknete: »Ti lijepo ovdje sjedni!«, a siromahu reknete: »Ti stani – ili sjedni – ondje, podno podnožja moga!«,"
+        },
+        {
+          "verse": 4,
+          "text": "niste li u sebi pristrano sudili te postali suci što naopako sude?"
+        },
+        {
+          "verse": 5,
+          "text": "Čujte, braćo moja ljubljena: nije li Bog one koji su svijetu siromašni izabrao da budu bogataši u vjeri i baštinici Kraljevstva što ga je obećao onima koji ga ljube?"
+        },
+        {
+          "verse": 6,
+          "text": "A vi prezreste siromaha! Ne tlače li vas upravo bogataši? Ne vuku li vas baš oni na sudove?"
+        },
+        {
+          "verse": 7,
+          "text": "Ne psuju li oni lijepo Ime na vas zazvano?"
+        },
+        {
+          "verse": 8,
+          "text": "Ako doista izvršujete kraljevski zakon po Pismu: Ljubi bližnjega svoga kao sebe samoga, dobro činite;"
+        },
+        {
+          "verse": 9,
+          "text": "ako li ste pristrani, grijeh činite i Zakon vas osuđuje kao prijestupnike."
+        },
+        {
+          "verse": 10,
+          "text": "Ta tko sav Zakon uščuva, a u jednome samo posrne, postao je krivac svega."
+        },
+        {
+          "verse": 11,
+          "text": "Jer tko reče: Ne čini preljuba, reče i: Ne ubij. Ako dakle i ne činiš preljuba, a ubiješ, postao si prijestupnik Zakona."
+        },
+        {
+          "verse": 12,
+          "text": "Tako govòrite i tako činite kao oni koji imaju biti suđeni po zakonu slobode."
+        },
+        {
+          "verse": 13,
+          "text": "Jer nemilosrdan je sud onomu tko ne čini milosrđa; a milosrđe likuje nad sudom."
+        },
+        {
+          "verse": 14,
+          "text": "Što koristi, braćo moja, ako tko rekne da ima vjeru, a djelâ nema? Može li ga vjera spasiti?",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Vjera i djela"
+            }
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Ako su koji brat ili sestra goli i bez hrane svagdanje"
+        },
+        {
+          "verse": 16,
+          "text": "pa im tkogod od vas rekne: »Hajdete u miru, grijte se i sitite«, a ne dadnete im što je potrebno za tijelo, koja korist?"
+        },
+        {
+          "verse": 17,
+          "text": "Tako i vjera: ako nema djelâ, mrtva je u sebi."
+        },
+        {
+          "verse": 18,
+          "text": "Inače, mogao bi tko reći: »Ti imaš vjeru, a ja imam djelâ. Pokaži mi svoju vjeru bez djelâ, a ja ću tebi djelima pokazati svoju vjeru."
+        },
+        {
+          "verse": 19,
+          "text": "Ti vjeruješ da je jedan Bog? Dobro činiš! I đavli vjeruju, i dršću.«"
+        },
+        {
+          "verse": 20,
+          "text": "Hoćeš li spoznati, šuplja glavo, da je vjera bez djelâ jalova?"
+        },
+        {
+          "verse": 21,
+          "text": "Zar se Abraham, otac naš, ne opravda djelima, kad na žrtvenik prinese Izaka, sina svoga?"
+        },
+        {
+          "verse": 22,
+          "text": "Vidiš: vjera je surađivala s djelima njegovim i djelima se vjera usavršila"
+        },
+        {
+          "verse": 23,
+          "text": "te se ispunilo Pismo koje veli: Povjerova Abraham Bogu i uračuna mu se u pravednost pa prijatelj Božji posta."
+        },
+        {
+          "verse": 24,
+          "text": "Gledajte: čovjek se opravdava djelima, a ne samom vjerom."
+        },
+        {
+          "verse": 25,
+          "text": "Ne opravda li se slično, djelima, i Rahaba bludnica kad primi glasnike i drugim ih putom izvede?"
+        },
+        {
+          "verse": 26,
+          "text": "Jer kao što je tijelo bez duha mrtvo, tako je i vjera bez djelâ mrtva."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Neka vas, braćo moja, ne bude mnogo učiteljâ! Ta znate: bit ćemo strože suđeni.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Obuzdavanje jezika"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Doista, svi mnogo griješimo. Ako tko u govoru ne griješi, savršen je čovjek, vrstan zauzdati i cijelo tijelo."
+        },
+        {
+          "verse": 3,
+          "text": "Ubacimo li uzde u usta konjima da ih sebi upokorimo, upravljamo i cijelim tijelom njihovim."
+        },
+        {
+          "verse": 4,
+          "text": "Evo i lađâ: tolike su i silni ih vjetrovi gone, a neznatno ih kormilo upravlja kamo kormilarova volja hoće."
+        },
+        {
+          "verse": 5,
+          "text": "Tako i jezik: malen je ud, a velikim se može ponositi. Evo: kolicna vatra koliku šumu zapali!",
+          "lines": [
+            "Tako i jezik: malen je ud, a velikim se može ponositi.",
+            "Evo: kolicna vatra koliku šumu zapali!"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "I jezik je vatra, svijet nepravdâ jezik je među našim udovima, kalja cijelo tijelo te, zapaljen od pakla, zapaljuje kotač života."
+        },
+        {
+          "verse": 7,
+          "text": "Doista, sav rod zvijeri i ptica, gmazova i morskih životinja dade se ukrotiti, i rod ih je ljudski ukrotio,"
+        },
+        {
+          "verse": 8,
+          "text": "a jezik – zlo nemirno, pun otrova smrtonosnog – nitko od ljudi ne može ukrotiti."
+        },
+        {
+          "verse": 9,
+          "text": "Njime blagoslivljamo Gospodina i Oca, njime i proklinjemo ljude na sliku Božju stvorene:"
+        },
+        {
+          "verse": 10,
+          "text": "iz istih usta izlazi blagoslov i prokletstvo. Ne smije se, braćo moja, tako događati!"
+        },
+        {
+          "verse": 11,
+          "text": "Zar vrelo na isti otvor šiklja slatko i gorko?"
+        },
+        {
+          "verse": 12,
+          "text": "Može li, braćo moja, smokva roditi maslinama ili trs smokvama? Ni slan izvor ne može dati slatke vode."
+        },
+        {
+          "verse": 13,
+          "text": "Je li tko mudar i razborit među vama? Neka dobrim življenjem pokaže svoja djela u mudroj blagosti.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prava i lažna mudrost"
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Ako u srcu imate gorku zavist i svadljivost, ne uznosite se i ne lažite protiv istine!"
+        },
+        {
+          "verse": 15,
+          "text": "Nije to mudrost koja odozgor silazi, nego zemaljska, ljudska, đavolska."
+        },
+        {
+          "verse": 16,
+          "text": "Ta gdje je zavist i svadljivost, ondje je nered i svako zlo djelo."
+        },
+        {
+          "verse": 17,
+          "text": "A mudrost odozgor ponajprije čista je, zatim mirotvorna, milostiva, poučljiva, puna milosrđa i dobrih plodova, postojana, nehinjena."
+        },
+        {
+          "verse": 18,
+          "text": "Plod se pak pravednosti u miru sije onima koji tvore mir."
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 17,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Odakle ratovi, odakle borbe među vama? Zar ne odavde: od pohota što vojuju u udovima vašim?",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Protiv neslogâ"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Žudite, a nemate; ubijate i hlepite, a ne možete postići; borite se i ratujete. Nemate jer ne ištete."
+        },
+        {
+          "verse": 3,
+          "text": "Ištete, a ne primate jer rđavo ištete: da u pohotama svojim potratite."
+        },
+        {
+          "verse": 4,
+          "text": "Preljubnici! Ne znate li da je prijateljstvo sa svijetom neprijateljstvo prema Bogu? Tko god dakle hoće da bude prijatelj svijeta, promeće se u neprijatelja Božjega."
+        },
+        {
+          "verse": 5,
+          "text": "Ili mislite da Pismo uzalud veli: Ljubomorno čezne za duhom što ga nastani u nama?"
+        },
+        {
+          "verse": 6,
+          "text": "A daje on i veću milost. Zato govori: Bog se oholima protivi, a poniznima daje milost.",
+          "lines": [
+            "A daje on i veću milost. Zato govori:",
+            "Bog se oholima protivi,",
+            "a poniznima daje milost."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Podložite se dakle Bogu! Oduprite se đavlu i pobjeći će od vas!",
+          "lines": [
+            "Podložite se dakle Bogu!",
+            "Oduprite se đavlu",
+            "i pobjeći će od vas!"
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Približite se Bogu i on će se približiti vama! Očistite ruke, grešnici! Očistite srca, dvoličnjaci!",
+          "lines": [
+            "Približite se Bogu",
+            "i on će se približiti vama!",
+            "Očistite ruke, grešnici!",
+            "Očistite srca, dvoličnjaci!"
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Zakukajte, protužite, proplačite! Smijeh vaš nek se u plač obrati i radost u žalost!",
+          "lines": [
+            "Zakukajte, protužite, proplačite!",
+            "Smijeh vaš nek se u plač obrati",
+            "i radost u žalost!"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Ponizite se pred Gospodinom i on će vas uzvisiti!",
+          "lines": [
+            "Ponizite se pred Gospodinom",
+            "i on će vas uzvisiti!"
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Ne ogovarajte, braćo, jedni druge! Tko ogovara ili sudi brata svoga, ogovara i sudi Zakon. A sudiš li Zakon, nisi vršitelj, nego sudac Zakona."
+        },
+        {
+          "verse": 12,
+          "text": "Jedan je Zakonodavac i Sudac: Onaj koji može spasiti i pogubiti. A tko si ti da sudiš bližnjega?"
+        },
+        {
+          "verse": 13,
+          "text": "De sada, vi što govorite: »Danas ili sutra otići ćemo u taj i taj grad, provesti ondje godinu, trgovati i zaraditi«,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Krivo samopouzdanje"
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "a ne znate što će sutra biti. Ta što je vaš život? Dašak ste što se načas pojavi i zatim nestane!"
+        },
+        {
+          "verse": 15,
+          "text": "Umjesto da govorite: »Htjedne li Gospodin, živjet ćemo i učiniti ovo ili ono«,"
+        },
+        {
+          "verse": 16,
+          "text": "vi se razmećete svojim hvastanjima! Svako je takvo hvastanje opako."
+        },
+        {
+          "verse": 17,
+          "text": "Znati dakle dobro činiti, a ne činiti – grijeh je."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verse_count": 20,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "De sada, bogataši, proplačite i zakukajte zbog nevolja koje će vas zadesiti!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Opomena bogatašima"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Bogatstvo vam istrunu, haljine vaše postadoše hrana moljcima,"
+        },
+        {
+          "verse": 3,
+          "text": "zlato vam i srebro zarđa i rđa će njihova biti svjedočanstvo protiv vas te će kao vatra izjesti tijela vaša! Zgrnuste blago u posljednje dane!"
+        },
+        {
+          "verse": 4,
+          "text": "Evo: plaća kosaca vaših njiva – koju im uskratiste – viče i vapaji žetelaca dopriješe do ušiju Gospoda nad Vojskama."
+        },
+        {
+          "verse": 5,
+          "text": "Raskošno ste na zemlji i razvratno živjeli, utoviste srca svoja za dan klanja!"
+        },
+        {
+          "verse": 6,
+          "text": "Osudiste i ubiste pravednika: on vam se ne suprotstavlja!"
+        },
+        {
+          "verse": 7,
+          "text": "Strpite se dakle, braćo, do dolaska Gospodnjega! Evo: ratar iščekuje dragocjeni urod zemlje, strpljiv je s njime dok ne dobije kišu ranu i kasnu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Strpljivost i molitva"
+            }
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Strpite se i vi, očvrsnite srca jer se dolazak Gospodnji približio!"
+        },
+        {
+          "verse": 9,
+          "text": "Ne tužite se jedni na druge da ne budete osuđeni! Evo: sudac stoji pred vratima!"
+        },
+        {
+          "verse": 10,
+          "text": "Za uzor strpljivosti i podnošenja zala uzmite, braćo, proroke koji su govorili u ime Gospodnje."
+        },
+        {
+          "verse": 11,
+          "text": "Eto: blaženima nazivamo one koji ustrajaše. Za postojanost Jobovu čuste i nakanu Gospodnju vidjeste jer milostiv je Gospodin i milosrdan!"
+        },
+        {
+          "verse": 12,
+          "text": "Prije svega, braćo moja, ne zaklinjite se ni nebom ni zemljom, ni ikojom drugom zakletvom. Vaše »da« neka bude »da«, i »ne« – »ne«, da ne padnete pod sud."
+        },
+        {
+          "verse": 13,
+          "text": "Pati li tko među vama? Neka moli! Je li tko radostan? Neka pjeva hvalospjeve!"
+        },
+        {
+          "verse": 14,
+          "text": "Boluje li tko među vama? Neka dozove starješine Crkve! Oni neka mole nad njim mažući ga uljem u ime Gospodnje"
+        },
+        {
+          "verse": 15,
+          "text": "pa će molitva vjere spasiti nemoćnika; Gospodin će ga podići, i ako je sagriješio, oprostit će mu se."
+        },
+        {
+          "verse": 16,
+          "text": "Ispovijedajte dakle jedni drugima grijehe i molite jedni za druge da ozdravite! Mnogo može žarka molitva pravednikova."
+        },
+        {
+          "verse": 17,
+          "text": "Ilija bijaše čovjek baš kao i mi; usrdno se pomoli da ne bude kiše i kiše nije bilo na zemlji tri godine i šest mjeseci."
+        },
+        {
+          "verse": 18,
+          "text": "Zatim se ponovno pomoli te nebo dade kišu i zemlja iznese urod svoj."
+        },
+        {
+          "verse": 19,
+          "text": "Braćo moja, odluta li tko od vas od istine pa ga tkogod vrati,"
+        },
+        {
+          "verse": 20,
+          "text": "znajte: tko vrati grešnika s lutalačkog puta njegova, spasit će dušu njegovu od smrti i pokriti mnoštvo grijeha."
+        }
+      ]
+    }
+  ]
+}

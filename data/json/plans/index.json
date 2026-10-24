@@ -1,0 +1,128 @@
+[
+  {
+    "id": "mb-tematski-365",
+    "title": "Muževni budite — Tematski plan (Velika avantura s Biblijom / Bible in a Year)",
+    "category": "biblija-365",
+    "days_count": 365,
+    "description": "Službeni tematski plan čitanja katoličke Biblije kroz 365 dana (Muževni budite / Ascension — Jeff Cavins i o. Mike Schmitz). Svaki dan čitaju se 2–3 odlomka iz Staroga/Novoga zavjeta uz Psalme i Mudre izreke, prateći 12 razdoblja povijesti spasenja."
+  },
+  {
+    "id": "mb-usporedni-365",
+    "title": "Muževni budite — Usporedni plan (SZ + Psalmi/Mudrosne + NZ)",
+    "category": "biblija-365",
+    "days_count": 365,
+    "description": "Službeni usporedni plan čitanja Biblije kroz 365 dana portala Muževni budite: svakog se dana čitaju po dva čitanja iz Staroga zavjeta (povijesne/proročke + psalmi/mudrosne knjige) i jedno čitanje iz Novoga zavjeta."
+  },
+  {
+    "id": "mb-linearni-365",
+    "title": "Muževni budite — Linearni plan (od Postanka do Otkrivenja)",
+    "category": "biblija-365",
+    "days_count": 366,
+    "description": "Službeni linearni plan čitanja Biblije portala Muževni budite: svakog dana čita se nekoliko poglavlja redom od Knjige Postanka do Otkrivenja (5–10 minuta dnevno)."
+  },
+  {
+    "id": "biblija-365-visetracni",
+    "title": "Biblija 365 — Višetračni plan (SZ + NZ + Psalmi/Mudrosne)",
+    "category": "biblija-365",
+    "days_count": 365,
+    "description": "Najpopularniji način čitanja cijele Biblije u godinu dana (svih 73 knjiga katoličkog kanona): svaki dan čitaš odlomak iz Staroga zavjeta, odlomak iz Novoga zavjeta ili Psalama/Mudrosnih knjiga, čime se održava dinamika i izbjegava zamor kod zahtjevnijih zakonskih ili rodoslovnih poglavlja."
+  },
+  {
+    "id": "biblija-365-kanonski",
+    "title": "Biblija 365 — Kanonski redom (od Postanka do Otkrivenja)",
+    "category": "biblija-365",
+    "days_count": 365,
+    "description": "Čitanje svih 73 knjiga Svetoga pisma točnim kanonskim redoslijedom od Knjige Postanka 1 do Otkrivenja 22, ravnomjerno raspoređeno po duljini poglavlja (~97 redaka dnevno)."
+  },
+  {
+    "id": "biblija-365-kronoloski",
+    "title": "Biblija 365 — Povijest spasenja (Kronološki slijed)",
+    "category": "biblija-365",
+    "days_count": 365,
+    "description": "Prolazak kroz cijelu Bibliju u 365 dana prateći kronološki tijek povijesti spasenja: od stvaranja i patrijarha (Postanak i Job), preko Izlaska, Kraljevstva, Proroka i Mudrosnih knjiga, do Makabejaca, Evanđelja, Djela apostolskih, Poslanica i Otkrivenja."
+  },
+  {
+    "id": "ks-39113",
+    "title": "Djela apostolska u petnaest dana",
+    "category": "ks-tematski",
+    "days_count": 15,
+    "description": "Djela se čitaju dinamično poput povijesnog akcijskog romana. Sveta povijest donosi više čuvenih epizoda, od Duhova do putovanja svetog Pavla (brodolomi, zatvori). Idealno ih je čitati nakon Evanđelja."
+  },
+  {
+    "id": "ks-39110",
+    "title": "Knjiga mudrosti u trideset dana",
+    "category": "ks-tematski",
+    "days_count": 30,
+    "description": "Knjiga Mudrosti je najmlađe starozavjetno djelo. Autor naglašava važnost molitve, Božju pravednost te donosi revolucionarnu starozavjetnu misao o besmrtnosti ljudske duše."
+  },
+  {
+    "id": "ks-39106",
+    "title": "Izaija u šezdeset dana",
+    "category": "ks-tematski",
+    "days_count": 60,
+    "description": "Čuveni starozavjetni prorok. S tempom od jednog do dva poglavlja dnevno, ovo je predivan i dubok dvomjesečni duhovni izazov za one koji žele više."
+  },
+  {
+    "id": "ks-39101",
+    "title": "Knjiga Postanka u trideset dana",
+    "category": "ks-tematski",
+    "days_count": 30,
+    "description": "Knjiga Postanka sadrži najpoznatije priče (Stvaranje, Noa, Abraham, Josip) i ključna je za razumijevanje ostatka Biblije. Pročita se vrlo lagano u mjesec dana."
+  },
+  {
+    "id": "ks-39098",
+    "title": "Propovjednik u petnaest dana",
+    "category": "ks-tematski",
+    "days_count": 15,
+    "description": "Propovjednik je knjiga čovjeka koji je sve okušao – slavu, znanje, užitak. Toga ne ispunja, jer sve prolazi. Ali ipak ostaje vjernik!"
+  },
+  {
+    "id": "ks-39094",
+    "title": "Estera i Ruta u trideset dana",
+    "category": "ks-tematski",
+    "days_count": 30,
+    "description": "Estera na perzijskom dvoru spašava svoj narod, ali Boga ne imenuje, Providnost ipak vodi sve. Ruta Moapka ulazi u Betlehem i u Davidovo rodoslovlje. Ona je tuđinka koju milosrđe uvodi u baštinu obećanja."
+  },
+  {
+    "id": "ks-39091",
+    "title": "Jeremija i Tužaljke u četrdeset i pet dana",
+    "category": "ks-tematski",
+    "days_count": 45,
+    "description": "Jeremija je glas koji nije smio šutjeti dok se rušio Jeruzalem, i srce koje nije prestalo govoriti s Bogom. Tužaljke vas uče kako plakati pred Bogom, ne mimo Njega, i još uvijek Mu vjerovati."
+  },
+  {
+    "id": "ks-39040",
+    "title": "Otkrivenje u četrdeset i pet dana",
+    "category": "ks-tematski",
+    "days_count": 45,
+    "description": "Otkrivenje se odnosi na razdoblje sedam careva od Nerona do Domicijana i predstavlja uskipjeli protest protiv imperatorskog kulta i rimskog imperijalizma."
+  },
+  {
+    "id": "ks-39067",
+    "title": "Novi zavjet u devedeset dana",
+    "category": "ks-tematski",
+    "days_count": 90,
+    "description": "Tko čita Novi zavjet, ne ulazi u muzejsku zgradu, ulazi u Savez koji još traje. Uvijek je isti glas: Riječ je postala tijelom."
+  },
+  {
+    "id": "ks-39038",
+    "title": "Novozavjetne poslanice u devedeset dana",
+    "category": "ks-tematski",
+    "days_count": 90,
+    "description": "Evanđelja pripovijedaju što je Krist učinio i tko je On. Poslanice pitaju što sada s tim učiniti."
+  },
+  {
+    "id": "ks-39029",
+    "title": "Psalmi i Mudre izreke u trideset dana",
+    "category": "ks-tematski",
+    "days_count": 30,
+    "description": "Biseri starozavjetne ljepote i mudrosti, dvije klasične starozavjetne knjige u trideset dana."
+  },
+  {
+    "id": "ks-38882",
+    "title": "Evanđelja u trideset dana",
+    "category": "ks-tematski",
+    "days_count": 30,
+    "description": "Sva četiri evanđelja u 30 dana – Matej, Marko, Luka, Ivan. Otprilike 3 poglavlja dnevno."
+  }
+]

@@ -1,0 +1,1526 @@
+{
+  "order": 31,
+  "id": "tuzaljke",
+  "ks_book_id": 42,
+  "abbr": "Tuž",
+  "title": "Tužaljke",
+  "testament": "SZ",
+  "category": "Proroci",
+  "chapter_count": 5,
+  "verse_count": 154,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 22,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "ALEF Kako osamljena sjedi prijestolnica, nekoć naroda puna; postade kao udovica, nekoć velika među narodima. Vladarica nad pokrajinama, na tlaku sad ide.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "PRVA TUŽALJKA"
+            }
+          ],
+          "lines": [
+            "ALEF Kako osamljena sjedi",
+            "prijestolnica, nekoć naroda puna; postade kao udovica,",
+            "nekoć velika među narodima.",
+            "Vladarica nad pokrajinama,",
+            "na tlaku sad ide."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "BET Noći provodi gorko plačući, suzama pokriva obraze. Nikog nema da je utješi, od svih koji su je ljubili. Svi je prijatelji iznevjeriše i postaše joj neprijatelji.",
+          "lines": [
+            "BET Noći provodi gorko plačući,",
+            "suzama pokriva obraze.",
+            "Nikog nema da je utješi,",
+            "od svih koji su je ljubili.",
+            "Svi je prijatelji iznevjeriše",
+            "i postaše joj neprijatelji."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "GIMEL Izagnan je Juda, u nevolji je i u progonstvu teškom. Sad živi među poganima, ne nalazi počinka. Svi ga gonitelji sustižu u tjesnacima.",
+          "lines": [
+            "GIMEL Izagnan je Juda, u nevolji je",
+            "i u progonstvu teškom.",
+            "Sad živi među poganima,",
+            "ne nalazi počinka.",
+            "Svi ga gonitelji sustižu",
+            "u tjesnacima."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "DALET Putovi sionski tuguju jer nitko ne dolazi na svetkovine. Sva su vrata razvaljena, svećenici uzdišu, ucviljene su djevice njegove, a on je pun gorčine.",
+          "lines": [
+            "DALET Putovi sionski tuguju",
+            "jer nitko ne dolazi na svetkovine.",
+            "Sva su vrata razvaljena,",
+            "svećenici uzdišu,",
+            "ucviljene su djevice njegove,",
+            "a on je pun gorčine."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "HE Tlačitelji njegovi sada gospodare, neprijatelji likuju: Jahve ga ucvili zbog grijeha njegovih premnogih. Djeca mu otišla u izgnanstvo pred tlačiteljem.",
+          "lines": [
+            "HE Tlačitelji njegovi sada gospodare,",
+            "neprijatelji likuju:",
+            "Jahve ga ucvili",
+            "zbog grijeha njegovih premnogih.",
+            "Djeca mu otišla u izgnanstvo",
+            "pred tlačiteljem."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "VAU Povukla se od Kćeri sionske sva slava njezina. Knezovi joj postadoše k’o ovnovi koji paše ne nalaze; nemoćni vrludaju ispred goniča.",
+          "lines": [
+            "VAU Povukla se od Kćeri sionske",
+            "sva slava njezina.",
+            "Knezovi joj postadoše k’o ovnovi",
+            "koji paše ne nalaze;",
+            "nemoćni vrludaju",
+            "ispred goniča."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "ZAJIN Jeruzalem se spominje danâ bijede i lutanja, kad mu narod dušmanu u ruke pade a nitko mu pomoći ne pruži. Tlačitelji ga gledahu smijući se njegovoj propasti.",
+          "lines": [
+            "ZAJIN Jeruzalem se spominje",
+            "danâ bijede i lutanja,",
+            "kad mu narod dušmanu u ruke pade",
+            "a nitko mu pomoći ne pruži.",
+            "Tlačitelji ga gledahu",
+            "smijući se njegovoj propasti."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "HET Teško sagriješi Jeruzalem, postade kao nečistoća ženina. Svi što ga štovahu, sada ga preziru: jer vidješe golotinju njegovu. On samo plače i natrag se okreće.",
+          "lines": [
+            "HET Teško sagriješi Jeruzalem,",
+            "postade kao nečistoća ženina.",
+            "Svi što ga štovahu, sada ga preziru:",
+            "jer vidješe golotinju njegovu.",
+            "On samo plače",
+            "i natrag se okreće."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "TET Skuti su mu uprljani, nije ni sanjao što ga čeka. Duboko je pao, a nikog da ga tješi. »Pogledaj, Jahve, moju nevolju: jer neprijatelj likuje.«",
+          "lines": [
+            "TET Skuti su mu uprljani,",
+            "nije ni sanjao što ga čeka.",
+            "Duboko je pao,",
+            "a nikog da ga tješi.",
+            "»Pogledaj, Jahve, moju nevolju:",
+            "jer neprijatelj likuje.«"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "JOD Neprijatelj poseže rukom za svim dragocjenostima njegovim. Gledao je gdje pogani provaljuju u njegovo Svetište, oni kojima si zabranio i pristup u svoj zbor.",
+          "lines": [
+            "JOD Neprijatelj poseže rukom",
+            "za svim dragocjenostima njegovim.",
+            "Gledao je gdje pogani",
+            "provaljuju u njegovo Svetište,",
+            "oni kojima si zabranio",
+            "i pristup u svoj zbor."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "KAF Sav narod njegov jeca, tražeći kruha; svi daju dragulje za hranu da bi ponovno živnuli. Evo, Jahve, pogledaj kako sam prezren.",
+          "lines": [
+            "KAF Sav narod njegov jeca,",
+            "tražeći kruha;",
+            "svi daju dragulje za hranu",
+            "da bi ponovno živnuli.",
+            "Evo, Jahve, pogledaj",
+            "kako sam prezren."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "LAMED Svi vi što putem prolazite, pogledajte i vidite ima li boli kakva je bol kojom sam ja pogođen, kojom me Jahve udari u dan žestokoga gnjeva svoga!",
+          "lines": [
+            "LAMED Svi vi što putem prolazite,",
+            "pogledajte i vidite",
+            "ima li boli kakva je bol",
+            "kojom sam ja pogođen,",
+            "kojom me Jahve udari",
+            "u dan žestokoga gnjeva svoga!"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "MEM S visine pusti oganj, utjera ga u kosti moje. Pred noge mrežu mi razape i tako me nauznak obori; ucvili me, ožalosti za sva vremena.",
+          "lines": [
+            "MEM S visine pusti oganj,",
+            "utjera ga u kosti moje.",
+            "Pred noge mrežu mi razape",
+            "i tako me nauznak obori;",
+            "ucvili me, ožalosti",
+            "za sva vremena."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "NUN Natovario me mojim grijesima, rukom ih svojom pritegnuo; na vrat mi ih navalio, snagu mi oduzeo. Predao me Gospod u ruke njihove, ne mogu se uspraviti.",
+          "lines": [
+            "NUN Natovario me mojim grijesima,",
+            "rukom ih svojom pritegnuo;",
+            "na vrat mi ih navalio,",
+            "snagu mi oduzeo.",
+            "Predao me Gospod u ruke njihove,",
+            "ne mogu se uspraviti."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "SAMEK Sve junake iz moje sredine Gospod odbaci: digao je zbor protiv mene da uništi uzdanicu moju. U tijesku izgazi Gospod mene, djevicu, kćerku Judinu.",
+          "lines": [
+            "SAMEK Sve junake iz moje sredine",
+            "Gospod odbaci:",
+            "digao je zbor protiv mene",
+            "da uništi uzdanicu moju.",
+            "U tijesku izgazi Gospod mene,",
+            "djevicu, kćerku Judinu."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "AJIN Zato moram plakati, oči mi suze liju, jer daleko je od mene moj tješitelj da mi duh povrati. Sinovi su moji poraženi, odveć silan bijaše neprijatelj.",
+          "lines": [
+            "AJIN Zato moram plakati,",
+            "oči mi suze liju,",
+            "jer daleko je od mene moj tješitelj",
+            "da mi duh povrati.",
+            "Sinovi su moji poraženi,",
+            "odveć silan bijaše neprijatelj."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "PE Sion pruža ruke: nema mu tješitelja. Jahve je protiv Jakova sa svih strana pozvao tlačitelje; i tako Jeruzalem postade među njima strašilo.",
+          "lines": [
+            "PE Sion pruža ruke:",
+            "nema mu tješitelja.",
+            "Jahve je protiv Jakova",
+            "sa svih strana pozvao tlačitelje;",
+            "i tako Jeruzalem postade",
+            "među njima strašilo."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "SADE Jahve, on je pravedan; jer riječi se njegovoj protivih. Oh, čujte, narodi svi, gledajte moju bol: djevice moje, moji mladići, svi odoše u izgnanstvo!",
+          "lines": [
+            "SADE Jahve, on je pravedan;",
+            "jer riječi se njegovoj protivih.",
+            "Oh, čujte, narodi svi,",
+            "gledajte moju bol:",
+            "djevice moje, moji mladići,",
+            "svi odoše u izgnanstvo!"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "KOF Pozvah sve ljubavnike svoje, ali me oni prevariše. Moji svećenici i starješine pogiboše u gradu tražeći hrane da bi ponovno živnuli.",
+          "lines": [
+            "KOF Pozvah sve ljubavnike svoje,",
+            "ali me oni prevariše.",
+            "Moji svećenici i starješine",
+            "pogiboše u gradu",
+            "tražeći hrane",
+            "da bi ponovno živnuli."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "REŠ Pogledaj, Jahve, u kakvoj sam tjeskobi, moja utroba strepi, srce mi se u grudima grči jer bijah opako prkosan! Vani mač pokosi moje sinove, a unutra – smrt.",
+          "lines": [
+            "REŠ Pogledaj, Jahve, u kakvoj sam tjeskobi,",
+            "moja utroba strepi,",
+            "srce mi se u grudima grči",
+            "jer bijah opako prkosan!",
+            "Vani mač pokosi moje sinove,",
+            "a unutra – smrt."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "ŠIN Čuj kako stenjem: nema mi tješitelja! Svi neprijatelji čuju za moju nesreću i likuju što si to učinio! Daj da dođe dan što si ga objavio, da njima bude kao meni.",
+          "lines": [
+            "ŠIN Čuj kako stenjem:",
+            "nema mi tješitelja!",
+            "Svi neprijatelji čuju za moju nesreću",
+            "i likuju što si to učinio!",
+            "Daj da dođe dan što si ga objavio,",
+            "da njima bude kao meni."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "TAU Neka se pokaže sva njina zloća pred licem tvojim, a onda postupaj s njima kao što si sa mnom postupio za sve grijehe moje! Jer samo uzdišem, a srce moje tuguje.",
+          "lines": [
+            "TAU Neka se pokaže sva njina zloća pred licem tvojim,",
+            "a onda postupaj s njima",
+            "kao što si sa mnom postupio",
+            "za sve grijehe moje!",
+            "Jer samo uzdišem,",
+            "a srce moje tuguje."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 22,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "ALEF Kako mrakom zastrije Gospod u svom gnjevu Kćer sionsku. S neba na zemlju baci slavu Izraelovu! I ne sjeti se podnožja svoga u dan gnjeva svojega!",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "DRUGA TUŽALJKA"
+            }
+          ],
+          "lines": [
+            "ALEF Kako mrakom zastrije Gospod",
+            "u svom gnjevu Kćer sionsku.",
+            "S neba na zemlju baci",
+            "slavu Izraelovu!",
+            "I ne sjeti se podnožja svoga",
+            "u dan gnjeva svojega!"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "BET Bez milosti Gospod satrije sve stanove Jakovljeve, u svom gnjevu razori tvrđave kćeri Judine; sa zemljom je sravnio i prokleo kraljevstvo i njegove knezove.",
+          "lines": [
+            "BET Bez milosti Gospod satrije",
+            "sve stanove Jakovljeve,",
+            "u svom gnjevu razori",
+            "tvrđave kćeri Judine;",
+            "sa zemljom je sravnio i prokleo",
+            "kraljevstvo i njegove knezove."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "GIMEL U rasplamtjelom gnjevu svojem razbi svu snagu Izraelovu, povuče svoju desnicu pred neprijateljem; u Jakovu raspiri plamen ognjeni koji sve uokolo proždire.",
+          "lines": [
+            "GIMEL U rasplamtjelom gnjevu svojem",
+            "razbi svu snagu Izraelovu,",
+            "povuče svoju desnicu",
+            "pred neprijateljem;",
+            "u Jakovu raspiri plamen ognjeni",
+            "koji sve uokolo proždire."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "DALET Nategao je lûk k’o neprijatelj, kao dušman ispružio desnicu, ubijajući sve što mu drago bijaše. Na šator Kćeri sionske sasu k’o oganj gnjev svoj jarosni.",
+          "lines": [
+            "DALET Nategao je lûk k’o neprijatelj,",
+            "kao dušman ispružio desnicu,",
+            "ubijajući sve",
+            "što mu drago bijaše.",
+            "Na šator Kćeri sionske",
+            "sasu k’o oganj gnjev svoj jarosni."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "HE K’o neprijatelj Gospod bijaše: razorio je Izraela, razorio sve dvore njegove, porušio njegove utvrde, umnožio kćeri Judinoj uzdisaje i jecaje.",
+          "lines": [
+            "HE K’o neprijatelj Gospod bijaše:",
+            "razorio je Izraela,",
+            "razorio sve dvore njegove,",
+            "porušio njegove utvrde,",
+            "umnožio kćeri Judinoj",
+            "uzdisaje i jecaje."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "VAU Kao vrtu razvali mu sjenicu, razori mjesto sastanka. Baci Jahve u zaborav svetkovine i subote na Sionu; u gnjevu svojem prezre kralja i svećenika.",
+          "lines": [
+            "VAU Kao vrtu razvali mu sjenicu,",
+            "razori mjesto sastanka.",
+            "Baci Jahve u zaborav",
+            "svetkovine i subote na Sionu;",
+            "u gnjevu svojem prezre",
+            "kralja i svećenika."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "ZAJIN Svoj oltar je Gospod odbacio, zgadilo mu se svetište njegovo. U ruke neprijatelja je predao bedeme svoje i dvorove. Bučili su u domu Jahvinu, kao u dan blagdanji.",
+          "lines": [
+            "ZAJIN Svoj oltar je Gospod odbacio,",
+            "zgadilo mu se svetište njegovo.",
+            "U ruke neprijatelja je predao",
+            "bedeme svoje i dvorove.",
+            "Bučili su u domu Jahvinu,",
+            "kao u dan blagdanji."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "HET Jahve naumi razvaliti zidove Kćeri sionske. Nape uže mjerničko, ne ustegnu ruku od rušenja. Predziđe, zidine zavi u tugu: oronuše zajedno.",
+          "lines": [
+            "HET Jahve naumi razvaliti",
+            "zidove Kćeri sionske.",
+            "Nape uže mjerničko,",
+            "ne ustegnu ruku od rušenja.",
+            "Predziđe, zidine zavi u tugu:",
+            "oronuše zajedno."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "TET Vrata njina utonuše u zemlju, on im je razbio zasune; kralj i knezovi su među pucima, Zakona nema! Ni u prorokâ više se ne nalaze viđenja Jahvina.",
+          "lines": [
+            "TET Vrata njina utonuše u zemlju,",
+            "on im je razbio zasune;",
+            "kralj i knezovi su među pucima,",
+            "Zakona nema!",
+            "Ni u prorokâ više se ne nalaze",
+            "viđenja Jahvina."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "JOD Starješine Kćeri sionske na zemlji sjede i šute, posiplju glavu prašinom, kostrijet pripasuju. K zemlji glave obaraju djevice jeruzalemske.",
+          "lines": [
+            "JOD Starješine Kćeri sionske",
+            "na zemlji sjede i šute,",
+            "posiplju glavu prašinom,",
+            "kostrijet pripasuju.",
+            "K zemlji glave obaraju",
+            "djevice jeruzalemske."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "KAF Iščilješe mi oči od suza, utroba moja ustreptala, jetra mi se na zemlju prosula zbog sloma kćeri naroda mojega, jer djeca i dojenčad umiru po trgovima Grada.",
+          "lines": [
+            "KAF Iščilješe mi oči od suza,",
+            "utroba moja ustreptala,",
+            "jetra mi se na zemlju prosula",
+            "zbog sloma kćeri naroda mojega,",
+            "jer djeca i dojenčad umiru",
+            "po trgovima Grada."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "LAMED Govore majkama svojim: »Gdje je žito i vino?« dok obamiru kao ranjeni po trgovima Grada, dok ispuštaju dušu svoju na grudima matera svojih.",
+          "lines": [
+            "LAMED Govore majkama svojim:",
+            "»Gdje je žito i vino?«",
+            "dok obamiru kao ranjeni",
+            "po trgovima Grada,",
+            "dok ispuštaju dušu svoju",
+            "na grudima matera svojih."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "MEM S čime da te prispodobim? Na koga si nalik, Kćeri jeruzalemska? S kime da te usporedim, kako utješim, djevice, Kćeri sionska? Jer kao more tvoja je nesreća neizmjerna. Tko će te iscijeliti?",
+          "lines": [
+            "MEM S čime da te prispodobim? Na koga si nalik,",
+            "Kćeri jeruzalemska?",
+            "S kime da te usporedim, kako utješim,",
+            "djevice, Kćeri sionska?",
+            "Jer kao more tvoja je nesreća neizmjerna.",
+            "Tko će te iscijeliti?"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "NUN Viđenja tvojih proroka bijahu varka i laž, oni nisu objavili krivnju tvoju da te od izgnanstva odvrate. Varali su te utvarama lažnim i zamamnim.",
+          "lines": [
+            "NUN Viđenja tvojih proroka",
+            "bijahu varka i laž,",
+            "oni nisu objavili krivnju tvoju",
+            "da te od izgnanstva odvrate.",
+            "Varali su te utvarama",
+            "lažnim i zamamnim."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "SAMEK Nad tobom plješću rukama svi koji putem prolaze, zvižde i vrte glavom zbog Kćeri jeruzalemske: »Je li to grad na glasu ljepotom, radost svemu svijetu?«",
+          "lines": [
+            "SAMEK Nad tobom plješću rukama",
+            "svi koji putem prolaze,",
+            "zvižde i vrte glavom",
+            "zbog Kćeri jeruzalemske:",
+            "»Je li to grad na glasu ljepotom,",
+            "radost svemu svijetu?«"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "AJIN Na tebe otvaraju usta svi neprijatelji tvoji, zvižde, škrguću zubima i govore: »Proždrijesmo je! To je dan za kojim čeznusmo, doživjesmo, vidjesmo!«",
+          "lines": [
+            "AJIN Na tebe otvaraju usta",
+            "svi neprijatelji tvoji,",
+            "zvižde, škrguću zubima",
+            "i govore: »Proždrijesmo je!",
+            "To je dan za kojim čeznusmo,",
+            "doživjesmo, vidjesmo!«"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "PE Jahve izvrši naum svoj, održa svoju riječ koju naredi u davnim danima: nemilice te razorio. Neprijatelj likuje zbog tebe, tvoj protivnik rog svoj podiže.",
+          "lines": [
+            "PE Jahve izvrši naum svoj,",
+            "održa svoju riječ",
+            "koju naredi u davnim danima:",
+            "nemilice te razorio.",
+            "Neprijatelj likuje zbog tebe,",
+            "tvoj protivnik rog svoj podiže."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "SADE U sav glas viči Gospodu, jecaj, Kćeri sionska! Neka k’o potok teku tvoje suze danju i noću. Ne daj počinka sebi, neka se zjenica oka tvoga ne odmori.",
+          "lines": [
+            "SADE U sav glas viči Gospodu,",
+            "jecaj, Kćeri sionska!",
+            "Neka k’o potok teku tvoje suze",
+            "danju i noću.",
+            "Ne daj počinka sebi,",
+            "neka se zjenica oka tvoga ne odmori."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "KOF Ustani, viči noću za svake promjene straže. K’o vodu izlij srce pred licem Gospodnjim, k njemu podiži ruke i traži milost za svoju nejačad koja od glada obamire po uglovima ulica.",
+          "lines": [
+            "KOF Ustani, viči noću",
+            "za svake promjene straže.",
+            "K’o vodu izlij srce",
+            "pred licem Gospodnjim,",
+            "k njemu podiži ruke",
+            "i traži milost za svoju nejačad",
+            "koja od glada obamire",
+            "po uglovima ulica."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "REŠ Pogledaj, Jahve, i vidi kome si to učinio. Zar žene da jedu porod svoj, djecu što njišu u naručju? Zar moradoše biti poklani u svetištu Gospodnjem svećenici i proroci?",
+          "lines": [
+            "REŠ Pogledaj, Jahve, i vidi",
+            "kome si to učinio.",
+            "Zar žene da jedu porod svoj,",
+            "djecu što njišu u naručju?",
+            "Zar moradoše biti poklani u svetištu Gospodnjem",
+            "svećenici i proroci?"
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "ŠIN U uličnoj prašini leže djeca i starci; moje djevice i moji mladići od mača padoše. Ti ih pomori u dan gnjeva svojega, ti ih pokla nemilice.",
+          "lines": [
+            "ŠIN U uličnoj prašini leže",
+            "djeca i starci;",
+            "moje djevice i moji mladići",
+            "od mača padoše.",
+            "Ti ih pomori u dan gnjeva svojega,",
+            "ti ih pokla nemilice."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "TAU Ti si, kao na dan svečani, sa svih strana sazvao užase moje. U dan gnjeva Jahvina nitko nije preživio, nitko se nije spasio. One koje sam odnjihala i odgojila neprijatelj moj sve je istrijebio.",
+          "lines": [
+            "TAU Ti si, kao na dan svečani,",
+            "sa svih strana sazvao užase moje.",
+            "U dan gnjeva Jahvina",
+            "nitko nije preživio, nitko se nije spasio.",
+            "One koje sam odnjihala i odgojila",
+            "neprijatelj moj sve je istrijebio."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 66,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "ALEF Ja sam čovjek što upozna bijedu pod šibom gnjeva njegova.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "TREĆA TUŽALJKA"
+            }
+          ],
+          "lines": [
+            "ALEF Ja sam čovjek što upozna bijedu",
+            "pod šibom gnjeva njegova."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Mene je odveo i natjerao da hodam u tmini i bez svjetlosti.",
+          "lines": [
+            "Mene je odveo i natjerao da hodam",
+            "u tmini i bez svjetlosti."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "I upravo mene bije i udara bez prestanka njegova ruka.",
+          "lines": [
+            "I upravo mene bije i udara",
+            "bez prestanka njegova ruka."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "BET Iscijedio je moje meso, kožu moju, polomio kosti moje.",
+          "lines": [
+            "BET Iscijedio je moje meso, kožu moju,",
+            "polomio kosti moje."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Načinio mi jaram, glavu obrubio tegobama.",
+          "lines": [
+            "Načinio mi jaram,",
+            "glavu obrubio tegobama."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Pustio me da živim u tminama kao mrtvaci vječiti.",
+          "lines": [
+            "Pustio me da živim u tminama",
+            "kao mrtvaci vječiti."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "GIMEL Zazidao me, i ja ne mogu izaći, otežao je moje okove.",
+          "lines": [
+            "GIMEL Zazidao me, i ja ne mogu izaći,",
+            "otežao je moje okove."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Kada sam vikao i zapomagao, molitvu je moju odbijao.",
+          "lines": [
+            "Kada sam vikao i zapomagao,",
+            "molitvu je moju odbijao."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Zazidao mi ceste tesanim kamenom, zakrčio je putove moje.",
+          "lines": [
+            "Zazidao mi ceste tesanim kamenom,",
+            "zakrčio je putove moje."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "DALET Meni on bijaše medvjed koji vreba, lav u zasjedi.",
+          "lines": [
+            "DALET Meni on bijaše medvjed koji vreba,",
+            "lav u zasjedi."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "U bespuća me vodio, razdirao, ostavljao me da umirem.",
+          "lines": [
+            "U bespuća me vodio, razdirao,",
+            "ostavljao me da umirem."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Napinjao je lûk svoj i gađao me kao metu za svoje strelice.",
+          "lines": [
+            "Napinjao je lûk svoj i gađao me",
+            "kao metu za svoje strelice."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "HE U slabine mi sasuo strelice, sinove svoga tobolca.",
+          "lines": [
+            "HE U slabine mi sasuo strelice,",
+            "sinove svoga tobolca."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Postao sam smiješan svome narodu, rugalica svakidašnja.",
+          "lines": [
+            "Postao sam smiješan svome narodu,",
+            "rugalica svakidašnja."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Gorčinom me hranio, pelinom me napajao.",
+          "lines": [
+            "Gorčinom me hranio,",
+            "pelinom me napajao."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "VAU Puštao me da zube kršim kamen grizući, zakapao me u pepeo.",
+          "lines": [
+            "VAU Puštao me da zube kršim kamen grizući,",
+            "zakapao me u pepeo."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Duši je mojoj oduzet mir i više ne znam što je sreća!",
+          "lines": [
+            "Duši je mojoj oduzet mir",
+            "i više ne znam što je sreća!"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Rekoh: »Dotrajao je život moj i nada koja mi od Jahve dolazi.«",
+          "lines": [
+            "Rekoh: »Dotrajao je život moj",
+            "i nada koja mi od Jahve dolazi.«"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "ZAJIN Spomeni se bijede moje i stradanja, pelina i otrova!",
+          "lines": [
+            "ZAJIN Spomeni se bijede moje i stradanja,",
+            "pelina i otrova!"
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Bez prestanka na to misli i sahne duša u meni.",
+          "lines": [
+            "Bez prestanka na to misli",
+            "i sahne duša u meni."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "To nosim u srcu i gajim nadu u sebi.",
+          "lines": [
+            "To nosim u srcu",
+            "i gajim nadu u sebi."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "HET Dobrota Jahvina nije nestala, milosrđe njegovo nije presušilo.",
+          "lines": [
+            "HET Dobrota Jahvina nije nestala,",
+            "milosrđe njegovo nije presušilo."
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "Oni se obnavljaju svako jutro: tvoja je vjernost velika!",
+          "lines": [
+            "Oni se obnavljaju svako jutro:",
+            "tvoja je vjernost velika!"
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "»Jahve je dio moj«, veli mi duša, »i zato se u nj pouzdajem.«",
+          "lines": [
+            "»Jahve je dio moj«, veli mi duša,",
+            "»i zato se u nj pouzdajem.«"
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "TET Dobar je Jahve onom koji se u nj pouzdaje, duši koja ga traži.",
+          "lines": [
+            "TET Dobar je Jahve onom koji se u nj pouzdaje,",
+            "duši koja ga traži."
+          ]
+        },
+        {
+          "verse": 26,
+          "text": "Dobro je u miru čekati spasenje Jahvino!",
+          "lines": [
+            "Dobro je u miru čekati",
+            "spasenje Jahvino!"
+          ]
+        },
+        {
+          "verse": 27,
+          "text": "Dobro je čovjeku da nosi jaram za svoje mladosti.",
+          "lines": [
+            "Dobro je čovjeku da nosi",
+            "jaram za svoje mladosti."
+          ]
+        },
+        {
+          "verse": 28,
+          "text": "JOD Neka sjedi u samoći i šuti, jer mu On to nametnu;",
+          "lines": [
+            "JOD Neka sjedi u samoći i šuti,",
+            "jer mu On to nametnu;"
+          ]
+        },
+        {
+          "verse": 29,
+          "text": "neka usne priljubi uz prašinu, možda još ima nade!",
+          "lines": [
+            "neka usne priljubi uz prašinu,",
+            "možda još ima nade!"
+          ]
+        },
+        {
+          "verse": 30,
+          "text": "Neka pruži obraz onome koji ga bije, neka se zasiti porugom.",
+          "lines": [
+            "Neka pruži obraz onome koji ga bije,",
+            "neka se zasiti porugom."
+          ]
+        },
+        {
+          "verse": 31,
+          "text": "KAF Jer Gospod ne odbacuje nikoga zauvijek:",
+          "lines": [
+            "KAF Jer Gospod ne odbacuje",
+            "nikoga zauvijek:"
+          ]
+        },
+        {
+          "verse": 32,
+          "text": "jer ako i rastuži, on se smiluje po svojoj velikoj ljubavi.",
+          "lines": [
+            "jer ako i rastuži, on se smiluje",
+            "po svojoj velikoj ljubavi."
+          ]
+        },
+        {
+          "verse": 33,
+          "text": "Jer samo nerado on ponižava i rascvili sinove čovjeka.",
+          "lines": [
+            "Jer samo nerado on ponižava",
+            "i rascvili sinove čovjeka."
+          ]
+        },
+        {
+          "verse": 34,
+          "text": "LAMED Kad se gaze nogama svi zemaljski sužnjevi,",
+          "lines": [
+            "LAMED Kad se gaze nogama",
+            "svi zemaljski sužnjevi,"
+          ]
+        },
+        {
+          "verse": 35,
+          "text": "kad se izvrće pravica čovjeku pred licem Svevišnjeg,",
+          "lines": [
+            "kad se izvrće pravica čovjeku",
+            "pred licem Svevišnjeg,"
+          ]
+        },
+        {
+          "verse": 36,
+          "text": "kad se krivica nanosi čovjeku u parnici, zar Gospod ne vidi?",
+          "lines": [
+            "kad se krivica nanosi čovjeku u parnici,",
+            "zar Gospod ne vidi?"
+          ]
+        },
+        {
+          "verse": 37,
+          "text": "MEM Tko je rekao nešto i zbilo se? Nije li Gospod to zapovjedio?",
+          "lines": [
+            "MEM Tko je rekao nešto i zbilo se?",
+            "Nije li Gospod to zapovjedio?"
+          ]
+        },
+        {
+          "verse": 38,
+          "text": "Ne dolazi li iz usta Svevišnjega i dobro i zlo?",
+          "lines": [
+            "Ne dolazi li iz usta Svevišnjega",
+            "i dobro i zlo?"
+          ]
+        },
+        {
+          "verse": 39,
+          "text": "Na što se tuže živi ljudi? Svatko na svoj grijeh.",
+          "lines": [
+            "Na što se tuže živi ljudi?",
+            "Svatko na svoj grijeh."
+          ]
+        },
+        {
+          "verse": 40,
+          "text": "NUN Ispitajmo, pretražimo pute svoje i vratimo se Jahvi.",
+          "lines": [
+            "NUN Ispitajmo, pretražimo pute svoje",
+            "i vratimo se Jahvi."
+          ]
+        },
+        {
+          "verse": 41,
+          "text": "Dignimo svoje srce i ruke svoje k Bogu koji je na nebesima.",
+          "lines": [
+            "Dignimo svoje srce i ruke svoje",
+            "k Bogu koji je na nebesima."
+          ]
+        },
+        {
+          "verse": 42,
+          "text": "Da, mi smo se odmetali, bili nepokorni, a ti, ti nisi praštao!",
+          "lines": [
+            "Da, mi smo se odmetali, bili nepokorni,",
+            "a ti, ti nisi praštao!"
+          ]
+        },
+        {
+          "verse": 43,
+          "text": "SAMEK Obastrt gnjevom svojim, gonio si nas, ubijao i nisi štedio.",
+          "lines": [
+            "SAMEK Obastrt gnjevom svojim, gonio si nas,",
+            "ubijao i nisi štedio."
+          ]
+        },
+        {
+          "verse": 44,
+          "text": "Oblakom si se obastro da molitva ne prodre do tebe.",
+          "lines": [
+            "Oblakom si se obastro",
+            "da molitva ne prodre do tebe."
+          ]
+        },
+        {
+          "verse": 45,
+          "text": "Načinio si od nas smeće i odmet među narodima.",
+          "lines": [
+            "Načinio si od nas smeće",
+            "i odmet među narodima."
+          ]
+        },
+        {
+          "verse": 46,
+          "text": "PE Razjapili usta na nas svi neprijatelji naši.",
+          "lines": [
+            "PE Razjapili usta na nas",
+            "svi neprijatelji naši."
+          ]
+        },
+        {
+          "verse": 47,
+          "text": "Užas i jama bila nam sudbina, propast i zator!",
+          "lines": [
+            "Užas i jama bila nam sudbina,",
+            "propast i zator!"
+          ]
+        },
+        {
+          "verse": 48,
+          "text": "Potoci suza teku iz očiju mojih zbog propasti Kćeri naroda mojega.",
+          "lines": [
+            "Potoci suza teku iz očiju mojih",
+            "zbog propasti Kćeri naroda mojega."
+          ]
+        },
+        {
+          "verse": 49,
+          "text": "AJIN Moje oči liju suze bez prestanka, jer prestanka nema",
+          "lines": [
+            "AJIN Moje oči liju suze bez prestanka,",
+            "jer prestanka nema"
+          ]
+        },
+        {
+          "verse": 50,
+          "text": "dok ne pogleda i ne vidi Jahve s nebesa.",
+          "lines": [
+            "dok ne pogleda i ne vidi",
+            "Jahve s nebesa."
+          ]
+        },
+        {
+          "verse": 51,
+          "text": "Moje mi oko bol zadaje zbog kćeri svih mojega grada.",
+          "lines": [
+            "Moje mi oko bol zadaje",
+            "zbog kćeri svih mojega grada."
+          ]
+        },
+        {
+          "verse": 52,
+          "text": "SADE Uporno me k’o pticu progone svi što me mrze, a bez razloga.",
+          "lines": [
+            "SADE Uporno me k’o pticu progone",
+            "svi što me mrze, a bez razloga."
+          ]
+        },
+        {
+          "verse": 53,
+          "text": "U jamu baciše moj život i zatrpaše je kamenjem.",
+          "lines": [
+            "U jamu baciše moj život",
+            "i zatrpaše je kamenjem."
+          ]
+        },
+        {
+          "verse": 54,
+          "text": "Voda mi dođe preko glave, rekoh sam sebi: »Pogiboh!«",
+          "lines": [
+            "Voda mi dođe preko glave,",
+            "rekoh sam sebi: »Pogiboh!«"
+          ]
+        },
+        {
+          "verse": 55,
+          "text": "KOF I tada zazvah ime tvoje, Jahve, iz najdublje jame.",
+          "lines": [
+            "KOF I tada zazvah ime tvoje, Jahve,",
+            "iz najdublje jame."
+          ]
+        },
+        {
+          "verse": 56,
+          "text": "Ti oču moj glas: »Ne začepljuj uši svoje na vapaje moje.«",
+          "lines": [
+            "Ti oču moj glas:",
+            "»Ne začepljuj uši svoje na vapaje moje.«"
+          ]
+        },
+        {
+          "verse": 57,
+          "text": "Bliz meni bijaše u dan vapaja mog, govoraše: »Ne boj se!«",
+          "lines": [
+            "Bliz meni bijaše u dan vapaja mog,",
+            "govoraše: »Ne boj se!«"
+          ]
+        },
+        {
+          "verse": 58,
+          "text": "REŠ Ti si, Gospode, izborio pravdu za dušu moju, ti si život moj izbavio.",
+          "lines": [
+            "REŠ Ti si, Gospode, izborio pravdu za dušu moju,",
+            "ti si život moj izbavio."
+          ]
+        },
+        {
+          "verse": 59,
+          "text": "Ti, Jahve, vidje kako me tlače, dosudi mi pravdu.",
+          "lines": [
+            "Ti, Jahve, vidje kako me tlače,",
+            "dosudi mi pravdu."
+          ]
+        },
+        {
+          "verse": 60,
+          "text": "Ti vidje svu osvetu njinu, sve podvale protiv mene.",
+          "lines": [
+            "Ti vidje svu osvetu njinu,",
+            "sve podvale protiv mene."
+          ]
+        },
+        {
+          "verse": 61,
+          "text": "ŠIN Čuo si, Jahve, podrugivanje njihovo, sve podvale protiv mene.",
+          "lines": [
+            "ŠIN Čuo si, Jahve, podrugivanje njihovo,",
+            "sve podvale protiv mene."
+          ]
+        },
+        {
+          "verse": 62,
+          "text": "Usne protivnika mojih i misli njine protiv mene su cio dan.",
+          "lines": [
+            "Usne protivnika mojih i misli njine",
+            "protiv mene su cio dan."
+          ]
+        },
+        {
+          "verse": 63,
+          "text": "Kad sjede, kad ustaju, pogledaj samo: ja sam im pjesma rugalica.",
+          "lines": [
+            "Kad sjede, kad ustaju, pogledaj samo:",
+            "ja sam im pjesma rugalica."
+          ]
+        },
+        {
+          "verse": 64,
+          "text": "TAU Vrati im, Jahve, milo za drago, po djelu ruku njihovih.",
+          "lines": [
+            "TAU Vrati im, Jahve, milo za drago,",
+            "po djelu ruku njihovih."
+          ]
+        },
+        {
+          "verse": 65,
+          "text": "Učini da srca im otvrdnu, udari ih prokletstvom svojim.",
+          "lines": [
+            "Učini da srca im otvrdnu,",
+            "udari ih prokletstvom svojim."
+          ]
+        },
+        {
+          "verse": 66,
+          "text": "Goni ih gnjevno i sve ih istrijebi pod nebesima svojim, Jahve!",
+          "lines": [
+            "Goni ih gnjevno i sve ih istrijebi",
+            "pod nebesima svojim, Jahve!"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 22,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "ALEF Jao, potamnje zlato, to suho zlato! Sveto se kamenje prosu na uglovima svih ulica.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "ČETVRTA TUŽALJKA"
+            }
+          ],
+          "lines": [
+            "ALEF Jao, potamnje zlato,",
+            "to suho zlato!",
+            "Sveto se kamenje prosu",
+            "na uglovima svih ulica."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "BET Sinovi sionski, nekoć cijenjeni kao najčišće zlato, ah, sada ih cijene kao sudove glinske, kao djelo ruku lončarevih!",
+          "lines": [
+            "BET Sinovi sionski, nekoć cijenjeni",
+            "kao najčišće zlato,",
+            "ah, sada ih cijene kao sudove glinske,",
+            "kao djelo ruku lončarevih!"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "GIMEL Čak i šakali pružaju dojke i doje mladunčad, ali kćeri naroda moga postaše okrutne kao nojevi u pustinji.",
+          "lines": [
+            "GIMEL Čak i šakali pružaju dojke",
+            "i doje mladunčad,",
+            "ali kćeri naroda moga postaše okrutne",
+            "kao nojevi u pustinji."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "DALET Jezik dojenčeta za nepce se lijepi od žeđi. Djeca vape za kruhom, a nikog da im ga pruži.",
+          "lines": [
+            "DALET Jezik dojenčeta",
+            "za nepce se lijepi od žeđi.",
+            "Djeca vape za kruhom,",
+            "a nikog da im ga pruži."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "HE Oni što se nekoć sladiše biranim jelima ginu po ulicama; nekoć nošeni u grimizu, sada se valjaju po buništu.",
+          "lines": [
+            "HE Oni što se nekoć sladiše biranim jelima",
+            "ginu po ulicama;",
+            "nekoć nošeni u grimizu,",
+            "sada se valjaju po buništu."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "VAU Veći bijaše zločin Kćeri naroda moga od grijeha Sodome, što u tren oka bi razorena, a ničija se ruka ne diže na nju.",
+          "lines": [
+            "VAU Veći bijaše zločin Kćeri naroda moga",
+            "od grijeha Sodome,",
+            "što u tren oka bi razorena,",
+            "a ničija se ruka ne diže na nju."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "ZAJIN Njeni mladići bijahu nekoć čišći od snijega, bjelji od mlijeka, od koralja rumenija bijahu im tijela, lice glatko k’o safir.",
+          "lines": [
+            "ZAJIN Njeni mladići bijahu nekoć čišći od snijega,",
+            "bjelji od mlijeka,",
+            "od koralja rumenija bijahu im tijela,",
+            "lice glatko k’o safir."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "HET Sad im je obraz crnji od čađe, ne prepoznaju se više na ulici. Koža im se lijepi za kosti, suha kao drvo.",
+          "lines": [
+            "HET Sad im je obraz crnji od čađe,",
+            "ne prepoznaju se više na ulici.",
+            "Koža im se lijepi za kosti,",
+            "suha kao drvo."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "TET Kako su sretni oni što ih mač probode, sretniji od onih koje pomori glad; koji padaju, iscrpljeni, jer im nedostaju plodovi zemljini.",
+          "lines": [
+            "TET Kako su sretni oni što ih mač probode,",
+            "sretniji od onih koje pomori glad;",
+            "koji padaju, iscrpljeni,",
+            "jer im nedostaju plodovi zemljini."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "JOD Žene, tako nježne, kuhaše djecu svoju, njima se hraniše za propasti Kćeri naroda moga.",
+          "lines": [
+            "JOD Žene, tako nježne,",
+            "kuhaše djecu svoju,",
+            "njima se hraniše",
+            "za propasti Kćeri naroda moga."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "KAF Jahve je utolio svoj bijes, izlio jarosnu srdžbu svoju, na Sionu raspirio požar što sažiže i same temelje njegove.",
+          "lines": [
+            "KAF Jahve je utolio svoj bijes,",
+            "izlio jarosnu srdžbu svoju,",
+            "na Sionu raspirio požar",
+            "što sažiže i same temelje njegove."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "LAMED Nisu vjerovali kraljevi zemaljski ni svekoliko stanovništvo zemlje da će ugnjetač i neprijatelj ući na vrata jeruzalemska –",
+          "lines": [
+            "LAMED Nisu vjerovali kraljevi zemaljski",
+            "ni svekoliko stanovništvo zemlje",
+            "da će ugnjetač i neprijatelj",
+            "ući na vrata jeruzalemska –"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "MEM zbog grijeha svojih proroka, zbog bezakonja svećenikâ koji usred grada prolijevahu krv pravednikâ!",
+          "lines": [
+            "MEM zbog grijeha svojih proroka,",
+            "zbog bezakonja svećenikâ",
+            "koji usred grada prolijevahu",
+            "krv pravednikâ!"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "NUN K’o slijepi teturahu ulicama, omašteni krvlju, te nitko nije smio da se takne odjeće njihove.",
+          "lines": [
+            "NUN K’o slijepi teturahu ulicama,",
+            "omašteni krvlju,",
+            "te nitko nije smio da se takne",
+            "odjeće njihove."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "SAMEK »Natrag, nečisti!« – viču im. »Natrag! Ne dirajte!« I tada pobjegoše poganima, al’ ne smjedoše ondje ostati.",
+          "lines": [
+            "SAMEK »Natrag, nečisti!« – viču im.",
+            "»Natrag! Ne dirajte!«",
+            "I tada pobjegoše poganima,",
+            "al’ ne smjedoše ondje ostati."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "PE Raspršilo ih lice Jahvino, on ih više nije gledao. Ne poštuju više svećenikâ, ne sažaljuju staraca.",
+          "lines": [
+            "PE Raspršilo ih lice Jahvino,",
+            "on ih više nije gledao.",
+            "Ne poštuju više svećenikâ,",
+            "ne sažaljuju staraca."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "AJIN Već nam oči iščilješe iščekujući pomoć, ali uzalud; s kula naših zureć’ u daljinu očekivasmo narod koji nas ne može spasiti.",
+          "lines": [
+            "AJIN Već nam oči iščilješe",
+            "iščekujući pomoć, ali uzalud;",
+            "s kula naših zureć’ u daljinu",
+            "očekivasmo narod koji nas ne može spasiti."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "SADE Vrebaju nam na korake da ne hodamo po trgovima svojim. Bliži nam se kraj, navršili nam se dani, naš konac dolazi.",
+          "lines": [
+            "SADE Vrebaju nam na korake",
+            "da ne hodamo po trgovima svojim.",
+            "Bliži nam se kraj, navršili nam se dani,",
+            "naš konac dolazi."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "KOF Naši gonitelji bijahu brži od orlova na nebu; u planini nas ganjahu, u pustinji dočekivahu u zasjedi.",
+          "lines": [
+            "KOF Naši gonitelji bijahu brži",
+            "od orlova na nebu;",
+            "u planini nas ganjahu,",
+            "u pustinji dočekivahu u zasjedi."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "REŠ Naš životni dah, Jahvin pomazanik, pade u njihove jame – on za koga govorasmo: »U sjeni njegovoj živjet ćemo među narodima.«",
+          "lines": [
+            "REŠ Naš životni dah, Jahvin pomazanik,",
+            "pade u njihove jame –",
+            "on za koga govorasmo: »U sjeni njegovoj",
+            "živjet ćemo među narodima.«"
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "ŠIN Raduj se i veseli se, Kćeri edomska, ti koja živiš u zemlji Usu: doći će i do tebe čaša, opit ćeš se i razgoliti.",
+          "lines": [
+            "ŠIN Raduj se i veseli se, Kćeri edomska,",
+            "ti koja živiš u zemlji Usu:",
+            "doći će i do tebe čaša,",
+            "opit ćeš se i razgoliti."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "TAU Tvoj grijeh je iskupljen, Kćeri sionska, neće te više u izgnanstvo voditi. Kaznit će opačinu tvoju, Kćeri edomska, razotkriti grijehe tvoje.",
+          "lines": [
+            "TAU Tvoj grijeh je iskupljen, Kćeri sionska,",
+            "neće te više u izgnanstvo voditi.",
+            "Kaznit će opačinu tvoju, Kćeri edomska,",
+            "razotkriti grijehe tvoje."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verse_count": 22,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Spomeni se, Jahve, što nas je snašlo, pogledaj, vidi sramotu našu!",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "PETA TUŽALJKA"
+            }
+          ],
+          "lines": [
+            "Spomeni se, Jahve, što nas je snašlo,",
+            "pogledaj, vidi sramotu našu!"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Baština naša pade u ruke strancima, domovi naši pripadoše tuđincima.",
+          "lines": [
+            "Baština naša pade u ruke strancima,",
+            "domovi naši pripadoše tuđincima."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Siročad smo: oca nemamo, majke su nam kao udovice.",
+          "lines": [
+            "Siročad smo: oca nemamo,",
+            "majke su nam kao udovice."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Vodu što pijemo plaćamo novcem, i za drvo valja nam platiti.",
+          "lines": [
+            "Vodu što pijemo plaćamo novcem,",
+            "i za drvo valja nam platiti."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Jaram nam je o vratu, gone nas, iscrpljeni smo, ne daju nam predahnuti.",
+          "lines": [
+            "Jaram nam je o vratu, gone nas,",
+            "iscrpljeni smo, ne daju nam predahnuti."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Pružamo ruke k Egiptu i Asiriji da se kruha nasitimo.",
+          "lines": [
+            "Pružamo ruke k Egiptu i Asiriji",
+            "da se kruha nasitimo."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Oci naši zgriješiše i više ih nema, a mi nosimo krivice njihove.",
+          "lines": [
+            "Oci naši zgriješiše i više ih nema,",
+            "a mi nosimo krivice njihove."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Robovi nama zapovijedaju, a nitko da nas izbavi iz ruku njihovih.",
+          "lines": [
+            "Robovi nama zapovijedaju,",
+            "a nitko da nas izbavi iz ruku njihovih."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Kruh svoj donosimo izlažući život maču u pustinji.",
+          "lines": [
+            "Kruh svoj donosimo",
+            "izlažući život maču u pustinji."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Koža nam gori kao peć užarena, ognjicom od plamena gladi.",
+          "lines": [
+            "Koža nam gori kao peć užarena,",
+            "ognjicom od plamena gladi."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Oskvrnuli su žene na Sionu i djevice u gradovima judejskim.",
+          "lines": [
+            "Oskvrnuli su žene na Sionu",
+            "i djevice u gradovima judejskim."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Svojim su rukama vješali knezove, ni lica staračka nisu poštivali.",
+          "lines": [
+            "Svojim su rukama vješali knezove,",
+            "ni lica staračka nisu poštivali."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Mladići su nosili žrvnjeve, djeca padala pod bremenom drva.",
+          "lines": [
+            "Mladići su nosili žrvnjeve,",
+            "djeca padala pod bremenom drva."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Starci su ostavili vrata, mladići više ne sviraju na lirama.",
+          "lines": [
+            "Starci su ostavili vrata,",
+            "mladići više ne sviraju na lirama."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Radosti nesta iz naših srdaca, naš ples se pretvori u tugovanje.",
+          "lines": [
+            "Radosti nesta iz naših srdaca,",
+            "naš ples se pretvori u tugovanje."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Pao je vijenac s naše glave, jao nama što zgriješismo!",
+          "lines": [
+            "Pao je vijenac s naše glave,",
+            "jao nama što zgriješismo!"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Evo zašto nam srce boluje, evo zašto nam oči se zastiru:",
+          "lines": [
+            "Evo zašto nam srce boluje,",
+            "evo zašto nam oči se zastiru:"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "zato što gora sionska opustje i po njoj se šuljaju šakali.",
+          "lines": [
+            "zato što gora sionska opustje",
+            "i po njoj se šuljaju šakali."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Ali ti, Jahve, ostaješ zauvijek, tvoj je prijesto od koljena do koljena.",
+          "lines": [
+            "Ali ti, Jahve, ostaješ zauvijek,",
+            "tvoj je prijesto od koljena do koljena."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Zašto da nas zaboraviš zauvijek, da nas ostaviš za mnoge dane?",
+          "lines": [
+            "Zašto da nas zaboraviš zauvijek,",
+            "da nas ostaviš za mnoge dane?"
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "Vrati nas k sebi, Jahve, obratit ćemo se, obnovi dane naše kao što nekoć bijahu.",
+          "lines": [
+            "Vrati nas k sebi, Jahve, obratit ćemo se,",
+            "obnovi dane naše kao što nekoć bijahu."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Il’ nas hoćeš sasvim zabaciti i na nas se beskrajno srditi?",
+          "lines": [
+            "Il’ nas hoćeš sasvim zabaciti",
+            "i na nas se beskrajno srditi?"
+          ]
+        }
+      ]
+    }
+  ]
+}

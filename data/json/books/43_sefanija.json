@@ -1,0 +1,712 @@
+{
+  "order": 43,
+  "id": "sefanija",
+  "ks_book_id": 54,
+  "abbr": "Sef",
+  "title": "Sefanija",
+  "testament": "SZ",
+  "category": "Proroci",
+  "chapter_count": 3,
+  "verse_count": 53,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Riječ Jahvina upućena Sefaniji, sinu Kušija, sina Gedalijina, sina Amarjina, sina Ezekijina, u vrijeme Jošije, sina Amonova, kralja judejskoga.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Uvod"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "»Da, sve ću zbrisati s lica zemlje« – riječ je Jahvina!",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "I. DAN JAHVIN U JUDI"
+            },
+            {
+              "level": "h4",
+              "text": "Svemirski događaji"
+            }
+          ],
+          "lines": [
+            "»Da, sve ću zbrisati s lica zemlje« –",
+            "riječ je Jahvina!"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "»Izbrisat ću ljude i zvijeri, ptice nebeske i ribe morske, učinit ću da padnu bezbožnici, istrijebit ću ljude s lica zemlje« – riječ je Jahvina!",
+          "lines": [
+            "»Izbrisat ću ljude i zvijeri,",
+            "ptice nebeske i ribe morske,",
+            "učinit ću da padnu bezbožnici,",
+            "istrijebit ću ljude s lica zemlje« –",
+            "riječ je Jahvina!"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "»Podignut ću ruku na Judu i na sve stanovnike Jeruzalema i istrijebit ću iz ovoga mjesta ostatak Baalov, ime služitelja idolskih sa svećenicima njegovim;",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Protiv štovanja stranih bogova"
+            }
+          ],
+          "lines": [
+            "»Podignut ću ruku na Judu",
+            "i na sve stanovnike Jeruzalema",
+            "i istrijebit ću iz ovoga mjesta",
+            "ostatak Baalov,",
+            "ime služitelja idolskih sa svećenicima njegovim;"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "one koji se klanjaju na krovovima vojsci nebeskoj, one koji se klanjaju pred Jahvom a zaklinju se Milkomom;",
+          "lines": [
+            "one koji se klanjaju na krovovima",
+            "vojsci nebeskoj,",
+            "one koji se klanjaju pred Jahvom",
+            "a zaklinju se Milkomom;"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "one koji su se odmetnuli od Jahve, koji ne traže Jahvu i nimalo za nj ne mare.«",
+          "lines": [
+            "one koji su se odmetnuli od Jahve,",
+            "koji ne traže Jahvu",
+            "i nimalo za nj ne mare.«"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Tišina pred Jahvom Gospodom, jer je dan Jahvin blizu! Da, Jahve je prigotovio žrtvu, posvetio je svoje uzvanike.",
+          "lines": [
+            "Tišina pred Jahvom Gospodom,",
+            "jer je dan Jahvin blizu!",
+            "Da, Jahve je prigotovio žrtvu,",
+            "posvetio je svoje uzvanike."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "»U dan žrtve Jahvine, kaznit ću knezove, sinove kraljeve, i sve koji se oblače na način tuđinski.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Protiv dvorskih dostojanstvenika"
+            }
+          ],
+          "lines": [
+            "»U dan žrtve Jahvine,",
+            "kaznit ću knezove,",
+            "sinove kraljeve,",
+            "i sve koji se oblače",
+            "na način tuđinski."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Kaznit ću u taj dan sve koji preko praga poskakuju, koji dom Gospodara svojega pune nasiljem i prijevarom.«",
+          "lines": [
+            "Kaznit ću u taj dan",
+            "sve koji preko praga poskakuju,",
+            "koji dom Gospodara svojega pune",
+            "nasiljem i prijevarom.«"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "»U onaj dan« – riječ je Jahvina – »vapaj će se podići od Ribljih vrata, urlici iz novog dijela grada, silna lomljavina s brežuljaka.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Protiv jeruzalemskih trgovaca"
+            }
+          ],
+          "lines": [
+            "»U onaj dan« – riječ je Jahvina –",
+            "»vapaj će se podići od Ribljih vrata,",
+            "urlici iz novog dijela grada,",
+            "silna lomljavina s brežuljaka."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Kukajte, stanovnici makteški, jer je satrt sav narod kanaanski, zbrisani su svi mjerači srebra.«",
+          "lines": [
+            "Kukajte, stanovnici makteški,",
+            "jer je satrt sav narod kanaanski,",
+            "zbrisani su svi mjerači srebra.«"
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "»I u to vrijeme pretražit ću Jeruzalem sa zubljama i pohodit ću kaznom ljude koji miruju na svojoj vinskoj droždini i u svom srcu govore: ‘Jahve ne može učiniti ni dobro ni zlo.’«",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Protiv nevjernikâ"
+            }
+          ],
+          "lines": [
+            "»I u to vrijeme",
+            "pretražit ću Jeruzalem sa zubljama",
+            "i pohodit ću kaznom ljude",
+            "koji miruju na svojoj vinskoj droždini",
+            "i u svom srcu govore:",
+            "‘Jahve ne može učiniti",
+            "ni dobro ni zlo.’«"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Blago njihovo bit će prepušteno pljački, njihove kuće pustošenju. Oni su gradili kuće – neće u njima stanovati; sadili su vinograde – iz njih vina neće piti.",
+          "lines": [
+            "Blago njihovo bit će prepušteno pljački,",
+            "njihove kuće pustošenju.",
+            "Oni su gradili kuće –",
+            "neće u njima stanovati;",
+            "sadili su vinograde –",
+            "iz njih vina neće piti."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Blizu je dan Jahvin, veliki! Blizu je i žurno dolazi! Gorak je glas dana Jahvina: tada će i junak zajaukati.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Dan Jahvin"
+            }
+          ],
+          "lines": [
+            "Blizu je dan Jahvin, veliki!",
+            "Blizu je i žurno dolazi!",
+            "Gorak je glas dana Jahvina:",
+            "tada će i junak zajaukati."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Dan gnjeva, onaj dan! Dan tjeskobe i nevolje! Dan užasa i pustošenja! Dan pomrčine i naoblake! Dan tmina i magluština!",
+          "lines": [
+            "Dan gnjeva, onaj dan!",
+            "Dan tjeskobe i nevolje!",
+            "Dan užasa i pustošenja!",
+            "Dan pomrčine i naoblake!",
+            "Dan tmina i magluština!"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Dan trubljavine i bojne vike na gradove utvrđene i na visoka kruništa.",
+          "lines": [
+            "Dan trubljavine i bojne vike",
+            "na gradove utvrđene",
+            "i na visoka kruništa."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "»Prepustit ću ljude nevoljama i vrludat će kao slijepci (jer su protiv Jahve sagriješili), krv će se njihova prosuti kao prašina, njihova trupla bit će bačena kao smeće.",
+          "lines": [
+            "»Prepustit ću ljude nevoljama",
+            "i vrludat će kao slijepci",
+            "(jer su protiv Jahve sagriješili),",
+            "krv će se njihova prosuti kao prašina,",
+            "njihova trupla bit će bačena kao smeće."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Ni njihovo srebro ni njihovo zlato neće ih spasiti.« U dan gnjeva Jahvina oganj njegove revnosti svu će zemlju sažeći. Jer on će uništiti, zatrti sve stanovnike zemlje.",
+          "lines": [
+            "Ni njihovo srebro ni njihovo zlato",
+            "neće ih spasiti.«",
+            "U dan gnjeva Jahvina",
+            "oganj njegove revnosti",
+            "svu će zemlju sažeći.",
+            "Jer on će uništiti, zatrti",
+            "sve stanovnike zemlje."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 15,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Saberite se, skupite, narode bestidni",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Poziv na obraćenje"
+            }
+          ],
+          "lines": [
+            "Saberite se, skupite,",
+            "narode bestidni"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "prije nego budete izgnani kao pljeva koja se u dan rasprši, prije nego stigne na vas plamen i gnjev Jahvin, prije nego stigne na vas dan gnjeva Jahvina.",
+          "lines": [
+            "prije nego budete izgnani",
+            "kao pljeva koja se u dan rasprši,",
+            "prije nego stigne na vas",
+            "plamen i gnjev Jahvin,",
+            "prije nego stigne na vas",
+            "dan gnjeva Jahvina."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Tražite Jahvu, svi skromni na zemlji, svi koji izvršavate odredbe njegove! Tražite pravdu, tražite poniznost: vi ćete možda biti zaštićeni u dan gnjeva Jahvina.",
+          "lines": [
+            "Tražite Jahvu,",
+            "svi skromni na zemlji,",
+            "svi koji izvršavate odredbe njegove!",
+            "Tražite pravdu,",
+            "tražite poniznost:",
+            "vi ćete možda biti zaštićeni",
+            "u dan gnjeva Jahvina."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Da, Gaza će postati pustinja, Aškelon pustoš. Ašdod u puklo podne bit će izgnan, Ekron iz temelja iščupan.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "II. PROTIV NAROD┬"
+            },
+            {
+              "level": "h4",
+              "text": "Neprijatelj na zapadu: Filistejci"
+            }
+          ],
+          "lines": [
+            "Da, Gaza će postati pustinja,",
+            "Aškelon pustoš.",
+            "Ašdod u puklo podne bit će izgnan,",
+            "Ekron iz temelja iščupan."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Teško stanovnicima obale morske, narodu kretskome! Evo riječi Jahvine protivu vas: »Ja ću te poniziti, zemljo Filistejaca, uništit ću te, istrijebit ću sve tvoje stanovnike!",
+          "lines": [
+            "Teško stanovnicima obale morske,",
+            "narodu kretskome!",
+            "Evo riječi Jahvine protivu vas:",
+            "»Ja ću te poniziti, zemljo Filistejaca,",
+            "uništit ću te,",
+            "istrijebit ću sve tvoje stanovnike!"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "I postat ćeš ispaša, pasište pastirsko i ograda za stado.«",
+          "lines": [
+            "I postat ćeš ispaša,",
+            "pasište pastirsko",
+            "i ograda za stado.«"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "I taj kraj pripast će u dio ostatku doma Judina; tu će oni izvoditi blago na pašu; uvečer se odmarati u kućama aškelonskim, jer će ih pohoditi Jahve, Bog njihov, i on će promijeniti sudbinu njihovu.",
+          "lines": [
+            "I taj kraj pripast će u dio",
+            "ostatku doma Judina;",
+            "tu će oni izvoditi blago na pašu;",
+            "uvečer se odmarati u kućama aškelonskim,",
+            "jer će ih pohoditi Jahve, Bog njihov,",
+            "i on će promijeniti sudbinu njihovu."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "»Čuo sam uvredu Moabovu i podrugivanja sinova Amonovih kad su vrijeđali moj narod i ponosili se zemljištem svojim.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Neprijatelj na istoku: Moab i Amon"
+            }
+          ],
+          "lines": [
+            "»Čuo sam uvredu Moabovu",
+            "i podrugivanja sinova Amonovih",
+            "kad su vrijeđali moj narod",
+            "i ponosili se zemljištem svojim."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Zato, života mi moga!« – riječ je Jahve nad vojskama, Boga Izraelova: »Moab će postati kao Sodoma i sinovi Amonovi kao Gomora: polje obraslo koprivom, hrpa soli, pustoš dovijeka. Ostatak moga naroda oplijenit će ih, preostatak moga naroda zaposjest će ih.«",
+          "lines": [
+            "Zato, života mi moga!« –",
+            "riječ je Jahve nad vojskama, Boga Izraelova:",
+            "»Moab će postati kao Sodoma",
+            "i sinovi Amonovi kao Gomora:",
+            "polje obraslo koprivom, hrpa soli,",
+            "pustoš dovijeka.",
+            "Ostatak moga naroda oplijenit će ih,",
+            "preostatak moga naroda zaposjest će ih.«"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "To će biti cijena za njihovu oholost jer su se uznosili i rugali narodu Jahve nad vojskama.",
+          "lines": [
+            "To će biti cijena za njihovu oholost",
+            "jer su se uznosili i rugali",
+            "narodu Jahve nad vojskama."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Za njih će Jahve biti strašan: kad uništi sve bogove zemaljske, pred njim će se pokloniti – svaki na svojoj zemlji – svi otoci narodâ.",
+          "lines": [
+            "Za njih će Jahve biti strašan:",
+            "kad uništi sve bogove zemaljske,",
+            "pred njim će se pokloniti",
+            "– svaki na svojoj zemlji –",
+            "svi otoci narodâ."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "»I vi, Etiopljani: Vi ćete biti probijeni mojim mačem.«",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Neprijatelj na jugu: Etiopija"
+            }
+          ],
+          "lines": [
+            "»I vi, Etiopljani:",
+            "Vi ćete biti probijeni mojim mačem.«"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Zatim će svoju ruku dići protiv sjevera i razrušit će zemlju asirsku, od Ninive će pustoš učiniti, suhu pustoš kao pustinja.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Neprijatelj na sjeveru: Asirija"
+            }
+          ],
+          "lines": [
+            "Zatim će svoju ruku dići protiv sjevera",
+            "i razrušit će zemlju asirsku,",
+            "od Ninive će pustoš učiniti,",
+            "suhu pustoš kao pustinja."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Usred nje će stado ležati, zvijeri svakojake; čaplje i pelikani počivat će noću na glavicama stupova, sova će hukati na prozoru, gavran graktati na pragu.",
+          "lines": [
+            "Usred nje će stado ležati,",
+            "zvijeri svakojake;",
+            "čaplje i pelikani",
+            "počivat će noću na glavicama stupova,",
+            "sova će hukati na prozoru,",
+            "gavran graktati na pragu."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "To li je veseli grad koji je stolovao u miru, koji je u svom srcu govorio: »Ja, i jedino ja!« Gledaj! Postade razvalina, brlog zvjerinji! Svi koji pokraj njega prolaze zvižde i mašu rukama.",
+          "lines": [
+            "To li je veseli grad",
+            "koji je stolovao u miru,",
+            "koji je u svom srcu govorio:",
+            "»Ja, i jedino ja!«",
+            "Gledaj! Postade razvalina,",
+            "brlog zvjerinji!",
+            "Svi koji pokraj njega prolaze",
+            "zvižde i mašu rukama."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 20,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Teško nepokornom, okaljanom, nasilničkom gradu!",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "III. PROTIV JERUZALEMA"
+            },
+            {
+              "level": "h4",
+              "text": "Protiv upraviteljâ narodâ"
+            }
+          ],
+          "lines": [
+            "Teško nepokornom, okaljanom,",
+            "nasilničkom gradu!"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "On nikada nije čuo poziva, nikada nije prihvatio pouku; Jahvi on se nikada nije povjerio; svome Bogu nije se nikada približio.",
+          "lines": [
+            "On nikada nije čuo poziva,",
+            "nikada nije prihvatio pouku;",
+            "Jahvi on se nikada nije povjerio;",
+            "svome Bogu nije se nikada približio."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Njegovi su knezovi usred njega – lavovi koji riču; njegovi su suci – vuci večernji koji do jutra nisu kosti glodali;",
+          "lines": [
+            "Njegovi su knezovi usred njega –",
+            "lavovi koji riču;",
+            "njegovi su suci – vuci večernji",
+            "koji do jutra nisu kosti glodali;"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "proroci su njegovi – razmetljivci, puki lažljivci, svećenici njegovi skvrne svetište, krše Zakon.",
+          "lines": [
+            "proroci su njegovi – razmetljivci,",
+            "puki lažljivci,",
+            "svećenici njegovi skvrne svetište,",
+            "krše Zakon."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Usred njega, Jahve je pravedan – on ne čini nepravde; svako jutro iznosi svoju pravicu, u praskozorje ne izostaje; ali bezbožnik srama ne poznaje.",
+          "lines": [
+            "Usred njega, Jahve je pravedan –",
+            "on ne čini nepravde;",
+            "svako jutro iznosi svoju pravicu,",
+            "u praskozorje ne izostaje;",
+            "ali bezbožnik srama ne poznaje."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "»Uništio sam narode, razorena su kruništa kula njihovih, poharao sam njihove ulice: nema više prolaznika! Razoreni su njihovi gradovi: nema ljudi, nema stanovnika!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Neka se nauče od narodâ"
+            }
+          ],
+          "lines": [
+            "»Uništio sam narode,",
+            "razorena su kruništa kula njihovih,",
+            "poharao sam njihove ulice:",
+            "nema više prolaznika!",
+            "Razoreni su njihovi gradovi:",
+            "nema ljudi, nema stanovnika!"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Govorio sam: ‘Ti ćeš se mene ipak bojati, prigrlit ćeš pouku; u njihovim očima ne mogu nestati toliki moji pohodi.’ Ali ne! – oni su žurno pokvarili sva djela svoja.",
+          "lines": [
+            "Govorio sam:",
+            "‘Ti ćeš se mene ipak bojati,",
+            "prigrlit ćeš pouku;",
+            "u njihovim očima ne mogu nestati",
+            "toliki moji pohodi.’",
+            "Ali ne! – oni su žurno pokvarili",
+            "sva djela svoja."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Zato mene čekajte« – riječ je Jahvina – »do dana kad ustanem kao tužilac; jer ja sam odredio da se sakupe narodi, da se saberu kraljevstva, da na vas gnjev svoj izlijem, svu gorčinu svoje srdžbe: u vatri moje ljubomore bit će sva zemlja sažgana.«",
+          "lines": [
+            "Zato mene čekajte« – riječ je Jahvina –",
+            "»do dana kad ustanem kao tužilac;",
+            "jer ja sam odredio da se sakupe narodi,",
+            "da se saberu kraljevstva,",
+            "da na vas gnjev svoj izlijem,",
+            "svu gorčinu svoje srdžbe:",
+            "u vatri moje ljubomore",
+            "bit će sva zemlja sažgana.«"
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "»Dat ću narodima čiste usne, da svi mogu zazivati ime Jahvino i služiti mu jednodušno.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "IV. OBEĆANJA"
+            },
+            {
+              "level": "h4",
+              "text": "Obraćenje pogana"
+            }
+          ],
+          "lines": [
+            "»Dat ću narodima čiste usne,",
+            "da svi mogu zazivati ime Jahvino",
+            "i služiti mu jednodušno."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "S druge obale rijeka etiopskih prinosit će mi žrtvene darove moji štovaoci.«",
+          "lines": [
+            "S druge obale rijeka etiopskih",
+            "prinosit će mi žrtvene darove moji štovaoci.«"
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "»U onaj dan nećeš se sramiti svih svojih nedjela koja si protiv mene počinio, jer ću ukloniti iz tebe tvoje ohole hvalisavce; i nećeš se više šepiriti na svetoj gori mojoj,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Skromni ostatak Izraelov"
+            }
+          ],
+          "lines": [
+            "»U onaj dan",
+            "nećeš se sramiti svih svojih nedjela",
+            "koja si protiv mene počinio,",
+            "jer ću ukloniti iz tebe",
+            "tvoje ohole hvalisavce;",
+            "i nećeš se više šepiriti",
+            "na svetoj gori mojoj,"
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "jer ću pustiti da u tebi opstane samo skroman i čedan narod, i u imenu Jahvinu tražit će okrilje",
+          "lines": [
+            "jer ću pustiti da u tebi opstane",
+            "samo skroman i čedan narod,",
+            "i u imenu Jahvinu tražit će okrilje"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "ostatak Izraelov. Oni neće više činiti nepravdu, neće više govoriti laži; u njihovim ustima neće se više naći jezik prijevarni. Moći će pâsti i odmarati se, i nitko im neće smetati.«",
+          "lines": [
+            "ostatak Izraelov.",
+            "Oni neće više činiti nepravdu,",
+            "neće više govoriti laži;",
+            "u njihovim ustima neće se više naći",
+            "jezik prijevarni.",
+            "Moći će pâsti i odmarati se,",
+            "i nitko im neće smetati.«"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Klikći od radosti, Kćeri sionska, viči od veselja, Izraele! Veseli se i raduj se iz sveg srca, Kćeri jeruzalemska!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Psalam o radosti Siona"
+            }
+          ],
+          "lines": [
+            "Klikći od radosti, Kćeri sionska,",
+            "viči od veselja, Izraele!",
+            "Veseli se i raduj se iz sveg srca,",
+            "Kćeri jeruzalemska!"
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Jahve te riješio tvoje osude, neprijatelje tvoje uklonio! Jahve, kralj Izraelov, u sredini je tvojoj! Ne boj se više zla!",
+          "lines": [
+            "Jahve te riješio tvoje osude,",
+            "neprijatelje tvoje uklonio!",
+            "Jahve, kralj Izraelov, u sredini je tvojoj!",
+            "Ne boj se više zla!"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "U onaj dan reći će se Jeruzalemu: »Ne boj se, Sione! Neka ti ne klonu ruke!",
+          "lines": [
+            "U onaj dan",
+            "reći će se Jeruzalemu:",
+            "»Ne boj se, Sione!",
+            "Neka ti ne klonu ruke!"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Jahve, Bog tvoj, u sredini je tvojoj, silni spasitelj! On će se radovati tebi pun veselja, obnovit će ti svoju ljubav, kliktat će nad tobom radosno",
+          "lines": [
+            "Jahve, Bog tvoj, u sredini je tvojoj,",
+            "silni spasitelj!",
+            "On će se radovati tebi pun veselja,",
+            "obnovit će ti svoju ljubav,",
+            "kliktat će nad tobom radosno"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "kao u dan svečani. Odvratio sam od tebe nevolju da na sebi više ne nosiš sramotu.",
+          "lines": [
+            "kao u dan svečani.",
+            "Odvratio sam od tebe nevolju",
+            "da na sebi više ne nosiš sramotu."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Evo svladavam sve tvoje tlačitelje. U ono vrijeme izbavit ću sve hrome, sabrat ću prognane, pribavit’ im hvalu i diku po svoj zemlji gdje ih sramota bijaše dopala.",
+          "lines": [
+            "Evo svladavam",
+            "sve tvoje tlačitelje.",
+            "U ono vrijeme",
+            "izbavit ću sve hrome,",
+            "sabrat ću prognane,",
+            "pribavit’ im hvalu i diku",
+            "po svoj zemlji",
+            "gdje ih sramota bijaše dopala."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "U ono vrijeme ja ću vas dovesti, u ono vrijeme ja ću vas sabrati! Tada ću vam dati hvalu i diku među narodima zemlje, kad okrenem vašu sudbinu pred vašim očima« – govori Jahve.",
+          "lines": [
+            "U ono vrijeme ja ću vas dovesti,",
+            "u ono vrijeme ja ću vas sabrati!",
+            "Tada ću vam dati hvalu i diku",
+            "među narodima zemlje,",
+            "kad okrenem vašu sudbinu",
+            "pred vašim očima« –",
+            "govori Jahve."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "order": 41,
+  "id": "nahum",
+  "ks_book_id": 52,
+  "abbr": "Nah",
+  "title": "Nahum",
+  "testament": "SZ",
+  "category": "Proroci",
+  "chapter_count": 3,
+  "verse_count": 47,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 14,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Proročanstvo nad Ninivom. Knjiga viđenja Nahuma Elkošanina.",
+          "lines": [
+            "Proročanstvo nad Ninivom.",
+            "Knjiga viđenja Nahuma Elkošanina."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "ALEF Jahve je Bog ljubomoran i osvetnik! Jahve se osvećuje, gospodar srdžbe! Jahve se osvećuje svojim protivnicima, ustrajan u gnjevu na neprijatelje.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "PROSLOV"
+            },
+            {
+              "level": "h4",
+              "text": "Jahvina srdžba"
+            }
+          ],
+          "lines": [
+            "ALEF Jahve je Bog ljubomoran i osvetnik!",
+            "Jahve se osvećuje, gospodar srdžbe!",
+            "Jahve se osvećuje svojim protivnicima,",
+            "ustrajan u gnjevu na neprijatelje."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Jahve je spor u gnjevu, ali silan u moći. Ne, Jahve neće pustiti krivca nekažnjena. BET U vihoru i oluji put je njegov, oblaci su prašina koju podižu njegovi koraci.",
+          "lines": [
+            "Jahve je spor u gnjevu, ali silan u moći.",
+            "Ne, Jahve neće pustiti krivca nekažnjena.",
+            "BET U vihoru i oluji put je njegov,",
+            "oblaci su prašina koju podižu njegovi koraci."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "GIMEL Prijeti moru i isušuje ga, presušuje sve rijeke. DALET … Bašan i Karmel uvenuli su, povenuli su pupoljci Libana!",
+          "lines": [
+            "GIMEL Prijeti moru i isušuje ga,",
+            "presušuje sve rijeke.",
+            "DALET … Bašan i Karmel uvenuli su,",
+            "povenuli su pupoljci Libana!"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "HE Pred njim se gore potresaju, bregovi se ljuljaju, VAU zemlja se pod njim provaljuje, krug zemaljski i sve što na njem stanuje.",
+          "lines": [
+            "HE Pred njim se gore potresaju,",
+            "bregovi se ljuljaju,",
+            "VAU zemlja se pod njim provaljuje,",
+            "krug zemaljski i sve što na njem stanuje."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "ZAJIN Tko može izdržati pred bijesom njegovim? Tko će odoljeti pred gnjevnom srdžbom njegovom? HET Jarost se njegova kao vatra izlijeva i litice se pred njim kidaju.",
+          "lines": [
+            "ZAJIN Tko može izdržati pred bijesom njegovim?",
+            "Tko će odoljeti pred gnjevnom srdžbom njegovom?",
+            "HET Jarost se njegova kao vatra izlijeva",
+            "i litice se pred njim kidaju."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "TET Jahve je dobar onima koji se u njeg’ uzdaju, on je okrilje u dan nevolje, JOD poznaje one koji se njemu utječu",
+          "lines": [
+            "TET Jahve je dobar onima koji se u njeg’ uzdaju,",
+            "on je okrilje u dan nevolje,",
+            "JOD poznaje one koji se njemu utječu"
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "kada potopne vode poplave. KAF Uništit će one koji se protiv njega podižu, progonit će svoje dušmane u najmrkliji mrak.",
+          "lines": [
+            "kada potopne vode poplave.",
+            "KAF Uništit će one koji se protiv njega podižu,",
+            "progonit će svoje dušmane u najmrkliji mrak."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Što vi snujete protiv Jahve? On uništava do kraja; nevolja se neće dva puta podići.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Proročke opomene: Judeji"
+            }
+          ],
+          "lines": [
+            "Što vi snujete protiv Jahve?",
+            "On uništava do kraja;",
+            "nevolja se neće dva puta podići."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Kao trnovita šikara i kao pijanci na pijanki, k’o suha slama bit će potpuno smlavljeni.",
+          "lines": [
+            "Kao trnovita šikara i kao pijanci na pijanki,",
+            "k’o suha slama bit će potpuno smlavljeni."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Iz tebe je potekao onaj koji snuje zlo protiv Jahve, savjetnik Belijala.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Asiriji"
+            }
+          ],
+          "lines": [
+            "Iz tebe je potekao",
+            "onaj koji snuje zlo protiv Jahve,",
+            "savjetnik Belijala."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Jahve ovako govori: »Neka su spremni, neka mnogobrojni, bit će pokošeni, uništeni. Ako sam te ponizio, neću te odsada ponižavati.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Judeji"
+            }
+          ],
+          "lines": [
+            "Jahve ovako govori:",
+            "»Neka su spremni, neka mnogobrojni,",
+            "bit će pokošeni, uništeni.",
+            "Ako sam te ponizio,",
+            "neću te odsada ponižavati."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "A sada, razbit ću jaram koji te steže, raskidat ću tvoje okove.«",
+          "lines": [
+            "A sada, razbit ću jaram koji te steže,",
+            "raskidat ću tvoje okove.«"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Protiv tebe Jahve naređuje: »Neće više biti roda tvoga imena, iz hrama tvojih bogova istrijebit ću likove rezane i livene, a od tvog groba ruglo ću učiniti.«",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Kralju Ninive"
+            }
+          ],
+          "lines": [
+            "Protiv tebe Jahve naređuje:",
+            "»Neće više biti roda tvoga imena,",
+            "iz hrama tvojih bogova istrijebit ću",
+            "likove rezane i livene,",
+            "a od tvog groba ruglo ću učiniti.«"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 14,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Gledajte, preko gora hrli glasnik, on naviješta: »Spasenje!« Svetkuj svoje blagdane, Judo, ispuni svoje zavjete, jer Belijal više neće prolaziti po tebi, on je sasvim zatrt.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Judeji"
+            }
+          ],
+          "lines": [
+            "Gledajte, preko gora hrli glasnik,",
+            "on naviješta: »Spasenje!«",
+            "Svetkuj svoje blagdane, Judo,",
+            "ispuni svoje zavjete,",
+            "jer Belijal više neće prolaziti po tebi,",
+            "on je sasvim zatrt."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Protiv tebe dolazi rušitelj. Postavi stražu na bedeme, gledaj na put, opaši bedra, saberi sve svoje snage.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "PROPAST NINIVE"
+            },
+            {
+              "level": "h4",
+              "text": "Napad"
+            }
+          ],
+          "lines": [
+            "Protiv tebe dolazi rušitelj.",
+            "Postavi stražu na bedeme,",
+            "gledaj na put, opaši bedra,",
+            "saberi sve svoje snage."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Da, Jahve će obnoviti vinograd Jakovljev i vinograd Izraelov. Pljačkaši ih opljačkali, mladice im potrli.",
+          "lines": [
+            "Da, Jahve će obnoviti vinograd Jakovljev",
+            "i vinograd Izraelov.",
+            "Pljačkaši ih opljačkali,",
+            "mladice im potrli."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Štitovi njegovih junaka crvene se, njegovi su ratnici u grimizu; ognjem blista čelik na njihovim bojnim kolima kad krenu u boj; konji im se propinju.",
+          "lines": [
+            "Štitovi njegovih junaka crvene se,",
+            "njegovi su ratnici u grimizu;",
+            "ognjem blista čelik na njihovim bojnim kolima",
+            "kad krenu u boj;",
+            "konji im se propinju."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Po ulicama bjesne bojna kola, lete preko trgova; na pogled su baklje goruće; kao munje, samo sijevaju.",
+          "lines": [
+            "Po ulicama bjesne bojna kola,",
+            "lete preko trgova;",
+            "na pogled su baklje goruće;",
+            "kao munje, samo sijevaju."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Pozivaju se borci odabrani, bacaju se u rovove, hrle brzo na bedeme, već je zaklon postavljen.",
+          "lines": [
+            "Pozivaju se borci odabrani,",
+            "bacaju se u rovove,",
+            "hrle brzo na bedeme,",
+            "već je zaklon postavljen."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Vrata koja gledaju na Rijeku otvaraju se, strava je u palači.",
+          "lines": [
+            "Vrata koja gledaju na Rijeku otvaraju se,",
+            "strava je u palači."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Podižu, u izgnanstvo odvode Gospodaricu, robinjice njene cvile, tuguju kao golubice, u prsa se udaraju.",
+          "lines": [
+            "Podižu, u izgnanstvo odvode Gospodaricu,",
+            "robinjice njene cvile,",
+            "tuguju kao golubice,",
+            "u prsa se udaraju."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Niniva je nabujalo jezero, oni bježe pred vodom njezinom. »Zaustavite se, stanite!« Ali se nitko ne okreće.",
+          "lines": [
+            "Niniva je nabujalo jezero,",
+            "oni bježe pred vodom njezinom.",
+            "»Zaustavite se, stanite!«",
+            "Ali se nitko ne okreće."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "»Grabite srebro! Grabite zlato!« Blagu kraja nema, obilje dragocjenosti!",
+          "lines": [
+            "»Grabite srebro! Grabite zlato!«",
+            "Blagu kraja nema,",
+            "obilje dragocjenosti!"
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Pljačkanje, haranje, razaranje! Srce zamire, koljena klecaju, u bedrima drhtavica, svima su lica poblijedjela.",
+          "lines": [
+            "Pljačkanje, haranje, razaranje!",
+            "Srce zamire, koljena klecaju,",
+            "u bedrima drhtavica,",
+            "svima su lica poblijedjela."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Gdje je skrovište lavovima i log lavićima? Kad je lav izlazio, lavica je ostajala i lavovi mališani; plašio ih nitko nije.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prijetnje lavu asirskom"
+            }
+          ],
+          "lines": [
+            "Gdje je skrovište lavovima",
+            "i log lavićima?",
+            "Kad je lav izlazio, lavica je ostajala",
+            "i lavovi mališani;",
+            "plašio ih nitko nije."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Lav je grabio za svoje laviće, davio je za svoje lavice; svoje špilje punio je plijenom, svoja skrovišta lovinom.",
+          "lines": [
+            "Lav je grabio za svoje laviće,",
+            "davio je za svoje lavice;",
+            "svoje špilje punio je plijenom,",
+            "svoja skrovišta lovinom."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "»Evo me! Tebi!« – riječ je Jahve nad vojskama. »Pretvorit ću u dim tvoja bojna kola, mač će poklati tvoje laviće. Istrijebit ću sa zemlje tvoja pljačkanja, i neće se više čuti povik tvojih glasnika.«",
+          "lines": [
+            "»Evo me! Tebi!« –",
+            "riječ je Jahve nad vojskama.",
+            "»Pretvorit ću u dim tvoja bojna kola,",
+            "mač će poklati tvoje laviće.",
+            "Istrijebit ću sa zemlje tvoja pljačkanja,",
+            "i neće se više čuti povik tvojih glasnika.«"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 19,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Teško gradu krvničkom, pun je laži, prepun grabeža, s pljačkanjem on ne prestaje!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prijetnje Ninivi"
+            }
+          ],
+          "lines": [
+            "Teško gradu krvničkom,",
+            "pun je laži,",
+            "prepun grabeža,",
+            "s pljačkanjem on ne prestaje!"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Slušajte! Pucaju bičem! Slušajte! Štropot točkova! Konji upropanj, kola poskakuju.",
+          "lines": [
+            "Slušajte! Pucaju bičem!",
+            "Slušajte! Štropot točkova!",
+            "Konji upropanj,",
+            "kola poskakuju."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Konjanici u stremenu, mačevi sjaju, koplja sijevaju … gomile ranjenih, snopovi mrtvih, trupla unedogled, svuda se o truplo spotiče!",
+          "lines": [
+            "Konjanici u stremenu,",
+            "mačevi sjaju,",
+            "koplja sijevaju …",
+            "gomile ranjenih,",
+            "snopovi mrtvih,",
+            "trupla unedogled,",
+            "svuda se o truplo spotiče!"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Eto plaće za razvrat bludnice, ljupke ljubaznice, vješte čarobnice koja je zavodila narode svojim razvratom i plemena svojim čaranjima.",
+          "lines": [
+            "Eto plaće za razvrat bludnice,",
+            "ljupke ljubaznice, vješte čarobnice",
+            "koja je zavodila narode svojim razvratom",
+            "i plemena svojim čaranjima."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "»Evo me! Tebi!« – riječ je Jahve nad vojskama. »Na tvoje lice podignut ću skute tvoje haljine, tvoju golotinju pokazat ću narodima, tvoju sramotu kraljevstvima.",
+          "lines": [
+            "»Evo me! Tebi!« –",
+            "riječ je Jahve nad vojskama.",
+            "»Na tvoje lice podignut ću skute tvoje haljine,",
+            "tvoju golotinju pokazat ću narodima,",
+            "tvoju sramotu kraljevstvima."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Bacit ću na tebe smeće, osramotit ću te, izložiti na stup sramote.",
+          "lines": [
+            "Bacit ću na tebe smeće,",
+            "osramotit ću te,",
+            "izložiti na stup sramote."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Svaki koji te vidi, bježat će od tebe. Reći će: ‘Niniva! Kakva razvalina!’ Tko je može požaliti? Gdje joj naći tješitelje?«",
+          "lines": [
+            "Svaki koji te vidi,",
+            "bježat će od tebe. Reći će:",
+            "‘Niniva! Kakva razvalina!’",
+            "Tko je može požaliti?",
+            "Gdje joj naći tješitelje?«"
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Jesi li tvrđa od Tebe Amonove koja sjedi na rukavima Rijeke? Njezino predziđe bilo je more, njezini bedemi bile su vode.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Primjer Tebe"
+            }
+          ],
+          "lines": [
+            "Jesi li tvrđa od Tebe Amonove",
+            "koja sjedi na rukavima Rijeke?",
+            "Njezino predziđe bilo je more,",
+            "njezini bedemi bile su vode."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Njezina snaga bila je Etiopija, Egipat; nije imala granica. Narodi Puta i Libije bili su joj pomoćnici.",
+          "lines": [
+            "Njezina snaga bila je Etiopija,",
+            "Egipat; nije imala granica.",
+            "Narodi Puta i Libije bili su joj pomoćnici."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "A i ona je otišla u progonstvo, morala je ići u sužanjstvo; njezina nejaka djeca bila su razmrskana po svim raskršćima; za ugledne ljude njezine bacali su ždrijeb, svi njezini velikani okovani su lancima.",
+          "lines": [
+            "A i ona je otišla u progonstvo,",
+            "morala je ići u sužanjstvo;",
+            "njezina nejaka djeca bila su razmrskana",
+            "po svim raskršćima;",
+            "za ugledne ljude njezine bacali su ždrijeb,",
+            "svi njezini velikani okovani su lancima."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Tako ćeš i ti biti slomljena, bit ćeš svladana; tako ćeš i ti morati tražiti utočište pred dušmaninom.",
+          "lines": [
+            "Tako ćeš i ti biti slomljena,",
+            "bit ćeš svladana;",
+            "tako ćeš i ti morati tražiti",
+            "utočište pred dušmaninom."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Tvoje utvrde sve su kao smokvino stablo s urodom mladih smokava; kad se potrese stablo, smokve padaju u usta svakome koji ih želi jesti.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Niniva se uzalud sprema na obranu"
+            }
+          ],
+          "lines": [
+            "Tvoje utvrde sve su kao smokvino stablo",
+            "s urodom mladih smokava;",
+            "kad se potrese stablo, smokve padaju",
+            "u usta svakome koji ih želi jesti."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Gledaj svoj narod: sve je žensko u domu tvome; vrata tvoje zemlje širom se otvaraju neprijatelju; oganj je sažgao tvoje prijevornice.",
+          "lines": [
+            "Gledaj svoj narod:",
+            "sve je žensko u domu tvome;",
+            "vrata tvoje zemlje",
+            "širom se otvaraju neprijatelju;",
+            "oganj je sažgao tvoje prijevornice."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Nacrpi vode za opsadu, utvrdi svoje bedeme, gnječi blato, gazi ilovaču, uzmi kalup za opeku.",
+          "lines": [
+            "Nacrpi vode za opsadu,",
+            "utvrdi svoje bedeme,",
+            "gnječi blato, gazi ilovaču,",
+            "uzmi kalup za opeku."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "A ipak će te oganj sažeći i mač potamaniti. Namnoži se kao kukci, namnoži se kao skakavci;",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Skakavci"
+            }
+          ],
+          "lines": [
+            "A ipak će te oganj sažeći",
+            "i mač potamaniti. Namnoži se kao kukci,",
+            "namnoži se kao skakavci;"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "umnoži svoje trgovce da ih bude više nego zvijezda na nebu,",
+          "lines": [
+            "umnoži svoje trgovce da ih bude",
+            "više nego zvijezda na nebu,"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "tvoje posade neka bude kao skakavaca, a tvojih pisara kao kobilica. Borave po zidovima kad je hladan dan. Sunce grane: kukci razvijaju krilašca i lete, i odlaze tko zna kamo.",
+          "lines": [
+            "tvoje posade neka bude kao skakavaca,",
+            "a tvojih pisara kao kobilica.",
+            "Borave po zidovima",
+            "kad je hladan dan.",
+            "Sunce grane:",
+            "kukci razvijaju krilašca i lete,",
+            "i odlaze tko zna kamo."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Jao! Kako su zaspali tvoji pastiri, kralju asirski? Tvoji izabrani vojnici drijemaju, narod se tvoj raspršio po gorama, nitko ga više ne može sakupiti.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Naricaljka"
+            }
+          ],
+          "lines": [
+            "Jao! Kako su zaspali tvoji pastiri,",
+            "kralju asirski?",
+            "Tvoji izabrani vojnici drijemaju,",
+            "narod se tvoj raspršio po gorama,",
+            "nitko ga više ne može sakupiti."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Tvojoj rani nema lijeka! Neizlječiva je tvoja ozljeda. Svi koji to saznaju plješću tvojoj razvalini. Tko nije bez sanka i prestanka osjećao na sebi tvoju okrutnost?",
+          "lines": [
+            "Tvojoj rani nema lijeka!",
+            "Neizlječiva je tvoja ozljeda.",
+            "Svi koji to saznaju",
+            "plješću tvojoj razvalini.",
+            "Tko nije bez sanka i prestanka",
+            "osjećao na sebi tvoju okrutnost?"
+          ]
+        }
+      ]
+    }
+  ]
+}

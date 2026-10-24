@@ -1,0 +1,6549 @@
+{
+  "total_books": 73,
+  "total_chapters": 1328,
+  "total_verses": 35394,
+  "book_metadata_bugs": [
+    {
+      "book_order": 58,
+      "book_slug": "poslanica-kolosanima",
+      "issue": "nerazriješeni HTML entitet u naslovu knjige",
+      "raw_value": "Poslanica Kolo&scaron;anima",
+      "fixed_value": "Poslanica Kološanima"
+    },
+    {
+      "book_order": 2,
+      "book_slug": "knjiga-izlaska",
+      "book_title": "Knjiga Izlaska",
+      "issue": "netočan chapter_count u bible_book (uzrokuje 404 na zadnjem poglavlju)",
+      "declared_chapter_count": 41,
+      "actual_chapter_count": 40
+    }
+  ],
+  "web_vs_mobile_api_discrepancies": [
+    {
+      "reference": "Post 2,4",
+      "book_title": "Knjiga Postanka",
+      "book_slug": "knjiga-postanka",
+      "chapter": 2,
+      "verse": 4,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Drugi izvještaj o stvaranju – Raj zemaljski"
+      ]
+    },
+    {
+      "reference": "Post 29,14",
+      "book_title": "Knjiga Postanka",
+      "book_slug": "knjiga-postanka",
+      "chapter": 29,
+      "verse": 14,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Jakov se ženi Leom i Rahelom"
+      ]
+    },
+    {
+      "reference": "Izl 19,3",
+      "book_title": "Knjiga Izlaska",
+      "book_slug": "knjiga-izlaska",
+      "chapter": 19,
+      "verse": 3,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Obećanje Boga saveznika"
+      ]
+    },
+    {
+      "reference": "Lev 26,41",
+      "book_title": "Levitski zakonik",
+      "book_slug": "levitski-zakonik",
+      "chapter": 26,
+      "verse": 41,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Bog ostaje vjerni saveznik"
+      ]
+    },
+    {
+      "reference": "Suci 3,11",
+      "book_title": "Knjiga o Sucima",
+      "book_slug": "knjiga-o-sucima",
+      "chapter": 3,
+      "verse": 11,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "2. EHUD"
+      ]
+    },
+    {
+      "reference": "1 Sam 9,26",
+      "book_title": "Prva knjiga o Samuelu",
+      "book_slug": "prva-knjiga-o-samuelu",
+      "chapter": 9,
+      "verse": 26,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Pomazanje Šaulovo"
+      ]
+    },
+    {
+      "reference": "1 Sam 13,7",
+      "book_title": "Prva knjiga o Samuelu",
+      "book_slug": "prva-knjiga-o-samuelu",
+      "chapter": 13,
+      "verse": 7,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Rascjep između Samuela i Šaula"
+      ]
+    },
+    {
+      "reference": "2 Sam 2,4",
+      "book_title": "Druga knjiga o Samuelu",
+      "book_slug": "druga-knjiga-o-samuelu",
+      "chapter": 2,
+      "verse": 4,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Poruka Jabešanima"
+      ]
+    },
+    {
+      "reference": "2 Sam 8,18",
+      "book_title": "Druga knjiga o Samuelu",
+      "book_slug": "druga-knjiga-o-samuelu",
+      "chapter": 8,
+      "verse": 18,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "3. DAVIDOVA OBITELJ I SPLETKE OKO NASLJEDSTVA"
+      ]
+    },
+    {
+      "reference": "2 Sam 12,15",
+      "book_title": "Druga knjiga o Samuelu",
+      "book_slug": "druga-knjiga-o-samuelu",
+      "chapter": 12,
+      "verse": 15,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Smrt Bat-Šebina djeteta – Rođenje Salomonovo"
+      ]
+    },
+    {
+      "reference": "2 Sam 19,9",
+      "book_title": "Druga knjiga o Samuelu",
+      "book_slug": "druga-knjiga-o-samuelu",
+      "chapter": 19,
+      "verse": 9,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Priprave za Davidov povratak"
+      ]
+    },
+    {
+      "reference": "2 Kr 19,9",
+      "book_title": "Druga knjiga o Kraljevima",
+      "book_slug": "druga-knjiga-o-kraljevima",
+      "chapter": 19,
+      "verse": 9,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Sanheribovo pismo Ezekiji"
+      ]
+    },
+    {
+      "reference": "1 Ljet 1,29",
+      "book_title": "Prva Knjiga Ljetopisa",
+      "book_slug": "prva-knjiga-ljetopisa",
+      "chapter": 1,
+      "verse": 29,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Jišmaelci"
+      ]
+    },
+    {
+      "reference": "1 Ljet 2,50",
+      "book_title": "Prva Knjiga Ljetopisa",
+      "book_slug": "prva-knjiga-ljetopisa",
+      "chapter": 2,
+      "verse": 50,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Hur"
+      ]
+    },
+    {
+      "reference": "1 Ljet 4,4",
+      "book_title": "Prva Knjiga Ljetopisa",
+      "book_slug": "prva-knjiga-ljetopisa",
+      "chapter": 4,
+      "verse": 4,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Ašhur"
+      ]
+    },
+    {
+      "reference": "1 Ljet 5,8",
+      "book_title": "Prva Knjiga Ljetopisa",
+      "book_slug": "prva-knjiga-ljetopisa",
+      "chapter": 5,
+      "verse": 8,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Rubenova naseobina"
+      ]
+    },
+    {
+      "reference": "1 Ljet 8,14",
+      "book_title": "Prva Knjiga Ljetopisa",
+      "book_slug": "prva-knjiga-ljetopisa",
+      "chapter": 8,
+      "verse": 14,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "U Jeruzalemu"
+      ]
+    },
+    {
+      "reference": "2 Ljet 22,9",
+      "book_title": "Druga Knjiga Ljetopisa",
+      "book_slug": "druga-knjiga-ljetopisa",
+      "chapter": 22,
+      "verse": 9,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Atalijin zločin"
+      ]
+    },
+    {
+      "reference": "2 Ljet 32,8",
+      "book_title": "Druga Knjiga Ljetopisa",
+      "book_slug": "druga-knjiga-ljetopisa",
+      "chapter": 32,
+      "verse": 8,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Sanheribove bogohulne riječi"
+      ]
+    },
+    {
+      "reference": "Est 1,1",
+      "book_title": "Estera",
+      "book_slug": "estera",
+      "chapter": 1,
+      "verse": 1,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "UVOD",
+        "Mordokajev san",
+        "Spriječena zavjera"
+      ]
+    },
+    {
+      "reference": "Est 4,17",
+      "book_title": "Estera",
+      "book_slug": "estera",
+      "chapter": 4,
+      "verse": 17,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Mordokajeva molitva",
+        "Esterina molitva"
+      ]
+    },
+    {
+      "reference": "Est 8,12",
+      "book_title": "Estera",
+      "book_slug": "estera",
+      "chapter": 8,
+      "verse": 12,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Ukaz u korist Židova"
+      ]
+    },
+    {
+      "reference": "Est 10,3",
+      "book_title": "Estera",
+      "book_slug": "estera",
+      "chapter": 10,
+      "verse": 3,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Bilješka grčkog prevodioca"
+      ]
+    },
+    {
+      "reference": "Job 26,12",
+      "book_title": "Knjiga o Jobu",
+      "book_slug": "knjiga-o-jobu",
+      "chapter": 26,
+      "verse": 12,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Sofarova besjeda: prokletnik"
+      ]
+    },
+    {
+      "reference": "Job 32,6",
+      "book_title": "Knjiga o Jobu",
+      "book_slug": "knjiga-o-jobu",
+      "chapter": 32,
+      "verse": 6,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Proslov"
+      ]
+    },
+    {
+      "reference": "Job 36,21",
+      "book_title": "Knjiga o Jobu",
+      "book_slug": "knjiga-o-jobu",
+      "chapter": 36,
+      "verse": 21,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Himna svemogućoj Mudrosti"
+      ]
+    },
+    {
+      "reference": "Job 40,14",
+      "book_title": "Knjiga o Jobu",
+      "book_slug": "knjiga-o-jobu",
+      "chapter": 40,
+      "verse": 14,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Behemot"
+      ]
+    },
+    {
+      "reference": "Job 40,24",
+      "book_title": "Knjiga o Jobu",
+      "book_slug": "knjiga-o-jobu",
+      "chapter": 40,
+      "verse": 24,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Levijatan"
+      ]
+    },
+    {
+      "reference": "Pj 1,4",
+      "book_title": "Pjesma nad pjesmama",
+      "book_slug": "pjesma-nad-pjesmama",
+      "chapter": 1,
+      "verse": 4,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Zbor djevojaka"
+      ]
+    },
+    {
+      "reference": "Pj 7,10",
+      "book_title": "Pjesma nad pjesmama",
+      "book_slug": "pjesma-nad-pjesmama",
+      "chapter": 7,
+      "verse": 10,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Zaručnica"
+      ]
+    },
+    {
+      "reference": "Pj 8,5",
+      "book_title": "Pjesma nad pjesmama",
+      "book_slug": "pjesma-nad-pjesmama",
+      "chapter": 8,
+      "verse": 5,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "POBJEDA I TRAJNOST LJUBAVI",
+        "Zbor djevojaka",
+        "Zaručnik"
+      ]
+    },
+    {
+      "reference": "Mudr 12,11",
+      "book_title": "Knjiga Mudrosti",
+      "book_slug": "knjiga-mudrosti",
+      "chapter": 12,
+      "verse": 11,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Razlozi popustljivosti"
+      ]
+    },
+    {
+      "reference": "Iz 22,8",
+      "book_title": "Izaija",
+      "book_slug": "izaija",
+      "chapter": 22,
+      "verse": 8,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Protiv vojnih priprema"
+      ]
+    },
+    {
+      "reference": "Iz 24,18",
+      "book_title": "Izaija",
+      "book_slug": "izaija",
+      "chapter": 24,
+      "verse": 18,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Nastavak pjesme o sudu"
+      ]
+    },
+    {
+      "reference": "Iz 28,17",
+      "book_title": "Izaija",
+      "book_slug": "izaija",
+      "chapter": 28,
+      "verse": 17,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Nastavak protiv zlih savjetnika"
+      ]
+    },
+    {
+      "reference": "Iz 32,15",
+      "book_title": "Izaija",
+      "book_slug": "izaija",
+      "chapter": 32,
+      "verse": 15,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Jahvin spas"
+      ]
+    },
+    {
+      "reference": "Iz 37,9",
+      "book_title": "Izaija",
+      "book_slug": "izaija",
+      "chapter": 37,
+      "verse": 9,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Drugi Sanheribov pokušaj"
+      ]
+    },
+    {
+      "reference": "Iz 44,8",
+      "book_title": "Izaija",
+      "book_slug": "izaija",
+      "chapter": 44,
+      "verse": 8,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Protiv idolopoklonstva"
+      ]
+    },
+    {
+      "reference": "Iz 45,6",
+      "book_title": "Izaija",
+      "book_slug": "izaija",
+      "chapter": 45,
+      "verse": 6,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Proroštvo o spasenju"
+      ]
+    },
+    {
+      "reference": "Iz 55,3",
+      "book_title": "Izaija",
+      "book_slug": "izaija",
+      "chapter": 55,
+      "verse": 3,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Savez"
+      ]
+    },
+    {
+      "reference": "Iz 66,18",
+      "book_title": "Izaija",
+      "book_slug": "izaija",
+      "chapter": 66,
+      "verse": 18,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Jahvina slava među narodima"
+      ]
+    },
+    {
+      "reference": "Jr 8,18",
+      "book_title": "Jeremija",
+      "book_slug": "jeremija",
+      "chapter": 8,
+      "verse": 18,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Prorokova tužaljka zbog gladne godine"
+      ]
+    },
+    {
+      "reference": "Bar 1,15",
+      "book_title": "Baruh",
+      "book_slug": "baruh",
+      "chapter": 1,
+      "verse": 15,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "II. MOLITVA IZGNANIKA",
+        "Ispovijed grijeha"
+      ]
+    },
+    {
+      "reference": "Ez 41,15",
+      "book_title": "Ezekiel",
+      "book_slug": "ezekiel",
+      "chapter": 41,
+      "verse": 15,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Ukrasi na zidovima i vratima"
+      ]
+    },
+    {
+      "reference": "Dn 11,2",
+      "book_title": "Daniel",
+      "book_slug": "daniel",
+      "chapter": 11,
+      "verse": 2,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Perzijski kraljevi"
+      ]
+    },
+    {
+      "reference": "Ob 1,9",
+      "book_title": "Obadija",
+      "book_slug": "obadija",
+      "chapter": 1,
+      "verse": 9,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Grijeh Edoma"
+      ]
+    },
+    {
+      "reference": "Nah 3,15",
+      "book_title": "Nahum",
+      "book_slug": "nahum",
+      "chapter": 3,
+      "verse": 15,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Skakavci"
+      ]
+    },
+    {
+      "reference": "Hab 2,6",
+      "book_title": "Habakuk",
+      "book_slug": "habakuk",
+      "chapter": 2,
+      "verse": 6,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Peterostruki jao"
+      ]
+    },
+    {
+      "reference": "Zah 4,14",
+      "book_title": "Zaharija",
+      "book_slug": "zaharija",
+      "chapter": 4,
+      "verse": 14,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Tri riječi Zerubabelu"
+      ]
+    },
+    {
+      "reference": "Zah 9,1",
+      "book_title": "Zaharija",
+      "book_slug": "zaharija",
+      "chapter": 9,
+      "verse": 1,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "DRUGI DIO",
+        "Nova zemlja"
+      ]
+    },
+    {
+      "reference": "Mal 1,5",
+      "book_title": "Malahija",
+      "book_slug": "malahija",
+      "chapter": 1,
+      "verse": 5,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Optužba protiv svećenikâ"
+      ]
+    },
+    {
+      "reference": "Mal 3,5",
+      "book_title": "Malahija",
+      "book_slug": "malahija",
+      "chapter": 3,
+      "verse": 5,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Desetina za Hram"
+      ]
+    },
+    {
+      "reference": "Mt 1,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 1,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 3, 23–38)"
+      ],
+      "headings_affected": [
+        "I. ROĐENJE I DJETINJSTVO ISUSOVO",
+        "Kraljevsko rodoslovlje Isusovo"
+      ]
+    },
+    {
+      "reference": "Mt 1,18",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 1,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 2, 1–7)"
+      ],
+      "headings_affected": [
+        "Navještenje Josipu"
+      ]
+    },
+    {
+      "reference": "Mt 3,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 3,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 1, 1–8; Lk 3, 1–18; Iv 1, 19–28)"
+      ],
+      "headings_affected": [
+        "II. PROGLAŠENJE NOVOGA BOŽJEG SVIJETA – KRALJEVSTVA NEBESKOGA",
+        "1. PRIPOVJEDNI DIO",
+        "Propovijedanje Ivana Krstitelja"
+      ]
+    },
+    {
+      "reference": "Mt 3,13",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 3,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 1, 9–11; Lk 3, 21–22)"
+      ],
+      "headings_affected": [
+        "Krštenje Isusovo"
+      ]
+    },
+    {
+      "reference": "Mt 4,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 4,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 1, 12–13; Lk 4, 1–13)"
+      ],
+      "headings_affected": [
+        "Kušnja u pustinji"
+      ]
+    },
+    {
+      "reference": "Mt 4,12",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 4,
+      "verse": 12,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 1, 14–15; Lk 4, 14–15)"
+      ],
+      "headings_affected": [
+        "Povratak u Galileju i početak javnog djelovanja"
+      ]
+    },
+    {
+      "reference": "Mt 4,18",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 4,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 1, 16–20; Lk 5, 1–11; Iv 1, 35–42)"
+      ],
+      "headings_affected": [
+        "Četiri prva učenika"
+      ]
+    },
+    {
+      "reference": "Mt 4,23",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 4,
+      "verse": 23,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 1, 39; Lk 6, 17–19)"
+      ],
+      "headings_affected": [
+        "Isus poučava i ozdravlja"
+      ]
+    },
+    {
+      "reference": "Mt 5,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 5,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 6, 20–23)"
+      ],
+      "headings_affected": [
+        "2. EVANĐEOSKA BESJEDA NA GORI",
+        "Blaženstva"
+      ]
+    },
+    {
+      "reference": "Mt 5,13",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 5,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 9, 50; 4, 21; Lk 14, 34–35; 8, 16)"
+      ],
+      "headings_affected": [
+        "Sol zemlje i svjetlost svijeta"
+      ]
+    },
+    {
+      "reference": "Mt 5,21",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 5,
+      "verse": 21,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 12, 57–59)"
+      ],
+      "headings_affected": [
+        "Srdžba"
+      ]
+    },
+    {
+      "reference": "Mt 5,27",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 5,
+      "verse": 27,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 18, 8–9; Lk 9, 43–48)"
+      ],
+      "headings_affected": [
+        "Preljub"
+      ]
+    },
+    {
+      "reference": "Mt 5,31",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 5,
+      "verse": 31,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 19, 9; Mk 10, 11–12; Lk 16, 18)"
+      ],
+      "headings_affected": [
+        "Rastava"
+      ]
+    },
+    {
+      "reference": "Mt 5,38",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 5,
+      "verse": 38,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 6, 29–30)"
+      ],
+      "headings_affected": [
+        "Osveta"
+      ]
+    },
+    {
+      "reference": "Mt 5,43",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 5,
+      "verse": 43,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 6, 27–28. 32–36)"
+      ],
+      "headings_affected": [
+        "Ljubav prema neprijateljima"
+      ]
+    },
+    {
+      "reference": "Mt 6,7",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 6,
+      "verse": 7,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 11, 2–4)"
+      ],
+      "headings_affected": [
+        "Prava molitva. Očenaš"
+      ]
+    },
+    {
+      "reference": "Mt 6,19",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 6,
+      "verse": 19,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 12, 33–34)"
+      ],
+      "headings_affected": [
+        "Osigurano blago"
+      ]
+    },
+    {
+      "reference": "Mt 6,22",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 6,
+      "verse": 22,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 11, 34–36)"
+      ],
+      "headings_affected": [
+        "Nutarnja svjetlost"
+      ]
+    },
+    {
+      "reference": "Mt 6,24",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 6,
+      "verse": 24,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 16, 13)"
+      ],
+      "headings_affected": [
+        "Ne može se služiti dvojici gospodara"
+      ]
+    },
+    {
+      "reference": "Mt 6,25",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 6,
+      "verse": 25,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 12, 22–31)"
+      ],
+      "headings_affected": [
+        "Pouzdanje u Božju providnost"
+      ]
+    },
+    {
+      "reference": "Mt 7,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 7,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 6, 37–38, 41–42)"
+      ],
+      "headings_affected": [
+        "Ne sudite!"
+      ]
+    },
+    {
+      "reference": "Mt 7,7",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 7,
+      "verse": 7,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 11, 9–13)"
+      ],
+      "headings_affected": [
+        "Uspješnost molitve"
+      ]
+    },
+    {
+      "reference": "Mt 7,13",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 7,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 13, 24)"
+      ],
+      "headings_affected": [
+        "Dva puta"
+      ]
+    },
+    {
+      "reference": "Mt 7,15",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 7,
+      "verse": 15,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 6, 43–44)"
+      ],
+      "headings_affected": [
+        "Lažni proroci"
+      ]
+    },
+    {
+      "reference": "Mt 7,21",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 7,
+      "verse": 21,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 13, 25–27)"
+      ],
+      "headings_affected": [
+        "Pravi učenici"
+      ]
+    },
+    {
+      "reference": "Mt 7,24",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 7,
+      "verse": 24,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 6, 47–49)"
+      ],
+      "headings_affected": [
+        "Kuća na stijeni i kuća na pijesku.Zaključak besjede na gori"
+      ]
+    },
+    {
+      "reference": "Mt 8,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 8,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 1, 40–45; Lk 5, 12–16)"
+      ],
+      "headings_affected": [
+        "III. PROPOVIJEDANJE NOVOGA BOŽJEG SVIJETA",
+        "1. PRIPOVJEDNI DIO: DESET ČUDESA",
+        "Ozdravljenje gubavca"
+      ]
+    },
+    {
+      "reference": "Mt 8,5",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 8,
+      "verse": 5,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 7, 1–10; Iv 4, 43–54)"
+      ],
+      "headings_affected": [
+        "Vjera jednoga rimskog satnika"
+      ]
+    },
+    {
+      "reference": "Mt 8,14",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 8,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 1, 29–34; Lk 4, 38–41)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje Petrove punice i drugih bolesnika"
+      ]
+    },
+    {
+      "reference": "Mt 8,18",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 8,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 9, 57–62)"
+      ],
+      "headings_affected": [
+        "Zahtjevi apostolskog zvanja"
+      ]
+    },
+    {
+      "reference": "Mt 8,23",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 8,
+      "verse": 23,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 4, 35–41; Lk 8, 22–25)"
+      ],
+      "headings_affected": [
+        "Stišana oluja"
+      ]
+    },
+    {
+      "reference": "Mt 8,28",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 8,
+      "verse": 28,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 5, 1–20; Lk 8, 26–39)"
+      ],
+      "headings_affected": [
+        "Opsjednuti iz Gadare"
+      ]
+    },
+    {
+      "reference": "Mt 9,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 9,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 2, 1–12; Lk 5, 17–26)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje uzetoga"
+      ]
+    },
+    {
+      "reference": "Mt 9,9",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 9,
+      "verse": 9,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 2, 13–17; Lk 5, 27–32)"
+      ],
+      "headings_affected": [
+        "Poziv Mateja"
+      ]
+    },
+    {
+      "reference": "Mt 9,14",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 9,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 2, 18–22; Lk 5, 33–39)"
+      ],
+      "headings_affected": [
+        "Rasprava o postu"
+      ]
+    },
+    {
+      "reference": "Mt 9,18",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 9,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 5, 21–43; Lk 8, 40–56)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje bolesne žene i uskrišenje Jairove kćeri"
+      ]
+    },
+    {
+      "reference": "Mt 10,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 10,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 3, 13–19; Lk 6, 12–16)"
+      ],
+      "headings_affected": [
+        "2. APOSTOLSKA BESJEDA",
+        "Ustanovljenje dvanaestorice"
+      ]
+    },
+    {
+      "reference": "Mt 10,5",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 10,
+      "verse": 5,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 6, 7–13; Lk 9, 1–6)"
+      ],
+      "headings_affected": [
+        "Poslanje dvanaestorice"
+      ]
+    },
+    {
+      "reference": "Mt 10,16",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 10,
+      "verse": 16,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 13, 9–13; Lk 21, 12–17)"
+      ],
+      "headings_affected": [
+        "Apostole čeka progonstvo"
+      ]
+    },
+    {
+      "reference": "Mt 10,26",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 10,
+      "verse": 26,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 12, 2–9)"
+      ],
+      "headings_affected": [
+        "Propovijedati treba otvoreno i smjelo"
+      ]
+    },
+    {
+      "reference": "Mt 10,34",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 10,
+      "verse": 34,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 12, 51–53)"
+      ],
+      "headings_affected": [
+        "Veliko dijeljenje svijeta: zašto progon apostola"
+      ]
+    },
+    {
+      "reference": "Mt 10,37",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 10,
+      "verse": 37,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 14, 26–27)"
+      ],
+      "headings_affected": [
+        "Treba se odreći svega"
+      ]
+    },
+    {
+      "reference": "Mt 10,40",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 10,
+      "verse": 40,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 9, 41)"
+      ],
+      "headings_affected": [
+        "Zaključak apostolske besjede"
+      ]
+    },
+    {
+      "reference": "Mt 11,2",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 11,
+      "verse": 2,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 7, 18–35)"
+      ],
+      "headings_affected": [
+        "Pitanje i svjedočanstvo Ivanovo"
+      ]
+    },
+    {
+      "reference": "Mt 11,20",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 11,
+      "verse": 20,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 10, 13–15)"
+      ],
+      "headings_affected": [
+        "Prijetnja neobraćenim gradovima"
+      ]
+    },
+    {
+      "reference": "Mt 11,25",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 11,
+      "verse": 25,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 10, 21–22)"
+      ],
+      "headings_affected": [
+        "Evanđelje jednostavnima"
+      ]
+    },
+    {
+      "reference": "Mt 12,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 12,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 2, 23–28; Lk 6, 1–5)"
+      ],
+      "headings_affected": [
+        "Trganje klasja u subotu"
+      ]
+    },
+    {
+      "reference": "Mt 12,9",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 12,
+      "verse": 9,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 3, 1–6; Lk 6, 6–11)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje u subotu"
+      ]
+    },
+    {
+      "reference": "Mt 12,22",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 12,
+      "verse": 22,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 3, 20–30; Lk 11, 14–23)"
+      ],
+      "headings_affected": [
+        "Odakle Isusu snaga"
+      ]
+    },
+    {
+      "reference": "Mt 12,33",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 12,
+      "verse": 33,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 6, 43–45)"
+      ],
+      "headings_affected": [
+        "»Iz obilja srca usta govore«"
+      ]
+    },
+    {
+      "reference": "Mt 12,38",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 12,
+      "verse": 38,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 8, 11–12; Lk 11, 29–32)"
+      ],
+      "headings_affected": [
+        "Znak Jonin"
+      ]
+    },
+    {
+      "reference": "Mt 12,43",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 12,
+      "verse": 43,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 11, 24–26)"
+      ],
+      "headings_affected": [
+        "Ponovni pad"
+      ]
+    },
+    {
+      "reference": "Mt 12,46",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 12,
+      "verse": 46,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 3, 31–35; Lk 8, 19–21)"
+      ],
+      "headings_affected": [
+        "Prava rodbina Isusova"
+      ]
+    },
+    {
+      "reference": "Mt 13,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 13,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 4, 1–3; Lk 8, 4)"
+      ],
+      "headings_affected": [
+        "2. BESJEDA U PRISPODOBAMA",
+        "Uvod"
+      ]
+    },
+    {
+      "reference": "Mt 13,3",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 13,
+      "verse": 3,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 4, 4–9; Lk 8, 5–8)"
+      ],
+      "headings_affected": [
+        "Sijač"
+      ]
+    },
+    {
+      "reference": "Mt 13,10",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 13,
+      "verse": 10,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 4, 10–12; Lk 8, 9–10)"
+      ],
+      "headings_affected": [
+        "Zašto Isus govori u prispodobama"
+      ]
+    },
+    {
+      "reference": "Mt 13,18",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 13,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 4, 13–20; Lk 8, 11–15)"
+      ],
+      "headings_affected": [
+        "Tumačenje prispodobe o sijaču"
+      ]
+    },
+    {
+      "reference": "Mt 13,31",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 13,
+      "verse": 31,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 4, 30–32; Lk 13, 18–19)"
+      ],
+      "headings_affected": [
+        "Zrno gorušičino"
+      ]
+    },
+    {
+      "reference": "Mt 13,33",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 13,
+      "verse": 33,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 13, 20–21)"
+      ],
+      "headings_affected": [
+        "Kvasac"
+      ]
+    },
+    {
+      "reference": "Mt 13,34",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 13,
+      "verse": 34,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 4, 33–34)"
+      ],
+      "headings_affected": [
+        "Isus poučava narod u prispodobama"
+      ]
+    },
+    {
+      "reference": "Mt 13,52",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 13,
+      "verse": 52,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "V. CRKVA – PRVINE NOVOGA BOŽJEG SVIJETA",
+        "1. PRIPOVJEDNI DIO"
+      ]
+    },
+    {
+      "reference": "Mt 13,53",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 13,
+      "verse": 53,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 6, 1–6; Lk 4, 16–30)"
+      ],
+      "headings_affected": [
+        "Posjet Nazaretu"
+      ]
+    },
+    {
+      "reference": "Mt 14,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 14,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 6, 14–29; Lk 9, 7–9)"
+      ],
+      "headings_affected": [
+        "Herod i Isus"
+      ]
+    },
+    {
+      "reference": "Mt 14,13",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 14,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 6, 30–44; Lk 9, 10–17; Iv 6, 1–14)"
+      ],
+      "headings_affected": [
+        "Isus hrani pet tisuća ljudi"
+      ]
+    },
+    {
+      "reference": "Mt 14,22",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 14,
+      "verse": 22,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 6, 45–52; Iv 6, 15–21)"
+      ],
+      "headings_affected": [
+        "Isus hoda po vodi"
+      ]
+    },
+    {
+      "reference": "Mt 14,34",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 14,
+      "verse": 34,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 6, 53–56)"
+      ],
+      "headings_affected": [
+        "Ozdravljenja u genezaretskom kraju"
+      ]
+    },
+    {
+      "reference": "Mt 15,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 15,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 7, 1–23)"
+      ],
+      "headings_affected": [
+        "Prepirke o farizejskim predajama"
+      ]
+    },
+    {
+      "reference": "Mt 15,21",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 15,
+      "verse": 21,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 7, 24–30)"
+      ],
+      "headings_affected": [
+        "Strankinja vjeruje u Isusa"
+      ]
+    },
+    {
+      "reference": "Mt 15,32",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 15,
+      "verse": 32,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 8, 1–10)"
+      ],
+      "headings_affected": [
+        "Isus hrani četiri tisuće ljudi"
+      ]
+    },
+    {
+      "reference": "Mt 16,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 16,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 8, 11–13; Lk 12, 54–56)"
+      ],
+      "headings_affected": [
+        "Znak Jonin"
+      ]
+    },
+    {
+      "reference": "Mt 16,5",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 16,
+      "verse": 5,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 8, 14–21)"
+      ],
+      "headings_affected": [
+        "Kvasac farizejski i saducejski"
+      ]
+    },
+    {
+      "reference": "Mt 16,13",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 16,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 8, 27–30; Lk 9, 18–21)"
+      ],
+      "headings_affected": [
+        "Ispovijest Petrova"
+      ]
+    },
+    {
+      "reference": "Mt 16,21",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 16,
+      "verse": 21,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 8, 31 – 9, 1; Lk 9, 22–27)"
+      ],
+      "headings_affected": [
+        "Prvi navještaj muke i uskrsnuća"
+      ]
+    },
+    {
+      "reference": "Mt 17,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 17,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 9, 2–13; Lk 9, 28–36)"
+      ],
+      "headings_affected": [
+        "Preobraženje"
+      ]
+    },
+    {
+      "reference": "Mt 17,14",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 17,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 9, 14–29; Lk 9, 37–43)"
+      ],
+      "headings_affected": [
+        "Opsjednuti padavičar"
+      ]
+    },
+    {
+      "reference": "Mt 17,22",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 17,
+      "verse": 22,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 9, 30–32; Lk 9, 43–45)"
+      ],
+      "headings_affected": [
+        "Drugi navještaj muke i uskrsnuća"
+      ]
+    },
+    {
+      "reference": "Mt 18,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 18,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 9, 33–37; Lk 9, 46–48)"
+      ],
+      "headings_affected": [
+        "2. BESJEDA O CRKVI",
+        "Tko je najveći"
+      ]
+    },
+    {
+      "reference": "Mt 18,6",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 18,
+      "verse": 6,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 9, 42–48; Lk 17, 1–2)"
+      ],
+      "headings_affected": [
+        "Sablazan"
+      ]
+    },
+    {
+      "reference": "Mt 18,12",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 18,
+      "verse": 12,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 15, 3–7)"
+      ],
+      "headings_affected": [
+        "Izgubljena ovca"
+      ]
+    },
+    {
+      "reference": "Mt 18,15",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 18,
+      "verse": 15,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 17, 3)"
+      ],
+      "headings_affected": [
+        "Bratska opomena i zajednička molitva"
+      ]
+    },
+    {
+      "reference": "Mt 19,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 19,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 10, 1–12)"
+      ],
+      "headings_affected": [
+        "VI. SKORA BUDUĆNOST NOVOGA BOŽJEG SVIJETA",
+        "1. PRIPOVJEDNI DIO",
+        "Nerazrješivost ženidbe"
+      ]
+    },
+    {
+      "reference": "Mt 19,13",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 19,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 10, 13–16; Lk 18, 15–17)"
+      ],
+      "headings_affected": [
+        "Isus i djeca"
+      ]
+    },
+    {
+      "reference": "Mt 19,16",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 19,
+      "verse": 16,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 10, 17–22; Lk 18, 18–23)"
+      ],
+      "headings_affected": [
+        "Bogati mladić"
+      ]
+    },
+    {
+      "reference": "Mt 19,23",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 19,
+      "verse": 23,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 10, 23–26; Lk 18, 24–26)"
+      ],
+      "headings_affected": [
+        "Opasnost od bogatstva"
+      ]
+    },
+    {
+      "reference": "Mt 19,27",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 19,
+      "verse": 27,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 10, 27–31; Lk 18, 27–30)"
+      ],
+      "headings_affected": [
+        "Nagrada Isusovim sljedbenicima"
+      ]
+    },
+    {
+      "reference": "Mt 20,17",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 20,
+      "verse": 17,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 10, 32–34; Lk 18, 31–34)"
+      ],
+      "headings_affected": [
+        "Treći navještaj muke i uskrsnuća"
+      ]
+    },
+    {
+      "reference": "Mt 20,20",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 20,
+      "verse": 20,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 10, 35–45)"
+      ],
+      "headings_affected": [
+        "Ne gospodujte, nego služite!"
+      ]
+    },
+    {
+      "reference": "Mt 20,29",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 20,
+      "verse": 29,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 10, 46–52; Lk 18, 35–43)"
+      ],
+      "headings_affected": [
+        "Dva jerihonska slijepca"
+      ]
+    },
+    {
+      "reference": "Mt 21,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 21,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 11, 1–11; Lk 19, 28–38; Iv 12, 12–19)"
+      ],
+      "headings_affected": [
+        "Mesijanski ulazak u Jeruzalem"
+      ]
+    },
+    {
+      "reference": "Mt 21,12",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 21,
+      "verse": 12,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 11, 15–19; Lk 19, 45–48; Iv 2, 13–22)"
+      ],
+      "headings_affected": [
+        "Izgon trgovaca iz Hrama"
+      ]
+    },
+    {
+      "reference": "Mt 21,18",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 21,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 11, 12–14. 20–24)"
+      ],
+      "headings_affected": [
+        "Neplodna smokva"
+      ]
+    },
+    {
+      "reference": "Mt 21,23",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 21,
+      "verse": 23,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 11, 27–33; Lk 20, 1–8)"
+      ],
+      "headings_affected": [
+        "Odakle Isusu vlast?"
+      ]
+    },
+    {
+      "reference": "Mt 21,33",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 21,
+      "verse": 33,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 12, 1–12; Lk 20, 9–19)"
+      ],
+      "headings_affected": [
+        "Vinogradari ubojice"
+      ]
+    },
+    {
+      "reference": "Mt 22,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 22,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 14, 15–24)"
+      ],
+      "headings_affected": [
+        "Prispodoba o svadbenoj gozbi"
+      ]
+    },
+    {
+      "reference": "Mt 22,15",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 22,
+      "verse": 15,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 12, 13–17; Lk 20, 20–26)"
+      ],
+      "headings_affected": [
+        "Porez caru"
+      ]
+    },
+    {
+      "reference": "Mt 22,23",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 22,
+      "verse": 23,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 12, 18–27; Lk 20, 27–40)"
+      ],
+      "headings_affected": [
+        "Uskrsnuće mrtvih"
+      ]
+    },
+    {
+      "reference": "Mt 22,34",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 22,
+      "verse": 34,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 12, 28–34; Lk 10, 25–28)"
+      ],
+      "headings_affected": [
+        "Najveća zapovijed"
+      ]
+    },
+    {
+      "reference": "Mt 22,41",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 22,
+      "verse": 41,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 12, 35–37; Lk 20, 41–44)"
+      ],
+      "headings_affected": [
+        "Krist, sin i Gospodin Davidov"
+      ]
+    },
+    {
+      "reference": "Mt 23,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 23,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 12, 37–40; Lk 20, 45–47)"
+      ],
+      "headings_affected": [
+        "Licemjerje i taština pismoznanaca i farizeja"
+      ]
+    },
+    {
+      "reference": "Mt 23,13",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 23,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 11, 39–52)"
+      ],
+      "headings_affected": [
+        "»Jao vama, pismoznanci i farizeji!«"
+      ]
+    },
+    {
+      "reference": "Mt 23,33",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 23,
+      "verse": 33,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 11, 49–51)"
+      ],
+      "headings_affected": [
+        "Skora kazna"
+      ]
+    },
+    {
+      "reference": "Mt 23,37",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 23,
+      "verse": 37,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 13, 34–35)"
+      ],
+      "headings_affected": [
+        "Prijekor Jeruzalemu"
+      ]
+    },
+    {
+      "reference": "Mt 24,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 24,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 13, 1–2; Lk 21, 5–6)"
+      ],
+      "headings_affected": [
+        "2. ESHATOLOŠKA BESJEDA – DOVRŠENJE BOŽJEG DJELA",
+        "Uvod"
+      ]
+    },
+    {
+      "reference": "Mt 24,3",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 24,
+      "verse": 3,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 13, 3–13; Lk 21, 7–19)"
+      ],
+      "headings_affected": [
+        "Početak nevolja"
+      ]
+    },
+    {
+      "reference": "Mt 24,15",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 24,
+      "verse": 15,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 13, 14–23; Lk 21, 20–24)"
+      ],
+      "headings_affected": [
+        "Razorenje Jeruzalema"
+      ]
+    },
+    {
+      "reference": "Mt 24,26",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 24,
+      "verse": 26,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 13, 24–27; Lk 21, 25–28)"
+      ],
+      "headings_affected": [
+        "Dolazak Sina Čovječjega"
+      ]
+    },
+    {
+      "reference": "Mt 24,32",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 24,
+      "verse": 32,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 13, 28–37; Lk 21, 29–33; 17, 26–30. 34–36)"
+      ],
+      "headings_affected": [
+        "Iznenadnost ovih događaja"
+      ]
+    },
+    {
+      "reference": "Mt 24,45",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 24,
+      "verse": 45,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 12, 41–48)"
+      ],
+      "headings_affected": [
+        "Prispodoba o budnom upravitelju"
+      ]
+    },
+    {
+      "reference": "Mt 25,14",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 25,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 19, 11–27)"
+      ],
+      "headings_affected": [
+        "Prispodoba o talentima"
+      ]
+    },
+    {
+      "reference": "Mt 26,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 26,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 14, 1–2; Lk 22, 1–2; Iv 11, 45–53)"
+      ],
+      "headings_affected": [
+        "VII. MUKA I USKRSNUĆE",
+        "Zavjera protiv Isusa"
+      ]
+    },
+    {
+      "reference": "Mt 26,6",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 26,
+      "verse": 6,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 14, 3–9; Iv 12, 1–8)"
+      ],
+      "headings_affected": [
+        "Pomazanje u Betaniji"
+      ]
+    },
+    {
+      "reference": "Mt 26,14",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 26,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 14, 10–11; Lk 22, 3–6)"
+      ],
+      "headings_affected": [
+        "Judina izdaja"
+      ]
+    },
+    {
+      "reference": "Mt 26,17",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 26,
+      "verse": 17,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 14, 12–21; Lk 22, 7–14. 21–23; Iv 13, 21–30)"
+      ],
+      "headings_affected": [
+        "Pashalna večera"
+      ]
+    },
+    {
+      "reference": "Mt 26,26",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 26,
+      "verse": 26,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 14, 22–26; Lk 22, 15–20; 1 Kor 11, 23–25)"
+      ],
+      "headings_affected": [
+        "Ustanovljenje euharistije – večere Gospodnje"
+      ]
+    },
+    {
+      "reference": "Mt 26,31",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 26,
+      "verse": 31,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 14, 27–31; Lk 22, 31–34; Iv 13, 36–38)"
+      ],
+      "headings_affected": [
+        "Proroštvo o Petrovoj zataji"
+      ]
+    },
+    {
+      "reference": "Mt 26,36",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 26,
+      "verse": 36,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 14, 32–42; Lk 22, 39–46)"
+      ],
+      "headings_affected": [
+        "Molitva u Getsemanskom vrtu"
+      ]
+    },
+    {
+      "reference": "Mt 26,47",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 26,
+      "verse": 47,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 14, 43–50; Lk 22, 47–53; Iv 18, 3–12)"
+      ],
+      "headings_affected": [
+        "Isus uhvaćen"
+      ]
+    },
+    {
+      "reference": "Mt 26,57",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 26,
+      "verse": 57,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 14, 53–65; Lk 22, 54–55. 63–71; Iv 18, 13–14. 19–24)"
+      ],
+      "headings_affected": [
+        "Isus pred Vijećem"
+      ]
+    },
+    {
+      "reference": "Mt 26,69",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 26,
+      "verse": 69,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 14, 66–72; Lk 22, 56–62; Iv 18, 15–18. 25–27)"
+      ],
+      "headings_affected": [
+        "Petar se odriče Isusa"
+      ]
+    },
+    {
+      "reference": "Mt 27,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 27,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 15, 1; Lk 23, 1–2; Iv 18, 28–32)"
+      ],
+      "headings_affected": [
+        "Isus predan Pilatu"
+      ]
+    },
+    {
+      "reference": "Mt 27,3",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 27,
+      "verse": 3,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Dj 1, 18–19)"
+      ],
+      "headings_affected": [
+        "Judina smrt"
+      ]
+    },
+    {
+      "reference": "Mt 27,11",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 27,
+      "verse": 11,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 15, 2–15; Lk 23, 3–5. 13–25; Iv 18, 33 – 19, 16)"
+      ],
+      "headings_affected": [
+        "Pred Pilatom"
+      ]
+    },
+    {
+      "reference": "Mt 27,27",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 27,
+      "verse": 27,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 15, 16–20; Iv 19, 2–3)"
+      ],
+      "headings_affected": [
+        "Trnova kruna"
+      ]
+    },
+    {
+      "reference": "Mt 27,32",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 27,
+      "verse": 32,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 15, 21–32; Lk 23, 26–43; Iv 19, 17–27)"
+      ],
+      "headings_affected": [
+        "Raspeće"
+      ]
+    },
+    {
+      "reference": "Mt 27,45",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 27,
+      "verse": 45,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 15, 33–41; Lk 23, 44–49; Iv 19, 28–30)"
+      ],
+      "headings_affected": [
+        "Isusova smrt"
+      ]
+    },
+    {
+      "reference": "Mt 27,57",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 27,
+      "verse": 57,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 15, 42–47; Lk 23, 50–56; Iv 19, 38–42)"
+      ],
+      "headings_affected": [
+        "Ukop"
+      ]
+    },
+    {
+      "reference": "Mt 28,1",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 28,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 16, 1–8; Lk 24, 1–12; Iv 20, 1–10)"
+      ],
+      "headings_affected": [
+        "Uskrsnuće Isusovo"
+      ]
+    },
+    {
+      "reference": "Mt 28,16",
+      "book_title": "Evanđelje po Mateju",
+      "book_slug": "evandelje-po-mateju",
+      "chapter": 28,
+      "verse": 16,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 16, 14–18; Lk 24, 36–49; Iv 20, 19–23; Dj 1, 6–8)"
+      ],
+      "headings_affected": [
+        "Ukazanje u Galileji. Sveopće poslanje"
+      ]
+    },
+    {
+      "reference": "Mk 1,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 1,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 3, 1–12; Lk 3, 1–18; Iv 1, 19–27)"
+      ],
+      "headings_affected": [
+        "I. PRIPRAVA ZA ISUSOVO DJELOVANJE",
+        "Propovijedanje Ivana Krstitelja"
+      ]
+    },
+    {
+      "reference": "Mk 1,9",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 1,
+      "verse": 9,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 3, 13–17; Lk 1, 21–22; Iv 1, 29–34)"
+      ],
+      "headings_affected": [
+        "Isusovo krštenje"
+      ]
+    },
+    {
+      "reference": "Mk 1,12",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 1,
+      "verse": 12,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 4, 1–11; Lk 4, 1–13)"
+      ],
+      "headings_affected": [
+        "Kušnja u pustinji"
+      ]
+    },
+    {
+      "reference": "Mk 1,16",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 1,
+      "verse": 16,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 4, 12–22; Lk 4, 14–15; 5, 1–11; Iv 1, 35–51)"
+      ],
+      "headings_affected": [
+        "Prva četiri učenika"
+      ]
+    },
+    {
+      "reference": "Mk 1,21",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 1,
+      "verse": 21,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 4, 31–37)"
+      ],
+      "headings_affected": [
+        "Poučavanje i čudo u kafarnaumskoj sinagogi"
+      ]
+    },
+    {
+      "reference": "Mk 1,29",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 1,
+      "verse": 29,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 8, 14–15; Lk 4, 38–39)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje Petrove punice"
+      ]
+    },
+    {
+      "reference": "Mk 1,32",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 1,
+      "verse": 32,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 8, 6–17; Lk 4, 40–41)"
+      ],
+      "headings_affected": [
+        "Druga ozdravljenja"
+      ]
+    },
+    {
+      "reference": "Mk 1,35",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 1,
+      "verse": 35,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 4, 23; Lk 4, 42–44)"
+      ],
+      "headings_affected": [
+        "Isus potajno ostavlja Kafarnaum i propovijeda po Galileji"
+      ]
+    },
+    {
+      "reference": "Mk 1,40",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 1,
+      "verse": 40,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 8, 1–4; Lk 5, 12–16)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje gubavca"
+      ]
+    },
+    {
+      "reference": "Mk 2,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 2,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 9, 1–8; Lk 5, 17–26)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje uzetoga"
+      ]
+    },
+    {
+      "reference": "Mk 2,13",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 2,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 9, 9–13; Lk 5, 27–32)"
+      ],
+      "headings_affected": [
+        "Poziv Levija. Gozba s grešnicima"
+      ]
+    },
+    {
+      "reference": "Mk 2,18",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 2,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 9, 14–17; Lk 5, 33–39)"
+      ],
+      "headings_affected": [
+        "Rasprava o postu"
+      ]
+    },
+    {
+      "reference": "Mk 2,23",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 2,
+      "verse": 23,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 12, 1–8; Lk 6, 1–5)"
+      ],
+      "headings_affected": [
+        "Trganje klasja u subotu"
+      ]
+    },
+    {
+      "reference": "Mk 3,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 3,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 12, 9–14; Lk 6, 6–11)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje u subotu"
+      ]
+    },
+    {
+      "reference": "Mk 3,7",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 3,
+      "verse": 7,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 12, 15–16; Lk 6, 17–19)"
+      ],
+      "headings_affected": [
+        "Narod grne za Isusom"
+      ]
+    },
+    {
+      "reference": "Mk 3,13",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 3,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 10, 1–4; Lk 6, 12–16; Dj 1, 13)"
+      ],
+      "headings_affected": [
+        "Izbor dvanaestorice"
+      ]
+    },
+    {
+      "reference": "Mk 3,20",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 3,
+      "verse": 20,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 12, 22–32; Lk 11, 14–23; 12, 10)"
+      ],
+      "headings_affected": [
+        "Neodržive klevete"
+      ]
+    },
+    {
+      "reference": "Mk 3,31",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 3,
+      "verse": 31,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 12, 46–50; Lk 8, 19–21)"
+      ],
+      "headings_affected": [
+        "Prava rodbina Isusova"
+      ]
+    },
+    {
+      "reference": "Mk 4,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 4,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 1–3; Lk 8, 4)"
+      ],
+      "headings_affected": [
+        "Isus govori u prispodobama"
+      ]
+    },
+    {
+      "reference": "Mk 4,3",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 4,
+      "verse": 3,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 3–9; Lk 8, 5–8)"
+      ],
+      "headings_affected": [
+        "Prispodoba o sijaču"
+      ]
+    },
+    {
+      "reference": "Mk 4,10",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 4,
+      "verse": 10,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 10–15; Lk 8, 9–10)"
+      ],
+      "headings_affected": [
+        "Svrha prispodoba"
+      ]
+    },
+    {
+      "reference": "Mk 4,13",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 4,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 18–23; Lk 8, 11–15)"
+      ],
+      "headings_affected": [
+        "Tumačenje prispodobe o sijaču"
+      ]
+    },
+    {
+      "reference": "Mk 4,21",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 4,
+      "verse": 21,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 5, 15; 10, 26; 13, 12; Lk 8, 16–18)"
+      ],
+      "headings_affected": [
+        "Prispodoba o svjetiljci i o mjeri: shvaćanje evanđelja"
+      ]
+    },
+    {
+      "reference": "Mk 4,30",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 4,
+      "verse": 30,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 31–32; Lk 13, 18–19)"
+      ],
+      "headings_affected": [
+        "Prispodoba o gorušičinu zrnu"
+      ]
+    },
+    {
+      "reference": "Mk 4,33",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 4,
+      "verse": 33,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 34–35)"
+      ],
+      "headings_affected": [
+        "Zaključak o prispodobama"
+      ]
+    },
+    {
+      "reference": "Mk 4,35",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 4,
+      "verse": 35,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 8, 23–27; Lk 8, 22–25)"
+      ],
+      "headings_affected": [
+        "Stišana oluja"
+      ]
+    },
+    {
+      "reference": "Mk 5,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 5,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 8, 28–34; Lk 8, 26–39)"
+      ],
+      "headings_affected": [
+        "Opsjednuti Gerazenac"
+      ]
+    },
+    {
+      "reference": "Mk 5,21",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 5,
+      "verse": 21,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 9, 18–26; Lk 8, 40–56)"
+      ],
+      "headings_affected": [
+        "Kći Jairova. Ozdravljenje bolesne žene"
+      ]
+    },
+    {
+      "reference": "Mk 6,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 6,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 53–58; Lk 4, 16–30)"
+      ],
+      "headings_affected": [
+        "Isus nije priznat u svom zavičaju"
+      ]
+    },
+    {
+      "reference": "Mk 6,6",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 6,
+      "verse": 6,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 10, 1–15; Lk 9, 1–6)"
+      ],
+      "headings_affected": [
+        "Slanje apostolâ"
+      ]
+    },
+    {
+      "reference": "Mk 6,14",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 6,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 14, 1–12; Lk 9, 7–9; 3, 19–20)"
+      ],
+      "headings_affected": [
+        "Umorstvo Ivana Krstitelja"
+      ]
+    },
+    {
+      "reference": "Mk 6,30",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 6,
+      "verse": 30,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 14, 13–21; Lk 9, 10–17; Iv 6, 1–13)"
+      ],
+      "headings_affected": [
+        "Isus hrani pet tisuća ljudi"
+      ]
+    },
+    {
+      "reference": "Mk 6,45",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 6,
+      "verse": 45,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 14, 22–33; Iv 6, 16–21)"
+      ],
+      "headings_affected": [
+        "Isus hoda po moru"
+      ]
+    },
+    {
+      "reference": "Mk 6,53",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 6,
+      "verse": 53,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 14, 34–36)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje u genezaretskom kraju"
+      ]
+    },
+    {
+      "reference": "Mk 7,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 7,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 15, 1–20; Lk 11, 37–41)"
+      ],
+      "headings_affected": [
+        "Prepirka o farizejskim predajama"
+      ]
+    },
+    {
+      "reference": "Mk 7,23",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 7,
+      "verse": 23,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "III. ISUSOVO DJELOVANJE IZVAN GALILEJE"
+      ]
+    },
+    {
+      "reference": "Mk 7,24",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 7,
+      "verse": 24,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 15, 21–28)"
+      ],
+      "headings_affected": [
+        "Vjera jedne strankinje"
+      ]
+    },
+    {
+      "reference": "Mk 8,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 8,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 15, 32–39)"
+      ],
+      "headings_affected": [
+        "Isus hrani četiri tisuće ljudi"
+      ]
+    },
+    {
+      "reference": "Mk 8,11",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 8,
+      "verse": 11,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 16, 1–4; Lk 11, 16–29)"
+      ],
+      "headings_affected": [
+        "Znak s neba"
+      ]
+    },
+    {
+      "reference": "Mk 8,14",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 8,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 16, 5–12; Lk 12, 1)"
+      ],
+      "headings_affected": [
+        "Kvasac farizejski"
+      ]
+    },
+    {
+      "reference": "Mk 8,27",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 8,
+      "verse": 27,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 16, 13–20; Lk 9, 18–21; Iv 6, 67–71)"
+      ],
+      "headings_affected": [
+        "Petrova vjeroispovijest"
+      ]
+    },
+    {
+      "reference": "Mk 8,31",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 8,
+      "verse": 31,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 16, 21–23; Lk 9, 22)"
+      ],
+      "headings_affected": [
+        "Prvi navještaj muke i uskrsnuća"
+      ]
+    },
+    {
+      "reference": "Mk 8,34",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 8,
+      "verse": 34,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 16, 24–28; Lk 9, 23–27; Iv 12, 26)"
+      ],
+      "headings_affected": [
+        "»Hoće li tko za mnom …«"
+      ]
+    },
+    {
+      "reference": "Mk 9,2",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 9,
+      "verse": 2,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 17, 1–13; Lk 9, 28–36)"
+      ],
+      "headings_affected": [
+        "Preobraženje"
+      ]
+    },
+    {
+      "reference": "Mk 9,14",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 9,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 17, 14–21; Lk 9, 37–43)"
+      ],
+      "headings_affected": [
+        "Padavičar"
+      ]
+    },
+    {
+      "reference": "Mk 9,30",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 9,
+      "verse": 30,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 17, 22–23; Lk 9, 43–45)"
+      ],
+      "headings_affected": [
+        "Drugi navještaj muke i uskrsnuća"
+      ]
+    },
+    {
+      "reference": "Mk 9,33",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 9,
+      "verse": 33,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 18, 1–5; Lk 9, 46–48)"
+      ],
+      "headings_affected": [
+        "Tko je najveći?"
+      ]
+    },
+    {
+      "reference": "Mk 9,38",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 9,
+      "verse": 38,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 9, 49–50)"
+      ],
+      "headings_affected": [
+        "»Tko nije protiv nas, za nas je«"
+      ]
+    },
+    {
+      "reference": "Mk 9,42",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 9,
+      "verse": 42,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 18, 6–9; 5, 13; Lk 17, 1–2; 14, 34–35)"
+      ],
+      "headings_affected": [
+        "Sablazan"
+      ]
+    },
+    {
+      "reference": "Mk 10,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 10,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 19, 1–12)"
+      ],
+      "headings_affected": [
+        "Nerazrješivost ženidbe"
+      ]
+    },
+    {
+      "reference": "Mk 10,13",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 10,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 19, 13–15; Lk 18, 15–17)"
+      ],
+      "headings_affected": [
+        "Isus i djeca"
+      ]
+    },
+    {
+      "reference": "Mk 10,17",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 10,
+      "verse": 17,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 19, 16–30; Lk 18, 18–30)"
+      ],
+      "headings_affected": [
+        "Opasnost bogatstva"
+      ]
+    },
+    {
+      "reference": "Mk 10,32",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 10,
+      "verse": 32,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 20, 17–19; Lk 18, 31–34)"
+      ],
+      "headings_affected": [
+        "Treći navještaj muke i uskrsnuća"
+      ]
+    },
+    {
+      "reference": "Mk 10,35",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 10,
+      "verse": 35,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 20, 20–28; Lk 22, 24–27)"
+      ],
+      "headings_affected": [
+        "Molba Zebedejevih sinova"
+      ]
+    },
+    {
+      "reference": "Mk 10,46",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 10,
+      "verse": 46,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 20, 29–34; Lk 18, 35–43)"
+      ],
+      "headings_affected": [
+        "Jerihonski slijepac Bartimej"
+      ]
+    },
+    {
+      "reference": "Mk 11,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 11,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 1–11; Lk 19, 28–40; Iv 12, 12–19)"
+      ],
+      "headings_affected": [
+        "IV. ISUSOVO DJELOVANJE U JERUZALEMU",
+        "Mesijanski ulazak u Jeruzalem"
+      ]
+    },
+    {
+      "reference": "Mk 11,12",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 11,
+      "verse": 12,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 18–19)"
+      ],
+      "headings_affected": [
+        "Neplodna smokva"
+      ]
+    },
+    {
+      "reference": "Mk 11,15",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 11,
+      "verse": 15,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 12–17; Lk 19, 45–48; Iv 2, 13–22)"
+      ],
+      "headings_affected": [
+        "Izgon trgovaca iz Hrama"
+      ]
+    },
+    {
+      "reference": "Mk 11,20",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 11,
+      "verse": 20,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 20–22)"
+      ],
+      "headings_affected": [
+        "Osušena smokva. Vjera i molitva"
+      ]
+    },
+    {
+      "reference": "Mk 11,27",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 11,
+      "verse": 27,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 23–27; Lk 20, 1–8)"
+      ],
+      "headings_affected": [
+        "Odakle Isusu vlast?"
+      ]
+    },
+    {
+      "reference": "Mk 12,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 12,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 33–46; Lk 20, 9–19)"
+      ],
+      "headings_affected": [
+        "Vinogradari ubojice"
+      ]
+    },
+    {
+      "reference": "Mk 12,13",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 12,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 22, 15–22; Lk 20, 20–26)"
+      ],
+      "headings_affected": [
+        "Porez caru"
+      ]
+    },
+    {
+      "reference": "Mk 12,18",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 12,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 22, 23–33; Lk 20, 27–40)"
+      ],
+      "headings_affected": [
+        "Uskrsnuće mrtvih"
+      ]
+    },
+    {
+      "reference": "Mk 12,28",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 12,
+      "verse": 28,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 22, 34–40; Lk 10, 25–28)"
+      ],
+      "headings_affected": [
+        "Najveća zapovijed"
+      ]
+    },
+    {
+      "reference": "Mk 12,35",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 12,
+      "verse": 35,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 22, 41–46; Lk 20, 41–44)"
+      ],
+      "headings_affected": [
+        "Krist, Sin i Gospodin Davidov"
+      ]
+    },
+    {
+      "reference": "Mk 12,37",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 12,
+      "verse": 37,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 23, 1–36; Lk 20, 45–47)"
+      ],
+      "headings_affected": [
+        "Isusov sud o pismoznancima"
+      ]
+    },
+    {
+      "reference": "Mk 12,41",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 12,
+      "verse": 41,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 21, 1–4)"
+      ],
+      "headings_affected": [
+        "Udovičin novčić"
+      ]
+    },
+    {
+      "reference": "Mk 13,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 13,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 1–3; Lk 21, 5–7)"
+      ],
+      "headings_affected": [
+        "Eshatološka besjeda –Dovršenje Božjega djelaUvod"
+      ]
+    },
+    {
+      "reference": "Mk 13,5",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 13,
+      "verse": 5,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 4–14; Lk 21, 8–19)"
+      ],
+      "headings_affected": [
+        "Početak nevolja"
+      ]
+    },
+    {
+      "reference": "Mk 13,14",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 13,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 15–28; Lk 21, 20–24)"
+      ],
+      "headings_affected": [
+        "Propast Jeruzalema"
+      ]
+    },
+    {
+      "reference": "Mk 13,24",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 13,
+      "verse": 24,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 29–31; Lk 21, 25–28)"
+      ],
+      "headings_affected": [
+        "Dolazak Sina Čovječjega"
+      ]
+    },
+    {
+      "reference": "Mk 13,28",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 13,
+      "verse": 28,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 32–35; Lk 21, 29–33)"
+      ],
+      "headings_affected": [
+        "Vrijeme dolaska neizvjesno"
+      ]
+    },
+    {
+      "reference": "Mk 13,33",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 13,
+      "verse": 33,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 36–44)"
+      ],
+      "headings_affected": [
+        "»Bdijte!«"
+      ]
+    },
+    {
+      "reference": "Mk 14,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 14,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 1–5; Lk 22, 1–2; Iv 11, 45–53)"
+      ],
+      "headings_affected": [
+        "V. ISUSOVA MUKA I USKRSNUĆE",
+        "Zavjera protiv Isusa"
+      ]
+    },
+    {
+      "reference": "Mk 14,3",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 14,
+      "verse": 3,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 6–13; Iv 12, 1–8)"
+      ],
+      "headings_affected": [
+        "Pomazanje u Betaniji"
+      ]
+    },
+    {
+      "reference": "Mk 14,10",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 14,
+      "verse": 10,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 14–16; Lk 22, 3–6)"
+      ],
+      "headings_affected": [
+        "Judina izdaja"
+      ]
+    },
+    {
+      "reference": "Mk 14,12",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 14,
+      "verse": 12,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 17–25; Lk 22, 7–14. 21–23; Iv 13, 21–30)"
+      ],
+      "headings_affected": [
+        "Pashalna večera"
+      ]
+    },
+    {
+      "reference": "Mk 14,22",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 14,
+      "verse": 22,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 26–30; Lk 22, 15–20; 1 Kor 11, 23–25)"
+      ],
+      "headings_affected": [
+        "Ustanovljenje euharistije – večere Gospodnje"
+      ]
+    },
+    {
+      "reference": "Mk 14,26",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 14,
+      "verse": 26,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 31–35; Lk 22, 31–34; Iv 13, 36–38)"
+      ],
+      "headings_affected": [
+        "Proroštvo o Petrovoj zataji"
+      ]
+    },
+    {
+      "reference": "Mk 14,32",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 14,
+      "verse": 32,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 36–46; Lk 22, 39–46)"
+      ],
+      "headings_affected": [
+        "Molitva u Getsemanskom vrtu"
+      ]
+    },
+    {
+      "reference": "Mk 14,43",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 14,
+      "verse": 43,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 47–56; Lk 22, 47–53; Iv 18, 3–12)"
+      ],
+      "headings_affected": [
+        "Isus uhvaćen"
+      ]
+    },
+    {
+      "reference": "Mk 14,53",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 14,
+      "verse": 53,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 57–68; Lk 22, 54–55. 63–71; Iv 18, 13–14. 19–24)"
+      ],
+      "headings_affected": [
+        "Pred židovskim Vijećem"
+      ]
+    },
+    {
+      "reference": "Mk 14,66",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 14,
+      "verse": 66,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 69–75; Lk 22, 56–62; Iv 18, 15–18. 25–27)"
+      ],
+      "headings_affected": [
+        "Petar se odriče Isusa"
+      ]
+    },
+    {
+      "reference": "Mk 15,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 15,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 1–2. 11–26; Lk 23, 1–5. 13–25; Iv 18, 28 – 19, 16)"
+      ],
+      "headings_affected": [
+        "Pred Pilatom"
+      ]
+    },
+    {
+      "reference": "Mk 15,16",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 15,
+      "verse": 16,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 27–31; Iv 19, 2–3)"
+      ],
+      "headings_affected": [
+        "Trnov vijenac"
+      ]
+    },
+    {
+      "reference": "Mk 15,20",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 15,
+      "verse": 20,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 32–44; Lk 23, 26–43; Iv 19, 17–27)"
+      ],
+      "headings_affected": [
+        "Raspeće"
+      ]
+    },
+    {
+      "reference": "Mk 15,33",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 15,
+      "verse": 33,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 45–56; Lk 23, 44–49; Iv 19, 28–30)"
+      ],
+      "headings_affected": [
+        "Isusova smrt"
+      ]
+    },
+    {
+      "reference": "Mk 15,42",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 15,
+      "verse": 42,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 57–61; Lk 23, 50–56; Iv 19, 38–42)"
+      ],
+      "headings_affected": [
+        "Isusov ukop"
+      ]
+    },
+    {
+      "reference": "Mk 16,1",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 16,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 28, 1–8; Lk 24, 1–12; Iv 20, 1–10)"
+      ],
+      "headings_affected": [
+        "Uskrsnuće Isusovo"
+      ]
+    },
+    {
+      "reference": "Mk 16,9",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 16,
+      "verse": 9,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 28, 9–10; Iv 20, 11–18)"
+      ],
+      "headings_affected": [
+        "Ukazanje Mariji Magdaleni"
+      ]
+    },
+    {
+      "reference": "Mk 16,12",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 16,
+      "verse": 12,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 24, 13–35)"
+      ],
+      "headings_affected": [
+        "Ukazanje dvojici učenika"
+      ]
+    },
+    {
+      "reference": "Mk 16,14",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 16,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 28, 16–20; Lk 24, 36–49; Iv 20, 19. 23; Dj 1, 6–8)"
+      ],
+      "headings_affected": [
+        "Sveopće poslanje"
+      ]
+    },
+    {
+      "reference": "Mk 16,19",
+      "book_title": "Evanđelje po Marku",
+      "book_slug": "evandelje-po-marku",
+      "chapter": 16,
+      "verse": 19,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Lk 24, 50–53; Dj 1, 9–11)"
+      ],
+      "headings_affected": [
+        "Uzašašće Isusovo"
+      ]
+    },
+    {
+      "reference": "Lk 2,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 2,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 1, 18–25)"
+      ],
+      "headings_affected": [
+        "Rođenje Isusovo"
+      ]
+    },
+    {
+      "reference": "Lk 3,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 3,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 3, 1–12; Mk 1, 1–8; Iv 1, 19–28)"
+      ],
+      "headings_affected": [
+        "II. PRIPRAVA ISUSOVA DJELOVANJA",
+        "Propovijedanje Ivana Krstitelja"
+      ]
+    },
+    {
+      "reference": "Lk 3,21",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 3,
+      "verse": 21,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 3, 13–17; Mk 1, 9–11)"
+      ],
+      "headings_affected": [
+        "Isusovo krštenje"
+      ]
+    },
+    {
+      "reference": "Lk 3,23",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 3,
+      "verse": 23,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 1, 1–17)"
+      ],
+      "headings_affected": [
+        "Zakonsko podrijetlo Isusovo"
+      ]
+    },
+    {
+      "reference": "Lk 4,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 4,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 4, 1–11; Mk 1, 12–13)"
+      ],
+      "headings_affected": [
+        "Kušnja u pustinji"
+      ]
+    },
+    {
+      "reference": "Lk 4,13",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 4,
+      "verse": 13,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "III. ISUSOVO DJELOVANJE U GALILEJI"
+      ]
+    },
+    {
+      "reference": "Lk 4,14",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 4,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 4, 12–17; Mk 1, 14–15)"
+      ],
+      "headings_affected": [
+        "Isus se vraća u Galileju"
+      ]
+    },
+    {
+      "reference": "Lk 4,16",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 4,
+      "verse": 16,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 53–58; Mk 6, 1–6)"
+      ],
+      "headings_affected": [
+        "Odbačen u Nazaretu"
+      ]
+    },
+    {
+      "reference": "Lk 4,31",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 4,
+      "verse": 31,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 1, 21–28)"
+      ],
+      "headings_affected": [
+        "Naučava u Kafarnaumu i liječi opsjednutoga"
+      ]
+    },
+    {
+      "reference": "Lk 4,38",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 4,
+      "verse": 38,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 8, 14–17; Mk 1, 29–34)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje Šimunove punice i drugih bolesnika"
+      ]
+    },
+    {
+      "reference": "Lk 4,42",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 4,
+      "verse": 42,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 1, 35–39)"
+      ],
+      "headings_affected": [
+        "Ostavlja Kafarnaum i prolazi Judejom"
+      ]
+    },
+    {
+      "reference": "Lk 5,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 5,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 4, 18–22; Mk 1, 16–20)"
+      ],
+      "headings_affected": [
+        "Prva četiri učenika"
+      ]
+    },
+    {
+      "reference": "Lk 5,12",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 5,
+      "verse": 12,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 8, 1–4; Mk 1, 40–45)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje gubavca"
+      ]
+    },
+    {
+      "reference": "Lk 5,17",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 5,
+      "verse": 17,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 9, 1–8; Mk 2, 1–12)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje uzetoga"
+      ]
+    },
+    {
+      "reference": "Lk 5,27",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 5,
+      "verse": 27,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 9, 9–13; Mk 2, 13–17)"
+      ],
+      "headings_affected": [
+        "Poziv Levija"
+      ]
+    },
+    {
+      "reference": "Lk 5,33",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 5,
+      "verse": 33,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 9, 14–17; Mk 2, 18–22)"
+      ],
+      "headings_affected": [
+        "Rasprava o postu"
+      ]
+    },
+    {
+      "reference": "Lk 6,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 6,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 12, 1–8; Mk 2, 23–28)"
+      ],
+      "headings_affected": [
+        "Trganje klasja u subotu"
+      ]
+    },
+    {
+      "reference": "Lk 6,6",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 6,
+      "verse": 6,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 12, 9–14; Mk 3, 1–6)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje u subotu"
+      ]
+    },
+    {
+      "reference": "Lk 6,12",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 6,
+      "verse": 12,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 10, 1–4; Mk 3, 13–19)"
+      ],
+      "headings_affected": [
+        "Izbor dvanaestorice"
+      ]
+    },
+    {
+      "reference": "Lk 6,17",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 6,
+      "verse": 17,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 4, 24–25; 12, 15–16; Mk 3, 7–12)"
+      ],
+      "headings_affected": [
+        "Mnoštvo hrli za Isusom"
+      ]
+    },
+    {
+      "reference": "Lk 6,20",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 6,
+      "verse": 20,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 5, 1–12)"
+      ],
+      "headings_affected": [
+        "Nastupna besjeda"
+      ]
+    },
+    {
+      "reference": "Lk 6,27",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 6,
+      "verse": 27,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 5, 38–48; 7, 12)"
+      ],
+      "headings_affected": [
+        "Ljubav prema neprijateljima"
+      ]
+    },
+    {
+      "reference": "Lk 6,37",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 6,
+      "verse": 37,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 7, 1–5; 15, 14; 10, 24–25)"
+      ],
+      "headings_affected": [
+        "Milosrđe i dobrohotnost"
+      ]
+    },
+    {
+      "reference": "Lk 6,43",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 6,
+      "verse": 43,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 7, 17–20; 12, 34–35)"
+      ],
+      "headings_affected": [
+        "Stablo se pozna po plodovima"
+      ]
+    },
+    {
+      "reference": "Lk 6,46",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 6,
+      "verse": 46,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 7, 21. 24–27)"
+      ],
+      "headings_affected": [
+        "Djela, ne samo riječi"
+      ]
+    },
+    {
+      "reference": "Lk 7,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 7,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 8, 5–13)"
+      ],
+      "headings_affected": [
+        "Vjera rimskog satnika"
+      ]
+    },
+    {
+      "reference": "Lk 7,18",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 7,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 11, 2–15)"
+      ],
+      "headings_affected": [
+        "Isusovo svjedočanstvo o Ivanu"
+      ]
+    },
+    {
+      "reference": "Lk 7,31",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 7,
+      "verse": 31,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 11, 16–19)"
+      ],
+      "headings_affected": [
+        "Isusov sud o suvremenicima"
+      ]
+    },
+    {
+      "reference": "Lk 8,4",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 8,
+      "verse": 4,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 1–9; Mk 4, 1–9)"
+      ],
+      "headings_affected": [
+        "Prispodoba o sijaču"
+      ]
+    },
+    {
+      "reference": "Lk 8,9",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 8,
+      "verse": 9,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 10–17; Mk 4, 10–12)"
+      ],
+      "headings_affected": [
+        "Zašto Isus govori u prispodobama"
+      ]
+    },
+    {
+      "reference": "Lk 8,16",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 8,
+      "verse": 16,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 5, 15; 10, 26; 13, 12; Mk 4, 21–25)"
+      ],
+      "headings_affected": [
+        "Prispodoba o svjetiljci"
+      ]
+    },
+    {
+      "reference": "Lk 8,19",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 8,
+      "verse": 19,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 12, 46–50; Mk 3, 21. 31–35)"
+      ],
+      "headings_affected": [
+        "Prava rodbina Isusova"
+      ]
+    },
+    {
+      "reference": "Lk 8,22",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 8,
+      "verse": 22,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 8, 23–27; Mk 4, 35–41)"
+      ],
+      "headings_affected": [
+        "Stišana oluja"
+      ]
+    },
+    {
+      "reference": "Lk 8,26",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 8,
+      "verse": 26,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 8, 28–34; Mk 5, 1–20)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje opsjednutoga"
+      ]
+    },
+    {
+      "reference": "Lk 8,40",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 8,
+      "verse": 40,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 9, 18–26; Mk 5, 21–43)"
+      ],
+      "headings_affected": [
+        "Ozdravljenje bolesne žene i uskrišenje Jairove kćeri"
+      ]
+    },
+    {
+      "reference": "Lk 9,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 10, 1–15; Mk 6, 7–13)"
+      ],
+      "headings_affected": [
+        "Poslanje dvanaestorice"
+      ]
+    },
+    {
+      "reference": "Lk 9,7",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 7,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 14, 1–2; Mk 6, 14–16)"
+      ],
+      "headings_affected": [
+        "Herod i Isus"
+      ]
+    },
+    {
+      "reference": "Lk 9,10",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 10,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 14, 13–21; Mk 6, 30–34; Iv 6, 1–14)"
+      ],
+      "headings_affected": [
+        "Isus hrani pet tisuća ljudi"
+      ]
+    },
+    {
+      "reference": "Lk 9,18",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 16, 13–20; Mk 8, 27–30; Iv 6, 67–70)"
+      ],
+      "headings_affected": [
+        "Petrova vjeroispovijest"
+      ]
+    },
+    {
+      "reference": "Lk 9,22",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 22,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 16, 21–23; Mk 8, 31–33)"
+      ],
+      "headings_affected": [
+        "Prvi navještaj muke i uskrsnuća"
+      ]
+    },
+    {
+      "reference": "Lk 9,23",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 23,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 16, 24–28; Mk 8, 34 – 9, 1; Iv 12, 25–26)"
+      ],
+      "headings_affected": [
+        "Uvjeti za nasljedovanje Isusa"
+      ]
+    },
+    {
+      "reference": "Lk 9,28",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 28,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 17, 1–8; Mk 9, 2–8)"
+      ],
+      "headings_affected": [
+        "Preobraženje"
+      ]
+    },
+    {
+      "reference": "Lk 9,37",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 37,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 17, 14–21; Mk 9, 14–29)"
+      ],
+      "headings_affected": [
+        "Opsjednuti padavičar"
+      ]
+    },
+    {
+      "reference": "Lk 9,43",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 43,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 17, 22–23; Mk 9, 30–32)"
+      ],
+      "headings_affected": [
+        "Drugi navještaj muke i uskrsnuća"
+      ]
+    },
+    {
+      "reference": "Lk 9,46",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 46,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 18, 1–5; Mk 9, 33–37)"
+      ],
+      "headings_affected": [
+        "Tko je najveći?"
+      ]
+    },
+    {
+      "reference": "Lk 9,49",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 49,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 9, 38–40)"
+      ],
+      "headings_affected": [
+        "»Tko nije protiv vas, za vas je«"
+      ]
+    },
+    {
+      "reference": "Lk 9,57",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 9,
+      "verse": 57,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 8, 19–22)"
+      ],
+      "headings_affected": [
+        "Zahtjevi apostolskog poziva"
+      ]
+    },
+    {
+      "reference": "Lk 10,13",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 10,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 11, 20–24)"
+      ],
+      "headings_affected": [
+        "Prijetnja neobraćenim gradovima"
+      ]
+    },
+    {
+      "reference": "Lk 10,21",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 10,
+      "verse": 21,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 11, 25–27; 13, 16–17)"
+      ],
+      "headings_affected": [
+        "Evanđelje objavljeno jednostavnima"
+      ]
+    },
+    {
+      "reference": "Lk 10,25",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 10,
+      "verse": 25,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 22, 34–40; Mk 12, 28–34)"
+      ],
+      "headings_affected": [
+        "Zapovijed ljubavi"
+      ]
+    },
+    {
+      "reference": "Lk 11,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 11,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 6, 9–15; 7, 7–11)"
+      ],
+      "headings_affected": [
+        "Pouka o molitvi"
+      ]
+    },
+    {
+      "reference": "Lk 11,14",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 11,
+      "verse": 14,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 12, 22–30; Mk 3, 20–27)"
+      ],
+      "headings_affected": [
+        "Isus i Beelzebul"
+      ]
+    },
+    {
+      "reference": "Lk 11,24",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 11,
+      "verse": 24,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 12, 43–45)"
+      ],
+      "headings_affected": [
+        "Ponovni pad"
+      ]
+    },
+    {
+      "reference": "Lk 11,29",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 11,
+      "verse": 29,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 12, 38–42; Mk 8, 12)"
+      ],
+      "headings_affected": [
+        "Jonin znak"
+      ]
+    },
+    {
+      "reference": "Lk 11,33",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 11,
+      "verse": 33,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 5, 15; 6, 22–23)"
+      ],
+      "headings_affected": [
+        "Druga prispodoba o svjetiljci"
+      ]
+    },
+    {
+      "reference": "Lk 11,37",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 11,
+      "verse": 37,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 23, 1–36; Mk 12, 38–40; Lk 20, 45–47)"
+      ],
+      "headings_affected": [
+        "Protiv farizejâ i zakonoznanaca"
+      ]
+    },
+    {
+      "reference": "Lk 12,4",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 12,
+      "verse": 4,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 10, 28–31)"
+      ],
+      "headings_affected": [
+        "Koga se treba bojati"
+      ]
+    },
+    {
+      "reference": "Lk 12,8",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 12,
+      "verse": 8,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 10, 32–33; 12, 32; 10, 19–20)"
+      ],
+      "headings_affected": [
+        "Priznati se Kristovim pred ljudima"
+      ]
+    },
+    {
+      "reference": "Lk 12,22",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 12,
+      "verse": 22,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 6, 25–34. 19–21)"
+      ],
+      "headings_affected": [
+        "Pouzdanje u providnost"
+      ]
+    },
+    {
+      "reference": "Lk 12,35",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 12,
+      "verse": 35,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 45–51)"
+      ],
+      "headings_affected": [
+        "Budni sluge"
+      ]
+    },
+    {
+      "reference": "Lk 12,49",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 12,
+      "verse": 49,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 10, 34–36)"
+      ],
+      "headings_affected": [
+        "Veliko dijeljenje svijeta"
+      ]
+    },
+    {
+      "reference": "Lk 12,54",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 12,
+      "verse": 54,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 16, 2–3)"
+      ],
+      "headings_affected": [
+        "Znakovi vremena"
+      ]
+    },
+    {
+      "reference": "Lk 12,57",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 12,
+      "verse": 57,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 5, 25–26)"
+      ],
+      "headings_affected": [
+        "Nagoditi se s protivnikom"
+      ]
+    },
+    {
+      "reference": "Lk 13,18",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 13,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 31–32; Mk 4, 30–32)"
+      ],
+      "headings_affected": [
+        "Prispodoba o gorušičinu zrnu"
+      ]
+    },
+    {
+      "reference": "Lk 13,20",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 13,
+      "verse": 20,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 13, 33)"
+      ],
+      "headings_affected": [
+        "Prispodoba o kvascu"
+      ]
+    },
+    {
+      "reference": "Lk 13,22",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 13,
+      "verse": 22,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 7, 13–14. 21–23)"
+      ],
+      "headings_affected": [
+        "Odbačenje nevjernih Židova. Poziv poganima"
+      ]
+    },
+    {
+      "reference": "Lk 13,34",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 13,
+      "verse": 34,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 23, 37–39)"
+      ],
+      "headings_affected": [
+        "Prijetnja Jeruzalemu"
+      ]
+    },
+    {
+      "reference": "Lk 14,15",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 14,
+      "verse": 15,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 22, 1–10)"
+      ],
+      "headings_affected": [
+        "Prispodoba o uzvanicima"
+      ]
+    },
+    {
+      "reference": "Lk 14,25",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 14,
+      "verse": 25,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 10, 37–38)"
+      ],
+      "headings_affected": [
+        "Odreći se svega"
+      ]
+    },
+    {
+      "reference": "Lk 15,3",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 15,
+      "verse": 3,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 18, 12–14)"
+      ],
+      "headings_affected": [
+        "Izgubljena i nađena ovca"
+      ]
+    },
+    {
+      "reference": "Lk 16,16",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 16,
+      "verse": 16,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 11, 12–13; 5, 18)"
+      ],
+      "headings_affected": [
+        "Vječnost Zakona"
+      ]
+    },
+    {
+      "reference": "Lk 16,18",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 16,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 19, 9; Mk 10, 11–12)"
+      ],
+      "headings_affected": [
+        "Nerazrješivost ženidbe"
+      ]
+    },
+    {
+      "reference": "Lk 17,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 17,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 18, 6–7; Mk 9, 42)"
+      ],
+      "headings_affected": [
+        "Sablazan"
+      ]
+    },
+    {
+      "reference": "Lk 17,3",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 17,
+      "verse": 3,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 18, 15)"
+      ],
+      "headings_affected": [
+        "Bratska opomena"
+      ]
+    },
+    {
+      "reference": "Lk 17,5",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 17,
+      "verse": 5,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 17, 19–21; Mk 9, 28–29)"
+      ],
+      "headings_affected": [
+        "Moć vjere"
+      ]
+    },
+    {
+      "reference": "Lk 17,20",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 17,
+      "verse": 20,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 23–28. 37–41)"
+      ],
+      "headings_affected": [
+        "Bog će uspostaviti svoje kraljevstvo"
+      ]
+    },
+    {
+      "reference": "Lk 18,15",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 18,
+      "verse": 15,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 19, 13–15; Mk 10, 13–16)"
+      ],
+      "headings_affected": [
+        "Isus i djeca"
+      ]
+    },
+    {
+      "reference": "Lk 18,18",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 18,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 19, 16–30; Mk 10, 17–31)"
+      ],
+      "headings_affected": [
+        "Opasnost bogatstva"
+      ]
+    },
+    {
+      "reference": "Lk 18,31",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 18,
+      "verse": 31,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 20, 17–19; Mk 10, 32–34)"
+      ],
+      "headings_affected": [
+        "Treći navještaj muke i uskrsnuća"
+      ]
+    },
+    {
+      "reference": "Lk 19,11",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 19,
+      "verse": 11,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 25, 14–30)"
+      ],
+      "headings_affected": [
+        "Prispodoba o mnama"
+      ]
+    },
+    {
+      "reference": "Lk 19,27",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 19,
+      "verse": 27,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "V. ISUSOVI POSLJEDNJI DANI U JERUZALEMU"
+      ]
+    },
+    {
+      "reference": "Lk 19,28",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 19,
+      "verse": 28,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 1–11; Mk 11, 1–11; Iv 12, 12–19)"
+      ],
+      "headings_affected": [
+        "Mesijanski ulazak u Jeruzalem"
+      ]
+    },
+    {
+      "reference": "Lk 19,45",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 19,
+      "verse": 45,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 12–13; Mk 11, 15–17; Iv 2, 13–17)"
+      ],
+      "headings_affected": [
+        "Izgon trgovaca iz Hrama"
+      ]
+    },
+    {
+      "reference": "Lk 19,47",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 19,
+      "verse": 47,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 11, 18–19; Iv 11, 52–53)"
+      ],
+      "headings_affected": [
+        "Poučavanje u Hramu"
+      ]
+    },
+    {
+      "reference": "Lk 20,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 20,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 23–27; Mk 11, 27–33)"
+      ],
+      "headings_affected": [
+        "Odakle Isusu vlast?"
+      ]
+    },
+    {
+      "reference": "Lk 20,9",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 20,
+      "verse": 9,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 33–46; Mk 12, 1–12)"
+      ],
+      "headings_affected": [
+        "Vinogradari ubojice"
+      ]
+    },
+    {
+      "reference": "Lk 20,20",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 20,
+      "verse": 20,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 22, 15–22; Mk 12, 13–17)"
+      ],
+      "headings_affected": [
+        "Porez caru"
+      ]
+    },
+    {
+      "reference": "Lk 20,27",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 20,
+      "verse": 27,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 22, 23–33; Mk 12, 18–27)"
+      ],
+      "headings_affected": [
+        "Uskrsnuće mrtvih"
+      ]
+    },
+    {
+      "reference": "Lk 20,41",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 20,
+      "verse": 41,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 22, 41–46; Mk 12, 35–37)"
+      ],
+      "headings_affected": [
+        "Krist, Sin i Gospodin Davidov"
+      ]
+    },
+    {
+      "reference": "Lk 20,45",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 20,
+      "verse": 45,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 23, 1–36; Mk 12, 38–40; Lk 11, 37–54)"
+      ],
+      "headings_affected": [
+        "Isusov sud o pismoznancima"
+      ]
+    },
+    {
+      "reference": "Lk 21,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 21,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 12, 41–44)"
+      ],
+      "headings_affected": [
+        "Udovičin darak"
+      ]
+    },
+    {
+      "reference": "Lk 21,4",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 21,
+      "verse": 4,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "ESHATOLOŠKA BESJEDA"
+      ]
+    },
+    {
+      "reference": "Lk 21,5",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 21,
+      "verse": 5,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 1–2; Mk 13, 1–2)"
+      ],
+      "headings_affected": [
+        "Uvod"
+      ]
+    },
+    {
+      "reference": "Lk 21,7",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 21,
+      "verse": 7,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 3–14; Mk 13, 3–13)"
+      ],
+      "headings_affected": [
+        "Prethodni znaci"
+      ]
+    },
+    {
+      "reference": "Lk 21,20",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 21,
+      "verse": 20,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 15–21; Mk 13, 14–19)"
+      ],
+      "headings_affected": [
+        "Razorenje Jeruzalema"
+      ]
+    },
+    {
+      "reference": "Lk 21,25",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 21,
+      "verse": 25,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 29–31; Mk 13, 24–27)"
+      ],
+      "headings_affected": [
+        "Svršetak svijeta i dolazak Sina Čovječjega"
+      ]
+    },
+    {
+      "reference": "Lk 21,29",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 21,
+      "verse": 29,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 24, 32–35; Mk 13, 28–31)"
+      ],
+      "headings_affected": [
+        "Vrijeme dolaska neizvjesno"
+      ]
+    },
+    {
+      "reference": "Lk 22,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 22,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 1–5. 14–16; Mk 14, 1–2. 10–11; Iv 11, 45–53)"
+      ],
+      "headings_affected": [
+        "VI. MUKA",
+        "Zavjera protiv Isusa i Judina izdaja"
+      ]
+    },
+    {
+      "reference": "Lk 22,7",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 22,
+      "verse": 7,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 17–25; Mk 14, 12–21; Iv 13, 21–30)"
+      ],
+      "headings_affected": [
+        "Priprava za pashalnu večeru"
+      ]
+    },
+    {
+      "reference": "Lk 22,19",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 22,
+      "verse": 19,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 26–30; Mk 14, 22–26; 1 Kor 11, 23–25)"
+      ],
+      "headings_affected": [
+        "Ustanovljenje euharistije – večere Gospodnje"
+      ]
+    },
+    {
+      "reference": "Lk 22,31",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 22,
+      "verse": 31,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 31–35; Mk 14, 27–31; Iv 13, 36–38)"
+      ],
+      "headings_affected": [
+        "Proroštvo o Petrovoj zataji"
+      ]
+    },
+    {
+      "reference": "Lk 22,39",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 22,
+      "verse": 39,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 36–46; Mk 14, 32–42)"
+      ],
+      "headings_affected": [
+        "Molitva na Maslinskoj gori"
+      ]
+    },
+    {
+      "reference": "Lk 22,47",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 22,
+      "verse": 47,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 47–56; Mk 14, 43–50; Iv 18, 3–11)"
+      ],
+      "headings_affected": [
+        "Isus uhvaćen"
+      ]
+    },
+    {
+      "reference": "Lk 22,54",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 22,
+      "verse": 54,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 57–58. 69–75; Mk 14, 53–54. 66–72; Iv 18, 12–18. 25–27)"
+      ],
+      "headings_affected": [
+        "Petar se odriče Isusa"
+      ]
+    },
+    {
+      "reference": "Lk 22,63",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 22,
+      "verse": 63,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 67–68; Mk 14, 65)"
+      ],
+      "headings_affected": [
+        "Prva zlostavljanja"
+      ]
+    },
+    {
+      "reference": "Lk 22,66",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 22,
+      "verse": 66,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 59–66; Mk 14, 55–64; Iv 18, 19–24)"
+      ],
+      "headings_affected": [
+        "Isus pred židovskim Vijećem"
+      ]
+    },
+    {
+      "reference": "Lk 23,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 23,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 1–2. 11–14; Mk 15, 1–5; Iv 18, 28–38)"
+      ],
+      "headings_affected": [
+        "Pred Pilatom"
+      ]
+    },
+    {
+      "reference": "Lk 23,13",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 23,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 15–26; Mk 15, 6–15; Iv 18, 39 – 19, 16)"
+      ],
+      "headings_affected": [
+        "Pilat osuđuje Isusa na smrt"
+      ]
+    },
+    {
+      "reference": "Lk 23,33",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 23,
+      "verse": 33,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 33–37; Mk 15, 22–26; Iv 19, 17–27)"
+      ],
+      "headings_affected": [
+        "Raspeće"
+      ]
+    },
+    {
+      "reference": "Lk 23,39",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 23,
+      "verse": 39,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 44; Mk 15, 32)"
+      ],
+      "headings_affected": [
+        "Dobri razbojnik"
+      ]
+    },
+    {
+      "reference": "Lk 23,44",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 23,
+      "verse": 44,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 45–55; Mk 15, 33–41; Iv 19, 28–30)"
+      ],
+      "headings_affected": [
+        "Isusova smrt"
+      ]
+    },
+    {
+      "reference": "Lk 23,50",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 23,
+      "verse": 50,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 57–61; Mk 15, 42–47; Iv 19, 38–42)"
+      ],
+      "headings_affected": [
+        "Ukop"
+      ]
+    },
+    {
+      "reference": "Lk 24,1",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 24,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 28, 1–10; Mk 16, 1–8; Iv 20, 1–10)"
+      ],
+      "headings_affected": [
+        "VII. NAKON USKRSNUĆA",
+        "Uskrsnuće Isusovo"
+      ]
+    },
+    {
+      "reference": "Lk 24,13",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 24,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 16, 12–13)"
+      ],
+      "headings_affected": [
+        "Ukazanje učenicima na putu u Emaus"
+      ]
+    },
+    {
+      "reference": "Lk 24,36",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 24,
+      "verse": 36,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 28, 16–20; Mk 16, 14–18; Iv 20, 19–23; Dj 6, 1–8)"
+      ],
+      "headings_affected": [
+        "Isus se ukazuje apostolima"
+      ]
+    },
+    {
+      "reference": "Lk 24,50",
+      "book_title": "Evanđelje po Luki",
+      "book_slug": "evandelje-po-luki",
+      "chapter": 24,
+      "verse": 50,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mk 16, 19–20; Dj 1, 9–11)"
+      ],
+      "headings_affected": [
+        "Uzašašće"
+      ]
+    },
+    {
+      "reference": "Iv 1,18",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 1,
+      "verse": 18,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "I. PRVA PASHA",
+        "1. UVODNI TJEDAN"
+      ]
+    },
+    {
+      "reference": "Iv 1,19",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 1,
+      "verse": 19,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 3, 1–17; Mk 1, 1–11; Lk 3, 1–22)"
+      ],
+      "headings_affected": [
+        "Ivanovo svjedočanstvo"
+      ]
+    },
+    {
+      "reference": "Iv 2,12",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 2,
+      "verse": 12,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "2. BLAGDAN PASHE"
+      ]
+    },
+    {
+      "reference": "Iv 2,13",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 2,
+      "verse": 13,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 12–13; Mk 11, 15–17; Lk 19, 45–46)"
+      ],
+      "headings_affected": [
+        "Čišćenje Hrama"
+      ]
+    },
+    {
+      "reference": "Iv 6,1",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 6,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 14, 13–21; Mk 6, 30–34; Lk 9, 10–17)"
+      ],
+      "headings_affected": [
+        "IV. PASHA KRUHA ŽIVOTA",
+        "Isus hrani pet tisuća ljudi"
+      ]
+    },
+    {
+      "reference": "Iv 6,16",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 6,
+      "verse": 16,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 14, 22–23; Mk 6, 45–52)"
+      ],
+      "headings_affected": [
+        "Isus hoda po moru"
+      ]
+    },
+    {
+      "reference": "Iv 6,67",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 6,
+      "verse": 67,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 16, 13–20; Mk 8, 27–30; Lk 9, 18–21)"
+      ],
+      "headings_affected": [
+        "Petrova ispovijest"
+      ]
+    },
+    {
+      "reference": "Iv 11,45",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 11,
+      "verse": 45,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 1–5; Mk 14, 1–2; Lk 22, 1–2)"
+      ],
+      "headings_affected": [
+        "Židovski glavari izglasaše smrt Isusovu"
+      ]
+    },
+    {
+      "reference": "Iv 12,1",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 12,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 6–13; Mk 14, 3–9)"
+      ],
+      "headings_affected": [
+        "Pomazanje u Betaniji"
+      ]
+    },
+    {
+      "reference": "Iv 12,12",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 12,
+      "verse": 12,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 21, 1–11; Mk 11, 1–11; Lk 19, 28–40)"
+      ],
+      "headings_affected": [
+        "Isusov mesijanski ulazak u Jeruzalem"
+      ]
+    },
+    {
+      "reference": "Iv 12,20",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 12,
+      "verse": 20,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 16, 24–25; Mk 8, 34–35; Lk 9, 23–24)"
+      ],
+      "headings_affected": [
+        "Neki Grci traže Isusa"
+      ]
+    },
+    {
+      "reference": "Iv 13,1",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 13,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 23, 6–12; 10, 24–40; Lk 22, 24–28; 6, 40)"
+      ],
+      "headings_affected": [
+        "2. POSLJEDNJA VEČERA – PROSLAVA SINA ČOVJEČJEGA",
+        "Isus pere noge učenicima"
+      ]
+    },
+    {
+      "reference": "Iv 13,18",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 13,
+      "verse": 18,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 20–25; Mk 14, 17–21; Lk 22, 21–23)"
+      ],
+      "headings_affected": [
+        "Izdajica prokazan"
+      ]
+    },
+    {
+      "reference": "Iv 13,36",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 13,
+      "verse": 36,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 31–35; Mk 14, 17–31; Lk 22, 31–34)"
+      ],
+      "headings_affected": [
+        "Isus i Petar"
+      ]
+    },
+    {
+      "reference": "Iv 16,4",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 16,
+      "verse": 4,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Djelovanje Duha Svetoga"
+      ]
+    },
+    {
+      "reference": "Iv 18,1",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 18,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 47–56; Mk 14, 43–50; Lk 22, 47–53)"
+      ],
+      "headings_affected": [
+        "3. MUKA I SMRT",
+        "Isus izdan i uhvaćen"
+      ]
+    },
+    {
+      "reference": "Iv 18,15",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 18,
+      "verse": 15,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 69–70; Mk 14, 66–68; Lk 22, 55–57)"
+      ],
+      "headings_affected": [
+        "Zataja Petrova"
+      ]
+    },
+    {
+      "reference": "Iv 18,19",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 18,
+      "verse": 19,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 59–66; Mk 14, 55–64; Lk 22, 66–71)"
+      ],
+      "headings_affected": [
+        "Veliki svećenik ispituje Isusa"
+      ]
+    },
+    {
+      "reference": "Iv 18,25",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 18,
+      "verse": 25,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 71–75; Mk 14, 69–72; Lk 22, 58–62)"
+      ],
+      "headings_affected": [
+        "Petar ponovno zatajuje Isusa"
+      ]
+    },
+    {
+      "reference": "Iv 18,28",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 18,
+      "verse": 28,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 1–2. 11–14; Mk 15, 1–5; Lk 23, 1–5)"
+      ],
+      "headings_affected": [
+        "Isus pred Pilatom"
+      ]
+    },
+    {
+      "reference": "Iv 18,39",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 18,
+      "verse": 39,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 15–31; Mk 15, 6–20; Lk 23, 13–25)"
+      ],
+      "headings_affected": [
+        "Isus osuđen na smrt"
+      ]
+    },
+    {
+      "reference": "Iv 19,16",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 19,
+      "verse": 16,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 32–34. 37; Mk 15, 22–24. 26; Lk 23, 33–34)"
+      ],
+      "headings_affected": [
+        "Raspeće"
+      ]
+    },
+    {
+      "reference": "Iv 19,23",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 19,
+      "verse": 23,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 35–36; Mk 15, 24–25; Lk 23, 34)"
+      ],
+      "headings_affected": [
+        "Dioba odjeće"
+      ]
+    },
+    {
+      "reference": "Iv 19,25",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 19,
+      "verse": 25,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 55–56; Mk 15, 40–41; Lk 23, 49)"
+      ],
+      "headings_affected": [
+        "Majka Isusova – majka učenika"
+      ]
+    },
+    {
+      "reference": "Iv 19,28",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 19,
+      "verse": 28,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 45–54; Mk 15, 33–39; Lk 23, 44–48)"
+      ],
+      "headings_affected": [
+        "Isusova smrt"
+      ]
+    },
+    {
+      "reference": "Iv 19,38",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 19,
+      "verse": 38,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 27, 56–61; Mk 15, 42–47; Lk 23, 50–56)"
+      ],
+      "headings_affected": [
+        "Ukop Isusov"
+      ]
+    },
+    {
+      "reference": "Iv 20,1",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 20,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 28, 1–8; Mk 16, 1–8; Lk 24, 1–12)"
+      ],
+      "headings_affected": [
+        "VIII. USKRSNI DANI",
+        "Prazan grob"
+      ]
+    },
+    {
+      "reference": "Iv 20,11",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 20,
+      "verse": 11,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 28, 9–10; Mk 16, 9–11)"
+      ],
+      "headings_affected": [
+        "Ukazanje Mariji Magdaleni"
+      ]
+    },
+    {
+      "reference": "Iv 20,19",
+      "book_title": "Evanđelje po Ivanu",
+      "book_slug": "evandelje-po-ivanu",
+      "chapter": 20,
+      "verse": 19,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 28, 16–20; Mk 16, 14–18; Lk 24, 36–49)"
+      ],
+      "headings_affected": [
+        "Ukazanje učenicima"
+      ]
+    },
+    {
+      "reference": "Dj 5,21",
+      "book_title": "Djela apostolska",
+      "book_slug": "djela-apostolska",
+      "chapter": 5,
+      "verse": 21,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Apostoli pred Vijećem"
+      ]
+    },
+    {
+      "reference": "Dj 8,1",
+      "book_title": "Djela apostolska",
+      "book_slug": "djela-apostolska",
+      "chapter": 8,
+      "verse": 1,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Savao progonitelj"
+      ]
+    },
+    {
+      "reference": "Dj 9,1",
+      "book_title": "Djela apostolska",
+      "book_slug": "djela-apostolska",
+      "chapter": 9,
+      "verse": 1,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Dj 22, 6–16; 26, 1–18)"
+      ],
+      "headings_affected": [
+        "Savlov poziv"
+      ]
+    },
+    {
+      "reference": "Dj 9,19",
+      "book_title": "Djela apostolska",
+      "book_slug": "djela-apostolska",
+      "chapter": 9,
+      "verse": 19,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Savlovo propovijedanje u Damasku"
+      ]
+    },
+    {
+      "reference": "Dj 22,6",
+      "book_title": "Djela apostolska",
+      "book_slug": "djela-apostolska",
+      "chapter": 22,
+      "verse": 6,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Dj 9, 1–19; 26, 12–18)"
+      ],
+      "headings_affected": [
+        "Pavao o svom obraćenju"
+      ]
+    },
+    {
+      "reference": "Dj 26,12",
+      "book_title": "Djela apostolska",
+      "book_slug": "djela-apostolska",
+      "chapter": 26,
+      "verse": 12,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Dj 9, 1–19; 22, 6–16)"
+      ],
+      "headings_affected": [
+        "Pavao o svom obraćenju"
+      ]
+    },
+    {
+      "reference": "1 Kor 11,17",
+      "book_title": "Prva poslanica Korinćanima",
+      "book_slug": "prva-poslanica-korincanima",
+      "chapter": 11,
+      "verse": 17,
+      "anomaly_type": "izvor_after_sup",
+      "references_affected": [
+        "(Mt 26, 26–29; Mk 14, 22–25; Lk 22, 15–20)"
+      ],
+      "headings_affected": [
+        "Gospodnja večera"
+      ]
+    },
+    {
+      "reference": "1 Tim 6,2",
+      "book_title": "Prva poslanica Timoteju",
+      "book_slug": "prva-poslanica-timoteju",
+      "chapter": 6,
+      "verse": 2,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "ZAKLJUČAK",
+        "Pravi i krivi učitelji"
+      ]
+    },
+    {
+      "reference": "Heb 5,10",
+      "book_title": "Poslanica Hebrejima",
+      "book_slug": "poslanica-hebrejima",
+      "chapter": 5,
+      "verse": 10,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "III. PRAVO SVEĆENIŠTVO ISUSA KRISTA"
+      ]
+    },
+    {
+      "reference": "2 Pt 2,10",
+      "book_title": "Druga Petrova poslanica",
+      "book_slug": "druga-petrova-poslanica",
+      "chapter": 2,
+      "verse": 10,
+      "anomaly_type": "heading_after_sup",
+      "references_affected": [],
+      "headings_affected": [
+        "Buduća kazna"
+      ]
+    }
+  ],
+  "verse_count_mismatches": [],
+  "skipped_or_nonsequential_verses": [
+    {
+      "reference": "Post 47,4->7",
+      "book_title": "Knjiga Postanka",
+      "chapter": 47,
+      "from_verse": 4,
+      "to_verse": 7,
+      "sup_label": "7"
+    },
+    {
+      "reference": "Post 47,12->14",
+      "book_title": "Knjiga Postanka",
+      "chapter": 47,
+      "from_verse": 12,
+      "to_verse": 14,
+      "sup_label": "14"
+    },
+    {
+      "reference": "1 Kr 15,5->7",
+      "book_title": "Prva knjiga o Kraljevima",
+      "chapter": 15,
+      "from_verse": 5,
+      "to_verse": 7,
+      "sup_label": "7"
+    },
+    {
+      "reference": "Job 24,17->25",
+      "book_title": "Knjiga o Jobu",
+      "chapter": 24,
+      "from_verse": 17,
+      "to_verse": 25,
+      "sup_label": "25"
+    },
+    {
+      "reference": "Job 25,1->5",
+      "book_title": "Knjiga o Jobu",
+      "chapter": 25,
+      "from_verse": 1,
+      "to_verse": 5,
+      "sup_label": "5"
+    },
+    {
+      "reference": "Job 27,1->18",
+      "book_title": "Knjiga o Jobu",
+      "chapter": 27,
+      "from_verse": 1,
+      "to_verse": 18,
+      "sup_label": "18"
+    },
+    {
+      "reference": "Sir 0,1->5",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 0,
+      "from_verse": 1,
+      "to_verse": 5,
+      "sup_label": "5"
+    },
+    {
+      "reference": "Sir 0,5->10",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 0,
+      "from_verse": 5,
+      "to_verse": 10,
+      "sup_label": "10"
+    },
+    {
+      "reference": "Sir 0,10->15",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 0,
+      "from_verse": 10,
+      "to_verse": 15,
+      "sup_label": "15"
+    },
+    {
+      "reference": "Sir 0,15->20",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 0,
+      "from_verse": 15,
+      "to_verse": 20,
+      "sup_label": "20"
+    },
+    {
+      "reference": "Sir 0,20->25",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 0,
+      "from_verse": 20,
+      "to_verse": 25,
+      "sup_label": "25"
+    },
+    {
+      "reference": "Sir 0,25->30",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 0,
+      "from_verse": 25,
+      "to_verse": 30,
+      "sup_label": "30"
+    },
+    {
+      "reference": "Sir 0,30->35",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 0,
+      "from_verse": 30,
+      "to_verse": 35,
+      "sup_label": "35"
+    },
+    {
+      "reference": "Sir 1,4->6",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 1,
+      "from_verse": 4,
+      "to_verse": 6,
+      "sup_label": "6"
+    },
+    {
+      "reference": "Sir 1,6->8",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 1,
+      "from_verse": 6,
+      "to_verse": 8,
+      "sup_label": "8"
+    },
+    {
+      "reference": "Sir 1,20->22",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 1,
+      "from_verse": 20,
+      "to_verse": 22,
+      "sup_label": "22"
+    },
+    {
+      "reference": "Sir 3,24->26",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 3,
+      "from_verse": 24,
+      "to_verse": 26,
+      "sup_label": "26"
+    },
+    {
+      "reference": "Sir 10,20->22",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 10,
+      "from_verse": 20,
+      "to_verse": 22,
+      "sup_label": "22"
+    },
+    {
+      "reference": "Sir 11,14->17",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 11,
+      "from_verse": 14,
+      "to_verse": 17,
+      "sup_label": "17"
+    },
+    {
+      "reference": "Sir 13,13->15",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 13,
+      "from_verse": 13,
+      "to_verse": 15,
+      "sup_label": "15"
+    },
+    {
+      "reference": "Sir 16,14->17",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 16,
+      "from_verse": 14,
+      "to_verse": 17,
+      "sup_label": "17"
+    },
+    {
+      "reference": "Sir 17,4->6",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 17,
+      "from_verse": 4,
+      "to_verse": 6,
+      "sup_label": "6"
+    },
+    {
+      "reference": "Sir 17,8->10",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 17,
+      "from_verse": 8,
+      "to_verse": 10,
+      "sup_label": "10"
+    },
+    {
+      "reference": "Sir 17,15->17",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 17,
+      "from_verse": 15,
+      "to_verse": 17,
+      "sup_label": "17"
+    },
+    {
+      "reference": "Sir 17,17->19",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 17,
+      "from_verse": 17,
+      "to_verse": 19,
+      "sup_label": "19"
+    },
+    {
+      "reference": "Sir 17,20->22",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 17,
+      "from_verse": 20,
+      "to_verse": 22,
+      "sup_label": "22"
+    },
+    {
+      "reference": "Sir 18,2->4",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 18,
+      "from_verse": 2,
+      "to_verse": 4,
+      "sup_label": "4"
+    },
+    {
+      "reference": "Sir 19,17->20",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 19,
+      "from_verse": 17,
+      "to_verse": 20,
+      "sup_label": "20"
+    },
+    {
+      "reference": "Sir 19,20->22",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 19,
+      "from_verse": 20,
+      "to_verse": 22,
+      "sup_label": "22"
+    },
+    {
+      "reference": "Sir 22,6->9",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 22,
+      "from_verse": 6,
+      "to_verse": 9,
+      "sup_label": "9"
+    },
+    {
+      "reference": "Sir 24,17->19",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 24,
+      "from_verse": 17,
+      "to_verse": 19,
+      "sup_label": "19"
+    },
+    {
+      "reference": "Sir 24,23->25",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 24,
+      "from_verse": 23,
+      "to_verse": 25,
+      "sup_label": "25"
+    },
+    {
+      "reference": "Sir 25,11->13",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 25,
+      "from_verse": 11,
+      "to_verse": 13,
+      "sup_label": "13"
+    },
+    {
+      "reference": "Sir 26,18->28",
+      "book_title": "Knjiga Sirahova",
+      "chapter": 26,
+      "from_verse": 18,
+      "to_verse": 28,
+      "sup_label": "28"
+    },
+    {
+      "reference": "Zah 4,9->11",
+      "book_title": "Zaharija",
+      "chapter": 4,
+      "from_verse": 9,
+      "to_verse": 11,
+      "sup_label": "11"
+    },
+    {
+      "reference": "Mt 18,10->12",
+      "book_title": "Evanđelje po Mateju",
+      "chapter": 18,
+      "from_verse": 10,
+      "to_verse": 12,
+      "sup_label": "12"
+    },
+    {
+      "reference": "Mk 9,43->45",
+      "book_title": "Evanđelje po Marku",
+      "chapter": 9,
+      "from_verse": 43,
+      "to_verse": 45,
+      "sup_label": "45"
+    },
+    {
+      "reference": "Mk 9,45->47",
+      "book_title": "Evanđelje po Marku",
+      "chapter": 9,
+      "from_verse": 45,
+      "to_verse": 47,
+      "sup_label": "47"
+    },
+    {
+      "reference": "Mk 11,25->27",
+      "book_title": "Evanđelje po Marku",
+      "chapter": 11,
+      "from_verse": 25,
+      "to_verse": 27,
+      "sup_label": "27"
+    },
+    {
+      "reference": "Mk 15,27->29",
+      "book_title": "Evanđelje po Marku",
+      "chapter": 15,
+      "from_verse": 27,
+      "to_verse": 29,
+      "sup_label": "29"
+    },
+    {
+      "reference": "Lk 17,35->37",
+      "book_title": "Evanđelje po Luki",
+      "chapter": 17,
+      "from_verse": 35,
+      "to_verse": 37,
+      "sup_label": "37"
+    },
+    {
+      "reference": "Lk 23,16->18",
+      "book_title": "Evanđelje po Luki",
+      "chapter": 23,
+      "from_verse": 16,
+      "to_verse": 18,
+      "sup_label": "18"
+    },
+    {
+      "reference": "Iv 5,3->5",
+      "book_title": "Evanđelje po Ivanu",
+      "chapter": 5,
+      "from_verse": 3,
+      "to_verse": 5,
+      "sup_label": "5"
+    },
+    {
+      "reference": "Dj 8,36->38",
+      "book_title": "Djela apostolska",
+      "chapter": 8,
+      "from_verse": 36,
+      "to_verse": 38,
+      "sup_label": "38"
+    },
+    {
+      "reference": "Dj 15,33->35",
+      "book_title": "Djela apostolska",
+      "chapter": 15,
+      "from_verse": 33,
+      "to_verse": 35,
+      "sup_label": "35"
+    },
+    {
+      "reference": "Dj 24,6->8",
+      "book_title": "Djela apostolska",
+      "chapter": 24,
+      "from_verse": 6,
+      "to_verse": 8,
+      "sup_label": "8"
+    },
+    {
+      "reference": "Dj 28,28->30",
+      "book_title": "Djela apostolska",
+      "chapter": 28,
+      "from_verse": 28,
+      "to_verse": 30,
+      "sup_label": "30"
+    },
+    {
+      "reference": "Rim 16,23->25",
+      "book_title": "Poslanica Rimljanima",
+      "chapter": 16,
+      "from_verse": 23,
+      "to_verse": 25,
+      "sup_label": "25"
+    }
+  ],
+  "ks_reading_plan_bugs": [
+    {
+      "plan_id": 39113,
+      "plan_title": "Djela apostolska u petnaest dana",
+      "book": "Djela apostolska",
+      "missing_chapters": [
+        2,
+        7,
+        10
+      ]
+    },
+    {
+      "plan_id": 39110,
+      "plan_title": "Knjiga mudrosti u trideset dana",
+      "book": "Knjiga Mudrosti",
+      "missing_chapters": [
+        13,
+        15,
+        19
+      ]
+    },
+    {
+      "plan_id": 39094,
+      "plan_title": "Estera i Ruta u trideset dana",
+      "book": "Estera",
+      "missing_chapters": [
+        7,
+        10
+      ]
+    },
+    {
+      "plan_id": 39091,
+      "plan_title": "Jeremija i Tužaljke u četrdeset i pet dana",
+      "book": "Tužaljke",
+      "missing_chapters": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "plan_id": 39040,
+      "plan_title": "Otkrivenje u četrdeset i pet dana",
+      "book": "Otkrivenje",
+      "missing_chapters": [
+        4,
+        10,
+        15
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Evanđelje po Mateju",
+      "missing_chapters": [
+        26
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Evanđelje po Marku",
+      "missing_chapters": [
+        14
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Evanđelje po Luki",
+      "missing_chapters": [
+        1
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Evanđelje po Ivanu",
+      "missing_chapters": [
+        6,
+        21
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Djela apostolska",
+      "missing_chapters": [
+        1,
+        28
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Poslanica Galaćanima",
+      "missing_chapters": [
+        1
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Poslanica Efežanima",
+      "missing_chapters": [
+        6
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Prva poslanica Timoteju",
+      "missing_chapters": [
+        6
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Druga poslanica Timoteju",
+      "missing_chapters": [
+        4
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Jakovljeva poslanica",
+      "missing_chapters": [
+        1
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Prva Petrova poslanica",
+      "missing_chapters": [
+        5
+      ]
+    },
+    {
+      "plan_id": 39067,
+      "plan_title": "Novi zavjet u devedeset dana",
+      "book": "Prva Ivanova poslanica",
+      "missing_chapters": [
+        1
+      ]
+    },
+    {
+      "plan_id": 39038,
+      "plan_title": "Novozavjetne poslanice u devedeset dana",
+      "book": "Druga poslanica Korinćanima",
+      "missing_chapters": [
+        1,
+        8,
+        11
+      ]
+    },
+    {
+      "plan_id": 39038,
+      "plan_title": "Novozavjetne poslanice u devedeset dana",
+      "book": "Prva poslanica Solunjanima",
+      "missing_chapters": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "plan_id": 39038,
+      "plan_title": "Novozavjetne poslanice u devedeset dana",
+      "book": "Druga poslanica Solunjanima",
+      "missing_chapters": [
+        1
+      ]
+    },
+    {
+      "plan_id": 39038,
+      "plan_title": "Novozavjetne poslanice u devedeset dana",
+      "book": "Prva poslanica Timoteju",
+      "missing_chapters": [
+        5,
+        6
+      ]
+    },
+    {
+      "plan_id": 39038,
+      "plan_title": "Novozavjetne poslanice u devedeset dana",
+      "book": "Druga poslanica Timoteju",
+      "missing_chapters": [
+        1,
+        2
+      ]
+    },
+    {
+      "plan_id": 39038,
+      "plan_title": "Novozavjetne poslanice u devedeset dana",
+      "book": "Poslanica Titu",
+      "missing_chapters": [
+        3
+      ]
+    },
+    {
+      "plan_id": 39038,
+      "plan_title": "Novozavjetne poslanice u devedeset dana",
+      "book": "Poslanica Hebrejima",
+      "missing_chapters": [
+        7,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "plan_id": 39038,
+      "plan_title": "Novozavjetne poslanice u devedeset dana",
+      "book": "Jakovljeva poslanica",
+      "missing_chapters": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "plan_id": 39038,
+      "plan_title": "Novozavjetne poslanice u devedeset dana",
+      "book": "Prva Petrova poslanica",
+      "missing_chapters": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "plan_id": 39038,
+      "plan_title": "Novozavjetne poslanice u devedeset dana",
+      "book": "Prva Ivanova poslanica",
+      "missing_chapters": [
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

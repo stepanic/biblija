@@ -1,0 +1,1619 @@
+{
+  "id": "ks-39038",
+  "title": "Novozavjetne poslanice u devedeset dana",
+  "category": "ks-tematski",
+  "days_count": 90,
+  "description": "Evanđelja pripovijedaju što je Krist učinio i tko je On. Poslanice pitaju što sada s tim učiniti.",
+  "days": [
+    {
+      "day": 1,
+      "label": "Rim 1",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 32,
+          "label": "Rim 1"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "label": "Rim 1",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 32,
+          "label": "Rim 1"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "label": "Rim 3",
+      "verse_count": 31,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 31,
+          "label": "Rim 3"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "label": "Rim 4",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 25,
+          "label": "Rim 4"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "label": "Rim 5",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 21,
+          "label": "Rim 5"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "label": "Rim 6",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 23,
+          "label": "Rim 6"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "label": "Rim 7",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 7,
+          "chapter_end": 7,
+          "verse_count": 25,
+          "label": "Rim 7"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "label": "Rim 8",
+      "verse_count": 39,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 8,
+          "chapter_end": 8,
+          "verse_count": 39,
+          "label": "Rim 8"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "label": "Rim 9",
+      "verse_count": 33,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 9,
+          "chapter_end": 9,
+          "verse_count": 33,
+          "label": "Rim 9"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "label": "Rim 10",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 10,
+          "chapter_end": 10,
+          "verse_count": 21,
+          "label": "Rim 10"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "label": "Rim 11",
+      "verse_count": 36,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 11,
+          "chapter_end": 11,
+          "verse_count": 36,
+          "label": "Rim 11"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "label": "Rim 12-13",
+      "verse_count": 35,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 12,
+          "chapter_end": 13,
+          "verse_count": 35,
+          "label": "Rim 12–13"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "label": "Rim 14",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 14,
+          "chapter_end": 14,
+          "verse_count": 23,
+          "label": "Rim 14"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "label": "Rim 15",
+      "verse_count": 33,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 15,
+          "chapter_end": 15,
+          "verse_count": 33,
+          "label": "Rim 15"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "label": "Rim 16",
+      "verse_count": 26,
+      "readings": [
+        {
+          "book_order": 52,
+          "book_id": "poslanica-rimljanima",
+          "book_abbr": "Rim",
+          "book_title": "Poslanica Rimljanima",
+          "chapter_start": 16,
+          "chapter_end": 16,
+          "verse_count": 26,
+          "label": "Rim 16"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "label": "1 Kor 1",
+      "verse_count": 31,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 31,
+          "label": "1 Kor 1"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "label": "1 Kor 2-3",
+      "verse_count": 39,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 2,
+          "chapter_end": 3,
+          "verse_count": 39,
+          "label": "1 Kor 2–3"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "label": "1 Kor 4",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 21,
+          "label": "1 Kor 4"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "label": "1 Kor 5-6",
+      "verse_count": 33,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 5,
+          "chapter_end": 6,
+          "verse_count": 33,
+          "label": "1 Kor 5–6"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "label": "1 Kor 7",
+      "verse_count": 40,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 7,
+          "chapter_end": 7,
+          "verse_count": 40,
+          "label": "1 Kor 7"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "label": "1 Kor 8-9",
+      "verse_count": 40,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 8,
+          "chapter_end": 9,
+          "verse_count": 40,
+          "label": "1 Kor 8–9"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "label": "1 Kor 10",
+      "verse_count": 33,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 10,
+          "chapter_end": 10,
+          "verse_count": 33,
+          "label": "1 Kor 10"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "label": "1 Kor 11",
+      "verse_count": 34,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 11,
+          "chapter_end": 11,
+          "verse_count": 34,
+          "label": "1 Kor 11"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "label": "1 Kor 12-13",
+      "verse_count": 44,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 12,
+          "chapter_end": 13,
+          "verse_count": 44,
+          "label": "1 Kor 12–13"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "label": "1 Kor 14",
+      "verse_count": 40,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 14,
+          "chapter_end": 14,
+          "verse_count": 40,
+          "label": "1 Kor 14"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "label": "1 Kor 15",
+      "verse_count": 58,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 15,
+          "chapter_end": 15,
+          "verse_count": 58,
+          "label": "1 Kor 15"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "label": "1 Kor 16",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 53,
+          "book_id": "prva-poslanica-korincanima",
+          "book_abbr": "1 Kor",
+          "book_title": "Prva poslanica Korinćanima",
+          "chapter_start": 16,
+          "chapter_end": 16,
+          "verse_count": 24,
+          "label": "1 Kor 16"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "label": "2 Kor 1",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 24,
+          "label": "2 Kor 1"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "label": "2 Kor 2-3",
+      "verse_count": 35,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 2,
+          "chapter_end": 3,
+          "verse_count": 35,
+          "label": "2 Kor 2–3"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "label": "2 Kor 4-5",
+      "verse_count": 39,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 4,
+          "chapter_end": 5,
+          "verse_count": 39,
+          "label": "2 Kor 4–5"
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "label": "2 Kor 6-7",
+      "verse_count": 34,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 6,
+          "chapter_end": 7,
+          "verse_count": 34,
+          "label": "2 Kor 6–7"
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "label": "2 Kor 8",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 8,
+          "chapter_end": 8,
+          "verse_count": 24,
+          "label": "2 Kor 8"
+        }
+      ]
+    },
+    {
+      "day": 33,
+      "label": "2 Kor 9-10",
+      "verse_count": 33,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 9,
+          "chapter_end": 10,
+          "verse_count": 33,
+          "label": "2 Kor 9–10"
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "label": "2 Kor 11",
+      "verse_count": 33,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 11,
+          "chapter_end": 11,
+          "verse_count": 33,
+          "label": "2 Kor 11"
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "label": "2 Kor 12-13",
+      "verse_count": 34,
+      "readings": [
+        {
+          "book_order": 54,
+          "book_id": "druga-poslanica-korincanima",
+          "book_abbr": "2 Kor",
+          "book_title": "Druga poslanica Korinćanima",
+          "chapter_start": 12,
+          "chapter_end": 13,
+          "verse_count": 34,
+          "label": "2 Kor 12–13"
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "label": "Gal 1",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 55,
+          "book_id": "poslanica-galacanima",
+          "book_abbr": "Gal",
+          "book_title": "Poslanica Galaćanima",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 24,
+          "label": "Gal 1"
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "label": "Gal 2",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 55,
+          "book_id": "poslanica-galacanima",
+          "book_abbr": "Gal",
+          "book_title": "Poslanica Galaćanima",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 21,
+          "label": "Gal 2"
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "label": "Gal 3",
+      "verse_count": 29,
+      "readings": [
+        {
+          "book_order": 55,
+          "book_id": "poslanica-galacanima",
+          "book_abbr": "Gal",
+          "book_title": "Poslanica Galaćanima",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 29,
+          "label": "Gal 3"
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "label": "Gal 4",
+      "verse_count": 31,
+      "readings": [
+        {
+          "book_order": 55,
+          "book_id": "poslanica-galacanima",
+          "book_abbr": "Gal",
+          "book_title": "Poslanica Galaćanima",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 31,
+          "label": "Gal 4"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "label": "Gal 5",
+      "verse_count": 26,
+      "readings": [
+        {
+          "book_order": 55,
+          "book_id": "poslanica-galacanima",
+          "book_abbr": "Gal",
+          "book_title": "Poslanica Galaćanima",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 26,
+          "label": "Gal 5"
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "label": "Gal 6; Ef 1",
+      "verse_count": 41,
+      "readings": [
+        {
+          "book_order": 55,
+          "book_id": "poslanica-galacanima",
+          "book_abbr": "Gal",
+          "book_title": "Poslanica Galaćanima",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 18,
+          "label": "Gal 6"
+        },
+        {
+          "book_order": 56,
+          "book_id": "poslanica-efezanima",
+          "book_abbr": "Ef",
+          "book_title": "Poslanica Efežanima",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 23,
+          "label": "Ef 1"
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "label": "Ef 2",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 56,
+          "book_id": "poslanica-efezanima",
+          "book_abbr": "Ef",
+          "book_title": "Poslanica Efežanima",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 22,
+          "label": "Ef 2"
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "label": "Ef 3",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 56,
+          "book_id": "poslanica-efezanima",
+          "book_abbr": "Ef",
+          "book_title": "Poslanica Efežanima",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 21,
+          "label": "Ef 3"
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "label": "Ef 4",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 56,
+          "book_id": "poslanica-efezanima",
+          "book_abbr": "Ef",
+          "book_title": "Poslanica Efežanima",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 32,
+          "label": "Ef 4"
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "label": "Ef 5",
+      "verse_count": 33,
+      "readings": [
+        {
+          "book_order": 56,
+          "book_id": "poslanica-efezanima",
+          "book_abbr": "Ef",
+          "book_title": "Poslanica Efežanima",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 33,
+          "label": "Ef 5"
+        }
+      ]
+    },
+    {
+      "day": 46,
+      "label": "Ef 6",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 56,
+          "book_id": "poslanica-efezanima",
+          "book_abbr": "Ef",
+          "book_title": "Poslanica Efežanima",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 24,
+          "label": "Ef 6"
+        }
+      ]
+    },
+    {
+      "day": 47,
+      "label": "Fil 1",
+      "verse_count": 30,
+      "readings": [
+        {
+          "book_order": 57,
+          "book_id": "poslanica-filipljanima",
+          "book_abbr": "Fil",
+          "book_title": "Poslanica Filipljanima",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 30,
+          "label": "Fil 1"
+        }
+      ]
+    },
+    {
+      "day": 48,
+      "label": "Fil 2",
+      "verse_count": 30,
+      "readings": [
+        {
+          "book_order": 57,
+          "book_id": "poslanica-filipljanima",
+          "book_abbr": "Fil",
+          "book_title": "Poslanica Filipljanima",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 30,
+          "label": "Fil 2"
+        }
+      ]
+    },
+    {
+      "day": 49,
+      "label": "Fil 3",
+      "verse_count": 21,
+      "readings": [
+        {
+          "book_order": 57,
+          "book_id": "poslanica-filipljanima",
+          "book_abbr": "Fil",
+          "book_title": "Poslanica Filipljanima",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 21,
+          "label": "Fil 3"
+        }
+      ]
+    },
+    {
+      "day": 50,
+      "label": "Fil 4",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 57,
+          "book_id": "poslanica-filipljanima",
+          "book_abbr": "Fil",
+          "book_title": "Poslanica Filipljanima",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 23,
+          "label": "Fil 4"
+        }
+      ]
+    },
+    {
+      "day": 51,
+      "label": "Kol 1",
+      "verse_count": 29,
+      "readings": [
+        {
+          "book_order": 58,
+          "book_id": "poslanica-kolosanima",
+          "book_abbr": "Kol",
+          "book_title": "Poslanica Kološanima",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 29,
+          "label": "Kol 1"
+        }
+      ]
+    },
+    {
+      "day": 52,
+      "label": "Kol 2",
+      "verse_count": 23,
+      "readings": [
+        {
+          "book_order": 58,
+          "book_id": "poslanica-kolosanima",
+          "book_abbr": "Kol",
+          "book_title": "Poslanica Kološanima",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 23,
+          "label": "Kol 2"
+        }
+      ]
+    },
+    {
+      "day": 53,
+      "label": "Kol 3",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 58,
+          "book_id": "poslanica-kolosanima",
+          "book_abbr": "Kol",
+          "book_title": "Poslanica Kološanima",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 25,
+          "label": "Kol 3"
+        }
+      ]
+    },
+    {
+      "day": 54,
+      "label": "Kol 4; 1 Sol 1",
+      "verse_count": 28,
+      "readings": [
+        {
+          "book_order": 58,
+          "book_id": "poslanica-kolosanima",
+          "book_abbr": "Kol",
+          "book_title": "Poslanica Kološanima",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 18,
+          "label": "Kol 4"
+        },
+        {
+          "book_order": 59,
+          "book_id": "prva-poslanica-solunjanima",
+          "book_abbr": "1 Sol",
+          "book_title": "Prva poslanica Solunjanima",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 10,
+          "label": "1 Sol 1"
+        }
+      ]
+    },
+    {
+      "day": 55,
+      "label": "1 Sol 2",
+      "verse_count": 20,
+      "readings": [
+        {
+          "book_order": 59,
+          "book_id": "prva-poslanica-solunjanima",
+          "book_abbr": "1 Sol",
+          "book_title": "Prva poslanica Solunjanima",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 20,
+          "label": "1 Sol 2"
+        }
+      ]
+    },
+    {
+      "day": 56,
+      "label": "1 Sol 3-4",
+      "verse_count": 31,
+      "readings": [
+        {
+          "book_order": 59,
+          "book_id": "prva-poslanica-solunjanima",
+          "book_abbr": "1 Sol",
+          "book_title": "Prva poslanica Solunjanima",
+          "chapter_start": 3,
+          "chapter_end": 4,
+          "verse_count": 31,
+          "label": "1 Sol 3–4"
+        }
+      ]
+    },
+    {
+      "day": 57,
+      "label": "1 Sol 5; 2 Tim 1",
+      "verse_count": 46,
+      "readings": [
+        {
+          "book_order": 59,
+          "book_id": "prva-poslanica-solunjanima",
+          "book_abbr": "1 Sol",
+          "book_title": "Prva poslanica Solunjanima",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 28,
+          "label": "1 Sol 5"
+        },
+        {
+          "book_order": 62,
+          "book_id": "druga-poslanica-timoteju",
+          "book_abbr": "2 Tim",
+          "book_title": "Druga poslanica Timoteju",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 18,
+          "label": "2 Tim 1"
+        }
+      ]
+    },
+    {
+      "day": 58,
+      "label": "2 Sol 2-3",
+      "verse_count": 35,
+      "readings": [
+        {
+          "book_order": 60,
+          "book_id": "druga-poslanica-solunjanima",
+          "book_abbr": "2 Sol",
+          "book_title": "Druga poslanica Solunjanima",
+          "chapter_start": 2,
+          "chapter_end": 3,
+          "verse_count": 35,
+          "label": "2 Sol 2–3"
+        }
+      ]
+    },
+    {
+      "day": 59,
+      "label": "1 Tim 1-2",
+      "verse_count": 35,
+      "readings": [
+        {
+          "book_order": 61,
+          "book_id": "prva-poslanica-timoteju",
+          "book_abbr": "1 Tim",
+          "book_title": "Prva poslanica Timoteju",
+          "chapter_start": 1,
+          "chapter_end": 2,
+          "verse_count": 35,
+          "label": "1 Tim 1–2"
+        }
+      ]
+    },
+    {
+      "day": 60,
+      "label": "1 Tim 3-4",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 61,
+          "book_id": "prva-poslanica-timoteju",
+          "book_abbr": "1 Tim",
+          "book_title": "Prva poslanica Timoteju",
+          "chapter_start": 3,
+          "chapter_end": 4,
+          "verse_count": 32,
+          "label": "1 Tim 3–4"
+        }
+      ]
+    },
+    {
+      "day": 61,
+      "label": "1 Tim 5",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 61,
+          "book_id": "prva-poslanica-timoteju",
+          "book_abbr": "1 Tim",
+          "book_title": "Prva poslanica Timoteju",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 25,
+          "label": "1 Tim 5"
+        }
+      ]
+    },
+    {
+      "day": 62,
+      "label": "1 Tim 6; 2 Tim 1",
+      "verse_count": 39,
+      "readings": [
+        {
+          "book_order": 61,
+          "book_id": "prva-poslanica-timoteju",
+          "book_abbr": "1 Tim",
+          "book_title": "Prva poslanica Timoteju",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 21,
+          "label": "1 Tim 6"
+        },
+        {
+          "book_order": 62,
+          "book_id": "druga-poslanica-timoteju",
+          "book_abbr": "2 Tim",
+          "book_title": "Druga poslanica Timoteju",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 18,
+          "label": "2 Tim 1"
+        }
+      ]
+    },
+    {
+      "day": 63,
+      "label": "2 Tim 1",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 62,
+          "book_id": "druga-poslanica-timoteju",
+          "book_abbr": "2 Tim",
+          "book_title": "Druga poslanica Timoteju",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 18,
+          "label": "2 Tim 1"
+        }
+      ]
+    },
+    {
+      "day": 64,
+      "label": "2 Tim 3-4",
+      "verse_count": 39,
+      "readings": [
+        {
+          "book_order": 62,
+          "book_id": "druga-poslanica-timoteju",
+          "book_abbr": "2 Tim",
+          "book_title": "Druga poslanica Timoteju",
+          "chapter_start": 3,
+          "chapter_end": 4,
+          "verse_count": 39,
+          "label": "2 Tim 3–4"
+        }
+      ]
+    },
+    {
+      "day": 65,
+      "label": "Tit 1-2",
+      "verse_count": 31,
+      "readings": [
+        {
+          "book_order": 63,
+          "book_id": "poslanica-titu",
+          "book_abbr": "Tit",
+          "book_title": "Poslanica Titu",
+          "chapter_start": 1,
+          "chapter_end": 2,
+          "verse_count": 31,
+          "label": "Tit 1–2"
+        }
+      ]
+    },
+    {
+      "day": 66,
+      "label": "Tit 3; Flm 1",
+      "verse_count": 40,
+      "readings": [
+        {
+          "book_order": 63,
+          "book_id": "poslanica-titu",
+          "book_abbr": "Tit",
+          "book_title": "Poslanica Titu",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 15,
+          "label": "Tit 3"
+        },
+        {
+          "book_order": 64,
+          "book_id": "poslanica-filemonu",
+          "book_abbr": "Flm",
+          "book_title": "Poslanica Filemonu",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 25,
+          "label": "Flm 1"
+        }
+      ]
+    },
+    {
+      "day": 67,
+      "label": "Heb 1-2",
+      "verse_count": 32,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 1,
+          "chapter_end": 2,
+          "verse_count": 32,
+          "label": "Heb 1–2"
+        }
+      ]
+    },
+    {
+      "day": 68,
+      "label": "Heb 3-4",
+      "verse_count": 35,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 3,
+          "chapter_end": 4,
+          "verse_count": 35,
+          "label": "Heb 3–4"
+        }
+      ]
+    },
+    {
+      "day": 69,
+      "label": "Heb 5-6",
+      "verse_count": 34,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 5,
+          "chapter_end": 6,
+          "verse_count": 34,
+          "label": "Heb 5–6"
+        }
+      ]
+    },
+    {
+      "day": 70,
+      "label": "Heb 7",
+      "verse_count": 28,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 7,
+          "chapter_end": 7,
+          "verse_count": 28,
+          "label": "Heb 7"
+        }
+      ]
+    },
+    {
+      "day": 71,
+      "label": "Heb 8-9",
+      "verse_count": 41,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 8,
+          "chapter_end": 9,
+          "verse_count": 41,
+          "label": "Heb 8–9"
+        }
+      ]
+    },
+    {
+      "day": 72,
+      "label": "Heb 10",
+      "verse_count": 39,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 10,
+          "chapter_end": 10,
+          "verse_count": 39,
+          "label": "Heb 10"
+        }
+      ]
+    },
+    {
+      "day": 73,
+      "label": "Heb 11",
+      "verse_count": 40,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 11,
+          "chapter_end": 11,
+          "verse_count": 40,
+          "label": "Heb 11"
+        }
+      ]
+    },
+    {
+      "day": 74,
+      "label": "Heb 12",
+      "verse_count": 29,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 12,
+          "chapter_end": 12,
+          "verse_count": 29,
+          "label": "Heb 12"
+        }
+      ]
+    },
+    {
+      "day": 75,
+      "label": "Heb 13",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 65,
+          "book_id": "poslanica-hebrejima",
+          "book_abbr": "Heb",
+          "book_title": "Poslanica Hebrejima",
+          "chapter_start": 13,
+          "chapter_end": 13,
+          "verse_count": 25,
+          "label": "Heb 13"
+        }
+      ]
+    },
+    {
+      "day": 76,
+      "label": "Jak 1",
+      "verse_count": 27,
+      "readings": [
+        {
+          "book_order": 66,
+          "book_id": "jakovljeva-poslanica",
+          "book_abbr": "Jak",
+          "book_title": "Jakovljeva poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 27,
+          "label": "Jak 1"
+        }
+      ]
+    },
+    {
+      "day": 77,
+      "label": "Jak 2",
+      "verse_count": 26,
+      "readings": [
+        {
+          "book_order": 66,
+          "book_id": "jakovljeva-poslanica",
+          "book_abbr": "Jak",
+          "book_title": "Jakovljeva poslanica",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 26,
+          "label": "Jak 2"
+        }
+      ]
+    },
+    {
+      "day": 78,
+      "label": "Jak 3-4",
+      "verse_count": 35,
+      "readings": [
+        {
+          "book_order": 66,
+          "book_id": "jakovljeva-poslanica",
+          "book_abbr": "Jak",
+          "book_title": "Jakovljeva poslanica",
+          "chapter_start": 3,
+          "chapter_end": 4,
+          "verse_count": 35,
+          "label": "Jak 3–4"
+        }
+      ]
+    },
+    {
+      "day": 79,
+      "label": "Jak 5",
+      "verse_count": 20,
+      "readings": [
+        {
+          "book_order": 66,
+          "book_id": "jakovljeva-poslanica",
+          "book_abbr": "Jak",
+          "book_title": "Jakovljeva poslanica",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 20,
+          "label": "Jak 5"
+        }
+      ]
+    },
+    {
+      "day": 80,
+      "label": "1 Pt 1",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 67,
+          "book_id": "prva-petrova-poslanica",
+          "book_abbr": "1 Pt",
+          "book_title": "Prva Petrova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 25,
+          "label": "1 Pt 1"
+        }
+      ]
+    },
+    {
+      "day": 81,
+      "label": "1 Pt 2",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 67,
+          "book_id": "prva-petrova-poslanica",
+          "book_abbr": "1 Pt",
+          "book_title": "Prva Petrova poslanica",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 25,
+          "label": "1 Pt 2"
+        }
+      ]
+    },
+    {
+      "day": 82,
+      "label": "1 Pt 3-4",
+      "verse_count": 41,
+      "readings": [
+        {
+          "book_order": 67,
+          "book_id": "prva-petrova-poslanica",
+          "book_abbr": "1 Pt",
+          "book_title": "Prva Petrova poslanica",
+          "chapter_start": 3,
+          "chapter_end": 4,
+          "verse_count": 41,
+          "label": "1 Pt 3–4"
+        }
+      ]
+    },
+    {
+      "day": 83,
+      "label": "1 Pt 5; 2 Pt 1",
+      "verse_count": 35,
+      "readings": [
+        {
+          "book_order": 67,
+          "book_id": "prva-petrova-poslanica",
+          "book_abbr": "1 Pt",
+          "book_title": "Prva Petrova poslanica",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 14,
+          "label": "1 Pt 5"
+        },
+        {
+          "book_order": 68,
+          "book_id": "druga-petrova-poslanica",
+          "book_abbr": "2 Pt",
+          "book_title": "Druga Petrova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 21,
+          "label": "2 Pt 1"
+        }
+      ]
+    },
+    {
+      "day": 84,
+      "label": "2 Pt 2",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 68,
+          "book_id": "druga-petrova-poslanica",
+          "book_abbr": "2 Pt",
+          "book_title": "Druga Petrova poslanica",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 22,
+          "label": "2 Pt 2"
+        }
+      ]
+    },
+    {
+      "day": 85,
+      "label": "2 Pt 3; 1 Iv 1",
+      "verse_count": 28,
+      "readings": [
+        {
+          "book_order": 68,
+          "book_id": "druga-petrova-poslanica",
+          "book_abbr": "2 Pt",
+          "book_title": "Druga Petrova poslanica",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 18,
+          "label": "2 Pt 3"
+        },
+        {
+          "book_order": 69,
+          "book_id": "prva-ivanova-poslanica",
+          "book_abbr": "1 Iv",
+          "book_title": "Prva Ivanova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 10,
+          "label": "1 Iv 1"
+        }
+      ]
+    },
+    {
+      "day": 86,
+      "label": "1 Iv 2",
+      "verse_count": 29,
+      "readings": [
+        {
+          "book_order": 69,
+          "book_id": "prva-ivanova-poslanica",
+          "book_abbr": "1 Iv",
+          "book_title": "Prva Ivanova poslanica",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 29,
+          "label": "1 Iv 2"
+        }
+      ]
+    },
+    {
+      "day": 87,
+      "label": "1 Iv 3",
+      "verse_count": 24,
+      "readings": [
+        {
+          "book_order": 69,
+          "book_id": "prva-ivanova-poslanica",
+          "book_abbr": "1 Iv",
+          "book_title": "Prva Ivanova poslanica",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 24,
+          "label": "1 Iv 3"
+        }
+      ]
+    },
+    {
+      "day": 88,
+      "label": "1 Iv 4-5",
+      "verse_count": 42,
+      "readings": [
+        {
+          "book_order": 69,
+          "book_id": "prva-ivanova-poslanica",
+          "book_abbr": "1 Iv",
+          "book_title": "Prva Ivanova poslanica",
+          "chapter_start": 4,
+          "chapter_end": 5,
+          "verse_count": 42,
+          "label": "1 Iv 4–5"
+        }
+      ]
+    },
+    {
+      "day": 89,
+      "label": "2 Iv 1; 3 Iv 1",
+      "verse_count": 28,
+      "readings": [
+        {
+          "book_order": 70,
+          "book_id": "druga-ivanova-poslanica",
+          "book_abbr": "2 Iv",
+          "book_title": "Druga Ivanova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 13,
+          "label": "2 Iv 1"
+        },
+        {
+          "book_order": 71,
+          "book_id": "treca-ivanova-poslanica",
+          "book_abbr": "3 Iv",
+          "book_title": "Treća Ivanova poslanica",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 15,
+          "label": "3 Iv 1"
+        }
+      ]
+    },
+    {
+      "day": 90,
+      "label": "Jd 1",
+      "verse_count": 25,
+      "readings": [
+        {
+          "book_order": 72,
+          "book_id": "poslanica-jude-apostola",
+          "book_abbr": "Jd",
+          "book_title": "Poslanica Jude apostola",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 25,
+          "label": "Jd 1"
+        }
+      ]
+    }
+  ]
+}

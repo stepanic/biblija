@@ -1,0 +1,1297 @@
+{
+  "order": 25,
+  "id": "propovjednik",
+  "ks_book_id": 36,
+  "abbr": "Prop",
+  "title": "Propovjednik",
+  "testament": "SZ",
+  "category": "Psalmi i mudrosne knjige",
+  "chapter_count": 12,
+  "verse_count": 222,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Misli Propovjednika, Davidova sina, kralja u Jeruzalemu."
+        },
+        {
+          "verse": 2,
+          "text": "Ispraznost nad ispraznošću, veli Propovjednik, ispraznost nad ispraznošću, sve je ispraznost!",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "PRVI DIO"
+            },
+            {
+              "level": "h4",
+              "text": "Proslov"
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Kakva je korist čovjeku od svega truda njegova kojim se trudi pod suncem?"
+        },
+        {
+          "verse": 4,
+          "text": "Jedan naraštaj odlazi, drugi dolazi, a zemlja uvijek ostaje."
+        },
+        {
+          "verse": 5,
+          "text": "Sunce izlazi, sunce zalazi i onda hiti svojem mjestu odakle izlazi."
+        },
+        {
+          "verse": 6,
+          "text": "Vjetar puše na jug i okreće se na sjever, kovitla sad ovamo sad onamo i vraća se u novom vrtlogu."
+        },
+        {
+          "verse": 7,
+          "text": "Sve rijeke teku u more i more se ne prepunja; odakle teku rijeke, onamo se vraćaju da ponovno počnu svoj tok."
+        },
+        {
+          "verse": 8,
+          "text": "Sve je mučno. Nitko ne može reći da se oči nisu do sita nagledale i uši dovoljno naslušale."
+        },
+        {
+          "verse": 9,
+          "text": "Što je bilo, opet će biti, i što se činilo, opet će se činiti, i nema ništa novo pod suncem."
+        },
+        {
+          "verse": 10,
+          "text": "Ima li išta o čemu bi se moglo reći: »Gle, ovo je novo!«? Sve je već davno prije nas postojalo."
+        },
+        {
+          "verse": 11,
+          "text": "Samo, od prošlosti ne ostade ni spomena, kao što ni u budućnosti neće biti sjećanja na ono što će poslije doći."
+        },
+        {
+          "verse": 12,
+          "text": "Ja, Propovjednik, bijah kralj nad Izraelom u Jeruzalemu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "1. Salomonov život"
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "I trudih se da mudrošću istražim i dokučim sve što biva pod nebom; o, kako mučnu zadaću zadade Bog sinovima ljudskim."
+        },
+        {
+          "verse": 14,
+          "text": "Vidjeh sve što se čini pod suncem: kakve li ispraznosti i puste tlapnje!"
+        },
+        {
+          "verse": 15,
+          "text": "Što je krivo, ne može se ispraviti; čega nema, izbrojiti se ne može.",
+          "lines": [
+            "Što je krivo, ne može se ispraviti;",
+            "čega nema, izbrojiti se ne može."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Rekoh onda sam sebi: »Gle, stekao sam veću mudrost nego bilo tko od mojih prethodnika u Jeruzalemu. Duh moj sabrao je golemu mudrost i znanje.«"
+        },
+        {
+          "verse": 17,
+          "text": "Mudrost pomnjivo proučih, a tako i glupost i ludost, ali sam spoznao da je to pusta tlapnja."
+        },
+        {
+          "verse": 18,
+          "text": "Mnogo mudrosti – mnogo jada; što više znanja, to više boli.",
+          "lines": [
+            "Mnogo mudrosti – mnogo jada;",
+            "što više znanja, to više boli."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 26,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Tad rekoh u srcu svom: »Daj da okušam užitak i vidim što naslada pruža« – ali gle: i to je ispraznost!"
+        },
+        {
+          "verse": 2,
+          "text": "O smijehu rekoh: »Ludost je«; o užitku: »Čemu valja?«"
+        },
+        {
+          "verse": 3,
+          "text": "Odlučih tijelo krijepiti vinom, a srce posvetiti mudrosti; poželjeh prigrliti i ludost, kako bih spoznao usrećuje li ljude ono što pod nebesima čine za izbrojenih dana svojega života."
+        },
+        {
+          "verse": 4,
+          "text": "Učinih velika djela: sazidah sebi palače, zasadih vinograde;"
+        },
+        {
+          "verse": 5,
+          "text": "uredih perivoje i voćnjake, nasadih u njima voćke svakojake."
+        },
+        {
+          "verse": 6,
+          "text": "Načinih jezera da plodna sadišta natapam."
+        },
+        {
+          "verse": 7,
+          "text": "Nakupovah robova i robinja, imadoh i sluge domaće, a tako i stada krupne i sitne stoke više no itko prije mene u Jeruzalemu."
+        },
+        {
+          "verse": 8,
+          "text": "Nagomilah srebro i zlato i blago kraljeva i pokrajina, nabavih pjevače i pjevačice i svakoga raskošja ljudskog, sve škrinju na škrinju."
+        },
+        {
+          "verse": 9,
+          "text": "I postadoh tako velik, veći no bilo tko prije mene u Jeruzalemu; a nije me ni mudrost moja ostavila."
+        },
+        {
+          "verse": 10,
+          "text": "I što god su mi oči poželjele, nisam im uskratio, niti branih srcu svojemu kakva veselja, već se srce moje veselilo svakom trudu mojem, i takva bî nagrada svakom mojem naporu."
+        },
+        {
+          "verse": 11,
+          "text": "A onda razmotrih sva svoja djela, sve napore što uložih da do njih dođem – i gle, sve je to opet ispraznost i pusta tlapnja! I ništa nema valjano pod suncem."
+        },
+        {
+          "verse": 12,
+          "text": "Okrenuh zatim misao svoju mudrosti, gluposti i ludosti. Što, na priliku, čini kraljev nasljednik? Ono što je već učinjeno."
+        },
+        {
+          "verse": 13,
+          "text": "I spoznadoh da je bolja mudrost od ludosti, kao što je svjetlost bolja od tame."
+        },
+        {
+          "verse": 14,
+          "text": "Mudracu su oči u glavi, a bezumnik luta u tami. Ali također znam da obojicu stiže ista kob.",
+          "lines": [
+            "Mudracu su oči u glavi,",
+            "a bezumnik luta u tami.",
+            "Ali također znam da obojicu stiže ista kob."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Zato rekoh u sebi: »Kakva je sudbina luđaku, takva je i meni. Čemu onda žudjeti za mudrošću?« I rekoh u srcu: »I to je ispraznost!«"
+        },
+        {
+          "verse": 16,
+          "text": "Jer trajna spomena nema ni mudru ni bezumniku: obojicu će poslije nekog vremena prekriti zaborav! I, jao, mudrac mora umrijeti kao i bezumnik."
+        },
+        {
+          "verse": 17,
+          "text": "Omrznuh život, jer mi se učini mučnim sve što se zbiva pod suncem: sve je ispraznost i pusta tlapnja."
+        },
+        {
+          "verse": 18,
+          "text": "Zamrzih sve za što sam se pod suncem trudio i što sad ostavljam svome nasljedniku."
+        },
+        {
+          "verse": 19,
+          "text": "Tko zna hoće li on biti mudar ili lud? Pa ipak on će biti gospodar sve moje muke u koju uložih sav svoj napor i mudrost pod suncem. I to je ispraznost."
+        },
+        {
+          "verse": 20,
+          "text": "I stao sam srcem očajavati zbog velikog napora kojim sam se trudio pod suncem."
+        },
+        {
+          "verse": 21,
+          "text": "Jer čovjek se trudi mudro i umješno i uspješno, pa sve to mora ostaviti u baštinu drugomu koji se oko toga nije uopće trudio. I to je ispraznost i velika nevolja."
+        },
+        {
+          "verse": 22,
+          "text": "Jer što on dobiva za sav svoj napor i trud koji je pod suncem podnio?"
+        },
+        {
+          "verse": 23,
+          "text": "Jer svi su njegovi dani doista mukotrpni, poslovi mu puni brige; čak ni noću ne miruje srce njegovo. I to je ispraznost."
+        },
+        {
+          "verse": 24,
+          "text": "Nema čovjeku druge sreće već jesti i piti i biti zadovoljan svojim poslom. I to je, vidim, dar Božje ruke."
+        },
+        {
+          "verse": 25,
+          "text": "Jer tko bi mogao jesti, tko li nezadovoljan biti, osim po njemu?"
+        },
+        {
+          "verse": 26,
+          "text": "Mudrost, spoznaju, radost on daruje onom tko mu je po volji, a grešniku nameće zadaću da sabire i skuplja za onoga tko je po volji Bogu. I to je ispraznost i pusta tlapnja."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 22,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Sve ima svoje doba i svaki posao pod nebom svoje vrijeme.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "2. Smrt"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Vrijeme rađanja i vrijeme umiranja; vrijeme sađenja i vrijeme čupanja posađenog.",
+          "lines": [
+            "Vrijeme rađanja i",
+            "vrijeme umiranja;",
+            "vrijeme sađenja i",
+            "vrijeme čupanja posađenog."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Vrijeme ubijanja i vrijeme liječenja; vrijeme rušenja i vrijeme građenja.",
+          "lines": [
+            "Vrijeme ubijanja i",
+            "vrijeme liječenja;",
+            "vrijeme rušenja i",
+            "vrijeme građenja."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Vrijeme plača i vrijeme smijeha; vrijeme tugovanja i vrijeme plesanja.",
+          "lines": [
+            "Vrijeme plača i",
+            "vrijeme smijeha;",
+            "vrijeme tugovanja i",
+            "vrijeme plesanja."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Vrijeme bacanja kamenja i vrijeme sabiranja kamenja; vrijeme grljenja i vrijeme kad se ostavlja grljenje.",
+          "lines": [
+            "Vrijeme bacanja kamenja i",
+            "vrijeme sabiranja kamenja;",
+            "vrijeme grljenja i",
+            "vrijeme kad se ostavlja grljenje."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Vrijeme traženja i vrijeme gubljenja; vrijeme čuvanja i vrijeme odbacivanja.",
+          "lines": [
+            "Vrijeme traženja i",
+            "vrijeme gubljenja;",
+            "vrijeme čuvanja i",
+            "vrijeme odbacivanja."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Vrijeme deranja i vrijeme šijenja; vrijeme šutnje i vrijeme govorenja.",
+          "lines": [
+            "Vrijeme deranja i",
+            "vrijeme šijenja;",
+            "vrijeme šutnje i",
+            "vrijeme govorenja."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Vrijeme ljubljenja i vrijeme mržnje; vrijeme rata i vrijeme mira.",
+          "lines": [
+            "Vrijeme ljubljenja i",
+            "vrijeme mržnje;",
+            "vrijeme rata i",
+            "vrijeme mira."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Koja je posleniku korist od njegovih napora?"
+        },
+        {
+          "verse": 10,
+          "text": "Razmišljam o mučnoj zadaći što je Bog zadade sinovima ljudskim."
+        },
+        {
+          "verse": 11,
+          "text": "Sve što on čini prikladno je u svoje vrijeme; ali iako je dopustio čovjeku uvid u vjekove, čovjek ne može dokučiti djela koja Bog čini od početka do kraja."
+        },
+        {
+          "verse": 12,
+          "text": "Znam da nije druge sreće čovjeku osim da se veseli i čini dobro za svojega života."
+        },
+        {
+          "verse": 13,
+          "text": "I kad čovjek jede i pije i uživa u svojem radu, i to je Božji dar."
+        },
+        {
+          "verse": 14,
+          "text": "I znam da sve što Bog čini, čini za stalno. Tome se ništa dodati ne može niti mu se može oduzeti; a Bog čini tako da ga se boje."
+        },
+        {
+          "verse": 15,
+          "text": "Što biva, već bijaše, i što će biti, već je bilo; a Bog obnavlja što je prohujalo."
+        },
+        {
+          "verse": 16,
+          "text": "Još vidim kako pod suncem umjesto pravice vlada nepravda i umjesto pravednika zločinac."
+        },
+        {
+          "verse": 17,
+          "text": "Zato rekoh u sebi: »Bog će suditi i pravedniku i zločincu, jer ovdje ima vrijeme za svaku namjeru i čin.«"
+        },
+        {
+          "verse": 18,
+          "text": "Još rekoh u sebi: »Ljudi se ponašaju tako da Bog može pokazati kakvi su uistinu, da su jedni drugima poput zvijeri.«"
+        },
+        {
+          "verse": 19,
+          "text": "Jer zaista, kob ljudi i zvijeri jedna je te ista. Kako ginu oni, tako ginu i one; i dišu jednakim dahom, i čovjek ničim ne nadmašuje zvijer, jer sve je ispraznost."
+        },
+        {
+          "verse": 20,
+          "text": "I jedni i drugi odlaze na isto mjesto; svi su postali od praha i u prah se vraćaju."
+        },
+        {
+          "verse": 21,
+          "text": "Tko zna da li dah ljudski uzlazi gore, a dah zvijeri silazi dolje k zemlji?"
+        },
+        {
+          "verse": 22,
+          "text": "Uviđam da čovjeku druge sreće nema osim radosti u svome djelu, jer to je ljudska sudbina. A tko će ga dovesti do toga da dozna što će biti poslije njega?"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 17,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Opet stadoh promatrati sva nasilja koja se čine pod suncem, i gle, suze potlačenih, i nikog nema da ih otre; i nasilje iz tlačiteljske ruke, a zaštitnika niotkuda.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "3. Zajednički život"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Zato sretnima smatram mrtve koji su već pomrli; sretniji su od živih što još žive."
+        },
+        {
+          "verse": 3,
+          "text": "A od obojih je sretniji onaj koji još nije postao, koji nije vidio zlih djela što se čine pod suncem."
+        },
+        {
+          "verse": 4,
+          "text": "Nadalje iskusih da svaki napor i svaki uspjeh pribavlja čovjeku zavist njegova bližnjeg. I to je ispraznost i pusta tlapnja."
+        },
+        {
+          "verse": 5,
+          "text": "Bezumnik prekriži ruke i izjeda sebe.",
+          "lines": [
+            "Bezumnik prekriži ruke",
+            "i izjeda sebe."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Bolja je puna šaka u miru nego obje pregršti mučna rada i puste tlapnje.",
+          "lines": [
+            "Bolja je puna šaka u miru",
+            "nego obje pregršti mučna rada",
+            "i puste tlapnje."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "I još jednu opazih ispraznost pod suncem:"
+        },
+        {
+          "verse": 8,
+          "text": "Čovjek potpun samac – bez sina, bez brata, i opet nema kraja njegovu trudu; oči mu se ne mogu nasititi blaga; a ne misli: za koga se mučim i uskraćujem dobro sebi? I to je ispraznost i zla briga."
+        },
+        {
+          "verse": 9,
+          "text": "Bolje je dvojici nego jednome, jer imaju bolju plaću za svoj trud."
+        },
+        {
+          "verse": 10,
+          "text": "Padne li jedan, drugi će ga podići; a teško jednomu! Ako padne, nema nikoga da ga podigne."
+        },
+        {
+          "verse": 11,
+          "text": "Pa ako se i spava udvoje, toplije je; a kako će se samac zagrijati?"
+        },
+        {
+          "verse": 12,
+          "text": "I ako tko udari na jednoga, dvojica će mu se oprijeti; i trostruko se uže ne kida brzo."
+        },
+        {
+          "verse": 13,
+          "text": "Bolji je mladić siromašan a mudar nego kralj star a lud, koji više ne zna za savjet.",
+          "lines": [
+            "Bolji je mladić siromašan a mudar",
+            "nego kralj star a lud, koji više ne zna za savjet."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Jer mladić može izići iz tamnice i postati kraljem, iako se rodio kao prosjak u svom kraljevstvu."
+        },
+        {
+          "verse": 15,
+          "text": "Opazih kako svi koji žive i hode pod suncem pristaju uz mladića, uz nastupnika koji ga naslijedi."
+        },
+        {
+          "verse": 16,
+          "text": "On stupa na čelo bezbrojnih podanika i kasniji se naraštaji ne mogahu zbog njega radovati. I to je zacijelo ispraznost i pusta tlapnja."
+        },
+        {
+          "verse": 17,
+          "text": "Kad odlaziš u Božji dom, pazi na korake svoje. Priđi da mogneš čuti – žrtva je valjanija nego prinos luđakâ, jer oni i ne znaju da čine zlo."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verse_count": 19,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Ne nagli ustima svojim i ne žuri se s riječima pred Bogom, jer je Bog na nebu, a ti si na zemlji; zato štedi svoje riječi."
+        },
+        {
+          "verse": 2,
+          "text": "San dolazi od mnogih briga, a lud govor od mnoštva riječi.",
+          "lines": [
+            "San dolazi od mnogih briga,",
+            "a lud govor od mnoštva riječi."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Kad zavjetuješ štogod Bogu, odmah to izvrši, jer njemu nisu mili bezumnici. Zato ispuni svaki svoj zavjet."
+        },
+        {
+          "verse": 4,
+          "text": "Bolje je ne zavjetovati nego zavjetovati a ne izvršiti zavjeta."
+        },
+        {
+          "verse": 5,
+          "text": "Ne daj ustima svojim da te navode na grijeh i ne reci kasnije pred anđelom da je bilo nehotice. Zašto pružati Bogu priliku da se srdi na riječ tvoju i uništi djelo tvojih ruku?"
+        },
+        {
+          "verse": 6,
+          "text": "Koliko sanja, toliko i ispraznosti; mnogo riječi – isprazna tlapnja. Zato boj se Boga.",
+          "lines": [
+            "Koliko sanja, toliko i ispraznosti;",
+            "mnogo riječi – isprazna tlapnja.",
+            "Zato boj se Boga."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Ako vidiš gdje tlače siromaha i gaze pravo i pravicu u zemlji, ne čudi se tomu, jer nad visokim straži viši, a nad njim najviši."
+        },
+        {
+          "verse": 8,
+          "text": "Korist zemlje je nada sve; i kralj ovisi o zemljištu."
+        },
+        {
+          "verse": 9,
+          "text": "Tko novce ljubi, nikad ih dosta nema; tko bogatstvo ljubi, nikad mu dosta probitka. I to je ispraznost.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "4. Novac"
+            }
+          ],
+          "lines": [
+            "Tko novce ljubi, nikad ih dosta nema;",
+            "tko bogatstvo ljubi, nikad mu dosta probitka.",
+            "I to je ispraznost."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Gdje je mnogo bogatstva, mnogo je i gotovana, pa kakva je korist od toga gospodaru, osim što ga očima gleda?",
+          "lines": [
+            "Gdje je mnogo bogatstva,",
+            "mnogo je i gotovana,",
+            "pa kakva je korist od toga gospodaru, osim što ga očima gleda?"
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Sladak je dan radiši, jeo malo ili mnogo, dok bogatstvo ne da bogatašu zaspati."
+        },
+        {
+          "verse": 12,
+          "text": "I vidjeh teško zlo pod suncem: skupljeno blago što je na propast svojemu vlasniku."
+        },
+        {
+          "verse": 13,
+          "text": "Jer zlom nezgodom propadne takvo bogatstvo te sinu što mu se rodi ne ostane ništa."
+        },
+        {
+          "verse": 14,
+          "text": "Gol je izašao iz utrobe majke svoje i tako će gol i otići kakav je i došao; ništa nema od svega svojeg truda da ponese."
+        },
+        {
+          "verse": 15,
+          "text": "I to je teško zlo što tako odlazi kako je i došao; pa kakva mu je korist što se u vjetar mučio."
+        },
+        {
+          "verse": 16,
+          "text": "Sve svoje dane živi u tami, nevolji, brizi, bolesti i srdžbi."
+        },
+        {
+          "verse": 17,
+          "text": "Ovo, stoga, zaključujem: prava je sreća čovjeku jesti i piti i biti zadovoljan sa svim svojim trudom kojim se muči pod suncem za kratka vijeka koji mu je dao Bog, jer takva mu je sudbina dosuđena."
+        },
+        {
+          "verse": 18,
+          "text": "Pa ako je čovjeku Bog dao bogatstvo i imanje da ih uživa i bude zadovoljan svojim djelom – i to je dar od Boga."
+        },
+        {
+          "verse": 19,
+          "text": "Jer tada barem ne misli mnogo na dane svog života, kad mu Bog daje da mu se srce veseli."
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verse_count": 12,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "I vidjeh: ima još jedno zlo pod suncem i teško tišti ljude."
+        },
+        {
+          "verse": 2,
+          "text": "Nekomu Bog udijeli bogatstvo i blago i počasti te ima sve što mu duša poželi, ali mu ne udijeli da to i uživa, nego uživa tuđinac. To je ispraznost i grdna nevolja."
+        },
+        {
+          "verse": 3,
+          "text": "I velim: bolje je nedonošče od onoga koji bi rodio stotinu djece i živio mnogo godina, a sam se ne bi naužio dobra niti bi imao pogreba;"
+        },
+        {
+          "verse": 4,
+          "text": "jer je nedonošče uzalud došlo i u tamu otišlo i ime mu je tamom pokriveno;",
+          "lines": [
+            "jer je nedonošče uzalud došlo",
+            "i u tamu otišlo i ime mu je",
+            "tamom pokriveno;"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "sunca čak ne vidje niti spozna – a spokojnije je od onoga.",
+          "lines": [
+            "sunca čak ne vidje niti spozna –",
+            "a spokojnije je od onoga."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Pa kad bi takav živio i dvije tisuće godina, a svojeg dobra ne bi uživao, zar ne odlaze obojica jednako na isto mjesto?"
+        },
+        {
+          "verse": 7,
+          "text": "Čovjek se trudi samo da bi jeo, a želudac njegov nikad da se nasiti.",
+          "lines": [
+            "Čovjek se trudi samo da bi jeo,",
+            "a želudac njegov nikad da se nasiti."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Jer po čemu je mudrac bolji od luđaka i što reći o siromahu koji se umije držati pred ljudima?"
+        },
+        {
+          "verse": 9,
+          "text": "Bolje je očima vidjeti nego duhom lutati. I to je ispraznost i pusta tlapnja."
+        },
+        {
+          "verse": 10,
+          "text": "Što je već bilo, ime ima; i zna se što je čovjek; i on se ne može parbiti s jačim od sebe."
+        },
+        {
+          "verse": 11,
+          "text": "Što više riječi, to veća ispraznost svega, i koja je od toga korist čovjeku?"
+        },
+        {
+          "verse": 12,
+          "text": "Tko zna što je dobro čovjeku u životu njegovu, za ono malo dana koje tako isprazno živi, koji mu prolaze kao sjena? Tko će kazati čovjeku što će biti poslije njega pod suncem?"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "verse_count": 29,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Bolji je dobar glas nego skupocjeno ulje, i smrtni dan nego dan rođenja.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "DRUGI DIO"
+            },
+            {
+              "level": "h4",
+              "text": "Proslov"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Bolje je ići u kuću gdje je žalost nego u kuću gdje je gozba, jer ondje je kraj svakoga čovjeka, i tko je živ, nek’ primi k srcu!",
+          "lines": [
+            "Bolje je ići u kuću gdje je žalost",
+            "nego u kuću gdje je gozba,",
+            "jer ondje je kraj svakoga čovjeka,",
+            "i tko je živ, nek’ primi k srcu!"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Bolji je jad nego smijeh, jer pod žalosnim licem srce je radosno.",
+          "lines": [
+            "Bolji je jad nego smijeh,",
+            "jer pod žalosnim licem srce je radosno."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Srce je mudrih ljudi u kući žalosti, a srce bezumnih u kući veselja.",
+          "lines": [
+            "Srce je mudrih ljudi u kući žalosti,",
+            "a srce bezumnih u kući veselja."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Bolje je poslušati ukor mudra čovjeka negoli slušati hvalospjev luđaka.",
+          "lines": [
+            "Bolje je poslušati ukor mudra čovjeka",
+            "negoli slušati hvalospjev luđaka."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Jer kao prasak trnja ispod kotla, takav je smijeh luđaka, i to je ispraznost.",
+          "lines": [
+            "Jer kao prasak trnja ispod kotla,",
+            "takav je smijeh luđaka,",
+            "i to je ispraznost."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Jer smijeh od mudraca čini luđaka i veselje kvari srce.",
+          "lines": [
+            "Jer smijeh od mudraca čini luđaka",
+            "i veselje kvari srce."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Bolji je svršetak stvari nego njezin početak i bolja je strpljivost od oholosti.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "1. Uzvrat za čine"
+            }
+          ],
+          "lines": [
+            "Bolji je svršetak stvari nego njezin početak",
+            "i bolja je strpljivost od oholosti."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Ne nagli u srdžbu, jer srdžba počiva u srcu luđaka."
+        },
+        {
+          "verse": 10,
+          "text": "Ne pitaj zašto su negdašnja vremena bila bolja od ovih, jer to nije mudro pitanje."
+        },
+        {
+          "verse": 11,
+          "text": "Mudrost je dragocjena baština i probitak onima na koje sunce sja."
+        },
+        {
+          "verse": 12,
+          "text": "Jer kao što je novac zaštita, tako je i mudrost; a prednost je mudrosti u tome što izbavlja onoga tko je ima."
+        },
+        {
+          "verse": 13,
+          "text": "Pogledaj djela Božja; tko može ispraviti što je on iskrivio?"
+        },
+        {
+          "verse": 14,
+          "text": "U sretan dan uživaj sreću, a u zao dan razmišljaj: Bog je stvorio jedno kao i drugo – da čovjek ne otkrije ništa od svoje budućnosti."
+        },
+        {
+          "verse": 15,
+          "text": "Svašta vidjeh u svojemu ništavnom životu: pravednik propada unatoč svojoj pravednosti, a bezbožnik i dalje živi unatoč svojoj bezbožnosti."
+        },
+        {
+          "verse": 16,
+          "text": "Ne budi prepravedan i ne budi premudar; zašto da se uništavaš?",
+          "lines": [
+            "Ne budi prepravedan",
+            "i ne budi premudar;",
+            "zašto da se uništavaš?"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Ne budi preopak i ne budi lud; zašto bi umro prije vremena?",
+          "lines": [
+            "Ne budi preopak",
+            "i ne budi lud;",
+            "zašto bi umro prije vremena?"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Dobro je da držiš jedno, ali ni drugo ne puštaj iz ruke, jer tko se boji Boga, izbavlja se od svega."
+        },
+        {
+          "verse": 19,
+          "text": "Mudrost mudraca veću moć daje gradu nego deset mogućnika."
+        },
+        {
+          "verse": 20,
+          "text": "Na zemlji nema pravednika koji, čineći dobro, ne bi nikad sagriješio."
+        },
+        {
+          "verse": 21,
+          "text": "I još jedno: nemoj se obazirati na govorkanje; čut ćeš možda da te sluga tvoj proklinjao;"
+        },
+        {
+          "verse": 22,
+          "text": "a zna tvoje srce kako si i ti često druge proklinjao."
+        },
+        {
+          "verse": 23,
+          "text": "Sve sam to mudrošću iskušao. Mislio sam da sam mudar, ali mi je mudrost bila nedokučiva."
+        },
+        {
+          "verse": 24,
+          "text": "Ono što jest, daleko je i duboko, tako duboko – tko da i pronađe?"
+        },
+        {
+          "verse": 25,
+          "text": "I još jednom pokušah istražiti i shvatiti mudrost i smisao, da spoznam opačinu kao ludost, a ludost kao bezumlje."
+        },
+        {
+          "verse": 26,
+          "text": "Otkrih da ima nešto gorče od smrti – žena, ona je zamka, srce joj je mreža, a ruke okovi; tko je Bogu drag, izmiče joj, a grešnik je njezin sužanj.",
+          "lines": [
+            "Otkrih da ima nešto gorče od smrti – žena, ona je zamka, srce joj je mreža, a ruke okovi;",
+            "tko je Bogu drag, izmiče joj,",
+            "a grešnik je njezin sužanj."
+          ]
+        },
+        {
+          "verse": 27,
+          "text": "Eto, to sam sve u svemu otkrio, veli Propovjednik."
+        },
+        {
+          "verse": 28,
+          "text": "I još sam tražio, ali bez uspjeha. Nađoh čovjeka – jednog od tisuću, a žene ne nađoh među svima nijedne.",
+          "lines": [
+            "I još sam tražio, ali bez uspjeha.",
+            "Nađoh čovjeka – jednog od tisuću,",
+            "a žene ne nađoh među svima nijedne."
+          ]
+        },
+        {
+          "verse": 29,
+          "text": "Otkrih ovo: Bog stvori čovjeka jednostavnim, a on snuje nebrojene spletke."
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "verse_count": 17,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Tko je kao mudrac? Tko još umije tumačiti stvari? Mudrost čovjeku razvedruje lice i mijenja njegov namršteni lik.",
+          "lines": [
+            "Tko je kao mudrac?",
+            "Tko još umije tumačiti stvari?",
+            "Mudrost čovjeku razvedruje lice",
+            "i mijenja njegov namršteni lik."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Zato velim: slušaj kraljevu zapovijed zbog Božje zakletve."
+        },
+        {
+          "verse": 3,
+          "text": "Ne nagli da je prekršiš: ne budi tvrdoglav kad razlog nije dobar, jer on čini kako mu odgovara."
+        },
+        {
+          "verse": 4,
+          "text": "Jer kraljeva je riječ najjača, i tko ga smije pitati: »Što činiš?«"
+        },
+        {
+          "verse": 5,
+          "text": "Tko se drži zapovijedi, ne poznaje nevolju, i mudrac zna za vrijeme i sud."
+        },
+        {
+          "verse": 6,
+          "text": "Jer postoji vrijeme i sud za sve, i čovjeka veoma tereti nedjelo njegovo"
+        },
+        {
+          "verse": 7,
+          "text": "jer on ne zna što će biti; a tko mu može kazati kad će što biti?"
+        },
+        {
+          "verse": 8,
+          "text": "Vjetar nitko ne može svladati, niti gospodariti nad danom smrtnim, niti ima odgode u ratu; niti opačina izbavlja onoga koji je čini."
+        },
+        {
+          "verse": 9,
+          "text": "Sve ovo vidjeh pazeći na sve što se čini pod suncem, kad čovjek vlada nad čovjekom na njegovu nesreću."
+        },
+        {
+          "verse": 10,
+          "text": "Dalje vidjeh kako opake nose na groblje, i ljudi iz svetog mjesta izlaze da ih slave zbog toga što su tako činili. I to je ispraznost."
+        },
+        {
+          "verse": 11,
+          "text": "Kad nema brze osude za zlo djelo, ljudsko je srce sklono činiti zlo."
+        },
+        {
+          "verse": 12,
+          "text": "I grešnik koji čini zlo i sto puta, dugo živi. Ja ipak znam da će biti sretni oni koji se boje Boga jer ga se boje."
+        },
+        {
+          "verse": 13,
+          "text": "Ali opak čovjek neće biti sretan i neće produljivati svoje dane ni kao sjena jer se ne boji Boga."
+        },
+        {
+          "verse": 14,
+          "text": "Ali je na zemlji ispraznost te pravednike stiže sudbina opakih, a opake sudbina pravednika. Velim: i to je ispraznost."
+        },
+        {
+          "verse": 15,
+          "text": "Zato slavim veselje, jer nema čovjeku sreće pod suncem nego u jelu, pilu i nasladi. I to neka ga prati u njegovoj muci za života koji mu Bog dade pod suncem."
+        },
+        {
+          "verse": 16,
+          "text": "Poslije svih napora da dokučim mudrost, pokušah spoznati što se radi na zemlji. Uistinu, čovjek ne nalazi spokojstva ni danju ni noću.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "2. Ljubav"
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Promatram cjelokupno djelo Božje: i odista – nitko ne može dokučiti ono što se zbiva pod suncem. Jer ma koliko se čovjek trudio da otkrije, nikad ne može otkriti. Pa ni mudrac to ne može otkriti, iako misli da zna."
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Razmišljah o svemu tome i shvatih kako su i pravednici i mudraci, s djelima svojim, u Božjoj ruci; i čovjek ne razumije ni ljubavi ni mržnje, i njemu su obje ispraznost."
+        },
+        {
+          "verse": 2,
+          "text": "Svima je ista kob, pravednomu kao i opakom, čistomu i nečistomu, onomu koji žrtvuje kao i onomu koji ne žrtvuje; jednako dobru kao i grešniku, onomu koji se zaklinje kao i onomu koji se boji zakletve."
+        },
+        {
+          "verse": 3,
+          "text": "Najgore je od svega što biva pod suncem ovo: ista je kob svima, ljudsko je srce puno zla, ludost je u srcima ljudi dok žive, a potom se pridružuju mrtvima."
+        },
+        {
+          "verse": 4,
+          "text": "Jer onaj tko je među živima, ima nade: i živ pas više vrijedi nego mrtav lav."
+        },
+        {
+          "verse": 5,
+          "text": "Živi barem znaju da će umrijeti, a mrtvi ne znaju ništa niti imaju više nagrade, jer se zaboravlja i spomen na njih."
+        },
+        {
+          "verse": 6,
+          "text": "Davno je nestalo i njihove ljubavi, i mržnje, i zavisti, i više nemaju udjela ni u čem što biva pod suncem."
+        },
+        {
+          "verse": 7,
+          "text": "Zato s radošću jedi svoj kruh i vesela srca pij svoje vino, jer se Bogu već prije svidjelo tvoje djelo.",
+          "lines": [
+            "Zato s radošću jedi svoj kruh",
+            "i vesela srca pij svoje vino,",
+            "jer se Bogu već prije svidjelo tvoje djelo."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "U svako doba nosi haljine bijele i ulja nek’ ne ponestane na tvojoj glavi.",
+          "lines": [
+            "U svako doba nosi haljine bijele",
+            "i ulja nek’ ne ponestane na tvojoj glavi."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Uživaj život sa ženom koju ljubiš u sve dane svojega ispraznog vijeka koji ti Bog daje pod suncem, jer to je tvoj udio u životu i u trudu kojim se trudiš pod suncem."
+        },
+        {
+          "verse": 10,
+          "text": "I što god nakaniš učiniti, učini dok možeš, jer nema ni djela, ni umovanja, ni spoznaje, ni mudrosti u podzemlju u koje ideš."
+        },
+        {
+          "verse": 11,
+          "text": "Osim toga, vidjeh pod suncem: ne dobivaju trku hitri, ni boj hrabri; nema kruha za mudraca, ni bogatstva za razumne, ni milosti za učene, jer vrijeme i kob sve ih dostiže.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "3. Slučaj"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Čovjek ne zna svoga časa: kao ribe ulovljene u podmukloj mreži, i kao ptice u zamku uhvaćene, tako se hvataju sinovi ljudski u vrijeme nevolje koja ih iznenada spopada."
+        },
+        {
+          "verse": 13,
+          "text": "Još vidjeh pod suncem i ovu »mudrost« koja mi se učini velikom:"
+        },
+        {
+          "verse": 14,
+          "text": "Bî jedan malen grad i u njem malo ljudi, a na nj udari velik kralj, opkoli ga i podiže oko njega velike opsadne tornjeve."
+        },
+        {
+          "verse": 15,
+          "text": "Ali se u njemu nađe čovjek siromah mudar koji spasi grad svojom mudrošću, a poslije se nitko nije sjećao toga čovjeka."
+        },
+        {
+          "verse": 16,
+          "text": "Ipak ja velim: bolja je mudrost nego jakost, ali se ne cijeni mudrost siromaha i ne slušaju njegove riječi."
+        },
+        {
+          "verse": 17,
+          "text": "Blage se riječi mudraca bolje čuju nego vika zapovjednika nad luđacima."
+        },
+        {
+          "verse": 18,
+          "text": "Mudrost više vrijedi nego bojno oružje, ali jedan jedini grešnik pokvari mnogo dobra."
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "verse_count": 20,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Uginula muha usmrdi mirisno ulje, a i malo ludosti jače je od mudrosti i časti."
+        },
+        {
+          "verse": 2,
+          "text": "Mudrac kroči pravim putem, a luđak krivim.",
+          "lines": [
+            "Mudrac kroči pravim putem,",
+            "a luđak krivim."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Dovoljno je da luđak pođe putem: kako razbora nema, svakomu pokazuje da je lud."
+        },
+        {
+          "verse": 4,
+          "text": "Ako se na te digne vladaočev gnjev, ne ostavljaj svoga mjesta, jer blagost sprečava velike grijehe."
+        },
+        {
+          "verse": 5,
+          "text": "Ima zlo što ga vidjeh pod suncem kao prestupak koji dolazi od vladaoca:"
+        },
+        {
+          "verse": 6,
+          "text": "ludost se podiže na najviša mjesta, a veliki zauzimaju niske položaje."
+        },
+        {
+          "verse": 7,
+          "text": "Vidjeh sluge na konjima, a knezove gdje idu pješice kao sluge."
+        },
+        {
+          "verse": 8,
+          "text": "Tko jamu kopa, u nju pada; i tko ruši zid, ujeda ga zmija.",
+          "lines": [
+            "Tko jamu kopa, u nju pada;",
+            "i tko ruši zid, ujeda ga zmija."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Tko lomi kamenje, ono ga ranjava; tko cijepa drva, može nastradati.",
+          "lines": [
+            "Tko lomi kamenje, ono ga ranjava;",
+            "tko cijepa drva, može nastradati."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Kad zatupi željezo i oštrica mu nije nabrušena, tada treba više snage; a nagrada mudrosti je uspjeh."
+        },
+        {
+          "verse": 11,
+          "text": "Ako zmija ujede prije čaranja, ništa onda opčaratelj ne koristi."
+        },
+        {
+          "verse": 12,
+          "text": "Pune su miline riječi iz usta mudraca, a bezumnika upropašćuju njegove usne.",
+          "lines": [
+            "Pune su miline riječi iz usta mudraca,",
+            "a bezumnika upropašćuju njegove usne."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "On počinje svoje besjede ludošću i svršava ih potpunim bezumljem."
+        },
+        {
+          "verse": 14,
+          "text": "Luđak previše govori: čovjek ne poznaje budućnost, i tko mu može kazati što će poslije njega biti?"
+        },
+        {
+          "verse": 15,
+          "text": "Luđake mori njihov trud; tko ne zna puta, ne može u grad.",
+          "lines": [
+            "Luđake mori njihov trud;",
+            "tko ne zna puta, ne može u grad."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Jao tebi, zemljo, kad ti je kralj premlad i knezovi se već ujutro goste."
+        },
+        {
+          "verse": 17,
+          "text": "Blago tebi, zemljo, kad ti je kralj plemenit i knezovi ti u svoje vrijeme blaguju da se okrijepe, a ne da se opiju."
+        },
+        {
+          "verse": 18,
+          "text": "S lijenosti se ugiblju grede, zbog nebrige prokišnjava kuća.",
+          "lines": [
+            "S lijenosti se ugiblju grede,",
+            "zbog nebrige prokišnjava kuća."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Ali su gozbe radi zabave i vino uveseljava život, a novci pribavljaju sve."
+        },
+        {
+          "verse": 20,
+          "text": "Ni u svojoj misli ne kuni kralja, ni u svojoj ložnici ne kuni bogataša, jer će ptice odnijeti glas i kleveta lako okrilati.",
+          "lines": [
+            "Ni u svojoj misli ne kuni kralja,",
+            "ni u svojoj ložnici ne kuni bogataša,",
+            "jer će ptice odnijeti glas",
+            "i kleveta lako okrilati."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "verse_count": 10,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Baci kruh svoj na vodu i naći ćeš ga poslije mnogo vremena."
+        },
+        {
+          "verse": 2,
+          "text": "Podijeli sedmorici ili osmorici, jer ne znaš kakvo će zlo zadesiti zemlju."
+        },
+        {
+          "verse": 3,
+          "text": "Kad se oblaci napune kišom, prosiplju je na zemlju, a padne li drvo na jug ili na sjever, svejedno: gdje padne, ondje i ostaje."
+        },
+        {
+          "verse": 4,
+          "text": "Tko pazi na vjetar, ne sije, i tko gleda na oblake, ne žanje.",
+          "lines": [
+            "Tko pazi na vjetar, ne sije,",
+            "i tko gleda na oblake, ne žanje."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Kao što ne znaš koji je put vjetru ni kako postaju kosti u utrobi trudne žene, tako ne znaš ni djela Boga koji sve tvori."
+        },
+        {
+          "verse": 6,
+          "text": "Ujutro sij svoje sjeme, a navečer nek’ ti ruka ne počiva. Jer ne znaš da li će biti bolje ovo ili ono, ili će oboje biti jednako dobro.",
+          "lines": [
+            "Ujutro sij svoje sjeme,",
+            "a navečer nek’ ti ruka ne počiva.",
+            "Jer ne znaš da li će biti bolje ovo ili ono, ili će oboje biti jednako dobro."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Ljupka je svjetlost i ugodno je očima vidjeti sunce.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "4. Starost"
+            }
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Ali ako čovjek živi i mnogo godina, neka se uvijek veseli, a neka se sjeti da će tamnih dana biti mnogo. Ispraznost je sve što će doći."
+        },
+        {
+          "verse": 9,
+          "text": "Zato se raduj, mladiću, za svoje mladosti, i veseli se u danima svoga mladenaštva; idi putovima svoga srca i slijedi želje svojih očiju; ali znaj da će ti za sve to suditi Bog.",
+          "lines": [
+            "Zato se raduj, mladiću, za svoje mladosti,",
+            "i veseli se u danima svoga mladenaštva;",
+            "idi putovima svoga srca",
+            "i slijedi želje svojih očiju;",
+            "ali znaj da će ti za sve to suditi Bog."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Ukloni, dakle, jad iz svoga srca i udalji bol od svojega tijela. Ali je isprazna i mladost i doba tamnih kosa.",
+          "lines": [
+            "Ukloni, dakle, jad iz svoga srca",
+            "i udalji bol od svojega tijela.",
+            "Ali je isprazna i mladost i doba tamnih kosa."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "verse_count": 14,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "I sjećaj se svoga Stvoritelja u danima svoje mladosti prije nego dođu zli dani i prispiju godine kad ćeš reći: »Ne mile mi se.«"
+        },
+        {
+          "verse": 2,
+          "text": "Prije nego potamni sunce i svjetlost, mjesec i zvijezde, i vrate se oblaci iza kiše.",
+          "lines": [
+            "Prije nego potamni sunce i svjetlost,",
+            "mjesec i zvijezde,",
+            "i vrate se oblaci iza kiše."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "U dan kad zadrhte čuvari kuće i pognu se junaci, i dosađuju se mlinarice jer ih je premalo, i potamne oni koji gledaju kroz prozore;",
+          "lines": [
+            "U dan kad zadrhte čuvari kuće",
+            "i pognu se junaci,",
+            "i dosađuju se mlinarice",
+            "jer ih je premalo,",
+            "i potamne oni koji gledaju kroz prozore;"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "kad se zatvore ulična vrata, oslabi šum mlina, kad utihne pjev ptice i zamru zvuci pjesme.",
+          "lines": [
+            "kad se zatvore ulična vrata,",
+            "oslabi šum mlina,",
+            "kad utihne pjev ptice",
+            "i zamru zvuci pjesme."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Kad je put uzbrdo muka i svaki izlazak prijetnja; a badem je u cvatu, i skakavac ne skače više, i koprov plod puca, jer čovjek ide u svoj vječni dom! A narikače već se kreću ulicama.",
+          "lines": [
+            "Kad je put uzbrdo muka",
+            "i svaki izlazak prijetnja;",
+            "a badem je u cvatu,",
+            "i skakavac ne skače više,",
+            "i koprov plod puca,",
+            "jer čovjek ide u svoj vječni dom!",
+            "A narikače već se kreću ulicama."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Prije nego se prekine srebrna vrpca i zlatna se svjetiljka razbije i razlupa se vrč na izvoru i slomi točak na bunaru;",
+          "lines": [
+            "Prije nego se prekine srebrna vrpca",
+            "i zlatna se svjetiljka razbije",
+            "i razlupa se vrč na izvoru",
+            "i slomi točak na bunaru;"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "i vrati se prah u zemlju kao što je iz nje i došao, a duh se vrati Bogu koji ga je dao."
+        },
+        {
+          "verse": 8,
+          "text": "Ispraznost nad ispraznostima, veli Propovjednik, sve je ispraznost."
+        },
+        {
+          "verse": 9,
+          "text": "A osim toga što je sam Propovjednik bio mudar, on je i narod učio mudrosti te je odmjerio, ispitao i sastavio mnogo mudrih izreka.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Zaglavak"
+            }
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Ujedno se Propovjednik trudio pronaći prikladne riječi i izravno izraziti istinu."
+        },
+        {
+          "verse": 11,
+          "text": "Besjede su mudrih ljudi kao ostani i kao pobodeni kolci: pastir se njima služi na dobro svojega stada."
+        },
+        {
+          "verse": 12,
+          "text": "I na kraju, sine moj, znaj da je neizmjerno mnogo truda potrebno da se napiše knjiga i da mnogo učenje umara tijelo."
+        },
+        {
+          "verse": 13,
+          "text": "Čujmo svemu završnu riječ: »Boj se Boga, izvršuj njegove zapovijedi, jer – to je sav čovjek.«"
+        },
+        {
+          "verse": 14,
+          "text": "Jer sva će skrivena djela, bila dobra ili zla, Bog izvesti na sud."
+        }
+      ]
+    }
+  ]
+}

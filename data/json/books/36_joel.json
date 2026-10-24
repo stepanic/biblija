@@ -1,0 +1,876 @@
+{
+  "order": 36,
+  "id": "joel",
+  "ks_book_id": 47,
+  "abbr": "Jl",
+  "title": "Joel",
+  "testament": "SZ",
+  "category": "Proroci",
+  "chapter_count": 4,
+  "verse_count": 73,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 20,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Riječ Jahvina koja dođe Joelu, sinu Petuelovu."
+        },
+        {
+          "verse": 2,
+          "text": "Čujte ovo, starci, počujte, svi žitelji zemlje! Je li ovakvo što ikad bilo u vaše dane il’ u dane vaših otaca?",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "I. NAVALA SKAKAVACA"
+            },
+            {
+              "level": "h3",
+              "text": "1. BOGOSLUŽJE ŽALOSTI I PROŠNJE"
+            },
+            {
+              "level": "h4",
+              "text": "Tužaljka zbog pohare"
+            }
+          ],
+          "lines": [
+            "Čujte ovo, starci,",
+            "počujte, svi žitelji zemlje!",
+            "Je li ovakvo što ikad bilo u vaše dane",
+            "il’ u dane vaših otaca?"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Recite ovo svojim sinovima, vaši sinovi svojim sinovima, a njihovi sinovi potonjem koljenu.",
+          "lines": [
+            "Recite ovo svojim sinovima,",
+            "vaši sinovi svojim sinovima,",
+            "a njihovi sinovi potonjem koljenu."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Što ostavi šaška, proždrije skakavac, što ostavi skakavac, proždrije gusjenica, što ostavi gusjenica, proždrije ljupilac.",
+          "lines": [
+            "Što ostavi šaška, proždrije skakavac,",
+            "što ostavi skakavac, proždrije gusjenica,",
+            "što ostavi gusjenica, proždrije ljupilac."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Probudite se, pijanice, i plačite! Sve vinopije, tužite za novim vinom: iz usta vam je oteto.",
+          "lines": [
+            "Probudite se, pijanice, i plačite!",
+            "Sve vinopije, tužite",
+            "za novim vinom:",
+            "iz usta vam je oteto."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Jer prekri moju zemlju narod moćan i bezbrojan; zubi su mu kao zubi lavlji, očnjaci mu kao u lavice.",
+          "lines": [
+            "Jer prekri moju zemlju",
+            "narod moćan i bezbrojan;",
+            "zubi su mu kao zubi lavlji,",
+            "očnjaci mu kao u lavice."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Opustoši mi lozu vinovu i polomi smokve moje; oguli ih i razbaca, grane su im pobijeljele.",
+          "lines": [
+            "Opustoši mi lozu vinovu",
+            "i polomi smokve moje;",
+            "oguli ih i razbaca,",
+            "grane su im pobijeljele."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Plačite k’o djevica odjevena u kostrijet za zaručnikom svojim.",
+          "lines": [
+            "Plačite k’o djevica odjevena u kostrijet",
+            "za zaručnikom svojim."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Nestade prinosnice i ljevanice iz doma Jahvina. Tuže svećenici, sluge Jahvine.",
+          "lines": [
+            "Nestade prinosnice i ljevanice",
+            "iz doma Jahvina.",
+            "Tuže svećenici,",
+            "sluge Jahvine."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Opustošeno polje, zemlja poharana. Poharano žito, vino propade, presahnu ulje.",
+          "lines": [
+            "Opustošeno polje,",
+            "zemlja poharana.",
+            "Poharano žito,",
+            "vino propade,",
+            "presahnu ulje."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Tugujte, težaci, kukajte, vinogradari, za pšenicom i za ječmom, jer propade žetva poljska.",
+          "lines": [
+            "Tugujte, težaci,",
+            "kukajte, vinogradari,",
+            "za pšenicom i za ječmom,",
+            "jer propade žetva poljska."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Loza usahnu, uvenu smokva, mogranj, palma i jabuka: svako se drvo poljsko sasuši. Da, nestade radosti između sinova ljudskih.",
+          "lines": [
+            "Loza usahnu,",
+            "uvenu smokva,",
+            "mogranj, palma i jabuka:",
+            "svako se drvo poljsko sasuši.",
+            "Da, nestade radosti",
+            "između sinova ljudskih."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Svećenici, opašite kostrijet i tužite! Službenici žrtvenika, naričite! Dođite, prenoćite u kostrijeti, službenici Boga mojeg! Jer iz doma Boga našeg nesta prinosnice i ljevanice!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Poziv na pokoru i molitvu"
+            }
+          ],
+          "lines": [
+            "Svećenici, opašite kostrijet i tužite!",
+            "Službenici žrtvenika, naričite!",
+            "Dođite, prenoćite u kostrijeti,",
+            "službenici Boga mojeg!",
+            "Jer iz doma Boga našeg",
+            "nesta prinosnice i ljevanice!"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Naredite sveti post, proglasite zbor svečani; starješine, saberite sve stanovnike zemlje u kuću Jahve, Boga svojeg. Zavapijte Jahvi:",
+          "lines": [
+            "Naredite sveti post,",
+            "proglasite zbor svečani;",
+            "starješine, saberite sve stanovnike zemlje",
+            "u kuću Jahve, Boga svojeg.",
+            "Zavapijte Jahvi:"
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "»Jao dana!« Jer Jahvin dan je blizu i dolazi k’o pohara od Svevišnjeg.",
+          "lines": [
+            "»Jao dana!«",
+            "Jer Jahvin dan je blizu",
+            "i dolazi k’o pohara od Svevišnjeg."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Ne iščeznu li hrana pred našim očima? Nije li nestalo radosti i sreće iz doma Boga našega?",
+          "lines": [
+            "Ne iščeznu li hrana",
+            "pred našim očima?",
+            "Nije li nestalo radosti i sreće",
+            "iz doma Boga našega?"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Istrunu zrnje pod grudama; puste su žitnice, porušene spreme jer žita nesta.",
+          "lines": [
+            "Istrunu zrnje",
+            "pod grudama;",
+            "puste su žitnice,",
+            "porušene spreme",
+            "jer žita nesta."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Kako li stoka uzdiše! Krda goveda podivljala lutaju jer im nema paše. Čak i stada ovaca kaznu podnose.",
+          "lines": [
+            "Kako li stoka uzdiše!",
+            "Krda goveda podivljala lutaju",
+            "jer im nema paše.",
+            "Čak i stada ovaca kaznu podnose."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Tebi, Jahve, vapijem: oganj popali pašnjake pustinjske, plamen sažga sva stabla poljska.",
+          "lines": [
+            "Tebi, Jahve, vapijem:",
+            "oganj popali pašnjake pustinjske,",
+            "plamen sažga",
+            "sva stabla poljska."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Čak i zvijeri čeznu za tobom, jer presušiše potoci, oganj popali pašnjake pustinjske.",
+          "lines": [
+            "Čak i zvijeri čeznu za tobom,",
+            "jer presušiše potoci,",
+            "oganj popali pašnjake pustinjske."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 27,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Trubite u trubu na Sionu! Dižite uzbunu na svetoj mi gori! Neka svi stanovnici zemlje dršću, jer dolazi Jahvin dan. Da, on je blizu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Dan Jahvin i sadašnja nesreća –Uzbuna na dan Jahvin"
+            }
+          ],
+          "lines": [
+            "Trubite u trubu na Sionu!",
+            "Dižite uzbunu na svetoj mi gori!",
+            "Neka svi stanovnici zemlje dršću,",
+            "jer dolazi Jahvin dan.",
+            "Da, on je blizu."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Dan pun mraka i tmine, dan oblačan i crn. K’o zora po gorama se prostire narod jak i mnogobrojan, kakva ne bje nikad prije, niti će ga igda biti do vremena najdaljih.",
+          "lines": [
+            "Dan pun mraka i tmine,",
+            "dan oblačan i crn.",
+            "K’o zora po gorama se prostire",
+            "narod jak i mnogobrojan,",
+            "kakva ne bje nikad prije,",
+            "niti će ga igda biti",
+            "do vremena najdaljih."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Pred njim oganj proždire, za njim plamen guta. Zemlja je k’o vrt rajski pred njim, a za njim pustinja tužna. Ništa mu ne umiče.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Upadači"
+            }
+          ],
+          "lines": [
+            "Pred njim oganj proždire,",
+            "za njim plamen guta.",
+            "Zemlja je k’o vrt rajski pred njim,",
+            "a za njim pustinja tužna.",
+            "Ništa mu ne umiče."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Nalik su na konje, jure poput konjanika.",
+          "lines": [
+            "Nalik su na konje,",
+            "jure poput konjanika."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Buče kao bojna kola, po gorskim vrhuncima skaču, pucketaju k’o plamen ognjeni kad strnjiku proždire, kao vojska jaka u bojnome redu.",
+          "lines": [
+            "Buče kao bojna kola,",
+            "po gorskim vrhuncima skaču,",
+            "pucketaju k’o plamen ognjeni kad strnjiku proždire,",
+            "kao vojska jaka u bojnome redu."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Pred njima narodi dršću i svako lice problijedi.",
+          "lines": [
+            "Pred njima narodi dršću",
+            "i svako lice problijedi."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Skaču k’o junaci, k’o ratnici se na zidove penju. Svaki ide pravo naprijed, ne odstupa od svog puta.",
+          "lines": [
+            "Skaču k’o junaci,",
+            "k’o ratnici se na zidove penju.",
+            "Svaki ide pravo naprijed,",
+            "ne odstupa od svog puta."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Ne tiskaju jedan drugog, već svak’ ide svojom stazom. Padaju od strijela ne kidajuć’ redova.",
+          "lines": [
+            "Ne tiskaju jedan drugog,",
+            "već svak’ ide svojom stazom.",
+            "Padaju od strijela",
+            "ne kidajuć’ redova."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Na grad navaljuju, na zidine skaču, penju se na kuće i kroz okna ulaze poput lupeža.",
+          "lines": [
+            "Na grad navaljuju,",
+            "na zidine skaču,",
+            "penju se na kuće",
+            "i kroz okna ulaze",
+            "poput lupeža."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Pred njima se zemlja trese, nebo podrhtava, sunce, mjesec mrčaju, zvijezdama se trne sjaj.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Viđenje dana Jahvina"
+            }
+          ],
+          "lines": [
+            "Pred njima se zemlja trese,",
+            "nebo podrhtava,",
+            "sunce, mjesec mrčaju,",
+            "zvijezdama se trne sjaj."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "I Jahve glas svoj šalje pred vojsku svoju. I odista, tabor mu je silno velik, zapovijedi njegove moćan izvršitelj. Da, velik je Jahvin dan i vrlo strašan. Tko će ga podnijeti?",
+          "lines": [
+            "I Jahve glas svoj šalje",
+            "pred vojsku svoju.",
+            "I odista, tabor mu je silno velik,",
+            "zapovijedi njegove moćan izvršitelj.",
+            "Da, velik je Jahvin dan",
+            "i vrlo strašan.",
+            "Tko će ga podnijeti?"
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "»Al’ i sada« – riječ je Jahvina – »vratite se k meni svim srcem svojim posteć’, plačuć’ i kukajuć’.«",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Poziv na pokoru"
+            }
+          ],
+          "lines": [
+            "»Al’ i sada« – riječ je Jahvina –",
+            "»vratite se k meni svim srcem svojim",
+            "posteć’, plačuć’ i kukajuć’.«"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Razderite srca, a ne halje svoje! Vratite se Jahvi, Bogu svome, jer on je nježnost sama i milosrđe, spor na ljutnju, a bogat dobrotom, on se nad zlom ražali.",
+          "lines": [
+            "Razderite srca, a ne halje svoje!",
+            "Vratite se Jahvi, Bogu svome,",
+            "jer on je nježnost sama i milosrđe,",
+            "spor na ljutnju, a bogat dobrotom,",
+            "on se nad zlom ražali."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Tko zna neće li se opet ražaliti, neće li blagoslov ostaviti za sobom! Prinose i ljevanice Jahvi, Bogu našemu!",
+          "lines": [
+            "Tko zna neće li se opet ražaliti,",
+            "neće li blagoslov ostaviti za sobom!",
+            "Prinose i ljevanice",
+            "Jahvi, Bogu našemu!"
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Trubite u trubu na Sionu! Sveti post naredite, oglasite zbor svečani,",
+          "lines": [
+            "Trubite u trubu na Sionu!",
+            "Sveti post naredite,",
+            "oglasite zbor svečani,"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "narod saberite, posvetite zbor. Saberite starce, sakupite djecu, čak i nejač na prsima. Neka ženik iziđe iz svadbene sobe a nevjesta iz odaje.",
+          "lines": [
+            "narod saberite,",
+            "posvetite zbor.",
+            "Saberite starce,",
+            "sakupite djecu,",
+            "čak i nejač na prsima.",
+            "Neka ženik iziđe",
+            "iz svadbene sobe",
+            "a nevjesta iz odaje."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Između trijema i žrtvenika neka tuže svećenici, sluge Jahvine. Neka mole: »Smiluj se, Jahve, svojem narodu! Ne prepusti baštine svoje sramoti, poruzi narodâ. Zašto da se kaže među narodima: Gdje im je Bog?«",
+          "lines": [
+            "Između trijema i žrtvenika neka tuže svećenici,",
+            "sluge Jahvine.",
+            "Neka mole:",
+            "»Smiluj se, Jahve, svojem narodu!",
+            "Ne prepusti baštine svoje sramoti,",
+            "poruzi narodâ.",
+            "Zašto da se kaže među narodima:",
+            "Gdje im je Bog?«"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Tad Jahve, ljubomoran na zemlju svoju, smilova se svom narodu.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "2. JahvIN ODGOVOR"
+            }
+          ],
+          "lines": [
+            "Tad Jahve, ljubomoran na zemlju svoju,",
+            "smilova se svom narodu."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Odgovori Jahve svojem narodu: »Šaljem vam, evo, žita, vina i ulja da se njime nasitite. Nikad više neću pustiti da budete na sramotu narodima.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Oslobođenje"
+            }
+          ],
+          "lines": [
+            "Odgovori Jahve svojem narodu:",
+            "»Šaljem vam, evo,",
+            "žita, vina i ulja",
+            "da se njime nasitite.",
+            "Nikad više neću pustiti",
+            "da budete na sramotu narodima."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Protjerat ću Sjevernjaka od vas daleko, odagnat ga u zemlju suhu i pustu, prethodnicu u Istočno more, zalaznicu u Zapadno more. Dići će se njegov smrad, dizat će se trulež njegova.« (Jer učini stvari velike.)",
+          "lines": [
+            "Protjerat ću Sjevernjaka od vas daleko,",
+            "odagnat ga u zemlju suhu i pustu,",
+            "prethodnicu u Istočno more,",
+            "zalaznicu u Zapadno more.",
+            "Dići će se njegov smrad,",
+            "dizat će se trulež njegova.«",
+            "(Jer učini stvari velike.)"
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "O zemljo, ne boj se! Budi sretna, raduj se, jer Jahve učini djela velika.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Viđenje obilja"
+            }
+          ],
+          "lines": [
+            "O zemljo, ne boj se!",
+            "Budi sretna, raduj se,",
+            "jer Jahve učini djela velika."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Zvijeri poljske, ne bojte se; pašnjaci u pustinji opet se zelene, voćke daju rod, smokva i loza nose izobila.",
+          "lines": [
+            "Zvijeri poljske, ne bojte se;",
+            "pašnjaci u pustinji opet se zelene,",
+            "voćke daju rod,",
+            "smokva i loza nose izobila."
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "Sinovi sionski, radujte se, u Jahvi se veselite, svojem Bogu; jer vam daje kišu jesensku u pravoj mjeri, izli na vas kišu, jesensku i proljetnu kišu kao nekoć.",
+          "lines": [
+            "Sinovi sionski, radujte se,",
+            "u Jahvi se veselite, svojem Bogu;",
+            "jer vam daje",
+            "kišu jesensku u pravoj mjeri,",
+            "izli na vas kišu,",
+            "jesensku i proljetnu kišu kao nekoć."
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Gumna će biti puna žita, kace će se prelijevati od vina i ulja.",
+          "lines": [
+            "Gumna će biti puna žita,",
+            "kace će se prelijevati od vina i ulja."
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "»Nadoknadit ću vam godine koje izjedoše skakavac, gusjenica, ljupilac i šaška, silna vojska moja što je poslah na vas.«",
+          "lines": [
+            "»Nadoknadit ću vam godine",
+            "koje izjedoše skakavac, gusjenica, ljupilac i šaška,",
+            "silna vojska moja",
+            "što je poslah na vas.«"
+          ]
+        },
+        {
+          "verse": 26,
+          "text": "Jest ćete izobila, jest ćete do sita, slavit ćete ime Jahve, svojeg Boga, koji je s vama čudesno postupao. (»Moj se narod neće postidjeti nikad više.«)",
+          "lines": [
+            "Jest ćete izobila, jest ćete do sita,",
+            "slavit ćete ime Jahve, svojeg Boga,",
+            "koji je s vama čudesno postupao.",
+            "(»Moj se narod neće postidjeti nikad više.«)"
+          ]
+        },
+        {
+          "verse": 27,
+          "text": "»Znat ćete da sam posred Izraela, da sam ja Jahve, vaš Bog, i nitko više. Moj se narod neće postidjeti nikad više.«",
+          "lines": [
+            "»Znat ćete da sam posred Izraela,",
+            "da sam ja Jahve, vaš Bog, i nitko više.",
+            "Moj se narod neće postidjeti nikad više.«"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 5,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "»Poslije ovoga izlit ću duha svoga na svako tijelo, i proricat će vaši sinovi i kćeri, vaši će starci sanjati sne, a vaši mladići gledati viđenja.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "II. NOVO DOBA I JahvIN DAN"
+            },
+            {
+              "level": "h3",
+              "text": "1. DUH BOŽJI NA LJUDIMA"
+            }
+          ],
+          "lines": [
+            "»Poslije ovoga",
+            "izlit ću duha svoga na svako tijelo,",
+            "i proricat će vaši sinovi i kćeri,",
+            "vaši će starci sanjati sne,",
+            "a vaši mladići gledati viđenja."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Čak ću i na sluge i sluškinje izliti duha svojeg u dane one.",
+          "lines": [
+            "Čak ću i na sluge i sluškinje",
+            "izliti duha svojeg u dane one."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Pokazat ću znamenja na nebu i zemlji, krv i oganj i stupove dima.«",
+          "lines": [
+            "Pokazat ću znamenja na nebu i zemlji,",
+            "krv i oganj i stupove dima.«"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Sunce će se prometnut’ u tminu a mjesec u krv, prije nego svane Jahvin dan, velik i strašan.",
+          "lines": [
+            "Sunce će se prometnut’ u tminu",
+            "a mjesec u krv,",
+            "prije nego svane Jahvin dan,",
+            "velik i strašan."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Svi što prizivaju ime Jahvino spašeni će biti, jer će na brdu Sionu i u Jeruzalemu biti spasenje, kao što Jahve reče, a među preživjelima oni koje Jahve pozove.",
+          "lines": [
+            "Svi što prizivaju ime Jahvino",
+            "spašeni će biti,",
+            "jer će na brdu Sionu i u Jeruzalemu biti spasenje,",
+            "kao što Jahve reče,",
+            "a među preživjelima oni",
+            "koje Jahve pozove."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 21,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "»Jer, gle, u one dane i u ono vrijeme, kad okrenem udes Judeji i Jeruzalemu,",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "2. SUD NARODIMA"
+            },
+            {
+              "level": "h4",
+              "text": "Općenito"
+            }
+          ],
+          "lines": [
+            "»Jer, gle, u one dane",
+            "i u ono vrijeme,",
+            "kad okrenem udes Judeji i Jeruzalemu,"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "sakupit ću sve narode i povesti ih u dolinu Jošafat. Ondje ću im suditi zbog Izraela, naroda mog i moje baštine, koju rastjeraše među narode i razdijeliše moju zemlju među se.",
+          "lines": [
+            "sakupit ću sve narode",
+            "i povesti ih u dolinu Jošafat.",
+            "Ondje ću im suditi",
+            "zbog Izraela, naroda mog i moje baštine,",
+            "koju rastjeraše među narode",
+            "i razdijeliše moju zemlju među se."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Baciše ždrijeb za moj narod; davali su dječake za bludnice, djevojke prodavali za vino i pili.«",
+          "lines": [
+            "Baciše ždrijeb za moj narod;",
+            "davali su dječake za bludnice,",
+            "djevojke prodavali za vino i pili.«"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "»I vi, Tire i Sidone, što hoćete od mene? I vi, filistejski kraljevi? Želite li mi se osvetiti? Ako se budete svetili meni, osveta će brzo na vaše glave.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pritužbe"
+            }
+          ],
+          "lines": [
+            "»I vi, Tire i Sidone, što hoćete od mene?",
+            "I vi, filistejski kraljevi?",
+            "Želite li mi se osvetiti?",
+            "Ako se budete svetili meni,",
+            "osveta će brzo na vaše glave."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Na vas što mi oteste srebro i zlato, što odnesoste bogate mi riznice u svoje hramove,",
+          "lines": [
+            "Na vas što mi oteste srebro i zlato,",
+            "što odnesoste bogate mi riznice u svoje hramove,"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "na vas koji prodavaste Grcima sinove Jude i Jeruzalema da biste ih otjerali od domovine njihove.",
+          "lines": [
+            "na vas koji prodavaste Grcima sinove Jude i Jeruzalema",
+            "da biste ih otjerali od domovine njihove."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Gle, ja ih kanim dići s mjesta gdje god ih prodaste, i učinit ću da vam zločin vaš padne na glave.",
+          "lines": [
+            "Gle, ja ih kanim dići s mjesta gdje god ih prodaste,",
+            "i učinit ću da vam zločin vaš padne na glave."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Prodat ću vaše sinove i kćeri sinovima Judinim, a oni će ih prodat’ Sabejcima, daleku narodu. Jer Jahve reče!«",
+          "lines": [
+            "Prodat ću vaše sinove i kćeri",
+            "sinovima Judinim,",
+            "a oni će ih prodat’ Sabejcima,",
+            "daleku narodu.",
+            "Jer Jahve reče!«"
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Razglasite ovo među narodima! Posvetite se za rat! Dižite junake! Naprijed, navalite, svi ratnici!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Saziv narodâ"
+            }
+          ],
+          "lines": [
+            "Razglasite ovo među narodima!",
+            "Posvetite se za rat!",
+            "Dižite junake!",
+            "Naprijed, navalite,",
+            "svi ratnici!"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Prekujte raonike u mačeve, kosire u koplja, nek’ slabić kaže: »Junak sam!«",
+          "lines": [
+            "Prekujte raonike u mačeve,",
+            "kosire u koplja,",
+            "nek’ slabić kaže: »Junak sam!«"
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Pohitajte i dođite, svi okolni narodi, i ondje se saberite! (Jahve, onamo pošalji svoje junake!)",
+          "lines": [
+            "Pohitajte i dođite,",
+            "svi okolni narodi,",
+            "i ondje se saberite!",
+            "(Jahve, onamo pošalji svoje junake!)"
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "»Budite se, narodi, stupajte u dolinu Jošafat, jer ću ondje sjesti da sudim svim okolnim narodima.",
+          "lines": [
+            "»Budite se, narodi, stupajte",
+            "u dolinu Jošafat,",
+            "jer ću ondje sjesti da sudim",
+            "svim okolnim narodima."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Hvatajte se srpa: ljetina je zrela. Ustanite, siđite: tijesak je pun, prelijevaju se kace, jer je velika zloća njihova.«",
+          "lines": [
+            "Hvatajte se srpa:",
+            "ljetina je zrela.",
+            "Ustanite, siđite:",
+            "tijesak je pun,",
+            "prelijevaju se kace,",
+            "jer je velika zloća njihova.«"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Mnoštvo, mnoštvo u Dolini odluke! Da, blizu je dan Jahvin u Dolini odluke!",
+          "lines": [
+            "Mnoštvo, mnoštvo",
+            "u Dolini odluke!",
+            "Da, blizu je dan Jahvin",
+            "u Dolini odluke!"
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Sunce i mjesec pomrčaše, zvijezde potamnješe.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Jahvin dan"
+            }
+          ],
+          "lines": [
+            "Sunce i mjesec pomrčaše,",
+            "zvijezde potamnješe."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Jahve grmi sa Siona, glas diže iz Jeruzalema; nebo se i zemlja tresu. Ali je Jahve utočište svome narodu i zaštita sinovima Izraela.",
+          "lines": [
+            "Jahve grmi sa Siona,",
+            "glas diže iz Jeruzalema;",
+            "nebo se i zemlja tresu.",
+            "Ali je Jahve utočište svome narodu",
+            "i zaštita sinovima Izraela."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "»Znat ćete tada da sam ja Jahve vaš Bog što stoluje na Sionu, svetoj gori svojoj. Jeruzalem će biti svetište, tuđinac više neće kroza nj proći.«",
+          "lines": [
+            "»Znat ćete tada da sam ja Jahve vaš Bog",
+            "što stoluje na Sionu, svetoj gori svojoj.",
+            "Jeruzalem će biti svetište,",
+            "tuđinac više neće kroza nj proći.«"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Kad dođe taj dan, kapat će gore moštom, iz bregova će brizgati mlijeko, kroza sva korita riječna u Judeji voda će proteći. Vrelo će šiknuti iz kuće Jahvine da natopi Dolinu sitimsku.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "3. RAJSKO DOBA OBNOVE IZRAELA"
+            }
+          ],
+          "lines": [
+            "Kad dođe taj dan,",
+            "kapat će gore moštom,",
+            "iz bregova će brizgati mlijeko,",
+            "kroza sva korita riječna u Judeji",
+            "voda će proteći.",
+            "Vrelo će šiknuti iz kuće Jahvine",
+            "da natopi Dolinu sitimsku."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Egipat će opustjeti, Edom će postati beživotna pustinja zbog nasilja učinjena sinovima Judinim, jer proliše krv nevinu u njihovoj zemlji.",
+          "lines": [
+            "Egipat će opustjeti,",
+            "Edom će postati beživotna pustinja",
+            "zbog nasilja učinjena sinovima Judinim,",
+            "jer proliše krv nevinu u njihovoj zemlji."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Judeja će dovijek biti naseljena i Jeruzalem u sva koljena.",
+          "lines": [
+            "Judeja će dovijek biti naseljena",
+            "i Jeruzalem u sva koljena."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "»Osvetit ću krv njihovu za koju se nisam još osvetio.« Jahve će dići dom svoj na Sionu.",
+          "lines": [
+            "»Osvetit ću krv njihovu za koju se nisam još osvetio.«",
+            "Jahve će dići dom svoj na Sionu."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4124 @@
+{
+  "order": 14,
+  "id": "druga-knjiga-ljetopisa",
+  "ks_book_id": 25,
+  "abbr": "2 Ljet",
+  "title": "Druga Knjiga Ljetopisa",
+  "testament": "SZ",
+  "category": "Povijesne knjige",
+  "chapter_count": 36,
+  "verse_count": 822,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Salomon, sin Davidov, bio se učvrstio na prijestolju. Jahve, Bog njegov, bijaše s njim i uzvisi ga veoma.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "III. SALOMON I GRADNJA HRAMA"
+            },
+            {
+              "level": "h4",
+              "text": "Salomon prima Mudrost"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Salomon se tada obrati svem Izraelu, tisućnicima, satnicima, sucima, svim knezovima izraelskim, glavama obitelji,"
+        },
+        {
+          "verse": 3,
+          "text": "te se on i s njim sav zbor popeše na uzvišicu koja bješe u Gibeonu, jer je ondje bio Šator sastanka što ga u pustinji podiže Mojsije, sluga Božji."
+        },
+        {
+          "verse": 4,
+          "text": "David bijaše prenio Kovčeg Božji iz Kirjat Jearima do mjesta koje je sam pripravio za nj; jer je bio podigao Šator u Jeruzalemu."
+        },
+        {
+          "verse": 5,
+          "text": "Mjedeni žrtvenik što ga napravi Besalel, sin Hurova sina Urija, bijaše ondje pred prebivalištem Jahvinim, kamo dođoše Salomon i zbor da mu se obrate."
+        },
+        {
+          "verse": 6,
+          "text": "Ondje se Salomon pred Jahvom pope na mjedeni žrtvenik, koji bješe tik do Šatora sastanka, i prinese na njemu tisuću paljenica."
+        },
+        {
+          "verse": 7,
+          "text": "Iste se noći Bog ukaza Salomonu i reče mu: »Traži što da ti dadem.«"
+        },
+        {
+          "verse": 8,
+          "text": "Salomon odgovori: »Veoma si naklon bio mome ocu Davidu i zakraljio si mene na njegovo mjesto."
+        },
+        {
+          "verse": 9,
+          "text": "Bože Jahve, neka se ispuni sada obećanje što si ga dao mome ocu Davidu, jer si me zakraljio nad narodom kojega ima mnogo kao zemaljske prašine."
+        },
+        {
+          "verse": 10,
+          "text": "Daj mi sada mudrost i znanje da uzmognem upravljati ovim narodom, jer tko će upravljati tolikim narodom kao što je ovaj tvoj!«"
+        },
+        {
+          "verse": 11,
+          "text": "Bog reče Salomonu: »Budući da ti je to u srcu, a nisi iskao ni bogatstva, ni blaga, ni slave, ni smrti neprijateljâ i jer nisi tražio duga života, nego mudrosti i znanja kako bi upravljao mojim narodom nad kojim te zakraljih,"
+        },
+        {
+          "verse": 12,
+          "text": "dajem ti mudrost i znanje. Ali ti dajem i bogatstva, blaga i slave kakve nije imao nijedan kralj što bješe prije tebe i kakve neće imati ni oni koji dođu poslije tebe.«"
+        },
+        {
+          "verse": 13,
+          "text": "Salomon s uzvišice u Gibeonu ode u Jeruzalem, podalje od Šatora sastanka, i kraljevaše nad Izraelom."
+        },
+        {
+          "verse": 14,
+          "text": "Sakupi bojnih kola i konjanika: imao je tisuću četiri stotine kola i dvanaest tisuća konjanika i razmjesti ih po gradovima gdje mu bijahu kola i kod sebe u Jeruzalemu."
+        },
+        {
+          "verse": 15,
+          "text": "Salomon učini da srebra i zlata bude u Jeruzalemu izobila kao kamenja, a cedrova mnogo kao dudova u Šefeli."
+        },
+        {
+          "verse": 16,
+          "text": "Konji Salomonovi bili su uvezeni iz Musrija i Koe; kraljevski dvorani kupovahu ih u Koi za srebro."
+        },
+        {
+          "verse": 17,
+          "text": "Dovozila su se i prodavala jedna bojna kola iz Egipta po šest stotina srebrnih šekela, a konji po sto i pedeset; to bješe isto tako za sve hetitske i aramejske kraljeve koji su ih uvozili preko njih."
+        },
+        {
+          "verse": 18,
+          "text": "Salomon naumi sagraditi dom – jedan imenu Jahvinu, a drugi sebi za kraljevski dvorac.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prve priprave – Hiram iz Tira"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 17,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Odbroji sedamdeset tisuća nosača, osamdeset tisuća kamenolomaca u gori i tri tisuće i šest stotina poslovođa."
+        },
+        {
+          "verse": 2,
+          "text": "Tada posla ovu poruku Hiramu, tirskomu kralju: »Kao što si mome ocu Davidu slao cedrovine da gradi dvor gdje će živjeti, tako učini i meni."
+        },
+        {
+          "verse": 3,
+          "text": "Kanim podići dom imenu Jahve, svojega Boga, i posvetiti mu ga da se diže pred njim miomirisni kâd, da se uvijek postavljaju kruhovi, da se prinose paljenice jutrom i večerom, subotom, na dane mlađaka i na blagdane Jahve, Boga našega; i tako da zauvijek ostane u Izraelu."
+        },
+        {
+          "verse": 4,
+          "text": "Dom koji gradim bit će velik, jer je naš Bog najveći među svim bozima."
+        },
+        {
+          "verse": 5,
+          "text": "Ta tko bi imao dovoljno snage da njemu sazda dom kad ga ni nebesa, ni nebesa nad nebesima ne mogu obuhvatiti? I tko sam ja da mu zidam dom, osim zato da mu se kâd diže pred lice?"
+        },
+        {
+          "verse": 6,
+          "text": "Pošalji mi čovjeka vična obradi zlata, srebra, mjedi, željeza, grimiza, karmezina i ljubičastog baršuna, i vična umjetnosti rezbarstva: radit će s rukotvorcima kod mene u Judi i u Jeruzalemu, s onima što mi ih ostavi moj otac David."
+        },
+        {
+          "verse": 7,
+          "text": "Pošalji mi iz Libanona cedrovine, čempresovine i sandalovine, jer znam da tvoje sluge umiju sjeći libanonska stabla. Moje će sluge raditi s tvojima."
+        },
+        {
+          "verse": 8,
+          "text": "Morat će mi pripraviti mnogo drva, jer će kuća što je mislim graditi biti velika i veličanstvena."
+        },
+        {
+          "verse": 9,
+          "text": "Drvosječama što će obarati stabla dajem dvadeset tisuća kora pšenice, dvadeset tisuća kora ječma, dvadeset tisuća bata vina i dvadeset tisuća bata ulja za izdržavanje tvojih slugu.«"
+        },
+        {
+          "verse": 10,
+          "text": "Hiram, tirski kralj, odgovori pismom što ga posla Salomonu: »Zato što voli svoj narod, Jahve te zakraljio nad njim.«"
+        },
+        {
+          "verse": 11,
+          "text": "Dometnu još i ovo: »Neka je blagoslovljen Jahve, Bog Izraelov, koji je stvorio nebesa i zemlju. On je kralju Davidu dao mudra, pametna i umna sina koji će jedan dom graditi Jahvi, a drugi sebi da iz njega kraljuje."
+        },
+        {
+          "verse": 12,
+          "text": "Stoga ti šaljem čovjeka mudra, vješta i razumna, Hurama Abija,"
+        },
+        {
+          "verse": 13,
+          "text": "sina jedne Danovke i oca Tirca. Umije obrađivati zlato, srebro, mjed, željezo, kamen, drvo, grimiz, ljubičasti baršun, bez i karmezin, umije rezbariti svakovrsne rezbarije i zamisliti svako djelo koje mu se povjeri. On će raditi s tvojim umjetnicima i umjetnicima moga gospodara Davida, tvoga oca."
+        },
+        {
+          "verse": 14,
+          "text": "Neka, dakle, sada moj gospodar svojim slugama pošalje pšenice, ječma, ulja i vina kako je obećao."
+        },
+        {
+          "verse": 15,
+          "text": "A mi ćemo nasjeći stabala s Libanona koliko ti god treba i dovest ćemo ti ih na splavima morem u Jafu, a ti ih prevezi gore u Jeruzalem.«"
+        },
+        {
+          "verse": 16,
+          "text": "Salomon pobroji sve strance koji se zatekoše u Izraelovoj zemlji poslije popisa što ga bijaše proveo njegov otac David i nađe ih sto pedeset tri tisuće i šest stotina.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Izvođenje radova"
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Od njih odredi sedamdeset tisuća nosača, osamdeset tisuća tesara u planini, tri tisuće i šest stotina ljudi da upravljaju radom naroda."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 17,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Salomon tada poče graditi dom Jahvi u Jeruzalemu, na Morijskoj gori, ondje gdje je njegov otac David imao viđenje. To je mjesto koje je pripravio David, gumno Jebusejca Ornana."
+        },
+        {
+          "verse": 2,
+          "text": "Salomon otpoče gradnju drugoga mjeseca četvrte godine svojega vladanja."
+        },
+        {
+          "verse": 3,
+          "text": "Ovo su temelji koje je Salomon postavio za gradnju doma Božjega: šezdeset lakata u duljinu – po staroj mjeri lakta – a u širinu dvadeset lakata."
+        },
+        {
+          "verse": 4,
+          "text": "Trijem, koji je bio pred Domom, imao je, po širini ovoga potonjega, u dužinu dvadeset lakata, a visok je bio sto i dvadeset lakata. Obložio ga je iznutra čistim zlatom."
+        },
+        {
+          "verse": 5,
+          "text": "Veliku je dvoranu obložio čempresovinom, koju je prekrio čistim zlatom i postavio palme i cvjetne vijence."
+        },
+        {
+          "verse": 6,
+          "text": "Optočio je potom dvoranu blistavim draguljima; zlato je bilo zlato parvajimsko."
+        },
+        {
+          "verse": 7,
+          "text": "Prekrio je njime dvoranu: grede, pragove, zidove i vratna krila te izrezao kerubine po zidovima."
+        },
+        {
+          "verse": 8,
+          "text": "Potom sazda dvoranu Svetinje nad svetinjama. Bila je, prema hramskoj širini, dvadeset lakata duga i dvadeset lakata široka i obloži je sa šest stotina talenata suhog zlata."
+        },
+        {
+          "verse": 9,
+          "text": "Za čavle je dao na mjeru pedeset zlatnih šekela. I gornje je odaje obložio zlatom."
+        },
+        {
+          "verse": 10,
+          "text": "U dvorani Svetinje nad svetinjama napravi dva kerubina, liveno djelo. I njih obloži zlatom."
+        },
+        {
+          "verse": 11,
+          "text": "Krila kerubina bila su dvadeset lakata duga: jedno krilo od pet lakata dodirivaše hramski zid, a drugo od pet lakata doticaše krilo drugoga kerubina."
+        },
+        {
+          "verse": 12,
+          "text": "Tako je i krilo drugoga kerubina, od pet lakata, dodirivalo hramski zid, a drugo mu se krilo, od pet lakata, spajalo s krilom drugoga kerubina."
+        },
+        {
+          "verse": 13,
+          "text": "Raširena, krila kerubina imala su dvadeset lakata. Stajali su kerubini uspravno, lícâ okrenutih dvorani."
+        },
+        {
+          "verse": 14,
+          "text": "Napravi zastor od ljubičastog baršuna, od grimiza, karmezina i beza te na njemu izveze kerubine."
+        },
+        {
+          "verse": 15,
+          "text": "Pred dvoranom napravi dva stupa dugačka trideset i pet lakata, a glavice im na vrhu pet lakata."
+        },
+        {
+          "verse": 16,
+          "text": "U Debiru on splete vijence te ih postavi navrh stupova i napravi sto mogranja koje postavi među vijence."
+        },
+        {
+          "verse": 17,
+          "text": "Postavi stupove pred Hekal, jedan zdesna, drugi slijeva, te nazva Jakin onaj zdesna, a Boaz onaj slijeva."
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 22,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Napravi mjedeni žrtvenik duga čak dvadeset lakata, širok dvadeset i visok deset."
+        },
+        {
+          "verse": 2,
+          "text": "Tada od rastaljene kovine izli more koje je od ruba do ruba mjerilo deset lakata; bilo je okruglo uokolo, pet lakata visoko, a u opsegu, mjereno vrpcom, imalo je trideset lakata."
+        },
+        {
+          "verse": 3,
+          "text": "Pod njim bijahu likovi volovski što ga opasivahu uokrug. Po deset ih je bilo na jednom laktu te okruživahu more uokolo; dva je reda bilo tih volova, salivenih s morem."
+        },
+        {
+          "verse": 4,
+          "text": "More je počivalo na dvanaest volova; tri su gledala na sjever, tri na zapad, tri na jug, tri na istok: more je stajalo na njima i svi su stražnjim dijelom bili okrenuti unutra."
+        },
+        {
+          "verse": 5,
+          "text": "Bilo je debelo pedalj, rub mu kao rub u čaše, kao cvijet, a moglo je primiti tri tisuće bata."
+        },
+        {
+          "verse": 6,
+          "text": "Napravi deset umivaonika i postavi ih pet zdesna, pet slijeva da se u njima pere; u njima su prali što je trebalo za paljenice; more je bilo namijenjeno svećenicima da se umivaju u njemu."
+        },
+        {
+          "verse": 7,
+          "text": "Napravi deset zlatnih svijećnjaka prema propisu i stavi ih u Hekal, pet s desne strane, pet s lijeve."
+        },
+        {
+          "verse": 8,
+          "text": "Onda napravi deset stolova i postavi ih u Hekalu, pet zdesna, a pet slijeva. Napravi stotinu zlatnih kotlića."
+        },
+        {
+          "verse": 9,
+          "text": "Onda načini trijem svećenički, veliko dvorište s vratima koja prevuče mjeđu."
+        },
+        {
+          "verse": 10,
+          "text": "More stavi s desne strane prema jugoistoku."
+        },
+        {
+          "verse": 11,
+          "text": "Huram načini lonce, lopate i kotliće. Dovrši sav posao što ga je obavljao kralju Salomonu za dom Božji:"
+        },
+        {
+          "verse": 12,
+          "text": "dva stupa; dvije glavice što su bile navrh stupova; dva opleta da prekriju dvije glavice što bijahu navrh stupova;"
+        },
+        {
+          "verse": 13,
+          "text": "četiri stotine mogranja za oba opleta; dva reda mogranja za svaki oplet da prekriju dvije glavice navrh stupova;"
+        },
+        {
+          "verse": 14,
+          "text": "deset podnožja i deset umivaonika na podnožjima;"
+        },
+        {
+          "verse": 15,
+          "text": "jedno more i dvanaest volova pod njim;"
+        },
+        {
+          "verse": 16,
+          "text": "lonce, lopate, viljuške i sav pribor za njih napravi od mjedi Huram Abi kralju Salomonu za dom Jahvin."
+        },
+        {
+          "verse": 17,
+          "text": "Kralj odredi da ih saliju u Jordanskoj ravnici, kod gaza Adame, između Sukota i Serede."
+        },
+        {
+          "verse": 18,
+          "text": "Salomon napravi tako mnogo tih predmeta da se nije mogla izmjeriti težina mjedi."
+        },
+        {
+          "verse": 19,
+          "text": "Onda napravi sve predmete namijenjene domu Božjemu: zlatni žrtvenik i stolove na kojima bjehu prineseni kruhovi,"
+        },
+        {
+          "verse": 20,
+          "text": "zlatne svijećnjake sa svjetiljkama od čistoga zlata što su se, po propisu, trebale paliti pred Debirom;"
+        },
+        {
+          "verse": 21,
+          "text": "cvjetove, svjetiljke i usekače od zlata; bilo je to čisto zlato;"
+        },
+        {
+          "verse": 22,
+          "text": "nožice, kotliće, mašice i kadionice od čistoga zlata; ulaz u Dom, nutarnja vrata – Svetinje nad svetinjama – i vrata Doma – Hekala – bila su zlatna."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verse_count": 14,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Tako bi priveden kraju posao što ga Salomon obavi za dom Jahvin. Salomon unese sve svete darove oca svoga Davida – srebro, zlato i sve posuđe – i stavi ih u riznicu Božjega doma."
+        },
+        {
+          "verse": 2,
+          "text": "Tada Salomon sazva u Jeruzalem sve Izraelove starješine, knezove plemenske i glavare obiteljske, da se prenese Kovčeg saveza Jahvina iz Davidova grada, to jest sa Siona.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prijenos Kovčega"
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Svi se ljudi Izraelovi sabraše pred kraljem na blagdan što je u sedmom mjesecu."
+        },
+        {
+          "verse": 4,
+          "text": "Kad se sastadoše sve Izraelove starješine, leviti ponesoše Kovčeg"
+        },
+        {
+          "verse": 5,
+          "text": "i Šator sastanka sa svim posvećenim priborom što bješe u Šatoru; svećenici ih i leviti prenesoše."
+        },
+        {
+          "verse": 6,
+          "text": "Potom kralj Salomon i sva izraelska zajednica što se sabra k njemu žrtvovaše pred Kovčegom toliko ovaca i goveda da se ne mogahu ni prebrojiti ni procijeniti."
+        },
+        {
+          "verse": 7,
+          "text": "Svećenici donesoše Kovčeg saveza Jahvina na njegovo mjesto, u Debir Doma, to jest u Svetinju nad svetinjama, pod krila kerubínâ."
+        },
+        {
+          "verse": 8,
+          "text": "Kerubini su imali raširena krila nad mjestom gdje stajaše Kovčeg i zaklanjahu Kovčeg i njegove motke."
+        },
+        {
+          "verse": 9,
+          "text": "Motke su bile tako dugačke da su im se krajevi vidjeli iz svetišta nasuprot Debiru, ali se nisu vidjele izvana i ondje stoje do dana današnjega."
+        },
+        {
+          "verse": 10,
+          "text": "U Kovčegu nije bilo ništa osim dviju ploča koje metnu Mojsije na Horebu, gdje Jahve sklopi Savez s Izraelcima pošto iziđoše iz Egipta."
+        },
+        {
+          "verse": 11,
+          "text": "Svi svećenici izađoše iz Svetišta, jer su se svi nazočni svećenici posvetili bez obzira na redove.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Bog ulazi u posjed Hrama"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Svi levitski pjevači, Asaf, Heman, Jedutun sa sinovima i braćom, stajahu obučeni u bez, s cimbalima, harfama i citrama, istočno od žrtvenika, a s njima sto i dvadeset svećenika koji su trubili u trube."
+        },
+        {
+          "verse": 13,
+          "text": "I dok su trubili i pjevali složno kao jedan i jednoglasno hvalili i slavili Jahvu, podižući glas uz trube, cimbale i druga glazbala, hvaleći Jahvu »jer je dobar i jer je vječna njegova ljubav«, oblak ispuni dom Jahvin."
+        },
+        {
+          "verse": 14,
+          "text": "Svećenici ne mogoše od oblaka nastaviti službe: slava Jahvina ispuni Božji dom!"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verse_count": 42,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Tada reče Salomon: »Jahve odluči prebivati u tmastu oblaku,",
+          "lines": [
+            "Tada reče Salomon:",
+            "»Jahve odluči prebivati u tmastu oblaku,"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "a ja ti sagradih uzvišen dom da u njemu prebivaš zauvijek.«",
+          "lines": [
+            "a ja ti sagradih uzvišen dom",
+            "da u njemu prebivaš zauvijek.«"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "I, okrenuvši se, kralj blagoslovi sav izraelski zbor, a sav je izraelski zbor stajao.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Salomonova riječ puku"
+            }
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Reče on: »Neka je blagoslovljen Jahve, Bog Izraelov, koji svojom rukom ispuni obećanje što ga na svoja usta dade ocu mome Davidu, rekavši:",
+          "lines": [
+            "Reče on:",
+            "»Neka je blagoslovljen Jahve, Bog Izraelov, koji svojom rukom ispuni obećanje što ga na svoja usta dade ocu mome Davidu, rekavši:"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "‘Od dana kad izvedoh svoj narod iz egipatske zemlje nisam izabrao grada ni iz kojeg Izraelova plemena da se u njemu sagradi dom gdje bi prebivalo moje ime, niti sam izabrao ikoga da vlada nad mojim narodom izraelskim."
+        },
+        {
+          "verse": 6,
+          "text": "Ali sam izabrao Jeruzalem da u njemu obitava moje ime i odabrao Davida da zapovijeda mojem narodu izraelskom.’"
+        },
+        {
+          "verse": 7,
+          "text": "Otac mi David naumi podići dom imenu Jahve, Boga Izraelova,"
+        },
+        {
+          "verse": 8,
+          "text": "ali mu Jahve reče: ‘Naumio si podići dom imenu mojem, i dobro učini,"
+        },
+        {
+          "verse": 9,
+          "text": "ali nećeš ti podići toga doma, nego tvoj sin koji izađe iz tvoga krila; on će podići dom imenu mojem.’"
+        },
+        {
+          "verse": 10,
+          "text": "Jahve ispuni obećanje svoje: naslijedio sam oca Davida i sjeo na prijestolje Izraelovo, kako obeća Jahve, podigao dom imenu Jahve, Boga Izraelova,"
+        },
+        {
+          "verse": 11,
+          "text": "i namjestio Kovčeg u kojem je Savez što ga Jahve sklopi sa sinovima Izraelovim.«"
+        },
+        {
+          "verse": 12,
+          "text": "Tada Salomon stupi, u nazočnosti svega zbora Izraelova, pred žrtvenik Jahvin i raširi ruke.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Salomonova molitva"
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Salomon je, naime, bio napravio mjedeno podnožje, dugo pet lakata i široko pet lakata, a visoko tri lakta, i stavio ga nasred predvorja; stavši na nj, kleknuo je pred svim zborom Izraelovim i, raširivši ruke k nebu,"
+        },
+        {
+          "verse": 14,
+          "text": "rekao: »Jahve, Bože Izraelov! Nijedan ti bog nije sličan ni na nebesima ni na zemlji, tebi koji držiš Savez i ljubav svojim slugama što kroče pred tobom sa svim svojim srcem.",
+          "lines": [
+            "rekao:",
+            "»Jahve, Bože Izraelov! Nijedan ti bog nije sličan ni na nebesima ni na zemlji, tebi koji držiš Savez i ljubav svojim slugama što kroče pred tobom sa svim svojim srcem."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Sluzi svome Davidu, mojem ocu, ispunio si što si mu obećao. Što si obećao na svoja usta, ispunio si svojom rukom upravo danas."
+        },
+        {
+          "verse": 16,
+          "text": "Jahve, Bože Izraelov, sada ispuni svome sluzi, ocu mome Davidu, što si mu obećao kad si rekao: ‘Neće ti preda mnom nestati nasljednika koji bi sjedio na izraelskom prijestolju, samo ako tvoji sinovi budu čuvali svoje putove hodeći po mojem zakonu kako si ti hodio preda mnom.’"
+        },
+        {
+          "verse": 17,
+          "text": "Jahve, Bože Izraelov, neka se sada, dakle, ispuni obećanje koje si dao svome sluzi Davidu!"
+        },
+        {
+          "verse": 18,
+          "text": "Ali zar će Bog doista boraviti s ljudima na zemlji? Ta nebesa ni nebesa nad nebesima ne mogu ga obuhvatiti, a kamoli ovaj dom što sam ga sagradio!"
+        },
+        {
+          "verse": 19,
+          "text": "Pomno počuj molitvu i vapaj svoga sluge, Jahve, Bože moj, te usliši prošnju i molitvu što je tvoj sluga k tebi upućuje!"
+        },
+        {
+          "verse": 20,
+          "text": "Neka tvoje oči obdan i obnoć budu otvorene nad ovim domom, nad ovim mjestom za koje reče da ćeš u nj smjestiti svoje ime. Usliši molitvu koju će sluga tvoj izmoliti na ovome mjestu.«"
+        },
+        {
+          "verse": 21,
+          "text": "»I usliši molitvu sluge svoga i naroda svojega izraelskog koju bude upravljao prema ovome mjestu. Usliši s mjesta gdje prebivaš, s nebesa, usliši i oprosti!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Molitva za narod"
+            }
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Ako tko zgriješi protiv bližnjega i bude mu naređeno da se zakune i zakletva dođe pred tvoj žrtvenik u ovom domu,"
+        },
+        {
+          "verse": 23,
+          "text": "ti je čuj s neba, postupaj i sudi svojim slugama, osudi krivca okrećući njegova nedjela na njegovu glavu, a nevina oslobodi postupajući s njime po nevinosti njegovoj."
+        },
+        {
+          "verse": 24,
+          "text": "Ako narod tvoj poraze neprijatelji jer se ogriješio o tebe, ali se ipak k tebi obrati i proslavi ime tvoje i u ovom se domu pomoli i zavapije k tebi,"
+        },
+        {
+          "verse": 25,
+          "text": "onda ti čuj to s neba, oprosti grijehe svojem narodu izraelskom i dovedi ga natrag u zemlju koju si dao njima i njihovim očevima."
+        },
+        {
+          "verse": 26,
+          "text": "Ako se zatvori nebo i ne padne kiša jer su se ogriješili o tebe, pa ti se pomole na ovom mjestu i proslave ime tvoje i obrate se od svojega grijeha kad ih ti poniziš,"
+        },
+        {
+          "verse": 27,
+          "text": "tada čuj s neba i oprosti grijeh svojim slugama i svojem izraelskom narodu, pokazujući mu valjan put kojim će ići, i pusti kišu na zemlju koju si narodu svojem dao u baštinu."
+        },
+        {
+          "verse": 28,
+          "text": "Kad u zemlji zavlada glad, kuga, snijet i rđa, kad navale skakavci i gusjenice, kad neprijatelj ovoga naroda pritisne koja od njegovih vrata ili kad udari kakva druga nevolja ili boleština,"
+        },
+        {
+          "verse": 29,
+          "text": "počuj svaku molitvu, svaki vapaj od kojega god čovjeka ili od cijeloga tvoga naroda izraelskog; ako svaki osjeti bol u srcu i raširi ruke k ovom domu,"
+        },
+        {
+          "verse": 30,
+          "text": "usliši im molitvu i vapaj njihov u nebu gdje boraviš i oprosti i daj svakomu po njegovim putovima, jer ti poznaješ srce njegovo; jer ti jedini prozireš srca ljudi"
+        },
+        {
+          "verse": 31,
+          "text": "da te se boje idući tvojim putovima dokle god žive na zemlji što je ti dade našim očevima."
+        },
+        {
+          "verse": 32,
+          "text": "Pa i tuđinca, koji nije od tvojega naroda izraelskog, nego je stigao iz daleke zemlje radi veličine tvoga imena i radi tvoje snažne ruke i podignute mišice, ako dođe i pomoli se u ovom domu,"
+        },
+        {
+          "verse": 33,
+          "text": "usliši s neba, gdje prebivaš, usliši sve vapaje njegove da bi svi zemaljski narodi upoznali ime tvoje i bojali te se kao narod tvoj izraelski i da znaju da je tvoje ime prizvano nad ovaj dom koji sam sagradio."
+        },
+        {
+          "verse": 34,
+          "text": "Kad narod tvoj krene na neprijatelja putem kojim ga ti uputiš i pomoli se tebi, okrenut gradu što si ga izabrao i prema domu koji sam podigao tvome imenu,"
+        },
+        {
+          "verse": 35,
+          "text": "usliši mu s neba molitvu i prošnju i učini mu pravdu."
+        },
+        {
+          "verse": 36,
+          "text": "Kad ti sagriješe, jer nema čovjeka koji ne griješi, a ti ih, rasrdivši se na njih, predaš neprijateljima da ih zarobe i odvedu kao roblje u daleku ili blizu zemlju,"
+        },
+        {
+          "verse": 37,
+          "text": "pa ako se pokaju srcem u zemlji u koju budu dovedeni te se obrate i počnu te moliti za milost u zemlji svojih osvajača govoreći: ‘Zgriješili smo’"
+        },
+        {
+          "verse": 38,
+          "text": "i tako se obrate tebi svim srcem i svom dušom u zemlji svoga ropstva u koju budu dovedeni kao roblje, i pomole se okrenuti k zemlji što je ti dade njihovim očevima i prema gradu koji si odabrao i prema domu što sam ga podigao tvom imenu,"
+        },
+        {
+          "verse": 39,
+          "text": "usliši s neba, gdje prebivaš, njihovu molbu i njihove prošnje, učini im pravdu i oprosti svome narodu što ti je zgriješio.«"
+        },
+        {
+          "verse": 40,
+          "text": "»Sada, Bože moj, neka tvoje oči budu otvorene i tvoje uši pažljive na molitve na ovom mjestu!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Završetak molitve"
+            }
+          ]
+        },
+        {
+          "verse": 41,
+          "text": "Pa sada ustani, o Bože Jahve, pođi k svojem počivalištu, ti i Kovčeg tvoje snage; neka se obuku u spasenje tvoji svećenici, o Bože Jahve, i vjerni tvoji neka se raduju u sreći!"
+        },
+        {
+          "verse": 42,
+          "text": "Bože Jahve, ne odvrati lica od svog pomazanika, spomeni se milòstî što ih dade sluzi svome Davidu!«"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "verse_count": 22,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Kad Salomon dovrši molitvu, spusti se oganj s neba i spali paljenicu i klanice i slava Jahvina ispuni Dom.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Posveta Hrama"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Svećenici ne mogoše ući, jer slava Jahvina bješe ispunila dom Jahvin."
+        },
+        {
+          "verse": 3,
+          "text": "Svi sinovi Izraelovi, videći gdje se oganj sa slavom Jahvinom spustio na Dom, padoše ničice k zemlji do kamenog poda; pokloniv se, počeše slaviti Jahvu »jer je dobar i jer je vječna njegova ljubav«."
+        },
+        {
+          "verse": 4,
+          "text": "Potom kralj i čitav narod stadoše žrtvovati žrtve pred Jahvom."
+        },
+        {
+          "verse": 5,
+          "text": "Kralj Salomon prinese za žrtvu dvadeset i dvije tisuće goveda, sto i dvadeset tisuća ovaca; i tako posvetiše dom Jahvin i kralj i sav narod."
+        },
+        {
+          "verse": 6,
+          "text": "Dok su svećenici stajali na dužnostima, leviti su na glazbalima za Jahvine pjesme, što ih učini kralj David, slavili Jahvu »jer je vječna njegova ljubav«. Time je David preko njihovih ruku hvalio Jahvu. Pred njima su svećenici trubili u trube, dok su Izraelci stajali."
+        },
+        {
+          "verse": 7,
+          "text": "Salomon je posvetio i sredinu predvorja koje je pred Jahvinim domom, jer je ondje prinio paljenice i pretilinu od pričesnica, jer na mjedeni žrtvenik koji bijaše napravio Salomon nisu mogle stati paljenice ni prinosi ni pretilina."
+        },
+        {
+          "verse": 8,
+          "text": "U to je doba Salomon svetkovao blagdan sedam dana i sav Izrael s njime, vrlo velik zbor, od ulaza u Hamat pa do Egipatskoga potoka."
+        },
+        {
+          "verse": 9,
+          "text": "A osmoga su dana svetkovali svečani zbor, jer su posvetu žrtveniku svetkovali sedam dana i blagdan sedam dana."
+        },
+        {
+          "verse": 10,
+          "text": "Dvadeset trećega dana sedmoga mjeseca posla ljude k njihovim šatorima i odoše vesela i zadovoljna srca zbog dobra koje je Jahve učinio Davidu i Salomonu i svem narodu izraelskom."
+        },
+        {
+          "verse": 11,
+          "text": "Tako je Salomon dovršio dom Jahvin i kraljevski dvor i izveo sve što god bješe zasnovano da izvrši u domu Jahvinu i u svojem dvoru.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Božji odgovor na Salomonovu molitvu"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Potom se Jahve ukaza Salomonu noću i reče mu: »Uslišao sam tvoju molitvu i izabrao to mjesto da mi bude dom žrtve."
+        },
+        {
+          "verse": 13,
+          "text": "Ako zatvorim nebo da ne bude dažda, ili zapovjedim skakavcima da popasu zemlju, ili pustim kugu na svoj narod,"
+        },
+        {
+          "verse": 14,
+          "text": "i ponizi se moj narod na koji je prizvano ime moje i pomoli se i potraži lice moje i okani se zlih putova, ja ću ga tada uslišati s neba i oprostiti mu grijeh i izliječit ću mu zemlju."
+        },
+        {
+          "verse": 15,
+          "text": "Moje će oči biti otvorene i moje uši pažljive na molitvu s ovoga mjesta."
+        },
+        {
+          "verse": 16,
+          "text": "Sada sam, dakle, izabrao i posvetio ovaj dom da ovdje bude ime moje zauvijek i ovdje će sve dane biti moje oči i moje srce."
+        },
+        {
+          "verse": 17,
+          "text": "A ti, budeš li išao preda mnom kako ti je išao otac David, vršeći sve što sam ti zapovjedio i držeći se mojih uredaba i zakona,"
+        },
+        {
+          "verse": 18,
+          "text": "uzdržat ću tvoje kraljevsko prijestolje kako sam obećao tvome ocu Davidu govoreći: ‘Neće ti ponestati nasljednika koji bi vladao u Izraelu.’"
+        },
+        {
+          "verse": 19,
+          "text": "Ali ako me ostavite i napustite uredbe i zapovijedi koje sam vam dao te otiđete i počnete služiti tuđim bogovima i klanjati im se,"
+        },
+        {
+          "verse": 20,
+          "text": "istjerat ću Izraelce iz svoje zemlje koju sam im dao i odbacit ću od sebe ovaj dom koji sam posvetio svojem imenu i učinit ću od njega priču i sramotu među svim narodima."
+        },
+        {
+          "verse": 21,
+          "text": "Tko god prođe mimo ovaj dom koji bijaše preslavan, zaprepastit će se od užasa i pitati: ‘Zašto je Jahve tako učinio s ovom zemljom i s ovim domom?’"
+        },
+        {
+          "verse": 22,
+          "text": "I odgovorit će mu se: ‘Ostavili su Jahvu, Boga svojih otaca, koji ih je izveo iz Egipta, i okrenuli se tuđinskim bogovima, i klanjali im se, i služili im, i zato je Jahve pustio na njih sve ovo zlo.’«"
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "A kad je prošlo dvadeset godina, za koliko je vremena Salomon podigao Jahvin dom i svoj dvor,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Završetak gradnje"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "posagradio je Salomon gradove, koje je dao Salomonu Hiram, i naselio ondje Izraelove sinove."
+        },
+        {
+          "verse": 3,
+          "text": "Potom otiđe Salomon na Sopski Hamat i osvoji ga."
+        },
+        {
+          "verse": 4,
+          "text": "Sagradi Tadmor u pustinji i svakojaka mjesta za skladišta u Hamatu."
+        },
+        {
+          "verse": 5,
+          "text": "Sagradi i Gornji Bet Horon i Donji Bet Horon, tvrde gradove sa zidovima, vratima i prijevornicama;"
+        },
+        {
+          "verse": 6,
+          "text": "i Baalat, i sve gradove u kojima je imao skladišta, sve gradove za bojna kola i gradove za konjanike i što je god Salomon zaželio da gradi u Jeruzalemu i na Libanonu i po svoj zemlji svojega kraljevstva."
+        },
+        {
+          "verse": 7,
+          "text": "Svim preostalim Hetitima, Amorejcima, Perižanima, Hivijcima i Jebusejcima, koji nisu bili Izraelci,"
+        },
+        {
+          "verse": 8,
+          "text": "sinovima njihovim koji ostadoše iza njih u zemlji i koje Izraelci nisu zatrli – Salomon nametnu tlaku do današnjega dana."
+        },
+        {
+          "verse": 9,
+          "text": "Sinove Izraelove nije Salomon pretvarao u robove za posao, nego su bili vojnici, zapovjednici njegovih štitonoša i zapovjednici bojnih kola i konjaništva."
+        },
+        {
+          "verse": 10,
+          "text": "Bili su poglavari nad upravnicima, kojih je kralj Salomon imao dvjesta i pedeset, i upravljali su narodom."
+        },
+        {
+          "verse": 11,
+          "text": "Salomon preseli i faraonovu kćer iz Davidova grada u kuću koju joj bijaše sagradio, jer je mislio: »Neće moja žena živjeti u dvoru izraelskoga kralja Davida, jer je svet otkako je u nj došao kovčeg Jahvin.«"
+        },
+        {
+          "verse": 12,
+          "text": "Tada Salomon poče prinositi paljenice Jahvi na Jahvinu žrtveniku što ga bijaše sagradio pred trijemom,"
+        },
+        {
+          "verse": 13,
+          "text": "i to koliko je trebalo iz dana u dan da prinese po Mojsijevoj zapovijedi, u subote, i na mlađake, i na blagdane tri puta u godini, na Blagdan beskvasnih kruhova, i na Blagdan sedmica, i na Blagdan sjenica."
+        },
+        {
+          "verse": 14,
+          "text": "Postavio je, po uredbi oca Davida, svećeničke redove po njihovoj službi i levitske po njihovim dužnostima da pjevaju hvale i da služe pred svećenicima, koliko treba iz dana u dan, i vratare po njihovim redovima na svakim vratima, jer je takva bila zapovijed Božjega čovjeka Davida."
+        },
+        {
+          "verse": 15,
+          "text": "Nisu odstupili od kraljeve zapovijedi za svećenike i levite ni u čemu, ni za riznice."
+        },
+        {
+          "verse": 16,
+          "text": "Tako se svršio sav Salomonov posao od dana kad je bio zasnovan dom Jahvin pa dokle ga god nije dovršio. Tako bijaše dovršen dom Jahvin."
+        },
+        {
+          "verse": 17,
+          "text": "Tada je Salomon otišao u Esjon-Geber i u Elat na morskoj obali u zemlji edomskoj.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Salomonova slava"
+            }
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "A Hiram mu je poslao po slugama lađe i mornare vične moru te su otišli sa Salomonovim slugama u Ofir; uzeše odande četiri stotine i pedeset talenata zlata i donesoše ih kralju Salomonu."
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "verse_count": 31,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Uto kraljica od Sabe ču glas o Salomonu. Hoteći iskušati Salomona zagonetkama, dođe u Jeruzalem s mnogobrojnom pratnjom i s devama koje su nosile miomirise, mnogo zlata i dragulja. Došavši k Salomonu, porazgovori se s njim o svemu što joj bijaše na srcu."
+        },
+        {
+          "verse": 2,
+          "text": "Salomon joj odgovori na sva pitanja; nije bilo Salomonu sakriveno ništa da joj ne bi umio objasniti."
+        },
+        {
+          "verse": 3,
+          "text": "Kad kraljica od Sabe vidje njegovu mudrost, dvor koji bijaše sagradio,"
+        },
+        {
+          "verse": 4,
+          "text": "jela na njegovu stolu, odaje njegove i dvorane, otmjenost njegove posluge i njihova odijela, i njegove peharnike i njihova odijela, i njegove paljenice koje je prinosio u Jahvinu domu, zastade joj dah."
+        },
+        {
+          "verse": 5,
+          "text": "Tada reče kralju: »Istina je bila što sam u svojoj zemlji čula o tebi i o tvojoj mudrosti.",
+          "lines": [
+            "Tada reče kralju:",
+            "»Istina je bila što sam u svojoj zemlji čula o tebi i o tvojoj mudrosti."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Ali nisam htjela vjerovati što se pripovijeda dokle god nisam došla i vidjela na svoje oči; i doista, ni pola mi nije bilo rečeno o tvojoj velikoj mudrosti; nadvisio si glas koji sam slušala."
+        },
+        {
+          "verse": 7,
+          "text": "Blago tvojim ljudima i tvojim slugama koji stoje pred tobom i slušaju tvoju mudrost!"
+        },
+        {
+          "verse": 8,
+          "text": "Neka je blagoslovljen Jahve, tvoj Bog, komu si tako omilio da te postavio na svoje prijestolje da kraljuješ umjesto Jahve, svojega Boga, jer Bog tvoj ljubi Izraela da bi ga održao dovijeka; i zato je postavio tebe za kralja da činiš pravo i pravicu.«"
+        },
+        {
+          "verse": 9,
+          "text": "Dala je tada kralju sto i dvadeset zlatnih talenata i mnogo miomirisa i dragulja. Nikad više nije bilo takvih miomirisa kakve je kraljica od Sabe dala kralju Salomonu."
+        },
+        {
+          "verse": 10,
+          "text": "Hiramove sluge, koje su sa Salomonovim slugama donosile zlata iz Ofira, dovezle su također sandalovine i dragulja."
+        },
+        {
+          "verse": 11,
+          "text": "Kralj je napravio i citre i harfe za pjevače: nikad se prije nisu vidjele takve stvari u zemlji judejskoj."
+        },
+        {
+          "verse": 12,
+          "text": "Kralj Salomon dade kraljici od Sabe što je zaželjela i zatražila, izuzev ono što je sama donijela kralju. Potom ona krenu i sa slugama ode u svoju zemlju."
+        },
+        {
+          "verse": 13,
+          "text": "Zlato što je dolazilo Salomonu svake godine bilo je teško šest stotina šezdeset i šest zlatnih talenata,"
+        },
+        {
+          "verse": 14,
+          "text": "osim onoga što je dolazilo od trgovaca i putujućih prodavača. I svi su arapski kraljevi i zemaljski upravitelji Salomonu donosili zlato i srebro."
+        },
+        {
+          "verse": 15,
+          "text": "Kralj Salomon načini dvjesta štitova od kovanoga zlata; za svaki je štit upotrijebio šest stotina šekela kovanoga zlata;"
+        },
+        {
+          "verse": 16,
+          "text": "i načini trista štitića od kovanoga zlata; za svaki je štitić utrošio trista zlatnih šekela. Kralj ih je pohranio u kuću zvanu Libanonska šuma."
+        },
+        {
+          "verse": 17,
+          "text": "Kralj je napravio i veliko prijestolje od bjelokosti i obložio ga čistim zlatom."
+        },
+        {
+          "verse": 18,
+          "text": "Prijestolje je imalo šest stepenica i zlatno podnožje sastavljeno s prijestoljem, i ručice s obiju strana prijestolja, a kraj ručica stajala dva lava."
+        },
+        {
+          "verse": 19,
+          "text": "Dvanaest je lavova stajalo s obiju strana onih šest stepenica. Takvo što nije bilo izrađeno ni u jednom kraljevstvu."
+        },
+        {
+          "verse": 20,
+          "text": "Sve posude iz kojih je pio kralj Salomon bijahu zlatne i sve posuđe u kući zvanoj Libanonska šuma bijaše od suhoga zlata; srebro se smatralo bezvrijednim u Salomonovo vrijeme."
+        },
+        {
+          "verse": 21,
+          "text": "Kraljeve su lađe išle u Taršiš s Hiramovim slugama; svake treće godine vraćale su se i dolazile taršiške lađe donoseći zlato i srebro, slonovu kost, majmune i paune."
+        },
+        {
+          "verse": 22,
+          "text": "Tako je kralj Salomon natkrilio sve zemaljske kraljeve bogatstvom i mudrošću."
+        },
+        {
+          "verse": 23,
+          "text": "Svi su zemaljski kraljevi željeli vidjeti Salomona i čuti mudrost koju mu je Bog ulio u srce."
+        },
+        {
+          "verse": 24,
+          "text": "Svatko mu je donosio dar, srebrno i zlatno posuđe, haljine, oružje i miomirise, konje i mazge, iz godine u godinu."
+        },
+        {
+          "verse": 25,
+          "text": "Salomon je imao četiri tisuće konjskih jasala i bojnih kola i dvanaest tisuća konjanika, koje je rasporedio po gradovima bojnih kola i kod kralja u Jeruzalemu."
+        },
+        {
+          "verse": 26,
+          "text": "Vladao je nad svim kraljevima od Rijeke do zemlje filistejske i do egipatske međe."
+        },
+        {
+          "verse": 27,
+          "text": "Kralj je učinio da u Jeruzalemu bude srebra kao kamenja, a cedrova kao divljih smokava što rastu u Judejskoj nizini."
+        },
+        {
+          "verse": 28,
+          "text": "Salomon je uvozio konje iz Musrija i iz svih zemalja."
+        },
+        {
+          "verse": 29,
+          "text": "Ostala djela Salomonova, od prvih do posljednjih, zapisana su u povijesti proroka Natana, u proročkoj knjizi Šilonjanina Ahije i u proročkoj besjedi vidioca Adona o Nebatovu sinu Jeroboamu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Salomonova smrt"
+            }
+          ]
+        },
+        {
+          "verse": 30,
+          "text": "Salomon je vladao u Jeruzalemu nad svim Izraelom četrdeset godina."
+        },
+        {
+          "verse": 31,
+          "text": "Potom je počinuo kod otaca i sahranili su ga u gradu oca mu Davida, a na njegovo se mjesto zakraljio sin mu Roboam."
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "verse_count": 19,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Tada Roboam ode u Šekem, jer su u Šekem došli svi Izraelci da ga zakralje.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "IV. PRVE OBNOVE U KRALJEVSTVU"
+            },
+            {
+              "level": "h3",
+              "text": "1. ROBOAM I PREUSTROJSTVO LEVITA"
+            },
+            {
+              "level": "h4",
+              "text": "Rascjep"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Čim to ču Nebatov sin Jeroboam – koji je bio u Egiptu kamo bijaše pobjegao pred kraljem Salomonom – vrati se iz Egipta,"
+        },
+        {
+          "verse": 3,
+          "text": "jer bijahu poslali po nj i dozvali ga. Kad dođoše Jeroboam i sav zbor Izraelov, rekoše Roboamu:"
+        },
+        {
+          "verse": 4,
+          "text": "»Tvoj nam je otac nametnuo težak jaram; ti nam sada olakšaj tešku službu svoga oca i teški jaram koji metnu na nas, pa ćemo ti služiti.«"
+        },
+        {
+          "verse": 5,
+          "text": "On im odgovori: »Za tri dana dođite opet k meni.« I narod ode."
+        },
+        {
+          "verse": 6,
+          "text": "Tada se kralj Roboam posavjetova sa starcima koji su služili njegovu ocu Salomonu dok je bio živ i upita ih: »Što savjetujete da odgovorim ovome narodu?«"
+        },
+        {
+          "verse": 7,
+          "text": "A oni mu odgovoriše: »Ako udovoljiš tim ljudima, budeš im blagonaklon i odgovoriš im lijepim riječima, oni će ti uvijek biti sluge.«"
+        },
+        {
+          "verse": 8,
+          "text": "Ali on odbaci savjet što mu ga dadoše starci i posavjetova se s mladićima koji su odrasli s njim i bili mu u službi."
+        },
+        {
+          "verse": 9,
+          "text": "Upita ih: »Što savjetujete da odgovorim ovomu narodu koji mi reče: ‘Olakšaj jaram što nam ga nametnu tvoj otac’?«"
+        },
+        {
+          "verse": 10,
+          "text": "Odgovoriše mu mladići koji bijahu s njim odrasli: »Narodu koji ti je rekao: ‘Tvoj nam je otac nametnuo jaram, a ti nam ga olakšaj’, odvrati ovako: ‘Moj je mali prst deblji od bedara moga oca!"
+        },
+        {
+          "verse": 11,
+          "text": "Dakle, moj vam je otac nametnuo težak jaram, a ja ću još otežati vaš jaram; moj vas je otac šibao bičevima, a ja ću vas šibati bičevima sa željeznim štipavcima.’«"
+        },
+        {
+          "verse": 12,
+          "text": "Trećega dana dođe Jeroboam i sav narod k Roboamu, jer im kralj bijaše naredio: »Vratite se k meni trećega dana.«"
+        },
+        {
+          "verse": 13,
+          "text": "Kralj im oštro odgovori; odbacivši savjet starijih,"
+        },
+        {
+          "verse": 14,
+          "text": "odvrati po savjetu mladih: »Moj je otac otežao vaš jaram, a ja ću još dometnuti na nj; moj vas je otac šibao bičevima, a ja ću vas šibati bičevima sa željeznim štipavcima.«"
+        },
+        {
+          "verse": 15,
+          "text": "Kralj, dakle, ne htjede poslušati naroda, jer tako upriliči Bog da se ispuni riječ što je preko Šilonjanina Ahije kaza Nabatovu sinu Jeroboamu."
+        },
+        {
+          "verse": 16,
+          "text": "Kad Izraelci vidješe gdje se kralj oglušio, odgovori mu narod: »Kakav dio mi imamo s Davidom? Mi nemamo baštine s Jišajevim sinom! U šatore, Izraele! Sad se, Davide, brini za svoj dom!« I sav Izrael ode pod svoje šatore.",
+          "lines": [
+            "Kad Izraelci vidješe gdje se kralj oglušio, odgovori mu narod:",
+            "»Kakav dio mi imamo s Davidom?",
+            "Mi nemamo baštine s Jišajevim sinom!",
+            "U šatore, Izraele!",
+            "Sad se, Davide, brini za svoj dom!«",
+            "I sav Izrael ode pod svoje šatore."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Roboam zavlada samo nad Izraelovim sinovima koji su živjeli po judejskim gradovima."
+        },
+        {
+          "verse": 18,
+          "text": "Potom kralj Roboam posla Adorama, nadstojnika za tlaku, ali ga Izraelci kamenovaše i on umrije; a kralj se Roboam brže-bolje pope na kola te pobježe u Jeruzalem."
+        },
+        {
+          "verse": 19,
+          "text": "Tako se Izrael odijelio od doma Davidova sve do danas."
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "verse_count": 23,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Došavši u Jeruzalem, skupi sav dom Judin i Benjaminov, sto i osamdeset tisuća vrsnih ratnika, da udare na Izraela i da Roboamu vrate kraljevstvo.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Roboamovo vladanje"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ali dođe Jahvina riječ Božjem čovjeku Šemaji:"
+        },
+        {
+          "verse": 3,
+          "text": "»Kaži Salomonovu sinu Roboamu, judejskomu kralju, i svim Izraelcima u Judinu i Benjaminovu plemenu:"
+        },
+        {
+          "verse": 4,
+          "text": "Ovako veli Jahve: ‘Ne idite se tući s braćom! Neka se svatko vrati svojoj kući, jer je ovo poteklo od mene.’« I oni poslušaše riječ Jahvinu, vratiše se i ne udariše na Jeroboama.",
+          "lines": [
+            "Ovako veli Jahve: ‘Ne idite se tući s braćom! Neka se svatko vrati svojoj kući, jer je ovo poteklo od mene.’«",
+            "I oni poslušaše riječ Jahvinu, vratiše se i ne udariše na Jeroboama."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Roboam, stolujući u Jeruzalemu, poče dizati tvrde gradove po Judeji."
+        },
+        {
+          "verse": 6,
+          "text": "Tako je sagradio Betlehem, Etam, Tekou,"
+        },
+        {
+          "verse": 7,
+          "text": "Bet Sur, Sokon, Adulam,"
+        },
+        {
+          "verse": 8,
+          "text": "Gat, Maresu, Zif,"
+        },
+        {
+          "verse": 9,
+          "text": "Adorajim, Lakiš, Azeku,"
+        },
+        {
+          "verse": 10,
+          "text": "Soru, Ajalon i Hebron, tvrde gradove u Judinu i Benjaminovu plemenu."
+        },
+        {
+          "verse": 11,
+          "text": "Utvrdivši gradove, postavi im zapovjednike i dovuče zalihe hrane, ulja i vina;"
+        },
+        {
+          "verse": 12,
+          "text": "u svaki pojedini grad stavi štitova i kopalja i utvrdi ih vrlo jako. Tako je on imao Judino i Benjaminovo pleme."
+        },
+        {
+          "verse": 13,
+          "text": "Svećenici i leviti, koji su bili po svem Izraelu, pristupiše k njemu iz svih krajeva.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Svećenstvo prelazi k Roboamu"
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Leviti ostaviše pašnjake i posjed te otiđoše u Judeju i Jeruzalem, jer ih je bio odbacio Jeroboam i njegovi sinovi da ne obavljaju svećeničku službu Jahvi,"
+        },
+        {
+          "verse": 15,
+          "text": "a postavio je svećenike za uzvišice, za jarce i za telad koju je napravio."
+        },
+        {
+          "verse": 16,
+          "text": "Za njima su iz svih izraelskih plemena dolazili u Jeruzalem da žrtvuju Jahvi, Bogu svojih otaca, oni koji su srcem tražili Jahvu, Boga Izraelova."
+        },
+        {
+          "verse": 17,
+          "text": "Tako su utvrdili judejsko kraljevstvo i osokolili Salomonova sina Roboama za tri godine, jer su tri godine živjeli poput Davida i Salomona."
+        },
+        {
+          "verse": 18,
+          "text": "Roboam je sebi uzeo za ženu Mahalatu, kćer Davidova sina Jerimota, i Abihajilu, kćer Jišajeva sina Eliaba,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Roboamova nevjera"
+            }
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "koja mu rodi sinove: Jeuša, Šemarju i Zahama."
+        },
+        {
+          "verse": 20,
+          "text": "A poslije nje oženio se Abšalomovom kćerju Maakom, koja mu rodi Abiju, Etaja, Zizu i Šelomita."
+        },
+        {
+          "verse": 21,
+          "text": "Roboam je ljubio Abšalomovu kćer Maaku više od svih svojih žena i inoča, iako je uzeo osamnaest žena i šezdeset inoča i rodio dvadeset i osam sinova i šezdeset kćeri."
+        },
+        {
+          "verse": 22,
+          "text": "I Roboam postavi Maakina sina Abiju za poglavara i kneza nad njegovom braćom, jer ga je naumio postaviti za kralja."
+        },
+        {
+          "verse": 23,
+          "text": "I, mudro radeći, razmjesti sinove po svim judejskim i Benjaminovim krajevima, po svim tvrdim gradovima, davši im hrane izobila i poženivši ih s mnogo žena."
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "verse_count": 16,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Kad je Roboam utvrdio kraljevstvo i ojačao, napustio je Jahvin zakon i on i sav Izrael s njim."
+        },
+        {
+          "verse": 2,
+          "text": "Ali pete godine Roboamova kraljevanja navali egipatski kralj Šišak na Jeruzalem, koji se bijaše iznevjerio Jahvi."
+        },
+        {
+          "verse": 3,
+          "text": "Došao je sa tisuću i dvjesta bojnih kola i sa šezdeset tisuća konjanika, a narodu koji je došao s njim iz Egipta – Libijcima, Sukijcima i Etiopljanima – nije bilo broja."
+        },
+        {
+          "verse": 4,
+          "text": "Osvojivši tvrde judejske gradove, dopro je do Jeruzalema."
+        },
+        {
+          "verse": 5,
+          "text": "Tada dođe prorok Šemaja k Roboamu i judejskim knezovima, koji se bijahu skupili u Jeruzalemu bježeći od Šišaka, i reče im: »Ovako veli Jahve: ‘Vi ste ostavili mene, pa i ja ostavljam vas u ruke Šišaku.’«"
+        },
+        {
+          "verse": 6,
+          "text": "Tada se poniziše izraelski knezovi i kralj i rekoše: »Pravedan je Jahve!«"
+        },
+        {
+          "verse": 7,
+          "text": "Kad ih Jahve vidje gdje se poniziše, dođe njegova riječ Šemaji: »Ponizili su se; neću ih uništiti, nego ću im uskoro dati spasenje te se moja srdžba neće oboriti na Jeruzalem preko Šišaka."
+        },
+        {
+          "verse": 8,
+          "text": "Bit će mu sluge, da vide što znači služiti meni, a što zemaljskim kraljevstvima.«"
+        },
+        {
+          "verse": 9,
+          "text": "Tako egipatski kralj Šišak navali na Jeruzalem, opljačka blago iz doma Jahvina i riznicu kraljeva dvora; sve je uzeo; uze i zlatne štitove što ih bijaše napravio Salomon."
+        },
+        {
+          "verse": 10,
+          "text": "Namjesto njih kralj Roboam napravi mjedene štitove i povjeri ih zapovjednicima straže koja je čuvala vrata kraljevskoga dvora."
+        },
+        {
+          "verse": 11,
+          "text": "Kad je god kralj išao u dom Jahvin, stražari su ih uzimali, a poslije ih vraćali u stražaru."
+        },
+        {
+          "verse": 12,
+          "text": "Kad se, dakle, ponizio, odvratio se od njega Jahvin gnjev te ga nije sasvim uništio, jer i u Judeji bijaše dobra."
+        },
+        {
+          "verse": 13,
+          "text": "Potom se kralj Roboam utvrdi u Jeruzalemu i stade kraljevati. Roboamu je bila četrdeset i jedna godina kad se zakraljio, a sedamnaest je godina kraljevao u Jeruzalemu, u gradu koji Jahve izabra između svih izraelskih plemena da ondje postavi ime svoje. Majka mu se zvala Naama, a bila je Amonka."
+        },
+        {
+          "verse": 14,
+          "text": "Činio je zlo, jer nije pregnuo srcem da traži Jahvu."
+        },
+        {
+          "verse": 15,
+          "text": "Roboamova prva i posljednja djela – i ratovi koji su se neprestano vodili između Roboama i Jeroboama – zapisani su u povijesti proroka Šemaje i u plemenskom popisu vidioca Adona."
+        },
+        {
+          "verse": 16,
+          "text": "Potom Roboam počinu sa svojim ocima i bî sahranjen u Davidovu gradu; na njegovo se mjesto zakraljio sin mu Abija."
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "verse_count": 23,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Osamnaeste godine Jeroboamova kraljevanja zakralji se Abija nad Judejom.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "2. ABIJA I VJERNOST ZAKONITOM SVEĆENSTVU"
+            },
+            {
+              "level": "h4",
+              "text": "Rat"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Tri je godine kraljevao u Jeruzalemu. Materi mu je bilo ime Mikaja, Urielova kći iz Gabe. Tada izbi rat između Abije i Jeroboama."
+        },
+        {
+          "verse": 3,
+          "text": "Abija je izašao u boj s hrabrim ratnicima, s četiri stotine tisuća izabranih junaka; Jeroboam je svrstao u bojni red protiv njega osam stotina tisuća ljudi, sve biranih junaka."
+        },
+        {
+          "verse": 4,
+          "text": "Abija je stao na vrh Semarajimske gore u Efrajimovu gorju i rekao: »Čujte me, Jeroboame i sav Izraele!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Abijin govor"
+            }
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Ne znate li da je Jahve, Bog Izraelov, predao Davidu kraljevstvo nad Izraelom zauvijek, njemu i njegovim sinovima, osoljenim savezom?"
+        },
+        {
+          "verse": 6,
+          "text": "Ali se podigao Nebatov sin Jeroboam, sluga Davidova sina Salomona, i pobunio se protiv gospodara."
+        },
+        {
+          "verse": 7,
+          "text": "Skupili su se oko njega ljudi praznovi i nevaljalci i stali prkositi Salomonovu sinu Roboamu, koji je bio mlad i strašljiva srca te se nije umio hrabro braniti od njih."
+        },
+        {
+          "verse": 8,
+          "text": "Pa sada mislite da se možete oprijeti Jahvinu kraljevstvu što je u ruci Davidovih sinova jer vas je veliko mnoštvo i imate kod sebe zlatnu telad koju vam je napravio Jeroboam da vam budu bogovi."
+        },
+        {
+          "verse": 9,
+          "text": "Otjerali ste Jahvine svećenike, Aronove sinove i levite, i postavili sebi svećenike kao drugi zemaljski narodi. Tko je god došao s juncem i sa sedam ovnova, postao je svećenik vašim ništavim bogovima."
+        },
+        {
+          "verse": 10,
+          "text": "Nama je Bog Jahve, nismo ga ostavili, a svećenici koji služe Jahvi jesu Aronovi sinovi i leviti u svojem poslu."
+        },
+        {
+          "verse": 11,
+          "text": "Pale Jahvi na kâd paljenice svakoga jutra i svake večeri s mirisnim kadom, postavljaju kruhove na čist stol i upaljuju svake večeri zlatan svijećnjak sa svijećama; jer mi držimo naredbu Jahve, svojega Boga, a vi ste ga ostavili."
+        },
+        {
+          "verse": 12,
+          "text": "Zato je, evo, nama na čelu Bog i njegovi svećenici s glasnim trubama da gromko trube protiv vas. Izraelovi sinovi, ne udarajte na Jahvu, Boga svojih otaca, jer nećete imati sreće!«"
+        },
+        {
+          "verse": 13,
+          "text": "Ali Jeroboam zavede zasjedu da im dođe za leđa; tako su Judejcima bili jedni sprijeda, a zasjeda straga.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Bitka"
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Kad se Judejci obazreše, a ono, gle, boj im bješe sprijeda i otraga. Tada zavapiše k Jahvi, a svećenici stadoše trubiti u trube."
+        },
+        {
+          "verse": 15,
+          "text": "Uto Judejci snažno povikaše, a kad su počeli vikati, Bog razbi Jeroboama i sav Izrael pred Abijom i Judejcima."
+        },
+        {
+          "verse": 16,
+          "text": "Izraelovi sinovi pobjegoše pred Judejcima i Bog ih predade njima u ruke."
+        },
+        {
+          "verse": 17,
+          "text": "Abija je s narodom učinio velik pokolj među njima te je od Izraela palo pobijenih pet stotina tisuća izabranih ljudi."
+        },
+        {
+          "verse": 18,
+          "text": "Tako su sinovi Izraelovi bili poniženi u to vrijeme, a Judini su sinovi ojačali, jer su se oslonili na Jahvu, Boga svojih otaca."
+        },
+        {
+          "verse": 19,
+          "text": "Abija je potjerao Jeroboama i osvojio od njega gradove Betel sa selima, Ješanu sa selima i Efron sa selima.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Abijin svršetak"
+            }
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Jeroboam se više nije oporavio za Abijina života; Jahve ga je udario tako da je umro."
+        },
+        {
+          "verse": 21,
+          "text": "Abija se utvrdio i uzeo sebi četrnaest žena te je rodio dvadeset i dva sina i šesnaest kćeri."
+        },
+        {
+          "verse": 22,
+          "text": "A ostali Abijini doživljaji i njegovi pothvati i besjede zapisani su u tumačenju proroka Adona."
+        },
+        {
+          "verse": 23,
+          "text": "Potom Abija počinu kraj svojih otaca. Sahraniše ga u Davidovu gradu; na njegovo se mjesto zakralji sin mu Asa. Za njegovih je dana zemlja bila mirna deset godina."
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "verse_count": 14,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Asa je činio što je dobro i pravo u očima Jahve, njegova Boga.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "3. ASA I NJEGOVE BOGOSLUŽNE PREINAKE"
+            },
+            {
+              "level": "h4",
+              "text": "Asin mir"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Uklonio je tuđinske žrtvenike i uzvišice, polomio stupove i razbio ašere."
+        },
+        {
+          "verse": 3,
+          "text": "Naredio je Judejcima da traže Jahvu, Boga svojih otaca, da se drže zakona i zapovijedi."
+        },
+        {
+          "verse": 4,
+          "text": "Uklonio je iz svih judejskih gradova uzvišice i sunčane stupove, a kraljevstvo je bilo mirno za njegova vremena."
+        },
+        {
+          "verse": 5,
+          "text": "Sagradio je tvrde gradove u Judeji, jer je zemlja bila mirna. Nitko se nije zaratio na nj onih godina, jer mu je Jahve dao mir."
+        },
+        {
+          "verse": 6,
+          "text": "Zato je Asa rekao Judejcima: »Da pogradimo ove gradove i da ih opašemo zidom i kulama, vratima i prijevornicama; još je zemlja pred nama naša, jer smo tražili Jahvu, svoga Boga; tražili smo ga, i on nam je dao mir odasvud uokolo!« Tako su gradili i bili sretni.",
+          "lines": [
+            "Zato je Asa rekao Judejcima: »Da pogradimo ove gradove i da ih opašemo zidom i kulama, vratima i prijevornicama; još je zemlja pred nama naša, jer smo tražili Jahvu, svoga Boga; tražili smo ga, i on nam je dao mir odasvud uokolo!«",
+            "Tako su gradili i bili sretni."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Asa je imao vojske trista tisuća ljudi između Judejaca koji su nosili štit i koplje, a od Benjaminova plemena dvjesta i osamdeset tisuća koji su nosili štit i zapinjali lûk. Svi su bili hrabri junaci."
+        },
+        {
+          "verse": 8,
+          "text": "Izašao je na njih Etiopljanin Zerah s tisuću tisuća vojnika i tri stotine bojnih kola i došao do Mareše.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Napad Zerahov"
+            }
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Asa je izašao preda nj; svrstali su se u bojni red u Sefatskoj dolini kod Mareše."
+        },
+        {
+          "verse": 10,
+          "text": "Asa zavapi k Jahvi, Bogu svome: »O Jahve, tebi je ništa pomoći silnome ili nejakome! Pomozi nam, o Jahve, Bože naš, jer se na te oslanjamo i u tvoje smo ime izišli na ovo mnoštvo! Jahve, ti si Bog naš, ne daj snažnu čovjeku protiv sebe!«"
+        },
+        {
+          "verse": 11,
+          "text": "Jahve razbi Etiopljane pred Asom i pred Judejcima te Etiopljani pobjegoše."
+        },
+        {
+          "verse": 12,
+          "text": "Asa ih je s narodom koji bijaše s njim potjerao sve do Gerara. Etiopljani su popadali, tako da nijedan nije ostao živ jer ih je satro Jahve i njegove čete; i one su odnijele vrlo velik plijen."
+        },
+        {
+          "verse": 13,
+          "text": "Osvojile su sve gradove oko Gerara jer je Jahvin strah došao na njih; oplijenile su sve te gradove, jer je u njima bilo mnogo plijena."
+        },
+        {
+          "verse": 14,
+          "text": "Poharale su i šatore za stoku i zaplijenile mnoštvo sitne stoke i deva; a onda su se vratile u Jeruzalem."
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "verse_count": 19,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Tada duh Božji dođe na Odedova sina Azarju.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Proroštvo Azarjino i obnova"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "On je izišao pred Asu i rekao mu: »Čujte me, Asa i sve Judino i Benjaminovo pleme! Jahve je s vama jer ste vi s njime; i ako ga budete tražili, naći ćete ga; ako li ga ostavite, i on će ostaviti vas."
+        },
+        {
+          "verse": 3,
+          "text": "Dugo su Izraelci bili bez pravoga Boga i bez svećenika-učitelja i bez Zakona."
+        },
+        {
+          "verse": 4,
+          "text": "Kad su se u nevolji obratili Jahvi, Bogu Izraelovu, i stali ga tražiti, našli su ga."
+        },
+        {
+          "verse": 5,
+          "text": "U ona vremena nitko nije mogao na miru ni izlaziti ni dolaziti, jer su veliki nemiri vladali među svim zemaljskim stanovnicima."
+        },
+        {
+          "verse": 6,
+          "text": "Udarao je narod na narod, grad na grad, jer ih je Jahve smeo svakojakom nevoljom."
+        },
+        {
+          "verse": 7,
+          "text": "Ali vi budite hrabri i neka vam ne klonu ruke, jer ima nagrada za vaša djela.«"
+        },
+        {
+          "verse": 8,
+          "text": "Čuvši te riječi i proročku besjedu proroka Odeda, Asa se ohrabri i ukloni idolske gadove iz cijele Judine i Benjaminove zemlje i iz gradova koje je bio osvojio u Efrajimovoj gori. Obnovio je i Jahvin žrtvenik koji je bio pred Jahvinim trijemom."
+        },
+        {
+          "verse": 9,
+          "text": "Onda je skupio sve Judino i Benjaminovo pleme i došljake koji su bili kod njih od Efrajimova, Manašeova i Šimunova plemena, jer ih je mnogo prebjeglo k njemu od Izraelaca kad su vidjeli da je s njim Jahve, njegov Bog."
+        },
+        {
+          "verse": 10,
+          "text": "I skupili su se u Jeruzalemu trećega mjeseca petnaeste godine Asina kraljevanja."
+        },
+        {
+          "verse": 11,
+          "text": "Onoga su dana prinijeli Jahvi žrtve od plijena koji su dognali, sedam stotina goveda i sedam tisuća sitne stoke."
+        },
+        {
+          "verse": 12,
+          "text": "Zavjetovaše se da će tražiti Jahvu, Boga svojih otaca, svim srcem i svom dušom."
+        },
+        {
+          "verse": 13,
+          "text": "A tko god ne bi tražio Jahvu, Izraelova Boga, da se pogubi, bio malen ili velik, čovjek ili žena."
+        },
+        {
+          "verse": 14,
+          "text": "Zakleli su se Jahvi iza glasa i uz gromki poklik, uz trube i rogove."
+        },
+        {
+          "verse": 15,
+          "text": "Svi su se Judejci radovali zbog te zakletve jer su se iz svega srca zakleli i od sve su ga svoje volje tražili i našli ga. Jahve im je dao mir odasvud uokolo."
+        },
+        {
+          "verse": 16,
+          "text": "I svoju mater Maaku ukloni kralj Asa s vlasti jer je bila načinila gada Ašeri. Asa je sasjekao njezina gada, satro ga i spalio u potoku Kidronu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Ostala djela Asina"
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Ali uzvišice nisu bile uklonjene iz Izraela. Ipak je Asino srce bilo privrženo Jahvi svega njegova života."
+        },
+        {
+          "verse": 18,
+          "text": "Unio je u dom Božji posvećene darove svoga oca i svoje: srebro i zlato i posuđe."
+        },
+        {
+          "verse": 19,
+          "text": "Nije bilo rata sve do trideset i pete godine Asina kraljevanja."
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "verse_count": 14,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Trideset i šeste godine Asina kraljevanja navali izraelski kralj Baša na Judeju i stade utvrđivati Ramu da spriječi svako kretanje judejskom kralju Asi."
+        },
+        {
+          "verse": 2,
+          "text": "Asa tada uze srebra i zlata iz riznice doma Jahvina i kraljevskoga dvora i posla aramejskome kralju Ben-Hadadu, koji je stolovao u Damasku, i poruči mu:"
+        },
+        {
+          "verse": 3,
+          "text": "»Neka bude savez između mene i tebe i između moga i tvoga oca. Evo, šaljem ti na dar srebra i zlata. Hajde, raskini savez s izraelskim kraljem Bašom da bi otišao od mene.«"
+        },
+        {
+          "verse": 4,
+          "text": "Ben-Hadad posluša kralja Asu i posla svoje vojskovođe na izraelske gradove te oni pokoriše Ijon, Dan, Abel Majinu i sve Naftalijeve gradove-skladišta."
+        },
+        {
+          "verse": 5,
+          "text": "A kada to Baša dozna, presta utvrđivati Ramu i obustavi posao."
+        },
+        {
+          "verse": 6,
+          "text": "Tada kralj Asa sazva sve Judejce i oni odnesoše kamenje i drvo kojima je Baša utvrđivao Ramu, pa time utvrdiše Gebu i Mispu."
+        },
+        {
+          "verse": 7,
+          "text": "U to vrijeme dođe vidjelac Hanani k judejskom kralju Asi i reče mu: »Budući da si se oslonio na aramejskoga kralja, a nisi se oslonio na Jahvu, Boga svoga, vojska aramejskoga kralja izmakla ti je iz ruke."
+        },
+        {
+          "verse": 8,
+          "text": "Nisu li Etiopljani i Libijci imali silne čete s vrlo mnogo bojnih kola i konjanika? Pa kad si se oslonio na Jahvu, predao ti ih je u ruke."
+        },
+        {
+          "verse": 9,
+          "text": "Jer Jahve svojim očima gleda po svoj zemlji da bi se ohrabrili oni kojima je srce iskreno prema njemu. Ludo si u tome radio, zato će se od sada dizati ratovi na te.«"
+        },
+        {
+          "verse": 10,
+          "text": "Tada se Asa razgnjevi na vidioca i baci ga u tamnicu, jer se razjario na nj. U to je vrijeme Asa potlačio i neke iz naroda."
+        },
+        {
+          "verse": 11,
+          "text": "I eto, Asina djela, od prvoga do posljednjeg, zapisana su u Knjizi o judejskim i izraelskim kraljevima.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Asin svršetak"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Razbolio se trideset i devete godine kraljevanja, od nogu, te mu se bolest veoma pogoršala, ali ni u bolesti nije tražio Jahvu, nego liječnike."
+        },
+        {
+          "verse": 13,
+          "text": "Tako Asa počinu sa svojim ocima i umrije četrdeset i prve godine svoga kraljevanja."
+        },
+        {
+          "verse": 14,
+          "text": "Sahranili su ga u grobnici koju bijaše iskopao sebi u Davidovu gradu i položili ga na odar što ga bijaše napunio miomirisima i mastima, zgotovljenima mastilačkom vještinom, i spalili mu ih vrlo mnogo."
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "verse_count": 19,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Onda se na njegovo mjesto zakralji sin mu Jošafat; on pokaza svoju silu protiv Izraela.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "4. JOŠAFAT I NJEGOVA UPRAVA"
+            },
+            {
+              "level": "h4",
+              "text": "Jošafatova moć"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Razmjestio je vojsku po svim utvrđenim judejskim gradovima i postavio namjesnike po judejskoj zemlji i po Efrajimovim gradovima, koje bijaše zauzeo otac mu Asa."
+        },
+        {
+          "verse": 3,
+          "text": "Jahve je bio s Jošafatom jer je hodio pravim putovima svoga oca Davida i nije tražio baalâ.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Njegova briga za Zakon"
+            }
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Tražio je Boga svojih otaca i hodio po njegovim zapovijedima, ne čineći kao Izraelovi sinovi."
+        },
+        {
+          "verse": 5,
+          "text": "Zato je Jahve utvrdio kraljevstvo u njegovoj ruci, pa su svi Judejci davali Jošafatu danak, tako da je stekao veliko bogatstvo i slavu."
+        },
+        {
+          "verse": 6,
+          "text": "Njegovo se srce hrabrilo na Jahvinim putovima, pa je uklonio još i uzvišice i ašere iz Judeje."
+        },
+        {
+          "verse": 7,
+          "text": "Treće godine kraljevanja posla knezove Ben-Hajila, Obadju, Zahariju, Netanela i Miheja da uče po judejskim gradovima."
+        },
+        {
+          "verse": 8,
+          "text": "I s njima levite: Šemaju, Netaniju, Zebadju, Asahela, Šemiramota, Jonatana, Adoniju, Tobiju i Tob Adoniju; a s njima svećenike Elišamu i Jorama."
+        },
+        {
+          "verse": 9,
+          "text": "Poučavali su po Judeji noseći sa sobom Knjigu Zakona Jahvina i obilazili sve judejske gradove učeći narod."
+        },
+        {
+          "verse": 10,
+          "text": "Jahvin je strah spopao sva zemaljska kraljevstva oko Judeje, tako da nisu smjela zaratiti na Jošafata."
+        },
+        {
+          "verse": 11,
+          "text": "Sami su mu neki Filistejci donosili darove i novčani danak, a Arapi mu dogonili sitnu stoku: po sedam tisuća i sedam stotina ovnova te sedam tisuća i sedam stotina jaraca."
+        },
+        {
+          "verse": 12,
+          "text": "Tako je Jošafat sve više napredovao dok ne postade vrlo velik. Sazidao je u Judeji kule i gradove-skladišta."
+        },
+        {
+          "verse": 13,
+          "text": "Imao je mnogo zaliha u judejskim gradovima, a hrabrih junaka u Jeruzalemu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Vojska"
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Evo njihova popisa po obiteljima: od Judina plemena tisućnici: vojvoda Adna i s njim trista tisuća hrabrih junaka;"
+        },
+        {
+          "verse": 15,
+          "text": "do njega vojvoda Johanan i s njim dvjesta i osamdeset tisuća;"
+        },
+        {
+          "verse": 16,
+          "text": "za njim Zikrijev sin Amasja, koji se spremno stavio u Jahvinu službu, a s njim dvjesta tisuća hrabrih junaka."
+        },
+        {
+          "verse": 17,
+          "text": "Od Benjaminova plemena: hrabri junak Eliada i s njim dvjesta tisuća ljudi naoružanih lukom i štitom;"
+        },
+        {
+          "verse": 18,
+          "text": "za njim Jehozabad i s njim sto i osamdeset tisuća pripravnih za boj."
+        },
+        {
+          "verse": 19,
+          "text": "To su oni koji su služili kralju, ne brojeći one što ih je kralj namjestio u tvrdim gradovima po svoj Judeji."
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "verse_count": 34,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Jošafat je stekao veliko bogatstvo i slavu te se sprijateljio s Ahabom.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Savez s Ahabom i proroci"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Poslije nekoliko godina došao je k Ahabu u Samariju. Ahab nakla mnogo sitne stoke i goveda njemu i ljudima što su bili s njim i nagovaraše ga da pođe na Ramot Gilead."
+        },
+        {
+          "verse": 3,
+          "text": "Izraelski kralj Ahab upita judejskoga kralja Jošafata: »Hoćeš li poći sa mnom na Ramot Gilead?« On odgovori: »Ja sam kao i ti, moj je narod kao i tvoj; s tobom ćemo u rat.«"
+        },
+        {
+          "verse": 4,
+          "text": "Jošafat još reče kralju izraelskom: »De, posavjetuj se prije s Jahvom!«"
+        },
+        {
+          "verse": 5,
+          "text": "Tada kralj izraelski sakupi proroke, njih četiri stotine, i upita ih: »Hoćemo li zavojštiti na Ramot Gilead ili da se okanim toga?« Oni odgovoriše: »Idi, jer će ga Bog predati kralju u ruke.«"
+        },
+        {
+          "verse": 6,
+          "text": "Ali Jošafat upita: »Ima li ovdje još koji prorok Jahvin da i njega upitamo?«"
+        },
+        {
+          "verse": 7,
+          "text": "Kralj izraelski odgovori Jošafatu: »Ima još jedan čovjek preko koga bismo mogli upitati Jahvu, ali ga mrzim jer mi ne proriče dobra, nego uvijek samo zlo; to je Mihej, sin Jimlin.« Jošafat reče: »Neka kralj ne govori tako!«"
+        },
+        {
+          "verse": 8,
+          "text": "Tada kralj izraelski dozva jednoga dvoranina i reče mu: »Brže dovedi Jimlina sina Miheja!«"
+        },
+        {
+          "verse": 9,
+          "text": "Izraelski kralj i judejski kralj Jošafat sjedili su svaki na svojem prijestolju, u svečanim haljinama, na gumnu pred Samarijskim vratima, a proroci proricali pred njima."
+        },
+        {
+          "verse": 10,
+          "text": "Kenaanin sin Sidkija napravi sebi željezne rogove i reče: »Ovako veli Jahve: ‘Njima ćeš bosti Aramejce dokle ih god ne zatreš.’«"
+        },
+        {
+          "verse": 11,
+          "text": "Tako su i svi drugi proroci proricali govoreći: »Idi na Ramot Gilead, uspjet ćeš: Jahve će ga predati kralju u ruke.«"
+        },
+        {
+          "verse": 12,
+          "text": "Glasnik koji bijaše otišao da zove Miheja reče mu: »Evo, svi proroci složno proriču dobro kralju. Govori i ti kao jedan od njih i proreci uspjeh!«"
+        },
+        {
+          "verse": 13,
+          "text": "Ali Mihej odvrati: »Živoga mi Jahve, govorit ću ono što mi Bog kaže!«"
+        },
+        {
+          "verse": 14,
+          "text": "Kad dođe pred kralja, upita ga kralj: »Miheju, da pođem u rat na Ramot Gilead ili da se okanim toga?« On odgovori: »Idite i uspjet ćete, jer će vam se predati u ruke!«"
+        },
+        {
+          "verse": 15,
+          "text": "Nato mu kralj reče: »Koliko ću te puta zaklinjati da mi kažeš samo istinu u Jahvino ime?«"
+        },
+        {
+          "verse": 16,
+          "text": "Tada Mihej odgovori: »Sav Izrael vidim rasut po gorama kao stado bez pastira. I Jahve veli: ‘Nemaju više gospodara, neka se u miru kući vrate!’«",
+          "lines": [
+            "Tada Mihej odgovori:",
+            "»Sav Izrael vidim rasut po gorama",
+            "kao stado bez pastira.",
+            "I Jahve veli: ‘Nemaju više gospodara,",
+            "neka se u miru kući vrate!’«"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Tada izraelski kralj reče Jošafatu: »Nisam li ti rekao da mi neće proreći dobro, nego zlo?«",
+          "lines": [
+            "Tada izraelski kralj reče Jošafatu:",
+            "»Nisam li ti rekao da mi neće proreći dobro, nego zlo?«"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "A Mihej reče: »Zato čujte riječ Jahvinu. Vidio sam Jahvu gdje sjedi na prijestolju, a sva mu vojska nebeska stajaše zdesna i slijeva.",
+          "lines": [
+            "A Mihej reče:",
+            "»Zato čujte riječ Jahvinu. Vidio sam Jahvu gdje sjedi na prijestolju, a sva mu vojska nebeska stajaše zdesna i slijeva."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Jahve upita: ‘Tko će zavesti izraelskoga kralja Ahaba da otiđe i padne u Ramot Gileadu?’ Jedan reče ovo, drugi ono."
+        },
+        {
+          "verse": 20,
+          "text": "Tada uđe jedan duh, stade pred Jahvu i reče: ‘Ja ću ga zavesti!’ Jahve ga upita: ‘Kako?’"
+        },
+        {
+          "verse": 21,
+          "text": "On odvrati: ‘Izaći ću i bit ću lažljiv duh u ustima svih njegovih proroka.’ Jahve mu reče: ‘Ti ćeš ga zavesti. I uspjet ćeš. Idi i učini tako!’"
+        },
+        {
+          "verse": 22,
+          "text": "Tako je, evo, Jahve stavio lažljiva duha u usta tvojim prorocima; ali ti Jahve navješćuje zlo.«"
+        },
+        {
+          "verse": 23,
+          "text": "Tada pristupi Kenaanin sin Sidkija i udari Miheja po obrazu pitajući: »Zar je Jahvin duh mene napustio da bi govorio s tobom?«"
+        },
+        {
+          "verse": 24,
+          "text": "Mihej odvrati: »Vidjet ćeš onoga dana kad budeš bježao iz sobe u sobu da se sakriješ.«"
+        },
+        {
+          "verse": 25,
+          "text": "Tada izraelski kralj naredi: »Uhvatite Miheja i odvedite ga gradskom zapovjedniku Amonu i kraljeviću Joašu."
+        },
+        {
+          "verse": 26,
+          "text": "Recite im: ‘Ovako veli kralj: Bacite ovoga u tamnicu i držite ga na suhu kruhu i vodi dok se sretno ne vratim.’«"
+        },
+        {
+          "verse": 27,
+          "text": "Mihej reče: »Ako se doista sretno vratiš, onda nije Jahve govorio iz mene!« I nadoda: »Čujte, svi puci!«"
+        },
+        {
+          "verse": 28,
+          "text": "Izraelski kralj i judejski kralj Jošafat krenuše na Ramot Gilead."
+        },
+        {
+          "verse": 29,
+          "text": "Izraelski kralj reče Jošafatu: »Ja ću se preobući i onda ući u boj, a ti ostani u svojoj odjeći!« Preobuče se tada izraelski kralj i oni krenuše u boj."
+        },
+        {
+          "verse": 30,
+          "text": "Aramejski kralj naredi zapovjednicima bojnih kola: »Ne udarajte ni na maloga ni na velikoga, nego jedino na izraelskoga kralja!«"
+        },
+        {
+          "verse": 31,
+          "text": "Kad zapovjednici bojnih kola ugledaše Jošafata, rekoše: »To je izraelski kralj!« I krenuše na nj da udare. Ali Jošafat povika za pomoć te mu Jahve pomože i odvrati ih od njega."
+        },
+        {
+          "verse": 32,
+          "text": "Kad zapovjednici bojnih kola vidješe da to nije izraelski kralj, okrenuše se od njega."
+        },
+        {
+          "verse": 33,
+          "text": "Jedan nasumce odape i ustrijeli izraelskoga kralja između nabora na pojasu i oklopa. Kralj reče vozaču: »Potegni uzdu i izvedi me iz boja jer sam ranjen.«"
+        },
+        {
+          "verse": 34,
+          "text": "Boj je onoga dana bio sve žešći, ali se izraelski kralj držao uspravno na bojnim kolima prema Aramejcima sve do večeri. Umro je o zalasku sunca."
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "verse_count": 11,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Kad se judejski kralj Jošafat sretno vrati kući u Jeruzalem,"
+        },
+        {
+          "verse": 2,
+          "text": "iziđe preda nj Hananijev sin vidjelac Jehu i reče kralju Jošafatu: »Zar da pomažeš bezbožniku i da ljubiš Jahvine mrzitelje? Zato i udara na te srdžba Jahvina."
+        },
+        {
+          "verse": 3,
+          "text": "Ipak se našlo nešto dobro u tebe: uklonio si ašere iz zemlje i pregnuo svim srcem da tražiš Jahvu!«"
+        },
+        {
+          "verse": 4,
+          "text": "Od tada je Jošafat živio u Jeruzalemu, opet zalazio među narod od Beer Šebe do Efrajimske gore i obraćao ga Jahvi, Bogu njegovih otaca.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Promicanje jahvizma"
+            }
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Postavi suce u zemlji u svim tvrdim judejskim gradovima, u svakome gradu."
+        },
+        {
+          "verse": 6,
+          "text": "I reče im: »Gledajte što radite, jer ne sudite u ime čovjeka, nego u ime Jahve. On je s vama dok sudite."
+        },
+        {
+          "verse": 7,
+          "text": "Sada, dakle, neka bude Jahvin strah nad vama; pazite i savjesno radite, jer u Jahve, Boga našega, nema nepravde ni osobne pristranosti, niti on prima mita.«"
+        },
+        {
+          "verse": 8,
+          "text": "Jošafat postavi levite, svećenike i poglavare izraelskih obitelji u Jeruzalemu da izriču Jahvine sudove i da presuđuju u sporovima. Oni su živjeli u Jeruzalemu"
+        },
+        {
+          "verse": 9,
+          "text": "i on im dade naputke: »Radite u Jahvinu strahu vjerno i iskrena srca."
+        },
+        {
+          "verse": 10,
+          "text": "Kakav god spor iziđe pred vas od vaše braće što žive u gradovima: bilo da su posrijedi krvna osveta, Zakon, zapovijedi, uredbe ili običaji, valja sve da im rastumačite, kako ne bi sagriješili Jahvi i kako se njegova srdžba ne bi oborila na vas i na vašu braću. Tako radite pa nećete sagriješiti."
+        },
+        {
+          "verse": 11,
+          "text": "I evo, svećenički će poglavar Amarja biti nad vama u svim Jahvinim poslovima, a Jišmaelov sin Zebadja, nadstojnik Judina doma, u svim kraljevskim poslovima. Leviti će vam služiti kao pisari. Budite jaki, i na posao! Jahve će biti s onim tko je dobar.«"
+        }
+      ]
+    },
+    {
+      "chapter": 20,
+      "verse_count": 37,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Poslije toga Moabovi i Amonovi sinovi, a s njima i neki od Meunjana, zaratiše na Jošafata.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Vjera i sveto pjevanje u edomskom ratu"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ali Jošafat dobi ovu vijest: »Dolazi na te veliko mnoštvo s one strane mora, iz Edoma; i eno ga u Haseson Tamaru, to jest u En Gediju.«"
+        },
+        {
+          "verse": 3,
+          "text": "Jošafat se uplaši i stade tražiti Jahvu te oglasi post po svoj Judeji."
+        },
+        {
+          "verse": 4,
+          "text": "Skupili se Judejci da traže Jahvu: dolazili iz svih judejskih gradova da ga traže."
+        },
+        {
+          "verse": 5,
+          "text": "Tada Jošafat ustade u judejskom zboru u Jeruzalemu, u domu Jahvinu, pred novim predvorjem"
+        },
+        {
+          "verse": 6,
+          "text": "i reče: »Jahve, Bože otaca naših, ti si Bog na nebu i vladaš nad svim krivobožačkim kraljevstvima. U tvojoj je ruci takva sila i jakost da se nitko ne može održati pred tobom.",
+          "lines": [
+            "i reče:",
+            "»Jahve, Bože otaca naših, ti si Bog na nebu i vladaš nad svim krivobožačkim kraljevstvima. U tvojoj je ruci takva sila i jakost da se nitko ne može održati pred tobom."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Ti si, o Bože naš, istjerao stanovnike ove zemlje pred svojim izraelskim narodom i dao je zasvagda potomstvu svoga prijatelja Abrahama;"
+        },
+        {
+          "verse": 8,
+          "text": "i nastanili su se u njoj i sagradili u njoj svetište tvojem imenu govoreći:"
+        },
+        {
+          "verse": 9,
+          "text": "‘Kad navali na nas kakvo zlo, osvetni mač ili kuga, ili glad, te kad stanemo pred ovim domom i pred tobom, jer je tvoje ime u ovom domu, i zavapimo k tebi iz svoje nevolje, usliši nas i spasi.’"
+        },
+        {
+          "verse": 10,
+          "text": "Sada, evo, Amonovi i Moabovi sinovi, i oni iz Seirske gore, preko kojih nisi dao Izraelu da prođe kad je dolazio iz zemlje egipatske, nego ih je obišao i nije ih zatro –"
+        },
+        {
+          "verse": 11,
+          "text": "sada, dakle, oni nama uzvraćaju zlom, došavši da nas otjeraju s baštine koju si nam ti dao."
+        },
+        {
+          "verse": 12,
+          "text": "O Bože naš, zar im nećeš suditi? Jer u nas nema sile prema tome velikom mnoštvu koje dolazi na nas niti mi znamo što da radimo, nego su nam oči uprte u te.«"
+        },
+        {
+          "verse": 13,
+          "text": "Svi su Judejci stajali pred Jahvom, s malom djecom, sa ženama i sinovima."
+        },
+        {
+          "verse": 14,
+          "text": "Tada siđe Jahvin duh usred zbora na Jahaziela, sina Zaharije, sina Benaje, sina Jeiela, sina Matanijina – levita od Asafovih sinova."
+        },
+        {
+          "verse": 15,
+          "text": "On reče: »Pozorno slušajte, svi Judejci, Jeruzalemci i ti, kralju Jošafate! Ovako vam govori Jahve: ‘Ne bojte se i ne plašite se toga velikog mnoštva, jer ovo nije vaš rat, nego Božji."
+        },
+        {
+          "verse": 16,
+          "text": "Sutra siđite na njih; oni će se penjati uz Hasiški uspon, a vi ćete ih sresti nakraj doline prema Jeruelskoj pustinji."
+        },
+        {
+          "verse": 17,
+          "text": "Ne treba da se bijete; postavite se, stojte pa gledajte kako će vam pomoći Jahve. Oj Judo i Jeruzaleme, ne bojte se i ne plašite se; sutra iziđite pred njih, i Jahve će biti s vama!’«"
+        },
+        {
+          "verse": 18,
+          "text": "Tada Jošafat pade ničice na zemlju i svi Judejci i Jeruzalemci padoše pred Jahvom da mu se poklone."
+        },
+        {
+          "verse": 19,
+          "text": "Potom leviti od Kehatovih sinova i od Korahovih sinova ustadoše i počeše hvaliti na sav glas Jahvu, Boga Izraelova."
+        },
+        {
+          "verse": 20,
+          "text": "Uranivši ujutro, krenuše prema pustinji Tekoi. Kad su izlazili, stade Jošafat i reče: »Čujte me, oj Judejci i Jeruzalemci, pouzdajte se u Jahvu, svoga Boga, i održat ćete se; pouzdajte se u njegove proroke i budite sretni!«"
+        },
+        {
+          "verse": 21,
+          "text": "Potom se posavjetova s narodom i postavi Jahvine pjevače i hvalitelje koji će u svetom ruhu ići pred naoružanim četama i pjevati: »Slavite Jahvu jer je vječna ljubav njegova!«"
+        },
+        {
+          "verse": 22,
+          "text": "Kad počeše klicati i pjevati pjesmu pohvalnicu, Jahve podiže zasjedu na Amonce, Moapce i na one iz Seirske gore koji su došli na Judu te biše razbijeni."
+        },
+        {
+          "verse": 23,
+          "text": "Jer su Amonovi sinovi i Moapci ustali na one iz Seirske gore da ih zatru i unište; a kad su svršili s onima iz Seira, stadoše udarati jedan na drugoga te se poklaše."
+        },
+        {
+          "verse": 24,
+          "text": "Kad Judejci dođoše do stražare prema pustinji i obazreše se na mnoštvo, a ono gle, mrtva tjelesa leže po zemlji; nitko se nije spasio."
+        },
+        {
+          "verse": 25,
+          "text": "Tada dođe Jošafat s narodom da pokupi plijen i nađoše ga mnogo: svakoga blaga, odjeće i dragocjenih predmeta; naplijenili su toliko da više nisu mogli nositi; tri su dana pljačkali plijen jer ga je bilo mnogo."
+        },
+        {
+          "verse": 26,
+          "text": "Četvrti se dan sakupiše u Dolini blagoslova: ondje su hvalili Jahvu, pa se zato ono mjesto prozvalo Emek Beraka, Dolina blagoslova, do danas."
+        },
+        {
+          "verse": 27,
+          "text": "Potom se okrenuše svi Judejci i Jeruzalemci, s Jošafatom na čelu, da se vrate u Jeruzalem u veselju, jer ih je Jahve razveselio nad njihovim neprijateljima."
+        },
+        {
+          "verse": 28,
+          "text": "Došli su u Jeruzalem s harfama, citrama i trubama u dom Jahvin."
+        },
+        {
+          "verse": 29,
+          "text": "A strah Božji ušao je u sva zemaljska kraljevstva kad su čula da je Jahve zavojštio na Izraelove neprijatelje."
+        },
+        {
+          "verse": 30,
+          "text": "Tako je počinulo Jošafatovo kraljevstvo, jer mu je Bog dao mir odasvud uokolo."
+        },
+        {
+          "verse": 31,
+          "text": "Jošafat je kraljevao nad Judejcima. Bilo mu je trideset i pet godina kad se zakraljio; kraljevao je dvadeset i pet godina u Jeruzalemu; mati mu se zvala Azuba, a bila je kći Šilhijeva.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Jošafatov svršetak"
+            }
+          ]
+        },
+        {
+          "verse": 32,
+          "text": "Išao je putem oca Ase ne skrećući s njega, nego čineći što je pravo u Jahvinim očima."
+        },
+        {
+          "verse": 33,
+          "text": "Samo, uzvišice nisu bile uklonjene, jer narod još nije bio upravio svoje srce Bogu otaca."
+        },
+        {
+          "verse": 34,
+          "text": "Ostala Jošafatova djela, od prvih do posljednjih, zapisana su u povijesti Hananijeva sina Jehua i uvrštena su u Knjigu o izraelskim kraljevima."
+        },
+        {
+          "verse": 35,
+          "text": "Poslije toga udružio se judejski kralj Jošafat s izraelskim kraljem Ahazjom, koji je bezbožno radio."
+        },
+        {
+          "verse": 36,
+          "text": "Udružio se s njim zato da naprave lađe i da odu u Taršiš; napravili su lađe u Esjon Geberu."
+        },
+        {
+          "verse": 37,
+          "text": "Dodavahuov sin Eliezer iz Mareše prorekao je protiv Jošafata: »Budući da si se udružio s Ahazjom, Jahve će razoriti tvoja djela.« Lađe su se razbile i nisu mogle otploviti u Taršiš."
+        }
+      ]
+    },
+    {
+      "chapter": 21,
+      "verse_count": 20,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Jošafat počinu kraj svojih otaca i bî sahranjen uz njih u Davidovu gradu. Na njegovo se mjesto zakraljio sin mu Joram."
+        },
+        {
+          "verse": 2,
+          "text": "Joram je imao šestoricu braće, Jošafatovih sinova: Azarju, Jehiela, Zahariju, Azarju, Mihaela i Šefatju. Svi su oni bili sinovi izraelskog kralja Jošafata.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "5. BEZBOŽNOST I NEVOLJE POD JORAMOM, AHAZJOM, ATALIJOM I JOAŠEM"
+            },
+            {
+              "level": "h4",
+              "text": "Joramov nastup i zločin"
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Otac im je dao mnoge darove u srebru, zlatu i dragocjenostima, s utvrđenim gradovima u Judi; kraljevstvo je dao Joramu jer je bio prvenac."
+        },
+        {
+          "verse": 4,
+          "text": "Stupivši na očevo prijestolje i utvrdivši se, Joram pobi svu braću mačem, pa i neke izraelske knezove."
+        },
+        {
+          "verse": 5,
+          "text": "Joramu su bile trideset i dvije godine kad se zakraljio, a kraljevao je osam godina u Jeruzalemu."
+        },
+        {
+          "verse": 6,
+          "text": "Živio je poput izraelskih kraljeva, kao i dom Ahabov, jer mu je kći Ahabova bila žena; radio je što je zlo u Jahvinim očima."
+        },
+        {
+          "verse": 7,
+          "text": "Ipak Jahve ne htjede razoriti kuće Davidu zbog saveza što ga sklopi s njim i zato što mu obeća da će dati svjetiljku njemu i njegovim sinovima zauvijek."
+        },
+        {
+          "verse": 8,
+          "text": "U njegovo se vrijeme Edomci odmetnuše ispod judejske vlasti i postaviše sebi kralja.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Kazne"
+            }
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Zato Joram pođe sa svojim vojskovođama i sa svim bojnim kolima. Diže se noću i pobi Edomce koji bijahu opkolili njega i zapovjednike bojnih kola."
+        },
+        {
+          "verse": 10,
+          "text": "Ipak su se Edomci oslobodili ispod judejske vlasti sve do danas. U isto se doba odmetnu i Libna da ne bude pod njegovom vlašću, jer je on ostavio Jahvu, Boga svojih otaca."
+        },
+        {
+          "verse": 11,
+          "text": "Još je i uzvišice napravio po judejskim gorama, naveo na blud Jeruzalemce i zaveo Judejce."
+        },
+        {
+          "verse": 12,
+          "text": "Tada mu od proroka Ilije stiže pismo: »Ovako veli Jahve, Bog tvoga oca Davida: ‘Kako nisi išao putovima oca Jošafata, ni putovima judejskoga kralja Ase,"
+        },
+        {
+          "verse": 13,
+          "text": "nego si išao putovima izraelskih kraljeva i naveo na blud Judejce i Jeruzalemce, kao što je učinio dom Ahabov, a uz to si poubijao vlastitu braću, svoju obitelj, koji bjehu bolji od tebe:"
+        },
+        {
+          "verse": 14,
+          "text": "evo, Jahve će svaliti veliku nesreću na tvoj narod, na tvoje sinove, tvoje žene, na sve tvoje imanje."
+        },
+        {
+          "verse": 15,
+          "text": "Oboljet ćeš od mnogih bolesti: od bolesti u crijevima, tako da će ti crijeva izaći od bolesti koja će trajati dane i dane.’«"
+        },
+        {
+          "verse": 16,
+          "text": "Jahve podiže na Jorama srdžbu Filistejaca i Arapa koji žive kraj Etiopljana."
+        },
+        {
+          "verse": 17,
+          "text": "Oni napadoše Judeju i osvojiše je, porobiše sve blago što se našlo u kraljevu dvoru, pa i njegove sinove i njegove žene, tako da nije ostao nitko, osim najmlađega sina, Joahaza."
+        },
+        {
+          "verse": 18,
+          "text": "Poslije svega toga udari ga Jahve neizlječivom crijevnom bolešću."
+        },
+        {
+          "verse": 19,
+          "text": "Ona je trajala dane i dane, a kad su se navršile dvije godine, izašla su mu crijeva s bolešću te je umro u strašnim mukama. Narod mu nije priredio mirisna paljenja, kao što je palio njegovim ocima."
+        },
+        {
+          "verse": 20,
+          "text": "Bile su mu trideset i dvije godine kad se zakraljio, a osam je godina kraljevao u Jeruzalemu. Preminuo je, a nitko nije požalio za njim; i sahraniše ga u Davidovu gradu, ali ne u kraljevskoj grobnici."
+        }
+      ]
+    },
+    {
+      "chapter": 22,
+      "verse_count": 12,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Jeruzalemci zakraljiše na njegovo mjesto najmlađeg mu sina, Ahazju, jer sve starije bijaše poubijala četa koja je s Arapima navalila na tabor; tako se zakraljio Ahazja, sin judejskoga kralja Jorama.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Ahazjina vladavina"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Bile su mu četrdeset i dvije godine kad se zakraljio. Kraljevao je jednu godinu u Jeruzalemu. Materi mu je bilo ime Atalija, Omrijeva kći."
+        },
+        {
+          "verse": 3,
+          "text": "I on je išao putovima doma Ahabova, jer ga mati zlo svjetovaše."
+        },
+        {
+          "verse": 4,
+          "text": "Činio je što je zlo u Jahvinim očima, kao dom Ahabov, jer mu baš oni bijahu savjetnici poslije očeve smrti, na njegovu propast."
+        },
+        {
+          "verse": 5,
+          "text": "Po njihovu je savjetu pošao s Joramom, sinom izraelskoga kralja Ahaba, u boj na aramejskoga kralja Hazaela u Ramot Gilead. Ali su Aramejci porazili Jorama."
+        },
+        {
+          "verse": 6,
+          "text": "On se vratio da se liječi u Jizreelu od rana što mu ih zadadoše u Rami kad se borio s aramejskim kraljem Hazaelom. Joramov sin Ahazja, judejski kralj, sišao je u Jizreel da posjeti Ahabova sina Jorama jer se Joram razbolio.",
+          "lines": [
+            "On se vratio da se liječi u Jizreelu od rana što mu ih zadadoše u Rami kad se borio s aramejskim kraljem Hazaelom.",
+            "Joramov sin Ahazja, judejski kralj, sišao je u Jizreel da posjeti Ahabova sina Jorama jer se Joram razbolio."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Ali Bog učini da taj posjet Joramu bude na propast Ahazji. Došavši, izišao je s Joramom na Nimšijeva sina Jehua, koga je Jahve pomazao da iskorijeni Ahabovu kuću."
+        },
+        {
+          "verse": 8,
+          "text": "Dok je izvršavao osvetu nad Ahabovom kućom, Jehu zateče judejske knezove i sinove Ahazjine braće koji su posluživali Ahazju i pobi ih,"
+        },
+        {
+          "verse": 9,
+          "text": "a onda krenu u potragu za Ahazjom. Uhvatili su ga dok se krio u Samariji, doveli ga k Jehuu, koji ga smaknu. Ukopali su ga, jer su rekli: »Sin je onoga Jošafata koji je tražio Jahvu svim srcem.« Tako ne ostade nitko od Ahazjine kuće koji bi imao snage da bude kralj.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Atalijin zločin"
+            }
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Zato Ahazjina mati Atalija, vidjevši gdje joj sin poginu, ustade i posmica sav kraljevski rod Judina plemena."
+        },
+        {
+          "verse": 11,
+          "text": "Ali kraljeva kći Jošeba uze Ahazjina sina Joaša; ukravši ga između kraljevih sinova koje su ubijali, metnu ga s dojiljom u ložnicu. Tako ga je Jošeba, kći kralja Jorama, žena svećenika Jojade, sakrila od Atalije, jer je bila Ahazjina sestra, te nije bio pogubljen."
+        },
+        {
+          "verse": 12,
+          "text": "Bio je sakriven s njima u domu Božjem šest godina, sve dok je zemljom vladala Atalija."
+        }
+      ]
+    },
+    {
+      "chapter": 23,
+      "verse_count": 21,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Sedme se godine Jojada ojunači i poče tražiti satnike: Jerohamova sina Azarju, Johananova sina Jišmaela, Obedova sina Azarju, Adajina sina Maaseju, Zikrijeva sina Elišafata, i sklopi s njima savez.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Svećenstvo protiv Atalije"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Počeše obilaziti po Judeji i skupiše levite iz svih judejskih gradova i obiteljske glavare u Izraelu te dođoše u Jeruzalem."
+        },
+        {
+          "verse": 3,
+          "text": "Sav zbor sklopi savez s kraljem u domu Božjem. Jojada im reče: »Gle, kraljev će sin kraljevati kao što je obećao Jahve za Davidove sinove."
+        },
+        {
+          "verse": 4,
+          "text": "Evo što valja da učinite: trećina vas koji subotom ulazite u službu, i svećenici i leviti, neka budu vratari na pragovima;"
+        },
+        {
+          "verse": 5,
+          "text": "trećina neka bude u kraljevskom dvoru, trećina na Jesodskim vratima, sav narod u predvorjima doma Jahvina."
+        },
+        {
+          "verse": 6,
+          "text": "Nitko neka ne ulazi u dom Jahvin, osim svećenika i levita koji poslužuju; oni neka ulaze jer su posvećeni. Sav narod neka se drži Jahvine naredbe."
+        },
+        {
+          "verse": 7,
+          "text": "Leviti neka okruže kralja, svaki s oružjem u ruci, i tko god pokuša ući u Dom, neka bude pogubljen. Budite uz kralja kamo god pođe ili izađe.«"
+        },
+        {
+          "verse": 8,
+          "text": "Leviti i sav judejski narod učinili su sve onako kako je naredio svećenik Jojada. Svaki je uzeo svoje ljude koji subotom ulaze u službu s onima koji subotom izlaze. Jer svećenik Jojada nije otpustio redova."
+        },
+        {
+          "verse": 9,
+          "text": "Svećenik Jojada dade satnicima koplja, štitove i oklope kralja Davida što su bili u Božjemu domu."
+        },
+        {
+          "verse": 10,
+          "text": "Postavio je sav narod, svakoga s kopljem u ruci, od južne do sjeverne strane Doma, prema žrtveniku i prema Domu oko kralja unaokolo."
+        },
+        {
+          "verse": 11,
+          "text": "Tada izvedoše kraljeva sina, staviše mu krunu na glavu, dadoše mu Svjedočanstvo i pomazaše ga za kralja. Tada Jojada i njegovi sinovi povikaše: »Živio kralj!«"
+        },
+        {
+          "verse": 12,
+          "text": "Kad Atalija ču viku naroda koji se skupio i hvalio kralja, dođe k narodu u Jahvin dom."
+        },
+        {
+          "verse": 13,
+          "text": "Pogleda bolje, kad gle, kralj stoji na svojem mjestu na ulazu, a pred kraljem zapovjednici i svirači; sav puk kliče od radosti i trubi u trube, pjevači pjevaju uz glazbala i predvode hvalospjeve. Tad Atalija razdrije haljine i povika: »Izdaja, izdaja!«"
+        },
+        {
+          "verse": 14,
+          "text": "Svećenik Jojada naredi satnicima i vojnim zapovjednicima: »Izvedite je kroz redove napolje i tko krene za njom pogubite ga mačem!« Još je svećenik dodao: »Nemojte je smaknuti u Jahvinu domu!«"
+        },
+        {
+          "verse": 15,
+          "text": "Staviše ruke na nju i kad je kroz Konjska vrata stigla do kraljevskoga dvora, ondje je pogubiše."
+        },
+        {
+          "verse": 16,
+          "text": "Tada Jojada sklopi savez između Jahve, naroda i kralja da narod bude Jahvin.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Jojadina obnova"
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Potom sav narod otiđe u Baalov hram, razori ga skupa sa žrtvenicima i polomi likove; Baalova svećenika Matana ubiše pred žrtvenicima."
+        },
+        {
+          "verse": 18,
+          "text": "Zatim Jojada postavi straže kod Jahvina doma pod nadzorom svećenika i levita, koje David bijaše porazdijelio za službu u Jahvinu domu da bi Jahvi prinosili paljenice, kao što je pisano u Mojsijevu Zakonu, s veseljem i s pjesmama, kako uredi David."
+        },
+        {
+          "verse": 19,
+          "text": "Postavio je i vratare na vratima Jahvina doma da ne bi ulazio čovjek nečist od bilo čega."
+        },
+        {
+          "verse": 20,
+          "text": "Uzevši satnike, odličnike i uglednike u narodu i sav puk, izveo je kralja iz Jahvina doma, a onda su ušli kroz gornja vrata u kraljevski dvor i posadili kralja na kraljevsko prijestolje."
+        },
+        {
+          "verse": 21,
+          "text": "Sav se puk veselio, a grad se umirio, jer su Ataliju ubili mačem."
+        }
+      ]
+    },
+    {
+      "chapter": 24,
+      "verse_count": 27,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Joašu je bilo sedam godina kad se zakraljio, a kraljevao je četrdeset godina u Jeruzalemu. Materi mu je bilo ime Sibja iz Beer Šebe.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Joaš obnavlja Hram"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Joaš je činio što je pravo u Jahvinim očima dok je bio živ svećenik Jojada."
+        },
+        {
+          "verse": 3,
+          "text": "Jojada ga je oženio dvjema ženama i on je s njima imao sinova i kćeri."
+        },
+        {
+          "verse": 4,
+          "text": "Poslije toga nakanio je u srcu obnoviti Jahvin dom."
+        },
+        {
+          "verse": 5,
+          "text": "Skupivši svećenike i levite, reče im: »Zađite po judejskim gradovima i kupite od svih Izraelaca novaca da se obnovi Dom vašega Boga, od godine do godine, a vi pohitite s tim poslom.« Ali se levitima nije htjelo."
+        },
+        {
+          "verse": 6,
+          "text": "Zato kralj pozva poglavara Jojadu i reče mu: »Zašto ne tražiš od levita da donose iz Judeje i iz Jeruzalema porez koji je odredio Jahvin sluga Mojsije i Izraelov zbor za Šator svjedočanstva?«"
+        },
+        {
+          "verse": 7,
+          "text": "Atalija i njeni sinovi bijahu poharali Božji dom, i sve stvari što su bile posvećene Jahvinu domu upotrijebili su za baale."
+        },
+        {
+          "verse": 8,
+          "text": "Potom kralj zapovjedi da se napravi kovčeg i stavi izvana na vrata Jahvina doma."
+        },
+        {
+          "verse": 9,
+          "text": "Oglasiše po Judi i Jeruzalemu da se donosi Jahvi porez što ga bijaše odredio Božji sluga Mojsije Izraelu u pustinji."
+        },
+        {
+          "verse": 10,
+          "text": "Obradovaše se svi knezovi i sav narod i počeše donositi i bacati u kovčeg dok se nije napunio."
+        },
+        {
+          "verse": 11,
+          "text": "Leviti bi donosili kovčeg kraljevskom nadgledništvu, i kad bi se vidjelo da ima mnogo novaca, dolazio je kraljev tajnik i povjerenik svećeničkog poglavara te bi ispraznili kovčeg. Onda su ga opet odnosili i stavljali na njegovo mjesto. Tako su činili svaki dan i sabrali mnogo novca."
+        },
+        {
+          "verse": 12,
+          "text": "Onda su ga kralj i Jojada davali poslovođama nad poslom oko Jahvina doma, a oni su za plaću unajmljivali klesare i drvodjelce da se obnovi Jahvin dom, pa kovače i mjedare da se popravi Jahvin dom."
+        },
+        {
+          "verse": 13,
+          "text": "Poslovođe su poslovale i popravljanje je napredovalo pod njihovom upravom; vratili su Božji dom u red i obnovili ga."
+        },
+        {
+          "verse": 14,
+          "text": "A kad su sve svršili, donijeli su pred kralja i Jojadu novce što su ostali; od toga su napravili posuđe za Jahvin dom, posuđe za posluživanje, za paljenje, plitice i druge zlatne i srebrne predmete. Paljenice su se prinosile u Jahvinu domu bez prestanka dok je god živio Jojada.",
+          "lines": [
+            "A kad su sve svršili, donijeli su pred kralja i Jojadu novce što su ostali; od toga su napravili posuđe za Jahvin dom, posuđe za posluživanje, za paljenje, plitice i druge zlatne i srebrne predmete.",
+            "Paljenice su se prinosile u Jahvinu domu bez prestanka dok je god živio Jojada."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Onda je Jojada, ostarjevši i nasitivši se života, umro u sto i tridesetoj godini."
+        },
+        {
+          "verse": 16,
+          "text": "Sahranili su ga u Davidovu gradu kod kraljeva, jer je činio dobro u Izraelu i prema Bogu i njegovu domu."
+        },
+        {
+          "verse": 17,
+          "text": "Poslije Jojadine smrti došli su Judini knezovi i poklonili se kralju. Tada ih kralj poče slušati.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Joašev otpad i kazna"
+            }
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Judejci bijahu ostavili Jahvu, Boga otaca, i stali služiti ašerama i likovima; došla je Božja srdžba na Judejce i na Jeruzalem za tu krivicu."
+        },
+        {
+          "verse": 19,
+          "text": "Slao im je Bog proroke da ih obrate k Jahvi, oni su ih opominjali, ali oni nisu htjeli slušati."
+        },
+        {
+          "verse": 20,
+          "text": "Tada Božji duh napuni Jojadina sina, svećenika Zahariju, koji, stavši poviše naroda, reče: »Ovako veli Bog: ‘Zašto kršite Jahvine zapovijedi? Zašto nećete da budete sretni? Kako ste vi ostavili Jahvu, i on će vas ostaviti.’«"
+        },
+        {
+          "verse": 21,
+          "text": "Ali su se oni pobunili protiv njega i zasuli ga kamenjem po kraljevoj zapovijedi u predvorju Jahvina doma."
+        },
+        {
+          "verse": 22,
+          "text": "Ni kralj Joaš ne sjeti se ljubavi koju mu učini otac Jojada, nego mu ubi sina; a on je umirući rekao: »Jahve neka vidi i osveti!«"
+        },
+        {
+          "verse": 23,
+          "text": "Kad je prošla godina dana, diže se na nj aramejska vojska i, navalivši na Judu i Jeruzalem, pobi sve knezove u narodu i posla sav plijen kralju u Damask."
+        },
+        {
+          "verse": 24,
+          "text": "Iako je aramejska vojska bila malena po ljudstvu, ipak joj je Jahve predao u ruke vrlo brojnu vojsku, jer ostaviše Jahvu, Boga svojih otaca. Tako su se Aramejci na Joašu osvetili.",
+          "lines": [
+            "Iako je aramejska vojska bila malena po ljudstvu, ipak joj je Jahve predao u ruke vrlo brojnu vojsku, jer ostaviše Jahvu, Boga svojih otaca.",
+            "Tako su se Aramejci na Joašu osvetili."
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "Kad su otišli od njega, ostavivši ga u teškim bolestima, pobuniše se protiv njega njegovi časnici jer bijaše ubio sina svećenika Jojade, pa i oni njega ubiše na postelji te je poginuo. Sahranili su ga u Davidovu gradu, ali ga nisu ukopali u kraljevskoj grobnici."
+        },
+        {
+          "verse": 26,
+          "text": "Evo onih što se urotiše protiv njega: Zabad, sin Amonke Šimeate, i Jozabad, sin Moapke Šimrite."
+        },
+        {
+          "verse": 27,
+          "text": "A o njegovim sinovima i o velikim proroštvima protiv njega, o obnavljanju doma Božjega, sve je zapisano u tumačenju Knjige o kraljevima. Na njegovo se mjesto zakraljio sin mu Amasja."
+        }
+      ]
+    },
+    {
+      "chapter": 25,
+      "verse_count": 28,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Amasji je bilo dvadeset i pet godina kad se zakraljio; kraljevao je dvadeset i devet godina u Jeruzalemu. Mati mu se zvala Joadana i bila je iz Jeruzalema.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "6. DJELOMIČNA POBOŽNOST I DJELOMIČNI USPJEH AMASJE, OZIJE I JOTAMA"
+            },
+            {
+              "level": "h4",
+              "text": "Amasjini vjerski nazori"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Činio je što je pravo u Jahvinim očima, ali ne svim srcem."
+        },
+        {
+          "verse": 3,
+          "text": "Kad je učvrstio kraljevstvo, pogubio je časnike koji su ubili kralja, njegova oca."
+        },
+        {
+          "verse": 4,
+          "text": "Ali im sinova nije pogubio, prema onome što je napisano u knjizi Zakona Mojsijeva, gdje Jahve zapovijeda: »Neka se očevi ne pogubljuju za sinove, ni sinovi za očeve, nego svatko neka gine za svoj grijeh.«"
+        },
+        {
+          "verse": 5,
+          "text": "Potom Amasja skupi Judejce i svega Judu i Benjamina, razvrsta ih prema obiteljima, tisućnicima i satnicima. Pošto popisa od dvadeset godina naviše, nađe trista tisuća izabranih momaka za vojsku, vičnih koplju i štitu."
+        },
+        {
+          "verse": 6,
+          "text": "Među Izraelcima najmi sto tisuća hrabrih junaka za sto srebrnih talenata."
+        },
+        {
+          "verse": 7,
+          "text": "Ali k njemu dođe čovjek Božji i reče: »Kralju, neka ne ide s tobom izraelska vojska, jer Jahve nije s Izraelcima ni s Efrajimovim sinovima,"
+        },
+        {
+          "verse": 8,
+          "text": "nego idi ti sam, ponesi se junački u boju; inače će te oboriti Bog pred neprijateljem, jer Bog može pomoći i oboriti.«"
+        },
+        {
+          "verse": 9,
+          "text": "Tada Amasja upita čovjeka Božjeg: »A što će biti od sto talenata koje sam dao izraelskim četama?« Božji čovjek odgovori: »Jahve ima da ti dade više od toga.«"
+        },
+        {
+          "verse": 10,
+          "text": "Tada Amasja odvoji čete koje mu bijahu došle od Efrajima, da se vrate u svoje mjesto. Ali se vojnici razgnjeviše na Judejce i vratiše se u svoje mjesto plamteći od srdžbe."
+        },
+        {
+          "verse": 11,
+          "text": "A Amasja, ohrabrivši se, povede narod, ode u Slanu dolinu i pobi deset tisuća seirskih sinova.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Nevjera nakon edomskog rata"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Judini su sinovi zarobili deset tisuća živih, odveli ih na vrh hridi te ih pobacali, tako da se svi razmrskaše."
+        },
+        {
+          "verse": 13,
+          "text": "Četa koju je Amasja poslao natrag da ne ide s njima u boj harala je po judejskim gradovima od Samarije pa do Bet Horona i pobila u njima tri tisuće ljudi i naplijenila silan plijen."
+        },
+        {
+          "verse": 14,
+          "text": "Poslije toga, kad se Amasja vratio razbivši Edomce, donio je bogove seirskih sinova, postavio ih sebi za bogove i počeo im se klanjati i kaditi im."
+        },
+        {
+          "verse": 15,
+          "text": "Tada se Jahve razgnjevi na Amasju i posla k njemu proroka koji ga upita: »Zašto tražiš bogove toga naroda koji nisu izbavili svoga naroda iz tvoje ruke?«"
+        },
+        {
+          "verse": 16,
+          "text": "Dok je on to govorio, kralj ga upita: »Jesi li postavljen kralju za savjetnika? Prestani! Zašto da te pogube?« Tada prorok ušutje, ali nadoda: »Znam da te Bog odlučio uništiti kad to činiš a ne slušaš mojega savjeta.«"
+        },
+        {
+          "verse": 17,
+          "text": "Tada judejski kralj Amasja smisli i poruči izraelskom kralju Joašu, sinu Jehuova sina Joahaza: »Dođi da se ogledamo!«",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Slom kod Bet Šemeša"
+            }
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "A izraelski kralj Joaš odvrati judejskom kralju Amasji: »Libanonski je trn jedanput poslao glasnike k libanonskom cedru i poručio: ‘Daj kćer mome sinu za ženu’, ali su divlje zvijeri libanonske prošle i trn izgazile."
+        },
+        {
+          "verse": 19,
+          "text": "Potukao si Edomce, pa ti se srce uzobijestilo i tražiš slavu. Radije ostani kod kuće. Zašto izazivaš zlo i hoćeš da padneš i ti i svi Judejci s tobom?«"
+        },
+        {
+          "verse": 20,
+          "text": "Ali Amasja ne posluša, jer tako bijaše odredio Bog, da ih preda u ruke Joašu zato što su pristali uz edomske bogove."
+        },
+        {
+          "verse": 21,
+          "text": "Izađe izraelski kralj Joaš te se ogledaše u boju on i judejski kralj Amasja u Bet Šemešu u Judeji."
+        },
+        {
+          "verse": 22,
+          "text": "Izraelci poraziše Judejce i oni pobjegoše pod svoj šator."
+        },
+        {
+          "verse": 23,
+          "text": "Izraelski kralj Joaš uhvati u Bet Šemešu judejskog kralja Amasju, sina Joaševa, sina Joahazova, i odvede ga u Jeruzalem; onda sruši jeruzalemski zid od Efrajimovih vrata do Ugaonih vrata, u dužini od četiri stotine lakata."
+        },
+        {
+          "verse": 24,
+          "text": "Uzevši sve zlato, srebro i posuđe što se nalazilo u domu Božjem kod Obed Edoma i u riznici kraljevskog dvora, povrh toga i taoce, vrati se u Samariju."
+        },
+        {
+          "verse": 25,
+          "text": "Judejski je kralj Amasja, Joašev sin, živio još petnaest godina poslije smrti izraelskoga kralja Joaša, Joahazova sina.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Amasjin svršetak"
+            }
+          ]
+        },
+        {
+          "verse": 26,
+          "text": "Ostala Amasjina djela, od prvih do posljednjih, zapisana su u Knjizi o judejskim i izraelskim kraljevima."
+        },
+        {
+          "verse": 27,
+          "text": "Otkako je Amasja ostavio Jahvu, kovala se protiv njega urota u Jeruzalemu. Iako je pobjegao u Lakiš, poslaše za njim u Lakiš ljude koji ga ondje ubiše."
+        },
+        {
+          "verse": 28,
+          "text": "Odande su ga prenijeli na konjima i sahranili kraj njegovih otaca u Judinu gradu."
+        }
+      ]
+    },
+    {
+      "chapter": 26,
+      "verse_count": 23,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Tada sav judejski narod uze Uziju, komu bijaše šesnaest godina, i zakraljiše ga namjesto njegova oca Amasje.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Početak Uzijina kraljevanja"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "On je opet sagradio Elat vrativši ga Judeji, pošto je kralj počinuo kod svojih otaca."
+        },
+        {
+          "verse": 3,
+          "text": "Uziji bijaše šesnaest godina kad se zakraljio, a kraljevao je pedeset i dvije godine u Jeruzalemu. Mati mu se zvala Jekolija, a bila je iz Jeruzalema."
+        },
+        {
+          "verse": 4,
+          "text": "Činio je što je pravo u Jahvinim očima, sasvim kao i njegov otac Amasja."
+        },
+        {
+          "verse": 5,
+          "text": "Tražio je Boga za života Zaharije, koji ga je učio Božjem strahu. Dokle je god tražio Jahvu, davao mu je Bog sreću."
+        },
+        {
+          "verse": 6,
+          "text": "On je izišao i zavojštio na Filistejce, srušio zid Gata, zid Jabne i zid Ašdoda; sagradio je mjesta po Ašdodu i Filisteji.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Uzijina moć"
+            }
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Bog mu je pomogao protiv Filistejaca i protiv Arapa, koji su živjeli u Gur Baalu, i protiv Meunjana."
+        },
+        {
+          "verse": 8,
+          "text": "Amonci su davali danak Uziji, a njegov se glas pronio do Egipta, jer se bijaše vrlo osilio."
+        },
+        {
+          "verse": 9,
+          "text": "Uzija je sagradio kule u Jeruzalemu kod Ugaonih vrata, kod Dolinskih vrata i na uglu te ih utvrdio."
+        },
+        {
+          "verse": 10,
+          "text": "Sagradio je i u pustinji kule i iskopao mnogo studenaca, jer je imao mnogo stoke i u Šefeli i po Ravnici, ratara i vinogradara u gorama i vrtovima, jer je volio poljodjelstvo."
+        },
+        {
+          "verse": 11,
+          "text": "Uzija je imao vojsku vještu boju koja je išla u rat u četama po broju kako ih je izbrojio tajnik Jeiel i nadzornik Maasja pod upravom Hananije, jednoga od kraljevih knezova."
+        },
+        {
+          "verse": 12,
+          "text": "Svega je na broj bilo, obiteljskih glavara, hrabrih junaka, dvije tisuće i šest stotina."
+        },
+        {
+          "verse": 13,
+          "text": "Pod njihovom je upravom bilo silne vojske trista sedam tisuća i pet stotina boju vičnih ratnika da pomažu kralju protiv neprijatelja."
+        },
+        {
+          "verse": 14,
+          "text": "Uzija je pripravio svoj vojsci štitove, koplja, kacige, oklope, lukove i kamenje za praćke."
+        },
+        {
+          "verse": 15,
+          "text": "Napravio je u Jeruzalemu vješto smišljene bojne sprave, iznašašće nekoga graditelja, da stoje na kulama i na kruništima, da bacaju strijele i veliko kamenje. Pronio mu se glas nadaleko jer je uživao čudesnu pomoć sve dok se nije osilio."
+        },
+        {
+          "verse": 16,
+          "text": "Ali kad se osilio, uzobijestilo mu se srce dotle da se pokvario te se iznevjerio Jahvi, svome Bogu, jer je ušao u Jahvin Hekal i počeo prinositi kâd na kadionom žrtveniku.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Oholost i kazna"
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Ali je za njim ušao svećenik Azarja i s njim osamdeset Jahvinih svećenika, čestitih ljudi."
+        },
+        {
+          "verse": 18,
+          "text": "Oni ustadoše na kralja Uziju govoreći: »Nije tvoje, Uzijo, da kadiš Jahvi, nego je to dužnost svećenikâ, Aronovih sinova, koji su posvećeni da kade. Izlazi iz Svetišta! Iznevjerio si se. I ne služi ti na čast pred Bogom Jahvom!«"
+        },
+        {
+          "verse": 19,
+          "text": "Tada se Uzija rasrdi držeći u ruci kadionicu da kadi; kad se rasrdio na svećenike, izbi mu guba na čelu pred svećenicima u domu Jahvinu kraj kadionog žrtvenika."
+        },
+        {
+          "verse": 20,
+          "text": "Kad ga svećenički poglavar Azarja i svi svećenici izbližega pogledaše, a ono, gle, izbila mu guba na čelu. Brže ga otjeraše odande, a i on sam pohitje da iziđe jer ga Jahve bijaše udario."
+        },
+        {
+          "verse": 21,
+          "text": "Kralj Uzija ostade gubav do smrti i stanovaše u odvojenoj kući, jer bijaše odstranjen od doma Jahvina; njegov je sin Jotam bio upravitelj kraljevskoga dvora i sudio je puku zemlje."
+        },
+        {
+          "verse": 22,
+          "text": "Ostala Uzijina djela, od prvih do posljednjih, opisao je Amosov sin, prorok Izaija."
+        },
+        {
+          "verse": 23,
+          "text": "Uzija je počinuo i sahranili su ga kraj njegovih otaca na polju kod kraljevske grobnice, rekavši: »Gubav je.« Na njegovo se mjesto zakraljio sin mu Jotam."
+        }
+      ]
+    },
+    {
+      "chapter": 27,
+      "verse_count": 9,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Jotamu je bilo dvadeset i pet godina kad se zakraljio, a kraljevao je šesnaest godina u Jeruzalemu. Materi mu je bilo ime Jeruša, Sadokova kći.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Jotamovo kraljevanje"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Činio je što je pravo u Jahvinim očima, sasvim kao otac mu Uzija; samo što nije ušao u Jahvin Hekal. Narod je i dalje bio pokvaren."
+        },
+        {
+          "verse": 3,
+          "text": "Sagradio je Gornja vrata doma Jahvina; i na Ofelskom zidu mnogo je gradio."
+        },
+        {
+          "verse": 4,
+          "text": "Podigao je i gradove po Judejskoj gori, a u šumama dvorove i kule."
+        },
+        {
+          "verse": 5,
+          "text": "Vojevao je s kraljem Amonovih sinova i pobijedio ih. Amonovi su mu sinovi dali one godine sto srebrnih talenata i deset tisuća kora pšenice i deset tisuća kora ječma. Toliko su mu Amonovi sinovi priložili i druge i treće godine."
+        },
+        {
+          "verse": 6,
+          "text": "Tako se Jotam utvrdio, jer je uredio svoj život pred Jahvom, svojim Bogom."
+        },
+        {
+          "verse": 7,
+          "text": "Ostala su Jotamova djela i svi njegovi ratovi i putovi zapisani u Knjizi o izraelskim i judejskim kraljevima."
+        },
+        {
+          "verse": 8,
+          "text": "Bilo mu je dvadeset i pet godina kad se zakraljio. Kraljevao je šesnaest godina u Jeruzalemu."
+        },
+        {
+          "verse": 9,
+          "text": "Tada Jotam počinu kod otaca i sahraniše ga u Davidovu gradu. Na njegovo se mjesto zakralji sin mu Ahaz."
+        }
+      ]
+    },
+    {
+      "chapter": 28,
+      "verse_count": 27,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Ahazu je bilo dvadeset godina kad se zakraljio, a kraljevao je šesnaest godina u Jeruzalemu, ali nije činio što je pravo u Jahvinim očima kao što je činio njegov otac David.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "V. VELIKA EZEKIJINA I JOŠIJINA OBNOVA"
+            },
+            {
+              "level": "h3",
+              "text": "1. AHAZOVA BEZBOŽNOST"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Živio je poput izraelskih kraljeva, pa je i likove salio baalima."
+        },
+        {
+          "verse": 3,
+          "text": "Sam je prinosio kâd u dolini Hinomova sina i proveo vlastite sinove kroz oganj, po gnusnom običaju krivobožačkih naroda što ih je Jahve protjerao pred Izraelovim sinovima."
+        },
+        {
+          "verse": 4,
+          "text": "Prinosio je žrtve i kadio po uzvišicama i brežuljcima i pod svakim zelenim drvetom."
+        },
+        {
+          "verse": 5,
+          "text": "Zato ga Jahve, njegov Bog, predade u ruke aramejskom kralju te ga on potuče, zarobi mu veliko mnoštvo ljudi i odvede ih u Damask. Još je bio predan u ruke izraelskom kralju koji ga je hametice porazio.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Najezda"
+            }
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Remalijin je sin Pekah pobio među Judejcima sto dvadeset tisuća hrabrih junaka u jedan dan, jer su bili ostavili Jahvu, Boga svojih otaca."
+        },
+        {
+          "verse": 7,
+          "text": "A junak od Efrajimova plemena Zikri pogubio je kraljeva sina Maaseju i dvorskoga upravitelja Azrikama i Elkanu, drugoga do kralja."
+        },
+        {
+          "verse": 8,
+          "text": "Izraelovi su sinovi zarobili od svoje braće dvjesta tisuća žena, sinova i kćeri, a zadobili su i silan plijen od njih i odnijeli ga u Samariju."
+        },
+        {
+          "verse": 9,
+          "text": "Ondje bijaše Jahvin prorok po imenu Oded; izašao on pred vojsku što je išla u Samariju i rekao: »Gle, Jahve, Bog vaših otaca, razjario se na Judejce i zato ih je predao u vaše ruke te ste ih gnjevno pobili da je do neba doprlo.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prorok Oded"
+            }
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "A sada još mislite podjarmiti Judejce i Jeruzalemce da vam budu robovi i robinje; a ipak, niste li i vi puni krivice prema Jahvi, svome Bogu?"
+        },
+        {
+          "verse": 11,
+          "text": "Zato me poslušajte sada i vratite to roblje što ga zarobiste od svoje braće, jer će se izliti na vas Jahvin gnjev.«"
+        },
+        {
+          "verse": 12,
+          "text": "Tada ustadoše neki između glavara Efrajimovih sinova, i to Johananov sin Azarja, Mešilemotov sin Berekja i Šalumov sin Ezekija, Hadlajev sin Amasa, na one što su se vraćali s vojske."
+        },
+        {
+          "verse": 13,
+          "text": "Pa im rekoše: »Nemojte dovoditi ovamo toga roblja, jer, uz krivicu koja je na nama pred Jahvom, vi mislite još dometnuti na naše grijehe i na našu krivicu, kaoda nije dosta velika naša krivica i jarosni gnjev na Izraelu.«"
+        },
+        {
+          "verse": 14,
+          "text": "Tada ostaviše ratnici roblje i plijen pred knezovima i svim zborom."
+        },
+        {
+          "verse": 15,
+          "text": "Onda su poimence prozvani ljudi ustali, osokolili robove, obukli sve gole u odjeću iz plijena; a kad su ih obukli, obuli, nahranili, napojili i namazali, poveli su na magarcima sve iznemogle i odveli ih u palmov grad Jerihon do njihove braće, a potom se vratili u Samariju."
+        },
+        {
+          "verse": 16,
+          "text": "U to je doba kralj Ahaz zamolio asirske kraljeve da mu pomognu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Ahazovi prijestupi"
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Edomci bijahu opet navalili i porazili Judejce te ih odveli u roblje."
+        },
+        {
+          "verse": 18,
+          "text": "Filistejci se raširili po gradovima Judejske Šefele i Negeba i, zauzevši Bet-Šemeš, Ajalon, Gederot i Soko sa selima, Timnu sa selima i Gimzo sa selima, nastanili se ondje."
+        },
+        {
+          "verse": 19,
+          "text": "Jahve je počeo ponižavati Judejce zbog judejskoga kralja Ahaza, jer je Ahaz razuzdao Judejce i teško se iznevjerio Jahvi."
+        },
+        {
+          "verse": 20,
+          "text": "Došao je na nj asirski kralj Tiglat-Pileser i pritijesnio ga umjesto da ga utvrdi."
+        },
+        {
+          "verse": 21,
+          "text": "Ahaz bijaše opljačkao Jahvin dom, kraljevski dvor i knezove, i sve to dao asirskom kralju, ali mu ništa nije pomoglo."
+        },
+        {
+          "verse": 22,
+          "text": "Dok je bio u nevolji, postao je još nevjerniji Jahvi; takav je bio kralj Ahaz."
+        },
+        {
+          "verse": 23,
+          "text": "Počeo je žrtvovati damaščanskim bogovima koji su ga porazili, misleći: »Kad bogovi aramejskih kraljeva njima pomažu, žrtvovat ću im da bi i meni pomagali.« Ali su oni bili na propast njemu i svem Izraelu."
+        },
+        {
+          "verse": 24,
+          "text": "Ahaz je pokupio posuđe iz Božjega doma, slupao ga, zatvorio vrata Jahvina doma i podigao žrtvenike po svim uglovima u Jeruzalemu."
+        },
+        {
+          "verse": 25,
+          "text": "I u svakom je pojedinom judejskom gradu podigao uzvišice da kadi tuđim bogovima, dražeći Jahvu, Boga otaca."
+        },
+        {
+          "verse": 26,
+          "text": "Ostala su njegova djela i svi njegovi putovi, od prvih do posljednjih, zapisani u Knjizi o judejskim i izraelskim kraljevima."
+        },
+        {
+          "verse": 27,
+          "text": "Onda je Ahaz počinuo kod otaca. Sahranili su ga u Gradu, u Jeruzalemu, ali ga nisu unijeli u grobnicu judejskih kraljeva. Na njegovo se mjesto zakraljio sin mu Ezekija."
+        }
+      ]
+    },
+    {
+      "chapter": 29,
+      "verse_count": 36,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Ezekiji je bilo dvadeset i pet godina kad se zakraljio. Kraljevao je dvadeset i devet godina u Jeruzalemu. Materi mu je bilo ime Abija, kći Zaharijina.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "2. EZEKIJIN OBNOVITELJSKI RAD"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Činio je što je pravo u očima Jahvinim, sasvim kao i njegov otac David."
+        },
+        {
+          "verse": 3,
+          "text": "Prve godine prvoga mjeseca svojega kraljevanja otvorio je vrata doma Jahvina i popravio ih.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Čišćenje Hrama"
+            }
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Onda je pozvao svećenike i levite i, sabravši ih na istočni trg,"
+        },
+        {
+          "verse": 5,
+          "text": "rekao: »Čujte me, leviti! Sada se posvetite i posvetite dom Jahve, Boga svojih otaca, i uklonite nečist iz Svetinje.",
+          "lines": [
+            "rekao:",
+            "»Čujte me, leviti! Sada se posvetite i posvetite dom Jahve, Boga svojih otaca, i uklonite nečist iz Svetinje."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Naši su se oci iznevjerili i radili što je zlo u očima Jahve, našega Boga. Ostavili su ga i odvratili lice od Jahvina prebivališta, okrenuvši mu leđa."
+        },
+        {
+          "verse": 7,
+          "text": "Zatvorili su trijemska vrata i potrnuli svjetiljke; nisu kadili kadom niti su prinosili paljenice u svetištu Izraelova Boga."
+        },
+        {
+          "verse": 8,
+          "text": "Zato se Jahve rasrdio na Judejce i na Jeruzalem te je dopustio da budu zlostavljeni i da budu na užas i ruglo, kako vidite svojim očima."
+        },
+        {
+          "verse": 9,
+          "text": "I očevi su nam, eto, pali od mača, a sinovi, kćeri i žene zato su nam u ropstvu."
+        },
+        {
+          "verse": 10,
+          "text": "Sad sam, dakle, namislio u svom srcu sklopiti savez s Jahvom, Izraelovim Bogom, da bi se odvratio od nas njegov jarosni gnjev."
+        },
+        {
+          "verse": 11,
+          "text": "Moja djeco, sad se nemojte lijeniti, jer vas je izabrao Jahve da stojite pred njim, da mu služite i da mu budete službenici i da mu kadite.«"
+        },
+        {
+          "verse": 12,
+          "text": "Tada ustadoše leviti: Amasajev sin Mahat i Azarjin sin Joel od Kehatovih sinova; od Merarijevih sinova: Abdijev sin Kiš i Jehalelelov sin Azarja; od Geršonovaca: Zimin sin Joah i Joahov sin Eden;"
+        },
+        {
+          "verse": 13,
+          "text": "od Elisafanovih sinova: Šimri i Jeiel; od Asafovih sinova: Zaharija i Matanija;"
+        },
+        {
+          "verse": 14,
+          "text": "od Hemanovih sinova: Jehiel i Šimej; od Jedutunovih sinova: Šemaja i Uziel."
+        },
+        {
+          "verse": 15,
+          "text": "Oni skupiše braću, posvetiše se i dođoše kako je bio zapovjedio kralj po Jahvinim riječima da očiste Jahvin dom."
+        },
+        {
+          "verse": 16,
+          "text": "Svećenici uđoše u Jahvin dom da ga očiste. Počeli su svu nečist što su je našli u Jahvinu Hekalu iznositi u predvorje Jahvina doma; leviti su je primali iznoseći je napolje na potok Kidron."
+        },
+        {
+          "verse": 17,
+          "text": "Počeli su posvećivati prvoga dana prvoga mjeseca, a osmoga su dana istoga mjeseca ušli u Jahvin trijem; posvećivali su Jahvin dom osam dana; šesnaestoga su dana prvoga mjeseca završili."
+        },
+        {
+          "verse": 18,
+          "text": "Onda su ušli kralju Ezekiji i rekli: »Očistili smo sav Jahvin dom: žrtvenik za paljenice sa svim njegovim priborom, stol za prinesene kruhove sa svim njegovim priborom,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Žrtva okajnica"
+            }
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "a sve posuđe koje bijaše zabacio kralj Ahaz za svojega kraljevanja i nevjere opet smo obnovili i posvetili; eno ga pred Jahvinim žrtvenikom.«"
+        },
+        {
+          "verse": 20,
+          "text": "Tada kralj Ezekija porani, skupi gradske knezove i ode u Jahvin dom."
+        },
+        {
+          "verse": 21,
+          "text": "Dovedoše sedam mladih junaca, sedam ovnova, sedam jaganjaca, sedam jaraca za okajnicu, za kraljevstvo i za svetište i za Judu; on zapovjedi Aronovim sinovima svećenicima da ih prinesu za paljenicu na Jahvinu žrtveniku."
+        },
+        {
+          "verse": 22,
+          "text": "Zaklavši goveda, svećenici uzeše krv i poškropiše žrtvenik; zaklaše ovnove i krvlju poškropiše žrtvenik, zaklaše jaganjce i krvlju poškropiše žrtvenik."
+        },
+        {
+          "verse": 23,
+          "text": "Dovedoše jarce za okajnicu pred kralja i pred zbor te metnuše ruke na njih."
+        },
+        {
+          "verse": 24,
+          "text": "Onda ih zaklaše svećenici i prinesoše kao okajnicu njihovu krv na žrtveniku da izvrše obred pomirenja za sav Izrael, jer kralj bijaše zapovjedio da se prinese paljenica i okajnica za sav Izrael."
+        },
+        {
+          "verse": 25,
+          "text": "Postavio je u Jahvinu domu levite s cimbalima, harfama i citrama, kako bijaše zapovjedio David, kraljev vidjelac Gad i prorok Natan, jer je od Jahve dolazila zapovijed po njegovim prorocima."
+        },
+        {
+          "verse": 26,
+          "text": "Tako su leviti stajali s Davidovim glazbalima, a svećenici s trubama."
+        },
+        {
+          "verse": 27,
+          "text": "Tada Ezekija zapovjedi da prinesu paljenice na žrtveniku. Kad se stala prinositi paljenica, počela je Jahvina pjesma uz trube i uz glazbala izraelskoga kralja Davida."
+        },
+        {
+          "verse": 28,
+          "text": "Sav se zbor klanjao, pjevači pjevali, a trubači trubili, i to sve dok se nije svršila paljenica."
+        },
+        {
+          "verse": 29,
+          "text": "Kad se svršilo prinošenje paljenice, kralj i svi koji bijahu s njim pobožno padoše na koljena i pokloniše se."
+        },
+        {
+          "verse": 30,
+          "text": "Onda su kralj i knezovi zapovjedili levitima da hvale Jahvu riječima Davida i vidioca Asafa; oni su počeli hvaliti s najvećim veseljem i, pavši ničice, poklonili se."
+        },
+        {
+          "verse": 31,
+          "text": "Tada Ezekija progovori: »Sada ste posvetili ruke Jahvi; pristupite i donesite klanice i zahvalnice u dom Jahvin.« Sav je zbor donio klanice i zahvalnice. Tko je god bio spremna srca, prinio je paljenice."
+        },
+        {
+          "verse": 32,
+          "text": "Paljenicâ što ih je donio zbor bijaše na broj: sedamdeset goveda, sto ovnova, dvjesta jaganjaca, sve za paljenice Jahvi."
+        },
+        {
+          "verse": 33,
+          "text": "Ostalih posvećenih darova bilo je šest stotina goveda i tri tisuće grla sitne stoke."
+        },
+        {
+          "verse": 34,
+          "text": "Ali je svećenika bilo premalo, tako da nisu mogli oderati svih paljenica; zato su im pomagala braća leviti, dok se nije svršio posao i dok se nisu posvetili drugi svećenici, jer su leviti bili gorljiviji srcem da se posvete nego svećenici."
+        },
+        {
+          "verse": 35,
+          "text": "Bilo je i mnogo paljenica s pretilinom od pričesnica i s ljevanicama na paljenice. Tako se opet obnovila služba u Jahvinu domu."
+        },
+        {
+          "verse": 36,
+          "text": "I Ezekija se veselio, i sav narod s njime, što je Bog spremio narodu, jer se sve to iznenada dogodilo."
+        }
+      ]
+    },
+    {
+      "chapter": 30,
+      "verse_count": 27,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Potom Ezekija poruči svim Izraelcima i Judejcima pa napisa i pisma Efrajimovu i Manašeovu plemenu da dođu u Jahvin dom u Jeruzalem da proslave Pashu Jahvi, Izraelovu Bogu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Poziv na Pashu"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Kralj, vijećajući s knezovima i sa svim zborom u Jeruzalemu, odluči da slave Pashu drugoga mjeseca."
+        },
+        {
+          "verse": 3,
+          "text": "Toga nisu mogli učiniti u pravo vrijeme jer nije bilo dosta posvećenih svećenika, i narod se ne bijaše skupio u Jeruzalemu."
+        },
+        {
+          "verse": 4,
+          "text": "I to je bilo pravo u kraljevim očima i u očima svega zbora,"
+        },
+        {
+          "verse": 5,
+          "text": "pa su odredili da se oglasi po svem Izraelu od Beer Šebe pa do Dana da dođu i proslave Pashu Jahvi, Izraelovu Bogu, u Jeruzalemu, jer je premnogi nisu svetkovali kako je propisano."
+        },
+        {
+          "verse": 6,
+          "text": "Tako su otišli glasnici s pismima od kralja i njegovih knezova po svem Izraelu i Judi te su govorili po kraljevoj zapovijedi: »Izraelovi sinovi, obratite se Jahvi, Abrahamovu, Izakovu i Izraelovu Bogu, pa će se i on obratiti k Ostatku koji vam je ostao od ruku asirskih kraljeva."
+        },
+        {
+          "verse": 7,
+          "text": "I nemojte biti kao vaši očevi i vaša braća, koji su se iznevjerili Jahvi, Bogu svojih otaca, te ih je predao propasti, kako i sami vidite."
+        },
+        {
+          "verse": 8,
+          "text": "Nemojte, dakle, biti tvrdovrati kao vaši očevi: pružite ruku Jahvi i dođite u njegovu Svetinju koju je posvetio zauvijek i služite Jahvi, svome Bogu, pa će odvratiti od vas svoj žestoki gnjev."
+        },
+        {
+          "verse": 9,
+          "text": "Ako se obratite Jahvi, vaša će braća i vaši sinovi naći milost u onih koji su ih zarobili pa će se vratiti u ovu zemlju; jer je Jahve, vaš Bog, milostiv i milosrdan i neće odvratiti lica od vas ako se vi obratite njemu.«"
+        },
+        {
+          "verse": 10,
+          "text": "I tako su glasnici krenuli od grada do grada po Efrajimovoj i Manašeovoj zemlji pa do Zebuluna, a ljudi im se podsmijavali i rugali."
+        },
+        {
+          "verse": 11,
+          "text": "Ipak su se neki od Ašerova, od Manašeova i od Zebulunova plemena ponizili i došli u Jeruzalem."
+        },
+        {
+          "verse": 12,
+          "text": "Na Judejce je pak sišla Božja ruka i prožela ih jednodušnošću da čine što bijaše zapovjedio kralj i knezovi po Jahvinoj riječi."
+        },
+        {
+          "verse": 13,
+          "text": "Skupilo se u Jeruzalemu mnogo naroda da slave Blagdan beskvasnih kruhova, drugoga mjeseca; zbor je bio vrlo velik."
+        },
+        {
+          "verse": 14,
+          "text": "Tada su ustali i uklonili žrtvenike što su bili u Jeruzalemu, uklonili sve kadionike i bacili ih u potok Kidron."
+        },
+        {
+          "verse": 15,
+          "text": "Onda su stali klati pashu četrnaestoga dana drugoga mjeseca, a svećenici i leviti postidjeli se i, posvetivši se, počeli unositi paljenice u Jahvin dom.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pasha i beskvasni kruhovi"
+            }
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Stali su na svoje mjesto po pravilu, po Zakonu Mojsija, čovjeka Božjeg; svećenici su škropili krvlju primajući je iz ruku levita."
+        },
+        {
+          "verse": 17,
+          "text": "Kako ih bijaše mnogo u zboru koji se nisu posvetili, leviti su klali pashalne jaganjce za sve koji nisu bili čisti, da bi ih posvetili Jahvi."
+        },
+        {
+          "verse": 18,
+          "text": "Najveći se dio naroda, mnogi od Efrajimova i Manašeova, Jisakarova i Zebulunova plemena, nije očistio te je jeo pashu nepropisno. Ali se za njih pomolio Ezekija govoreći: »Blagi Jahve neka očisti od grijeha svakoga"
+        },
+        {
+          "verse": 19,
+          "text": "tko je upravio srce da traži Boga Jahvu, Boga svojih otaca, ako i nije čist kako dolikuje Svetištu!«"
+        },
+        {
+          "verse": 20,
+          "text": "Jahve je uslišio Ezekiju i oprostio narodu."
+        },
+        {
+          "verse": 21,
+          "text": "Tako su Izraelovi sinovi koji su se zatekli u Jeruzalemu svetkovali Blagdan beskvasnih kruhova sedam dana s velikim veseljem, a leviti i svećenici hvalili Jahvu iz dana u dan uz glazbala za Jahvinu slavu."
+        },
+        {
+          "verse": 22,
+          "text": "Ezekija je hrabrio levite koji su pokazivali divnu privrženost Jahvi. Jeli su svečanu žrtvu sedam dana, žrtvujući žrtve pričesnice i slaveći Jahvu, Boga svojih otaca."
+        },
+        {
+          "verse": 23,
+          "text": "Potom je sav zbor vijećajući odlučio da svetkuje još sedam dana; svetkovali su još sedam dana s veseljem."
+        },
+        {
+          "verse": 24,
+          "text": "Judejski kralj Ezekija darovao je zboru tisuću mladih junaca i sedam tisuća grla sitne stoke; a knezovi darivali zboru tisuću mladih junaca i deset tisuća grla sitne stoke; tada se posvetilo mnogo svećenika."
+        },
+        {
+          "verse": 25,
+          "text": "Tako se proveselio sav judejski zbor, i svećenici i leviti, i sav zbor što je bio došao iz Izraela, i došljaci koji bijahu došli iz zemlje izraelske, i stanovnici u Judeji."
+        },
+        {
+          "verse": 26,
+          "text": "Bilo je veliko veselje u Jeruzalemu, jer od vremena Davidova sina Salomona, izraelskoga kralja, nije bilo tako u Jeruzalemu."
+        },
+        {
+          "verse": 27,
+          "text": "Onda su ustali svećenici i leviti te blagoslovili narod: njihov je glas bio uslišan, a njihova je molitva doprla do Božjega svetog prebivališta na nebu."
+        }
+      ]
+    },
+    {
+      "chapter": 31,
+      "verse_count": 21,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Kad se sve to svršilo, svi Izraelovi sinovi koji su se našli ondje zađoše po judejskim gradovima te su razbijali stupove, sjekli ašere i obarali uzvišice i žrtvenike po svem Judinu, Benjaminovu, Efrajimovu i Manašeovu plemenu dokle god nisu završili. Onda se svi Izraelovi sinovi vratiše svaki na svoj posjed, u svoje gradove.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Obnova bogoštovlja"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ezekija je opet uredio svećeničke i levitske redove po njihovim redovima, svakoga prema njegovoj službi, svećenike i levite, za paljenice i za pričesnice, da služe, slave i hvale Boga na vratima Jahvina tabora.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Obnova svećeništva"
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Odredio je kraljevski doprinos od svoga imanja za paljenice, za paljenice jutarnje i večernje i za paljenice što se prinose subotom, za mlađaka i na blagdane, kako je napisano u Zakonu Jahvinu."
+        },
+        {
+          "verse": 4,
+          "text": "Zapovjedio je narodu, jeruzalemskim stanovnicima, da daju dio svećenicima i levitima da se utvrde u Zakonu Jahvinu."
+        },
+        {
+          "verse": 5,
+          "text": "Kad se to razglasilo, počeli su Izraelovi sinovi donositi najboljega žita, novog vina, ulja i meda i svakojaka poljskog priroda i donosili su obilne desetine od svega."
+        },
+        {
+          "verse": 6,
+          "text": "Izraelovi i Judini sinovi, koji su živjeli u judejskim gradovima, također su donosili desetinu od goveda i sitne stoke i desetinu od svetih stvari posvećenih Jahvi, njihovu Bogu; donosili su i davali sve hrpu na hrpu."
+        },
+        {
+          "verse": 7,
+          "text": "Trećega su mjeseca počeli slagati u hrpe, a sedmoga su mjeseca završili."
+        },
+        {
+          "verse": 8,
+          "text": "Onda je došao Ezekija s knezovima i, ugledavši hrpe, blagosloviše Jahvu i njegov izraelski narod."
+        },
+        {
+          "verse": 9,
+          "text": "Potom se Ezekija propitao kod svećenika i levita za hrpe."
+        },
+        {
+          "verse": 10,
+          "text": "Odgovarajući, svećenički poglavar Azarja, od Sadokova doma, reče: »Otkako su počeli donositi ove prinose u dom Jahvin, jedemo i siti smo, a mnogo i pretječe, jer je Jahve blagoslovio svoj narod te je preteklo ovo mnoštvo.«"
+        },
+        {
+          "verse": 11,
+          "text": "Tada Ezekija zapovjedi da se urede sobe u Jahvinu domu. Kad su ih spremili,"
+        },
+        {
+          "verse": 12,
+          "text": "počeli su onamo unositi prinose, desetine i svetinje; nad tim je bio predstojnik levit Konanija i brat mu Šimej, drugi do njega."
+        },
+        {
+          "verse": 13,
+          "text": "A Jehiel, Azazja, Nahat, Asahel, Jerimot, Jozabad, Eliel, Jismakja, Mahat i Benaja biše postavljeni kao nadglednici uz Konaniju i brata mu Šimeja, po nalogu kralja Ezekije i Azarje, predstojnika u Božjem domu."
+        },
+        {
+          "verse": 14,
+          "text": "Kore, sin levita Jimne, vratar Istočnih vrata, bio je nad dragovoljnim Božjim prinosima da bi prinosio Jahvine podizanice i svetinje nad svetinjama."
+        },
+        {
+          "verse": 15,
+          "text": "Pod njim su bili Eden, Minjamin, Ješua, Šemaja, Amarja i Šekanija po svećeničkim gradovima da savjesno dijele svojoj braći po njihovim redovima, kako velikome tako i malome –"
+        },
+        {
+          "verse": 16,
+          "text": "osim muškaraca starijih od trideset godina popisanih u rodovnicima – svima koji su dolazili u dom Jahvin na svoj svakidašnji posao da obave obredne dužnosti po svojim redovima."
+        },
+        {
+          "verse": 17,
+          "text": "U rodovnike su bili popisani svećenici po obiteljima i leviti od dvadeset godina naviše po svojim službama, po svojim redovima."
+        },
+        {
+          "verse": 18,
+          "text": "U rodovnike bijahu popisana sva njihova djeca, njihove žene, njihovi sinovi i njihove kćeri, za svekoliki zbor, jer su se iskreno posvetili svetinjama."
+        },
+        {
+          "verse": 19,
+          "text": "Aronovi sinovi, svećenici na poljskim pašnjacima svojih gradova, u svakom pojedinom gradu, bijahu poimence određeni da daju dio svakome muškarcu među svećenicima. Sve su rodovnike sastavili leviti."
+        },
+        {
+          "verse": 20,
+          "text": "Ezekija je uradio tako po svoj Judeji čineći što je dobro, pravo i vjerno pred Jahvom, svojim Bogom."
+        },
+        {
+          "verse": 21,
+          "text": "U svakom poslu koji je počeo za službu Božjega doma, i u zakonu i u zapovijedi tražeći Boga, trudio se svim svojim srcem i uspijevao."
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verse_count": 33,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Poslije tih događaja i dokaza vjernosti dođe asirski kralj Sanherib i, ušavši u Judeju, opkoli tvrde gradove misleći ih osvojiti.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Sanheribova najezda"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ezekija, vidjevši gdje je došao Sanherib i kako snuje da zavojšti na Jeruzalem,"
+        },
+        {
+          "verse": 3,
+          "text": "posavjetova se s knezovima i s junacima da začepi vodene izvore koji bijahu izvan grada. Oni mu podupriješe osnovu."
+        },
+        {
+          "verse": 4,
+          "text": "Sabralo se mnogo naroda te su začepili sva vrela i potok koji teče posred zemlje. Govorahu: »Zašto da asirski kraljevi nađu toliko vode kad dođu?«"
+        },
+        {
+          "verse": 5,
+          "text": "Ezekija se osokolio, obnovio sav oboreni zid i podigao kule na njemu; izvana je sagradio drugi zid i utvrdio Milon u Davidovu gradu; napravio je mnogo kopalja i štitova,"
+        },
+        {
+          "verse": 6,
+          "text": "zatim postavio vojvode nad narodom i, pozvavši ih k sebi na trg kraj gradskih vrata, ohrabri ih ovim riječima:"
+        },
+        {
+          "verse": 7,
+          "text": "»Budite hrabri i junaci; ne bojte se i ne plašite se asirskoga kralja, ni svega mnoštva što je s njim, jer je s nama moćniji nego s njim:"
+        },
+        {
+          "verse": 8,
+          "text": "s njim je tjelesna mišica, a s nama je Jahve, Bog naš, da nam pomaže i da bije naše bojeve.« Narod se pouzda u riječi judejskoga kralja Ezekije.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Sanheribove bogohulne riječi"
+            }
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Poslije toga asirski je kralj Sanherib, dok bijaše kod Lakiša sa svom bojnom silom, poslao sluge u Jeruzalem k judejskome kralju Ezekiji i k svim Judejcima koji bijahu u Jeruzalemu i poručio im:"
+        },
+        {
+          "verse": 10,
+          "text": "»Ovako veli asirski kralj Sanherib: ‘U što se uzdate stojeći opsjednuti u Jeruzalemu?"
+        },
+        {
+          "verse": 11,
+          "text": "Ne zavodi li vas Ezekija da vas preda smrti od gladi i žeđi kad govori: Jahve, Bog naš, izbavit će nas iz ruke asirskoga kralja?"
+        },
+        {
+          "verse": 12,
+          "text": "Nije li taj Ezekija uklonio njegove uzvišice i njegove žrtvenike; i zapovjedio Judejcima i Jeruzalemcima govoreći: Pred jednim se žrtvenikom klanjajte i na njemu kadite!?"
+        },
+        {
+          "verse": 13,
+          "text": "Zar ne znate što sam učinio ja i moji preci od svih zemaljskih naroda? Zar su bogovi zemaljskih naroda mogli izbaviti svoje zemlje iz moje ruke?"
+        },
+        {
+          "verse": 14,
+          "text": "Koji je među svim bogovima onih naroda što su ih sasvim uništili moji preci mogao izbaviti narod iz moje ruke, da bi mogao vaš Bog izbaviti vas iz moje ruke?"
+        },
+        {
+          "verse": 15,
+          "text": "Zato nemojte da vas sada Ezekija vara i da vas tako zavodi i ne vjerujte mu! Jer nijedan bog nikojega naroda ili kraljevstva nije mogao izbaviti svoga naroda iz moje ruke, ni iz ruke mojih predaka, a kamoli će vaš Bog izbaviti vas iz moje ruke!’«"
+        },
+        {
+          "verse": 16,
+          "text": "Još su više njegove sluge napadale Boga Jahvu i njegova slugu Ezekiju."
+        },
+        {
+          "verse": 17,
+          "text": "Napisao je i pismo ružeći Jahvu, Izraelova Boga: »Kao što bogovi zemaljskih naroda nisu izbavili svojih naroda iz moje ruke, tako neće ni Ezekijin Bog izbaviti svojega naroda iz moje ruke.«"
+        },
+        {
+          "verse": 18,
+          "text": "I vikahu iza glasa, na judejskom jeziku, jeruzalemskom narodu koji bijaše na zidu da ga uplaše i prepadnu kako bi osvojili grad."
+        },
+        {
+          "verse": 19,
+          "text": "Govorili su o jeruzalemskom Bogu kao o bogovima zemaljskih naroda, bogovima koji su djelo čovječjih ruku."
+        },
+        {
+          "verse": 20,
+          "text": "Stoga se pomoli kralj Ezekija i prorok Izaija, Amosov sin, i zazvaše nebo u pomoć.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Uspjeh Ezekijine molitve"
+            }
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "Tada Jahve posla anđela koji uništi sve hrabre junake, zapovjednike i vojvode u vojsci asirskoga kralja, tako da se vratio posramljen u svoju zemlju. A kad je ušao u hram svoga boga, sasjekli su ga ondje mačem neki koji su se rodili iz njegova krila."
+        },
+        {
+          "verse": 22,
+          "text": "Tako je Jahve spasio Ezekiju i jeruzalemske stanovnike od ruke asirskoga kralja Sanheriba i iz ruku neprijateljâ, te im dao mir odasvud uokolo."
+        },
+        {
+          "verse": 23,
+          "text": "Mnogi su donosili darove Jahvi u Jeruzalem i dragocjenosti judejskome kralju Ezekiji. Poslije toga Ezekija se uzvisio u očima svih naroda."
+        },
+        {
+          "verse": 24,
+          "text": "U to se vrijeme Ezekija razbolio nasmrt, ali se pomolio Jahvi, koji mu je progovorio i učinio čudo."
+        },
+        {
+          "verse": 25,
+          "text": "Ali se Ezekija nije odužio dobročinstvu koje mu je iskazano, nego se uzoholio; stoga je došla srdžba na nj, na Judu i na Jeruzalem."
+        },
+        {
+          "verse": 26,
+          "text": "Ezekija se ponizio zato što mu se bilo uzoholilo srce, i on i Jeruzalemci, pa tako nije došla na njih Jahvina srdžba za Ezekijina života."
+        },
+        {
+          "verse": 27,
+          "text": "Ezekija je stekao vrlo veliko bogatstvo i slavu; napravio je riznice za srebro i zlato, za drago kamenje, za miomirise, za štitove i za svakojake dragocjene posude;"
+        },
+        {
+          "verse": 28,
+          "text": "skladište za prirod od žita, od novog vina i ulja, staje za svakojaku stoku, torove za stada."
+        },
+        {
+          "verse": 29,
+          "text": "Podigao je i gradove, imao je mnogo blaga, sitne stoke i goveda, jer mu je Bog dao vrlo veliko imanje."
+        },
+        {
+          "verse": 30,
+          "text": "Isti je Ezekija začepio gornji izvor Gihonske vode i svrnuo je pravo na zapadnu stranu Davidova grada. Ezekija je bio sretan u svakom poslu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Ezekijin svršetak"
+            }
+          ]
+        },
+        {
+          "verse": 31,
+          "text": "Samo kad su došli poslanici babilonskih knezova, poslani k njemu da se propitaju za čudo koje se dogodilo u zemlji, ostavio ga je Bog da bi ga iskušao i da bi se doznalo sve što mu je u srcu."
+        },
+        {
+          "verse": 32,
+          "text": "Ostala Ezekijina djela, njegova pobožnost, zapisani su u proročkom viđenju proroka Izaije, Amosova sina, i u Knjizi o judejskim i izraelskim kraljevima."
+        },
+        {
+          "verse": 33,
+          "text": "Ezekija je počinuo kod svojih otaca. Sahranili su ga na usponu kako se ide ka grobovima Davidovih sinova. Po smrti su mu odali počast svi Judejci i Jeruzalemci. Na njegovo se mjesto zakraljio sin mu Manaše."
+        }
+      ]
+    },
+    {
+      "chapter": 33,
+      "verse_count": 25,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Manašeu je bilo dvanaest godina kad se zakraljio. Pedeset i pet godina kraljevao je u Jeruzalemu.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "3. MANAŠEOVA I AMONOVA BEZBOŽNOST"
+            },
+            {
+              "level": "h4",
+              "text": "Manaše razara Ezekijino djelo"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Činio je što je zlo u Jahvinim očima, povodeći se za gnusobama naroda što ih je Jahve protjerao pred sinovima Izraelovim."
+        },
+        {
+          "verse": 3,
+          "text": "Obnovio je uzvišice što ih bijaše oborio otac mu Ezekija, podigao je žrtvenike Baalu, načinio ašere i stao se klanjati svoj nebeskoj vojsci i služiti joj."
+        },
+        {
+          "verse": 4,
+          "text": "Podigao je žrtvenike i u domu Jahvinu, za koji bijaše rekao Jahve: »U Jeruzalemu će prebivati ime moje zauvijek.«"
+        },
+        {
+          "verse": 5,
+          "text": "Sagradio je žrtvenike svoj nebeskoj vojsci u oba predvorja doma Jahvina."
+        },
+        {
+          "verse": 6,
+          "text": "I sinove je svoje proveo kroz oganj u dolini Hinomova sina. Vračao je, gatao, čarao, stvorio bajače i opsjenare i uopće učinio premnogo zla u Jahvinim očima, razjarujući ga."
+        },
+        {
+          "verse": 7,
+          "text": "Načinio je idolski lik i posadio ga u domu Božjem, za koji Bog bijaše rekao Davidu i njegovu sinu Salomonu: »U ovom domu i u Jeruzalemu, koji sam izabrao među svim izraelskim plemenima, postavit ću ime svoje zauvijek."
+        },
+        {
+          "verse": 8,
+          "text": "Neću više dati da noga Izraelaca uzmakne iz zemlje koju sam dao u baštinu vašim očevima, samo ako budu držali i provodili u djelo sve što sam im zapovjedio: sav Zakon, uredbe i običaje dane preko Mojsija.«"
+        },
+        {
+          "verse": 9,
+          "text": "Ali je Manaše zaveo Judejce i Jeruzalemce te su radili još gore nego narodi što ih je Jahve iskorijenio pred sinovima Izraelovim."
+        },
+        {
+          "verse": 10,
+          "text": "Jahve je opominjao Manašea i njegov narod, ali oni nisu poslušali."
+        },
+        {
+          "verse": 11,
+          "text": "Stoga je Jahve doveo na njih vojskovođe asirskoga kralja. Uhvativši Manašea kukama, svezali su ga u dvoje mjedene verige i odveli u Babilon.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Manašeovo obraćenje"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Kad se našao u nevolji, počeo se moliti za milost Jahvi, svome Bogu, ponizivši se veoma pred Bogom otaca."
+        },
+        {
+          "verse": 13,
+          "text": "Molio se i Bog mu se smilovao te usliša njegovu prošnju i vrati ga u Jeruzalem u kraljevstvo. Manaše tada spozna da je Jahve Bog."
+        },
+        {
+          "verse": 14,
+          "text": "Poslije toga sagradio je vanjski zid Davidovu gradu zapadno od Gihona, od doline pa do Ribljih vrata, i opasao zidom Ofel, izvevši ga vrlo visoko. Postavio je bojne vojvode u svim tvrdim gradovima u Judi."
+        },
+        {
+          "verse": 15,
+          "text": "Osim toga, uklonio je iz Jahvina doma tuđinske bogove, onaj idolski lik i sve žrtvenike što ih bijaše posagradio na gori Jahvina doma i u Jeruzalemu i sve ih baci izvan grada."
+        },
+        {
+          "verse": 16,
+          "text": "Zatim opet podiže Jahvin žrtvenik i žrtvova na njemu žrtve pričesnice i zahvalnice. Zapovjedi i Judejcima da služe Jahvi, Bogu Izraelovu."
+        },
+        {
+          "verse": 17,
+          "text": "Ipak je narod još žrtvovao po uzvišicama, ali samo Jahvi, svojem Bogu."
+        },
+        {
+          "verse": 18,
+          "text": "Ostala Manašeova djela i njegova molitva Bogu, riječi koje su mu govorili vidioci u ime Jahve, Izraelova Boga, zapisane su u Povijesti izraelskih kraljeva."
+        },
+        {
+          "verse": 19,
+          "text": "Njegova molitva i kako je bio uslišan, svi njegovi grijesi i njegova nevjera te mjesta na kojima je pogradio uzvišice, podigao ašere i idole prije nego što se ponizio – sve je to zapisano u povijesti Hozajevoj."
+        },
+        {
+          "verse": 20,
+          "text": "Tada Manaše počinu kraj svojih otaca. Sahranili su ga u dvoru. Na njegovo se mjesto zakraljio sin mu Amon."
+        },
+        {
+          "verse": 21,
+          "text": "Dvadeset su i dvije godine bile Amonu kad se zakraljio, a kraljevao je dvije godine u Jeruzalemu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Amonova okorjelost"
+            }
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Činio je što je zlo u Jahvinim očima, kao i otac mu Manaše, jer je svim idolima koje bijaše načinio njegov otac Manaše on prinosio žrtve i služio im."
+        },
+        {
+          "verse": 23,
+          "text": "Ali se nije ponizio pred Jahvom kako se ponizio otac mu Manaše, nego je još i umnožio svoju krivicu."
+        },
+        {
+          "verse": 24,
+          "text": "Tada se protiv njega urotiše njegove sluge i ubiše ga u dvoru."
+        },
+        {
+          "verse": 25,
+          "text": "Ali je prosti puk pobio sve one koji se bijahu urotili protiv kralja Amona i na njegovo mjesto zakraljio sina mu Jošiju."
+        }
+      ]
+    },
+    {
+      "chapter": 34,
+      "verse_count": 33,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Jošiji je bilo osam godina kad se zakraljio. Kraljevao je trideset i jednu godinu u Jeruzalemu.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "4. JOŠIJINA OBNOVA"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Činio je što je pravo u Jahvinim očima. U svemu je hodio putovima oca Davida, ne skrećući ni desno ni lijevo."
+        },
+        {
+          "verse": 3,
+          "text": "Osme godine kraljevanja, dok još bijaše dječak, počeo je tražiti Boga oca Davida, a dvanaeste je godine stao čistiti Judeju i Jeruzalem od uzvišica, ašera, od rezanih i livenih likova."
+        },
+        {
+          "verse": 4,
+          "text": "Pred njim su oborili žrtvenike Baalu, polomio je sunčane stupove koji bijahu na njima; izlomio je i satro ašere i rezane i livene likove, prosuo ih po grobovima onih što su im prinosili žrtve."
+        },
+        {
+          "verse": 5,
+          "text": "Svećeničke je kosti spalio na njihovim žrtvenicima i tako očistio Judeju i Jeruzalem."
+        },
+        {
+          "verse": 6,
+          "text": "Isto je učinio i po gradovima Manašeova, Efrajimova i Šimunova plemena, pa do Naftalijeva, po njihovim opustošenim mjestima unaokolo."
+        },
+        {
+          "verse": 7,
+          "text": "Oborio je žrtvenike i ašere, raskovao i satro rezane likove i isjekao sve sunčane stupove po svoj zemlji izraelskoj, a onda se vratio u Jeruzalem."
+        },
+        {
+          "verse": 8,
+          "text": "Osamnaeste godine kraljevanja, očistivši zemlju i Dom, posla Asalijahina sina Šafana, gradskoga upravitelja Maaseju, Johazova sina Joaha, tajnika, da poprave dom Jahve, njegova Boga.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Popravak Hrama"
+            }
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Oni su došli k velikom svećeniku Hilkiji i predali mu novce donesene u Božji dom, koje bijahu sabrali leviti, čuvari hramskog praga, iz ruke Manašeovih i Efrajimovih sinova i od svega Izraelova Ostatka, od svega Judina i Benjaminova plemena, od jeruzalemskih stanovnika."
+        },
+        {
+          "verse": 10,
+          "text": "Dali su to na ruku poslovođama, postavljenim nad domom Jahvinim, a oni su izdavali poslenicima koji su radili u domu Jahvinu, popravljajući što je bilo trošno i obnavljajući Hram."
+        },
+        {
+          "verse": 11,
+          "text": "Dali su drvodjeljama i graditeljima da kupuju tesanac i drvo za grede i da se pobrvnaju kuće koje bijahu porušili judejski kraljevi."
+        },
+        {
+          "verse": 12,
+          "text": "Ti su ljudi savjesno obavljali posao; nad njima su bili postavljeni Jahat i Obadja, leviti od Merarijevih sinova, i Zaharija i Mešulam od Kehatovih sinova da upravljaju radom. Svi su leviti bili vični glazbalima."
+        },
+        {
+          "verse": 13,
+          "text": "Jedni su bili nad bremenošama i nadstojnicima svih poslenika u svakoj službi, a drugi su od levita bili pisari, nadzornici i vratari."
+        },
+        {
+          "verse": 14,
+          "text": "Kad su iznosili novce donesene u Jahvin dom, našao je svećenik Hilkija knjigu Zakona Jahvina, danu preko Mojsija.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Našašće Zakona"
+            }
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "I, progovorivši, Hilkija reče tajniku Šafanu: »Našao sam knjigu Zakona u domu Jahvinu.« Hilkija dade knjigu Šafanu."
+        },
+        {
+          "verse": 16,
+          "text": "Šafan odnese knjigu kralju i izvjesti ga: »Tvoje sluge rade sve što im se povjerilo."
+        },
+        {
+          "verse": 17,
+          "text": "Izasuvši novce što su se našli u domu Jahvinu, dadoše ih na ruku poslovođama i poslenicima.«"
+        },
+        {
+          "verse": 18,
+          "text": "Tada tajnik Šafan javi kralju: »Svećenik Hilkija dade mi jednu knjigu.« I Šafan je poče čitati pred kraljem."
+        },
+        {
+          "verse": 19,
+          "text": "Čuvši riječi Zakona, kralj razdrije haljine svoje."
+        },
+        {
+          "verse": 20,
+          "text": "I naredi Hilkiji, Šafanovu sinu Ahikamu, Mikinu sinu Abdonu, tajniku Šafanu i kraljevu sluzi Asaji:"
+        },
+        {
+          "verse": 21,
+          "text": "»Idite i upitajte Jahvu o meni i Ostatku Izraela i Judeje zbog ove knjige što je nađena, jer je velika Jahvina jarost što se izlila na nas zato što naši očevi nisu čuvali Jahvine riječi, nisu vršili što je pisano u knjizi.«"
+        },
+        {
+          "verse": 22,
+          "text": "Hilkija s kraljevim ljudima ode proročici Huldi, ženi Šaluma, Tokhatova sina, sina Hasre, čuvara odjeće; ona je živjela u Jeruzalemu, u novom gradu. Kad joj to kazaše,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Proročica"
+            }
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "ona im reče: »Ovako veli Jahve, Bog Izraelov: ‘Kažite čovjeku koji vas je poslao k meni:"
+        },
+        {
+          "verse": 24,
+          "text": "Ovako veli Jahve: Evo, dovest ću nesreću na ovaj grad i na njegove stanovnike, izvršit ću sve kletve napisane u knjizi što je pročitaše pred judejskim kraljem."
+        },
+        {
+          "verse": 25,
+          "text": "Jer su me ostavili i kadili tuđim bogovima da bi me ljutili svim djelima ruku svojih, planut će jarost moja na to mjesto i neće se ugasiti."
+        },
+        {
+          "verse": 26,
+          "text": "A judejskome kralju, koji vas je poslao po Jahvin savjet, recite ovo: Ovako govori Jahve, Bog Izraelov: Riječi si čuo."
+        },
+        {
+          "verse": 27,
+          "text": "Ali kako ti je omekšalo srce i jer si se ponizio pred Bogom čuvši što sam objavio tome gradu i njegovim stanovnicima, i ponizivši se preda mnom, razdro si haljine i plakao, zato sam te uslišio – riječ je Jahvina!"
+        },
+        {
+          "verse": 28,
+          "text": "Evo, sjedinit ću te s ocima tvojim i s mirom ćeš leći u grob da ne vidiš svu nesreću koju ću svaliti na ovo mjesto i njegove stanovnike.’« Oni odnesoše taj odgovor kralju."
+        },
+        {
+          "verse": 29,
+          "text": "Tada posla kralj da se saberu sve judejske i jeruzalemske starješine.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Obnova Saveza"
+            }
+          ]
+        },
+        {
+          "verse": 30,
+          "text": "Kralj se potom pope u dom Jahvin, sa svim Judejcima, Jeruzalemcima, svećenicima, levitima i sa svim narodom, od najvećega do najmanjeg. I pročita im sve riječi Knjige Saveza što je nađena u domu Jahvinu."
+        },
+        {
+          "verse": 31,
+          "text": "Kralj, stojeći na svome mjestu, obnovi pred Jahvom savez da će slijediti Jahvu, držati se njegovih zapovijedi, pouka i uredaba svim srcem i svom dušom da bi izvršio sve stavke toga Saveza što su napisane u knjizi."
+        },
+        {
+          "verse": 32,
+          "text": "I sve koji su se našli u Jeruzalemu i Benjaminovu plemenu pozva da pristupe; i Jeruzalemci prionuše uza Savez Boga, Boga svojih otaca."
+        },
+        {
+          "verse": 33,
+          "text": "Tada Jošija ukloni sve gnusobe iz svih izraelskih krajeva i učini te svi koji su se našli u Izraelu počeše služiti Jahvi, svojem Bogu. Za svega njegova života nisu odstupili od Jahve, Boga svojih otaca."
+        }
+      ]
+    },
+    {
+      "chapter": 35,
+      "verse_count": 27,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Potom je Jošija svetkovao Pashu Jahvi u Jeruzalemu: klalo se pashalno jagnje četrnaestoga dana prvoga mjeseca.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Priprava za Pashu"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Postavio je svećenike na njihove službe, osokolivši ih na službu u Jahvinu domu."
+        },
+        {
+          "verse": 3,
+          "text": "Zatim je rekao levitima koji su poučavali sve Izraelce i bili posvećeni Jahvi: »Metnite sveti Kovčeg u Dom koji je sagradio Davidov sin Salomon, izraelski kralj; ne smijete ga više nositi na ramenima; sada služite Jahvi, svojem Bogu, i njegovu izraelskom narodu!"
+        },
+        {
+          "verse": 4,
+          "text": "I pripravite se po otačkim domovima, po redovima, kako je napisao izraelski kralj David i propisao sin mu Salomon."
+        },
+        {
+          "verse": 5,
+          "text": "Stojte u Svetinji po redovima otačkih domova svoje braće, običnoga puka, i po redu levitskoga otačkog doma."
+        },
+        {
+          "verse": 6,
+          "text": "I tako koljite pashalno janje te se posvetite i pripravite svoju braću da svetkuju kako je zapovjedio Jahve preko Mojsija.«"
+        },
+        {
+          "verse": 7,
+          "text": "Jošija je darovao običnom puku od sitne stoke jaganjaca i jarića, sve za Pashu, svima koji su se našli ondje, na broj trideset tisuća, i tri tisuće goveda, sve to s kraljeva imanja.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Svetkovanje"
+            }
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Njegovi su knezovi dragovoljno darovali narodu, svećenicima i levitima, i to: Hilkija, Zaharija i Jehiel, predstojnici u Božjem domu, dali su svećenicima za Pashu dvije tisuće i šest stotina jaganjaca i jarića i tri stotine goveda."
+        },
+        {
+          "verse": 9,
+          "text": "A Konanija, Šemaja i Netanel, njegova braća Hašabja, Jehiel i Jozabad, levitski knezovi, darovali su levitima za Pashu pet tisuća grla sitne stoke i pet stotina goveda."
+        },
+        {
+          "verse": 10,
+          "text": "A kad je bila uređena služba, stali su svećenici na svoje mjesto i leviti u svojim redovima po kraljevoj zapovijedi."
+        },
+        {
+          "verse": 11,
+          "text": "Klali su pashu, a svećenici su škropili krvlju, dok su leviti odirali kožu."
+        },
+        {
+          "verse": 12,
+          "text": "Onda su pripravili paljenice da ih dadu običnom puku po redovima otačkih domova da ih prinese Jahvi, kako je napisano u Mojsijevoj knjizi. Tako su učinili i s govedima."
+        },
+        {
+          "verse": 13,
+          "text": "Pekli su pashu na ognju po običaju, a ostale su posvećene stvari kuhali u loncima, kotlovima i zdjelama i brzo ih raznosili svemu običnom puku."
+        },
+        {
+          "verse": 14,
+          "text": "Poslije su pripravljali pashu sebi i svećenicima, jer su svećenici, Aronovi sinovi, bili zaposleni prinošenjem paljenica i pretiline do noći; zato su leviti pripravljali sebi i svećenicima, Aronovim sinovima."
+        },
+        {
+          "verse": 15,
+          "text": "A pjevači, Asafovi sinovi, stajali su na svojem mjestu, kako je bio zapovjedio David, Asaf, Heman i kraljev vidjelac Jedutun. Vratari su stajali na svakim vratima; oni se nisu micali od službe, nego su im njihova braća leviti pripravljala sve."
+        },
+        {
+          "verse": 16,
+          "text": "Tako je bila uređena sva Jahvina služba onoga dana da se proslavi Pasha i da se prinesu paljenice na Jahvinu žrtveniku po zapovijedi kralja Jošije.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Nesretni svršetak Jošijin"
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Tako su Izraelovi sinovi, koji su se našli ondje, u to doba sedam dana slavili Pashu i Blagdan beskvasnih kruhova."
+        },
+        {
+          "verse": 18,
+          "text": "Pasha kao ova u Izraelu nije se slavila od vremena proroka Samuela niti je ijedan od izraelskih kraljeva slavio Pashu kao što ju je slavio Jošija – sa svećenicima, levitima i sa svim Judejcima i Izraelcima, koliko ih se god našlo, i s Jeruzalemcima."
+        },
+        {
+          "verse": 19,
+          "text": "Ta se Pasha svetkovala osamnaeste godine Jošijina kraljevanja."
+        },
+        {
+          "verse": 20,
+          "text": "Poslije svega toga, kad je Jošija uredio Dom, došao je egipatski kralj Neko da se bije kod Karkemiša na Eufratu, a Jošija je izišao preda nj."
+        },
+        {
+          "verse": 21,
+          "text": "Kralj Neko poslao je Jošiji glasnike i poručio: »Što ja imam s tobom, judejski kralju? Ne idem ja danas na tebe, nego na dom s kojim sam u ratu, i Bog mi je zapovjedio da se požurim. Okani se Boga koji je sa mnom da te ne upropastim!«"
+        },
+        {
+          "verse": 22,
+          "text": "Ali Jošija nije odvratio lica od njega, nego se ojunačio da se bije s njim; ne poslušavši Nekovih riječi iz Božjih usta, došao je da se bije na Megidskom polju."
+        },
+        {
+          "verse": 23,
+          "text": "Strijelci ustrijeliše kralja Jošiju, a on reče slugama: »Izvedite me jer sam teško ranjen.«"
+        },
+        {
+          "verse": 24,
+          "text": "Sluge ga skinuše s bojnih kola i metnuše u druga kola koja je imao, pa ga odvezoše u Jeruzalem; ondje je umro i bio sahranjen u grobnici otaca. Sva Judeja s Jeruzalemom plakala je za Jošijom."
+        },
+        {
+          "verse": 25,
+          "text": "I Jeremija je protužio za Jošijom. I svi pjevači i pjevačice spominju u tužbalicama Jošiju do danas; uveli su ih u običaj u Izraelu, i eno su zapisane u Tužbalicama."
+        },
+        {
+          "verse": 26,
+          "text": "Ostala Jošijina djela i njegova pobožnost, vršeni onako kako piše u Jahvinu Zakonu,"
+        },
+        {
+          "verse": 27,
+          "text": "svi njegovi pothvati, od prvih do posljednjih, zapisani su u Knjizi o izraelskim i judejskim kraljevima."
+        }
+      ]
+    },
+    {
+      "chapter": 36,
+      "verse_count": 23,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Tada priprosti puk uze Jošijina sina Joahaza i zakralji ga u Jeruzalemu namjesto njegova oca.",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "5. KONAC IZRAELSKOG KRALJEVSTVA"
+            },
+            {
+              "level": "h4",
+              "text": "Joahaz"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Dvadeset i tri godine bile su Joahazu kad se zakraljio. Kraljevao je tri mjeseca u Jeruzalemu."
+        },
+        {
+          "verse": 3,
+          "text": "Svrgao ga je egipatski kralj u Jeruzalemu i udario na zemlju danak od sto srebrnih talenata i jedan zlatni talenat."
+        },
+        {
+          "verse": 4,
+          "text": "Egipatski kralj postavi za kralja nad Judejom i nad Jeruzalemom njegova brata Elijakima, promijenivši mu ime u Jojakim; njegova je brata Joahaza uzeo Neko i odveo u Egipat."
+        },
+        {
+          "verse": 5,
+          "text": "Dvadeset je i pet godina bilo Jojakimu kad se zakraljio. Kraljevao je jedanaest godina u Jeruzalemu; činio je što je zlo u očima Jahve, njegova Boga.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Jojakim i Jojakin"
+            }
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Na nj je zaratio babilonski kralj Nabukodonozor i, svezavši ga u dvoje mjedene verige, odveo ga u Babilon."
+        },
+        {
+          "verse": 7,
+          "text": "Dio posuđa iz Jahvina doma odnio je Nabukodonozor u Babilon i metnuo ga u svoj dvorac u Babilonu."
+        },
+        {
+          "verse": 8,
+          "text": "Ostala Jojakimova djela i gnusobe koje je činio i što se na njemu našlo, sve je zapisano u Knjizi o izraelskim i judejskim kraljevima. Na njegovo se mjesto zakraljio sin mu Jojakin."
+        },
+        {
+          "verse": 9,
+          "text": "Osam je godina bilo Jojakinu kad se zakraljio, a kraljevao je tri mjeseca i deset dana u Jeruzalemu; činio je što je zlo u Jahvinim očima."
+        },
+        {
+          "verse": 10,
+          "text": "O godišnjoj je mijeni poslao kralj Nabukodonozor te su ga odveli u Babilon s dragocjenostima iz Jahvina doma, a nad Judom i nad Jeruzalemom zakraljio je njegova rođaka Sidkiju."
+        },
+        {
+          "verse": 11,
+          "text": "Dvadeset je i jedna godina bila Sidkiji kad se zakraljio, a kraljevao je jedanaest godina u Jeruzalemu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Sidkija"
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Činio je što je zlo u očima Jahve, njegova Boga; nije se ponizio pred prorokom Jeremijom, koji mu je govorio iz Jahvinih usta,"
+        },
+        {
+          "verse": 13,
+          "text": "nego se još i pobunio protiv kralja Nabukodonozora, koji ga bijaše zakleo Bogom; ostao je tvrdoglav i uporan u srcu da se ne obrati Jahvi, Bogu Izraelovu."
+        },
+        {
+          "verse": 14,
+          "text": "Pa i svi su svećenički poglavari i narod gomilali nevjeru na nevjeru slijedeći gnusna djela krivobožačkih naroda, oskvrnjujući dom Jahvin, posvećen u Jeruzalemu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Narod"
+            }
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Jahve, Bog njihovih otaca, slao je k njima zarana svoje glasnike, slao ih svejednako, jer mu bijaše žao svojega naroda i svojega prebivališta."
+        },
+        {
+          "verse": 16,
+          "text": "Ali su se oni rugali Božjim glasnicima, prezirući njegove riječi i podsmjehujući se njegovim prorocima, dok se nije podigla Jahvina jarost na njegov narod te više nije bilo lijeka."
+        },
+        {
+          "verse": 17,
+          "text": "Doveo je na njih kaldejskoga kralja, koji okrenu pod mač njihove mladiće u domu njihova svetišta, ne štedeći ni mladića ni djevojke, ni starca ni nemoćna. Sve mu je predao u ruke.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Propast"
+            }
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Sve posuđe Božjega doma, veliko i malo, blago Jahvina doma i kraljevo blago, blago njegovih knezova, sve je odnio u Babilon."
+        },
+        {
+          "verse": 19,
+          "text": "Spalili su Božji dom, oborili jeruzalemski zid i sve su njegove dragocjenosti uništili."
+        },
+        {
+          "verse": 20,
+          "text": "One što izbjegoše maču odvede Nabukodonozor u Babilon u sužanjstvo. Postali su robovi njemu i njegovim sinovima, dokle nije nastalo perzijsko kraljevstvo."
+        },
+        {
+          "verse": 21,
+          "text": "Da bi se ispunila riječ koju Jahve reče na Jeremijina usta: »Dokle se zemlja ne oduži svojim subotama, počivat će za sve vrijeme u pustoši dok se ne ispuni sedamdeset godina.«"
+        },
+        {
+          "verse": 22,
+          "text": "Ali prve godine perzijskoga kralja Kira, da bi se ispunila riječ Jahvina objavljena na Jeremijina usta, podiže Jahve duh perzijskoga kralja Kira te on oglasi po svemu svojem kraljevstvu usmeno i pismeno:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prema budućnosti"
+            }
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "»Ovako veli perzijski kralj Kir: ‘Sva zemaljska kraljevstva dade mi Jahve, Bog nebeski. On mi naloži da mu sagradim Dom u Jeruzalemu, u Judeji. Tko je god među vama od svega njegova naroda, Bog njegov bio s njim, pa neka ide onamo!’«"
+        }
+      ]
+    }
+  ]
+}

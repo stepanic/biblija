@@ -1,0 +1,95 @@
+{
+  "order": 70,
+  "id": "druga-ivanova-poslanica",
+  "ks_book_id": 81,
+  "abbr": "2 Iv",
+  "title": "Druga Ivanova poslanica",
+  "testament": "NZ",
+  "category": "Poslanice",
+  "chapter_count": 1,
+  "verse_count": 13,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 13,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Starješina izabranoj Gospođi i djeci njezinoj koju ja ljubim u Istini – a ne samo ja nego i svi koji upoznaše Istinu –",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pozdrav"
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "radi Istine koja ostaje u nama i bit će s nama dovijeka."
+        },
+        {
+          "verse": 3,
+          "text": "Bila s nama milost, milosrđe i mir od Boga Oca i od Sina Očeva Isusa Krista u istini i ljubavi!"
+        },
+        {
+          "verse": 4,
+          "text": "Obradovah se veoma što sam među tvojom djecom našao takve koji hode u istini, kao što primismo zapovijed od Oca.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Zapovijed ljubavi"
+            }
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "I sada te molim, Gospođo, ne kao da ti novu zapovijed pišem, nego onu koju smo imali od početka: da ljubimo jedni druge."
+        },
+        {
+          "verse": 6,
+          "text": "A ovo je ta ljubav: da živimo po zapovijedima njegovim. To je zapovijed, kao što čuste od početka, da u njoj živite."
+        },
+        {
+          "verse": 7,
+          "text": "Jer iziđoše na svijet mnogi zavodnici koji ne ispovijedaju Isusa Krista koji dolazi u tijelu. To je zavodnik i Antikrist.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Antikristi"
+            }
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Čuvajte se da ne izgubite što ste stekli, nego da primite potpunu plaću."
+        },
+        {
+          "verse": 9,
+          "text": "Tko god pretjera i ne ostane u nauku Kristovu, nema Boga. Tko ostaje u nauku, ima i Oca i Sina."
+        },
+        {
+          "verse": 10,
+          "text": "Ako tko dolazi k vama i ne donosi tog nauka, ne primajte ga u kuću i ne pozdravljajte ga."
+        },
+        {
+          "verse": 11,
+          "text": "Jer tko ga pozdravlja, sudjeluje u njegovim zlim djelima."
+        },
+        {
+          "verse": 12,
+          "text": "Mnogo bih vam imao pisati, ali ne htjedoh na papiru i crnilom, nego se nadam da ću doći k vama i iz usta u usta govoriti da radost vaša bude potpuna.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Zaključak"
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Pozdravljaju te djeca tvoje izabrane sestre."
+        }
+      ]
+    }
+  ]
+}

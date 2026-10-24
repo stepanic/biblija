@@ -1,0 +1,610 @@
+{
+  "order": 42,
+  "id": "habakuk",
+  "ks_book_id": 53,
+  "abbr": "Hab",
+  "title": "Habakuk",
+  "testament": "SZ",
+  "category": "Proroci",
+  "chapter_count": 3,
+  "verse_count": 56,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 17,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Proroštvo koje vidje prorok Habakuk."
+        },
+        {
+          "verse": 2,
+          "text": "Dokle ću, Jahve, zapomagati, a da ti ne čuješ? Vikati k tebi »Nasilje!« a da ti ne spasiš?",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "I. RAZGOVOR IZMEĐU PROROKA I BOGA"
+            },
+            {
+              "level": "h4",
+              "text": "Prva prorokova tužbalica:Pravo je izopačeno"
+            }
+          ],
+          "lines": [
+            "Dokle ću, Jahve, zapomagati,",
+            "a da ti ne čuješ?",
+            "Vikati k tebi »Nasilje!«",
+            "a da ti ne spasiš?"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Zašto mi nepravdu iznosiš pred oči, zašto gledaš ugnjetavanje? Pljačka je i nasilje preda mnom. Raspra je, razmirica bjesni!",
+          "lines": [
+            "Zašto mi nepravdu iznosiš pred oči,",
+            "zašto gledaš ugnjetavanje?",
+            "Pljačka je i nasilje preda mnom.",
+            "Raspra je, razmirica bjesni!"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Zakon je izgubio snagu, a pravda se ni načas ne pomalja. Da, zlikovac progoni pravednika, pravo je stoga izopačeno.",
+          "lines": [
+            "Zakon je izgubio snagu,",
+            "a pravda se ni načas ne pomalja.",
+            "Da, zlikovac progoni pravednika,",
+            "pravo je stoga izopačeno."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Obazrite se na narode, pogledajte, čudite se, zapanjite! Jer u vaše dane činim djelo u koje ne biste vjerovali da vam ga tko ispriča.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prvo proroštvo: Kaldejci – bič Božji"
+            }
+          ],
+          "lines": [
+            "Obazrite se na narode, pogledajte,",
+            "čudite se, zapanjite!",
+            "Jer u vaše dane činim djelo",
+            "u koje ne biste vjerovali",
+            "da vam ga tko ispriča."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Da! Evo dižem Kaldejce, narod divlji i naprasit što nadire širom zemlje da obitavališta otme tuđa.",
+          "lines": [
+            "Da! Evo dižem Kaldejce,",
+            "narod divlji i naprasit",
+            "što nadire širom zemlje",
+            "da obitavališta otme tuđa."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "On je strašan i jezovit, od njega samog izlazi njegovo pravo i njegov ponos.",
+          "lines": [
+            "On je strašan i jezovit,",
+            "od njega samog izlazi njegovo pravo i njegov ponos."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Konji su mu brži od leoparda, hitriji od vukova uvečer; jahači mu poskakuju, stižu izdaleka, ustremljeni k’o orlovi da plijen proždru.",
+          "lines": [
+            "Konji su mu brži od leoparda,",
+            "hitriji od vukova uvečer;",
+            "jahači mu poskakuju, stižu izdaleka,",
+            "ustremljeni k’o orlovi da plijen proždru."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Svi će doći rad’ grabeža, lica im žegu k’o istočni vjetar, grabe roblje kao pijesak!",
+          "lines": [
+            "Svi će doći rad’ grabeža,",
+            "lica im žegu k’o istočni vjetar,",
+            "grabe roblje kao pijesak!"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Taj se narod kraljevima ruga, podsmjehuje knezovima, poigrava se svim utvrdama, nasipa zemlju i zauzima ih.",
+          "lines": [
+            "Taj se narod kraljevima ruga,",
+            "podsmjehuje knezovima,",
+            "poigrava se svim utvrdama,",
+            "nasipa zemlju i zauzima ih."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Tad se k’o vjetar okrenu i ode, zlikovac komu je snaga bog postala.",
+          "lines": [
+            "Tad se k’o vjetar okrenu i ode,",
+            "zlikovac komu je snaga bog postala."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Nisi li od davnih vremena, Jahve, Bože moj, Sveče moj? Ti koji ne umireš! Ti si, Jahve podigao ovaj narod radi pravde, postavio ga, Stijeno, da kažnjava.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Druga prorokova tužbalica:Utjerivanja tlačiteljska"
+            }
+          ],
+          "lines": [
+            "Nisi li od davnih vremena, Jahve,",
+            "Bože moj, Sveče moj?",
+            "Ti koji ne umireš!",
+            "Ti si, Jahve podigao ovaj narod radi pravde,",
+            "postavio ga, Stijeno, da kažnjava."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Prečiste su tvoje oči da bi zloću gledale. Ti ne možeš motriti tlačenja. Zašto gledaš vjerolomce, šutiš kad zlikovac ništi pravednijeg od sebe?",
+          "lines": [
+            "Prečiste su tvoje oči da bi zloću gledale.",
+            "Ti ne možeš motriti tlačenja.",
+            "Zašto gledaš vjerolomce,",
+            "šutiš kad zlikovac ništi pravednijeg od sebe?"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Postupaš s ljudima k’o s morskim ribama, k’o s gmazovima što nemaju gospodara!",
+          "lines": [
+            "Postupaš s ljudima k’o s morskim ribama,",
+            "k’o s gmazovima što nemaju gospodara!"
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "On ih sve lovi na udicu, izvlači ih mrežom, pređom ih skuplja i tako se raduje i likuje.",
+          "lines": [
+            "On ih sve lovi na udicu,",
+            "izvlači ih mrežom,",
+            "pređom ih skuplja",
+            "i tako se raduje i likuje."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Stog žrtvuje mreži svojoj, pali tamjan svojoj pređi jer mu pribavljaju zalogaj slastan, hranu pretilu.",
+          "lines": [
+            "Stog žrtvuje mreži svojoj,",
+            "pali tamjan svojoj pređi",
+            "jer mu pribavljaju zalogaj slastan,",
+            "hranu pretilu."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Valja li, dakle, da neprestano poteže mač i kolje narod nemilice?",
+          "lines": [
+            "Valja li, dakle, da neprestano poteže mač",
+            "i kolje narod nemilice?"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 20,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Stat ću na stražu svoju, postavit se na bedem, paziti što će mi reći, kako odgovorit’ na moje tužbe.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Drugo proroštvo:Pravednik će živjeti od vjere"
+            }
+          ],
+          "lines": [
+            "Stat ću na stražu svoju,",
+            "postavit se na bedem,",
+            "paziti što će mi reći,",
+            "kako odgovorit’ na moje tužbe."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Tada Jahve odgovori i reče: »Zapiši viđenje, ureži ga na pločice, da ga čitač lako čita.",
+          "lines": [
+            "Tada Jahve odgovori i reče:",
+            "»Zapiši viđenje,",
+            "ureži ga na pločice,",
+            "da ga čitač lako čita."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Jer ovo je viđenje samo za svoje vrijeme: ispunjenju teži, ne vara; ako stiže polako, čekaj, jer odista će doći i neće zakasniti!",
+          "lines": [
+            "Jer ovo je viđenje samo za svoje vrijeme:",
+            "ispunjenju teži, ne vara;",
+            "ako stiže polako, čekaj,",
+            "jer odista će doći i neće zakasniti!"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Gle: propada onaj čija duša nije pravedna, a pravednik živi od svoje vjere.«",
+          "lines": [
+            "Gle: propada onaj čija duša nije pravedna,",
+            "a pravednik živi od svoje vjere.«"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Bogatstvo je odista podmuklo! Ohol je i ne može počinuti tko ždrijelo razvaljuje k’o podzemlje, tko je kao smrt nezasitan, tko sabire za se sve narode, tko kupî za se sva plemena!",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "II. PROKLETSTVA PROTIV TLAČITELJA"
+            },
+            {
+              "level": "h4",
+              "text": "Proslov"
+            }
+          ],
+          "lines": [
+            "Bogatstvo je odista podmuklo!",
+            "Ohol je i ne može počinuti",
+            "tko ždrijelo razvaljuje k’o podzemlje,",
+            "tko je kao smrt nezasitan,",
+            "tko sabire za se sve narode,",
+            "tko kupî za se sva plemena!"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Zar mu se neće svi podrugivati, rugalicu i zagonetku spjevat’ protiv njega? Reći će: »Jao onom tko množi što nije njegovo (a dokle će?) i opterećuje se zalogama!",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Peterostruki jao"
+            }
+          ],
+          "lines": [
+            "Zar mu se neće svi podrugivati,",
+            "rugalicu i zagonetku spjevat’ protiv njega?",
+            "Reći će: »Jao onom tko množi što nije njegovo",
+            "(a dokle će?)",
+            "i opterećuje se zalogama!"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Neće li naglo ustat’ vjerovnici tvoji, neće li se probuditi ljuti tvoji tlačitelji? Tada ćeš im plijen biti!«",
+          "lines": [
+            "Neće li naglo ustat’ vjerovnici tvoji,",
+            "neće li se probuditi ljuti tvoji tlačitelji?",
+            "Tada ćeš im plijen biti!«"
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Jer si opljačkao mnoge narode, sav ostatak naroda opljačkat će tebe, jer si prolio krv ljudsku, poharao zemlju, grad i sve mu žitelje.",
+          "lines": [
+            "Jer si opljačkao mnoge narode,",
+            "sav ostatak naroda opljačkat će tebe,",
+            "jer si prolio krv ljudsku,",
+            "poharao zemlju,",
+            "grad i sve mu žitelje."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Jao onom tko otimačinu zgrće nepravednu kući svojoj, da visoko svije gnijezdo svoje i otkloni ruku zla!",
+          "lines": [
+            "Jao onom tko otimačinu zgrće",
+            "nepravednu kući svojoj,",
+            "da visoko svije gnijezdo svoje",
+            "i otkloni ruku zla!"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Nanese sramotu kući svojoj: zatirući mnoga plemena, griješiš protiv sebe.",
+          "lines": [
+            "Nanese sramotu kući svojoj:",
+            "zatirući mnoga plemena,",
+            "griješiš protiv sebe."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Jer iz samih zidova kamen kriči, a krovna mu greda odgovara.",
+          "lines": [
+            "Jer iz samih zidova kamen kriči,",
+            "a krovna mu greda odgovara."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Jao onom tko grad diže krvlju i tvrđavu zasnuje na nepravdi!",
+          "lines": [
+            "Jao onom tko grad diže krvlju",
+            "i tvrđavu zasnuje na nepravdi!"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Nije li to, gle, od Jahve nad vojskama da se narodi za oganj trude, puci nizašto muče?",
+          "lines": [
+            "Nije li to, gle, od Jahve nad vojskama",
+            "da se narodi za oganj trude,",
+            "puci nizašto muče?"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Jer će se zemlja napuniti znanja o slavi Jahvinoj kao što vode prekrivaju more.",
+          "lines": [
+            "Jer će se zemlja napuniti znanja o slavi Jahvinoj",
+            "kao što vode prekrivaju more."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Jao onom tko bližnjeg navodi na piće, ulijeva otrov dok on pije da bi promatrao njegovu nagost!",
+          "lines": [
+            "Jao onom tko bližnjeg navodi na piće,",
+            "ulijeva otrov dok on pije",
+            "da bi promatrao njegovu nagost!"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Ti si pijan od sramote, ne od slave! Pij samo i pokazuj kapicu. Dolazi ti pehar iz desnice Jahvine i sramota na slavu tvoju!",
+          "lines": [
+            "Ti si pijan od sramote, ne od slave!",
+            "Pij samo i pokazuj kapicu.",
+            "Dolazi ti pehar iz desnice Jahvine",
+            "i sramota na slavu tvoju!"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Nasilje nad Libanonom tebe će prestraviti, pokolj zvijeri, jer si ljudsku krv prolio, poharao zemlju, grad i njegove žitelje.",
+          "lines": [
+            "Nasilje nad Libanonom tebe će prestraviti,",
+            "pokolj zvijeri,",
+            "jer si ljudsku krv prolio,",
+            "poharao zemlju,",
+            "grad i njegove žitelje."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Čemu koristi tesan lik da ga umjetnik teše? Čemu lijevan lik, lažno proroštvo, da se tvorac njegov u nj pouzdaje oblikujuć’ nijeme kipove?",
+          "lines": [
+            "Čemu koristi tesan lik da ga umjetnik teše?",
+            "Čemu lijevan lik, lažno proroštvo,",
+            "da se tvorac njegov u nj pouzdaje",
+            "oblikujuć’ nijeme kipove?"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Jao onom tko komadu drva kaže: »Probudi se!« Kamenu nijemom: »Preni se!« On da prorokuje? Optočen može biti i zlatom i srebrom, ali nikakva daha životnog nema u njemu.",
+          "lines": [
+            "Jao onom tko komadu drva kaže: »Probudi se!«",
+            "Kamenu nijemom: »Preni se!«",
+            "On da prorokuje?",
+            "Optočen može biti i zlatom i srebrom,",
+            "ali nikakva daha životnog nema u njemu."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Ali je Jahve u svojem svetom hramu: nek’ zemlja sva zašuti pred njime!",
+          "lines": [
+            "Ali je Jahve u svojem svetom hramu:",
+            "nek’ zemlja sva zašuti pred njime!"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 19,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Molitva. Od proroka Habakuka. Na način tužbalice.",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "III. VAPAJ JahvI ZA POMOĆ"
+            }
+          ],
+          "lines": [
+            "Molitva. Od proroka Habakuka.",
+            "Na način tužbalice."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Jahve, čuo sam za slavu tvoju, Jahve, tvoje mi djelo ulijeva jezu! Ponovi ga u naše vrijeme! Otkrij ga u naše vrijeme! U gnjevu se svojem smilovanja sjeti!",
+          "lines": [
+            "Jahve, čuo sam za slavu tvoju,",
+            "Jahve, tvoje mi djelo ulijeva jezu!",
+            "Ponovi ga u naše vrijeme!",
+            "Otkrij ga u naše vrijeme!",
+            "U gnjevu se svojem smilovanja sjeti!"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Bog stiže iz Temana, a Svetac s planine Parana! Veličanstvo njegovo zastire nebesa, zemlja mu je puna slave.",
+          "lines": [
+            "Bog stiže iz Temana,",
+            "a Svetac s planine Parana!",
+            "Veličanstvo njegovo zastire nebesa,",
+            "zemlja mu je puna slave."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Sjaj mu je k’o svjetlost, zrake sijevaju iz njegovih ruku, ondje mu se krije sila.",
+          "lines": [
+            "Sjaj mu je k’o svjetlost,",
+            "zrake sijevaju iz njegovih ruku,",
+            "ondje mu se krije sila."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Kuga pred njim ide, groznica ga sustopice prati.",
+          "lines": [
+            "Kuga pred njim ide,",
+            "groznica ga sustopice prati."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "On stane, i zemlja se trese, on pogleda, i dršću narodi. Tad se raspadoše vječne planine, bregovi stari propadoše, njegove su staze od vječnosti.",
+          "lines": [
+            "On stane, i zemlja se trese,",
+            "on pogleda, i dršću narodi.",
+            "Tad se raspadoše vječne planine,",
+            "bregovi stari propadoše,",
+            "njegove su staze od vječnosti."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Prestrašene vidjeh kušanske šatore, čadore što dršću u zemlji midjanskoj.",
+          "lines": [
+            "Prestrašene vidjeh kušanske šatore,",
+            "čadore što dršću u zemlji midjanskoj."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Jahve, planu li tvoj gnjev na rijeke ili jarost tvoja na more te jezdiš na svojim konjima, na pobjedničkim bojnim kolima?",
+          "lines": [
+            "Jahve, planu li tvoj gnjev na rijeke",
+            "ili jarost tvoja na more",
+            "te jezdiš na svojim konjima,",
+            "na pobjedničkim bojnim kolima?"
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Otkrivaš svoj lûk i otrovnim ga strijelama sitiš. Bujicama rasijecaš tlo,",
+          "lines": [
+            "Otkrivaš svoj lûk",
+            "i otrovnim ga strijelama sitiš.",
+            "Bujicama rasijecaš tlo,"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "planine dršću kad te vide, navaljuje oblaka prolom, bezdan diže svoj glas.",
+          "lines": [
+            "planine dršću kad te vide,",
+            "navaljuje oblaka prolom,",
+            "bezdan diže svoj glas."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Sunce uvis diže ruke, mjesec u obitavalištu svojem popostaje, pred blijeskom tvojih strijela, pred blistavim sjajem koplja tvoga.",
+          "lines": [
+            "Sunce uvis diže ruke,",
+            "mjesec u obitavalištu svojem popostaje,",
+            "pred blijeskom tvojih strijela,",
+            "pred blistavim sjajem koplja tvoga."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Jarosno po zemlji koračaš, srdito gaziš narode.",
+          "lines": [
+            "Jarosno po zemlji koračaš,",
+            "srdito gaziš narode."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Iziđe da spasiš narod svoj, da spasiš svog pomazanika; sori vrh kuće bezbožnikove, ogoli joj temelje do stijene.",
+          "lines": [
+            "Iziđe da spasiš narod svoj,",
+            "da spasiš svog pomazanika;",
+            "sori vrh kuće bezbožnikove,",
+            "ogoli joj temelje do stijene."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Kopljima si izbo vođu ratnika njegovih, koji navališe da nas s radošću satru, kao da će potajice proždrijet’ ubogoga.",
+          "lines": [
+            "Kopljima si izbo vođu ratnika njegovih,",
+            "koji navališe da nas s radošću satru,",
+            "kao da će potajice proždrijet’ ubogoga."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Gaziš po moru s konjima svojim, po pučini silnih voda!",
+          "lines": [
+            "Gaziš po moru s konjima svojim,",
+            "po pučini silnih voda!"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Čuo sam! Sva se moja utroba trese, podrhtavaju mi usne na taj zvuk, trulež prodire u kosti moje, noge klecaju poda mnom. Počinut ću kada dan tjeskobni svane narodu što nas sad napada.",
+          "lines": [
+            "Čuo sam! Sva se moja utroba trese,",
+            "podrhtavaju mi usne na taj zvuk,",
+            "trulež prodire u kosti moje,",
+            "noge klecaju poda mnom.",
+            "Počinut ću kada dan tjeskobni",
+            "svane narodu što nas sad napada."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Jer smokvino drvo neće više cvasti niti će na lozi biti ploda, maslina će uskratiti rod, polja neće donijeti hrane, ovaca će nestati iz tora, u oborima neće biti ni gòveda.",
+          "lines": [
+            "Jer smokvino drvo neće više cvasti",
+            "niti će na lozi biti ploda,",
+            "maslina će uskratiti rod,",
+            "polja neće donijeti hrane,",
+            "ovaca će nestati iz tora,",
+            "u oborima neće biti ni gòveda."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Ali ja ću se radovati u Jahvi i kliktat ću u Bogu, svojem Spasitelju.",
+          "lines": [
+            "Ali ja ću se radovati u Jahvi",
+            "i kliktat ću u Bogu, svojem Spasitelju."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Jahve, moj Gospod, moja je snaga, on mi daje noge poput košutinih i vodi me na visine. Zborovođi. Na žičanim glazbalima.",
+          "lines": [
+            "Jahve, moj Gospod, moja je snaga,",
+            "on mi daje noge poput košutinih",
+            "i vodi me na visine.",
+            "Zborovođi. Na žičanim glazbalima."
+          ]
+        }
+      ]
+    }
+  ]
+}

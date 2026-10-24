@@ -1,0 +1,264 @@
+{
+  "id": "ks-39098",
+  "title": "Propovjednik u petnaest dana",
+  "category": "ks-tematski",
+  "days_count": 15,
+  "description": "Propovjednik je knjiga čovjeka koji je sve okušao – slavu, znanje, užitak. Toga ne ispunja, jer sve prolazi. Ali ipak ostaje vjernik!",
+  "days": [
+    {
+      "day": 1,
+      "label": "Prop 1",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 1,
+          "chapter_end": 1,
+          "verse_count": 18,
+          "label": "Prop 1"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "label": "Prop 2,1-13",
+      "verse_count": 26,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 26,
+          "label": "Prop 2"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "label": "Prop 2,14-26",
+      "verse_count": 26,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 2,
+          "chapter_end": 2,
+          "verse_count": 26,
+          "label": "Prop 2"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "label": "Prop 3,1-10",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 22,
+          "label": "Prop 3"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "label": "Prop 3,12-22",
+      "verse_count": 22,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 3,
+          "chapter_end": 3,
+          "verse_count": 22,
+          "label": "Prop 3"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "label": "Prop 4",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 4,
+          "chapter_end": 4,
+          "verse_count": 17,
+          "label": "Prop 4"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "label": "Prop 5",
+      "verse_count": 19,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 5,
+          "chapter_end": 5,
+          "verse_count": 19,
+          "label": "Prop 5"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "label": "Prop 6",
+      "verse_count": 12,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 6,
+          "chapter_end": 6,
+          "verse_count": 12,
+          "label": "Prop 6"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "label": "Prop 7,1-15",
+      "verse_count": 29,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 7,
+          "chapter_end": 7,
+          "verse_count": 29,
+          "label": "Prop 7"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "label": "Prop 7,16-29",
+      "verse_count": 29,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 7,
+          "chapter_end": 7,
+          "verse_count": 29,
+          "label": "Prop 7"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "label": "Prop 8",
+      "verse_count": 17,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 8,
+          "chapter_end": 8,
+          "verse_count": 17,
+          "label": "Prop 8"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "label": "Prop 9",
+      "verse_count": 18,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 9,
+          "chapter_end": 9,
+          "verse_count": 18,
+          "label": "Prop 9"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "label": "Prop 10",
+      "verse_count": 20,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 10,
+          "chapter_end": 10,
+          "verse_count": 20,
+          "label": "Prop 10"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "label": "Prop 11",
+      "verse_count": 10,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 11,
+          "chapter_end": 11,
+          "verse_count": 10,
+          "label": "Prop 11"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "label": "Prop 12",
+      "verse_count": 14,
+      "readings": [
+        {
+          "book_order": 25,
+          "book_id": "propovjednik",
+          "book_abbr": "Prop",
+          "book_title": "Propovjednik",
+          "chapter_start": 12,
+          "chapter_end": 12,
+          "verse_count": 14,
+          "label": "Prop 12"
+        }
+      ]
+    }
+  ]
+}

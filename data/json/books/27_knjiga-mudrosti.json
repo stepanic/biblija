@@ -1,0 +1,4300 @@
+{
+  "order": 27,
+  "id": "knjiga-mudrosti",
+  "ks_book_id": 38,
+  "abbr": "Mudr",
+  "title": "Knjiga Mudrosti",
+  "testament": "SZ",
+  "category": "Psalmi i mudrosne knjige",
+  "chapter_count": 19,
+  "verse_count": 435,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 16,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Ljubite pravednost, vi suci zemaljski, pravednim mislima mislite o Gospodinu i tražite ga u jednostavnosti srca.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Tražiti Boga, a kloniti se grijeha"
+            }
+          ],
+          "lines": [
+            "Ljubite pravednost,",
+            "vi suci zemaljski,",
+            "pravednim mislima mislite o Gospodinu",
+            "i tražite ga u jednostavnosti srca."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Jer njega nalaze koji ga ne iskušavaju i otkriva se onima koji mu ne uskraćuju svoju vjeru.",
+          "lines": [
+            "Jer njega nalaze koji ga ne iskušavaju",
+            "i otkriva se onima koji mu ne uskraćuju svoju vjeru."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "A podmukle misli otuđuju od Boga i iskušavana Svemoć posramljuje bezumnike.",
+          "lines": [
+            "A podmukle misli otuđuju od Boga",
+            "i iskušavana Svemoć posramljuje bezumnike."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Jer mudrost ne ulazi u dušu opaku i ne nastanjuje se u tijelu grijehu podložnu.",
+          "lines": [
+            "Jer mudrost ne ulazi u dušu opaku",
+            "i ne nastanjuje se u tijelu grijehu podložnu."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Jer sveti duh pouke bježi od prijevare i uklanja se od misli bezumnih i uzmiče kad se nepravda pojavi.",
+          "lines": [
+            "Jer sveti duh pouke bježi od prijevare",
+            "i uklanja se od misli bezumnih",
+            "i uzmiče kad se nepravda pojavi."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Jer mudrost je duh čovjekoljubiv, ali hulniku neće oprostiti njegovih riječi, jer Bog proniče bubrege njegove, istinski mu srce nadzire i sluša njegove riječi.",
+          "lines": [
+            "Jer mudrost je duh čovjekoljubiv,",
+            "ali hulniku neće oprostiti njegovih riječi,",
+            "jer Bog proniče bubrege njegove,",
+            "istinski mu srce nadzire",
+            "i sluša njegove riječi."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Doista duh Gospodnji ispunja svemir, i on, koji drži sve, zna i sve što se govori.",
+          "lines": [
+            "Doista duh Gospodnji ispunja svemir,",
+            "i on, koji drži sve, zna i sve što se govori."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Zato ne ostaje skriven tko nepravedno govori niti će ga mimoići osvetnička pravda.",
+          "lines": [
+            "Zato ne ostaje skriven tko nepravedno govori",
+            "niti će ga mimoići osvetnička pravda."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Jer se namisli bezbožnikove točno ispituju i glas riječi njegovih ide sve do Gospoda da se kazne bezakonja njegova.",
+          "lines": [
+            "Jer se namisli bezbožnikove točno ispituju",
+            "i glas riječi njegovih ide sve do Gospoda",
+            "da se kazne bezakonja njegova."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Jer postoji uho ljubomorno koje čuje sve i ne izmiče mu ni glasak najtišeg gunđanja.",
+          "lines": [
+            "Jer postoji uho ljubomorno koje čuje sve",
+            "i ne izmiče mu ni glasak najtišeg gunđanja."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Čuvajte se isprazna gunđanja i čuvajte jezik od opakih riječi, jer i najtajnija riječ nije bez učinka, a lažljiva usta ubijaju dušu.",
+          "lines": [
+            "Čuvajte se isprazna gunđanja",
+            "i čuvajte jezik od opakih riječi,",
+            "jer i najtajnija riječ nije bez učinka, a lažljiva usta ubijaju dušu."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Ne trčite za smrću stranputicama života svojeg i ne navlačite na se propast djelima ruku svojih.",
+          "lines": [
+            "Ne trčite za smrću stranputicama života svojeg",
+            "i ne navlačite na se propast djelima ruku svojih."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Jer Bog nije stvorio smrt niti se raduje propasti živih.",
+          "lines": [
+            "Jer Bog nije stvorio smrt",
+            "niti se raduje propasti živih."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Već je sve stvorio da sve opstane, i spasonosni su stvorovi svijeta, i u njima nema smrtonosna otrova. I podzemlje ne vlada zemljom,",
+          "lines": [
+            "Već je sve stvorio da sve opstane,",
+            "i spasonosni su stvorovi svijeta,",
+            "i u njima nema smrtonosna otrova.",
+            "I podzemlje ne vlada zemljom,"
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "jer pravednost je besmrtna.",
+          "lines": [
+            "jer pravednost je besmrtna."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Ali bezbožnici dozivaju smrt i rukama i riječju i za njom ginu smatrajući je prijateljem i s njome ugovor sklapaju, dostojni da joj pripadaju.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Život u očima bezbožnikâ"
+            }
+          ],
+          "lines": [
+            "Ali bezbožnici dozivaju smrt i rukama i riječju",
+            "i za njom ginu smatrajući je prijateljem",
+            "i s njome ugovor sklapaju,",
+            "dostojni da joj pripadaju."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verse_count": 24,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Jer oni krivo misle i ovako mudruju: »Kratkovjek je i tužan život naš i nema lijeka kad čovjeku dođe kraj i još nije poznat tko bi se iz podzemlja izbavio.",
+          "lines": [
+            "Jer oni krivo misle",
+            "i ovako mudruju:",
+            "»Kratkovjek je i tužan život naš",
+            "i nema lijeka kad čovjeku dođe kraj",
+            "i još nije poznat tko bi se iz podzemlja izbavio."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Mi smo djeca pukog slučaja i kasnije ćemo biti kao da nikad nismo ni bili, jer samo je dim ono čime dišu naše nosnice, a misao je tek iskra od kucaja našega srca.",
+          "lines": [
+            "Mi smo djeca pukog slučaja",
+            "i kasnije ćemo biti kao da nikad nismo ni bili,",
+            "jer samo je dim ono čime dišu naše nosnice,",
+            "a misao je tek iskra od kucaja našega srca."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Kad se ona utrne, pretvorit će se tijelo u pepeo, a duh će se rasplinuti kao lagan zrak.",
+          "lines": [
+            "Kad se ona utrne, pretvorit će se tijelo u pepeo,",
+            "a duh će se rasplinuti kao lagan zrak."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Ime će nam se s vremenom zaboraviti i nitko se neće sjećati djela naših; i život će nam proći kao pramenje oblaka i nestat će ga kao magle što je gone zrake sunčane i pritiskuje žega njihova.",
+          "lines": [
+            "Ime će nam se s vremenom zaboraviti",
+            "i nitko se neće sjećati djela naših;",
+            "i život će nam proći kao pramenje oblaka",
+            "i nestat će ga kao magle",
+            "što je gone zrake sunčane i pritiskuje žega njihova."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Jer život naš kao sjena odmiče, iz naše smrti nema povratka, zapečaćeno je i nitko se ne vraća.",
+          "lines": [
+            "Jer život naš kao sjena odmiče,",
+            "iz naše smrti nema povratka,",
+            "zapečaćeno je i nitko se ne vraća."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Zato hodite ovamo! Uživajmo dobra sadašnja, koristimo se stvorovima sa žarom mladosti.",
+          "lines": [
+            "Zato hodite ovamo! Uživajmo dobra sadašnja,",
+            "koristimo se stvorovima sa žarom mladosti."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Nauživajmo se odabranih vina i mirisa i neka nas ne mimoiđe ni jedan cvijet proljetni,",
+          "lines": [
+            "Nauživajmo se odabranih vina i mirisa",
+            "i neka nas ne mimoiđe ni jedan cvijet proljetni,"
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "okrunimo se ružama prije no što uvenu.",
+          "lines": [
+            "okrunimo se ružama prije no što uvenu."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Neka svaki od nas sudjeluje u pijanki našoj, ostavimo svuda znake našeg veseljenja: to je naš dio i to je naša baština.",
+          "lines": [
+            "Neka svaki od nas sudjeluje u pijanki našoj,",
+            "ostavimo svuda znake našeg veseljenja:",
+            "to je naš dio i to je naša baština."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Potlačimo ubogoga pravednika, ne štedimo udovice, ne poštujmo starca ni sjedina od mnogih godina.",
+          "lines": [
+            "Potlačimo ubogoga pravednika, ne štedimo udovice,",
+            "ne poštujmo starca",
+            "ni sjedina od mnogih godina."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Nek’ naša snaga bude zakon pravde, jer ono što je slabo nije ni za što.",
+          "lines": [
+            "Nek’ naša snaga bude zakon pravde,",
+            "jer ono što je slabo nije ni za što."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Postavimo zasjedu pravedniku jer nam smeta i protivi se našem ponašanju, predbacuje nam prijestupe protiv Zakona i spočitava kako izdadosmo odgoj svoj.",
+          "lines": [
+            "Postavimo zasjedu pravedniku jer nam smeta",
+            "i protivi se našem ponašanju,",
+            "predbacuje nam prijestupe protiv Zakona",
+            "i spočitava kako izdadosmo odgoj svoj."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "On se hvasta posjedom spoznaje o Bogu i naziva se sinom Gospodnjim.",
+          "lines": [
+            "On se hvasta posjedom spoznaje o Bogu",
+            "i naziva se sinom Gospodnjim."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "On je ukor utjelovljeni našim mislima, sama njegova pojava tišti našu dušu.",
+          "lines": [
+            "On je ukor utjelovljeni našim mislima,",
+            "sama njegova pojava tišti našu dušu."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Život njegov nije kao u ostalih i njegovo je ponašanje nastrano.",
+          "lines": [
+            "Život njegov nije kao u ostalih",
+            "i njegovo je ponašanje nastrano."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Smatra nas patvorinom i uklanja se od putova naših kao od nečisti. On svršetak pravednika proglašava sretnim i hvali se da mu je Bog otac.",
+          "lines": [
+            "Smatra nas patvorinom",
+            "i uklanja se od putova naših kao od nečisti.",
+            "On svršetak pravednika proglašava sretnim",
+            "i hvali se da mu je Bog otac."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Pogledajmo jesu li istinite riječi njegove, istražimo kakav će biti njegov svršetak.",
+          "lines": [
+            "Pogledajmo jesu li istinite riječi njegove,",
+            "istražimo kakav će biti njegov svršetak."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Jer ako je pravednik Božji sin, On će se za nj zauzeti i izbavit će ga iz ruku neprijateljskih.",
+          "lines": [
+            "Jer ako je pravednik Božji sin,",
+            "On će se za nj zauzeti",
+            "i izbavit će ga iz ruku neprijateljskih."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Zato ga iskušajmo porugom i mukom da istražimo blagost njegovu i da prosudimo strpljivost njegovu.",
+          "lines": [
+            "Zato ga iskušajmo porugom i mukom",
+            "da istražimo blagost njegovu",
+            "i da prosudimo strpljivost njegovu."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Osudimo ga na smrt sramotnu, jer će mu, kako veli, doći izbavljenje.«",
+          "lines": [
+            "Osudimo ga na smrt sramotnu,",
+            "jer će mu, kako veli, doći izbavljenje.«"
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "Tako oni misle, ali se varaju, jer ih zloća njihova zasljepljuje.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Zabluda bezbožnička"
+            }
+          ],
+          "lines": [
+            "Tako oni misle, ali se varaju,",
+            "jer ih zloća njihova zasljepljuje."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Oni ne znaju tajna Božjih, ne očekuju nagradu za svetost, ne vjeruju u naknadu čistim dušama.",
+          "lines": [
+            "Oni ne znaju tajna Božjih,",
+            "ne očekuju nagradu za svetost,",
+            "ne vjeruju u naknadu čistim dušama."
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "Jer je Bog stvorio čovjeka za neraspadljivost i učinio ga na sliku svoje besmrtnosti.",
+          "lines": [
+            "Jer je Bog stvorio čovjeka za neraspadljivost",
+            "i učinio ga na sliku svoje besmrtnosti."
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "A đavlovom je zavišću došla smrt u svijet i nju će iskusiti oni koji njemu pripadaju.",
+          "lines": [
+            "A đavlovom je zavišću došla smrt u svijet",
+            "i nju će iskusiti oni koji njemu pripadaju."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verse_count": 19,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "A duše su pravednika u ruci Božjoj i njih se ne dotiče muka nikakva.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Blaženstvo pravednikâ"
+            }
+          ],
+          "lines": [
+            "A duše su pravednika u ruci Božjoj",
+            "i njih se ne dotiče muka nikakva."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Očima se bezbožničkim čini da oni umiru i njihov odlazak s ovog svijeta kao nesreća;",
+          "lines": [
+            "Očima se bezbožničkim čini da oni umiru",
+            "i njihov odlazak s ovog svijeta kao nesreća;"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "i to što nas napuštaju kao propast, ali oni su u miru.",
+          "lines": [
+            "i to što nas napuštaju kao propast,",
+            "ali oni su u miru."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Ako su, u očima ljudskim, bili kažnjeni, nada im je puna besmrtnosti.",
+          "lines": [
+            "Ako su, u očima ljudskim, bili kažnjeni,",
+            "nada im je puna besmrtnosti."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Za malo muke zadobili su dobra velika jer Bog ih je stavio na kušnju i našao da su ga dostojni.",
+          "lines": [
+            "Za malo muke zadobili su dobra velika",
+            "jer Bog ih je stavio na kušnju",
+            "i našao da su ga dostojni."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Iskušao ih je kao zlato u taljiku i primio ih kao žrtvu paljenicu.",
+          "lines": [
+            "Iskušao ih je kao zlato u taljiku",
+            "i primio ih kao žrtvu paljenicu."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Zato će se u vrijeme posjeta njegova zasjati te će vrcati kao iskre u strnjici.",
+          "lines": [
+            "Zato će se u vrijeme posjeta njegova zasjati",
+            "te će vrcati kao iskre u strnjici."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Sudit će pucima i vladati narodima i Gospodin će kraljevat’ nad njima uvijeke.",
+          "lines": [
+            "Sudit će pucima i vladati narodima",
+            "i Gospodin će kraljevat’ nad njima uvijeke."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Koji se u nj ufaju spoznat će istinu, i koji su vjerni bit će u ljubavi s njim, jer izabranici njegovi stječu milost i milosrđe.",
+          "lines": [
+            "Koji se u nj ufaju spoznat će istinu,",
+            "i koji su vjerni bit će u ljubavi s njim,",
+            "jer izabranici njegovi stječu milost i milosrđe."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "A bezbožnici će zbog svojih misli biti primjereno kažnjeni jer su prezreli pravednike i otpali od Gospodina.",
+          "lines": [
+            "A bezbožnici će zbog svojih misli biti primjereno kažnjeni",
+            "jer su prezreli pravednike i otpali od Gospodina."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Teško onima koji preziru mudrost i stegu! Isprazna je nada njihova, napori uzaludni i poslovi bez probitka.",
+          "lines": [
+            "Teško onima koji preziru mudrost i stegu!",
+            "Isprazna je nada njihova, napori uzaludni",
+            "i poslovi bez probitka."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Žene su im bezumne, djeca opaka i proklet njihov rod!",
+          "lines": [
+            "Žene su im bezumne, djeca opaka",
+            "i proklet njihov rod!"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Blago nerotkinji, ali bez ljage, kojoj ložnica ne poznaje grijeha; plodnost će se njezina pokazati na istrazi duša.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Bolja je jalovost nego bezbožno potomstvo"
+            }
+          ],
+          "lines": [
+            "Blago nerotkinji, ali bez ljage,",
+            "kojoj ložnica ne poznaje grijeha;",
+            "plodnost će se njezina pokazati na istrazi duša."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Blago i uškopljeniku koji ne počini zločina niti smišlja zla protiv Gospoda; jer će za vjernost dobiti milost izabranu i baštinu najljupkiju u domu Gospodnjem.",
+          "lines": [
+            "Blago i uškopljeniku koji ne počini zločina",
+            "niti smišlja zla protiv Gospoda;",
+            "jer će za vjernost dobiti milost izabranu",
+            "i baštinu najljupkiju u domu Gospodnjem."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Jer plemenit trud donosi plod pun slave i neraspadljiv je korijen razbora.",
+          "lines": [
+            "Jer plemenit trud donosi plod pun slave",
+            "i neraspadljiv je korijen razbora."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "A djeca preljubnička neće doći do savršenstva i rod nezakonite ložnice propada.",
+          "lines": [
+            "A djeca preljubnička neće doći do savršenstva",
+            "i rod nezakonite ložnice propada."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Pa ako i žive dugo, nisu ni za što i na koncu im je starost nečasna.",
+          "lines": [
+            "Pa ako i žive dugo, nisu ni za što",
+            "i na koncu im je starost nečasna."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Umru li opet rano, nade nemaju niti utjehe na sudnji dan:",
+          "lines": [
+            "Umru li opet rano, nade nemaju",
+            "niti utjehe na sudnji dan:"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "jer okrutna je kob grešna roda.",
+          "lines": [
+            "jer okrutna je kob grešna roda."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verse_count": 20,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Bolje i ne imati djece a posjedovati krepost, jer je spomen njezin besmrtan, i Bog i ljudi je cijene.",
+          "lines": [
+            "Bolje i ne imati djece",
+            "a posjedovati krepost,",
+            "jer je spomen njezin besmrtan,",
+            "i Bog i ljudi je cijene."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Kad je nazočna, oponašaju je, kad je odsutna, priželjkuju je; okrunjena vječno slavlje slavi, jer je pobijedila u borbama bez ljage.",
+          "lines": [
+            "Kad je nazočna, oponašaju je,",
+            "kad je odsutna, priželjkuju je;",
+            "okrunjena vječno slavlje slavi,",
+            "jer je pobijedila u borbama bez ljage."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "A mnogobrojno potomstvo bezbožnika nije ni za što; izdanci se nečisti duboko ne korijene i nemaju čvrsta temelja.",
+          "lines": [
+            "A mnogobrojno potomstvo bezbožnika nije ni za što;",
+            "izdanci se nečisti duboko ne korijene i nemaju čvrsta temelja."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Jer ako se načas i razgranaju, slabo ukorijenjeni, na vjetru se zaljuljaju, iščupa ih sila vihora,",
+          "lines": [
+            "Jer ako se načas i razgranaju,",
+            "slabo ukorijenjeni, na vjetru se zaljuljaju,",
+            "iščupa ih sila vihora,"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "i grane što tek su izbile polomi i plod im je beskoristan, nezreo za jelo i nije ni za što.",
+          "lines": [
+            "i grane što tek su izbile polomi",
+            "i plod im je beskoristan,",
+            "nezreo za jelo",
+            "i nije ni za što."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Jer djeca rođena iz nezakonita spavanja svjedoče na sudu o zlu roditelja.",
+          "lines": [
+            "Jer djeca rođena iz nezakonita spavanja",
+            "svjedoče na sudu o zlu roditelja."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "A pravednik, ako i umre prijevremeno, naći će mir.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Prijevremena smrt pravednika"
+            }
+          ],
+          "lines": [
+            "A pravednik, ako i umre prijevremeno,",
+            "naći će mir."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Jer duljina danâ ne čini starost časnom niti se ona mjeri brojem godina.",
+          "lines": [
+            "Jer duljina danâ ne čini starost časnom",
+            "niti se ona mjeri brojem godina."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Već razboritost – to su sjedine ljudske, i krepostan život – zrela starost.",
+          "lines": [
+            "Već razboritost – to su sjedine ljudske,",
+            "i krepostan život – zrela starost."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "I jer je ugađao Bogu, On ga je zavolio, i jer je živio među grešnicima, On ga je uzeo k sebi.",
+          "lines": [
+            "I jer je ugađao Bogu,",
+            "On ga je zavolio,",
+            "i jer je živio među grešnicima,",
+            "On ga je uzeo k sebi."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Uzdignut je da zloća ne bi izopačila njegov razbor ili da mu himba ne zavede duše.",
+          "lines": [
+            "Uzdignut je da zloća ne bi izopačila njegov razbor",
+            "ili da mu himba ne zavede duše."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Jer blještavilo opačine zasjenjuje dobro i vihor požude izopačuje dobru dušu.",
+          "lines": [
+            "Jer blještavilo opačine zasjenjuje dobro",
+            "i vihor požude izopačuje dobru dušu."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Stekavši savršenstvo u malo vremena, dugo je živio;",
+          "lines": [
+            "Stekavši savršenstvo u malo vremena,",
+            "dugo je živio;"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "i jer mu je duša bila draga Gospodu, On ga je hitro izbavio od zloće oko njega. Svjetina sve to vidi, ali ne shvaća; njima i ne pada na um",
+          "lines": [
+            "i jer mu je duša bila draga Gospodu,",
+            "On ga je hitro izbavio od zloće oko njega.",
+            "Svjetina sve to vidi, ali ne shvaća;",
+            "njima i ne pada na um"
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "da milost i milosrđe pripadaju izabranicima Gospodnjim i zaštita njegovim svetima.",
+          "lines": [
+            "da milost i milosrđe pripadaju izabranicima Gospodnjim",
+            "i zaštita njegovim svetima."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "A pravednik koji umire osuđuje žive bezbožnike i prijevremeno dokončana mladost produženu starost opakih.",
+          "lines": [
+            "A pravednik koji umire",
+            "osuđuje žive bezbožnike",
+            "i prijevremeno dokončana mladost",
+            "produženu starost opakih."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Svjetina vidi kraj mudračev, ali ne shvaća što je Gospod s njim naumio ili zašto ga je uzeo u zaštitu.",
+          "lines": [
+            "Svjetina vidi kraj mudračev,",
+            "ali ne shvaća što je Gospod s njim naumio",
+            "ili zašto ga je uzeo u zaštitu."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Oni gledaju i preziru, ali će se i njima Gospod podsmijevati.",
+          "lines": [
+            "Oni gledaju i preziru,",
+            "ali će se i njima Gospod podsmijevati."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Ubrzo će oni biti trupla prezrena i ruglo među mrtvima dovijeka, jer će ih Gospod strmoglaviti bez glasa, otrgnut će ih od temelja njihova, sasvim ih opustošiti; na mukama će oni biti i spomen će im propasti.",
+          "lines": [
+            "Ubrzo će oni biti trupla prezrena i",
+            "ruglo među mrtvima dovijeka,",
+            "jer će ih Gospod strmoglaviti bez glasa,",
+            "otrgnut će ih od temelja njihova,",
+            "sasvim ih opustošiti;",
+            "na mukama će oni biti",
+            "i spomen će im propasti."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Puni straha doći će na obračun grijehâ, i bezakonja njihova u lice će ih optuživati.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Bezbožnici na sudu"
+            }
+          ],
+          "lines": [
+            "Puni straha doći će na obračun grijehâ,",
+            "i bezakonja njihova",
+            "u lice će ih optuživati."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verse_count": 23,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "A pravednik će se vedro sučeliti s onima koji ga tlačiše i koji prezirahu patnje njegove.",
+          "lines": [
+            "A pravednik će se vedro sučeliti",
+            "s onima koji ga tlačiše",
+            "i koji prezirahu patnje njegove."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Kad ga ugledaju, uzdrhtat će od silna straha, zapanjeni njegovim iznenadnim spasenjem.",
+          "lines": [
+            "Kad ga ugledaju, uzdrhtat će od silna straha,",
+            "zapanjeni njegovim iznenadnim spasenjem."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Govorit će među sobom, puni kajanja, i uzdišući u tjeskobi svoje duše:",
+          "lines": [
+            "Govorit će među sobom, puni kajanja,",
+            "i uzdišući u tjeskobi svoje duše:"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "»To je onaj komu smo se nekoć podsmijevali i koji nam je bio za porugu. Mi, budale, smatrasmo njegov život ludošću i svršetak njegov nečasnim.",
+          "lines": [
+            "»To je onaj komu smo se nekoć podsmijevali",
+            "i koji nam je bio za porugu.",
+            "Mi, budale, smatrasmo njegov život ludošću",
+            "i svršetak njegov nečasnim."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Kako li se ubrojio među sinove Božje i dobio udio svoj među svecima?",
+          "lines": [
+            "Kako li se ubrojio među sinove Božje",
+            "i dobio udio svoj među svecima?"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Mi, odista, zalutasmo s puta istine i svjetlost pravde nije nam svijetlila niti nam je sunce ogranulo.",
+          "lines": [
+            "Mi, odista, zalutasmo s puta istine",
+            "i svjetlost pravde nije nam svijetlila",
+            "niti nam je sunce ogranulo."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Bazali smo stazama propasti i prohodili bespuća pustinje, ali puta Gospodnjega nismo spoznali.",
+          "lines": [
+            "Bazali smo stazama propasti",
+            "i prohodili bespuća pustinje,",
+            "ali puta Gospodnjega nismo spoznali."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Što nam je koristila oholost? Što nam je vrijedilo bogatstvo i hvastanje?",
+          "lines": [
+            "Što nam je koristila oholost?",
+            "Što nam je vrijedilo bogatstvo i hvastanje?"
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Sve je prošlo kao sjena i kao kratkotrajan glas.",
+          "lines": [
+            "Sve je prošlo kao sjena",
+            "i kao kratkotrajan glas."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "I kao lađa koja siječe uzburkano more i traga joj nema kuda prođe niti brazde hrptici njezinoj u valovima;",
+          "lines": [
+            "I kao lađa koja siječe uzburkano more",
+            "i traga joj nema kuda prođe",
+            "niti brazde hrptici njezinoj u valovima;"
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "ili kao ptica što zrakom proleti i ne ostavi traga prolazu svojem: šiba lagani uzduh udarcima svojih pera i rasijeca ga uza snažan fijuk i prodire zamasima svojih krila, a poslije nema više nikakva traga njezinu letu;",
+          "lines": [
+            "ili kao ptica što zrakom proleti",
+            "i ne ostavi traga prolazu svojem:",
+            "šiba lagani uzduh udarcima svojih pera",
+            "i rasijeca ga uza snažan fijuk",
+            "i prodire zamasima svojih krila,",
+            "a poslije nema više nikakva traga njezinu letu;"
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "ili kao strijela odapeta na svoj cilj: probijeni se zrak odmah sklapa i ne raspoznaje se staza njezina –",
+          "lines": [
+            "ili kao strijela odapeta na svoj cilj:",
+            "probijeni se zrak odmah sklapa",
+            "i ne raspoznaje se staza njezina –"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "tako i mi: jedva što smo na svijet došli, a već nestadosmo, ni traga kreposti pokazati ne mogosmo: u zloći se svojoj sasvim istrošismo.«",
+          "lines": [
+            "tako i mi: jedva što smo na svijet došli,",
+            "a već nestadosmo,",
+            "ni traga kreposti pokazati ne mogosmo:",
+            "u zloći se svojoj sasvim istrošismo.«"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "I doista, nada je bezbožnikova kao pljeva što je vjetar raznosi i kao sitna pjena što je vihor razgoni; ona nestaje kao dim na vjetru i prolazi kao spomen na jednodnevna gosta.",
+          "lines": [
+            "I doista, nada je bezbožnikova kao pljeva",
+            "što je vjetar raznosi",
+            "i kao sitna pjena",
+            "što je vihor razgoni;",
+            "ona nestaje kao dim na vjetru",
+            "i prolazi kao spomen na jednodnevna gosta."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "A pravednici žive dovijeka, i u Gospodu je nagrada njihova i briga za njih u Svevišnjeg.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Slava pravednikâ i kazna bezbožnikâ"
+            }
+          ],
+          "lines": [
+            "A pravednici žive dovijeka,",
+            "i u Gospodu je nagrada njihova",
+            "i briga za njih u Svevišnjeg."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Zato će iz ruku Gospodnjih primiti kraljevsku krunu slave i vijenac ljepote; svojom će ih desnicom Gospod zakriliti i svojom ih mišicom zaštititi.",
+          "lines": [
+            "Zato će iz ruku Gospodnjih primiti",
+            "kraljevsku krunu slave i vijenac ljepote;",
+            "svojom će ih desnicom Gospod zakriliti",
+            "i svojom ih mišicom zaštititi."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Latit će se svog žara ljubomornog kao oružja i naoružat će sve stvorenje da kazni svoje neprijatelje;",
+          "lines": [
+            "Latit će se svog žara ljubomornog kao oružja",
+            "i naoružat će sve stvorenje",
+            "da kazni svoje neprijatelje;"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "kao oklop obući će pravednost, a kao šljem stavit će sud bez himbe;",
+          "lines": [
+            "kao oklop obući će pravednost,",
+            "a kao šljem stavit će sud bez himbe;"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "uzet će nepobjedivu svetost kao štit,",
+          "lines": [
+            "uzet će nepobjedivu svetost kao štit,"
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "a kao mač naoštrit će žestok gnjev i sav će svemir poći s njim u boj protiv bezumnika.",
+          "lines": [
+            "a kao mač naoštrit će žestok gnjev",
+            "i sav će svemir poći s njim u boj protiv bezumnika."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "Tad će poletjet’ dobro naperene strijele: munje iz oblaka padat će na cilj kao iz nategnuta lûka;",
+          "lines": [
+            "Tad će poletjet’ dobro naperene strijele:",
+            "munje iz oblaka padat će na cilj",
+            "kao iz nategnuta lûka;"
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "iz bojne sprave izlijetat će zrna grada srdžbom nabijena. Na njih će voda morska bjesnjeti, i rijeke će ih potapati bez milosti.",
+          "lines": [
+            "iz bojne sprave izlijetat će zrna grada",
+            "srdžbom nabijena.",
+            "Na njih će voda morska bjesnjeti,",
+            "i rijeke će ih potapati bez milosti."
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "Dah Svemoći zapuhat će protiv njih, izvijat će ih poput vihora. I tako će svu zemlju opustošiti bezakonje i opačina će prevrnuti prijestolja vladalačka.",
+          "lines": [
+            "Dah Svemoći zapuhat će protiv njih,",
+            "izvijat će ih poput vihora.",
+            "I tako će svu zemlju opustošiti bezakonje",
+            "i opačina će prevrnuti prijestolja vladalačka."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verse_count": 25,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Čujte, dakle, kraljevi, i urazumite se! Poučite se, vladari zemalja dalekih!",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "II. PODRIJETLO, NARAV, UČINCI MUDROSTI I PUT DO NJE"
+            },
+            {
+              "level": "h4",
+              "text": "Dužnost je kraljevima težiti mudrosti"
+            }
+          ],
+          "lines": [
+            "Čujte, dakle, kraljevi,",
+            "i urazumite se!",
+            "Poučite se, vladari zemalja dalekih!"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Poslušajte, vi koji upravljate mnoštvima i koji se hvastate silom svojih naroda!",
+          "lines": [
+            "Poslušajte, vi koji upravljate mnoštvima",
+            "i koji se hvastate silom svojih naroda!"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Gospod je onaj koji vam je moć podario, i vladavina je od Svevišnjeg, koji će ispitivati djela vaša i vaše nakane istražiti.",
+          "lines": [
+            "Gospod je onaj koji vam je moć podario,",
+            "i vladavina je od Svevišnjeg,",
+            "koji će ispitivati djela vaša",
+            "i vaše nakane istražiti."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Iako ste upravljači njegova kraljevstva, ne vladaste pravedno, niti se držaste zakona, niti služiste nakani Božjoj.",
+          "lines": [
+            "Iako ste upravljači njegova kraljevstva,",
+            "ne vladaste pravedno,",
+            "niti se držaste zakona,",
+            "niti služiste nakani Božjoj."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Gospod će vas napasti brzo i užasno, jer za velikaše je nemilosrdna kazna;",
+          "lines": [
+            "Gospod će vas napasti brzo i užasno,",
+            "jer za velikaše je nemilosrdna kazna;"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "maleni su oproštenja dostojni, a moćnici će biti moćno kažnjeni.",
+          "lines": [
+            "maleni su oproštenja dostojni,",
+            "a moćnici će biti moćno kažnjeni."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Jer Gospod Svevladar ne uzmiče ni pred kim niti se plaši kakve veličine: ta on je stvorio i mala i velika i jednako se brine za sve,",
+          "lines": [
+            "Jer Gospod Svevladar ne uzmiče ni pred kim",
+            "niti se plaši kakve veličine:",
+            "ta on je stvorio i mala i velika",
+            "i jednako se brine za sve,"
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "a istraga oštra očekuje moćnike.",
+          "lines": [
+            "a istraga oštra očekuje moćnike."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Vama su dakle, vladari, upravljene riječi moje da se naučite mudrosti i ne griješite.",
+          "lines": [
+            "Vama su dakle, vladari, upravljene riječi moje",
+            "da se naučite mudrosti i ne griješite."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Jer oni koji sveto čuvaju svetinje sami se posvećuju, i koji su u tom poučeni nalaze obranu.",
+          "lines": [
+            "Jer oni koji sveto čuvaju svetinje",
+            "sami se posvećuju,",
+            "i koji su u tom poučeni nalaze obranu."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Žudite stoga za riječima mojim, čeznite za njima: one će vas poučiti.",
+          "lines": [
+            "Žudite stoga za riječima mojim,",
+            "čeznite za njima:",
+            "one će vas poučiti."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Mudrost je sjajna i ona ne tamni: lako je vide koji je ljube i nalaze je oni koji je traže.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Tražena mudrost – nađena mudrost"
+            }
+          ],
+          "lines": [
+            "Mudrost je sjajna i ona ne tamni:",
+            "lako je vide koji je ljube",
+            "i nalaze je oni koji je traže."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Ona pretječe sve koji je žude i prva im se pokazuje.",
+          "lines": [
+            "Ona pretječe sve koji je žude",
+            "i prva im se pokazuje."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Tko zorom rani njoj, taj se ne muči: nalazi je gdje sjedi kraj vrata njegovih.",
+          "lines": [
+            "Tko zorom rani njoj, taj se ne muči:",
+            "nalazi je gdje sjedi kraj vrata njegovih."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Jer je i sama misao na nju mudrost savršena, a tko radi nje bdî, brzo je bezbrižan.",
+          "lines": [
+            "Jer je i sama misao na nju mudrost savršena,",
+            "a tko radi nje bdî, brzo je bezbrižan."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Ona hodi naokolo i traži sebi dostojne; i pojavljuje im se dobrohotno na stazama i ususret im dolazi u svakoj misli.",
+          "lines": [
+            "Ona hodi naokolo i traži sebi dostojne;",
+            "i pojavljuje im se dobrohotno na stazama",
+            "i ususret im dolazi u svakoj misli."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Jer njezin početak najistinskiji želja je za poukom, u težnji za poukom ljubav je prema njoj;",
+          "lines": [
+            "Jer njezin početak najistinskiji",
+            "želja je za poukom,",
+            "u težnji za poukom ljubav je prema njoj;"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "voljeti je znači držati njene zakone, a posluh njezinim zakonima pouzdana je besmrtnost,",
+          "lines": [
+            "voljeti je znači držati njene zakone,",
+            "a posluh njezinim zakonima",
+            "pouzdana je besmrtnost,"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "a besmrtnost vodi u blizinu Božju;",
+          "lines": [
+            "a besmrtnost vodi u blizinu Božju;"
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "tako žudnja za mudrošću dovodi do kraljevstva.",
+          "lines": [
+            "tako žudnja za mudrošću dovodi",
+            "do kraljevstva."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "Ako se vi, vladari nad pucima, radujete prijestoljima i žezlima, tad mudrost štujte da dovijeka kraljujete.",
+          "lines": [
+            "Ako se vi, vladari nad pucima,",
+            "radujete prijestoljima i žezlima,",
+            "tad mudrost štujte",
+            "da dovijeka kraljujete."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "A sad ću vam priopćiti što je mudrost i kako je postala. Neću vam skriti tajne, nego ću je pratiti od početka i na vidjelo iznijeti znanje njezino, i neću istinu mimoići.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Salomonov opis mudrosti"
+            }
+          ],
+          "lines": [
+            "A sad ću vam priopćiti",
+            "što je mudrost",
+            "i kako je postala.",
+            "Neću vam skriti tajne,",
+            "nego ću je pratiti od početka",
+            "i na vidjelo iznijeti znanje njezino,",
+            "i neću istinu mimoići."
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "Neću poći ni s pogubnom Zavišću: ona ništa zajedničko nema s Mudrošću.",
+          "lines": [
+            "Neću poći ni s pogubnom Zavišću:",
+            "ona ništa zajedničko nema s Mudrošću."
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Mnoštvo je mudraca svijetu spasenje i kralj uman blagostanje narodu.",
+          "lines": [
+            "Mnoštvo je mudraca svijetu spasenje",
+            "i kralj uman blagostanje narodu."
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "Zato crpite nauku iz riječi mojih i bit će vam na probitak.",
+          "lines": [
+            "Zato crpite nauku iz riječi mojih",
+            "i bit će vam na probitak."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "verse_count": 30,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "I ja sam smrtnik, kao i svi ostali, i potomak prvog bića od zemlje načinjena i oblikovan kao tijelo u utrobi majčinoj,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "I Salomon je čovjek kao ostali"
+            }
+          ],
+          "lines": [
+            "I ja sam smrtnik, kao i svi ostali,",
+            "i potomak prvog bića od zemlje načinjena",
+            "i oblikovan kao tijelo u utrobi majčinoj,"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "u deset mjeseci, stisnut u krvi, iz sjemena muževljeva i slasti družice u spavanju.",
+          "lines": [
+            "u deset mjeseci, stisnut u krvi,",
+            "iz sjemena muževljeva i slasti družice u spavanju."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "I ja sam, došavši na svijet, udahnuo zajednički zrak i pao na zemlju koja nas sve nosi, i plač mi je bio prvi glas kao i svima ostalima.",
+          "lines": [
+            "I ja sam, došavši na svijet,",
+            "udahnuo zajednički zrak",
+            "i pao na zemlju koja nas sve nosi,",
+            "i plač mi je bio prvi glas",
+            "kao i svima ostalima."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "U pelenama bijah odgajan i u brigama,",
+          "lines": [
+            "U pelenama bijah odgajan i u brigama,"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "jer nijedan kralj nije drukčije postao niti na svijet došao.",
+          "lines": [
+            "jer nijedan kralj nije drukčije postao",
+            "niti na svijet došao."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Jer za sve postoji jedan ulazak u život, a tako i jedan izlazak.",
+          "lines": [
+            "Jer za sve postoji jedan ulazak u život,",
+            "a tako i jedan izlazak."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Zato se pomolih i razbor dobih; zavapih i primih duh mudrosti.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Salomonovo štovanje mudrosti"
+            }
+          ],
+          "lines": [
+            "Zato se pomolih i razbor dobih;",
+            "zavapih i primih duh mudrosti."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Zavoljeh je više nego žezla i prijestolja i ništa ne cijenih bogatstvo u usporedbi s njom.",
+          "lines": [
+            "Zavoljeh je više nego žezla i prijestolja",
+            "i ništa ne cijenih bogatstvo u usporedbi s njom."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Nisam je htio uspoređivati ni sa draguljima, jer je sve zlato pred njom kao malo pijeska, a srebro je prema njoj kao blato.",
+          "lines": [
+            "Nisam je htio uspoređivati ni sa draguljima,",
+            "jer je sve zlato pred njom kao malo pijeska,",
+            "a srebro je prema njoj kao blato."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Ljubio sam je više od zdravlja i ljepote i zavolio više od svjetlosti, jer njezin sjaj bez prestanka svijetli.",
+          "lines": [
+            "Ljubio sam je više od zdravlja i ljepote",
+            "i zavolio više od svjetlosti,",
+            "jer njezin sjaj bez prestanka svijetli."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "A s njome su mi došla sva dobra i od ruku njezinih blago nebrojeno.",
+          "lines": [
+            "A s njome su mi došla sva dobra",
+            "i od ruku njezinih blago nebrojeno."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "I svemu sam se tome radovao, jer mudrost sve donosi; još nisam znao da je ona roditeljka svega toga.",
+          "lines": [
+            "I svemu sam se tome radovao,",
+            "jer mudrost sve donosi;",
+            "još nisam znao da je ona",
+            "roditeljka svega toga."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "I ono što naučih bez primisli, to bez zavisti predajem, bogatstva njezina ne skrivam.",
+          "lines": [
+            "I ono što naučih bez primisli,",
+            "to bez zavisti predajem,",
+            "bogatstva njezina ne skrivam."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Ona je neiscrpljiva riznica ljudima, i koji se njome služe, postaju prijatelji Božji, preporučeni darovima njezina nauka.",
+          "lines": [
+            "Ona je neiscrpljiva riznica ljudima,",
+            "i koji se njome služe, postaju prijatelji Božji,",
+            "preporučeni darovima njezina nauka."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Zato neka mi dade Bog govoriti kako me svjetova i misliti misli dostojne darova njegovih, jer on je vođa mudrosti i upravlja mudracima.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Priziv za božanskim nadahnućem"
+            }
+          ],
+          "lines": [
+            "Zato neka mi dade Bog govoriti kako me svjetova",
+            "i misliti misli dostojne darova njegovih,",
+            "jer on je vođa mudrosti",
+            "i upravlja mudracima."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "U njegovoj smo ruci mi i riječi naše, sa svim našim razborom i umijećem.",
+          "lines": [
+            "U njegovoj smo ruci mi i riječi naše,",
+            "sa svim našim razborom i umijećem."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "On mi je podario istinsku znanost o svemu što jest, naučio me sustavu svijeta i svojstvima prapočela;",
+          "lines": [
+            "On mi je podario istinsku znanost o svemu što jest,",
+            "naučio me sustavu svijeta i svojstvima prapočela;"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "početku, svršetku i sredini vremena, izmjeni suncovrata i slijedu godišnjih doba,",
+          "lines": [
+            "početku, svršetku i sredini vremena,",
+            "izmjeni suncovrata i slijedu godišnjih doba,"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "tijeku godina i položaju zvijezda;",
+          "lines": [
+            "tijeku godina i položaju zvijezda;"
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "naravi životinja i nagonima divljih zvijeri, moći duhova i mislima ljudskim, različnosti biljaka i ljekovitosti korijenja.",
+          "lines": [
+            "naravi životinja i nagonima divljih zvijeri,",
+            "moći duhova i mislima ljudskim,",
+            "različnosti biljaka i ljekovitosti korijenja."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "I spoznadoh sve što god je tajno i javno, jer me poučavaše mudrost, umjetnica u svemu.",
+          "lines": [
+            "I spoznadoh sve što god je tajno i javno,",
+            "jer me poučavaše mudrost, umjetnica u svemu."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Jer u nje je duh razborit, svet, jedinstven, mnogostran, tanan, okretan, pronicav, neoskvrnjen, jasan, nepristran, dobrohotan, oštar",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pohvala mudrosti"
+            }
+          ],
+          "lines": [
+            "Jer u nje je duh razborit, svet,",
+            "jedinstven, mnogostran, tanan,",
+            "okretan, pronicav, neoskvrnjen,",
+            "jasan, nepristran, dobrohotan, oštar"
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "nezaprečiv, dobrotvoran, čovjekoljubiv, postojan, pouzdan, bezbrižan, svemoćan, svenadzoran, što prodire kroza sve duše, mudre, čiste i najtanje.",
+          "lines": [
+            "nezaprečiv, dobrotvoran, čovjekoljubiv,",
+            "postojan, pouzdan, bezbrižan,",
+            "svemoćan, svenadzoran,",
+            "što prodire kroza sve duše,",
+            "mudre, čiste i najtanje."
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Jer je mudrost gibljivija od svakog gibanja, ona proniče i prožima sve svojom čistoćom.",
+          "lines": [
+            "Jer je mudrost gibljivija od svakog gibanja,",
+            "ona proniče i prožima sve svojom čistoćom."
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "Jer je ona dah sile Božje i čist odvir slave Svemogućeg; zato je ništa nečisto ne može oskvrnuti.",
+          "lines": [
+            "Jer je ona dah sile Božje",
+            "i čist odvir slave Svemogućeg;",
+            "zato je ništa nečisto ne može oskvrnuti."
+          ]
+        },
+        {
+          "verse": 26,
+          "text": "Ona je odsjev vječne svjetlosti i zrcalo čisto djela Božjeg, i slika dobrote njegove.",
+          "lines": [
+            "Ona je odsjev vječne svjetlosti",
+            "i zrcalo čisto djela Božjeg,",
+            "i slika dobrote njegove."
+          ]
+        },
+        {
+          "verse": 27,
+          "text": "Jedna je, a može sve, i, ostajući u sebi, sve obnavlja. Ona prelazi od naraštaja do naraštaja u duše svete i čini od njih Božje prijatelje i proroke.",
+          "lines": [
+            "Jedna je, a može sve,",
+            "i, ostajući u sebi, sve obnavlja.",
+            "Ona prelazi od naraštaja do naraštaja u duše svete",
+            "i čini od njih Božje prijatelje i proroke."
+          ]
+        },
+        {
+          "verse": 28,
+          "text": "Jer Bog ne ljubi nikoga osim onoga tko se druži s mudrošću.",
+          "lines": [
+            "Jer Bog ne ljubi nikoga",
+            "osim onoga tko se druži s mudrošću."
+          ]
+        },
+        {
+          "verse": 29,
+          "text": "Ona je od sunca sjajnija i nad sve zviježđe uzvišena; uspoređena sa svjetlošću, ona je nadmašuje:",
+          "lines": [
+            "Ona je od sunca sjajnija",
+            "i nad sve zviježđe uzvišena;",
+            "uspoređena sa svjetlošću, ona je nadmašuje:"
+          ]
+        },
+        {
+          "verse": 30,
+          "text": "jer svjetlost ustupa mjesto noći, dok zloća nema moći protiv mudrosti.",
+          "lines": [
+            "jer svjetlost ustupa mjesto noći,",
+            "dok zloća nema moći protiv mudrosti."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "verse_count": 21,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Njena se snaga prostire s jednoga kraja svijeta na drugi i blagotvorno upravlja svemirom.",
+          "lines": [
+            "Njena se snaga prostire s jednoga kraja svijeta na drugi",
+            "i blagotvorno upravlja svemirom."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Nju zavoljeh i za njom čeznuh od svoje mladosti; i nastojah da mi bude zaručnica i zaljubih se u ljepotu njezinu.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "U mudrosti su sva dobra"
+            }
+          ],
+          "lines": [
+            "Nju zavoljeh i za njom čeznuh od svoje mladosti;",
+            "i nastojah da mi bude zaručnica",
+            "i zaljubih se u ljepotu njezinu."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Njezina životna prisnost s Bogom podaruje sjaj njezinu plemenitom podrijetlu jer je ljubi gospodar svemira.",
+          "lines": [
+            "Njezina životna prisnost s Bogom",
+            "podaruje sjaj njezinu plemenitom podrijetlu",
+            "jer je ljubi gospodar svemira."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Ona je povjerenica znanja Božjeg, izbiračica djela njegovih.",
+          "lines": [
+            "Ona je povjerenica znanja Božjeg,",
+            "izbiračica djela njegovih."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Ako je bogatstvo blago poželjno u ovom životu, što je onda bogatije od mudrosti koja sve stvara?",
+          "lines": [
+            "Ako je bogatstvo blago poželjno u ovom životu,",
+            "što je onda bogatije od mudrosti koja sve stvara?"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Ako opet razum stvara, tko je na svijetu od nje veći umjetnik?",
+          "lines": [
+            "Ako opet razum stvara,",
+            "tko je na svijetu od nje veći umjetnik?"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Ako li pak tko ljubi pravednost, pa, kreposti su plodovi njezinih napora: ona poučava umjerenosti i razboritosti, pravednosti i hrabrosti, od kojih u životu nema ništa korisnije ljudima.",
+          "lines": [
+            "Ako li pak tko ljubi pravednost,",
+            "pa, kreposti su plodovi njezinih napora:",
+            "ona poučava umjerenosti i razboritosti,",
+            "pravednosti i hrabrosti,",
+            "od kojih u životu nema ništa korisnije ljudima."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Ako li tko čezne za većim znanjem, ona poznaje prošlost i proriče budućnost, vična je izrekama i umije odgonetati zagonetke. Ona znade unaprijed znake i čudesa i slijed razdoblja i vremena.",
+          "lines": [
+            "Ako li tko čezne za većim znanjem,",
+            "ona poznaje prošlost i proriče budućnost,",
+            "vična je izrekama",
+            "i umije odgonetati zagonetke.",
+            "Ona znade unaprijed znake i čudesa",
+            "i slijed razdoblja i vremena."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Zato odlučih dovesti je kao družicu životnu, znajući da će mi biti savjetnica u sreći i tješiteljica u brigama i tuzi.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Mudrost neophodna vladarima"
+            }
+          ],
+          "lines": [
+            "Zato odlučih dovesti je kao družicu životnu,",
+            "znajući da će mi biti savjetnica u sreći",
+            "i tješiteljica u brigama i tuzi."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Po njoj ću steći slavu u mnoštvu narodnom, još kao mladić čast pred starcima.",
+          "lines": [
+            "Po njoj ću steći slavu u mnoštvu narodnom,",
+            "još kao mladić čast pred starcima."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Na sudu će se vidjeti kako sam oštrouman i divit će mi se velikaši kad stanem pred njih.",
+          "lines": [
+            "Na sudu će se vidjeti kako sam oštrouman",
+            "i divit će mi se velikaši kad stanem pred njih."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Čekat će me kad budem šutio i slušat će me kad prozborim; ako se odulji govor moj, držat će ruku na svojim ustima.",
+          "lines": [
+            "Čekat će me kad budem šutio",
+            "i slušat će me kad prozborim;",
+            "ako se odulji govor moj,",
+            "držat će ruku na svojim ustima."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Po njoj ću zadobiti besmrtnost i ostavit ću vječni spomen rodu budućem.",
+          "lines": [
+            "Po njoj ću zadobiti besmrtnost",
+            "i ostavit ću vječni spomen rodu budućem."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Vladat ću pucima i narodi će mi biti podložni.",
+          "lines": [
+            "Vladat ću pucima",
+            "i narodi će mi biti podložni."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Pobojat će se strašni silnici kad čuju za me, s narodom ću svojim biti dobrostiv i hrabar u ratu.",
+          "lines": [
+            "Pobojat će se strašni silnici kad čuju za me,",
+            "s narodom ću svojim biti dobrostiv i hrabar u ratu."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Kada se vratim kući, tad ću počinuti kraj nje, jer u drugovanju s njome nema gorčine i nema bola u zajedništvu s njom, već samo užitak i radost.",
+          "lines": [
+            "Kada se vratim kući, tad ću počinuti kraj nje,",
+            "jer u drugovanju s njome nema gorčine",
+            "i nema bola u zajedništvu s njom, već samo užitak i radost."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Kad sam tako sve u sebi razmislio i srcem svojim razabrao da je besmrtnost u srodstvu s mudrošću",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Salomon se pripravlja za mudrost"
+            }
+          ],
+          "lines": [
+            "Kad sam tako sve u sebi razmislio",
+            "i srcem svojim razabrao",
+            "da je besmrtnost u srodstvu s mudrošću"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "i da je u ljubavi njezinoj radost čista i u djelima ruku njezinih blago neiscrpno, i razboritost u izmjeni misli s njome i slava u zajedništvu riječi njezinih, stao sam tad okolo hoditi i nastojati kako bih je zadobio.",
+          "lines": [
+            "i da je u ljubavi njezinoj radost čista",
+            "i u djelima ruku njezinih blago neiscrpno,",
+            "i razboritost u izmjeni misli s njome",
+            "i slava u zajedništvu riječi njezinih,",
+            "stao sam tad okolo hoditi i nastojati",
+            "kako bih je zadobio."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Ja bijah mladić sretne naravi i imao sam dobru dušu,",
+          "lines": [
+            "Ja bijah mladić sretne naravi",
+            "i imao sam dobru dušu,"
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "ili bolje: jer bijah dobar, ušao sam u tijelo bez ljage.",
+          "lines": [
+            "ili bolje: jer bijah dobar,",
+            "ušao sam u tijelo bez ljage."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "A znajući da neću mudrost zadobiti ako ne dâ Bog – a razboritost je već bila znati čiji je ona dar – pristupih Gospodu i pomolih se i svim srcem svojim rekoh:",
+          "lines": [
+            "A znajući da neću mudrost zadobiti ako ne dâ Bog –",
+            "a razboritost je već bila znati čiji je ona dar –",
+            "pristupih Gospodu i pomolih se",
+            "i svim srcem svojim rekoh:"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "verse_count": 18,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Bože otaca naših i Gospode milosrđa, ti koji si riječju svojom stvorio svemir",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Molitva za mudrost"
+            }
+          ],
+          "lines": [
+            "Bože otaca naših i Gospode",
+            "milosrđa,",
+            "ti koji si riječju svojom stvorio svemir"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "i koji si sazdao čovjeka mudrošću svojom da vlada nad stvorovima tvojim",
+          "lines": [
+            "i koji si sazdao čovjeka mudrošću svojom",
+            "da vlada nad stvorovima tvojim"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "i da svijetom upravlja u svetosti i pravednosti i da sud sudi dušom pravičnom:",
+          "lines": [
+            "i da svijetom upravlja u svetosti i pravednosti",
+            "i da sud sudi dušom pravičnom:"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "daj mi mudrost, prisjednicu svoga prijestolja i ne odbaci me između djece svoje.",
+          "lines": [
+            "daj mi mudrost, prisjednicu svoga prijestolja",
+            "i ne odbaci me između djece svoje."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Jer sam sluga tvoj, sin sluškinje tvoje, čovjek slab i malovjek, nesposoban shvatiti pravdu i zakone.",
+          "lines": [
+            "Jer sam sluga tvoj, sin sluškinje tvoje,",
+            "čovjek slab i malovjek,",
+            "nesposoban shvatiti pravdu i zakone."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Jer ako bi tko od sinova ljudskih bio i savršen, ali bez mudrosti koja od tebe dolazi, opet ne bi ničemu vrijedio.",
+          "lines": [
+            "Jer ako bi tko od sinova ljudskih bio i savršen,",
+            "ali bez mudrosti koja od tebe dolazi,",
+            "opet ne bi ničemu vrijedio."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Ti si me izabrao za kralja svome narodu i za suca sinovima i kćerima svojim.",
+          "lines": [
+            "Ti si me izabrao za kralja svome narodu",
+            "i za suca sinovima i kćerima svojim."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Odredio si mi da sagradim hram na svetoj gori tvojoj i žrtvenik u gradu boravišta tvojeg, u liku svetoga šatora koji si odiskona bio spremio.",
+          "lines": [
+            "Odredio si mi da sagradim hram na svetoj gori tvojoj",
+            "i žrtvenik u gradu boravišta tvojeg,",
+            "u liku svetoga šatora",
+            "koji si odiskona bio spremio."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "S tobom je mudrost, koja zna djela tvoja, koja je bila nazočna kad si stvarao svijet; ona zna što je milo tvojim očima i što je pravo po tvojim zapovijedima.",
+          "lines": [
+            "S tobom je mudrost, koja zna djela tvoja,",
+            "koja je bila nazočna kad si stvarao svijet;",
+            "ona zna što je milo tvojim očima",
+            "i što je pravo po tvojim zapovijedima."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Pošlji je s nebesa svetih i otpravi je od svoga slavnog prijestolja, da uza me bude i potrudi se sa mnom i da spoznam što je tebi milo.",
+          "lines": [
+            "Pošlji je s nebesa svetih",
+            "i otpravi je od svoga slavnog prijestolja,",
+            "da uza me bude i potrudi se sa mnom",
+            "i da spoznam što je tebi milo."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Jer ona sve zna i razumije, ona će me razborito voditi u pothvatima mojim i štititi svojom moći.",
+          "lines": [
+            "Jer ona sve zna i razumije,",
+            "ona će me razborito voditi u pothvatima mojim",
+            "i štititi svojom moći."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Tad će ti djela moja biti ugodna, i ja ću pravedno upravljati pukom tvojim i bit ću dostojan prijestolja oca svoga.",
+          "lines": [
+            "Tad će ti djela moja biti ugodna,",
+            "i ja ću pravedno upravljati pukom tvojim",
+            "i bit ću dostojan prijestolja oca svoga."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Jer tko može spoznati Božju namisao i tko će se domisliti što hoće Gospod?",
+          "lines": [
+            "Jer tko može spoznati Božju namisao",
+            "i tko će se domisliti što hoće Gospod?"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Plašljive su misli smrtnika i nestalne su naše namisli.",
+          "lines": [
+            "Plašljive su misli smrtnika",
+            "i nestalne su naše namisli."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Jer propadljivo tijelo tlači dušu i ovaj zemljani šator pritiskuje um bremenit mislima.",
+          "lines": [
+            "Jer propadljivo tijelo tlači dušu",
+            "i ovaj zemljani šator pritiskuje um bremenit mislima."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Mi jedva nagađamo što je na zemlji i s mukom spoznajemo i ono što je u našim rukama: a što je na nebu, tko će istražiti?",
+          "lines": [
+            "Mi jedva nagađamo što je na zemlji",
+            "i s mukom spoznajemo i ono što je u našim rukama:",
+            "a što je na nebu, tko će istražiti?"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Tko bi doznao tvoju volju da ti nisi dao mudrosti i da s visine nisi poslao duha svoga svetoga.",
+          "lines": [
+            "Tko bi doznao tvoju volju",
+            "da ti nisi dao mudrosti",
+            "i da s visine nisi poslao duha svoga svetoga."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Samo tako su se poravnale staze ljudima na zemlji i samo su tako naučili ljudi što je tebi milo i spasili se tvojom mudrošću.",
+          "lines": [
+            "Samo tako su se poravnale staze ljudima na zemlji",
+            "i samo su tako naučili ljudi što je tebi milo",
+            "i spasili se tvojom mudrošću."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "verse_count": 21,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Ona je štitila prvooblikovanog oca svijeta, koji je stvoren sâm, istrgla ga iz grijeha njegova",
+          "headings": [
+            {
+              "level": "h2",
+              "text": "III. MUDROST I BOG U POVIJESTI"
+            },
+            {
+              "level": "h4",
+              "text": "Od Adama do Mojsija"
+            }
+          ],
+          "lines": [
+            "Ona je štitila prvooblikovanog",
+            "oca svijeta,",
+            "koji je stvoren sâm,",
+            "istrgla ga iz grijeha njegova"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "i dala mu jakost da vlada svemirom.",
+          "lines": [
+            "i dala mu jakost da vlada svemirom."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "A kad se u jarosti svojoj grešnik odmetnu od nje, poginu u mržnji svojoj bratoubilačkoj.",
+          "lines": [
+            "A kad se u jarosti svojoj grešnik odmetnu od nje,",
+            "poginu u mržnji svojoj bratoubilačkoj."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "I kad je zemlju zbog njega potop stigao, opet ju je mudrost spasila brodeći s pravednikom na krhkom drvetu.",
+          "lines": [
+            "I kad je zemlju zbog njega potop stigao,",
+            "opet ju je mudrost spasila",
+            "brodeći s pravednikom na krhkom drvetu."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "I kada se, složni u opačini svojoj, narodi bijahu pomutili, ona je našla pravednika i sačuvala ga Bogu nezazorna i uzdržala jačim od ljubavi prema djetetu.",
+          "lines": [
+            "I kada se, složni u opačini svojoj,",
+            "narodi bijahu pomutili,",
+            "ona je našla pravednika",
+            "i sačuvala ga Bogu nezazorna",
+            "i uzdržala jačim od ljubavi prema djetetu."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Kad su bezbožnici izgibali, ona je izbavila pravednika koji je bježao od ognja što je s neba pao na pet gradova.",
+          "lines": [
+            "Kad su bezbožnici izgibali,",
+            "ona je izbavila pravednika",
+            "koji je bježao od ognja",
+            "što je s neba pao na pet gradova."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "O opačini njihovoj još svjedoči pustoš puna dima i bilje kojemu plod nikad ne sazrijeva i stup od soli što stoji kao spomenik duši nevjernoj.",
+          "lines": [
+            "O opačini njihovoj još svjedoči pustoš puna dima",
+            "i bilje kojemu plod nikad ne sazrijeva",
+            "i stup od soli što stoji kao spomenik duši nevjernoj."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "I jer nisu slijedili puta mudrosti, izgubili su spoznaju o dobru i još ostavili svijetu spomenik svoje ludosti da se ne mogahu sakriti zlodjela njihova.",
+          "lines": [
+            "I jer nisu slijedili puta mudrosti,",
+            "izgubili su spoznaju o dobru",
+            "i još ostavili svijetu spomenik svoje ludosti",
+            "da se ne mogahu sakriti zlodjela njihova."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "A mudrost je vjernike svoje spasila od nevolje.",
+          "lines": [
+            "A mudrost je vjernike svoje spasila od nevolje."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Kad je pravednik bježao ispred jarosti bratove, ona ga je vodila pravim stazama; pokazala mu Božje kraljevstvo i podarila mu znanje o svetinjama; uspjehom okrunila napore njegove i umnožila plodove truda njegova.",
+          "lines": [
+            "Kad je pravednik bježao ispred jarosti bratove,",
+            "ona ga je vodila pravim stazama;",
+            "pokazala mu Božje kraljevstvo",
+            "i podarila mu znanje o svetinjama;",
+            "uspjehom okrunila napore njegove",
+            "i umnožila plodove truda njegova."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Kad su ga pritijesnili lakomci, pomogla ga je i obdarila bogatstvom,",
+          "lines": [
+            "Kad su ga pritijesnili lakomci,",
+            "pomogla ga je i obdarila bogatstvom,"
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "sačuvala ga od neprijatelja i zaštitila ga od zasjeda, darovala mu pobjedu u žestokom boju da spozna kako je bogobojaznost od svega jača.",
+          "lines": [
+            "sačuvala ga od neprijatelja",
+            "i zaštitila ga od zasjeda,",
+            "darovala mu pobjedu u žestokom boju",
+            "da spozna kako je bogobojaznost od svega jača."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Ona nije ostavila prodanog pravednika, nego ga je čuvala od grijeha.",
+          "lines": [
+            "Ona nije ostavila prodanog pravednika,",
+            "nego ga je čuvala od grijeha."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "S njime je u tamnicu sišla te ga ni u okovima nije zapustila dok mu nije donijela žezlo kraljevsko i vlast nad onima koji ga tlačiše i nagnala u laž one koji ga kaljahu, a njemu dala slavu vječnu.",
+          "lines": [
+            "S njime je u tamnicu sišla",
+            "te ga ni u okovima nije zapustila",
+            "dok mu nije donijela žezlo kraljevsko",
+            "i vlast nad onima koji ga tlačiše",
+            "i nagnala u laž one koji ga kaljahu,",
+            "a njemu dala slavu vječnu."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Ona je spasila sveti puk i rod besprijekorni od vlasti naroda mučiteljskog.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Izlazak"
+            }
+          ],
+          "lines": [
+            "Ona je spasila sveti puk i rod besprijekorni",
+            "od vlasti naroda mučiteljskog."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Ušla je u dušu sluge Gospodnjeg, i on se strašnim kraljevima opro čudesima i znacima.",
+          "lines": [
+            "Ušla je u dušu sluge Gospodnjeg,",
+            "i on se strašnim kraljevima opro čudesima i znacima."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Ona je dala plaću svetima za njihove trude i vodila ih putem čudesnim, danju im bila zaklon od žege i noću zvjezdani sjaj.",
+          "lines": [
+            "Ona je dala plaću svetima za njihove trude",
+            "i vodila ih putem čudesnim,",
+            "danju im bila zaklon od žege",
+            "i noću zvjezdani sjaj."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Provela ih preko Mora crvenog, provela ih je preko vode velike,",
+          "lines": [
+            "Provela ih preko Mora crvenog,",
+            "provela ih je preko vode velike,"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "a neprijatelje njihove valovima potopila i onda ih izbacila iz dubina bezdana.",
+          "lines": [
+            "a neprijatelje njihove valovima potopila",
+            "i onda ih izbacila iz dubina bezdana."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Zato su pravednici oplijenili bezbožnike i pjesmom proslavili tvoje sveto ime, Gospode, jednodušno opjevali tvoju ruku zaštitnicu.",
+          "lines": [
+            "Zato su pravednici oplijenili bezbožnike",
+            "i pjesmom proslavili tvoje sveto ime, Gospode,",
+            "jednodušno opjevali tvoju ruku zaštitnicu."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "Jer je mudrost otvorila usta nijemima i obdarila djecu nejaku jezikom rječitim.",
+          "lines": [
+            "Jer je mudrost otvorila usta nijemima",
+            "i obdarila djecu nejaku jezikom rječitim."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "verse_count": 26,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Ona im je pothvate k uspjehu vodila po ruci proroka svetog",
+          "lines": [
+            "Ona im je pothvate k uspjehu vodila",
+            "po ruci proroka svetog"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "kad su prohodili pustoš nenastanjenu i dizali šatore po bespućima.",
+          "lines": [
+            "kad su prohodili pustoš nenastanjenu",
+            "i dizali šatore po bespućima."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Opirahu se dušmanima i branjahu se od neprijatelja;",
+          "lines": [
+            "Opirahu se dušmanima",
+            "i branjahu se od neprijatelja;"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "a kad su ožednjeli i tebe prizvali, napojiše se vode iz strme pećine i zagasiše žeđ iz tvrda kamena.",
+          "lines": [
+            "a kad su ožednjeli i tebe prizvali,",
+            "napojiše se vode iz strme pećine",
+            "i zagasiše žeđ iz tvrda kamena."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "I tako je ono čime su bili kažnjeni neprijatelji njihovi postalo njima dobročinstvo kada bijahu u nevolji. Njima si, zbog njihove zapovijedi o čedomorstvu,",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Voda, propast Egipćanima a spas Izraelcima"
+            }
+          ],
+          "lines": [
+            "I tako je ono čime su bili kažnjeni neprijatelji njihovi",
+            "postalo njima dobročinstvo kada bijahu u nevolji.",
+            "Njima si, zbog njihove zapovijedi o čedomorstvu,"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "umjesto vječnog izvora vode tekućice, dao rijeku zamućenu krvlju i blatom,",
+          "lines": [
+            "umjesto vječnog izvora vode tekućice,",
+            "dao rijeku zamućenu krvlju i blatom,"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "a svojima si, unatoč svakoj nadi, dao izobilje vode,",
+          "lines": [
+            "a svojima si, unatoč svakoj nadi,",
+            "dao izobilje vode,"
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "pokazavši im u žeđi koja tada vladaše kakvom si kaznom kaznio neprijatelje njihove.",
+          "lines": [
+            "pokazavši im u žeđi koja tada vladaše",
+            "kakvom si kaznom kaznio neprijatelje njihove."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Jer su iz kušnje kojom si ih milostivo ukorio lako razabrali kakvim se mukama namučiše bezbožnici kojima si u jarosti sudio.",
+          "lines": [
+            "Jer su iz kušnje kojom si ih milostivo ukorio",
+            "lako razabrali kakvim se mukama namučiše bezbožnici",
+            "kojima si u jarosti sudio."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Jer si njih iskušao, opominjući blago kao otac, dok si one kao strahoviti kralj ispitao i osudio.",
+          "lines": [
+            "Jer si njih iskušao, opominjući blago kao otac,",
+            "dok si one kao strahoviti kralj ispitao i osudio."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Jednako su se mučili nazočni i nenazočni,",
+          "lines": [
+            "Jednako su se mučili nazočni i nenazočni,"
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "i dvostruka ih žalost obuzimaše i uzdisahu u sjećanju na prošlost.",
+          "lines": [
+            "i dvostruka ih žalost obuzimaše",
+            "i uzdisahu u sjećanju na prošlost."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Kad čuše kako se ono što njima bijaše kazna obratilo Izraelcima u dobročinstvo, osjetiše ruku Gospodnju;",
+          "lines": [
+            "Kad čuše kako se ono što njima bijaše kazna",
+            "obratilo Izraelcima u dobročinstvo,",
+            "osjetiše ruku Gospodnju;"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "i kad sve bî gotovo, divljahu se onomu koga su nekoć izložili i s porugom ga odbili, jer njihova žeđ bijaše sasvim različita od žeđi pravednika.",
+          "lines": [
+            "i kad sve bî gotovo, divljahu se",
+            "onomu koga su nekoć izložili",
+            "i s porugom ga odbili,",
+            "jer njihova žeđ bijaše sasvim različita",
+            "od žeđi pravednika."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Da ih kazniš za njihove nepravedne i bezumne misli, što ih zavedoše da štuju nerazumne gmazove i bijedne životinje, poslao si na njih, za kaznu, mnoštvo životinja nerazumnih",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Božja popustljivost prema Egiptu"
+            }
+          ],
+          "lines": [
+            "Da ih kazniš za njihove nepravedne i bezumne misli,",
+            "što ih zavedoše da štuju nerazumne gmazove",
+            "i bijedne životinje,",
+            "poslao si na njih, za kaznu, mnoštvo životinja nerazumnih"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "da bi spoznali kako se svatko kažnjava onim čime i sagriješi.",
+          "lines": [
+            "da bi spoznali kako se svatko kažnjava onim čime i sagriješi."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Tvoja svemoguća ruka – koja je sazdala svijet od tvari bezoblične – mogla je poslati na njih mnoštvo medvjeda ili ljutih lavova,",
+          "lines": [
+            "Tvoja svemoguća ruka –",
+            "koja je sazdala svijet od tvari bezoblične –",
+            "mogla je poslati na njih",
+            "mnoštvo medvjeda ili ljutih lavova,"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "ili novostvorene, još nepoznate, divlje zvijeri pune gnjeva kojima iz nozdrva plamen liže, ili rigaju pare smrdljive, ili siplju strašne iskre iz očiju –",
+          "lines": [
+            "ili novostvorene, još nepoznate, divlje zvijeri pune gnjeva",
+            "kojima iz nozdrva plamen liže,",
+            "ili rigaju pare smrdljive,",
+            "ili siplju strašne iskre iz očiju –"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "zvijeri kadre smožditi ih ne samo strašnim ujedom nego ih uništiti samom strahovitom pojavom.",
+          "lines": [
+            "zvijeri kadre smožditi ih ne samo strašnim ujedom",
+            "nego ih uništiti samom strahovitom pojavom."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Ali i bez svega toga mogli su pasti od jednog jedinog daha, gonjeni tvojom pravdom, otpuhani tvojom silinom. Ali ti si sve uredio po broju, utegu i mjeri.",
+          "lines": [
+            "Ali i bez svega toga",
+            "mogli su pasti od jednog jedinog daha,",
+            "gonjeni tvojom pravdom,",
+            "otpuhani tvojom silinom.",
+            "Ali ti si sve uredio po broju, utegu i mjeri."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "I jer ti je uvijek u vlasti tvoja silna snaga, tko se može oprijeti tvojoj jakoj mišici?",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Razlozi popustljivosti"
+            }
+          ],
+          "lines": [
+            "I jer ti je uvijek u vlasti tvoja silna snaga,",
+            "tko se može oprijeti tvojoj jakoj mišici?"
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Sav je svijet pred tobom kao zrnce praha na tezulji i kao kaplja jutarnje rose što se spušta na zemlju.",
+          "lines": [
+            "Sav je svijet pred tobom kao zrnce praha na tezulji",
+            "i kao kaplja jutarnje rose što se spušta na zemlju."
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "A ti si milostiv svemu jer možeš sve i kroz prste gledaš na grijehe ljudima da bi se pokajali.",
+          "lines": [
+            "A ti si milostiv svemu jer možeš sve",
+            "i kroz prste gledaš na grijehe ljudima",
+            "da bi se pokajali."
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Jer ti ljubiš sva bića i ne mrziš ni jedno koje si stvorio. Jer da si štogod mrzio, ne bi ga ni stvorio.",
+          "lines": [
+            "Jer ti ljubiš sva bića",
+            "i ne mrziš ni jedno koje si stvorio.",
+            "Jer da si štogod mrzio,",
+            "ne bi ga ni stvorio."
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "A kako bi išta moglo opstojati ako ti ne bi htio? Ili se održati ako ga ti nisi u život dozvao?",
+          "lines": [
+            "A kako bi išta moglo opstojati ako ti ne bi htio?",
+            "Ili se održati ako ga ti nisi u život dozvao?"
+          ]
+        },
+        {
+          "verse": 26,
+          "text": "Ali ti štediš, jer sve je tvoje, Gospodaru, ljubitelju života,",
+          "lines": [
+            "Ali ti štediš, jer sve je tvoje,",
+            "Gospodaru, ljubitelju života,"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "verse_count": 27,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "i tvoj je besmrtni duh u svemu."
+        },
+        {
+          "verse": 2,
+          "text": "Blago kažnjavaš prestupnike, koriš ih i opominješ za grijehe njihove da se ostave zloće i da se ufaju u tebe, Gospode!",
+          "lines": [
+            "Blago kažnjavaš prestupnike,",
+            "koriš ih i opominješ za grijehe njihove",
+            "da se ostave zloće",
+            "i da se ufaju u tebe, Gospode!"
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Zamrzio si drevne stanovnike svoje svete zemlje",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Božja popustljivost prema Kanaanu"
+            }
+          ],
+          "lines": [
+            "Zamrzio si drevne stanovnike svoje svete zemlje"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "jer su činili zlodjela grozna u vradžbinama i obredima bezbožnim;",
+          "lines": [
+            "jer su činili zlodjela grozna",
+            "u vradžbinama i obredima bezbožnim;"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "okrutne ubojice djece, žderače utrobe na gozbama mesa ljudskog, posvećenike s krvava pira,",
+          "lines": [
+            "okrutne ubojice djece,",
+            "žderače utrobe na gozbama mesa ljudskog,",
+            "posvećenike s krvava pira,"
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "roditelje ubojice bića bespomoćnih odlučio si uništiti rukama otaca naših,",
+          "lines": [
+            "roditelje ubojice bića bespomoćnih",
+            "odlučio si uništiti rukama otaca naših,"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "da najdraža ti od sviju zemalja primi dostojno naselje djece Božje.",
+          "lines": [
+            "da najdraža ti od sviju zemalja",
+            "primi dostojno naselje djece Božje."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Ipak si i njih poštedio kao ljude, jer si im pred vojskom svojom poslao ose kao preteče da ih malo-pomalo istrijebe.",
+          "lines": [
+            "Ipak si i njih poštedio kao ljude,",
+            "jer si im pred vojskom svojom poslao ose kao preteče",
+            "da ih malo-pomalo istrijebe."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Premda si ih mogao, kao bezbožnike, predati u boju rukama pravednika ili strašnim zvijerima ili ih strogom riječju najedanput zatrti,",
+          "lines": [
+            "Premda si ih mogao, kao bezbožnike, predati u boju",
+            "rukama pravednika ili strašnim zvijerima",
+            "ili ih strogom riječju najedanput zatrti,"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "sudeći im malo-pomalo, davao si mjesta pokajanju, premda si dobro znao da je to opak rod kojem je zloća prirođena i da im se ćud nikad neće izmijeniti,",
+          "lines": [
+            "sudeći im malo-pomalo,",
+            "davao si mjesta pokajanju,",
+            "premda si dobro znao",
+            "da je to opak rod",
+            "kojem je zloća prirođena",
+            "i da im se ćud nikad neće izmijeniti,"
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "jer je to pleme odiskona bilo prokleto. A što si ostavio nekažnjene njihove grijehe, nije bilo od straha ni pred kim.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Razlozi popustljivosti"
+            }
+          ],
+          "lines": [
+            "jer je to pleme odiskona bilo prokleto. A što si ostavio nekažnjene njihove grijehe,",
+            "nije bilo od straha ni pred kim."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Jer tko bi tebi smio kazati: »Što si učinio?« I tko se smije oprijeti sudu tvojemu? Ili te optužiti što si uništio narode koje si stvorio? Ili tko će ustati protiv tebe kao branitelj nepravednih ljudi?",
+          "lines": [
+            "Jer tko bi tebi smio kazati: »Što si učinio?«",
+            "I tko se smije oprijeti sudu tvojemu?",
+            "Ili te optužiti što si uništio narode koje si stvorio?",
+            "Ili tko će ustati protiv tebe",
+            "kao branitelj nepravednih ljudi?"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Jer, osim tebe, nema boga koji se brine za sve da bi mu morao dokazati kako ne sudiš krivo.",
+          "lines": [
+            "Jer, osim tebe, nema boga koji se brine za sve",
+            "da bi mu morao dokazati kako ne sudiš krivo."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "A nijedan kralj ni vladar ne smije ustati protiv tebe u korist onih koje si kaznio.",
+          "lines": [
+            "A nijedan kralj ni vladar ne smije ustati",
+            "protiv tebe u korist onih koje si kaznio."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "I jer si pravedan, upravljaš svime pravedno, i nedostojno je moći tvoje kazniti onoga koji kazne ne zaslužuje.",
+          "lines": [
+            "I jer si pravedan, upravljaš svime pravedno,",
+            "i nedostojno je moći tvoje kazniti",
+            "onoga koji kazne ne zaslužuje."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Jer moć je tvoja načelo pravice tvoje i jer svime vladaš, možeš i sve poštedjeti.",
+          "lines": [
+            "Jer moć je tvoja načelo pravice tvoje",
+            "i jer svime vladaš, možeš i sve poštedjeti."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Jakost svoju pokazuješ samo onda kad ljudi ne vjeruju u puninu tvoje moći i kažnjavaš drskost onih koji je spoznaše.",
+          "lines": [
+            "Jakost svoju pokazuješ samo onda",
+            "kad ljudi ne vjeruju u puninu tvoje moći",
+            "i kažnjavaš drskost onih koji je spoznaše."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Ti, silni gospodaru, sudiš blago i upravljaš nama s velikom pažnjom, jer kad god hoćeš, moć ti je pri ruci.",
+          "lines": [
+            "Ti, silni gospodaru, sudiš blago",
+            "i upravljaš nama s velikom pažnjom,",
+            "jer kad god hoćeš, moć ti je pri ruci."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "A takvim si djelima narod svoj poučio da pravednik ima biti čovječan; podario si sinovima svojim dobru nadu, jer daješ pokajanje za grijehe.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Pouka popustljivosti božanske"
+            }
+          ],
+          "lines": [
+            "A takvim si djelima narod svoj poučio",
+            "da pravednik ima biti čovječan;",
+            "podario si sinovima svojim dobru nadu,",
+            "jer daješ pokajanje za grijehe."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Jer kad si s tolikim obzirom i blagošću kaznio neprijatelje djece svoje i smrtne krivce – dajući im vremena i prigode da se zloće svoje okane –",
+          "lines": [
+            "Jer kad si s tolikim obzirom i blagošću",
+            "kaznio neprijatelje djece svoje i smrtne krivce –",
+            "dajući im vremena i prigode da se zloće svoje okane –"
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "kako li si brižno sudio sinove svoje, čijim si ocima dao divna obećanja i prisegama i savezima!",
+          "lines": [
+            "kako li si brižno sudio sinove svoje,",
+            "čijim si ocima dao divna obećanja",
+            "i prisegama i savezima!"
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Dok nas, dakle, koriš, dotle šibaš naše neprijatelje deset tisuća puta strože, da bismo se sjetili dobrote tvoje kada sami sudimo i da očekujemo milosrđe tvoje kada nam bude suđeno.",
+          "lines": [
+            "Dok nas, dakle, koriš, dotle šibaš naše neprijatelje",
+            "deset tisuća puta strože,",
+            "da bismo se sjetili dobrote tvoje kada sami sudimo",
+            "i da očekujemo milosrđe tvoje kada nam bude suđeno."
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "Zato si one koji su živjeli bezbrižnim i bezumnim životom namučio njihovim vlastitim gnusobama.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Poslije Božje blagosti dolazi strogost"
+            }
+          ],
+          "lines": [
+            "Zato si one koji su živjeli bezbrižnim i bezumnim životom",
+            "namučio njihovim vlastitim gnusobama."
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Jer su odviše zabasali na krivim putovima i stali kao bogove štovati najgore i najprezrenije od životinja, zabludjeli kao djeca bez razbora.",
+          "lines": [
+            "Jer su odviše zabasali na krivim putovima",
+            "i stali kao bogove štovati najgore i najprezrenije od životinja,",
+            "zabludjeli kao djeca bez razbora."
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "Zato si im kao djeci bez razbora poslao kaznu rugla.",
+          "lines": [
+            "Zato si im kao djeci bez razbora",
+            "poslao kaznu rugla."
+          ]
+        },
+        {
+          "verse": 26,
+          "text": "A jer ih nije poučila kazna porugljiva, ubrzo iskusiše kaznu dostojnu Boga.",
+          "lines": [
+            "A jer ih nije poučila kazna porugljiva,",
+            "ubrzo iskusiše kaznu dostojnu Boga."
+          ]
+        },
+        {
+          "verse": 27,
+          "text": "Jer kad vidješe da su im za kaznu te životinje koje štovahu kao bogove, rasrdiše se na njih zbog patnja koje im prouzrokovaše i spoznaše pravoga Boga, o kom prije nisu htjeli ništa čuti. Zato ih je i stigla najviša osuda.",
+          "lines": [
+            "Jer kad vidješe da su im za kaznu",
+            "te životinje koje štovahu kao bogove,",
+            "rasrdiše se na njih zbog patnja koje im prouzrokovaše",
+            "i spoznaše pravoga Boga,",
+            "o kom prije nisu htjeli ništa čuti.",
+            "Zato ih je i stigla najviša osuda."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "verse_count": 19,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Po naravi su glupi svi ljudi koji ne upoznaše Boga, oni koji iz vidljivih ljepotâ ne mogu spoznati onoga koji jest – nisu kadri prepoznati umjetnika po djelima njegovim;",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Štovanje zvijezda i prirodnih sila"
+            }
+          ],
+          "lines": [
+            "Po naravi su glupi svi ljudi",
+            "koji ne upoznaše Boga,",
+            "oni koji iz vidljivih ljepotâ ne mogu spoznati onoga koji jest –",
+            "nisu kadri prepoznati umjetnika po djelima njegovim;"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "nego smatraju bogovima koji svijetom vladaju oganj ili vjetar ili hitri zrak, zvjezdan krug ili silnu vodu ili svjetlila nebeska.",
+          "lines": [
+            "nego smatraju bogovima koji svijetom vladaju",
+            "oganj ili vjetar ili hitri zrak,",
+            "zvjezdan krug ili silnu vodu ili svjetlila nebeska."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Jer ako su ih, opčinjeni njihovom ljepotom, uzeli smatrati bogovima, morali su spoznati koliko ih tek nadmašuje njihov gospodar jer ih je stvorio sam Tvorac ljepote.",
+          "lines": [
+            "Jer ako su ih, opčinjeni njihovom ljepotom,",
+            "uzeli smatrati bogovima,",
+            "morali su spoznati",
+            "koliko ih tek nadmašuje njihov gospodar",
+            "jer ih je stvorio sam Tvorac ljepote."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Ako ih je i zadivila njihova sila i snaga, morali su iz toga zaključiti koliko je tek silniji njihov stvoritelj.",
+          "lines": [
+            "Ako ih je i zadivila njihova sila i snaga,",
+            "morali su iz toga zaključiti",
+            "koliko je tek silniji njihov stvoritelj."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Jer prema veličini i ljepoti stvorova možemo, po sličnosti, razmišljati o njihovu Tvorcu.",
+          "lines": [
+            "Jer prema veličini i ljepoti stvorova",
+            "možemo, po sličnosti, razmišljati o njihovu Tvorcu."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Ali ovi ipak zaslužuju malen prijekor, jer možda samo lutaju tražeći Boga i želeći ga naći;",
+          "lines": [
+            "Ali ovi ipak zaslužuju malen prijekor,",
+            "jer možda samo lutaju tražeći Boga i želeći ga naći;"
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "živeći među djelima njegovim, nastoje ih shvatiti, a zavodi ih samo naličje stvari jer vide toliko ljepote.",
+          "lines": [
+            "živeći među djelima njegovim,",
+            "nastoje ih shvatiti,",
+            "a zavodi ih samo naličje stvari",
+            "jer vide toliko ljepote."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Pa ipak, oprostiti im ne treba:",
+          "lines": [
+            "Pa ipak, oprostiti im ne treba:"
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "jer ako su bili kadri steći toliko spoznaje da mogu svemir istraživati, koliko su lakše mogli otkriti Gospodara svega toga!",
+          "lines": [
+            "jer ako su bili kadri steći toliko spoznaje",
+            "da mogu svemir istraživati,",
+            "koliko su lakše mogli otkriti Gospodara svega toga!"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Ali nesretnici su oni – i u mrtve se predmete ufaju – koji bogovima nazivaju djela ruku čovječjih: zlato i srebro, umjetno obrađeno, životinjske likove, bezvrijedni kamen isklesan drevnom rukom.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Krivoboštvo"
+            }
+          ],
+          "lines": [
+            "Ali nesretnici su oni – i u mrtve se predmete ufaju –",
+            "koji bogovima nazivaju djela ruku čovječjih:",
+            "zlato i srebro, umjetno obrađeno,",
+            "životinjske likove, bezvrijedni kamen",
+            "isklesan drevnom rukom."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Posiječe drvodjelja prikladno drvo, brižljivo mu oguli koru i s divnim umijećem načini predmet koristan za svagdašnju upotrebu.",
+          "lines": [
+            "Posiječe drvodjelja prikladno drvo,",
+            "brižljivo mu oguli koru i s divnim umijećem",
+            "načini predmet koristan za svagdašnju upotrebu."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "A triješće što preostane upotrijebi da spremi jelo kojim se siti.",
+          "lines": [
+            "A triješće što preostane",
+            "upotrijebi da spremi jelo kojim se siti."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Ostane mu komad koji nije ni za što, drvo krivo i kvrgavo: uzme ga i u dokolici marljivo izrezuje, oblikuje ga umijećem nehotičnim, dade mu lik čovječji;",
+          "lines": [
+            "Ostane mu komad koji nije ni za što,",
+            "drvo krivo i kvrgavo:",
+            "uzme ga i u dokolici marljivo izrezuje,",
+            "oblikuje ga umijećem nehotičnim,",
+            "dade mu lik čovječji;"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "ili izdjelja od njega kakvu bezvrijednu životinju, crljenkom je oboji, crvenilom naliči, premaže joj svaku pjegu.",
+          "lines": [
+            "ili izdjelja od njega kakvu bezvrijednu životinju,",
+            "crljenkom je oboji, crvenilom naliči,",
+            "premaže joj svaku pjegu."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Konačno joj načini prikladnu kućicu, metne na zid i prikuje željeznim čavlom.",
+          "lines": [
+            "Konačno joj načini prikladnu kućicu,",
+            "metne na zid i prikuje željeznim čavlom."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Pobrine se tako za nju da ne padne, dobro znajući kako sebi sama pomoći ne može: jer je lik kojem treba tuđe pomoći.",
+          "lines": [
+            "Pobrine se tako za nju da ne padne,",
+            "dobro znajući kako sebi sama pomoći ne može:",
+            "jer je lik kojem treba tuđe pomoći."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "I poslije svega toga on se ne stidi tu neživu stvar nagovarati i njoj se moliti za imetak, za ženidbu i djecu, i za zdravlje svoje zaziva nemoć,",
+          "lines": [
+            "I poslije svega toga on se ne stidi",
+            "tu neživu stvar nagovarati",
+            "i njoj se moliti za imetak, za ženidbu i djecu,",
+            "i za zdravlje svoje zaziva nemoć,"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "za život preklinje smrt, i utječe se za pomoć samoj nemoći, za putovanje onomu koji ne može ni nogom maknuti;",
+          "lines": [
+            "za život preklinje smrt,",
+            "i utječe se za pomoć samoj nemoći,",
+            "za putovanje onomu",
+            "koji ne može ni nogom maknuti;"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "i za svoje dobitke i pothvate, za uspjeh u svojem poslu, on traži snage u onoga komu su ruke najnemoćnije.",
+          "lines": [
+            "i za svoje dobitke i pothvate,",
+            "za uspjeh u svojem poslu,",
+            "on traži snage u onoga",
+            "komu su ruke najnemoćnije."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "verse_count": 31,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Drugi se opet spremi da zaplovi, nakan da prebrodi bijesne valove, i prizivlje u pomoć drvo koje je slabije od drvene lađe što ga nosi.",
+          "lines": [
+            "Drugi se opet spremi da",
+            "zaplovi,",
+            "nakan da prebrodi bijesne valove,",
+            "i prizivlje u pomoć drvo",
+            "koje je slabije od drvene lađe što ga nosi."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Jer je nju izmislila težnja za dobitkom i sagradila je mudrost graditeljska.",
+          "lines": [
+            "Jer je nju izmislila težnja za dobitkom",
+            "i sagradila je mudrost graditeljska."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Ali njome upravlja tvoja providnost, Oče, koji si dao i na moru put i u valovima stazu pouzdanu:",
+          "lines": [
+            "Ali njome upravlja tvoja providnost, Oče,",
+            "koji si dao i na moru put",
+            "i u valovima stazu pouzdanu:"
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "pokazuješ tako da možeš iz svake pogibelji izbaviti, da bi se nevješt smio ukrcati.",
+          "lines": [
+            "pokazuješ tako da možeš iz svake pogibelji izbaviti,",
+            "da bi se nevješt smio ukrcati."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "Jer ti nećeš da neplodna budu djela tvoje mudrosti, zato ljudi povjeravaju svoj život i drvlju najneznatnijem te prelaze splavom burne valove i dolaze u luku spasa.",
+          "lines": [
+            "Jer ti nećeš da neplodna budu djela tvoje mudrosti,",
+            "zato ljudi povjeravaju svoj život i drvlju najneznatnijem",
+            "te prelaze splavom burne valove",
+            "i dolaze u luku spasa."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Pa i nekoć, kad su izgibali oholi divovi, sklonila se nada ovog svijeta u splav kojom je upravljala ruka tvoja i svijetu ostavila sjeme za nova pokoljenja.",
+          "lines": [
+            "Pa i nekoć, kad su izgibali oholi divovi,",
+            "sklonila se nada ovog svijeta u splav",
+            "kojom je upravljala ruka tvoja",
+            "i svijetu ostavila sjeme za nova pokoljenja."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Blagoslovljeno je drvo po kojem pravda dolazi,",
+          "lines": [
+            "Blagoslovljeno je drvo po kojem pravda dolazi,"
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "a prokleta krivobožačka rukotvorina i onaj koji je načini; on jer je napravi, a ona jer se, iako prolazna, bogom nazva.",
+          "lines": [
+            "a prokleta krivobožačka rukotvorina",
+            "i onaj koji je načini;",
+            "on jer je napravi, a ona jer se,",
+            "iako prolazna, bogom nazva."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Tako Bogu su mrski i bezbožnik i bezbožnost njegova,",
+          "lines": [
+            "Tako Bogu su mrski",
+            "i bezbožnik i bezbožnost njegova,"
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "izrađevina i izrađivač bit će jednako kažnjeni.",
+          "lines": [
+            "izrađevina i izrađivač bit će jednako kažnjeni."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Zato će osuda pasti na kumire neznabožačke, jer su postali gnusoba među stvorenjima Božjim i sablazan ljudskim dušama i zamka bezumničkim nogama.",
+          "lines": [
+            "Zato će osuda pasti na kumire neznabožačke,",
+            "jer su postali gnusoba među stvorenjima Božjim",
+            "i sablazan ljudskim dušama",
+            "i zamka bezumničkim nogama."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Pronalazak kumirâ bio je početak bluda i njihovo je otkriće izopačilo život.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Podrijetlo krivoboštva"
+            }
+          ],
+          "lines": [
+            "Pronalazak kumirâ bio je početak bluda",
+            "i njihovo je otkriće izopačilo život."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Nije ih bilo u početku niti će ih biti dovijeka.",
+          "lines": [
+            "Nije ih bilo u početku",
+            "niti će ih biti dovijeka."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Jer su došli na svijet po ispraznosti čovječjoj i zato im je određen konac brz.",
+          "lines": [
+            "Jer su došli na svijet po ispraznosti čovječjoj",
+            "i zato im je određen konac brz."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Neki otac, satrt prijevremenom žalošću, načini lik svojeg djeteta koje je tako brzo ugrabljeno: i dojučerašnjeg mrtvaca sad već kao boga štuje i odredi svojim podanicima tajne obrede i žrtve.",
+          "lines": [
+            "Neki otac, satrt prijevremenom žalošću,",
+            "načini lik svojeg djeteta koje je tako brzo ugrabljeno:",
+            "i dojučerašnjeg mrtvaca sad već kao boga štuje",
+            "i odredi svojim podanicima tajne obrede i žrtve."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "U tijeku vremena ukorijeni se taj bezbožni običaj i počeše ga kao zakon čuvati,",
+          "lines": [
+            "U tijeku vremena ukorijeni se taj bezbožni običaj",
+            "i počeše ga kao zakon čuvati,"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "i po zapovijedi vladarâ uvelo se štovanje likova. A onih koje ljudi nisu mogli u osobi njihovoj štovati, jer su predaleko od njih prebivali, približavahu sebi njihovo daleko obličje, načinivši od čašćenog kralja vidljiv lik da mu nenazočnu revno laskaju kao da je nazočan.",
+          "lines": [
+            "i po zapovijedi vladarâ",
+            "uvelo se štovanje likova.",
+            "A onih koje ljudi nisu mogli u osobi njihovoj štovati,",
+            "jer su predaleko od njih prebivali,",
+            "približavahu sebi njihovo daleko obličje,",
+            "načinivši od čašćenog kralja vidljiv lik",
+            "da mu nenazočnu revno laskaju kao da je nazočan."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "A i častoljublje umjetnika navodilo je na sve jače štovanje i one koji kralja nisu poznali.",
+          "lines": [
+            "A i častoljublje umjetnika",
+            "navodilo je na sve jače štovanje",
+            "i one koji kralja nisu poznali."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Jer umjetnik, koji se možda htio dodvoriti vladaru, trudio se svim svojim umijećem da obličje bude što ljepše,",
+          "lines": [
+            "Jer umjetnik, koji se možda htio dodvoriti vladaru,",
+            "trudio se svim svojim umijećem",
+            "da obličje bude što ljepše,"
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "te je svjetina, ponesena ljepotom djela, počela pridavati božanske počasti onomu koga je nedavno slavila kao čovjeka.",
+          "lines": [
+            "te je svjetina, ponesena ljepotom djela,",
+            "počela pridavati božanske počasti",
+            "onomu koga je nedavno slavila kao čovjeka."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "I to postade zamka životu: robujući nesreći ili nasilju vladarskom, ljudi su neizrecivo ime Božje prenijeli na kamenje i na drvlje.",
+          "lines": [
+            "I to postade zamka životu:",
+            "robujući nesreći ili nasilju vladarskom,",
+            "ljudi su neizrecivo ime Božje prenijeli na kamenje i na drvlje."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "I ne bijaše im dosta što su zastranili u spoznaji Boga, nego su, živeći u velikoj borbi zbog neznanja, tako veliko zlo još mirom nazivali.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Posljedice krivoboštva"
+            }
+          ],
+          "lines": [
+            "I ne bijaše im dosta",
+            "što su zastranili u spoznaji Boga,",
+            "nego su, živeći u velikoj borbi zbog neznanja,",
+            "tako veliko zlo još mirom nazivali."
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "Jer, ili djecu žrtvuju ili vrše tajne obrede ili priređuju bijesne gozbe s čudnim običajima.",
+          "lines": [
+            "Jer, ili djecu žrtvuju ili vrše tajne obrede",
+            "ili priređuju bijesne gozbe s čudnim običajima."
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Ne čuvaju više čistoće ni tijela ni ženidbe, jedan drugoga ili iz zasjede ubijaju ili jedan drugomu preljubom jade zadaju.",
+          "lines": [
+            "Ne čuvaju više čistoće ni tijela ni ženidbe,",
+            "jedan drugoga ili iz zasjede ubijaju",
+            "ili jedan drugomu preljubom jade zadaju."
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "Svuda zbrka: krv, ubojstvo, krađa, prijevara, pokvarenost, nevjernost, buna, kriva prisega,",
+          "lines": [
+            "Svuda zbrka: krv, ubojstvo, krađa, prijevara,",
+            "pokvarenost, nevjernost, buna, kriva prisega,"
+          ]
+        },
+        {
+          "verse": 26,
+          "text": "uznemirivanje čestitih, zaboravljanje dobročinstva, oskvrnjenje duša, zločini protiv naravi, nered u braku, preljub, nećudorednost.",
+          "lines": [
+            "uznemirivanje čestitih,",
+            "zaboravljanje dobročinstva, oskvrnjenje duša,",
+            "zločini protiv naravi,",
+            "nered u braku, preljub, nećudorednost."
+          ]
+        },
+        {
+          "verse": 27,
+          "text": "Jer je krivoboštvo početak, uzrok i kraj svakog zla.",
+          "lines": [
+            "Jer je krivoboštvo",
+            "početak, uzrok i kraj svakog zla."
+          ]
+        },
+        {
+          "verse": 28,
+          "text": "Ili bjesne na svojim zabavama, ili izriču lažna proroštva, ili žive nepravedno, ili bez oklijevanja krivo prisežu.",
+          "lines": [
+            "Ili bjesne na svojim zabavama,",
+            "ili izriču lažna proroštva,",
+            "ili žive nepravedno,",
+            "ili bez oklijevanja krivo prisežu."
+          ]
+        },
+        {
+          "verse": 29,
+          "text": "Jer se uzdaju u mrtve idole, ne boje se da će okajavati lažne prisege.",
+          "lines": [
+            "Jer se uzdaju u mrtve idole,",
+            "ne boje se da će okajavati lažne prisege."
+          ]
+        },
+        {
+          "verse": 30,
+          "text": "Ali će ih za oboje stići kazna: što su služeći idolima iskrivili pojam o Bogu i što se krivo i podlo zaklinjahu prezirući sve što je sveto.",
+          "lines": [
+            "Ali će ih za oboje stići kazna:",
+            "što su služeći idolima iskrivili pojam o Bogu",
+            "i što se krivo i podlo zaklinjahu",
+            "prezirući sve što je sveto."
+          ]
+        },
+        {
+          "verse": 31,
+          "text": "Jer se prijestupima bezbožničkim uvijek osvećuje – ne moć prizivanih idola, nego pravda koja stiže grešnike.",
+          "lines": [
+            "Jer se prijestupima bezbožničkim uvijek osvećuje –",
+            "ne moć prizivanih idola,",
+            "nego pravda koja stiže grešnike."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "verse_count": 19,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "A ti si, Bože naš, blag i istinit, spor na gnjev i svime milostivo upravljaš.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Izrael nije krivobožački"
+            }
+          ],
+          "lines": [
+            "A ti si, Bože naš, blag i istinit,",
+            "spor na gnjev i svime milostivo upravljaš."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Ako i sagriješismo, tvoji smo! Priznajemo tvoju vlast i nećemo griješiti kad znamo da smo tvoji.",
+          "lines": [
+            "Ako i sagriješismo, tvoji smo!",
+            "Priznajemo tvoju vlast",
+            "i nećemo griješiti kad znamo da smo tvoji."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Jer tebe znati – savršena je pravednost, i poznavati snagu tvoju korijen je besmrtnosti.",
+          "lines": [
+            "Jer tebe znati – savršena je pravednost,",
+            "i poznavati snagu tvoju korijen je besmrtnosti."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Nas nije zaveo nikakav izum opaka ljudskog umijeća ni jalovo djelo slikarsko, likovi našarani ličilima",
+          "lines": [
+            "Nas nije zaveo nikakav izum opaka ljudskog umijeća",
+            "ni jalovo djelo slikarsko,",
+            "likovi našarani ličilima"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "koji u budalama potiču žudnju te žude za neživim obličjem mrtva lika.",
+          "lines": [
+            "koji u budalama potiču žudnju",
+            "te žude za neživim obličjem mrtva lika."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Ljubitelji su zla i dostojni takvih nada oni koji ih čine ili žele ili štuju.",
+          "lines": [
+            "Ljubitelji su zla i dostojni takvih nada",
+            "oni koji ih čine ili žele ili štuju."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Muči se lončar i gnječi zemlju mekanu: pravi posuđe kojim se služimo. Od istoga blata pravi posude koje služe u plemenite svrhe i one koje služe suprotnom: kakva će kojoj namjena biti – određuje lončar.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Ludost izrađivača kumira"
+            }
+          ],
+          "lines": [
+            "Muči se lončar i gnječi zemlju mekanu:",
+            "pravi posuđe kojim se služimo.",
+            "Od istoga blata pravi posude",
+            "koje služe u plemenite svrhe",
+            "i one koje služe suprotnom:",
+            "kakva će kojoj namjena biti –",
+            "određuje lončar."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "I možda – o napora na zlo data! – od iste gline pravi ništavnog boga, on koji je nedavno od zemlje sazdan i koji će se ubrzo zemlji vratit’ od koje je uzet, kad se od njega duša zatraži.",
+          "lines": [
+            "I možda – o napora na zlo data! –",
+            "od iste gline pravi ništavnog boga,",
+            "on koji je nedavno od zemlje sazdan",
+            "i koji će se ubrzo zemlji vratit’ od koje je uzet,",
+            "kad se od njega duša zatraži."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Ne mari on što će brzo umrijeti ni što mu je život kratkovjek, nego se natječe sa zlatarima i srebrnarima i nasljeduje mjedare, ponosan što pravi krivotvorine.",
+          "lines": [
+            "Ne mari on što će brzo umrijeti",
+            "ni što mu je život kratkovjek,",
+            "nego se natječe sa zlatarima i srebrnarima",
+            "i nasljeduje mjedare,",
+            "ponosan što pravi krivotvorine."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Srce mu je kao pepeo, i nada mu od zemlje bjednija, i život od gline nevredniji,",
+          "lines": [
+            "Srce mu je kao pepeo,",
+            "i nada mu od zemlje bjednija,",
+            "i život od gline nevredniji,"
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "jer nije poznao Stvoritelja svoga koji mu je udahnuo dušu djelatnu i nadahnuo ga dahom životnim.",
+          "lines": [
+            "jer nije poznao Stvoritelja svoga",
+            "koji mu je udahnuo dušu djelatnu",
+            "i nadahnuo ga dahom životnim."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Nego misli da je žiće naše igra i život naš sajam pun probitka. »Treba, veli, izbijati korist iz svega, čak iz zla.«",
+          "lines": [
+            "Nego misli da je žiće naše igra",
+            "i život naš sajam pun probitka.",
+            "»Treba, veli, izbijati korist iz svega, čak iz zla.«"
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Jer bolje no itko drugi zna takav da griješi kad od iste tvari zemljane pravi lomne posude i kumire.",
+          "lines": [
+            "Jer bolje no itko drugi",
+            "zna takav da griješi",
+            "kad od iste tvari zemljane",
+            "pravi lomne posude i kumire."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Ali su od svih najluđi, i jadniji od duše čeda nejakog, oni neprijatelji tvog naroda koji ga nekoć tlačiše.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Ludost Egipćana: sveopće krivoboštvo"
+            }
+          ],
+          "lines": [
+            "Ali su od svih najluđi,",
+            "i jadniji od duše čeda nejakog,",
+            "oni neprijatelji tvog naroda",
+            "koji ga nekoć tlačiše."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Jer oni obožavahu sve poganske kumire koji ne mogu ni očima gledati, ni nosom disati, ni ušima slušati, ni prstima pipati, ni nogama hoditi.",
+          "lines": [
+            "Jer oni obožavahu sve poganske kumire",
+            "koji ne mogu ni očima gledati,",
+            "ni nosom disati, ni ušima slušati,",
+            "ni prstima pipati,",
+            "ni nogama hoditi."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Jer ih čovjek načini, sazda ih onaj komu je dah u zajam dan. Nijedan čovjek ne može načiniti boga sebi slična;",
+          "lines": [
+            "Jer ih čovjek načini,",
+            "sazda ih onaj komu je dah u zajam dan.",
+            "Nijedan čovjek ne može načiniti",
+            "boga sebi slična;"
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "i jer je smrtan, mrtvo djelo gradi bezbožničkim rukama. On je dragocjeniji od svojih svetinja, jer je živ, a one nisu.",
+          "lines": [
+            "i jer je smrtan,",
+            "mrtvo djelo gradi bezbožničkim rukama.",
+            "On je dragocjeniji od svojih svetinja,",
+            "jer je živ, a one nisu."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "A čak štuju i najgadnije životinje, što su, po gluposti svojoj, gore od ostalih.",
+          "lines": [
+            "A čak štuju i najgadnije životinje,",
+            "što su, po gluposti svojoj, gore od ostalih."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Na njima nikakve ljepote da bi privlačile kao druge životinje: umakle su i Božjoj hvali i njegovu blagoslovu.",
+          "lines": [
+            "Na njima nikakve ljepote",
+            "da bi privlačile kao druge životinje:",
+            "umakle su i Božjoj hvali i njegovu blagoslovu."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "verse_count": 29,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Zato bijahu primjereno kažnjeni sličnim životinjama i mučeni mnoštvom kukaca.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Egipat i Izrael: kobne životinje, prepelice"
+            }
+          ],
+          "lines": [
+            "Zato bijahu primjereno",
+            "kažnjeni sličnim životinjama",
+            "i mučeni mnoštvom kukaca."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "A narod si svoj, mjesto takvom kaznom, obasuo dobročinstvom; i da zadovoljiš njegovu žudnju žarku, pripravio si jelo izvanredno: slasne prepelice.",
+          "lines": [
+            "A narod si svoj, mjesto takvom kaznom,",
+            "obasuo dobročinstvom;",
+            "i da zadovoljiš njegovu žudnju žarku,",
+            "pripravio si jelo izvanredno: slasne prepelice."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "I tako Egipćanima, premda željnima hrane, kad vidješe odvratne stvorove poslane protiv njih, zataji i naravna želja za jelom; a narodu si svojem poslije kratke oskudice poklonio jelo čudesno.",
+          "lines": [
+            "I tako Egipćanima,",
+            "premda željnima hrane, kad vidješe odvratne stvorove poslane protiv njih,",
+            "zataji i naravna želja za jelom;",
+            "a narodu si svojem poslije kratke oskudice",
+            "poklonio jelo čudesno."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Na tlačitelje morade doći neuklonjiva oskudica, dok je tvojima trebalo samo pokazati kako su teško mučeni neprijatelji njihovi.",
+          "lines": [
+            "Na tlačitelje morade doći neuklonjiva oskudica,",
+            "dok je tvojima trebalo samo pokazati",
+            "kako su teško mučeni neprijatelji njihovi."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "I kad je na njih navalio životinjski bijes te pogibahu od ujeda zmija vijugavih, srdžba tvoja još ne bješe došla do kraja.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Egipat i Izrael: pošast skakavaca, mjedena zmija"
+            }
+          ],
+          "lines": [
+            "I kad je na njih navalio životinjski bijes",
+            "te pogibahu od ujeda zmija vijugavih,",
+            "srdžba tvoja još ne bješe došla do kraja."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Da se opamete, bijahu samo uplašeni na kratak čas, jer su dobili spasonosni znak da se sjete zapovijedi tvoga zakona.",
+          "lines": [
+            "Da se opamete, bijahu samo uplašeni na kratak čas,",
+            "jer su dobili spasonosni znak",
+            "da se sjete zapovijedi tvoga zakona."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Jer tko god je u nj pogledao, ozdravio je, ali ne po onom u što je pogledao, već zbog tebe, Spasitelju sviju!",
+          "lines": [
+            "Jer tko god je u nj pogledao, ozdravio je,",
+            "ali ne po onom u što je pogledao,",
+            "već zbog tebe, Spasitelju sviju!"
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Ujedno si time dokazao našim dušmanima da si ti izbavitelj od zla svakoga.",
+          "lines": [
+            "Ujedno si time dokazao našim dušmanima",
+            "da si ti izbavitelj od zla svakoga."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Umirahu od ujeda skakavaca i muha i ne bijaše lijeka životu njihovu, jer su zaslužili da budu tako kažnjeni.",
+          "lines": [
+            "Umirahu od ujeda skakavaca i muha",
+            "i ne bijaše lijeka životu njihovu,",
+            "jer su zaslužili da budu tako kažnjeni."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "A sinovima tvojim nisu naudili ni zubi zmija otrovnica, jer im je milost tvoja u pomoć pritekla te ih iscijelila.",
+          "lines": [
+            "A sinovima tvojim nisu naudili",
+            "ni zubi zmija otrovnica,",
+            "jer im je milost tvoja u pomoć pritekla te ih iscijelila."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Podbadao si ih samo i odmah ozdravljao, da se sjete proroštava tvojih, da ne zapadnu u zaboravnost duboku i ostanu bez tvojeg dobročinstva.",
+          "lines": [
+            "Podbadao si ih samo i odmah ozdravljao,",
+            "da se sjete proroštava tvojih,",
+            "da ne zapadnu u zaboravnost duboku",
+            "i ostanu bez tvojeg dobročinstva."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "Jer njih nije liječila ni trava ni melem, nego tvoja riječ, o Gospode, koja liječi sve.",
+          "lines": [
+            "Jer njih nije liječila ni trava ni melem,",
+            "nego tvoja riječ, o Gospode, koja liječi sve."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "Ti imaš vlast nad životom i smrću, ti dovodiš do vrata podzemlja i opet izvodiš.",
+          "lines": [
+            "Ti imaš vlast nad životom i smrću,",
+            "ti dovodiš do vrata podzemlja i opet izvodiš."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Čovjek može svojom zloćom ubiti, ali kad duh izađe, ne može ga vratiti niti izbaviti dušu oduzetu.",
+          "lines": [
+            "Čovjek može svojom zloćom ubiti,",
+            "ali kad duh izađe, ne može ga vratiti",
+            "niti izbaviti dušu oduzetu."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Ruci se tvojoj ne može uteći.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Egipat i Izrael: čudesa u prirodi"
+            }
+          ],
+          "lines": [
+            "Ruci se tvojoj ne može uteći."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Mišica je tvoja silna kaznila bezbožnike koji te ne htjedoše priznati; gonio ih nečuven dažd i tuča, i pljusak neumoljiv, i oganj ih proždirao.",
+          "lines": [
+            "Mišica je tvoja silna kaznila bezbožnike",
+            "koji te ne htjedoše priznati;",
+            "gonio ih nečuven dažd i tuča,",
+            "i pljusak neumoljiv,",
+            "i oganj ih proždirao."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "A najčudnije: u vodi koja gasi sve rasla je ognju sve žešća moć, jer se svemir borio za pravednike.",
+          "lines": [
+            "A najčudnije: u vodi koja gasi sve",
+            "rasla je ognju sve žešća moć,",
+            "jer se svemir borio za pravednike."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Čas bi se plamen ublažio da ne spali životinje poslane na bezbožnike, nego da ovi vide i spoznaju kako ih goni sud Božji;",
+          "lines": [
+            "Čas bi se plamen ublažio",
+            "da ne spali životinje poslane na bezbožnike,",
+            "nego da ovi vide i spoznaju kako ih goni sud Božji;"
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "čas bi opet buknuo u samoj vodi od ognja snažnije da uništi plodove zemlje opake.",
+          "lines": [
+            "čas bi opet buknuo u samoj vodi",
+            "od ognja snažnije",
+            "da uništi plodove zemlje opake."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "A narod si svoj hranio hranom anđeoskom, slao mu s neba gotov kruh koji je imao u sebi svaku slast i ugađao svakom ukusu.",
+          "lines": [
+            "A narod si svoj hranio",
+            "hranom anđeoskom,",
+            "slao mu s neba gotov kruh",
+            "koji je imao u sebi svaku slast",
+            "i ugađao svakom ukusu."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "Pokazao si svojim darom slatku nježnost prema djeci, jer je dar ugađao svakom teku i mijenjao se u što je tko htio.",
+          "lines": [
+            "Pokazao si svojim darom slatku nježnost prema djeci,",
+            "jer je dar ugađao svakom teku",
+            "i mijenjao se u što je tko htio."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "Snijeg i led odolijevahu ognju ne topeći se, da bi se znalo kako je neprijateljske plodove uništio oganj koji je plamtio u tuči i bljeskao u daždu,",
+          "lines": [
+            "Snijeg i led odolijevahu ognju ne topeći se,",
+            "da bi se znalo kako je neprijateljske plodove uništio",
+            "oganj koji je plamtio u tuči i bljeskao u daždu,"
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "dok je opet oganj zaboravio snagu svoju da bi se nahranili pravednici.",
+          "lines": [
+            "dok je opet oganj zaboravio snagu svoju",
+            "da bi se nahranili pravednici."
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Jer sve stvorenje služi tebi, svojem Stvoritelju, napinje snagu svoju za kaznu opakima, a popušta za dobro onima koji se u te uzdaju:",
+          "lines": [
+            "Jer sve stvorenje služi tebi, svojem Stvoritelju,",
+            "napinje snagu svoju za kaznu opakima,",
+            "a popušta za dobro onima koji se u te uzdaju:"
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "zato se i tada u sve preobražavalo da posluži tvojoj darežljivosti svehraniteljskoj, prema želji potrebitih,",
+          "lines": [
+            "zato se i tada u sve preobražavalo",
+            "da posluži tvojoj darežljivosti svehraniteljskoj,",
+            "prema želji potrebitih,"
+          ]
+        },
+        {
+          "verse": 26,
+          "text": "da bi sinovi tvoji, koje ljubiš, Gospode, naučili kako čovjeka ne hrane različiti plodovi, nego riječ tvoja uzdržava sve koji u te vjeruju;",
+          "lines": [
+            "da bi sinovi tvoji, koje ljubiš, Gospode,",
+            "naučili kako čovjeka ne hrane različiti plodovi,",
+            "nego riječ tvoja uzdržava",
+            "sve koji u te vjeruju;"
+          ]
+        },
+        {
+          "verse": 27,
+          "text": "jer ono što nije mogao oganj uništiti rastopilo se pod toplinom jedne zrake sunčane,",
+          "lines": [
+            "jer ono što nije mogao oganj uništiti",
+            "rastopilo se pod toplinom jedne zrake sunčane,"
+          ]
+        },
+        {
+          "verse": 28,
+          "text": "da bi se znalo kako treba sunce preteći i tebi zahvaliti, prije svjetla zorina preda te stupiti.",
+          "lines": [
+            "da bi se znalo kako treba sunce preteći",
+            "i tebi zahvaliti,",
+            "prije svjetla zorina preda te stupiti."
+          ]
+        },
+        {
+          "verse": 29,
+          "text": "Jer se nada nezahvalnika rastapa kao zimski mraz i razlijeva se kao voda nekorisna.",
+          "lines": [
+            "Jer se nada nezahvalnika rastapa kao zimski mraz",
+            "i razlijeva se kao voda nekorisna."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "verse_count": 20,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Veliki su i nedokučivi sudovi tvoji, zato lutaju duše nepoučljive.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Egipat i Izrael: tmina i svjetlost"
+            }
+          ],
+          "lines": [
+            "Veliki su i nedokučivi",
+            "sudovi tvoji,",
+            "zato lutaju duše nepoučljive."
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "Dok su mislili bezbožnici da imaju u vlasti sveti narod tvoj, postadoše sužnji tmine u okovima duge noći, zatvoreni pod svojim krovovima, prognanici vječne providnosti.",
+          "lines": [
+            "Dok su mislili bezbožnici",
+            "da imaju u vlasti sveti narod tvoj,",
+            "postadoše sužnji tmine",
+            "u okovima duge noći,",
+            "zatvoreni pod svojim krovovima,",
+            "prognanici vječne providnosti."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Mišljahu da će im se tajni grijesi skriti, pokriveni tamnim velom zaborava, a rasuše se u užasnu strahu, zaplašeni utvarama.",
+          "lines": [
+            "Mišljahu da će im se tajni grijesi skriti,",
+            "pokriveni tamnim velom zaborava,",
+            "a rasuše se u užasnu strahu, zaplašeni utvarama."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Ni skrovište u koje se povukoše nije ih sačuvalo od straha, nego se oko njih razlijegao grozan jek, ukazivahu im se kobne utvare, mračnih lica.",
+          "lines": [
+            "Ni skrovište u koje se povukoše",
+            "nije ih sačuvalo od straha,",
+            "nego se oko njih razlijegao grozan jek,",
+            "ukazivahu im se kobne utvare, mračnih lica."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "I nikakva im sila ognjena nije mogla svjetla pružiti, niti su sjajne plamene zvijezde mogle osvijetliti tu strašnu noć.",
+          "lines": [
+            "I nikakva im sila ognjena nije mogla svjetla pružiti,",
+            "niti su sjajne plamene zvijezde",
+            "mogle osvijetliti tu strašnu noć."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Jedino im se ukazivaše neka lomača, sama od sebe upaljena, puna užasa; i kad bi ta prikaza iščezla, oni je, izvan sebe od straha, držahu strašnijom nego što bijaše.",
+          "lines": [
+            "Jedino im se ukazivaše neka lomača,",
+            "sama od sebe upaljena, puna užasa;",
+            "i kad bi ta prikaza iščezla,",
+            "oni je, izvan sebe od straha,",
+            "držahu strašnijom nego što bijaše."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Nemoćna bijahu njihova umijeća čarobnjačka i njihovo hvastanje razborom bijaše izvrgnuto ruglu.",
+          "lines": [
+            "Nemoćna bijahu njihova umijeća čarobnjačka",
+            "i njihovo hvastanje razborom bijaše",
+            "izvrgnuto ruglu."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Jer oni koji prije obećavahu kako će istjerati strah i tjeskobu iz bolne duše, sami se razbolješe od straha smiješnoga.",
+          "lines": [
+            "Jer oni koji prije obećavahu",
+            "kako će istjerati strah i tjeskobu iz bolne duše,",
+            "sami se razbolješe od straha smiješnoga."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Kad ih i nije ništa strahovito plašilo, bješe im na užas gmizanje životinja i šištanje zmija. Ginuli su od straha, ne usuđujući se pogledati ni u zrak kojem se ne može umaknuti.",
+          "lines": [
+            "Kad ih i nije ništa strahovito plašilo,",
+            "bješe im na užas gmizanje životinja i šištanje zmija.",
+            "Ginuli su od straha,",
+            "ne usuđujući se pogledati ni u zrak",
+            "kojem se ne može umaknuti."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Jer zloća je strašljivaca: vlastitim se svjedočanstvom osuđuje i uvijek zlo uvećava kad je stane savjest tištiti.",
+          "lines": [
+            "Jer zloća je strašljivaca:",
+            "vlastitim se svjedočanstvom osuđuje",
+            "i uvijek zlo uvećava",
+            "kad je stane savjest tištiti."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Jer strah i nije drugo nego izdaja pomagala što ih razum daje:",
+          "lines": [
+            "Jer strah i nije drugo nego izdaja pomagala",
+            "što ih razum daje:"
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "što se manje čovjek u sebi na njih oslanja, to mu teže pada što ne zna uzrok svojoj patnji.",
+          "lines": [
+            "što se manje čovjek u sebi na njih oslanja,",
+            "to mu teže pada što ne zna uzrok svojoj patnji."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "I tako oni, one noći zaista nemoćne, izišle iz dubina podzemlja nemoćnog, usnuli istim snom,",
+          "lines": [
+            "I tako oni, one noći zaista nemoćne,",
+            "izišle iz dubina podzemlja nemoćnog,",
+            "usnuli istim snom,"
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "bijahu progonjeni strašnim sablastima ili su smalaksali obamrle duše, jer ih napade iznenadan i neočekivan strah.",
+          "lines": [
+            "bijahu progonjeni strašnim sablastima",
+            "ili su smalaksali obamrle duše,",
+            "jer ih napade iznenadan i neočekivan strah."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "I tako svaki, pavši gdje se našao, osta zatočen u tamnici bez prijevornica:",
+          "lines": [
+            "I tako svaki, pavši gdje se našao,",
+            "osta zatočen u tamnici bez prijevornica:"
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "i orač i pastir i radnik koji se samotan muči zaskočeni zapadoše u neminovnu nevolju, svi bijahu okovani jednim lancem tame.",
+          "lines": [
+            "i orač i pastir",
+            "i radnik koji se samotan muči",
+            "zaskočeni zapadoše u neminovnu nevolju,",
+            "svi bijahu okovani jednim lancem tame."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "I šumni vjetar, i milopojni ptičji glas među lisnim granama, i odmjeren huk vode što silovito protječe; i divlja buka pećinâ što se ruše,",
+          "lines": [
+            "I šumni vjetar,",
+            "i milopojni ptičji glas među lisnim granama,",
+            "i odmjeren huk vode što silovito protječe;",
+            "i divlja buka pećinâ što se ruše,"
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "i nevidljiva trka životinja što skaču, i urlik ljutih divljih zvijeri, i jeka što se odbija od gorskih dolova – sve ih ispunjaše užasom.",
+          "lines": [
+            "i nevidljiva trka životinja što skaču,",
+            "i urlik ljutih divljih zvijeri,",
+            "i jeka što se odbija od gorskih dolova –",
+            "sve ih ispunjaše užasom."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "A sav svijet blistao od sjajne svjetlosti i prepuštao se nesmetano svojim djelima.",
+          "lines": [
+            "A sav svijet blistao od sjajne svjetlosti",
+            "i prepuštao se nesmetano svojim djelima."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Jedino se nad njima raskrilila teška noć, slika mraka koji će ih primiti; ali teži od same tame bijahu oni – teret sami sebi.",
+          "lines": [
+            "Jedino se nad njima raskrilila teška noć,",
+            "slika mraka koji će ih primiti;",
+            "ali teži od same tame bijahu oni –",
+            "teret sami sebi."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "verse_count": 25,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "A svetima tvojim svijetlila je svjetlost najveća, i Egipćani, slušajući njihov glas a ne videći im obličja, nazivahu ih blaženima jer nisu nevolju trpjeli;",
+          "lines": [
+            "A svetima tvojim svijetlila je",
+            "svjetlost najveća,",
+            "i Egipćani, slušajući njihov glas",
+            "a ne videći im obličja,",
+            "nazivahu ih blaženima",
+            "jer nisu nevolju trpjeli;"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "i zahvaljivahu im što se ne osvećuju za nanesene nepravde i moljahu ih da im oproste neprijateljstvo.",
+          "lines": [
+            "i zahvaljivahu im što se ne osvećuju",
+            "za nanesene nepravde",
+            "i moljahu ih da im oproste neprijateljstvo."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "A Izraelcima si dao ognjen stup da im bude vođom na stazama neznanim, blago sunce na njihovu časnom putovanju.",
+          "lines": [
+            "A Izraelcima si dao ognjen stup",
+            "da im bude vođom na stazama neznanim,",
+            "blago sunce na njihovu časnom putovanju."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "Zaslužili su Egipćani da svjetlost izgube i da ih tama zasužnji, jer u zatvoru držahu djecu tvoju po kojoj se svijetu imala podariti nepropadljiva svjetlost Zakona.",
+          "lines": [
+            "Zaslužili su Egipćani",
+            "da svjetlost izgube",
+            "i da ih tama zasužnji,",
+            "jer u zatvoru držahu djecu tvoju",
+            "po kojoj se svijetu imala podariti",
+            "nepropadljiva svjetlost Zakona."
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "I jer odlučiše pogubiti djecu svetaca, a jedno se od izložene djece spasilo, ti im za kaznu oduze mnoštvo djece i sve ih pogubi u silnoj vodi.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Egipat i Izrael: Zatornik"
+            }
+          ],
+          "lines": [
+            "I jer odlučiše pogubiti djecu svetaca,",
+            "a jedno se od izložene djece spasilo,",
+            "ti im za kaznu oduze mnoštvo djece",
+            "i sve ih pogubi u silnoj vodi."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "A noć ona bijaše unaprijed najavljena ocima našim da bi jasno znali kakvim su prisegama povjerovali, i da budu dobre volje.",
+          "lines": [
+            "A noć ona bijaše unaprijed najavljena ocima našim",
+            "da bi jasno znali kakvim su prisegama povjerovali,",
+            "i da budu dobre volje."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Tako je tvoj narod očekivao spas pravednika i propast neprijatelja.",
+          "lines": [
+            "Tako je tvoj narod očekivao spas pravednika",
+            "i propast neprijatelja."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Jer čime si kaznio naše protivnike, time si proslavio nas, pozvavši nas k sebi.",
+          "lines": [
+            "Jer čime si kaznio naše protivnike,",
+            "time si proslavio nas, pozvavši nas k sebi."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Tada su pobožna djeca pravednikâ žrtve tajno prinijela i složno postavila zakon božanstven da sveti tvoji jednako snose i dobra i pogibelji. I tad su zapjevali svete pjesme otaca.",
+          "lines": [
+            "Tada su pobožna djeca pravednikâ žrtve tajno prinijela",
+            "i složno postavila zakon božanstven",
+            "da sveti tvoji jednako snose i dobra i pogibelji.",
+            "I tad su zapjevali svete pjesme otaca."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "A u odjek im dođoše neskladni povici neprijatelja, tužan jauk za djecom oplakivanom.",
+          "lines": [
+            "A u odjek im dođoše neskladni povici neprijatelja,",
+            "tužan jauk za djecom oplakivanom."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Jednaka kazna stiže i roba i gospodara, isto je trpio i pučanin i kralj.",
+          "lines": [
+            "Jednaka kazna stiže i roba i gospodara,",
+            "isto je trpio i pučanin i kralj."
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "A svi su zajedno imali nebrojene mrtvace pogođene istom smrću. I živih bijaše premalo da pokapaju mrtve, jer im za tren poginu najodličniji porod.",
+          "lines": [
+            "A svi su zajedno imali nebrojene mrtvace",
+            "pogođene istom smrću.",
+            "I živih bijaše premalo da pokapaju mrtve,",
+            "jer im za tren poginu najodličniji porod."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "I oni koji, zbog svojih čarolija, ni u što nisu vjerovali, kad im izginuše prvenci njihovi, moradoše priznati da je narod izraelski – sin Božji.",
+          "lines": [
+            "I oni koji, zbog svojih čarolija,",
+            "ni u što nisu vjerovali,",
+            "kad im izginuše prvenci njihovi,",
+            "moradoše priznati da je narod izraelski – sin Božji."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Dok je mirna tišina svime vladala i noć brzim tijekom stigla do sredine puta svog,",
+          "lines": [
+            "Dok je mirna tišina svime vladala",
+            "i noć brzim tijekom stigla do sredine puta svog,"
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "jurnula je tvoja svemoguća riječ s nebesa, s kraljevskih prijestolja, kao žestok ratnik u sredinu zemlje, propasti predane. Kao oštar mač nosila je tvoju neopozivu zapovijed.",
+          "lines": [
+            "jurnula je tvoja svemoguća riječ s nebesa,",
+            "s kraljevskih prijestolja,",
+            "kao žestok ratnik u sredinu zemlje, propasti predane.",
+            "Kao oštar mač nosila je tvoju neopozivu zapovijed."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Zaustavi se i sve ispuni smrću: doticala se neba, stajala na zemlji.",
+          "lines": [
+            "Zaustavi se i sve ispuni smrću:",
+            "doticala se neba, stajala na zemlji."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "Tada Egipćane iznenada uplašiše prikaze jezivih snova, napade ih neočekivan strah.",
+          "lines": [
+            "Tada Egipćane iznenada uplašiše prikaze jezivih snova,",
+            "napade ih neočekivan strah."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Padahu polumrtvi, jedan ovdje, drugi ondje, kazujući zašto umiru.",
+          "lines": [
+            "Padahu polumrtvi, jedan ovdje, drugi ondje,",
+            "kazujući zašto umiru."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Jer su im sni, što ih smutiše, to unaprijed najavili, da ne bi poginuli ne znajući uzroka s kojeg ih je stiglo zlo.",
+          "lines": [
+            "Jer su im sni, što ih smutiše,",
+            "to unaprijed najavili,",
+            "da ne bi poginuli ne znajući uzroka",
+            "s kojeg ih je stiglo zlo."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Ali se napast smrtna dotakla i pravednika i mnoštvo ih je u pustinji pomrlo. Ali srdžba nije dugo trajala.",
+          "lines": [
+            "Ali se napast smrtna dotakla i pravednika",
+            "i mnoštvo ih je u pustinji pomrlo.",
+            "Ali srdžba nije dugo trajala."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "Jer se brzo za njih zauzeo čovjek besprijekoran: naoružan oružjem službe svoje – molitvom i pomirbenim kadom – opro se srdžbi i dokrajčio nevolju, pokazavši da je sluga tvoj.",
+          "lines": [
+            "Jer se brzo za njih zauzeo čovjek besprijekoran:",
+            "naoružan oružjem službe svoje –",
+            "molitvom i pomirbenim kadom –",
+            "opro se srdžbi i dokrajčio nevolju,",
+            "pokazavši da je sluga tvoj."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "On gnjevu nije odolio ni snagom tjelesnom ni silom oružja, nego je riječju svojom pokorio zatornika spomenuv otačke prisege i zavjete.",
+          "lines": [
+            "On gnjevu nije odolio",
+            "ni snagom tjelesnom",
+            "ni silom oružja,",
+            "nego je riječju svojom pokorio zatornika",
+            "spomenuv otačke prisege i zavjete."
+          ]
+        },
+        {
+          "verse": 23,
+          "text": "Mrtvi već ležahu jedan preko drugoga, a on stade sred njih i jarost suzbi, presiječe joj put k živima.",
+          "lines": [
+            "Mrtvi već ležahu jedan preko drugoga,",
+            "a on stade sred njih i jarost suzbi,",
+            "presiječe joj put k živima."
+          ]
+        },
+        {
+          "verse": 24,
+          "text": "Na njegovoj dugoj halji bijaše čitav svemir i u četiri reda dragulja slavna imena otaca, a na vijencu oko glave tvoje veličanstvo.",
+          "lines": [
+            "Na njegovoj dugoj halji bijaše čitav svemir",
+            "i u četiri reda dragulja slavna imena otaca,",
+            "a na vijencu oko glave tvoje veličanstvo."
+          ]
+        },
+        {
+          "verse": 25,
+          "text": "Pred tim uzmaknu zatornik, predade se: samo je malo okušao srdžbu tvoju – i bijaše mu dosta.",
+          "lines": [
+            "Pred tim uzmaknu zatornik,",
+            "predade se:",
+            "samo je malo okušao srdžbu tvoju",
+            "– i bijaše mu dosta."
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "verse_count": 22,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "A grešnike je sasvim pritisnuo gnjev nemilostiv, jer je Gospodin znao što će oni:",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Egipat i Izrael: Crveno more"
+            }
+          ],
+          "lines": [
+            "A grešnike je sasvim pritisnuo",
+            "gnjev nemilostiv,",
+            "jer je Gospodin znao što će oni:"
+          ]
+        },
+        {
+          "verse": 2,
+          "text": "najprije će dopustiti Izraelcima da odu i brzo ih ispratiti, a zatim će se predomisliti i poći za njima u potjeru.",
+          "lines": [
+            "najprije će dopustiti Izraelcima da odu",
+            "i brzo ih ispratiti,",
+            "a zatim će se predomisliti",
+            "i poći za njima u potjeru."
+          ]
+        },
+        {
+          "verse": 3,
+          "text": "Još im teška žalost bijaše na srcu dok naricahu nad grobovima svojih mrtvaca, kad im pade na um nova luda misao te stadoše kao bjegunce progoniti one koje su prije molili da odu.",
+          "lines": [
+            "Još im teška žalost bijaše na srcu",
+            "dok naricahu nad grobovima svojih mrtvaca,",
+            "kad im pade na um nova luda misao",
+            "te stadoše kao bjegunce progoniti",
+            "one koje su prije molili da odu."
+          ]
+        },
+        {
+          "verse": 4,
+          "text": "A zaslužena ih je sudbina nagnala da zaborave prošle jade i da svojim mukama dodaju još jednu:",
+          "lines": [
+            "A zaslužena ih je sudbina nagnala",
+            "da zaborave prošle jade",
+            "i da svojim mukama dodaju još jednu:"
+          ]
+        },
+        {
+          "verse": 5,
+          "text": "dok će narod tvoj prijeći put čudesan, oni će naći smrt nečuvenu.",
+          "lines": [
+            "dok će narod tvoj prijeći put čudesan,",
+            "oni će naći smrt nečuvenu."
+          ]
+        },
+        {
+          "verse": 6,
+          "text": "Da se sačuvaju djeca tvoja neozlijeđena, sve stvoreno preinači opet narav svoju služeći tvojim zapovijedima.",
+          "lines": [
+            "Da se sačuvaju djeca tvoja neozlijeđena,",
+            "sve stvoreno preinači opet narav svoju",
+            "služeći tvojim zapovijedima."
+          ]
+        },
+        {
+          "verse": 7,
+          "text": "Oblak se pojavi i sjenom zakri tabor, a kopno izroni gdje prije bijaše voda; put slobodan nasta od Crvenoga mora i polje travnato od strašnih valova.",
+          "lines": [
+            "Oblak se pojavi i sjenom zakri tabor,",
+            "a kopno izroni gdje prije bijaše voda;",
+            "put slobodan nasta od Crvenoga mora",
+            "i polje travnato od strašnih valova."
+          ]
+        },
+        {
+          "verse": 8,
+          "text": "Preko njega prijeđe narod sav, štićen tvojom desnicom, zadivljen silnim čudesima.",
+          "lines": [
+            "Preko njega prijeđe narod sav,",
+            "štićen tvojom desnicom,",
+            "zadivljen silnim čudesima."
+          ]
+        },
+        {
+          "verse": 9,
+          "text": "Bijahu kao konji kada pasu, i kao jaganjci skakahu slaveći tebe, Gospode, izbavitelja svoga.",
+          "lines": [
+            "Bijahu kao konji kada pasu,",
+            "i kao jaganjci skakahu",
+            "slaveći tebe, Gospode,",
+            "izbavitelja svoga."
+          ]
+        },
+        {
+          "verse": 10,
+          "text": "Još se sjećahu događaja u tuđini, kako je mjesto životinja zemlja komarce rađala i kako je mjesto riba rijeka izbacila mnoštvo žaba.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Priroda čudesno služi Izraelcima"
+            }
+          ],
+          "lines": [
+            "Još se sjećahu događaja u tuđini,",
+            "kako je mjesto životinja zemlja komarce rađala",
+            "i kako je mjesto riba rijeka izbacila mnoštvo žaba."
+          ]
+        },
+        {
+          "verse": 11,
+          "text": "Poslije vidješe i nov nastanak ptica, kada su, potaknuti žudnjom, zatražili jela raskošna:",
+          "lines": [
+            "Poslije vidješe i nov nastanak ptica,",
+            "kada su, potaknuti žudnjom, zatražili jela raskošna:"
+          ]
+        },
+        {
+          "verse": 12,
+          "text": "izašle iz mora prepelice da im želji udovolje.",
+          "lines": [
+            "izašle iz mora prepelice",
+            "da im želji udovolje."
+          ]
+        },
+        {
+          "verse": 13,
+          "text": "A grešnike stigla kazna, prethodili joj snažni gromovi. Stigla ih pravedna plaća za zla djela, jer su divljom mržnjom mrzili tuđince.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Egipat grešniji od Sodome"
+            }
+          ],
+          "lines": [
+            "A grešnike stigla kazna,",
+            "prethodili joj snažni gromovi.",
+            "Stigla ih pravedna plaća za zla djela,",
+            "jer su divljom mržnjom mrzili tuđince."
+          ]
+        },
+        {
+          "verse": 14,
+          "text": "Jer dok oni odbijahu neznance, ovi goste i dobrotvore pretvoriše u robove.",
+          "lines": [
+            "Jer dok oni odbijahu neznance,",
+            "ovi goste i dobrotvore",
+            "pretvoriše u robove."
+          ]
+        },
+        {
+          "verse": 15,
+          "text": "Oni se prema strancima poniješe odmah neprijateljski, i plaća ih čeka za to.",
+          "lines": [
+            "Oni se prema strancima",
+            "poniješe odmah neprijateljski,",
+            "i plaća ih čeka za to."
+          ]
+        },
+        {
+          "verse": 16,
+          "text": "Ovi, naprotiv, primiše svečano Izraelce, a onda ih, već ravne sebi, udariše teškom tlakom.",
+          "lines": [
+            "Ovi, naprotiv, primiše svečano Izraelce,",
+            "a onda ih, već ravne sebi,",
+            "udariše teškom tlakom."
+          ]
+        },
+        {
+          "verse": 17,
+          "text": "I njih udari sljepoća kao i one pred vratima pravednikovim; opkoli ih tama duboka, i svaki je tražio svoja vrata.",
+          "lines": [
+            "I njih udari sljepoća",
+            "kao i one pred vratima pravednikovim;",
+            "opkoli ih tama duboka,",
+            "i svaki je tražio svoja vrata."
+          ]
+        },
+        {
+          "verse": 18,
+          "text": "Tako se počéla međusobno izmjenjuju, kao što se skladno izmjenjuju glasovi na harfi, ostajući uvijek kod zvuka svojeg; a to se može jasno razabrati kad se razmotre događaji.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Priroda pri Izlasku"
+            }
+          ],
+          "lines": [
+            "Tako se počéla međusobno izmjenjuju,",
+            "kao što se skladno izmjenjuju glasovi na harfi,",
+            "ostajući uvijek kod zvuka svojeg;",
+            "a to se može jasno razabrati",
+            "kad se razmotre događaji."
+          ]
+        },
+        {
+          "verse": 19,
+          "text": "Jer se kopnene životinje u vodene mijenjahu, a one što plivaju, na kopno prelažahu.",
+          "lines": [
+            "Jer se kopnene životinje u vodene mijenjahu,",
+            "a one što plivaju, na kopno prelažahu."
+          ]
+        },
+        {
+          "verse": 20,
+          "text": "Oganj je u vodi silu svoju pojačao, a voda zaboravila snagu što gasi.",
+          "lines": [
+            "Oganj je u vodi silu svoju pojačao,",
+            "a voda zaboravila snagu što gasi."
+          ]
+        },
+        {
+          "verse": 21,
+          "text": "Plamenovi ognjeni nisu pržili meso životinja propadljivih kada su posred njih hodile niti se u njima topila hrana nebeska, laka i topljiva poput inja.",
+          "lines": [
+            "Plamenovi ognjeni nisu pržili meso životinja propadljivih",
+            "kada su posred njih hodile",
+            "niti se u njima topila hrana nebeska,",
+            "laka i topljiva poput inja."
+          ]
+        },
+        {
+          "verse": 22,
+          "text": "U svemu si, Gospode, uzvisio i proslavio narod svoj i nisi ga prezreo, već si mu bio na pomoći svagda i svagdje.",
+          "headings": [
+            {
+              "level": "h4",
+              "text": "Zaključak"
+            }
+          ],
+          "lines": [
+            "U svemu si, Gospode, uzvisio",
+            "i proslavio narod svoj",
+            "i nisi ga prezreo, već si mu bio na pomoći",
+            "svagda i svagdje."
+          ]
+        }
+      ]
+    }
+  ]
+}

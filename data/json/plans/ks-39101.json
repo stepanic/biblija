@@ -1,0 +1,519 @@
+{
+  "id": "ks-39101",
+  "title": "Knjiga Postanka u trideset dana",
+  "category": "ks-tematski",
+  "days_count": 30,
+  "description": "Knjiga Postanka sadrži najpoznatije priče (Stvaranje, Noa, Abraham, Josip) i ključna je za razumijevanje ostatka Biblije. Pročita se vrlo lagano u mjesec dana.",
+  "days": [
+    {
+      "day": 1,
+      "label": "Post 1-2",
+      "verse_count": 56,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 1,
+          "chapter_end": 2,
+          "verse_count": 56,
+          "label": "Post 1–2"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "label": "Post 3-4",
+      "verse_count": 50,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 3,
+          "chapter_end": 4,
+          "verse_count": 50,
+          "label": "Post 3–4"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "label": "Post 5-6",
+      "verse_count": 54,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 5,
+          "chapter_end": 6,
+          "verse_count": 54,
+          "label": "Post 5–6"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "label": "Post 7-8",
+      "verse_count": 46,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 7,
+          "chapter_end": 8,
+          "verse_count": 46,
+          "label": "Post 7–8"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "label": "Post 9-10",
+      "verse_count": 61,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 9,
+          "chapter_end": 10,
+          "verse_count": 61,
+          "label": "Post 9–10"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "label": "Post 11-12",
+      "verse_count": 52,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 11,
+          "chapter_end": 12,
+          "verse_count": 52,
+          "label": "Post 11–12"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "label": "Post 13-14",
+      "verse_count": 42,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 13,
+          "chapter_end": 14,
+          "verse_count": 42,
+          "label": "Post 13–14"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "label": "Post 15-16",
+      "verse_count": 37,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 15,
+          "chapter_end": 16,
+          "verse_count": 37,
+          "label": "Post 15–16"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "label": "Post 17-18",
+      "verse_count": 60,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 17,
+          "chapter_end": 18,
+          "verse_count": 60,
+          "label": "Post 17–18"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "label": "Post 19",
+      "verse_count": 38,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 19,
+          "chapter_end": 19,
+          "verse_count": 38,
+          "label": "Post 19"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "label": "Post 20-21",
+      "verse_count": 52,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 20,
+          "chapter_end": 21,
+          "verse_count": 52,
+          "label": "Post 20–21"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "label": "Post 22-23",
+      "verse_count": 44,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 22,
+          "chapter_end": 23,
+          "verse_count": 44,
+          "label": "Post 22–23"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "label": "Post 24",
+      "verse_count": 67,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 24,
+          "chapter_end": 24,
+          "verse_count": 67,
+          "label": "Post 24"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "label": "Post 25",
+      "verse_count": 34,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 25,
+          "chapter_end": 25,
+          "verse_count": 34,
+          "label": "Post 25"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "label": "Post 26",
+      "verse_count": 35,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 26,
+          "chapter_end": 26,
+          "verse_count": 35,
+          "label": "Post 26"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "label": "Post 27",
+      "verse_count": 46,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 27,
+          "chapter_end": 27,
+          "verse_count": 46,
+          "label": "Post 27"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "label": "Post 28-29",
+      "verse_count": 57,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 28,
+          "chapter_end": 29,
+          "verse_count": 57,
+          "label": "Post 28–29"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "label": "Post 30",
+      "verse_count": 43,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 30,
+          "chapter_end": 30,
+          "verse_count": 43,
+          "label": "Post 30"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "label": "Post 31",
+      "verse_count": 54,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 31,
+          "chapter_end": 31,
+          "verse_count": 54,
+          "label": "Post 31"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "label": "Post 32-33",
+      "verse_count": 53,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 32,
+          "chapter_end": 33,
+          "verse_count": 53,
+          "label": "Post 32–33"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "label": "Post 34-35",
+      "verse_count": 60,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 34,
+          "chapter_end": 35,
+          "verse_count": 60,
+          "label": "Post 34–35"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "label": "Post 36",
+      "verse_count": 43,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 36,
+          "chapter_end": 36,
+          "verse_count": 43,
+          "label": "Post 36"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "label": "Post 37-38",
+      "verse_count": 66,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 37,
+          "chapter_end": 38,
+          "verse_count": 66,
+          "label": "Post 37–38"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "label": "Post 39-40",
+      "verse_count": 46,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 39,
+          "chapter_end": 40,
+          "verse_count": 46,
+          "label": "Post 39–40"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "label": "Post 41",
+      "verse_count": 57,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 41,
+          "chapter_end": 41,
+          "verse_count": 57,
+          "label": "Post 41"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "label": "Post 42",
+      "verse_count": 38,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 42,
+          "chapter_end": 42,
+          "verse_count": 38,
+          "label": "Post 42"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "label": "Post 43-44",
+      "verse_count": 68,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 43,
+          "chapter_end": 44,
+          "verse_count": 68,
+          "label": "Post 43–44"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "label": "Post 45-46",
+      "verse_count": 62,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 45,
+          "chapter_end": 46,
+          "verse_count": 62,
+          "label": "Post 45–46"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "label": "Post 47-48",
+      "verse_count": 50,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 47,
+          "chapter_end": 48,
+          "verse_count": 50,
+          "label": "Post 47–48"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "label": "Post 49-50",
+      "verse_count": 59,
+      "readings": [
+        {
+          "book_order": 1,
+          "book_id": "knjiga-postanka",
+          "book_abbr": "Post",
+          "book_title": "Knjiga Postanka",
+          "chapter_start": 49,
+          "chapter_end": 50,
+          "verse_count": 59,
+          "label": "Post 49–50"
+        }
+      ]
+    }
+  ]
+}
