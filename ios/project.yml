@@ -1,0 +1,65 @@
+name: Biblija
+options:
+  bundleIdPrefix: hr.stepanic
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+packages:
+  BiblijaKit:
+    path: BiblijaKit
+targets:
+  Biblija:
+    type: application
+    platform: iOS
+    sources:
+      - path: Biblija
+        excludes:
+          - Resources/biblija-mobile.db
+      - path: Biblija/Resources/biblija-mobile.db
+        buildPhase: resources
+        optional: true
+    dependencies:
+      - package: BiblijaKit
+    preBuildScripts:
+      - name: Mobilna baza (scripts/export_mobile_db.py)
+        basedOnDependencyAnalysis: false
+        script: |
+          cd "$SRCROOT/.."
+          python3 scripts/export_mobile_db.py --if-stale --out "$SRCROOT/Biblija/Resources/biblija-mobile.db"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: hr.stepanic.biblija365
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 6SCK58757K
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+        LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+        DEVELOPMENT_LANGUAGE: hr
+    info:
+      path: Biblija/Info.plist
+      properties:
+        CFBundleDisplayName: Biblija 365
+        CFBundleName: Biblija 365
+        CFBundleDevelopmentRegion: hr
+        CFBundleLocalizations: [hr]
+        ITSAppUsesNonExemptEncryption: false
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        # Adresa Workera s /api/sync; prazno = korisnik je upisuje u Postavkama
+        BiblijaSyncBaseURL: ""
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+schemes:
+  Biblija:
+    build:
+      targets:
+        Biblija: all
+    test:
+      targets: []
