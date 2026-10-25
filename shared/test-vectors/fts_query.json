@@ -1,0 +1,57 @@
+{
+  "description": "Korisnički upit → FTS5 MATCH izraz nad verses_fts. Tokeni su nizovi [\\w]+ (Unicode slova, znamenke, _) nakon fold_hr. Upit u navodnicima s više tokena je fraza; inače AND prefiks-upit. expected=null znači da se upit ne šalje.",
+  "cases": [
+    {
+      "input": "ljubav",
+      "expected": "\"ljubav\"*"
+    },
+    {
+      "input": "Duh Božji",
+      "expected": "\"duh\"* AND \"bozji\"*"
+    },
+    {
+      "input": "\"u početku\"",
+      "expected": "\"u pocetku\""
+    },
+    {
+      "input": "\"ljubav\"",
+      "expected": "\"ljubav\"*"
+    },
+    {
+      "input": "Đavao",
+      "expected": "\"davao\"*"
+    },
+    {
+      "input": "  pastir   moj ",
+      "expected": "\"pastir\"* AND \"moj\"*"
+    },
+    {
+      "input": "Mt 5,3",
+      "expected": "\"mt\"* AND \"5\"* AND \"3\"*"
+    },
+    {
+      "input": "!!!",
+      "expected": null
+    },
+    {
+      "input": "",
+      "expected": null
+    },
+    {
+      "input": "riječ, tijelom",
+      "expected": "\"rijec\"* AND \"tijelom\"*"
+    },
+    {
+      "input": "Isus-Krist",
+      "expected": "\"isus\"* AND \"krist\"*"
+    },
+    {
+      "input": "neparni \"navodnik",
+      "expected": "\"neparni\"* AND \"navodnik\"*"
+    },
+    {
+      "input": "a_b c",
+      "expected": "\"a_b\"* AND \"c\"*"
+    }
+  ]
+}

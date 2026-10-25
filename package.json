@@ -12,7 +12,10 @@
     "build": "astro build",
     "preview": "wrangler dev",
     "deploy": "npm run build && wrangler deploy",
-    "sqlite-server": "python3 server.py --port 8088"
+    "sqlite-server": "python3 server.py --port 8088",
+    "test:contract": "node --test shared/tests/*.test.mjs",
+    "mobile-db": "python3 scripts/export_mobile_db.py --if-stale --out ios/Biblija/Resources/biblija-mobile.db --out android/app/src/main/assets/biblija-mobile.db",
+    "test-vectors": "python3 scripts/gen_test_vectors.py"
   },
   "dependencies": {
     "astro": "^5.5.0"

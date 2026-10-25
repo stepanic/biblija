@@ -1,7 +1,7 @@
 /**
  * Cloudflare Worker + D1 Multi-User & Multi-Device Sync Backend for Biblija 365
  * - Poslužuje sve statičke Astro SSG stranice iz `env.ASSETS`
- * - Pruža `/api/status`, `/api/auth` i `/api/sync` nad Cloudflare D1 SQLite bazom (`env.DB`)
+ * - Pruža `/api/status`, `/api/auth`, `/api/sync` i `/api/account/delete` nad Cloudflare D1 SQLite bazom (`env.DB`)
  * - Omogućuje da N korisnika čita Bibliju na više uređaja (mobitel, tablet, računalo)
  *   uz sinkronizaciju napretka po danima, zadnjeg pročitanog poglavlja i osobnih oznaka/bilješki.
  */
@@ -59,6 +59,11 @@ function jsonResponse(payload: unknown, status = 200): Response {
   });
 }
 
+// Nakon MAX_PIN_FAILURES pogrešnih PIN-ova u PIN_WINDOW_MS Sync kod je zaključan PIN_LOCK_MS.
+const MAX_PIN_FAILURES = 5;
+const PIN_WINDOW_MS = 15 * 60 * 1000;
+const PIN_LOCK_MS = 15 * 60 * 1000;
+
 let schemaInitialized = false;
 
 async function ensureSchema(db: D1Database): Promise<void> {
@@ -105,8 +110,58 @@ async function ensureSchema(db: D1Database): Promise<void> {
       )
     `),
     db.prepare(`CREATE INDEX IF NOT EXISTS idx_sync_bookmarks_user ON sync_bookmarks(user_key)`),
+    db.prepare(`
+      CREATE TABLE IF NOT EXISTS sync_auth_failures (
+        user_key TEXT PRIMARY KEY,
+        failures INTEGER NOT NULL DEFAULT 0,
+        window_start TEXT NOT NULL,
+        locked_until TEXT
+      )
+    `),
   ]);
   schemaInitialized = true;
+}
+
+async function lockedUntil(db: D1Database, userKey: string, nowMs: number): Promise<string | null> {
+  const row = await db
+    .prepare("SELECT locked_until FROM sync_auth_failures WHERE user_key = ?")
+    .bind(userKey)
+    .first<{ locked_until: string | null }>();
+  if (row?.locked_until && Date.parse(row.locked_until) > nowMs) return row.locked_until;
+  return null;
+}
+
+async function recordPinFailure(db: D1Database, userKey: string, nowMs: number): Promise<void> {
+  const row = await db
+    .prepare("SELECT failures, window_start FROM sync_auth_failures WHERE user_key = ?")
+    .bind(userKey)
+    .first<{ failures: number; window_start: string }>();
+  const inWindow = row && nowMs - Date.parse(row.window_start) < PIN_WINDOW_MS;
+  const failures = inWindow ? Number(row.failures) + 1 : 1;
+  const windowStart = inWindow ? row.window_start : new Date(nowMs).toISOString();
+  const locked = failures >= MAX_PIN_FAILURES ? new Date(nowMs + PIN_LOCK_MS).toISOString() : null;
+  await db
+    .prepare(
+      `INSERT INTO sync_auth_failures (user_key, failures, window_start, locked_until)
+       VALUES (?, ?, ?, ?)
+       ON CONFLICT(user_key) DO UPDATE SET
+         failures = excluded.failures,
+         window_start = excluded.window_start,
+         locked_until = excluded.locked_until`
+    )
+    .bind(userKey, locked ? 0 : failures, windowStart, locked)
+    .run();
+}
+
+async function clearPinFailures(db: D1Database, userKey: string): Promise<void> {
+  await db.prepare("DELETE FROM sync_auth_failures WHERE user_key = ?").bind(userKey).run();
+}
+
+function lockedResponse(until: string): Response {
+  return jsonResponse(
+    { ok: false, error: "Previše pogrešnih PIN-ova. Pokušaj ponovno za 15 minuta.", locked_until: until },
+    429
+  );
 }
 
 export default {
@@ -142,8 +197,12 @@ export default {
         return jsonResponse({ ok: false, error: "PIN mora imati barem 4 znaka." }, 400);
       }
 
+      const nowMs = Date.now();
+      const until = await lockedUntil(env.DB, userKey, nowMs);
+      if (until) return lockedResponse(until);
+
       const pinHash = await hashPin(userKey, pin);
-      const now = new Date().toISOString();
+      const now = new Date(nowMs).toISOString();
 
       const existing = await env.DB.prepare("SELECT * FROM sync_users WHERE user_key = ?")
         .bind(userKey)
@@ -168,8 +227,10 @@ export default {
       }
 
       if (existing.pin_hash !== pinHash) {
+        await recordPinFailure(env.DB, userKey, nowMs);
         return jsonResponse({ ok: false, error: "Pogrešan PIN za postojeći Sync kod." }, 401);
       }
+      await clearPinFailures(env.DB, userKey);
 
       return jsonResponse({
         ok: true,
@@ -197,8 +258,12 @@ export default {
         return jsonResponse({ ok: false, error: "Neispravan Sync kod ili PIN." }, 400);
       }
 
+      const nowMs = Date.now();
+      const until = await lockedUntil(env.DB, userKey, nowMs);
+      if (until) return lockedResponse(until);
+
       const pinHash = await hashPin(userKey, pin);
-      const now = new Date().toISOString();
+      const now = new Date(nowMs).toISOString();
 
       let user = await env.DB.prepare("SELECT * FROM sync_users WHERE user_key = ?")
         .bind(userKey)
@@ -224,6 +289,7 @@ export default {
           created_at: now,
         };
       } else if (user.pin_hash !== pinHash) {
+        await recordPinFailure(env.DB, userKey, nowMs);
         return jsonResponse({ ok: false, error: "Pogrešan PIN za ovaj Sync kod." }, 401);
       }
 
@@ -422,6 +488,49 @@ export default {
         progress: mergedProgress,
         bookmarks: bmMap,
       });
+    }
+
+    // Brisanje računa iz aplikacije (App Store Review Guideline 5.1.1(v)).
+    if (url.pathname === "/api/account/delete" && request.method === "POST") {
+      if (!env.DB) {
+        return jsonResponse(
+          { ok: false, error: "Cloudflare D1 baza (DB binding) nije povezana u wrangler.jsonc." },
+          503
+        );
+      }
+      await ensureSchema(env.DB);
+
+      const body = (await request.json().catch(() => ({}))) as Record<string, unknown>;
+      const userKey = normalizeUserKey(String(body.user_key || ""));
+      const pin = String(body.pin || "").trim();
+
+      if (userKey.length < 3 || pin.length < 4) {
+        return jsonResponse({ ok: false, error: "Neispravan Sync kod ili PIN." }, 400);
+      }
+
+      const nowMs = Date.now();
+      const until = await lockedUntil(env.DB, userKey, nowMs);
+      if (until) return lockedResponse(until);
+
+      const user = await env.DB.prepare("SELECT pin_hash FROM sync_users WHERE user_key = ?")
+        .bind(userKey)
+        .first<{ pin_hash: string }>();
+      if (!user) {
+        return jsonResponse({ ok: false, error: "Sync kod ne postoji." }, 404);
+      }
+      if (user.pin_hash !== (await hashPin(userKey, pin))) {
+        await recordPinFailure(env.DB, userKey, nowMs);
+        return jsonResponse({ ok: false, error: "Pogrešan PIN za ovaj Sync kod." }, 401);
+      }
+
+      await env.DB.batch([
+        env.DB.prepare("DELETE FROM sync_progress WHERE user_key = ?").bind(userKey),
+        env.DB.prepare("DELETE FROM sync_bookmarks WHERE user_key = ?").bind(userKey),
+        env.DB.prepare("DELETE FROM sync_users WHERE user_key = ?").bind(userKey),
+        env.DB.prepare("DELETE FROM sync_auth_failures WHERE user_key = ?").bind(userKey),
+      ]);
+
+      return jsonResponse({ ok: true, deleted: true, user_key: userKey });
     }
 
     return env.ASSETS.fetch(request);

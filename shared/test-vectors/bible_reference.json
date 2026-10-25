@@ -1,0 +1,136 @@
+{
+  "description": "Prepoznavanje biblijske kratice u tražilici (parseBibleReference iz public/astro-client.js). Prva knjiga po book_order čiji fold(abbr)==token, fold(title)==token ili fold(title) počinje tokenom. expected=null kad nije referenca.",
+  "cases": [
+    {
+      "input": "Iv 3,16",
+      "expected": {
+        "book_order": 50,
+        "book_abbr": "Iv",
+        "chapter": 3,
+        "verse": 16
+      }
+    },
+    {
+      "input": "iv 3:16",
+      "expected": {
+        "book_order": 50,
+        "book_abbr": "Iv",
+        "chapter": 3,
+        "verse": 16
+      }
+    },
+    {
+      "input": "Post 1",
+      "expected": {
+        "book_order": 1,
+        "book_abbr": "Post",
+        "chapter": 1,
+        "verse": null
+      }
+    },
+    {
+      "input": "Ps 23",
+      "expected": {
+        "book_order": 23,
+        "book_abbr": "Ps",
+        "chapter": 23,
+        "verse": null
+      }
+    },
+    {
+      "input": "Mt 5,3-12",
+      "expected": {
+        "book_order": 47,
+        "book_abbr": "Mt",
+        "chapter": 5,
+        "verse": 3
+      }
+    },
+    {
+      "input": "1 Kor 13",
+      "expected": {
+        "book_order": 53,
+        "book_abbr": "1 Kor",
+        "chapter": 13,
+        "verse": null
+      }
+    },
+    {
+      "input": "1Kor 13,4",
+      "expected": null
+    },
+    {
+      "input": "Otk 22,21",
+      "expected": {
+        "book_order": 73,
+        "book_abbr": "Otk",
+        "chapter": 22,
+        "verse": 21
+      }
+    },
+    {
+      "input": "Sir 1",
+      "expected": {
+        "book_order": 28,
+        "book_abbr": "Sir",
+        "chapter": 1,
+        "verse": null
+      }
+    },
+    {
+      "input": "Ivan 1",
+      "expected": null
+    },
+    {
+      "input": "Knjiga Postanka 2",
+      "expected": null
+    },
+    {
+      "input": "Mudre izreke 3",
+      "expected": null
+    },
+    {
+      "input": "Post 51",
+      "expected": null
+    },
+    {
+      "input": "Xyz 1",
+      "expected": null
+    },
+    {
+      "input": "ljubav",
+      "expected": null
+    },
+    {
+      "input": "Iv",
+      "expected": null
+    },
+    {
+      "input": "Mk. 1,1",
+      "expected": {
+        "book_order": 48,
+        "book_abbr": "Mk",
+        "chapter": 1,
+        "verse": 1
+      }
+    },
+    {
+      "input": "Dj 2,1–4",
+      "expected": {
+        "book_order": 51,
+        "book_abbr": "Dj",
+        "chapter": 2,
+        "verse": 1
+      }
+    },
+    {
+      "input": "Est 0",
+      "expected": {
+        "book_order": 19,
+        "book_abbr": "Est",
+        "chapter": 0,
+        "verse": null
+      }
+    }
+  ]
+}

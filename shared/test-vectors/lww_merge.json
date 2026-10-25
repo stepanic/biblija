@@ -1,0 +1,791 @@
+{
+  "description": "LWW merge za /api/sync. Ključevi: meta (cijeli objekt po last_updated_at), progress[plan_id][day] po updated_at, bookmarks['book_order:chapter:verse'] po updated_at. Klijentski zapis pobjeđuje samo ako je strogo noviji (ISO-8601 UTC s milisekundama, uspoređuje se kao string). Brisanje je tombstone (deleted=true). Klijent koji spaja odgovor servera s lokalnim izmjenama napravljenim tijekom zahtjeva koristi isto pravilo: lokalni zapis pobjeđuje samo ako je strogo noviji. server_only slučajevi pokrivaju stari web format i važe samo za worker.",
+  "cases": [
+    {
+      "name": "prazan server prima sve s klijenta",
+      "server": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {}
+      },
+      "client": {
+        "meta": {
+          "active_plan_id": "mb-linearni-365",
+          "last_url": "/psalmi/23/",
+          "last_label": "Psalmi (Ps 23)",
+          "last_updated_at": "2026-10-01T08:00:00.000Z"
+        },
+        "progress": {
+          "mb-linearni-365": {
+            "1": {
+              "completed": true,
+              "updated_at": "2026-10-01T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "gold",
+            "note": "",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-01T08:00:00.000Z"
+          }
+        }
+      },
+      "expected": {
+        "meta": {
+          "active_plan_id": "mb-linearni-365",
+          "last_url": "/psalmi/23/",
+          "last_label": "Psalmi (Ps 23)",
+          "last_updated_at": "2026-10-01T08:00:00.000Z"
+        },
+        "progress": {
+          "mb-linearni-365": {
+            "1": {
+              "completed": true,
+              "updated_at": "2026-10-01T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "gold",
+            "note": "",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-01T08:00:00.000Z"
+          }
+        }
+      }
+    },
+    {
+      "name": "prazan klijent dobiva stanje sa servera",
+      "server": {
+        "meta": {
+          "active_plan_id": "mb-usporedni-365",
+          "last_url": "/knjiga-postanka/3/",
+          "last_label": "Knjiga Postanka (Post 3)",
+          "last_updated_at": "2026-10-02T08:00:00.000Z"
+        },
+        "progress": {
+          "mb-usporedni-365": {
+            "5": {
+              "completed": true,
+              "updated_at": "2026-10-02T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "blue",
+            "note": "Bog je ljubav",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      },
+      "client": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {}
+      },
+      "expected": {
+        "meta": {
+          "active_plan_id": "mb-usporedni-365",
+          "last_url": "/knjiga-postanka/3/",
+          "last_label": "Knjiga Postanka (Post 3)",
+          "last_updated_at": "2026-10-02T08:00:00.000Z"
+        },
+        "progress": {
+          "mb-usporedni-365": {
+            "5": {
+              "completed": true,
+              "updated_at": "2026-10-02T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "blue",
+            "note": "Bog je ljubav",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      }
+    },
+    {
+      "name": "noviji dan na serveru pobjeđuje stariji s klijenta",
+      "server": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "1": {
+              "completed": true,
+              "updated_at": "2026-10-03T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {}
+      },
+      "client": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "1": {
+              "completed": false,
+              "updated_at": "2026-10-01T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {}
+      },
+      "expected": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "1": {
+              "completed": true,
+              "updated_at": "2026-10-03T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {}
+      }
+    },
+    {
+      "name": "noviji odznačeni dan s klijenta pobjeđuje",
+      "server": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "1": {
+              "completed": true,
+              "updated_at": "2026-10-01T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {}
+      },
+      "client": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "1": {
+              "completed": false,
+              "updated_at": "2026-10-02T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {}
+      },
+      "expected": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "1": {
+              "completed": false,
+              "updated_at": "2026-10-02T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {}
+      }
+    },
+    {
+      "name": "isti timestamp: server pobjeđuje (klijent mora biti strogo noviji)",
+      "server": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/a/1/",
+          "last_label": "A",
+          "last_updated_at": "2026-10-02T08:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "2": {
+              "completed": true,
+              "updated_at": "2026-10-02T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "gold",
+            "note": "server",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      },
+      "client": {
+        "meta": {
+          "active_plan_id": "mb-linearni-365",
+          "last_url": "/b/1/",
+          "last_label": "B",
+          "last_updated_at": "2026-10-02T08:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "2": {
+              "completed": false,
+              "updated_at": "2026-10-02T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "red",
+            "note": "klijent",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      },
+      "expected": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/a/1/",
+          "last_label": "A",
+          "last_updated_at": "2026-10-02T08:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "2": {
+              "completed": true,
+              "updated_at": "2026-10-02T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "gold",
+            "note": "server",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      }
+    },
+    {
+      "name": "noviji tombstone s klijenta briše oznaku",
+      "server": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "green",
+            "note": "bilješka",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-01T08:00:00.000Z"
+          }
+        }
+      },
+      "client": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "green",
+            "note": "bilješka",
+            "text": "Tekst Iv 3,16",
+            "deleted": true,
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      },
+      "expected": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "green",
+            "note": "bilješka",
+            "text": "Tekst Iv 3,16",
+            "deleted": true,
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      }
+    },
+    {
+      "name": "noviji tombstone na serveru ostaje unatoč starijoj izmjeni s klijenta",
+      "server": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "gold",
+            "note": "",
+            "text": "Tekst Iv 3,16",
+            "deleted": true,
+            "updated_at": "2026-10-03T08:00:00.000Z"
+          }
+        }
+      },
+      "client": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "red",
+            "note": "stara izmjena",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      },
+      "expected": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "gold",
+            "note": "",
+            "text": "Tekst Iv 3,16",
+            "deleted": true,
+            "updated_at": "2026-10-03T08:00:00.000Z"
+          }
+        }
+      }
+    },
+    {
+      "name": "stariji meta s klijenta ne gazi server",
+      "server": {
+        "meta": {
+          "active_plan_id": "mb-usporedni-365",
+          "last_url": "/psalmi/1/",
+          "last_label": "Psalmi (Ps 1)",
+          "last_updated_at": "2026-10-03T08:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {}
+      },
+      "client": {
+        "meta": {
+          "active_plan_id": "mb-linearni-365",
+          "last_url": "/psalmi/2/",
+          "last_label": "Psalmi (Ps 2)",
+          "last_updated_at": "2026-10-01T08:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {}
+      },
+      "expected": {
+        "meta": {
+          "active_plan_id": "mb-usporedni-365",
+          "last_url": "/psalmi/1/",
+          "last_label": "Psalmi (Ps 1)",
+          "last_updated_at": "2026-10-03T08:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {}
+      }
+    },
+    {
+      "name": "unija različitih planova, dana i oznaka",
+      "server": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "1": {
+              "completed": true,
+              "updated_at": "2026-10-01T08:00:00.000Z"
+            },
+            "2": {
+              "completed": true,
+              "updated_at": "2026-10-01T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "gold",
+            "note": "",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-01T08:00:00.000Z"
+          }
+        }
+      },
+      "client": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "3": {
+              "completed": true,
+              "updated_at": "2026-10-02T08:00:00.000Z"
+            }
+          },
+          "mb-linearni-365": {
+            "10": {
+              "completed": true,
+              "updated_at": "2026-10-02T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {
+          "50:3:17": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 17,
+            "color": "purple",
+            "note": "",
+            "text": "Tekst Iv 3,17",
+            "deleted": false,
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      },
+      "expected": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "1": {
+              "completed": true,
+              "updated_at": "2026-10-01T08:00:00.000Z"
+            },
+            "2": {
+              "completed": true,
+              "updated_at": "2026-10-01T08:00:00.000Z"
+            },
+            "3": {
+              "completed": true,
+              "updated_at": "2026-10-02T08:00:00.000Z"
+            }
+          },
+          "mb-linearni-365": {
+            "10": {
+              "completed": true,
+              "updated_at": "2026-10-02T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "gold",
+            "note": "",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-01T08:00:00.000Z"
+          },
+          "50:3:17": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 17,
+            "color": "purple",
+            "note": "",
+            "text": "Tekst Iv 3,17",
+            "deleted": false,
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      }
+    },
+    {
+      "name": "stari web format: dan kao ISO string znači pročitano",
+      "server_only": true,
+      "server": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {}
+      },
+      "client": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "7": "2026-10-01T08:00:00.000Z"
+          }
+        },
+        "bookmarks": {}
+      },
+      "expected": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {
+          "mb-tematski-365": {
+            "7": {
+              "completed": true,
+              "updated_at": "2026-10-01T08:00:00.000Z"
+            }
+          }
+        },
+        "bookmarks": {}
+      }
+    },
+    {
+      "name": "oznaka bez teksta s klijenta zadržava tekst sa servera",
+      "server_only": true,
+      "server": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "gold",
+            "note": "",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-01T08:00:00.000Z"
+          }
+        }
+      },
+      "client": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "chapter": 3,
+            "verse": 16,
+            "color": "red",
+            "note": "nova",
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      },
+      "expected": {
+        "meta": {
+          "active_plan_id": "mb-tematski-365",
+          "last_url": "/",
+          "last_label": "",
+          "last_updated_at": "1970-01-01T00:00:00.000Z"
+        },
+        "progress": {},
+        "bookmarks": {
+          "50:3:16": {
+            "book_order": 50,
+            "book_id": "evandelje-po-ivanu",
+            "book_abbr": "Iv",
+            "book_title": "Evanđelje po Ivanu",
+            "chapter": 3,
+            "verse": 16,
+            "color": "red",
+            "note": "nova",
+            "text": "Tekst Iv 3,16",
+            "deleted": false,
+            "updated_at": "2026-10-02T08:00:00.000Z"
+          }
+        }
+      }
+    }
+  ]
+}

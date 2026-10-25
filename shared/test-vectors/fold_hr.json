@@ -1,0 +1,123 @@
+{
+  "description": "fold_hr: č/ć→c, ž→z, š→s, đ→d, zatim NFKD, uklanjanje kombinirajućih znakova (combining class ≠ 0), lower(). Slučajevi s nfkd_only=true razlikuju se od NFD varijante u src/worker.ts.",
+  "cases": [
+    {
+      "input": "",
+      "expected": ""
+    },
+    {
+      "input": "Biblija",
+      "expected": "biblija"
+    },
+    {
+      "input": "ČĆŽŠĐ čćžšđ",
+      "expected": "cczsd cczsd"
+    },
+    {
+      "input": "Đakovo",
+      "expected": "dakovo"
+    },
+    {
+      "input": "đavao",
+      "expected": "davao"
+    },
+    {
+      "input": "Duh Božji",
+      "expected": "duh bozji"
+    },
+    {
+      "input": "Gospodin je pastir moj",
+      "expected": "gospodin je pastir moj"
+    },
+    {
+      "input": "Ljubav je strpljiva, dobrostiva je ljubav",
+      "expected": "ljubav je strpljiva, dobrostiva je ljubav"
+    },
+    {
+      "input": "Isus Krist",
+      "expected": "isus krist"
+    },
+    {
+      "input": "Knjiga Sirahova",
+      "expected": "knjiga sirahova"
+    },
+    {
+      "input": "Matej 5,3-12",
+      "expected": "matej 5,3-12"
+    },
+    {
+      "input": "»Blago siromasima duhom« (Mt 5,3)",
+      "expected": "»blago siromasima duhom« (mt 5,3)"
+    },
+    {
+      "input": "Prva poslanica Korinćanima",
+      "expected": "prva poslanica korincanima"
+    },
+    {
+      "input": "Ps 23",
+      "expected": "ps 23"
+    },
+    {
+      "input": "Ezekiel",
+      "expected": "ezekiel"
+    },
+    {
+      "input": "Žalosnica",
+      "expected": "zalosnica"
+    },
+    {
+      "input": "Pjesma nad pjesmama",
+      "expected": "pjesma nad pjesmama"
+    },
+    {
+      "input": "Djela apostolska",
+      "expected": "djela apostolska"
+    },
+    {
+      "input": "Ćaćа",
+      "expected": "cacа"
+    },
+    {
+      "input": "Mojsije — Izlazak",
+      "expected": "mojsije — izlazak"
+    },
+    {
+      "input": "café",
+      "expected": "cafe"
+    },
+    {
+      "input": "café",
+      "expected": "cafe"
+    },
+    {
+      "input": "Ñandú Über Ångström",
+      "expected": "nandu uber angstrom"
+    },
+    {
+      "input": "ÆØ œ ß",
+      "expected": "æø œ ß"
+    },
+    {
+      "input": "ﬁ ﬂ",
+      "expected": "fi fl",
+      "nfkd_only": true
+    },
+    {
+      "input": "x²",
+      "expected": "x2",
+      "nfkd_only": true
+    },
+    {
+      "input": "  razmaci   ostaju  ",
+      "expected": "  razmaci   ostaju  "
+    },
+    {
+      "input": "ĐAVO",
+      "expected": "davo"
+    },
+    {
+      "input": "İstanbul",
+      "expected": "istanbul"
+    }
+  ]
+}

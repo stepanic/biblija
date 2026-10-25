@@ -13,3 +13,25 @@ dist/
 .astro/
 .wrangler/
 public/data/
+
+# Mobilna baza (generira scripts/export_mobile_db.py, ~20 MB)
+build/
+ios/Biblija/Resources/biblija-mobile.db
+android/app/src/main/assets/biblija-mobile.db
+
+# iOS / Xcode
+ios/Biblija.xcodeproj/
+ios/build/
+ios/BiblijaKit/.build/
+ios/BiblijaKit/.swiftpm/
+xcuserdata/
+DerivedData/
+
+# Android / Gradle
+android/.gradle/
+android/.kotlin/
+android/build/
+android/*/build/
+android/local.properties
+android/.idea/
+*.iml
