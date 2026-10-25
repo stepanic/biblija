@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- lijeva i desna stranica -->
+    <path android:fillColor="#F8F5EF" android:pathData="M29,36 h22 v36 h-22 a3,3 0 0 1 -3,-3 v-30 a3,3 0 0 1 3,-3 z" />
+    <path android:fillColor="#F8F5EF" android:pathData="M57,36 h22 a3,3 0 0 1 3,3 v30 a3,3 0 0 1 -3,3 h-22 z" />
+    <path android:fillColor="#6B4514" android:pathData="M51,36 h6 v36 h-6 z" />
+    <!-- retci -->
+    <path android:fillColor="#C9B89C" android:pathData="M31,44 h16 v2 h-16 z M31,49 h16 v2 h-16 z M31,54 h11 v2 h-11 z M31,59 h16 v2 h-16 z M31,64 h12 v2 h-12 z" />
+    <!-- križ -->
+    <path android:fillColor="#D8A24A" android:pathData="M67,42 h4 v24 h-4 z M62,48 h14 v4 h-14 z" />
+</vector>

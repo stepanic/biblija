@@ -46,9 +46,52 @@ Vezani dokumenti: [Arhitektura i audit izvora](2026-10-25-arhitektura-i-audit-iz
 - **Prava na tekst:** objava u storeovima je distribucija — provjeriti prava na Zagrebačku Bibliju
   1968. / KS tekst prije objave.
 
-## 4. Otvoreno
+## 4. Stanje implementacije (2026-10-25)
 
-1. Struktura repoa: mobilni klijenti u ovom repou (`ios/`, `android/`) ili zasebni repoi — nije odlučeno.
-2. Skripta za izvoz read-only mobilne baze.
-3. Worker: `DELETE` računa + rate limit na `/api/auth`.
-4. Zajednički testni vektori za fold i LWW merge (JSON fixture koji koriste sva tri klijenta).
+Klijenti su u ovom repou (`ios/`, `android/`), uz zajednički `shared/`. Ništa još nije isprobano
+na uređaju; oba projekta se buildaju, a logika je pokrivena testovima koji rade na Macu bez
+simulatora i emulatora.
+
+| Dio | Gdje | Provjera |
+|---|---|---|
+| Read-only mobilna baza (tekst, FTS5, planovi, `mobile_meta`) | `scripts/export_mobile_db.py`, `npm run mobile-db` | odbija `user_*`/`sync_*` tablice |
+| Testni vektori: fold, FTS izraz, biblijska referenca, LWW | `shared/test-vectors/`, `scripts/gen_test_vectors.py` | `npm run test:contract` (15 testova protiv pravog `src/worker.ts` nad `node:sqlite`) |
+| Worker: `POST /api/account/delete`, zaključavanje nakon 5 pogrešnih PIN-ova (15 min) | `src/worker.ts`, `migrations/0002_auth_failures.sql` | isti ugovorni testovi |
+| iOS logika | `ios/BiblijaKit` (Swift package) | `cd ios/BiblijaKit && swift test` (12) |
+| iOS aplikacija (SwiftUI, iOS 17+) | `ios/Biblija`, `ios/project.yml` | `xcodegen generate`, build za `generic/platform=iOS` |
+| Android logika | `android/core` (Kotlin/JVM, `BundledSQLiteDriver`) | `./gradlew :core:test` (12) |
+| Android aplikacija (Compose, minSdk 26) | `android/app` | `./gradlew :app:assembleDebug` |
+
+Ekrani u oba klijenta: čitač (odlomci / redak po redak, naslovi, pjesnički retci, oznake bojom,
+bilješka, kopiranje i dijeljenje citata, traka „Dan N" iz plana), Biblija 365 (18 planova, napredak,
+današnje čitanje, filtri), pretraga (FTS5 offline + prepoznavanje kratica), oznake, postavke
+(veličina slova, tema svijetla/sepia/tamna/sustav, Sync kod + PIN, spremljeni profili, odjava,
+brisanje računa, adresa poslužitelja).
+
+### Zamke otkrivene usput
+
+- `fold_hr` (Python, gradi indeks) koristi **NFKD**, a `foldHr` u workeru i web klijentu **NFD**.
+  Razlikuju se samo za ligature i superskripte (`ﬁ`, `²`); vektori takve slučajeve označavaju
+  `nfkd_only`. Mobilni klijenti slijede NFKD jer foldaju upit nad istim indeksom.
+- Web `parseBibleReference` ne prepoznaje `1Kor 13` bez razmaka (kratica je `1 Kor`). Vektori to
+  zaključavaju kao postojeće ponašanje; promjena ide u sva tri klijenta i vektore odjednom.
+- `biblija-mobile.db` (~20 MB) je gitignoreana; Xcode prebuild faza i Gradle `exportMobileDb` je
+  osvježavaju iz `data/biblija.db` (treba `python3` i izgrađen `data/biblija.db`).
+- Android kopira bazu iz `assets` u `filesDir` pri instalaciji/ažuriranju (`DatabaseInstaller`);
+  BundledSQLiteDriver ne čita iz APK-a.
+- Sync kod + PIN: iOS Keychain (`AfterFirstUnlockThisDeviceOnly`), Android AES-GCM ključ iz
+  Keystorea, datoteka isključena iz backupa.
+- Lokalni merge nakon synca: `LWW.merge(server: odgovor, client: trenutno lokalno)`, pa izmjene
+  napravljene dok je zahtjev bio u letu ostaju i šalju se idućim syncom.
+- Adresa poslužitelja nije upisana (nema produkcijskog D1 deploya): iOS `BiblijaSyncBaseURL` u
+  `project.yml`, Android `-PbiblijaSyncBaseUrl=…` ili `biblija.syncBaseUrl` u `local.properties`;
+  inače je korisnik upisuje u Postavkama.
+
+## 5. Otvoreno
+
+1. Prvo pokretanje na stvarnom iPhoneu i Android uređaju (potpisivanje: tim `6SCK58757K`,
+   bundle/application id `hr.stepanic.biblija365`).
+2. Produkcijski D1 deploy + migracija `0002_auth_failures.sql`, zatim upisati adresu u oba klijenta.
+3. Widget „današnje čitanje", lokalne notifikacije za plan, App Intents — još nisu rađeni.
+4. Prava na tekst prije objave u storeovima.
+5. Prava ikona (trenutna je generirana: `scripts/gen_app_icon.py`, Android vektor u `res/drawable`).
