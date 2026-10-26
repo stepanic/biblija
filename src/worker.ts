@@ -2,9 +2,13 @@
  * Cloudflare Worker + D1 Multi-User & Multi-Device Sync Backend for Biblija 365
  * - Poslužuje sve statičke Astro SSG stranice iz `env.ASSETS`
  * - Pruža `/api/status`, `/api/auth`, `/api/sync` i `/api/account/delete` nad Cloudflare D1 SQLite bazom (`env.DB`)
+ * - `/api/live`: WebSocket preko Durable Objecta `SyncRoom` (jedan po Sync kodu) koji ostalim
+ *   uređajima javi da je stanje promijenjeno, pa oni odmah povuku `/api/sync`
  * - Omogućuje da N korisnika čita Bibliju na više uređaja (mobitel, tablet, računalo)
  *   uz sinkronizaciju napretka po danima, zadnjeg pročitanog poglavlja i osobnih oznaka/bilješki.
  */
+
+import { DurableObject } from "cloudflare:workers";
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
@@ -22,6 +26,61 @@ export interface D1Database {
 export interface Env {
   ASSETS: { fetch: (req: Request) => Promise<Response> };
   DB?: D1Database;
+  SYNC_ROOM?: DurableObjectNamespace<SyncRoom>;
+}
+
+// Najviše otvorenih veza po Sync kodu; starije se zatvaraju.
+const MAX_LIVE_SOCKETS = 16;
+
+/**
+ * Jedna soba po Sync kodu. Ne čuva podatke (izvor istine je D1), samo drži WebSockete uređaja
+ * i na `notify` javi svima osim pošiljatelja da povuku `/api/sync`. Hibernation API: dok nema
+ * događaja objekt ne troši vrijeme izvođenja, a ping/pong odgovara runtime bez buđenja.
+ */
+export class SyncRoom extends DurableObject<Env> {
+  constructor(ctx: DurableObjectState, env: Env) {
+    super(ctx, env);
+    ctx.setWebSocketAutoResponse(new WebSocketRequestResponsePair("ping", "pong"));
+  }
+
+  async fetch(request: Request): Promise<Response> {
+    const clientId = new URL(request.url).searchParams.get("client") || "";
+    const sockets = this.ctx.getWebSockets();
+    for (const old of sockets.slice(0, Math.max(0, sockets.length - MAX_LIVE_SOCKETS + 1))) {
+      try {
+        old.close(4000, "too many connections");
+      } catch (_) {}
+    }
+    const pair = new WebSocketPair();
+    this.ctx.acceptWebSocket(pair[1], [clientId.slice(0, 64)]);
+    return new Response(null, { status: 101, webSocket: pair[0] });
+  }
+
+  async notify(fromClient: string, syncedAt: string): Promise<void> {
+    const msg = JSON.stringify({ type: "changed", synced_at: syncedAt });
+    for (const ws of this.ctx.getWebSockets()) {
+      if (fromClient && this.ctx.getTags(ws)[0] === fromClient) continue;
+      try {
+        ws.send(msg);
+      } catch (_) {}
+    }
+  }
+
+  async webSocketMessage(): Promise<void> {}
+
+  async webSocketClose(ws: WebSocket, code: number, reason: string): Promise<void> {
+    try {
+      ws.close(code, reason);
+    } catch (_) {}
+  }
+}
+
+/** Ime sobe: iz hasha PIN-a, da se bez PIN-a ne može slušati tuđi Sync kod. */
+async function liveRoomId(pinHash: string): Promise<string> {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(`biblija365-live:${pinHash}`));
+  return Array.from(new Uint8Array(digest))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
 }
 
 const CRO_MAP: Record<string, string> = {
@@ -165,8 +224,19 @@ function lockedResponse(until: string): Response {
 }
 
 export default {
-  async fetch(request: Request, env: Env): Promise<Response> {
+  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+
+    if (url.pathname === "/api/live") {
+      const room = url.searchParams.get("room") || "";
+      if (!env.SYNC_ROOM || !/^[0-9a-f]{64}$/.test(room)) {
+        return jsonResponse({ ok: false, error: "Neispravna soba." }, 400);
+      }
+      if (request.headers.get("Upgrade")?.toLowerCase() !== "websocket") {
+        return jsonResponse({ ok: false, error: "Očekujem WebSocket." }, 426);
+      }
+      return env.SYNC_ROOM.get(env.SYNC_ROOM.idFromName(room)).fetch(request);
+    }
 
     if (url.pathname === "/api/status" && request.method === "GET") {
       return jsonResponse({
@@ -475,14 +545,21 @@ export default {
         }
       }
 
+      const liveRoom = await liveRoomId(pinHash);
       if (batchStmts.length > 0) {
         await env.DB.batch(batchStmts);
+        if (env.SYNC_ROOM) {
+          const stub = env.SYNC_ROOM.get(env.SYNC_ROOM.idFromName(liveRoom));
+          const fromClient = String(body.client_id || "").slice(0, 64);
+          ctx.waitUntil(stub.notify(fromClient, now).catch(() => {}));
+        }
       }
 
       return jsonResponse({
         ok: true,
         user_key: userKey,
         display_name: user.display_name,
+        live_room: liveRoom,
         synced_at: now,
         meta: mergedMeta,
         progress: mergedProgress,

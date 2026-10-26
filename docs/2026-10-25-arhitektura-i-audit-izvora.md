@@ -103,6 +103,43 @@ sequenceDiagram
 
 * **Brza promjena profila na istom uređaju (`biblija_saved_profiles`):** Modal za sinkronizaciju pamti do 8 prijavljenih profila na uređaju i omogućuje prebacivanje jednim klikom (`#syncSavedProfilesSection`), pri čemu se prije sinkronizacije novog profila obvezno čisti lokalno stanje (`resetLocalUserData()`) kako podaci prethodnog korisnika ne bi prešli na drugi račun.
 
+### Realtime obavijesti: Durable Object `SyncRoom` (2026-10-26)
+
+D1 ostaje izvor istine i protokol `/api/sync` se ne mijenja. WebSocket nosi samo signal
+„promijenjeno", a uređaj na njega napravi običan pull.
+
+```mermaid
+sequenceDiagram
+    participant A as Uređaj A
+    participant W as Worker /api/sync
+    participant R as SyncRoom (DO, po Sync kodu)
+    participant B as Uređaj B
+
+    B->>W: GET /api/live?room=<live_room>&client=<id> (WebSocket)
+    W->>R: preda vezu (ctx.acceptWebSocket, hibernacija)
+    A->>W: POST /api/sync { client_id, ... }
+    W->>W: LWW merge, D1 batch
+    W-->>A: stanje + live_room
+    W->>R: notify(client_id) (ctx.waitUntil, samo kad je bilo upisa)
+    R-->>B: {"type":"changed"}
+    B->>W: POST /api/sync (pull)
+```
+
+* `live_room` = SHA-256(`biblija365-live:` + pin_hash). Worker ga vraća u odgovoru `/api/sync`,
+  pa sobu ne može naći nitko tko ne zna PIN, a soba ionako ne nosi podatke.
+* `client_id` je po kartici ili uređaju; soba ga drži kao tag WebSocketa i pošiljatelju ne šalje obavijest.
+* Klijent šalje `"ping"` svakih 30 s; odgovara runtime (`setWebSocketAutoResponse`) bez buđenja objekta.
+  Veza se drži samo dok je stranica vidljiva (`visibilitychange` → `closeLive()`), uz backoff do 30 s.
+* Najviše 16 veza po sobi; najstarije se zatvaraju.
+* Obavijest usred synca ne gubi se: `syncWithServer` postavi `syncAgain` i ponovi kad trenutni završi.
+* Hibernation API je uvjet za cijenu: s običnim `accept()` plaćalo bi se cijelo vrijeme otvorene veze.
+  Procjena s cjenikom od 2026-10-26: ~600 DO zahtjeva po aktivnom korisniku mjesečno, ~15 $/mj. za
+  100.000 i ~180 $/mj. za 1.000.000 korisnika; Free plan podnosi ~5.000 aktivnih dnevno.
+* Izmjereno u produkciji: drugi uređaj → web 113 ms, web → drugi uređaj 590 ms (od toga 350 ms debounce).
+* `server.py` (lokalni razvoj) nema `/api/live`; klijent tada jednostavno ostaje na pullu.
+* Ugovorni test podmeće `cloudflare:workers` preko `registerHooks` jer Node taj modul nema.
+* Mobilni klijenti još nemaju WebSocket (Android OkHttp, iOS `URLSessionWebSocketTask`).
+
 ---
 
 ## 4. UI/UX arhitektura čitača i navigacije (dovršeno 2026-10-25)

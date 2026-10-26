@@ -22,5 +22,10 @@
       "migrations_dir": "migrations"
     }
   ],
+  // Realtime: jedna SyncRoom po Sync kodu (WebSocket Hibernation), vidi src/worker.ts
+  "durable_objects": {
+    "bindings": [{ "name": "SYNC_ROOM", "class_name": "SyncRoom" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["SyncRoom"] }],
   "observability": { "enabled": true }
 }

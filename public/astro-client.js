@@ -149,6 +149,61 @@
 
   /* ==================== MULTI-DEVICE CLOUD SYNC & PROFILE SWITCHER ==================== */
   let syncDebounceTimer = null;
+  let syncAgain = false;
+
+  /* Realtime: dok je kartica vidljiva drži WebSocket na /api/live; na "changed" povuci /api/sync.
+     clientId je po kartici, da Worker obavijest ne vrati kartici koja je promjenu poslala. */
+  const clientId = Math.random().toString(36).slice(2) + Date.now().toString(36);
+  const live = { ws: null, room: null, retry: 0, timer: null, ping: null };
+
+  function connectLive() {
+    const room = localStorage.getItem("biblija_live_room");
+    if (!room || !state.syncAuth || document.visibilityState !== "visible") return;
+    if (live.ws && live.room === room && live.ws.readyState <= 1) return;
+    closeLive();
+    const proto = location.protocol === "https:" ? "wss:" : "ws:";
+    let ws;
+    try {
+      ws = new WebSocket(`${proto}//${location.host}/api/live?room=${room}&client=${clientId}`);
+    } catch (_) {
+      return;
+    }
+    live.ws = ws;
+    live.room = room;
+    ws.onopen = () => {
+      live.retry = 0;
+      live.ping = setInterval(() => ws.readyState === 1 && ws.send("ping"), 30000);
+    };
+    ws.onmessage = (ev) => {
+      if (ev.data === "pong") return;
+      let msg = null;
+      try {
+        msg = JSON.parse(ev.data);
+      } catch (_) {}
+      if (msg && msg.type === "changed") syncWithServer({ silent: true });
+    };
+    ws.onclose = () => {
+      clearInterval(live.ping);
+      if (live.ws !== ws) return;
+      live.ws = null;
+      if (document.visibilityState === "visible" && state.syncAuth) {
+        const delay = Math.min(30000, 1000 * 2 ** live.retry++);
+        live.timer = setTimeout(connectLive, delay);
+      }
+    };
+  }
+
+  function closeLive() {
+    clearTimeout(live.timer);
+    const ws = live.ws;
+    live.ws = null;
+    live.room = null;
+    if (ws) {
+      try {
+        ws.close();
+      } catch (_) {}
+    }
+  }
 
   function saveProfileToDeviceList(authObj) {
     if (!authObj || !authObj.user_key || !authObj.pin) return;
@@ -179,6 +234,8 @@
     localStorage.removeItem("biblija_last_label");
     localStorage.removeItem("biblija_meta_updated_at");
     localStorage.removeItem("biblija_last_synced_at");
+    localStorage.removeItem("biblija_live_room");
+    closeLive();
   }
 
   function triggerAllUiRefresh() {
@@ -300,9 +357,22 @@
     }
   }
 
-  async function syncWithServer({ silent = false } = {}) {
+  async function syncWithServer(opts = {}) {
+    if (state.isSyncing) {
+      // npr. realtime obavijest stigla usred synca: ponovi kad ovaj završi
+      syncAgain = true;
+      return false;
+    }
+    const ok = await syncOnce(opts);
+    if (syncAgain) {
+      syncAgain = false;
+      return syncWithServer({ silent: true });
+    }
+    return ok;
+  }
+
+  async function syncOnce({ silent = false } = {}) {
     if (!state.syncAuth || !state.syncAuth.user_key || !state.syncAuth.pin) return false;
-    if (state.isSyncing) return false;
 
     state.isSyncing = true;
     updateSyncHeaderUI();
@@ -311,6 +381,7 @@
       const payload = {
         user_key: state.syncAuth.user_key,
         pin: state.syncAuth.pin,
+        client_id: clientId,
         meta: {
           active_plan_id: state.currentPlanId,
           last_url: localStorage.getItem("biblija_last_url") || "/",
@@ -363,6 +434,10 @@
 
       state.lastSyncedAt = data.synced_at || new Date().toISOString();
       localStorage.setItem("biblija_last_synced_at", state.lastSyncedAt);
+      if (data.live_room) {
+        localStorage.setItem("biblija_live_room", data.live_room);
+        connectLive();
+      }
 
       state.isSyncing = false;
       updateSyncHeaderUI();
@@ -532,6 +607,8 @@
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "visible" && state.syncAuth && state.syncAuth.user_key) {
         syncWithServer({ silent: true });
+      } else if (document.visibilityState === "hidden") {
+        closeLive();
       }
     });
   }

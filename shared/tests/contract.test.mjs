@@ -4,7 +4,14 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { DatabaseSync } from "node:sqlite";
-import worker from "../../src/worker.ts";
+import { registerHooks } from "node:module";
+
+// `cloudflare:workers` postoji samo u workerd; za Node je dovoljna prazna klasa DurableObject.
+registerHooks({
+  resolve: (specifier, context, next) =>
+    specifier === "cloudflare:workers" ? { url: "data:text/javascript,export class DurableObject {}", shortCircuit: true } : next(specifier, context),
+});
+const { default: worker } = await import("../../src/worker.ts");
 
 const root = new URL("../../", import.meta.url);
 const vectors = (name) => JSON.parse(readFileSync(new URL(`shared/test-vectors/${name}`, root), "utf-8"));
