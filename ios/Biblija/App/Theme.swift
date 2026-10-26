@@ -77,3 +77,18 @@ enum ReadingFont {
         .custom("Iowan Old Style", size: size(base))
     }
 }
+
+extension View {
+    /// Horizontalna traka od ruba do ruba: poništava padding roditelja, a traka ga vraća kao
+    /// `contentMargins`. Prvi element stoji u liniji s tekstom, a pri scrollu sadržaj ide do ruba.
+    func railBleed(leading: CGFloat, trailing: CGFloat) -> some View {
+        contentMargins(.leading, leading, for: .scrollContent)
+            .contentMargins(.trailing, trailing, for: .scrollContent)
+            .padding(.leading, -leading)
+            .padding(.trailing, -trailing)
+    }
+
+    func railBleed(_ inset: CGFloat) -> some View {
+        railBleed(leading: inset, trailing: inset)
+    }
+}

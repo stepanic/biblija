@@ -303,6 +303,7 @@ struct ChapterStrip: View {
                     }
                 }
             }
+            .railBleed(20) // padding LazyVStacka u ChapterView
             .onAppear { proxy.scrollTo(current, anchor: .center) }
         }
         .frame(height: 38)
@@ -341,6 +342,7 @@ struct PlanDayBanner: View {
                     }
                 }
             }
+            .railBleed(12)
             Button {
                 model.toggleDay(context.planId, context.day.day)
             } label: {
@@ -352,7 +354,8 @@ struct PlanDayBanner: View {
         }
         .padding(12)
         .foregroundStyle(palette.text)
-        .background(palette.accent.opacity(0.08), in: RoundedRectangle(cornerRadius: 12))
+        .background(palette.accent.opacity(0.08))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
 

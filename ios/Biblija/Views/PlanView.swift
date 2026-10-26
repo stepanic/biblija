@@ -5,6 +5,9 @@ import SwiftUI
 struct PlanView: View {
     @Environment(AppModel.self) private var model
 
+    /// Horizontalni uvlak retka liste; retci s trakom ga postavljaju sami da traka ide do ruba kartice.
+    static let rowInset: CGFloat = 20
+
     enum DayFilter: String, CaseIterable, Identifiable {
         case all = "Svi", todo = "Nepročitani", done = "Pročitani"
         var id: String { rawValue }
@@ -55,6 +58,8 @@ struct PlanView: View {
                 Section {
                     if let next {
                         TodayCard(plan: plan, day: next)
+                            .padding(.horizontal, PlanView.rowInset)
+                            .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                     } else {
                         Label("Čestitamo! Plan je u cijelosti pročitan.", systemImage: "party.popper")
                     }
@@ -76,6 +81,8 @@ struct PlanView: View {
                     .pickerStyle(.segmented)
                     ForEach(visible) { day in
                         PlanDayRow(plan: plan, day: day, isNext: day.day == next?.day)
+                            .padding(.trailing, PlanView.rowInset)
+                            .listRowInsets(EdgeInsets(top: 8, leading: PlanView.rowInset, bottom: 8, trailing: 0))
                             .id(day.day)
                     }
                 } header: {
@@ -130,7 +137,7 @@ private struct TodayCard: View {
                 .foregroundStyle(.tint)
             Text(day.label).font(.title3.weight(.semibold))
             Text("Ukupno ~\(day.verseCount) redaka").font(.caption).foregroundStyle(.secondary)
-            ReadingPills(plan: plan, day: day)
+            ReadingPills(plan: plan, day: day, bleedLeading: PlanView.rowInset, bleedTrailing: PlanView.rowInset)
             HStack {
                 Button {
                     if let first = day.readings.first { model.open(day: day, planId: plan.id, reading: first) }
@@ -154,6 +161,8 @@ private struct ReadingPills: View {
     @Environment(AppModel.self) private var model
     let plan: ReadingPlan
     let day: PlanDay
+    let bleedLeading: CGFloat
+    let bleedTrailing: CGFloat
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -173,6 +182,7 @@ private struct ReadingPills: View {
                 }
             }
         }
+        .railBleed(leading: bleedLeading, trailing: bleedTrailing)
     }
 }
 
@@ -205,7 +215,8 @@ private struct PlanDayRow: View {
                     Spacer()
                     Text("\(day.verseCount) redaka").font(.caption).foregroundStyle(.secondary)
                 }
-                ReadingPills(plan: plan, day: day)
+                // lijevo je kvačica, pa traka ide do ruba retka samo desno
+                ReadingPills(plan: plan, day: day, bleedLeading: 0, bleedTrailing: PlanView.rowInset)
             }
         }
         .opacity(done && !isNext ? 0.7 : 1)

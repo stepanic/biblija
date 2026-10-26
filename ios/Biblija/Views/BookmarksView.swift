@@ -24,19 +24,6 @@ struct BookmarksView: View {
     var body: some View {
         NavigationStack {
             List {
-                Section {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 8) {
-                            chip("Sve", .all)
-                            chip("S bilješkom", .notes)
-                            ForEach(BookmarkColor.allCases, id: \.self) { c in
-                                chip(c.label, .color(c), swatch: c.swatch)
-                            }
-                        }
-                    }
-                    .listRowBackground(Color.clear)
-                }
-
                 if bookmarks.isEmpty {
                     ContentUnavailableView(
                         "Nema oznaka",
@@ -60,6 +47,21 @@ struct BookmarksView: View {
                         }
                     }
                 }
+            }
+            // Filteri su iznad liste, a ne u njezinu retku, da traka ide od ruba do ruba ekrana.
+            .safeAreaInset(edge: .top, spacing: 0) {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 8) {
+                        chip("Sve", .all)
+                        chip("S bilješkom", .notes)
+                        ForEach(BookmarkColor.allCases, id: \.self) { c in
+                            chip(c.label, .color(c), swatch: c.swatch)
+                        }
+                    }
+                }
+                .contentMargins(.horizontal, 20, for: .scrollContent)
+                .padding(.vertical, 8)
+                .background(.bar)
             }
             .navigationTitle("Oznake")
         }
