@@ -87,11 +87,58 @@ brisanje računa, adresa poslužitelja).
   `project.yml`, Android `-PbiblijaSyncBaseUrl=…` ili `biblija.syncBaseUrl` u `local.properties`;
   inače je korisnik upisuje u Postavkama.
 
-## 5. Otvoreno
+## 5. Prvo pokretanje na uređajima (2026-10-26)
 
-1. Prvo pokretanje na stvarnom iPhoneu i Android uređaju (potpisivanje: tim `6SCK58757K`,
-   bundle/application id `hr.stepanic.biblija365`).
-2. Produkcijski D1 deploy + migracija `0002_auth_failures.sql`, zatim upisati adresu u oba klijenta.
+Uređaji: iPhone SE 2nd, iPhone 12 mini (u devicectl „iPhone od: Anita", hardver `iPhone13,1`),
+iPhone 15 Pro (Release build), motorola edge 30 ultra i moto g86 (Android 15/16, adb).
+
+### Komande (bez simulatora/emulatora)
+
+```bash
+# iOS: build + potpis + instalacija; id za -destination daje `xcodebuild -showdestinations`,
+# a za devicectl `xcrun devicectl list devices` (to su različiti identifikatori)
+cd ios && xcodegen generate
+xcodebuild -project Biblija.xcodeproj -scheme Biblija [-configuration Release] \
+  -destination 'id=<xcodebuild id>' -allowProvisioningUpdates DEVELOPMENT_TEAM=6SCK58757K \
+  -derivedDataPath build/dd build
+xcrun devicectl device install app --device <devicectl id> build/dd/Build/Products/Debug-iphoneos/Biblija.app
+xcrun devicectl device process launch --device <devicectl id> hr.stepanic.biblija365
+# snimka zaslona (iOS 17+; idevicescreenshot ne radi bez DDI-ja, tunneld traži sudo)
+pymobiledevice3 developer dvt screenshot --userspace --udid <xcodebuild id> out.png
+
+# Android: oba uređaja, dodir i snimka preko adb
+cd android && ./gradlew :app:assembleDebug
+adb -s <serial> install -r app/build/outputs/apk/debug/app-debug.apk
+adb -s <serial> shell svc power stayon usb      # inače zaključan ekran daje crne snimke
+adb -s <serial> exec-out screencap -p > out.png
+adb -s <serial> shell input tap X Y             # koordinate u pikselima uređaja
+```
+
+iPhone se s Maca može samo snimati, ne i dodirivati; iOS ekrane prolazi korisnik.
+
+### Pronađeno i popravljeno (Android, b3c98b1)
+
+| Simptom | Uzrok |
+|---|---|
+| Pad pri otvaranju Biblije 365 i pretrage (`ExceptionInInitializerError` u `HrFold`) | `Regex("(?U)\w+")`: JVM zna `(?U)`, Androidov ICU regex baca `PatternSyntaxException`. JVM testovi to ne mogu uhvatiti. Sad `[\p{L}\p{N}_]+`. |
+| Svi retci podcrtani i obojeni kao linkovi | `LinkAnnotation.Clickable` bez `TextLinkStyles` dobije Material link stil |
+| Tekst u sans-serifu | Motorola s font overlayem (`com.android.theme.font.RookeryRegular`) vraća sans za `FontFamily.Serif`; ugrađen Source Serif 4 (OFL, varijabilni `res/font`) |
+| Ljubičasti sheetovi i dijalozi | M3 `surfaceContainerLow/High` nisu bili mapirani na paletu |
+
+Na Androidu isprobano: čitač, oznaka bojom, Biblija 365 („Pročitano"), pretraga fraze, kratica
+`Iv 3,16` → skok na redak, popis oznaka, postavke, sepia, tamna, „redak po redak".
+iOS se pokreće na sva tri iPhonea i čitač izgleda ispravno (iOS 26 staklasti tab bar), ali ekrani
+osim čitača i pretrage na iOS-u nisu prođeni. Sync nije isproban ni na jednoj platformi (nema
+produkcijskog Workera).
+
+Sitnice uočene, nepopravljene: ispod gumba „Otvori Iv 3,16" piše „Pronađeno 0 pogodaka";
+skok na redak ne ističe ciljni redak.
+
+## 6. Otvoreno
+
+1. Proći iOS ekrane (plan, pretraga, oznake, postavke) na uređaju.
+2. Produkcijski D1 deploy + migracija `0002_auth_failures.sql`, zatim upisati adresu u oba klijenta
+   i isprobati sync između weba, iPhonea i Androida.
 3. Widget „današnje čitanje", lokalne notifikacije za plan, App Intents — još nisu rađeni.
-4. Prava na tekst prije objave u storeovima.
+4. Prava na tekst prije objave u storeovima; TestFlight / interno testiranje na Playu.
 5. Prava ikona (trenutna je generirana: `scripts/gen_app_icon.py`, Android vektor u `res/drawable`).
