@@ -69,6 +69,7 @@ dependencies {
     implementation(project(":core"))
     implementation(libs.sqlite.bundled)
     implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.okhttp)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.viewmodel.compose)

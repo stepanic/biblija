@@ -29,7 +29,8 @@ sealed class SyncException(message: String) : Exception(message) {
 
 data class AuthResult(val created: Boolean, val credentials: SyncCredentials)
 
-data class SyncResult(val data: UserData, val syncedAt: String, val displayName: String)
+/** [liveRoom]: soba za realtime obavijesti (`/api/live`), null ako je poslužitelj nema. */
+data class SyncResult(val data: UserData, val syncedAt: String, val displayName: String, val liveRoom: String? = null)
 
 /** HTTP ugovor iz src/worker.ts: POST /api/auth, /api/sync, /api/account/delete. */
 class SyncClient(baseUrl: String) {
@@ -44,13 +45,15 @@ class SyncClient(baseUrl: String) {
         )
     }
 
-    suspend fun sync(credentials: SyncCredentials, data: UserData): SyncResult {
-        val body = SyncRequest(credentials.userKey, credentials.pin, data.meta, data.progress, data.bookmarks)
+    /** [clientId] je id ovog uređaja; poslužitelj mu ne vraća realtime obavijest o vlastitoj promjeni. */
+    suspend fun sync(credentials: SyncCredentials, data: UserData, clientId: String? = null): SyncResult {
+        val body = SyncRequest(credentials.userKey, credentials.pin, data.meta, data.progress, data.bookmarks, clientId)
         val res: SyncResponse = post("api/sync", json.encodeToString(body))
         return SyncResult(
             data = UserData(res.meta, res.progress, res.bookmarks),
             syncedAt = res.syncedAt ?: Timestamp.now(),
             displayName = res.displayName ?: credentials.displayName,
+            liveRoom = res.liveRoom,
         )
     }
 
@@ -107,6 +110,7 @@ private data class SyncRequest(
     val meta: SyncMeta,
     val progress: ProgressMap,
     val bookmarks: BookmarkMap,
+    @SerialName("client_id") val clientId: String? = null,
 )
 
 @Serializable
@@ -127,6 +131,7 @@ private data class AuthResponse(
 private data class SyncResponse(
     @SerialName("display_name") val displayName: String? = null,
     @SerialName("synced_at") val syncedAt: String? = null,
+    @SerialName("live_room") val liveRoom: String? = null,
     val meta: SyncMeta = SyncMeta(),
     val progress: ProgressMap = emptyMap(),
     val bookmarks: BookmarkMap = emptyMap(),

@@ -28,6 +28,7 @@ import hr.stepanic.biblija.core.UserData
 import hr.stepanic.biblija.core.Verse
 import hr.stepanic.biblija.core.WebPath
 import hr.stepanic.biblija.data.DatabaseInstaller
+import hr.stepanic.biblija.data.LiveConnection
 import hr.stepanic.biblija.data.SavedProfile
 import hr.stepanic.biblija.data.SecureStore
 import hr.stepanic.biblija.data.UserDataFile
@@ -36,6 +37,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.util.UUID
 
 enum class AppTab { READER, PLAN, SEARCH, BOOKMARKS, SETTINGS }
 
@@ -106,6 +108,12 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     private var syncJob: Job? = null
     private var needsAnotherSync = false
 
+    // Realtime: id ovog procesa (poslužitelj mu ne javlja vlastite promjene) i soba s /api/sync
+    private val clientId = UUID.randomUUID().toString()
+    private var liveRoom: String? = prefs.getString("live_room", null)
+    private var inForeground = false
+    private val live = LiveConnection { syncNow() }
+
     init {
         viewModelScope.launch {
             try {
@@ -128,6 +136,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     override fun onCleared() {
+        live.disconnect()
         repository?.close()
     }
 
@@ -208,6 +217,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     fun updateServerUrl(value: String) {
         serverUrl = value
         prefs.edit { putString("server_url", value) }
+        rememberLiveRoom(null)
     }
 
     // ---------- Korisničko stanje ----------
@@ -311,6 +321,26 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         lastSyncedAt = null
         prefs.edit { remove("last_synced_at") }
         activeDay = null
+        rememberLiveRoom(null)
+    }
+
+    /** Iz MainActivity: realtime veza postoji samo dok je aplikacija u prvom planu (kao `visibilitychange` na webu). */
+    fun setForeground(foreground: Boolean) {
+        inForeground = foreground
+        updateLive()
+    }
+
+    private fun rememberLiveRoom(room: String?) {
+        if (room != liveRoom) {
+            liveRoom = room
+            prefs.edit { if (room == null) remove("live_room") else putString("live_room", room) }
+        }
+        updateLive()
+    }
+
+    private fun updateLive() {
+        val room = liveRoom
+        if (inForeground && credentials != null && room != null) live.connect(serverUrl, room, clientId) else live.disconnect()
     }
 
     fun scheduleSync(delayMs: Long = 800) {
@@ -336,7 +366,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         }
         isSyncing = true
         try {
-            val result = c.sync(creds, userData)
+            val result = c.sync(creds, userData, clientId)
             if (credentials?.userKey != creds.userKey) return
             // Izmjene napravljene dok je zahtjev bio u letu su novije i ostaju.
             val merged = Lww.merge(result.data, userData)
@@ -351,6 +381,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
             }
             lastSyncedAt = result.syncedAt
             prefs.edit { putString("last_synced_at", result.syncedAt) }
+            rememberLiveRoom(result.liveRoom)
             syncError = null
             if (hasNewerLocal) needsAnotherSync = true
         } catch (e: SyncException) {

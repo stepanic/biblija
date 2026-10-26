@@ -11,6 +11,7 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.repeatOnLifecycle
+import kotlinx.coroutines.awaitCancellation
 import hr.stepanic.biblija.ui.BiblijaApp
 import hr.stepanic.biblija.ui.BiblijaTheme
 import hr.stepanic.biblija.ui.LocalPalette
@@ -30,10 +31,19 @@ class MainActivity : ComponentActivity() {
                         navigationBarStyle = if (palette.isDark) SystemBarStyle.dark(bar) else SystemBarStyle.light(bar, bar),
                     )
                 }
-                // kao visibilitychange na webu: sync kad se aplikacija vrati u prvi plan
+                // kao visibilitychange na webu: sync kad se aplikacija vrati u prvi plan,
+                // a dok je u prvom planu realtime veza na /api/live
                 val lifecycle = LocalLifecycleOwner.current.lifecycle
                 LaunchedEffect(lifecycle) {
-                    lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) { vm.syncNow() }
+                    lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                        vm.syncNow()
+                        vm.setForeground(true)
+                        try {
+                            awaitCancellation()
+                        } finally {
+                            vm.setForeground(false)
+                        }
+                    }
                 }
                 BiblijaApp(vm)
             }

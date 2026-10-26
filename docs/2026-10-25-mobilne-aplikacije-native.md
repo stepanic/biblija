@@ -144,6 +144,9 @@ skok na redak ne ističe ciljni redak.
 1. Proći iOS ekrane (plan, pretraga, oznake, postavke) na uređaju.
 2. Produkcijski Worker je na `https://biblija.domovina.ai` (2026-10-26). Android sync i brisanje
    računa isprobani na moto g86; iOS sync i sync s webom (isti kod na webu i uređaju) još nisu.
+   Realtime (WebSocket `/api/live`, Durable Object `SyncRoom`) dodan na web, Android i iOS; na webu
+   isproban u produkciji, na mobitelima samo buildan. Test: isti Sync kod na oba Androida, oznaka na
+   jednom mora se pojaviti na drugom unutar sekunde bez povratka u aplikaciju.
 3. Widget „današnje čitanje", lokalne notifikacije za plan, App Intents — još nisu rađeni.
 4. Prava na tekst prije objave u storeovima; TestFlight / interno testiranje na Playu.
 5. Prava ikona (trenutna je generirana: `scripts/gen_app_icon.py`, Android vektor u `res/drawable`).

@@ -138,7 +138,10 @@ sequenceDiagram
 * Izmjereno u produkciji: drugi uređaj → web 113 ms, web → drugi uređaj 590 ms (od toga 350 ms debounce).
 * `server.py` (lokalni razvoj) nema `/api/live`; klijent tada jednostavno ostaje na pullu.
 * Ugovorni test podmeće `cloudflare:workers` preko `registerHooks` jer Node taj modul nema.
-* Mobilni klijenti još nemaju WebSocket (Android OkHttp, iOS `URLSessionWebSocketTask`).
+* Mobilni klijenti (2026-10-26, buildano, na uređajima još neisprobano): Android `data/LiveConnection.kt`
+  (OkHttp 4.12, `pingInterval` 30 s, veza dok je aktivnost STARTED), iOS `App/LiveConnection.swift`
+  (`URLSessionWebSocketTask`, veza dok je `scenePhase == .active`). Oba šalju `client_id` u `/api/sync`,
+  pamte `live_room` i nakon ponovnog spajanja naprave jedan sync jer je obavijest možda propuštena.
 
 ---
 

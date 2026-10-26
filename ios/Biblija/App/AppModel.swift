@@ -82,9 +82,20 @@ final class AppModel {
     private(set) var isSyncing = false
     private(set) var lastSyncedAt: String?
     var syncError: String?
-    var serverURLString: String { didSet { defaults.set(serverURLString, forKey: Keys.serverURL) } }
+    var serverURLString: String {
+        didSet {
+            defaults.set(serverURLString, forKey: Keys.serverURL)
+            rememberLiveRoom(nil)
+        }
+    }
     private var syncTask: Task<Void, Never>?
     private var needsAnotherSync = false
+
+    // Realtime: id ovog procesa (poslužitelj mu ne javlja vlastite promjene) i soba s /api/sync
+    @ObservationIgnored private let clientId = UUID().uuidString
+    @ObservationIgnored private var liveRoom: String?
+    @ObservationIgnored private var isActive = false
+    @ObservationIgnored private var live: LiveConnection?
 
     private let defaults = UserDefaults.standard
 
@@ -94,6 +105,7 @@ final class AppModel {
         static let readingMode = "biblija_reading_mode"
         static let serverURL = "biblija_server_url"
         static let lastSyncedAt = "biblija_last_synced_at"
+        static let liveRoom = "biblija_live_room"
     }
 
     init() {
@@ -103,6 +115,7 @@ final class AppModel {
         serverURLString = defaults.string(forKey: Keys.serverURL)
             ?? (Bundle.main.object(forInfoDictionaryKey: "BiblijaSyncBaseURL") as? String ?? "")
         lastSyncedAt = defaults.string(forKey: Keys.lastSyncedAt)
+        liveRoom = defaults.string(forKey: Keys.liveRoom)
 
         store = try? UserDataStore.inApplicationSupport()
         userData = store?.load() ?? .empty
@@ -112,6 +125,9 @@ final class AppModel {
         loadDatabase()
         if let ref = chapterRef(fromWebPath: userData.meta.lastUrl) {
             readerTarget = ReaderTarget(chapter: ref)
+        }
+        live = LiveConnection { [weak self] in
+            Task { await self?.syncNow() }
         }
     }
 
@@ -322,6 +338,29 @@ final class AppModel {
         lastSyncedAt = nil
         defaults.removeObject(forKey: Keys.lastSyncedAt)
         activeDay = nil
+        rememberLiveRoom(nil)
+    }
+
+    /// Iz BiblijaApp: realtime veza postoji samo dok je aplikacija aktivna (kao `visibilitychange` na webu).
+    func setActive(_ active: Bool) {
+        isActive = active
+        updateLive()
+    }
+
+    private func rememberLiveRoom(_ room: String?) {
+        if room != liveRoom {
+            liveRoom = room
+            defaults.set(room, forKey: Keys.liveRoom)
+        }
+        updateLive()
+    }
+
+    private func updateLive() {
+        if isActive, credentials != nil, let liveRoom {
+            live?.connect(serverURL: serverURLString, room: liveRoom, clientId: clientId)
+        } else {
+            live?.disconnect()
+        }
     }
 
     func scheduleSync(after delay: Duration = .milliseconds(800)) {
@@ -344,7 +383,7 @@ final class AppModel {
         defer { isSyncing = false }
 
         do {
-            let result = try await client.sync(credentials, data: userData)
+            let result = try await client.sync(credentials, data: userData, clientId: clientId)
             guard self.credentials?.userKey == credentials.userKey else { return }
             // Izmjene napravljene dok je zahtjev bio u letu su novije i ostaju.
             let merged = LWW.merge(server: result.data, client: userData)
@@ -359,6 +398,7 @@ final class AppModel {
             }
             lastSyncedAt = result.syncedAt
             defaults.set(result.syncedAt, forKey: Keys.lastSyncedAt)
+            rememberLiveRoom(result.liveRoom)
             syncError = nil
             if hasNewerLocal { needsAnotherSync = true }
         } catch let error as SyncError {

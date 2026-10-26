@@ -11,9 +11,10 @@ struct BiblijaApp: App {
                 .environment(model)
                 .preferredColorScheme(model.theme.colorScheme)
         }
-        .onChange(of: scenePhase) { _, phase in
-            // kao visibilitychange na webu
+        .onChange(of: scenePhase, initial: true) { _, phase in
+            // kao visibilitychange na webu; dok je aktivna, realtime veza na /api/live
             if phase == .active { Task { await model.syncNow() } }
+            model.setActive(phase == .active)
         }
     }
 }

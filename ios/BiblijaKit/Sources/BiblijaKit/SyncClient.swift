@@ -45,6 +45,8 @@ public struct SyncResult: Sendable, Equatable {
     public let data: UserData
     public let syncedAt: String
     public let displayName: String
+    /// Soba za realtime obavijesti (`/api/live`), nil ako je poslužitelj nema.
+    public let liveRoom: String?
 }
 
 /// HTTP ugovor iz src/worker.ts: POST /api/auth, /api/sync, /api/account/delete.
@@ -65,13 +67,15 @@ public struct SyncClient: Sendable {
         )
     }
 
-    public func sync(_ credentials: SyncCredentials, data: UserData) async throws -> SyncResult {
-        let body = SyncRequest(userKey: credentials.userKey, pin: credentials.pin, meta: data.meta, progress: data.progress, bookmarks: data.bookmarks)
+    /// `clientId` je id ovog uređaja; poslužitelj mu ne vraća realtime obavijest o vlastitoj promjeni.
+    public func sync(_ credentials: SyncCredentials, data: UserData, clientId: String? = nil) async throws -> SyncResult {
+        let body = SyncRequest(userKey: credentials.userKey, pin: credentials.pin, meta: data.meta, progress: data.progress, bookmarks: data.bookmarks, clientId: clientId)
         let res: SyncResponse = try await post("api/sync", body)
         return SyncResult(
             data: UserData(meta: res.meta, progress: res.progress, bookmarks: res.bookmarks),
             syncedAt: res.syncedAt ?? Timestamp.now(),
-            displayName: res.displayName ?? credentials.displayName
+            displayName: res.displayName ?? credentials.displayName,
+            liveRoom: res.liveRoom
         )
     }
 
@@ -123,7 +127,8 @@ private struct SyncRequest: Encodable {
     let meta: SyncMeta
     let progress: ProgressMap
     let bookmarks: BookmarkMap
-    enum CodingKeys: String, CodingKey { case userKey = "user_key", pin, meta, progress, bookmarks }
+    let clientId: String?
+    enum CodingKeys: String, CodingKey { case userKey = "user_key", pin, meta, progress, bookmarks, clientId = "client_id" }
 }
 
 private struct ErrorEnvelope: Decodable {
@@ -143,11 +148,12 @@ private struct AuthResponse: Decodable {
 private struct SyncResponse: Decodable {
     let displayName: String?
     let syncedAt: String?
+    let liveRoom: String?
     let meta: SyncMeta
     let progress: ProgressMap
     let bookmarks: BookmarkMap
     enum CodingKeys: String, CodingKey {
-        case displayName = "display_name", syncedAt = "synced_at", meta, progress, bookmarks
+        case displayName = "display_name", syncedAt = "synced_at", liveRoom = "live_room", meta, progress, bookmarks
     }
 }
 
