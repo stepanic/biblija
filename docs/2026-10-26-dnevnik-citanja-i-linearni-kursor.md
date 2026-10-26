@@ -90,6 +90,8 @@ u `RootView`, Android `PlanCatchUpBanner` u `BiblijaApp`. Logika: `offerPlanCatc
   dan ne iskače ponovno pri svakom poglavlju.
 - Kursor koji stigne syncom s drugog uređaja ne nudi ništa (ponudio ga je uređaj na kojem se čitalo).
 - Zadnji dan plana (završava na Otk 22) linearni korak nikad ne ponudi jer kursor ne može dalje.
+- Stanje: commit `8f86ef9`, web deployan (Worker verzija `c7cce071`) i isproban lokalno e2e (linearni korak,
+  ručno „Postavi", „Ne", drugi plan). iOS i Android samo build + unit testovi, **nisu pokrenuti na uređaju**.
 
 ## Otvoreno
 
