@@ -131,6 +131,11 @@ iOS se pokreće na sva tri iPhonea i čitač izgleda ispravno (iOS 26 staklasti 
 osim čitača i pretrage na iOS-u nisu prođeni. Sync nije isproban ni na jednoj platformi (nema
 produkcijskog Workera).
 
+Horizontalne trake (16ebd5a): bile su unutar paddinga roditelja i rezale se 16–20 dp od ruba.
+Pravilo za oba klijenta: traka ide od ruba do ruba, margina je njezin `contentPadding` (Android
+`Modifier.bleed` u `ui/Common.kt`); u karticama do ruba kartice, koja reže sadržaj svojim oblikom.
+iOS trake još nisu provjerene na ovo.
+
 Sitnice uočene, nepopravljene: ispod gumba „Otvori Iv 3,16" piše „Pronađeno 0 pogodaka";
 skok na redak ne ističe ciljni redak.
 
