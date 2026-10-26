@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Icon from "../components/Icon.astro";
 import ChapterView from "../components/ChapterView.astro";
 import { getAllBooks, getBookPayload } from "../lib/bible";
 
@@ -14,14 +15,15 @@ const chapterObj = book.chapters[0];
 >
   <div id="resumeReadingBar" class="resume-reading-banner" style="display:none;">
     <div class="resume-reading-info">
+      <span class="resume-reading-icon"><Icon name="bookmark" /></span>
       <span class="badge badge-accent">Nastavi čitanje</span>
       <strong id="resumeReadingLabel" class="resume-reading-label"></strong>
     </div>
     <div class="resume-reading-actions">
       <a id="resumeReadingLink" href="/" class="icon-btn btn-accent" style="text-decoration:none;">
-        📖 Nastavi gdje si stao →
+        Nastavi gdje si stao<Icon name="arrow-right" />
       </a>
-      <a href="/plan/" class="icon-btn" style="text-decoration:none;">🗓️ Biblija 365</a>
+      <a href="/plan/" class="icon-btn" style="text-decoration:none;"><Icon name="calendar-days" />Biblija 365</a>
     </div>
   </div>
 

@@ -1,0 +1,13 @@
+---
+// Lucide ikona iz tree-shaken spritea /icons.svg (vidi scripts/build_icons.mjs).
+interface Props {
+  name: string;
+  size?: number;
+  class?: string;
+}
+
+const { name, size, class: cls = "" } = Astro.props;
+const style = size ? `width:${size}px;height:${size}px` : undefined;
+---
+
+<svg class={`icon ${cls}`.trim()} style={style} aria-hidden="true" focusable="false"><use href={`/icons.svg#${name}`} /></svg>

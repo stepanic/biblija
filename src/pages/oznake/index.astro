@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Icon from "../../components/Icon.astro";
 import { getAuditReport } from "../../lib/bible";
 
 const audit = getAuditReport();
@@ -18,16 +19,16 @@ const crossErrata = audit.cross_source_errata_fixed || [];
     <div class="card">
       <div class="notes-header-row">
         <div>
-          <span class="badge badge-accent">Osobni dnevnik čitanja • LWW Sync</span>
+          <span class="badge badge-accent"><Icon name="notebook-pen" />Osobni dnevnik čitanja · LWW Sync</span>
           <h1 class="page-hero-title">Moje oznake i bilješke</h1>
           <p class="page-hero-sub">
             Klikni na bilo koji redak tijekom čitanja za označavanje bojom ili spremanje osobne bilješke. Sve promjene se automatski sinkroniziraju između tvojih uređaja.
           </p>
         </div>
         <div class="notes-backup-actions">
-          <button class="icon-btn" id="btnExportData">⬇ Izvezi JSON backup</button>
+          <button class="icon-btn" id="btnExportData"><Icon name="download" />Izvezi JSON backup</button>
           <label class="icon-btn" style="cursor:pointer;">
-            ⬆ Uvezi JSON
+            <Icon name="upload" />Uvezi JSON
             <input type="file" id="inputImportData" accept=".json" style="display:none;" />
           </label>
         </div>
@@ -35,11 +36,11 @@ const crossErrata = audit.cross_source_errata_fixed || [];
 
       <div class="bookmarks-filter-row" id="bookmarksFilterBar">
         <button type="button" class="filter-chip active" data-bmfilter="all">Sve oznake</button>
-        <button type="button" class="filter-chip" data-bmfilter="notes">✎ S bilješkom</button>
-        <button type="button" class="filter-chip" data-bmfilter="gold">🟡 Zlatna</button>
-        <button type="button" class="filter-chip" data-bmfilter="green">🟢 Zelena</button>
-        <button type="button" class="filter-chip" data-bmfilter="blue">🔵 Plava</button>
-        <button type="button" class="filter-chip" data-bmfilter="pink">🌸 Ružičasta</button>
+        <button type="button" class="filter-chip" data-bmfilter="notes"><Icon name="pencil-line" />S bilješkom</button>
+        <button type="button" class="filter-chip" data-bmfilter="gold"><span class="swatch gold"></span>Zlatna</button>
+        <button type="button" class="filter-chip" data-bmfilter="green"><span class="swatch green"></span>Zelena</button>
+        <button type="button" class="filter-chip" data-bmfilter="blue"><span class="swatch blue"></span>Plava</button>
+        <button type="button" class="filter-chip" data-bmfilter="pink"><span class="swatch pink"></span>Ružičasta</button>
       </div>
 
       <div id="bookmarksListContainer" class="bookmarks-grid"></div>
@@ -47,7 +48,7 @@ const crossErrata = audit.cross_source_errata_fixed || [];
 
     <!-- Audit & Cross-Source Integrity Report Card -->
     <div class="card">
-      <span class="badge badge-accent">Verifikacija teksta i izvora</span>
+      <span class="badge badge-accent"><Icon name="badge-check" />Verifikacija teksta i izvora</span>
       <h2 style="margin:0.25rem 0 0.35rem;font-size:1.35rem;">Lokalni Diff &amp; Cross-Source Audit izvještaj</h2>
       <p style="margin:0 0 1rem;color:var(--text-muted);font-size:0.9rem;">
         Rezultati automatske provjere svih 73 knjiga, 1.329 poglavlja i <strong>{audit.total_verses.toLocaleString("hr-HR")}</strong> redaka između <code>biblija.ks.hr</code> weba, mobilnog API-ja i neovisnog USFM/CrossWire prijepisa Zagrebačke Biblije. Svi dolje navedeni problemi su <strong>automatski ispravljeni i rekonstruirani</strong> u determinističkom JSON katalogu (<code>data/errata.json</code>) i SQLite bazi (<code>data/biblija.db</code>).

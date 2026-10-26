@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Icon from "../../components/Icon.astro";
 import { getAllBooks } from "../../lib/bible";
 
 const books = getAllBooks();
@@ -23,24 +24,27 @@ const QUICK_EXAMPLES = [
 >
   <section id="searchPageRoot">
     <div class="card">
-      <span class="badge badge-accent">SQLite FTS5 + Offline indeks (35.410 redaka)</span>
+      <span class="badge badge-accent"><Icon name="zap" />SQLite FTS5 + offline indeks (35.410 redaka)</span>
       <h1 class="page-hero-title">Pretraživač Biblije &amp; Brzi skok po kratici</h1>
       <p class="page-hero-sub" style="margin-bottom:1rem;">
         Upiši <strong>biblijsku kraticu</strong> (npr. <code>Iv 1,19</code>, <code>Ps 23</code>, <code>Tit 1,1</code>, <code>1 Kor 13</code>) za izravan skok u čitač, ili <strong>riječ / frazu</strong> (npr. <code>svjetlost</code>, <code>blazenstva</code> bez dijakritika ili <code>"duh Božji"</code>) za pretragu svih 73 knjiga.
       </p>
 
       <div class="search-bar-wrap">
-        <input
-          type="search"
-          id="searchInput"
-          class="search-input"
-          placeholder="Upiši pojam, izraz u navodnicima ili referencu (npr. Iv 3,16 ili blaženstva)..."
-          autofocus
-        />
+        <div class="search-input-wrap">
+          <Icon name="search" class="search-input-icon" />
+          <input
+            type="search"
+            id="searchInput"
+            class="search-input"
+            placeholder="Upiši pojam, izraz u navodnicima ili referencu (npr. Iv 3,16 ili blaženstva)..."
+            autofocus
+          />
+        </div>
         <select id="searchTestamentFilter" class="search-select">
           <option value="">Svi zavjeti (SZ + NZ)</option>
-          <option value="SZ">Stari zavjet (SZ • 46)</option>
-          <option value="NZ">Novi zavjet (NZ • 27)</option>
+          <option value="SZ">Stari zavjet (SZ · 46)</option>
+          <option value="NZ">Novi zavjet (NZ · 27)</option>
         </select>
         <select id="searchBookFilter" class="search-select">
           <option value="">Sve knjige (73)</option>
@@ -49,7 +53,7 @@ const QUICK_EXAMPLES = [
           ))}
         </select>
         <button class="icon-btn btn-accent search-submit-btn" id="btnRunSearch">
-          🔍 Pretraži
+          <Icon name="search" />Pretraži
         </button>
       </div>
 

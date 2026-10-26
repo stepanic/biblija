@@ -1,4 +1,4 @@
-const CACHE_NAME = "biblija365-astro-v4";
+const CACHE_NAME = "biblija365-astro-v5";
 const PRECACHE_ASSETS = [
   "/",
   "/plan/",
@@ -6,6 +6,8 @@ const PRECACHE_ASSETS = [
   "/oznake/",
   "/styles.css",
   "/astro-client.js",
+  "/icons.svg",
+  "/favicon.svg",
   "/manifest.json",
   "/data/json/books.json",
   "/data/json/plans/index.json",

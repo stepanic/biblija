@@ -35,3 +35,6 @@ android/*/build/
 android/local.properties
 android/.idea/
 *.iml
+
+# Tree-shaken Lucide sprite (generira scripts/build_icons.mjs u sync-public)
+public/icons.svg

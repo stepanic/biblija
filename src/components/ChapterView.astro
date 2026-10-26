@@ -1,4 +1,5 @@
 ---
+import Icon from "./Icon.astro";
 import type { BookMeta, BookPayload, ChapterData } from "../lib/bible";
 
 interface Props {
@@ -49,8 +50,8 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
   <!-- Left Book Navigation Sidebar / Mobile Drawer -->
   <aside class="sidebar-card" id="bookSidebarDrawer" aria-label="Popis biblijskih knjiga">
     <div class="sidebar-drawer-header">
-      <strong>📚 Knjige Svetoga pisma (73)</strong>
-      <button type="button" class="icon-btn" id="btnCloseBookDrawer" title="Zatvori popis knjiga">✕</button>
+      <strong class="sidebar-drawer-title"><Icon name="library" />Knjige Svetoga pisma</strong>
+      <button type="button" class="icon-btn" id="btnCloseBookDrawer" title="Zatvori popis knjiga" aria-label="Zatvori"><Icon name="x" /></button>
     </div>
 
     <div class="filter-row">
@@ -102,19 +103,19 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
     <!-- Mobile Quick Book Selector Bar -->
     <div class="mobile-reader-bar">
       <button type="button" class="mobile-book-trigger" id="btnOpenBookDrawer">
-        <span>📚 <strong>{book.abbr} {shortChLabel}</strong> — {book.title}</span>
-        <span class="mobile-book-trigger-chevron">Promijeni knjigu ▾</span>
+        <span class="mobile-book-trigger-main"><Icon name="library" /><span class="mobile-book-trigger-text"><strong>{book.abbr} {shortChLabel}</strong><span>{book.title}</span></span></span>
+        <span class="mobile-book-trigger-chevron">Promijeni<Icon name="chevron-down" /></span>
       </button>
       <div class="mobile-quick-arrows">
         {prevUrl ? (
-          <a href={prevUrl} class="icon-btn" title={`Prethodno: ${prevLabel}`}>←</a>
+          <a href={prevUrl} class="icon-btn icon-only" title={`Prethodno: ${prevLabel}`} aria-label={`Prethodno: ${prevLabel}`}><Icon name="chevron-left" /></a>
         ) : (
-          <button class="icon-btn" disabled>←</button>
+          <button class="icon-btn icon-only" disabled aria-label="Nema prethodnog"><Icon name="chevron-left" /></button>
         )}
         {nextUrl ? (
-          <a href={nextUrl} class="icon-btn" title={`Sljedeće: ${nextLabel}`}>→</a>
+          <a href={nextUrl} class="icon-btn icon-only" title={`Sljedeće: ${nextLabel}`} aria-label={`Sljedeće: ${nextLabel}`}><Icon name="chevron-right" /></a>
         ) : (
-          <button class="icon-btn" disabled>→</button>
+          <button class="icon-btn icon-only" disabled aria-label="Nema sljedećeg"><Icon name="chevron-right" /></button>
         )}
       </div>
     </div>
@@ -127,9 +128,9 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
         <div id="bannerPlanPills" class="plan-reading-pills" style="margin-top:0.4rem;"></div>
       </div>
       <div class="active-plan-banner-actions">
-        <button class="icon-btn btn-accent" id="btnBannerMarkDone">✓ Označi dan pročitanim</button>
-        <a href="/plan/" class="icon-btn" style="text-decoration:none;" title="Povratak na pregled plana">🗓️ Plan</a>
-        <button class="icon-btn" id="btnBannerClose" title="Sakrij traku plana">✕</button>
+        <button class="icon-btn btn-accent" id="btnBannerMarkDone"><Icon name="check" />Označi dan pročitanim</button>
+        <a href="/plan/" class="icon-btn" style="text-decoration:none;" title="Povratak na pregled plana"><Icon name="calendar-days" />Plan</a>
+        <button class="icon-btn" id="btnBannerClose" title="Sakrij traku plana" aria-label="Sakrij traku plana"><Icon name="x" /></button>
       </div>
     </div>
 
@@ -137,7 +138,7 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
     <div class="reader-header">
       <div class="reader-kicker-row">
         <div class="reader-badges">
-          <span class="badge">{book.testament === "SZ" ? "Stari zavjet" : "Novi zavjet"} • {book.category}</span>
+          <span class="badge">{book.testament === "SZ" ? "Stari zavjet" : "Novi zavjet"} · {book.category}</span>
           {book.usfm_id && <span class="badge" title={`Međunarodni USFM kod: ${book.usfm_id} (${book.name_en || ""})`}>USFM: {book.usfm_id}</span>}
           {book.deuterocanonical && <span class="badge badge-accent">Deuterokanonska knjiga</span>}
           {book.deuterocanonical_parts && <span class="badge badge-accent">Deuterokanonski dodaci: {book.deuterocanonical_parts}</span>}
@@ -150,7 +151,7 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
             id="btnReadingModeToggle"
             title="Prebaci između knjiškog prikaza u odlomcima i studijskog prikaza stih-po-stih"
           >
-            ¶ Odjeljci
+            <Icon name="pilcrow" />Odjeljci
           </button>
           <button
             type="button"
@@ -158,7 +159,7 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
             id="btnShareChapter"
             title="Kopiraj poveznicu na ovo poglavlje"
           >
-            🔗 Podijeli
+            <Icon name="link" />Podijeli
           </button>
         </div>
       </div>
@@ -168,9 +169,9 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
           <h1 class="reader-book-title">{book.title}</h1>
           <div class="reader-chapter-subtitle">
             <strong>{book.abbr} {shortChLabel}</strong>
-            <span class="dot-sep">•</span>
+            <span class="dot-sep">·</span>
             <span>{chLabel}</span>
-            <span class="dot-sep">•</span>
+            <span class="dot-sep">·</span>
             <span>{chapterObj.verse_count} redaka</span>
           </div>
         </div>
@@ -178,12 +179,12 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
         <div class="desktop-header-arrows">
           {prevUrl ? (
             <a href={prevUrl} class="icon-btn" style="text-decoration:none;" title={`Prethodno: ${prevLabel} (tipka ←)`}>
-              ← {prevLabel}
+              <Icon name="chevron-left" />{prevLabel}
             </a>
           ) : null}
           {nextUrl ? (
             <a href={nextUrl} class="icon-btn" style="text-decoration:none;" title={`Sljedeće: ${nextLabel} (tipka →)`}>
-              {nextLabel} →
+              {nextLabel}<Icon name="chevron-right" />
             </a>
           ) : null}
         </div>
@@ -260,7 +261,7 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
     <div class="chapter-nav-footer">
       {prevUrl ? (
         <a href={prevUrl} class="chapter-nav-card prev">
-          <span class="chapter-nav-kicker">← Prethodno poglavlje</span>
+          <span class="chapter-nav-kicker"><Icon name="arrow-left" />Prethodno poglavlje</span>
           <strong class="chapter-nav-label">{prevLabel}</strong>
         </a>
       ) : (
@@ -269,12 +270,12 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
 
       <div class="chapter-nav-center">
         <span class="reader-meta">{book.abbr} {shortChLabel}</span>
-        <span class="kbd-hint">Tipkovnica: ← / →</span>
+        <span class="kbd-hint"><kbd>←</kbd><kbd>→</kbd></span>
       </div>
 
       {nextUrl ? (
         <a href={nextUrl} class="chapter-nav-card next">
-          <span class="chapter-nav-kicker">Sljedeće poglavlje →</span>
+          <span class="chapter-nav-kicker">Sljedeće poglavlje<Icon name="arrow-right" /></span>
           <strong class="chapter-nav-label">{nextLabel}</strong>
         </a>
       ) : (

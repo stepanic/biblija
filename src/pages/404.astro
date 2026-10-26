@@ -1,15 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Icon from "../components/Icon.astro";
 ---
 
 <BaseLayout title="Stranica nije pronađena (404) | Biblija 365">
-  <div class="card" style="text-align:center;padding:3rem 1.5rem;">
-    <h1 style="margin:0 0 0.5rem;">404 — Poglavlje ili stranica nije pronađena</h1>
-    <p style="color:var(--text-muted);margin-bottom:1.5rem;">Tražena stranica ne postoji. Vrati se na čitač ili pretraživač Biblije.</p>
-    <div style="display:flex;justify-content:center;gap:0.6rem;">
-      <a href="/" class="icon-btn" style="background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none;padding:0.55rem 1.1rem;">📖 Početna (Čitač)</a>
-      <a href="/plan/" class="icon-btn" style="text-decoration:none;padding:0.55rem 1.1rem;">🗓️ Biblija 365</a>
-      <a href="/pretraga/" class="icon-btn" style="text-decoration:none;padding:0.55rem 1.1rem;">🔍 Pretraživač</a>
+  <div class="card empty-state-card">
+    <span class="empty-state-icon"><Icon name="file-search" /></span>
+    <h1 class="page-hero-title">Stranica nije pronađena</h1>
+    <p class="page-hero-sub" style="margin:0 auto 1.5rem;">Tražena stranica ne postoji. Vrati se na čitač ili pretraživač Biblije.</p>
+    <div style="display:flex;justify-content:center;gap:0.6rem;flex-wrap:wrap;">
+      <a href="/" class="icon-btn btn-accent btn-lg"><Icon name="book-open" />Početna (Čitač)</a>
+      <a href="/plan/" class="icon-btn btn-lg"><Icon name="calendar-days" />Biblija 365</a>
+      <a href="/pretraga/" class="icon-btn btn-lg"><Icon name="search" />Pretraživač</a>
     </div>
   </div>
 </BaseLayout>

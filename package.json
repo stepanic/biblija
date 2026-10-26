@@ -5,7 +5,7 @@
   "description": "Biblija 365 & Offline Pretraživač (Astro SSG + Cloudflare Workers Static Assets + SQLite FTS5)",
   "license": "MIT",
   "scripts": {
-    "sync-public": "mkdir -p public/data && ln -sfn ../../data/json public/data/json && ln -sfn ../../data/audit_report.json public/data/audit_report.json && cp -f styles.css manifest.json sw.js public/",
+    "sync-public": "node scripts/build_icons.mjs && mkdir -p public/data && ln -sfn ../../data/json public/data/json && ln -sfn ../../data/audit_report.json public/data/audit_report.json && cp -f styles.css manifest.json sw.js public/",
     "predev": "npm run sync-public",
     "dev": "astro dev",
     "prebuild": "npm run sync-public",
@@ -21,6 +21,7 @@
     "astro": "^5.5.0"
   },
   "devDependencies": {
+    "lucide-static": "^1.61.0",
     "wrangler": "^4.14.0"
   }
 }

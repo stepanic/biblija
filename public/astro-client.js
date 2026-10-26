@@ -22,6 +22,21 @@
       .replace(/"/g, "&quot;");
   }
 
+  // Lucide ikona iz /icons.svg (scripts/build_icons.mjs skuplja imena iz ic("...") poziva)
+  function ic(name) {
+    const cls = name === "loader-circle" ? "icon icon-spin" : "icon";
+    return `<svg class="${cls}" aria-hidden="true" focusable="false"><use href="/icons.svg#${name}"/></svg>`;
+  }
+
+  function iconLabel(el, name, text) {
+    if (!el) return;
+    el.innerHTML = ic(name);
+    const span = document.createElement("span");
+    span.className = "btn-text";
+    span.textContent = text;
+    el.appendChild(span);
+  }
+
   const state = {
     hasSqliteServer: false,
     syncEnabledServer: false,
@@ -103,16 +118,17 @@
     const themeIcon = document.getElementById("themeToggleIcon");
     const themeLbl = document.getElementById("themeToggleLabel");
     const themeMeta = {
-      light: { icon: "☀️", label: "Svijetla" },
-      sepia: { icon: "📜", label: "Sepia" },
-      dark: { icon: "🌙", label: "Tamna" },
-    }[state.theme] || { icon: "☀️", label: "Tema" };
-    if (themeIcon) themeIcon.textContent = themeMeta.icon;
+      light: { icon: ic("sun"), label: "Svijetla" },
+      sepia: { icon: ic("scroll-text"), label: "Sepia" },
+      dark: { icon: ic("moon"), label: "Tamna" },
+    }[state.theme] || { icon: ic("sun"), label: "Tema" };
+    if (themeIcon) themeIcon.innerHTML = themeMeta.icon;
     if (themeLbl) themeLbl.textContent = themeMeta.label;
 
     const rmBtn = document.getElementById("btnReadingModeToggle");
     if (rmBtn) {
-      rmBtn.textContent = state.readingMode === "verses" ? "≡ Stih po stih" : "¶ Knjiški odlomci";
+      if (state.readingMode === "verses") iconLabel(rmBtn, "list", "Stih po stih");
+      else iconLabel(rmBtn, "pilcrow", "Knjiški odlomci");
     }
   }
 
@@ -127,7 +143,7 @@
   }
 
   async function detectServer() {
-    const pill = document.getElementById("engineStatusPill");
+    const pill = document.getElementById("engineStatusText") || document.getElementById("engineStatusPill");
     try {
       const res = await fetch("/api/status", { cache: "no-store" });
       if (res.ok) {
@@ -135,16 +151,16 @@
         state.syncEnabledServer = Boolean(info && info.sync_enabled);
         if (info && info.mode === "sqlite-server") {
           state.hasSqliteServer = true;
-          if (pill) pill.textContent = "⚡ Astro + SQLite FTS5 + Sync";
+          if (pill) pill.textContent = "Astro + SQLite FTS5 + Sync";
           return;
         }
         if (info && info.mode === "cloudflare-d1") {
-          if (pill) pill.textContent = "⚡ Cloudflare Edge + D1 Sync";
+          if (pill) pill.textContent = "Cloudflare Edge + D1 Sync";
           return;
         }
       }
     } catch (_) {}
-    if (pill) pill.textContent = "⚡ Astro SSG (Edge / Offline)";
+    if (pill) pill.textContent = "Astro SSG (Edge / Offline)";
   }
 
   /* ==================== MULTI-DEVICE CLOUD SYNC & PROFILE SWITCHER ==================== */
@@ -261,10 +277,12 @@
 
     if (state.syncAuth && state.syncAuth.user_key) {
       btn.classList.add("synced");
-      lbl.textContent = state.isSyncing ? `🔄 @${state.syncAuth.user_key}` : `👤 @${state.syncAuth.user_key}`;
+      iconLabel(lbl, state.isSyncing ? "refresh-cw" : "user-round", `@${state.syncAuth.user_key}`);
+      lbl.classList.toggle("is-spinning", Boolean(state.isSyncing));
     } else {
       btn.classList.remove("synced");
-      lbl.textContent = "👤 Prijava / Sync";
+      iconLabel(lbl, "user-round", "Prijava / Sync");
+      lbl.classList.remove("is-spinning");
     }
   }
 
@@ -287,9 +305,9 @@
         return `
           <div class="saved-profile-chip ${isAct ? "active" : ""}">
             <span class="saved-profile-switch" data-switch-key="${escapeHtml(p.user_key)}" title="Prebaci na profil @${escapeHtml(p.user_key)}">
-              ${isAct ? "✓ " : "👤 "}@${escapeHtml(p.user_key)}
+              ${isAct ? ic("circle-check") : ic("user-round")}@${escapeHtml(p.user_key)}
             </span>
-            <button type="button" class="saved-profile-remove" data-remove-key="${escapeHtml(p.user_key)}" title="Ukloni spremljeni profil s ovog uređaja">✕</button>
+            <button type="button" class="saved-profile-remove" data-remove-key="${escapeHtml(p.user_key)}" title="Ukloni spremljeni profil s ovog uređaja" aria-label="Ukloni profil">${ic("x")}</button>
           </div>
         `;
       })
@@ -347,9 +365,9 @@
       const bmCount = getActiveBookmarksList().length;
       const lastLbl = localStorage.getItem("biblija_last_label") || "Knjiga Postanka (Post 1)";
       document.getElementById("syncStatsSummary").innerHTML = `
-        <div>✓ Pročitanih dana u planovima: <strong>${completedDays}</strong></div>
-        <div>🔖 Spremljenih oznaka i bilješki: <strong>${bmCount}</strong></div>
-        <div>📖 Zadnje čitano: <strong>${escapeHtml(lastLbl)}</strong></div>
+        <div>${ic("calendar-check")}<span>Pročitanih dana u planovima</span><strong>${completedDays}</strong></div>
+        <div>${ic("bookmark")}<span>Spremljenih oznaka i bilješki</span><strong>${bmCount}</strong></div>
+        <div>${ic("book-open")}<span>Zadnje čitano</span><strong>${escapeHtml(lastLbl)}</strong></div>
       `;
     } else {
       outView.style.display = "block";
@@ -481,6 +499,8 @@
     if (pinToggleBtn && pinInputEl) {
       pinToggleBtn.addEventListener("click", () => {
         pinInputEl.type = pinInputEl.type === "password" ? "text" : "password";
+        const pinVisible = pinInputEl.type === "text";
+        pinToggleBtn.innerHTML = ic(pinVisible ? "eye-off" : "eye");
       });
     }
 
@@ -521,7 +541,7 @@
         }
 
         connectBtn.disabled = true;
-        connectBtn.textContent = "🔄 Povezivanje i sinkronizacija...";
+        iconLabel(connectBtn, "loader-circle", "Povezivanje i sinkronizacija...");
         msgEl.style.display = "none";
 
         try {
@@ -533,7 +553,7 @@
           const authData = await authRes.json();
           if (!authRes.ok || !authData.ok) {
             connectBtn.disabled = false;
-            connectBtn.textContent = "☁️ Poveži uređaj i sinkroniziraj";
+            iconLabel(connectBtn, "cloud-upload", "Poveži uređaj i sinkroniziraj");
             return showMsg(authData.error || "Neuspješna prijava.");
           }
 
@@ -548,12 +568,12 @@
           await syncWithServer({ silent: true });
 
           connectBtn.disabled = false;
-          connectBtn.textContent = "☁️ Poveži uređaj i sinkroniziraj";
+          iconLabel(connectBtn, "cloud-upload", "Poveži uređaj i sinkroniziraj");
           updateSyncHeaderUI();
           updateSyncModalViews();
         } catch (_) {
           connectBtn.disabled = false;
-          connectBtn.textContent = "☁️ Poveži uređaj i sinkroniziraj";
+          iconLabel(connectBtn, "cloud-upload", "Poveži uređaj i sinkroniziraj");
           showMsg("Server za sinkronizaciju trenutno nije dostupan.");
         }
       });
@@ -562,11 +582,11 @@
     const syncNowBtn = document.getElementById("btnSyncNow");
     if (syncNowBtn) {
       syncNowBtn.addEventListener("click", async () => {
-        syncNowBtn.textContent = "🔄 Sinkroniziram...";
+        iconLabel(syncNowBtn, "loader-circle", "Sinkroniziram...");
         await syncWithServer({ silent: false });
-        syncNowBtn.textContent = "✓ Sinkronizirano!";
+        iconLabel(syncNowBtn, "check", "Sinkronizirano!");
         setTimeout(() => {
-          syncNowBtn.textContent = "🔄 Sinkroniziraj sada";
+          iconLabel(syncNowBtn, "refresh-cw", "Sinkroniziraj sada");
         }, 1200);
       });
     }
@@ -577,9 +597,9 @@
         if (!state.syncAuth) return;
         const text = `Biblija 365 Sync podaci:\nURL: ${window.location.origin}\nSync kod (korisničko ime): ${state.syncAuth.user_key}\nPIN: ${state.syncAuth.pin}`;
         navigator.clipboard.writeText(text);
-        copyBtn.textContent = "✓ Kopirano u međuspremnik!";
+        iconLabel(copyBtn, "check", "Kopirano u međuspremnik!");
         setTimeout(() => {
-          copyBtn.textContent = "📋 Kopiraj podatke za povezivanje drugog uređaja";
+          iconLabel(copyBtn, "copy", "Kopiraj podatke za povezivanje drugog uređaja");
         }, 1500);
       });
     }
@@ -674,9 +694,9 @@
       shareBtn.addEventListener("click", () => {
         const shareUrl = `${window.location.origin}/${bookId}/${chapter}/`;
         navigator.clipboard.writeText(shareUrl);
-        shareBtn.textContent = "✓ Poveznica kopirana!";
+        iconLabel(shareBtn, "check", "Poveznica kopirana!");
         setTimeout(() => {
-          shareBtn.textContent = "🔗 Podijeli";
+          iconLabel(shareBtn, "link", "Podijeli");
         }, 1400);
       });
     }
@@ -777,7 +797,7 @@
           const badge = document.createElement("span");
           badge.className = "verse-note-badge";
           badge.title = bm.note;
-          badge.textContent = "✎ bilješka";
+          badge.innerHTML = `${ic("pencil-line")}bilješka`;
           el.appendChild(badge);
         }
       });
@@ -833,9 +853,9 @@
       }
       banner.style.display = "flex";
       const isDone = isDayDone(ctx.planId, ctx.day);
-      document.getElementById("bannerPlanDayTitle").textContent = `🗓️ Dan ${ctx.day}: ${ctx.label}`;
+      document.getElementById("bannerPlanDayTitle").textContent = `Dan ${ctx.day}: ${ctx.label}`;
       const markBtn = document.getElementById("btnBannerMarkDone");
-      markBtn.textContent = isDone ? "✓ Dan je označen pročitanim" : `✓ Označi Dan ${ctx.day} pročitanim`;
+      iconLabel(markBtn, isDone ? "circle-check" : "check", isDone ? "Dan je označen pročitanim" : `Označi Dan ${ctx.day} pročitanim`);
       markBtn.style.background = isDone ? "var(--success)" : "var(--accent)";
 
       const pills = [];
@@ -962,8 +982,8 @@
       const quote = `»${ctx.text}« (${ctx.book_abbr} ${ctx.chapter},${ctx.verse})`;
       navigator.clipboard.writeText(quote);
       const btn = document.getElementById("btnCopyVerse");
-      btn.textContent = "✓ Kopirano!";
-      setTimeout(() => (btn.textContent = "📋 Kopiraj citat"), 1400);
+      iconLabel(btn, "check", "Kopirano!");
+      setTimeout(() => iconLabel(btn, "copy", "Kopiraj citat"), 1400);
     });
   }
 
@@ -1058,7 +1078,7 @@
       const nextDayObj = plan.days.find((d) => !isDayDone(plan.id, d.day)) || plan.days[plan.days.length - 1];
       document.getElementById("planNextSuggested").textContent =
         doneCount === plan.days_count
-          ? "🎉 Čestitamo! Plan je u cijelosti pročitan!"
+          ? "Čestitamo! Plan je u cijelosti pročitan!"
           : `Sljedeći nepročitani dan: Dan ${nextDayObj.day} (${nextDayObj.label})`;
 
       const hero = document.getElementById("currentDayHeroCard");
@@ -1066,23 +1086,23 @@
         const readingBtns = nextDayObj.readings
           .map(
             (r, idx) =>
-              `<button class="icon-btn hero-read-btn" data-ridx="${idx}" style="border-color:var(--accent);">📖 <strong>${escapeHtml(r.label)}</strong> <span style="color:var(--text-muted);font-weight:500;">(${escapeHtml(r.book_title)})</span></button>`
+              `<button class="icon-btn hero-read-btn" data-ridx="${idx}" style="border-color:var(--accent);">${ic("book-open")}<strong>${escapeHtml(r.label)}</strong> <span style="color:var(--text-muted);font-weight:500;">(${escapeHtml(r.book_title)})</span></button>`
           )
           .join(" ");
 
         hero.innerHTML = `
           <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.85rem;">
             <div>
-              <span class="badge badge-accent">Današnje čitanje • Dan ${nextDayObj.day} od ${plan.days_count}</span>
+              <span class="badge badge-accent">${ic("calendar-days")}Današnje čitanje · Dan ${nextDayObj.day} od ${plan.days_count}</span>
               <h3 style="margin:0.35rem 0 0.2rem;font-size:1.35rem;">${escapeHtml(nextDayObj.label)}</h3>
               <div style="font-size:0.84rem;color:var(--text-muted);">Ukupno ~${nextDayObj.verse_count} redaka u današnjem rasporedu</div>
             </div>
             <div style="display:flex;gap:0.45rem;flex-wrap:wrap;">
               <button class="icon-btn btn-accent" id="btnHeroStartFirst" style="padding:0.5rem 0.95rem;">
-                📖 Započni čitanje →
+                ${ic("book-open")}Započni čitanje
               </button>
               <button class="icon-btn" id="btnHeroToggleDone" style="padding:0.5rem 0.9rem;">
-                ✓ Označi Dan ${nextDayObj.day} pročitanim
+                ${ic("check")}Označi Dan ${nextDayObj.day} pročitanim
               </button>
             </div>
           </div>
@@ -1134,12 +1154,12 @@
           return `
             <div class="day-card ${isDone ? "done" : ""} ${isCur}">
               <div style="display:flex;justify-content:space-between;align-items:center;">
-                <strong>Dan ${d.day}${isCur ? " • Danas" : ""}</strong>
+                <strong>Dan ${d.day}${isCur ? " · Danas" : ""}</strong>
                 <span class="badge">${d.verse_count} redaka</span>
               </div>
               <div class="plan-reading-pills">${pills}</div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.25rem;">
-                <button class="icon-btn day-open-first" data-day="${d.day}" style="font-size:0.78rem;">Otvori u čitaču →</button>
+                <button class="icon-btn day-open-first" data-day="${d.day}" style="font-size:0.78rem;">Otvori u čitaču${ic("arrow-right")}</button>
                 <label style="font-size:0.82rem;cursor:pointer;display:flex;align-items:center;gap:0.35rem;font-weight:600;">
                   <input type="checkbox" class="day-done-checkbox" data-day="${d.day}" ${isDone ? "checked" : ""} />
                   Pročitano
@@ -1261,7 +1281,7 @@
               <strong style="margin-left:0.5rem;">${escapeHtml(parsedRef.book.title)} — ${escapeHtml(refLbl)}</strong>
             </div>
             <a href="${targetUrl}" class="icon-btn btn-accent" style="text-decoration:none;">
-              Otvori ${escapeHtml(refLbl)} u čitaču →
+              Otvori ${escapeHtml(refLbl)} u čitaču${ic("arrow-right")}
             </a>
           </div>
         `;
@@ -1333,7 +1353,7 @@
             <a href="/${escapeHtml(bId)}/${r.chapter}/#v-${r.verse}" class="search-result-item" style="display:block;text-decoration:none;color:inherit;">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:0.5rem;">
                 <span class="search-result-ref">${escapeHtml(r.book_abbr)} ${r.chapter},${r.verse} — ${escapeHtml(r.book_title)}</span>
-                <span class="badge">Otvori u čitaču →</span>
+                <span class="badge">Otvori u čitaču${ic("arrow-right")}</span>
               </div>
               <div style="margin-top:0.3rem;font-family:var(--font-reading);font-size:1.04rem;line-height:1.6;">
                 ${highlightMatch(r.text, q)}
@@ -1418,14 +1438,14 @@
                 </a>
                 <div class="bookmark-card-actions">
                   <span class="badge hl-${escapeHtml(bm.color || "gold")}">Oznaka</span>
-                  <a href="/${escapeHtml(bId)}/${bm.chapter}/#v-${bm.verse}" class="icon-btn" style="text-decoration:none;font-size:0.75rem;padding:0.2rem 0.5rem;">Otvori →</a>
-                  <button type="button" class="icon-btn bm-delete-btn" data-bmkey="${escapeHtml(key)}" style="font-size:0.75rem;padding:0.2rem 0.45rem;" title="Ukloni oznaku">🗑</button>
+                  <a href="/${escapeHtml(bId)}/${bm.chapter}/#v-${bm.verse}" class="icon-btn" style="text-decoration:none;font-size:0.75rem;padding:0.2rem 0.5rem;">Otvori${ic("arrow-right")}</a>
+                  <button type="button" class="icon-btn bm-delete-btn" data-bmkey="${escapeHtml(key)}" style="font-size:0.75rem;padding:0.2rem 0.45rem;" title="Ukloni oznaku" aria-label="Ukloni oznaku">${ic("trash-2")}</button>
                 </div>
               </div>
               <div style="font-family:var(--font-reading);font-size:1.02rem;line-height:1.6;">
                 »${escapeHtml(bm.text || "")}«
               </div>
-              ${bm.note ? `<div style="margin-top:0.2rem;font-size:0.86rem;color:var(--accent);font-weight:600;">✎ Bilješka: ${escapeHtml(bm.note)}</div>` : ""}
+              ${bm.note ? `<div style="margin-top:0.2rem;font-size:0.86rem;color:var(--accent);font-weight:600;display:flex;gap:0.35rem;align-items:flex-start;">${ic("pencil-line")}<span>${escapeHtml(bm.note)}</span></div>` : ""}
             </div>
           `;
         })
