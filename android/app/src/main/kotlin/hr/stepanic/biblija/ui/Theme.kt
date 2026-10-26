@@ -8,7 +8,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.ExperimentalTextApi
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontVariation
+import androidx.compose.ui.text.font.FontWeight
+import hr.stepanic.biblija.R
 import hr.stepanic.biblija.ReaderTheme
 import hr.stepanic.biblija.core.BookmarkColor
 
@@ -46,8 +52,19 @@ val BookmarkColor.swatch: Color
         BookmarkColor.PINK -> Color(0xFFED407A)
     }
 
-/** Iowan Old Style nema na Androidu; sistemski serif je najbliži --font-reading na webu. */
-val ReadingFontFamily: FontFamily = FontFamily.Serif
+/**
+ * Iowan Old Style nema na Androidu, a `FontFamily.Serif` nije pouzdan: Motorola s font overlayem
+ * (npr. Rookery) vraća sans-serif. Zato je Source Serif 4 (OFL, assets/licenses) ugrađen u APK.
+ */
+@OptIn(ExperimentalTextApi::class)
+val ReadingFontFamily: FontFamily = FontFamily(
+    listOf(FontWeight.Normal, FontWeight.Medium, FontWeight.SemiBold, FontWeight.Bold).flatMap { w ->
+        listOf(
+            Font(R.font.source_serif4, w, FontStyle.Normal, variationSettings = FontVariation.Settings(FontVariation.weight(w.weight))),
+            Font(R.font.source_serif4_italic, w, FontStyle.Italic, variationSettings = FontVariation.Settings(FontVariation.weight(w.weight))),
+        )
+    },
+)
 
 val LocalPalette = staticCompositionLocalOf { Palette.Light }
 
@@ -65,6 +82,8 @@ fun BiblijaTheme(theme: ReaderTheme, content: @Composable () -> Unit) {
             background = palette.background, onBackground = palette.text,
             surface = palette.background, onSurface = palette.text,
             surfaceContainer = palette.surface, surfaceVariant = palette.surface,
+            surfaceContainerLowest = palette.surface, surfaceContainerLow = palette.surface,
+            surfaceContainerHigh = palette.surface, surfaceContainerHighest = palette.surface,
             onSurfaceVariant = palette.muted, secondaryContainer = palette.accent.copy(alpha = 0.3f),
         )
     } else {
@@ -73,6 +92,8 @@ fun BiblijaTheme(theme: ReaderTheme, content: @Composable () -> Unit) {
             background = palette.background, onBackground = palette.text,
             surface = palette.background, onSurface = palette.text,
             surfaceContainer = palette.surface, surfaceVariant = palette.surface,
+            surfaceContainerLowest = palette.surface, surfaceContainerLow = palette.surface,
+            surfaceContainerHigh = palette.surface, surfaceContainerHighest = palette.surface,
             onSurfaceVariant = palette.muted, secondaryContainer = palette.accent.copy(alpha = 0.18f),
         )
     }

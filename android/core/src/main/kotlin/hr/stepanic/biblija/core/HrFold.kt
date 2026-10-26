@@ -13,7 +13,8 @@ object HrFold {
         'Č' to 'C', 'Ć' to 'C', 'Ž' to 'Z', 'Š' to 'S', 'Đ' to 'D',
     )
 
-    private val wordRegex = Regex("""(?U)\w+""")
+    // Ne `(?U)\w`: JVM ga zna, ali Androidov ICU regex baca PatternSyntaxException.
+    private val wordRegex = Regex("""[\p{L}\p{N}_]+""")
 
     fun fold(text: String): String {
         val mapped = buildString(text.length) {

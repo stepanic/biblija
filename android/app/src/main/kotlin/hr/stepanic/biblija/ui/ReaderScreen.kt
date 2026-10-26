@@ -50,6 +50,7 @@ import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.LinkAnnotation
+import androidx.compose.ui.text.TextLinkStyles
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -195,7 +196,7 @@ private fun BlockView(vm: AppViewModel, ref: ChapterRef, block: ChapterBlock, se
             background = bm?.let { palette.highlight(it.bookmarkColor) } ?: Color.Unspecified,
             textDecoration = if (selected == verse) TextDecoration.Underline else null,
         )
-        withLink(LinkAnnotation.Clickable("v$verse") { onVerse(verse) }) {
+        withLink(LinkAnnotation.Clickable("v$verse", TextLinkStyles(SpanStyle())) { onVerse(verse) }) {
             withStyle(style) { append(text) }
         }
     }
