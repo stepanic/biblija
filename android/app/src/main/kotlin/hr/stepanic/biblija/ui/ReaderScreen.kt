@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -45,13 +46,14 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.LinkAnnotation
-import androidx.compose.ui.text.TextLinkStyles
 import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.TextLinkStyles
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontStyle
@@ -267,7 +269,12 @@ private fun ChapterHeader(vm: AppViewModel, ref: ChapterRef) {
             val idx = chapters.indexOfFirst { it.chapter == ref.chapter }
             if (idx > 2) stripState.scrollToItem(idx - 2)
         }
-        LazyRow(state = stripState, horizontalArrangement = Arrangement.spacedBy(6.dp), modifier = Modifier.padding(top = 10.dp)) {
+        LazyRow(
+            state = stripState,
+            horizontalArrangement = Arrangement.spacedBy(6.dp),
+            contentPadding = PaddingValues(horizontal = 20.dp),
+            modifier = Modifier.padding(top = 10.dp).bleed(20.dp),
+        ) {
             items(chapters, key = { it.chapter }) { ch ->
                 val current = ch.chapter == ref.chapter
                 Surface(
@@ -296,7 +303,8 @@ private fun PlanDayBanner(vm: AppViewModel, context: PlanDayContext, current: Ch
             .widthIn(max = 720.dp)
             .fillMaxWidth()
             .padding(horizontal = 16.dp, vertical = 8.dp)
-            .background(palette.accent.copy(alpha = 0.08f), RoundedCornerShape(12.dp))
+            .clip(RoundedCornerShape(12.dp))
+            .background(palette.accent.copy(alpha = 0.08f))
             .padding(12.dp),
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -305,7 +313,11 @@ private fun PlanDayBanner(vm: AppViewModel, context: PlanDayContext, current: Ch
                 Icon(Icons.Filled.Close, contentDescription = "Sakrij traku plana")
             }
         }
-        LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+        LazyRow(
+            horizontalArrangement = Arrangement.spacedBy(6.dp),
+            contentPadding = PaddingValues(horizontal = 12.dp),
+            modifier = Modifier.bleed(12.dp),
+        ) {
             items(context.day.readings.flatMap { it.chapters }) { ch ->
                 AssistChip(
                     onClick = { vm.open(ch, keepDay = true) },

@@ -3,6 +3,7 @@ package hr.stepanic.biblija.ui
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -46,8 +47,10 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import hr.stepanic.biblija.AppViewModel
 import hr.stepanic.biblija.core.HrFold
@@ -159,14 +162,15 @@ private fun TodayCard(vm: AppViewModel, plan: ReadingPlan, day: PlanDay) {
     Column(
         Modifier
             .fillMaxWidth()
-            .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.08f), RoundedCornerShape(12.dp))
+            .clip(RoundedCornerShape(12.dp))
+            .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.08f))
             .padding(14.dp),
         verticalArrangement = Arrangement.spacedBy(6.dp),
     ) {
         Text("Dan ${day.day} od ${plan.daysCount}", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
         Text(day.label, style = MaterialTheme.typography.titleLarge)
         Text("Ukupno ~${day.verseCount} redaka", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-        ReadingChips(vm, plan, day)
+        ReadingChips(vm, plan, day, bleedStart = 14.dp, bleedEnd = 14.dp)
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             Button(onClick = { day.readings.firstOrNull()?.let { vm.openDay(day, plan.id, it) } }) {
                 Icon(Icons.AutoMirrored.Outlined.MenuBook, contentDescription = null)
@@ -183,8 +187,12 @@ private fun TodayCard(vm: AppViewModel, plan: ReadingPlan, day: PlanDay) {
 }
 
 @Composable
-private fun ReadingChips(vm: AppViewModel, plan: ReadingPlan, day: PlanDay) {
-    LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+private fun ReadingChips(vm: AppViewModel, plan: ReadingPlan, day: PlanDay, bleedStart: Dp, bleedEnd: Dp) {
+    LazyRow(
+        horizontalArrangement = Arrangement.spacedBy(6.dp),
+        contentPadding = PaddingValues(start = bleedStart, end = bleedEnd),
+        modifier = Modifier.bleed(bleedStart, bleedEnd),
+    ) {
         itemsIndexed(day.readings) { _, reading ->
             AssistChip(onClick = { vm.openDay(day, plan.id, reading) }, label = { Text(reading.label) })
         }
@@ -219,7 +227,7 @@ private fun PlanDayRow(vm: AppViewModel, plan: ReadingPlan, day: PlanDay, isNext
                 Spacer(Modifier.weight(1f))
                 Text("${day.verseCount} redaka", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
-            ReadingChips(vm, plan, day)
+            ReadingChips(vm, plan, day, bleedStart = 0.dp, bleedEnd = 16.dp)
         }
     }
 }

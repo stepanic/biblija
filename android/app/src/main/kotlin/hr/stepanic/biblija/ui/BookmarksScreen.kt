@@ -61,7 +61,11 @@ fun BookmarksScreen(vm: AppViewModel) {
     ScreenScaffold(title = { Text("Oznake") }) { padding ->
         LazyColumn(Modifier.fillMaxSize().padding(padding), contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)) {
             item(key = "filters") {
-                LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(bottom = 8.dp)) {
+                LazyRow(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    contentPadding = PaddingValues(horizontal = 16.dp),
+                    modifier = Modifier.padding(bottom = 8.dp).bleed(16.dp),
+                ) {
                     item { FilterChip(selected = filter == "all", onClick = { filter = "all" }, label = { Text("Sve") }) }
                     item { FilterChip(selected = filter == "notes", onClick = { filter = "notes" }, label = { Text("S bilješkom") }) }
                     items(BookmarkColor.entries) { c ->

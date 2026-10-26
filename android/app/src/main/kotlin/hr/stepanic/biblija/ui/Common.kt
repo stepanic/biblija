@@ -17,6 +17,9 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.layout
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.offset
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
@@ -53,6 +56,17 @@ fun SectionTitle(text: String, modifier: Modifier = Modifier) {
         color = MaterialTheme.colorScheme.onSurfaceVariant,
         modifier = modifier.fillMaxWidth().padding(top = 20.dp, bottom = 6.dp),
     )
+}
+
+/**
+ * Horizontalna traka od ruba do ruba: poništava [start]/[end] padding roditelja, a traka ga vraća
+ * kao `contentPadding`. Prvi element tako stoji u liniji s tekstom, a pri scrollu sadržaj ide do ruba.
+ */
+fun Modifier.bleed(start: Dp, end: Dp = start): Modifier = layout { measurable, constraints ->
+    val s = start.roundToPx()
+    val e = end.roundToPx()
+    val placeable = measurable.measure(constraints.offset(horizontal = s + e))
+    layout(placeable.width - s - e, placeable.height) { placeable.place(-s, 0) }
 }
 
 fun copyToClipboard(context: Context, text: String) {

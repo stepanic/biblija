@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.MenuBook
@@ -85,8 +86,12 @@ fun SearchScreen(vm: AppViewModel) {
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth(),
                 )
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(vertical = 8.dp)) {
-                    for ((value, label) in listOf("" to "Cijela Biblija", "SZ" to "SZ", "NZ" to "NZ")) {
+                LazyRow(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    contentPadding = PaddingValues(horizontal = 16.dp),
+                    modifier = Modifier.padding(vertical = 8.dp).bleed(16.dp),
+                ) {
+                    items(listOf("" to "Cijela Biblija", "SZ" to "SZ", "NZ" to "NZ")) { (value, label) ->
                         FilterChip(
                             selected = testament == value,
                             onClick = {
@@ -96,7 +101,7 @@ fun SearchScreen(vm: AppViewModel) {
                             label = { Text(label) },
                         )
                     }
-                    Column {
+                    item {
                         FilterChip(
                             selected = bookOrder != null,
                             onClick = { bookMenu = true },
