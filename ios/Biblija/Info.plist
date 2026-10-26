@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BiblijaSyncBaseURL</key>
-	<string></string>
+	<string>https://biblija.domovina.ai</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>hr</string>
 	<key>CFBundleDisplayName</key>

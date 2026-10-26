@@ -53,7 +53,7 @@ targets:
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
         UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
         # Adresa Workera s /api/sync; prazno = korisnik je upisuje u Postavkama
-        BiblijaSyncBaseURL: ""
+        BiblijaSyncBaseURL: "https://biblija.domovina.ai"
         NSAppTransportSecurity:
           NSAllowsLocalNetworking: true
 schemes:

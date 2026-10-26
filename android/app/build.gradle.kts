@@ -7,13 +7,13 @@ plugins {
 }
 
 // Adresa Workera s /api/sync: -PbiblijaSyncBaseUrl=https://… ili biblija.syncBaseUrl u local.properties.
-// Prazno = korisnik je upisuje u Postavkama.
+// Zadano je produkcijski Worker; korisnik je može promijeniti u Postavkama.
 val localProps = Properties().apply {
     rootProject.file("local.properties").takeIf { it.exists() }?.inputStream()?.use { load(it) }
 }
 val syncBaseUrl: String = (findProperty("biblijaSyncBaseUrl") as String?)
     ?: localProps.getProperty("biblija.syncBaseUrl")
-    ?: ""
+    ?: "https://biblija.domovina.ai"
 
 android {
     namespace = "hr.stepanic.biblija"
