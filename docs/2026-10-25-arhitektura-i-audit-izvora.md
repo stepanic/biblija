@@ -118,5 +118,7 @@ sequenceDiagram
 
 ## 5. Otvorene stavke za sljedeću sesiju
 
-1. **Produkcijski Cloudflare + D1 Deploy:**
-   * Kreirati produkcijsku D1 bazu (`npx wrangler d1 create biblija-365-db`), upisati `database_id` u [`wrangler.jsonc`](../wrangler.jsonc), primijeniti migraciju (`npx wrangler d1 migrations apply biblija-365-db --remote`) i pokrenuti `npm run deploy`.
+1. ~~**Produkcijski Cloudflare + D1 Deploy**~~ — napravljeno 2026-10-26: Worker `biblija-365` na
+   <https://biblija.domovina.ai> (Cloudflare račun D.O.M., `account_id` u [`wrangler.jsonc`](../wrangler.jsonc)),
+   D1 `biblija-365-db` (EEUR), migracije 0001 i 0002 primijenjene. Novi deploy: `npm run deploy`;
+   nove migracije: `npx wrangler d1 migrations apply biblija-365-db --remote`.

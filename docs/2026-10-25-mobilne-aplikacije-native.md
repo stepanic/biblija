@@ -83,9 +83,9 @@ brisanje računa, adresa poslužitelja).
   Keystorea, datoteka isključena iz backupa.
 - Lokalni merge nakon synca: `LWW.merge(server: odgovor, client: trenutno lokalno)`, pa izmjene
   napravljene dok je zahtjev bio u letu ostaju i šalju se idućim syncom.
-- Adresa poslužitelja nije upisana (nema produkcijskog D1 deploya): iOS `BiblijaSyncBaseURL` u
-  `project.yml`, Android `-PbiblijaSyncBaseUrl=…` ili `biblija.syncBaseUrl` u `local.properties`;
-  inače je korisnik upisuje u Postavkama.
+- Adresa poslužitelja: zadano `https://biblija.domovina.ai` (iOS `BiblijaSyncBaseURL` u `project.yml`,
+  Android `syncBaseUrl` u `app/build.gradle.kts`, nadjačava `-PbiblijaSyncBaseUrl=…` ili
+  `biblija.syncBaseUrl` u `local.properties`); korisnik je može promijeniti u Postavkama.
 
 ## 5. Prvo pokretanje na uređajima (2026-10-26)
 
@@ -137,8 +137,8 @@ skok na redak ne ističe ciljni redak.
 ## 6. Otvoreno
 
 1. Proći iOS ekrane (plan, pretraga, oznake, postavke) na uređaju.
-2. Produkcijski D1 deploy + migracija `0002_auth_failures.sql`, zatim upisati adresu u oba klijenta
-   i isprobati sync između weba, iPhonea i Androida.
+2. Produkcijski Worker je na `https://biblija.domovina.ai` (2026-10-26). Android sync i brisanje
+   računa isprobani na moto g86; iOS sync i sync s webom (isti kod na webu i uređaju) još nisu.
 3. Widget „današnje čitanje", lokalne notifikacije za plan, App Intents — još nisu rađeni.
 4. Prava na tekst prije objave u storeovima; TestFlight / interno testiranje na Playu.
 5. Prava ikona (trenutna je generirana: `scripts/gen_app_icon.py`, Android vektor u `res/drawable`).
