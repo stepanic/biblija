@@ -162,3 +162,5 @@ sequenceDiagram
    <https://biblija.domovina.ai> (Cloudflare račun D.O.M., `account_id` u [`wrangler.jsonc`](../wrangler.jsonc)),
    D1 `biblija-365-db` (EEUR), migracije 0001 i 0002 primijenjene. Novi deploy: `npm run deploy`;
    nove migracije: `npx wrangler d1 migrations apply biblija-365-db --remote`.
+2. Dnevnik čitanja i linearni kursor (2026-10-26, migracija 0003 primijenjena u produkciji): vidi
+   [2026-10-26-dnevnik-citanja-i-linearni-kursor.md](2026-10-26-dnevnik-citanja-i-linearni-kursor.md).
