@@ -4,7 +4,7 @@ import Icon from "../components/Icon.astro";
 interface Props {
   title: string;
   description?: string;
-  activeNav?: "reader" | "plan365" | "search" | "notes";
+  activeNav?: "reader" | "plan365" | "search" | "notes" | "log";
 }
 
 const {
@@ -73,6 +73,10 @@ const {
           <Icon name="bookmark" class="nav-tab-icon" />
           <span>Oznake</span>
         </a>
+        <a href="/dnevnik/" class={`nav-tab ${activeNav === "log" ? "active" : ""}`}>
+          <Icon name="history" class="nav-tab-icon" />
+          <span>Dnevnik</span>
+        </a>
       </nav>
 
       <div class="toolbar-controls">
@@ -115,6 +119,10 @@ const {
     <a href="/oznake/" class={`mobile-nav-item ${activeNav === "notes" ? "active" : ""}`}>
       <span class="mobile-nav-icon"><Icon name="bookmark" /></span>
       <span>Oznake</span>
+    </a>
+    <a href="/dnevnik/" class={`mobile-nav-item ${activeNav === "log" ? "active" : ""}`}>
+      <span class="mobile-nav-icon"><Icon name="history" /></span>
+      <span>Dnevnik</span>
     </a>
   </nav>
 
@@ -228,7 +236,8 @@ const {
         <span class="badge badge-accent" style="margin-bottom:0.15rem;">Odabrani stih</span>
         <strong id="popoverRefTitle" class="popover-ref-title">Post 1,1</strong>
       </div>
-      <div style="display:flex;gap:0.35rem;align-items:center;">
+      <div style="display:flex;gap:0.35rem;align-items:center;flex-wrap:wrap;justify-content:flex-end;">
+        <button class="icon-btn" id="btnStoppedHere" title="Zapamti ovaj redak kao mjesto do kojeg čitaš redom"><Icon name="flag" />Ovdje sam stao</button>
         <button class="icon-btn" id="btnCopyVerse"><Icon name="copy" />Kopiraj citat</button>
         <button class="icon-btn" id="btnClosePopover" title="Zatvori" aria-label="Zatvori"><Icon name="x" /></button>
       </div>

@@ -6,6 +6,8 @@
  *   uređajima javi da je stanje promijenjeno, pa oni odmah povuku `/api/sync`
  * - Omogućuje da N korisnika čita Bibliju na više uređaja (mobitel, tablet, računalo)
  *   uz sinkronizaciju napretka po danima, zadnjeg pročitanog poglavlja i osobnih oznaka/bilješki.
+ * - Dnevnik čitanja (`log`, inkrementalno po `log_since`/`log_cursor`) i linearni kursor (`linear`):
+ *   svaki posjet poglavlju ostaje zapisan, a mjesto do kojeg se čita redom ne pomiču skokovi.
  */
 
 import { DurableObject } from "cloudflare:workers";
@@ -177,8 +179,110 @@ async function ensureSchema(db: D1Database): Promise<void> {
         locked_until TEXT
       )
     `),
+    db.prepare(`
+      CREATE TABLE IF NOT EXISTS sync_reading_log (
+        user_key TEXT NOT NULL,
+        id TEXT NOT NULL,
+        url TEXT NOT NULL,
+        label TEXT NOT NULL DEFAULT '',
+        verse INTEGER NOT NULL DEFAULT 0,
+        started_at TEXT NOT NULL,
+        ended_at TEXT NOT NULL,
+        linear INTEGER NOT NULL DEFAULT 0,
+        device TEXT NOT NULL DEFAULT '',
+        updated_at TEXT NOT NULL,
+        received_at TEXT NOT NULL,
+        PRIMARY KEY (user_key, id)
+      )
+    `),
+    db.prepare(`CREATE INDEX IF NOT EXISTS idx_sync_reading_log_received ON sync_reading_log(user_key, received_at)`),
+    db.prepare(`
+      CREATE TABLE IF NOT EXISTS sync_linear (
+        user_key TEXT PRIMARY KEY,
+        url TEXT NOT NULL,
+        label TEXT NOT NULL DEFAULT '',
+        verse INTEGER NOT NULL DEFAULT 0,
+        updated_at TEXT NOT NULL
+      )
+    `),
   ]);
   schemaInitialized = true;
+}
+
+const EPOCH = "1970-01-01T00:00:00.000Z";
+// Najviše zapisa dnevnika koje klijent smije poslati u jednom zahtjevu; ostatak šalje idući put.
+const MAX_LOG_PER_REQUEST = 500;
+const CHAPTER_URL = /^\/[a-z0-9-]{1,60}\/\d{1,3}\/$/;
+const ISO_TS = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,3})?Z$/;
+
+export interface LinearCursor {
+  url: string;
+  label: string;
+  verse: number;
+  updated_at: string;
+}
+
+export interface ReadingLogEntry {
+  id: string;
+  url: string;
+  label: string;
+  verse: number;
+  started_at: string;
+  ended_at: string;
+  linear: boolean;
+  device: string;
+  updated_at: string;
+}
+
+function toVerse(v: unknown): number {
+  const n = Math.trunc(Number(v) || 0);
+  return n > 0 && n < 1000 ? n : 0;
+}
+
+/** Linearni kursor s klijenta, ili null ako nije ispravan. */
+function parseLinear(raw: any): LinearCursor | null {
+  if (!raw || typeof raw !== "object") return null;
+  const url = String(raw.url || "");
+  const updatedAt = String(raw.updated_at || "");
+  if (!CHAPTER_URL.test(url) || !ISO_TS.test(updatedAt)) return null;
+  return { url, label: String(raw.label || "").slice(0, 120), verse: toVerse(raw.verse), updated_at: updatedAt };
+}
+
+/** Zapis dnevnika s klijenta, ili null ako nije ispravan. */
+function parseLogEntry(raw: any): ReadingLogEntry | null {
+  if (!raw || typeof raw !== "object") return null;
+  const id = String(raw.id || "");
+  const url = String(raw.url || "");
+  const startedAt = String(raw.started_at || "");
+  const endedAt = String(raw.ended_at || startedAt);
+  const updatedAt = String(raw.updated_at || "");
+  if (!/^[A-Za-z0-9_-]{8,64}$/.test(id) || !CHAPTER_URL.test(url)) return null;
+  if (!ISO_TS.test(startedAt) || !ISO_TS.test(endedAt) || !ISO_TS.test(updatedAt)) return null;
+  return {
+    id,
+    url,
+    label: String(raw.label || "").slice(0, 120),
+    verse: toVerse(raw.verse),
+    started_at: startedAt,
+    ended_at: endedAt < startedAt ? startedAt : endedAt,
+    linear: Boolean(raw.linear),
+    device: String(raw.device || "").slice(0, 40),
+    updated_at: updatedAt,
+  };
+}
+
+function logRowToEntry(r: Record<string, any>): ReadingLogEntry {
+  return {
+    id: String(r.id),
+    url: String(r.url),
+    label: String(r.label),
+    verse: Number(r.verse),
+    started_at: String(r.started_at),
+    ended_at: String(r.ended_at),
+    linear: Boolean(r.linear),
+    device: String(r.device),
+    updated_at: String(r.updated_at),
+  };
 }
 
 async function lockedUntil(db: D1Database, userKey: string, nowMs: number): Promise<string | null> {
@@ -545,6 +649,45 @@ export default {
         }
       }
 
+      // 4. Linearni kursor (LWW po updated_at)
+      const sLinRow = await env.DB.prepare("SELECT url, label, verse, updated_at FROM sync_linear WHERE user_key = ?")
+        .bind(userKey)
+        .first<Record<string, any>>();
+      let mergedLinear: LinearCursor | null = sLinRow
+        ? { url: String(sLinRow.url), label: String(sLinRow.label), verse: Number(sLinRow.verse), updated_at: String(sLinRow.updated_at) }
+        : null;
+      const cLinear = parseLinear(body.linear);
+      if (cLinear && (!mergedLinear || cLinear.updated_at > mergedLinear.updated_at)) {
+        mergedLinear = cLinear;
+        batchStmts.push(
+          env.DB.prepare(
+            `INSERT INTO sync_linear (user_key, url, label, verse, updated_at) VALUES (?, ?, ?, ?, ?)
+             ON CONFLICT(user_key) DO UPDATE SET
+               url = excluded.url, label = excluded.label, verse = excluded.verse, updated_at = excluded.updated_at`
+          ).bind(userKey, cLinear.url, cLinear.label, cLinear.verse, cLinear.updated_at)
+        );
+      }
+
+      // 5. Dnevnik čitanja: klijent šalje samo nove/izmijenjene zapise, LWW po id-u.
+      //    Natrag dobiva sve što je server primio od log_since (uključivo), pa idući put šalje log_cursor.
+      const cLog = Array.isArray(body.log) ? body.log.slice(0, MAX_LOG_PER_REQUEST) : [];
+      for (const raw of cLog) {
+        const e = parseLogEntry(raw);
+        if (!e) continue;
+        batchStmts.push(
+          env.DB.prepare(
+            `INSERT INTO sync_reading_log (
+               user_key, id, url, label, verse, started_at, ended_at, linear, device, updated_at, received_at
+             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+             ON CONFLICT(user_key, id) DO UPDATE SET
+               url = excluded.url, label = excluded.label, verse = excluded.verse,
+               started_at = excluded.started_at, ended_at = excluded.ended_at, linear = excluded.linear,
+               device = excluded.device, updated_at = excluded.updated_at, received_at = excluded.received_at
+             WHERE excluded.updated_at > sync_reading_log.updated_at`
+          ).bind(userKey, e.id, e.url, e.label, e.verse, e.started_at, e.ended_at, e.linear ? 1 : 0, e.device, e.updated_at, now)
+        );
+      }
+
       const liveRoom = await liveRoomId(pinHash);
       if (batchStmts.length > 0) {
         await env.DB.batch(batchStmts);
@@ -555,6 +698,14 @@ export default {
         }
       }
 
+      const logSince = ISO_TS.test(String(body.log_since || "")) ? String(body.log_since) : EPOCH;
+      const { results: logRows } = await env.DB.prepare(
+        `SELECT id, url, label, verse, started_at, ended_at, linear, device, updated_at
+         FROM sync_reading_log WHERE user_key = ? AND received_at >= ? ORDER BY started_at`
+      )
+        .bind(userKey, logSince)
+        .all<Record<string, any>>();
+
       return jsonResponse({
         ok: true,
         user_key: userKey,
@@ -564,6 +715,9 @@ export default {
         meta: mergedMeta,
         progress: mergedProgress,
         bookmarks: bmMap,
+        linear: mergedLinear,
+        log: logRows.map(logRowToEntry),
+        log_cursor: now,
       });
     }
 
@@ -603,6 +757,8 @@ export default {
       await env.DB.batch([
         env.DB.prepare("DELETE FROM sync_progress WHERE user_key = ?").bind(userKey),
         env.DB.prepare("DELETE FROM sync_bookmarks WHERE user_key = ?").bind(userKey),
+        env.DB.prepare("DELETE FROM sync_reading_log WHERE user_key = ?").bind(userKey),
+        env.DB.prepare("DELETE FROM sync_linear WHERE user_key = ?").bind(userKey),
         env.DB.prepare("DELETE FROM sync_users WHERE user_key = ?").bind(userKey),
         env.DB.prepare("DELETE FROM sync_auth_failures WHERE user_key = ?").bind(userKey),
       ]);

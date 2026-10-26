@@ -20,6 +20,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.automirrored.filled.Undo
+import androidx.compose.material.icons.filled.SkipNext
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Close
@@ -28,6 +30,7 @@ import androidx.compose.material.icons.filled.TextFields
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.HorizontalDivider
@@ -44,6 +47,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -77,6 +81,10 @@ sealed class ChapterBlock(val key: String) {
     class ReferenceBlock(key: String, val text: String) : ChapterBlock(key)
     class Prose(key: String, val verses: List<Verse>) : ChapterBlock(key)
     class Poetic(key: String, val verse: Verse) : ChapterBlock(key)
+
+    /** Redak bloka iz ključa („p12", „v12", „h12-0", „r12-0") */
+    val firstVerse: Int
+        get() = key.drop(1).takeWhile { it.isDigit() }.toIntOrNull() ?: 0
 
     val verseNumbers: List<Int>
         get() = when (this) {
@@ -127,8 +135,13 @@ fun ReaderScreen(vm: AppViewModel) {
     LaunchedEffect(target, blocks) {
         val verse = target.verse ?: return@LaunchedEffect
         val idx = blocks.indexOfFirst { verse in it.verseNumbers }
-        // +2: traka plana i zaglavlje su prve stavke
-        if (idx >= 0) listState.animateScrollToItem(idx + 2)
+        if (idx >= 0) listState.animateScrollToItem(idx + LEADING_ITEMS)
+    }
+    // Redak na vrhu ekrana za dnevnik čitanja i linearni kursor
+    LaunchedEffect(listState, blocks) {
+        snapshotFlow { listState.firstVisibleItemIndex }.collect { i ->
+            vm.didScroll(blocks.getOrNull(i - LEADING_ITEMS)?.firstVerse ?: 0)
+        }
     }
 
     ScreenScaffold(
@@ -155,6 +168,10 @@ fun ReaderScreen(vm: AppViewModel) {
             modifier = Modifier.fillMaxSize().background(palette.background).padding(padding),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
+            item(key = "linear") {
+                val cursor = vm.linear
+                if (vm.activeDay == null && cursor != null && !vm.isLinear(ref)) LinearReturnBanner(vm, cursor.label, cursor.verse, ref)
+            }
             item(key = "banner") {
                 vm.activeDay?.let { PlanDayBanner(vm, it, ref) }
             }
@@ -289,6 +306,50 @@ private fun ChapterHeader(vm: AppViewModel, ref: ChapterRef) {
                         modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
                     )
                 }
+            }
+        }
+    }
+}
+
+/** Stavke LazyColumna prije blokova teksta: traka linearnog čitanja, traka plana, zaglavlje */
+private const val LEADING_ITEMS = 3
+
+/** „Izaija (Iz 12) · redak 5", kao placeLabel u public/astro-client.js */
+fun placeLabel(label: String, verse: Int) = if (verse > 1) "$label · redak $verse" else label
+
+/** Čitanje izvan reda: povratak na mjesto linearnog čitanja ili pomicanje kursora ovamo (traka na webu). */
+@Composable
+private fun LinearReturnBanner(vm: AppViewModel, label: String, verse: Int, current: ChapterRef) {
+    val palette = LocalPalette.current
+    Column(
+        Modifier
+            .widthIn(max = 720.dp)
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 8.dp)
+            .clip(RoundedCornerShape(12.dp))
+            .background(palette.accent.copy(alpha = 0.08f))
+            .padding(12.dp),
+        verticalArrangement = Arrangement.spacedBy(6.dp),
+    ) {
+        Text("ČITAŠ IZVAN REDA", style = MaterialTheme.typography.labelSmall, fontWeight = FontWeight.Bold, color = palette.accent)
+        Text(
+            buildAnnotatedString {
+                append("Redom si stigao do ")
+                withStyle(SpanStyle(fontWeight = FontWeight.Bold)) { append(placeLabel(label, verse)) }
+            },
+            style = MaterialTheme.typography.bodyMedium,
+            color = palette.text,
+        )
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Button(onClick = { vm.openLinear() }, colors = ButtonDefaults.buttonColors(containerColor = palette.accent)) {
+                Icon(Icons.AutoMirrored.Filled.Undo, contentDescription = null)
+                Spacer(Modifier.size(6.dp))
+                Text("Vrati se")
+            }
+            OutlinedButton(onClick = { vm.continueLinearHere(current) }) {
+                Icon(Icons.Filled.SkipNext, contentDescription = null)
+                Spacer(Modifier.size(6.dp))
+                Text("Redom odavde")
             }
         }
     }

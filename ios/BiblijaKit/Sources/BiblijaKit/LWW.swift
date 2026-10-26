@@ -10,8 +10,28 @@ public enum LWW {
         UserData(
             meta: mergeMeta(server: server.meta, client: client.meta),
             progress: mergeProgress(server: server.progress, client: client.progress),
-            bookmarks: mergeBookmarks(server: server.bookmarks, client: client.bookmarks)
+            bookmarks: mergeBookmarks(server: server.bookmarks, client: client.bookmarks),
+            linear: mergeLinear(server: server.linear, client: client.linear),
+            readingLog: mergeLog(server: server.readingLog, client: client.readingLog),
+            logDirty: client.logDirty,
+            logCursor: server.logCursor.isEmpty ? client.logCursor : server.logCursor
         )
+    }
+
+    public static func mergeLinear(server: LinearCursor?, client: LinearCursor?) -> LinearCursor? {
+        guard let client else { return server }
+        guard let server else { return client }
+        return client.updatedAt > server.updatedAt ? client : server
+    }
+
+    /// Server vraća samo zapise od `log_cursor`, pa se spaja u lokalni dnevnik, ne obrnuto.
+    public static func mergeLog(server: [String: ReadingLogEntry], client: [String: ReadingLogEntry]) -> [String: ReadingLogEntry] {
+        var merged = client
+        for (id, entry) in server {
+            if let local = merged[id], local.updatedAt > entry.updatedAt { continue }
+            merged[id] = entry
+        }
+        return merged
     }
 
     public static func mergeMeta(server: SyncMeta, client: SyncMeta) -> SyncMeta {

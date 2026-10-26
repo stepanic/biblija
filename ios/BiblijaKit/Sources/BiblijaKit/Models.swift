@@ -237,6 +237,56 @@ public struct SyncMeta: Codable, Equatable, Sendable {
     }
 }
 
+/// Mjesto do kojeg se čita redom (`linear` u /api/sync). Skokovi na druga poglavlja ga ne pomiču.
+public struct LinearCursor: Codable, Equatable, Sendable {
+    /// Web URL poglavlja, npr. `/izaija/12/`
+    public var url: String
+    public var label: String
+    /// Redak na vrhu ekrana; 0 = početak poglavlja
+    public var verse: Int
+    public var updatedAt: String
+
+    public init(url: String, label: String, verse: Int, updatedAt: String) {
+        self.url = url
+        self.label = label
+        self.verse = verse
+        self.updatedAt = updatedAt
+    }
+
+    enum CodingKeys: String, CodingKey { case url, label, verse, updatedAt = "updated_at" }
+}
+
+/// Jedan posjet poglavlju u dnevniku čitanja (`log` u /api/sync), LWW po `id`.
+public struct ReadingLogEntry: Codable, Equatable, Sendable, Identifiable {
+    public var id: String
+    public var url: String
+    public var label: String
+    /// Redak do kojeg se stiglo (vrh ekrana pri zadnjem pomaku)
+    public var verse: Int
+    public var startedAt: String
+    public var endedAt: String
+    /// Je li posjet bio dio linearnog čitanja
+    public var linear: Bool
+    public var device: String
+    public var updatedAt: String
+
+    public init(id: String, url: String, label: String, verse: Int, startedAt: String, endedAt: String, linear: Bool, device: String, updatedAt: String) {
+        self.id = id
+        self.url = url
+        self.label = label
+        self.verse = verse
+        self.startedAt = startedAt
+        self.endedAt = endedAt
+        self.linear = linear
+        self.device = device
+        self.updatedAt = updatedAt
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case id, url, label, verse, startedAt = "started_at", endedAt = "ended_at", linear, device, updatedAt = "updated_at"
+    }
+}
+
 /// plan_id → dan (kao string, zbog JSON-a) → napredak
 public typealias ProgressMap = [String: [String: DayProgress]]
 /// `book_order:chapter:verse` → oznaka (i tombstone s deleted=true)
@@ -246,13 +296,48 @@ public struct UserData: Codable, Equatable, Sendable {
     public var meta: SyncMeta
     public var progress: ProgressMap
     public var bookmarks: BookmarkMap
+    public var linear: LinearCursor?
+    /// id → zapis dnevnika čitanja
+    public var readingLog: [String: ReadingLogEntry]
+    /// Zapisi dnevnika koje server još nije potvrdio
+    public var logDirty: Set<String>
+    /// `log_cursor` zadnjeg synca; server od njega vraća samo nove zapise
+    public var logCursor: String
 
     public static let empty = UserData(meta: .empty, progress: [:], bookmarks: [:])
 
-    public init(meta: SyncMeta, progress: ProgressMap, bookmarks: BookmarkMap) {
+    public init(
+        meta: SyncMeta, progress: ProgressMap, bookmarks: BookmarkMap,
+        linear: LinearCursor? = nil, readingLog: [String: ReadingLogEntry] = [:], logDirty: Set<String> = [], logCursor: String = ""
+    ) {
         self.meta = meta
         self.progress = progress
         self.bookmarks = bookmarks
+        self.linear = linear
+        self.readingLog = readingLog
+        self.logDirty = logDirty
+        self.logCursor = logCursor
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case meta, progress, bookmarks, linear, readingLog = "reading_log", logDirty = "log_dirty", logCursor = "log_cursor"
+    }
+
+    // Datoteke spremljene prije dnevnika čitanja nemaju nova polja.
+    public init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        meta = try c.decode(SyncMeta.self, forKey: .meta)
+        progress = try c.decode(ProgressMap.self, forKey: .progress)
+        bookmarks = try c.decode(BookmarkMap.self, forKey: .bookmarks)
+        linear = try c.decodeIfPresent(LinearCursor.self, forKey: .linear)
+        readingLog = try c.decodeIfPresent([String: ReadingLogEntry].self, forKey: .readingLog) ?? [:]
+        logDirty = try c.decodeIfPresent(Set<String>.self, forKey: .logDirty) ?? []
+        logCursor = try c.decodeIfPresent(String.self, forKey: .logCursor) ?? ""
+    }
+
+    /// Dnevnik od najnovijeg prema starijem.
+    public var readingLogNewestFirst: [ReadingLogEntry] {
+        readingLog.values.sorted { $0.startedAt > $1.startedAt }
     }
 
     public func isDayDone(planId: String, day: Int) -> Bool {
@@ -279,6 +364,12 @@ public enum Timestamp {
         f.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
         f.timeZone = TimeZone(identifier: "UTC")
         return f.string(from: date)
+    }
+
+    public static func parse(_ iso: String) -> Date? {
+        let f = ISO8601DateFormatter()
+        f.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        return f.date(from: iso) ?? ISO8601DateFormatter().date(from: iso)
     }
 }
 

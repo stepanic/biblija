@@ -15,7 +15,7 @@ const { default: worker } = await import("../../src/worker.ts");
 
 const root = new URL("../../", import.meta.url);
 const vectors = (name) => JSON.parse(readFileSync(new URL(`shared/test-vectors/${name}`, root), "utf-8"));
-const migrations = ["0001_sync.sql", "0002_auth_failures.sql"].map((f) =>
+const migrations = ["0001_sync.sql", "0002_auth_failures.sql", "0003_reading_log.sql"].map((f) =>
   readFileSync(new URL(`migrations/${f}`, root), "utf-8")
 );
 
@@ -144,8 +144,85 @@ test("account/delete: briše korisnika, napredak i oznake", async () => {
   assert.equal(del.data.deleted, true);
 
   const db = env.DB.raw;
-  for (const t of ["sync_users", "sync_progress", "sync_bookmarks"]) {
+  for (const t of ["sync_users", "sync_progress", "sync_bookmarks", "sync_reading_log", "sync_linear"]) {
     assert.equal(db.prepare(`SELECT COUNT(*) AS n FROM ${t}`).get().n, 0, t);
   }
   assert.equal((await call(env, "/api/account/delete", AUTH)).status, 404);
+});
+
+const EMPTY = { meta: { last_updated_at: "1970-01-01T00:00:00.000Z" }, progress: {}, bookmarks: {} };
+
+function logEntry(id, over = {}) {
+  return {
+    id,
+    url: "/izaija/12/",
+    label: "Izaija (Iz 12)",
+    verse: 5,
+    started_at: "2026-10-01T08:00:00.000Z",
+    ended_at: "2026-10-01T08:10:00.000Z",
+    linear: true,
+    device: "Web",
+    updated_at: "2026-10-01T08:10:00.000Z",
+    ...over,
+  };
+}
+
+test("linear: noviji kursor pobjeđuje, stariji se ignorira", async () => {
+  const env = { DB: fakeD1() };
+  const first = { url: "/izaija/12/", label: "Izaija (Iz 12)", verse: 5, updated_at: "2026-10-01T08:00:00.000Z" };
+  let r = await call(env, "/api/sync", { ...AUTH, ...EMPTY, linear: first });
+  assert.deepEqual(r.data.linear, first);
+
+  const older = { ...first, url: "/psalmi/23/", updated_at: "2026-09-01T08:00:00.000Z" };
+  r = await call(env, "/api/sync", { ...AUTH, ...EMPTY, linear: older });
+  assert.deepEqual(r.data.linear, first);
+
+  const newer = { url: "/izaija/13/", label: "Izaija (Iz 13)", verse: 0, updated_at: "2026-10-02T08:00:00.000Z" };
+  r = await call(env, "/api/sync", { ...AUTH, ...EMPTY, linear: newer });
+  assert.deepEqual(r.data.linear, newer);
+
+  r = await call(env, "/api/sync", { ...AUTH, ...EMPTY, linear: { url: "javascript:alert(1)", updated_at: "2027-01-01T00:00:00.000Z" } });
+  assert.deepEqual(r.data.linear, newer);
+});
+
+test("linear: bez kursora server vraća null", async () => {
+  const env = { DB: fakeD1() };
+  const r = await call(env, "/api/sync", { ...AUTH, ...EMPTY });
+  assert.equal(r.data.linear, null);
+  assert.deepEqual(r.data.log, []);
+  assert.ok(r.data.log_cursor);
+});
+
+test("log: zapisi se spajaju po id-u (LWW), log_since vraća samo novo", async () => {
+  const env = { DB: fakeD1() };
+  const a = logEntry("aaaaaaaa-1");
+  const b = logEntry("bbbbbbbb-2", { url: "/psalmi/23/", label: "Psalmi (Ps 23)", linear: false, started_at: "2026-10-01T09:00:00.000Z", ended_at: "2026-10-01T09:02:00.000Z", updated_at: "2026-10-01T09:02:00.000Z" });
+  let r = await call(env, "/api/sync", { ...AUTH, ...EMPTY, log: [a, b] });
+  assert.deepEqual(r.data.log, [a, b]);
+  const cursor = r.data.log_cursor;
+
+  // Stariji zapis istog id-a ne pregazi noviji.
+  r = await call(env, "/api/sync", { ...AUTH, ...EMPTY, log: [{ ...a, verse: 1, updated_at: "2026-10-01T08:05:00.000Z" }], log_since: "2099-01-01T00:00:00.000Z" });
+  r = await call(env, "/api/sync", { ...AUTH, ...EMPTY });
+  assert.deepEqual(r.data.log, [a, b]);
+
+  // Noviji zapis istog id-a pobjeđuje i ponovno se šalje onima koji traže od starog kursora.
+  await new Promise((res) => setTimeout(res, 5));
+  const a2 = { ...a, verse: 21, ended_at: "2026-10-01T08:20:00.000Z", updated_at: "2026-10-01T08:20:00.000Z" };
+  const sent = await call(env, "/api/sync", { ...AUTH, ...EMPTY, log: [a2], log_since: "2099-01-01T00:00:00.000Z" });
+  assert.deepEqual(sent.data.log, []);
+  r = await call(env, "/api/sync", { ...AUTH, ...EMPTY, log_since: cursor });
+  assert.ok(r.data.log.some((e) => e.id === a2.id && e.verse === 21));
+  r = await call(env, "/api/sync", { ...AUTH, ...EMPTY, log_since: sent.data.log_cursor });
+  assert.deepEqual(r.data.log, [a2]);
+});
+
+test("log: neispravni zapisi se odbacuju", async () => {
+  const env = { DB: fakeD1() };
+  const r = await call(env, "/api/sync", {
+    ...AUTH,
+    ...EMPTY,
+    log: [logEntry("x"), logEntry("cccccccc-3", { url: "https://zlo.example/" }), logEntry("dddddddd-4", { started_at: "jučer" }), "smeće", logEntry("eeeeeeee-5", { verse: -3 })],
+  });
+  assert.deepEqual(r.data.log.map((e) => [e.id, e.verse]), [["eeeeeeee-5", 0]]);
 });

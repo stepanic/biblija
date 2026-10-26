@@ -23,6 +23,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.Edit
+import androidx.compose.material.icons.outlined.History
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
@@ -49,6 +50,11 @@ import hr.stepanic.biblija.core.ChapterRef
 /** Moje oznake i bilješke (stranica /oznake/ na webu). Filtar: "all", "notes" ili boja. */
 @Composable
 fun BookmarksScreen(vm: AppViewModel) {
+    var showLog by rememberSaveable { mutableStateOf(false) }
+    if (showLog) {
+        ReadingLogScreen(vm, onBack = { showLog = false })
+        return
+    }
     var filter by rememberSaveable { mutableStateOf("all") }
     val bookmarks = vm.userData.activeBookmarks.filter { b ->
         when (filter) {
@@ -58,7 +64,14 @@ fun BookmarksScreen(vm: AppViewModel) {
         }
     }
 
-    ScreenScaffold(title = { Text("Oznake") }) { padding ->
+    ScreenScaffold(
+        title = { Text("Oznake") },
+        actions = {
+            IconButton(onClick = { showLog = true }) {
+                Icon(Icons.Outlined.History, contentDescription = "Dnevnik čitanja")
+            }
+        },
+    ) { padding ->
         LazyColumn(Modifier.fillMaxSize().padding(padding), contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)) {
             item(key = "filters") {
                 LazyRow(

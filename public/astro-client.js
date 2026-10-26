@@ -37,6 +37,15 @@
     el.appendChild(span);
   }
 
+  function readJson(key, fallback) {
+    try {
+      const v = JSON.parse(localStorage.getItem(key));
+      return v == null ? fallback : v;
+    } catch (_) {
+      return fallback;
+    }
+  }
+
   const state = {
     hasSqliteServer: false,
     syncEnabledServer: false,
@@ -58,6 +67,9 @@
     syncAuth: JSON.parse(localStorage.getItem("biblija_sync_auth") || "null"),
     savedProfiles: JSON.parse(localStorage.getItem("biblija_saved_profiles") || "[]"),
     lastSyncedAt: localStorage.getItem("biblija_last_synced_at") || null,
+    linear: readJson("biblija_linear", null),
+    readingLog: readJson("biblija_reading_log", []),
+    logDirty: new Set(readJson("biblija_log_dirty", [])),
     isSyncing: false,
     uiRefreshCallbacks: [],
   };
@@ -102,6 +114,107 @@
     const now = new Date().toISOString();
     localStorage.setItem("biblija_meta_updated_at", now);
     return now;
+  }
+
+  /* ==================== DNEVNIK ČITANJA I LINEARNO ČITANJE ====================
+     Linearni kursor (`biblija_linear`) je mjesto do kojeg se čita redom: pomiče se samo kad se otvori
+     isto ili sljedeće poglavlje, ili kad ga korisnik sam postavi. Dnevnik (`biblija_reading_log`) pamti
+     svaki posjet poglavlju (redak do kojeg se stiglo, početak i kraj, uređaj) i šalje se serveru
+     inkrementalno: samo zapisi iz `biblija_log_dirty`, a natrag dolazi sve od `biblija_log_cursor`. */
+  const CHAPTER_URL_RE = /^\/[a-z0-9-]{1,60}\/\d{1,3}\/$/;
+  // Isto poglavlje otvoreno ponovno unutar ovog vremena nastavlja postojeći zapis umjesto novog.
+  const LOG_CONTINUE_MS = 30 * 60 * 1000;
+  const MAX_LOG_PER_SYNC = 500;
+  let logSyncTimer = null;
+
+  // Stari klijenti pamtili su samo zadnje otvoreno poglavlje; ono postaje početni kursor
+  // s najstarijim mogućim vremenom, da ne pregazi kursor koji je već na serveru.
+  if (!state.linear) {
+    const lastUrl = localStorage.getItem("biblija_last_url");
+    if (lastUrl && CHAPTER_URL_RE.test(lastUrl)) {
+      state.linear = {
+        url: lastUrl,
+        label: localStorage.getItem("biblija_last_label") || "",
+        verse: 0,
+        updated_at: "1970-01-01T00:00:00.001Z",
+      };
+      saveLinear();
+    }
+  }
+
+  function saveLinear() {
+    localStorage.setItem("biblija_linear", JSON.stringify(state.linear));
+  }
+
+  function setLinear(url, label, verse) {
+    state.linear = { url, label, verse: verse || 0, updated_at: new Date().toISOString() };
+    saveLinear();
+  }
+
+  function saveReadingLog() {
+    localStorage.setItem("biblija_reading_log", JSON.stringify(state.readingLog));
+    localStorage.setItem("biblija_log_dirty", JSON.stringify([...state.logDirty]));
+  }
+
+  function findLogIndex(id) {
+    for (let i = state.readingLog.length - 1; i >= 0; i--) {
+      if (state.readingLog[i].id === id) return i;
+    }
+    return -1;
+  }
+
+  function upsertLogEntry(entry) {
+    const i = findLogIndex(entry.id);
+    if (i >= 0) state.readingLog[i] = entry;
+    else state.readingLog.push(entry);
+    state.logDirty.add(entry.id);
+  }
+
+  /** Zapisi sa servera: LWW po id-u, lokalni pobjeđuje samo ako je strogo noviji. */
+  function mergeServerLog(entries) {
+    if (!Array.isArray(entries) || !entries.length) return;
+    const byId = new Map(state.readingLog.map((e, i) => [e.id, i]));
+    for (const e of entries) {
+      const i = byId.get(e.id);
+      if (i === undefined) {
+        byId.set(e.id, state.readingLog.length);
+        state.readingLog.push(e);
+      } else if (!(state.readingLog[i].updated_at > e.updated_at)) {
+        state.readingLog[i] = e;
+      }
+    }
+    state.readingLog.sort((a, b) => String(a.started_at).localeCompare(String(b.started_at)));
+  }
+
+  function newLogId() {
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 12)}`;
+  }
+
+  function deviceLabel() {
+    const ua = navigator.userAgent || "";
+    if (/iPhone/.test(ua)) return "Web · iPhone";
+    if (/iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return "Web · iPad";
+    if (/Android/.test(ua)) return "Web · Android";
+    if (/Macintosh/.test(ua)) return "Web · Mac";
+    if (/Windows/.test(ua)) return "Web · Windows";
+    if (/Linux/.test(ua)) return "Web · Linux";
+    return "Web";
+  }
+
+  /** Poveznica koja otvara poglavlje na retku (#od-N postavlja redak na vrh, ne u sredinu). */
+  function resumeHref(url, verse) {
+    return verse > 1 ? `${url}#od-${verse}` : url;
+  }
+
+  function placeLabel(label, verse) {
+    return verse > 1 ? `${label} · redak ${verse}` : label;
+  }
+
+  function scheduleLogSync() {
+    if (!state.syncAuth || !state.syncAuth.user_key) return;
+    clearTimeout(logSyncTimer);
+    logSyncTimer = setTimeout(() => syncWithServer({ silent: true }), 4000);
   }
 
   function applyThemeAndFont() {
@@ -251,6 +364,13 @@
     localStorage.removeItem("biblija_meta_updated_at");
     localStorage.removeItem("biblija_last_synced_at");
     localStorage.removeItem("biblija_live_room");
+    state.linear = null;
+    state.readingLog = [];
+    state.logDirty = new Set();
+    localStorage.removeItem("biblija_linear");
+    localStorage.removeItem("biblija_reading_log");
+    localStorage.removeItem("biblija_log_dirty");
+    localStorage.removeItem("biblija_log_cursor");
     closeLive();
   }
 
@@ -389,13 +509,16 @@
     return ok;
   }
 
-  async function syncOnce({ silent = false } = {}) {
+  async function syncOnce({ silent = false, keepalive = false } = {}) {
     if (!state.syncAuth || !state.syncAuth.user_key || !state.syncAuth.pin) return false;
 
     state.isSyncing = true;
     updateSyncHeaderUI();
+    clearTimeout(logSyncTimer);
 
     try {
+      const sentLog = state.readingLog.filter((e) => state.logDirty.has(e.id)).slice(0, MAX_LOG_PER_SYNC);
+      const sentVersions = new Map(sentLog.map((e) => [e.id, e.updated_at]));
       const payload = {
         user_key: state.syncAuth.user_key,
         pin: state.syncAuth.pin,
@@ -408,12 +531,18 @@
         },
         progress: state.progress,
         bookmarks: state.bookmarks,
+        linear: state.linear,
+        log: sentLog,
+        log_since: localStorage.getItem("biblija_log_cursor") || "",
       };
 
+      const body = JSON.stringify(payload);
       const res = await fetch("/api/sync", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body,
+        // pri zatvaranju kartice zahtjev mora preživjeti; preglednik dopušta keepalive tijelo do 64 KB
+        keepalive: keepalive && body.length < 60000,
       });
 
       const data = await res.json();
@@ -448,6 +577,22 @@
         if (data.meta.last_updated_at) {
           localStorage.setItem("biblija_meta_updated_at", data.meta.last_updated_at);
         }
+      }
+
+      // Server bez dnevnika (stari server.py) ne vraća log_cursor: tada zapisi ostaju za idući put.
+      if (data.log_cursor) {
+        if (data.linear && (!state.linear || !(state.linear.updated_at > data.linear.updated_at))) {
+          state.linear = data.linear;
+          saveLinear();
+        }
+        mergeServerLog(data.log);
+        for (const [id, ver] of sentVersions) {
+          const i = findLogIndex(id);
+          if (i < 0 || state.readingLog[i].updated_at === ver) state.logDirty.delete(id);
+        }
+        saveReadingLog();
+        localStorage.setItem("biblija_log_cursor", data.log_cursor);
+        if (state.logDirty.size > 0) scheduleLogSync();
       }
 
       state.lastSyncedAt = data.synced_at || new Date().toISOString();
@@ -715,19 +860,31 @@
 
     function refreshResumeReadingBar() {
       const resumeBar = document.getElementById("resumeReadingBar");
-      if (resumeBar && window.location.pathname === "/") {
-        const lastUrl = localStorage.getItem("biblija_last_url");
-        const lastLabel = localStorage.getItem("biblija_last_label");
-        if (lastUrl && lastUrl !== "/" && lastUrl !== "/knjiga-postanka/1/") {
-          resumeBar.style.display = "flex";
-          document.getElementById("resumeReadingLabel").textContent = lastLabel || lastUrl;
-          document.getElementById("resumeReadingLink").setAttribute("href", lastUrl);
+      if (!resumeBar || window.location.pathname !== "/") return;
+      const lin = state.linear;
+      if (!lin || (lin.url === "/knjiga-postanka/1/" && lin.verse <= 1)) {
+        resumeBar.style.display = "none";
+        return;
+      }
+      resumeBar.style.display = "flex";
+      document.getElementById("resumeReadingLabel").textContent = placeLabel(lin.label || lin.url, lin.verse);
+      document.getElementById("resumeReadingLink").setAttribute("href", resumeHref(lin.url, lin.verse));
+
+      // Zadnje otvoreno izvan linearnog čitanja, ako se razlikuje od kursora
+      const lastEl = document.getElementById("resumeLastVisited");
+      const last = state.readingLog[state.readingLog.length - 1];
+      if (lastEl) {
+        if (last && last.url !== lin.url) {
+          lastEl.style.display = "";
+          lastEl.setAttribute("href", resumeHref(last.url, last.verse));
+          lastEl.querySelector("span").textContent = `Zadnje otvoreno: ${placeLabel(last.label || last.url, last.verse)}`;
         } else {
-          resumeBar.style.display = "none";
+          lastEl.style.display = "none";
         }
       }
     }
 
+    let tracker = null;
     if (window.location.pathname === "/") {
       refreshResumeReadingBar();
     } else {
@@ -739,6 +896,7 @@
         touchMetaTimestamp();
         scheduleCloudSync();
       }
+      tracker = initReadingTracker(curUrl, curLbl, prevUrl);
     }
 
     // Sidebar testament & search filtering
@@ -834,12 +992,15 @@
       });
     });
 
-    // Hash verse highlight (#v-19)
-    if (window.location.hash && window.location.hash.startsWith("#v-")) {
-      const target = document.querySelector(window.location.hash);
+    // Hash verse highlight (#v-19 u sredinu ekrana; #od-19 na vrh, za nastavak čitanja)
+    const hash = window.location.hash || "";
+    if (hash.startsWith("#v-") || hash.startsWith("#od-")) {
+      const resume = hash.startsWith("#od-");
+      const target = document.getElementById(`v-${parseInt(hash.slice(resume ? 4 : 3), 10)}`);
       if (target) {
         target.classList.add("flash-target");
-        setTimeout(() => target.scrollIntoView({ behavior: "smooth", block: "center" }), 80);
+        if (resume) setTimeout(() => target.classList.remove("flash-target"), 2500);
+        setTimeout(() => target.scrollIntoView({ behavior: resume ? "auto" : "smooth", block: resume ? "start" : "center" }), 80);
       }
     }
 
@@ -877,6 +1038,7 @@
       refreshResumeReadingBar();
       refreshVerseHighlights();
       renderPlanBanner();
+      if (tracker) tracker.renderBanner();
     });
 
     const btnBannerClose = document.getElementById("btnBannerClose");
@@ -896,6 +1058,117 @@
         renderPlanBanner();
       });
     }
+  }
+
+  /**
+   * Prati čitanje otvorenog poglavlja: odluči je li ovo linearno čitanje (isto ili sljedeće poglavlje od
+   * kursora), otvori ili nastavi zapis u dnevniku i dok se skrola pamti redak na vrhu ekrana.
+   */
+  function initReadingTracker(url, label, prevUrl) {
+    const lin = state.linear;
+    if (!lin || (prevUrl && lin.url === prevUrl)) setLinear(url, label, 0);
+    const isLinearHere = () => Boolean(state.linear && state.linear.url === url);
+
+    const device = deviceLabel();
+    const nowMs = Date.now();
+    let entry = null;
+    for (let i = state.readingLog.length - 1; i >= Math.max(0, state.readingLog.length - 20); i--) {
+      const e = state.readingLog[i];
+      if (e.url === url && e.device === device && nowMs - Date.parse(e.ended_at) < LOG_CONTINUE_MS) {
+        entry = e;
+        break;
+      }
+    }
+    const nowIso = new Date(nowMs).toISOString();
+    entry = entry
+      ? { ...entry, ended_at: nowIso, updated_at: nowIso, linear: entry.linear || isLinearHere() }
+      : { id: newLogId(), url, label, verse: 0, started_at: nowIso, ended_at: nowIso, linear: isLinearHere(), device, updated_at: nowIso };
+    upsertLogEntry(entry);
+    saveReadingLog();
+    scheduleLogSync();
+
+    // Redak na vrhu: zadnji čiji početak je iznad crte čitanja. Crta je ista kao scroll-margin-top
+    // retka (6rem), pa nastavak preko #od-N ne pomiče zapamćeni redak unatrag.
+    const verseEls = Array.from(document.querySelectorAll("#chapterBody .verse-item"));
+    function topVerse() {
+      const line = parseFloat(getComputedStyle(document.documentElement).fontSize) * 6 + 6;
+      let v = 0;
+      for (const el of verseEls) {
+        if (el.getBoundingClientRect().top > line) break;
+        v = parseInt(el.getAttribute("data-verse"), 10) || v;
+      }
+      return v || (verseEls.length ? parseInt(verseEls[0].getAttribute("data-verse"), 10) || 0 : 0);
+    }
+
+    state.topVerse = topVerse;
+
+    function record(verse, scrolledAt = Infinity) {
+      const now = new Date().toISOString();
+      entry = { ...entry, verse, ended_at: now, updated_at: now, linear: entry.linear || isLinearHere() };
+      upsertLogEntry(entry);
+      // Kursor se dira samo kad se redak stvarno promijeni: otkucaj otvorene kartice na drugom
+      // uređaju ne smije novijim vremenom pregaziti kursor koji je u međuvremenu otišao dalje.
+      // Ručno „Ovdje sam stao" vrijedi dok se redak na vrhu stvarno ne pomakne: ni skrolanje započeto
+      // prije klika ni pomak rasporeda (npr. nakon sinkronizacije) ga ne smiju pregaziti.
+      const pin = state.linearPin;
+      const pinned = pin && (scrolledAt < pin.at || verse === pin.top);
+      if (isLinearHere() && state.linear.verse !== verse && !pinned) {
+        state.linear = { ...state.linear, verse, updated_at: now };
+        saveLinear();
+      }
+      saveReadingLog();
+    }
+
+    let scrollTimer = null;
+    window.addEventListener(
+      "scroll",
+      () => {
+        const scrolledAt = Date.now();
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(() => {
+          const v = topVerse();
+          if (v === entry.verse) return;
+          record(v, scrolledAt);
+          scheduleLogSync();
+        }, 700);
+      },
+      { passive: true }
+    );
+
+    // Dok je kartica otvorena, kraj zapisa prati stvarno vrijeme čitanja (bez slanja na server).
+    setInterval(() => {
+      if (document.visibilityState === "visible") record(entry.verse);
+    }, 30000);
+    const flush = () => {
+      record(entry.verse);
+      if (state.syncAuth) syncWithServer({ silent: true, keepalive: true });
+    };
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "hidden") flush();
+    });
+    window.addEventListener("pagehide", flush);
+
+    const banner = document.getElementById("linearReturnBanner");
+    function renderBanner() {
+      if (!banner) return;
+      const cur = state.linear;
+      const away = Boolean(cur) && cur.url !== url && !state.activePlanDayContext;
+      banner.hidden = !away;
+      if (!away) return;
+      document.getElementById("linearReturnLabel").textContent = placeLabel(cur.label || cur.url, cur.verse);
+      document.getElementById("linearReturnLink").setAttribute("href", resumeHref(cur.url, cur.verse));
+    }
+    const hereBtn = document.getElementById("btnLinearContinueHere");
+    if (hereBtn) {
+      hereBtn.addEventListener("click", () => {
+        setLinear(url, label, topVerse());
+        record(state.linear.verse);
+        renderBanner();
+        scheduleCloudSync();
+      });
+    }
+    renderBanner();
+    return { renderBanner };
   }
 
   /* ==================== POPOVER ACTIONS ==================== */
@@ -975,6 +1248,24 @@
       if (ctx.onRefresh) ctx.onRefresh();
       scheduleCloudSync();
     });
+
+    const stopHereBtn = document.getElementById("btnStoppedHere");
+    if (stopHereBtn) {
+      stopHereBtn.addEventListener("click", () => {
+        const ctx = state.selectedVerseContext;
+        if (!ctx) return;
+        const chLbl = ctx.chapter === 0 ? "Proslov" : ctx.chapter;
+        setLinear(`/${ctx.book_id}/${ctx.chapter}/`, `${ctx.book_title} (${ctx.book_abbr} ${chLbl})`, ctx.verse);
+        state.linearPin = { at: Date.now(), top: state.topVerse ? state.topVerse() : -1 };
+        scheduleCloudSync();
+        iconLabel(stopHereBtn, "check", "Zapamćeno");
+        setTimeout(() => {
+          iconLabel(stopHereBtn, "flag", "Ovdje sam stao");
+          popover.classList.remove("open");
+        }, 900);
+        triggerAllUiRefresh();
+      });
+    }
 
     document.getElementById("btnCopyVerse").addEventListener("click", () => {
       const ctx = state.selectedVerseContext;
@@ -1475,6 +1766,8 @@
         exported_at: new Date().toISOString(),
         progress: state.progress,
         bookmarks: state.bookmarks,
+        linear: state.linear,
+        reading_log: state.readingLog,
       };
       const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
       const a = document.createElement("a");
@@ -1498,6 +1791,16 @@
             state.bookmarks = data.bookmarks;
             localStorage.setItem("biblija_bookmarks", JSON.stringify(state.bookmarks));
           }
+          if (data.linear && data.linear.url && (!state.linear || data.linear.updated_at > state.linear.updated_at)) {
+            state.linear = data.linear;
+            saveLinear();
+          }
+          if (Array.isArray(data.reading_log)) {
+            const valid = data.reading_log.filter((e) => e && e.id && CHAPTER_URL_RE.test(String(e.url)));
+            mergeServerLog(valid);
+            for (const e of valid) state.logDirty.add(e.id);
+            saveReadingLog();
+          }
           renderBookmarks();
           scheduleCloudSync();
         } catch (_) {
@@ -1506,6 +1809,174 @@
       };
       reader.readAsText(file);
     });
+  }
+
+  /* ==================== DNEVNIK ČITANJA (/dnevnik/) ==================== */
+  function initReadingLogPage() {
+    const root = document.getElementById("readingLogRoot");
+    if (!root) return;
+
+    const books = JSON.parse(document.getElementById("linearPickerBooks").textContent || "[]");
+    const bookSel = document.getElementById("linearBookSelect");
+    const chSel = document.getElementById("linearChapterSelect");
+    const verseInput = document.getElementById("linearVerseInput");
+    let filter = "all";
+    let daysShown = 30;
+
+    const fmtTime = (iso) => new Date(iso).toLocaleTimeString("hr-HR", { hour: "2-digit", minute: "2-digit" });
+    const fmtDay = (iso) =>
+      new Date(iso).toLocaleDateString("hr-HR", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+    const dayKey = (iso) => {
+      const d = new Date(iso);
+      return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    };
+    const minutes = (e) => Math.max(0, Math.round((Date.parse(e.ended_at) - Date.parse(e.started_at)) / 60000));
+    function fmtDuration(min) {
+      if (min < 60) return `${min} min`;
+      const h = Math.floor(min / 60);
+      return `${h} h ${min % 60} min`;
+    }
+
+    bookSel.innerHTML = books.map((b, i) => `<option value="${i}">${escapeHtml(b.title)} (${escapeHtml(b.abbr)})</option>`).join("");
+    function fillChapters() {
+      const b = books[Number(bookSel.value)] || books[0];
+      chSel.innerHTML = b.chapters
+        .map(([ch, vc]) => `<option value="${ch}" data-vc="${vc}">${ch === 0 ? "Proslov" : ch}</option>`)
+        .join("");
+      fillVerseMax();
+    }
+    function fillVerseMax() {
+      const opt = chSel.options[chSel.selectedIndex];
+      verseInput.max = opt ? opt.getAttribute("data-vc") : "";
+    }
+    bookSel.addEventListener("change", fillChapters);
+    chSel.addEventListener("change", fillVerseMax);
+
+    // Izbornik kreće od trenutnog kursora
+    if (state.linear) {
+      const m = state.linear.url.match(/^\/([a-z0-9-]+)\/(\d+)\/$/);
+      const bi = m ? books.findIndex((b) => b.id === m[1]) : -1;
+      if (bi >= 0) {
+        bookSel.value = String(bi);
+        fillChapters();
+        chSel.value = m[2];
+        fillVerseMax();
+        if (state.linear.verse > 1) verseInput.value = String(state.linear.verse);
+      } else fillChapters();
+    } else fillChapters();
+
+    document.getElementById("btnSetLinear").addEventListener("click", () => {
+      const b = books[Number(bookSel.value)];
+      const ch = Number(chSel.value);
+      if (!b || !Number.isInteger(ch)) return;
+      const max = Number(verseInput.max) || 999;
+      const verse = Math.min(max, Math.max(0, parseInt(verseInput.value, 10) || 0));
+      setLinear(`/${b.id}/${ch}/`, `${b.title} (${b.abbr} ${ch === 0 ? "Proslov" : ch})`, verse);
+      scheduleCloudSync();
+      document.getElementById("linearSetDetails").open = false;
+      render();
+    });
+
+    document.querySelectorAll("[data-logfilter]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("[data-logfilter]").forEach((x) => x.classList.remove("active"));
+        btn.classList.add("active");
+        filter = btn.getAttribute("data-logfilter") || "all";
+        render();
+      });
+    });
+
+    document.getElementById("btnLogMore").addEventListener("click", () => {
+      daysShown += 30;
+      render();
+    });
+
+    function renderLinear() {
+      const lin = state.linear;
+      const link = document.getElementById("linearCurrentLink");
+      const lbl = document.getElementById("linearCurrentLabel");
+      const time = document.getElementById("linearCurrentTime");
+      if (!lin) {
+        lbl.textContent = "Još nije postavljeno";
+        time.textContent = "Otvori bilo koje poglavlje ili postavi mjesto ispod.";
+        link.style.display = "none";
+        return;
+      }
+      lbl.textContent = placeLabel(lin.label || lin.url, lin.verse);
+      time.textContent = lin.updated_at > "1971" ? `Zadnja promjena: ${new Date(lin.updated_at).toLocaleString("hr-HR")}` : "";
+      link.style.display = "";
+      link.setAttribute("href", resumeHref(lin.url, lin.verse));
+    }
+
+    function renderStats() {
+      const log = state.readingLog;
+      const days = new Set(log.map((e) => dayKey(e.started_at)));
+      const chapters = new Set(log.map((e) => e.url));
+      const total = log.reduce((sum, e) => sum + minutes(e), 0);
+      document.getElementById("logStats").innerHTML = `
+        <div class="log-stat"><span>Dana čitanja</span><strong>${days.size}</strong></div>
+        <div class="log-stat"><span>Različitih poglavlja</span><strong>${chapters.size}</strong></div>
+        <div class="log-stat"><span>Ukupno vrijeme</span><strong>${fmtDuration(total)}</strong></div>
+      `;
+    }
+
+    function render() {
+      renderLinear();
+      renderStats();
+      const list = document.getElementById("readingLogList");
+      const items = state.readingLog
+        .filter((e) => filter === "all" || (filter === "linear" ? e.linear : !e.linear))
+        .slice()
+        .sort((a, b) => String(b.started_at).localeCompare(String(a.started_at)));
+
+      if (!items.length) {
+        list.innerHTML = `<p class="log-empty">${
+          state.readingLog.length ? "Nema zapisa u odabranom filtru." : "Dnevnik je prazan. Svako poglavlje koje otvoriš ovdje će se zapisati."
+        }</p>`;
+        document.getElementById("btnLogMore").style.display = "none";
+        return;
+      }
+
+      const groups = [];
+      for (const e of items) {
+        const k = dayKey(e.started_at);
+        if (!groups.length || groups[groups.length - 1].key !== k) groups.push({ key: k, items: [] });
+        groups[groups.length - 1].items.push(e);
+      }
+
+      list.innerHTML = groups
+        .slice(0, daysShown)
+        .map((g) => {
+          const dayMin = g.items.reduce((sum, e) => sum + minutes(e), 0);
+          return `
+            <div class="log-day">
+              <div class="log-day-head"><strong>${escapeHtml(fmtDay(g.items[0].started_at))}</strong><span>${g.items.length} · ${fmtDuration(dayMin)}</span></div>
+              ${g.items
+                .map((e) => {
+                  const min = minutes(e);
+                  const range = min > 0 ? `${fmtTime(e.started_at)}–${fmtTime(e.ended_at)}` : fmtTime(e.started_at);
+                  const kind = e.linear
+                    ? `<span class="badge log-kind-linear">Redom</span>`
+                    : `<span class="badge">Skok</span>`;
+                  return `
+                    <a class="log-row" href="${escapeHtml(resumeHref(e.url, e.verse))}">
+                      <span class="log-row-time">${range}</span>
+                      <span class="log-row-main">
+                        <strong>${escapeHtml(placeLabel(e.label || e.url, e.verse))}</strong>
+                        <span class="log-row-meta">${kind}${min > 0 ? `<span>${fmtDuration(min)}</span>` : ""}${e.device ? `<span>${escapeHtml(e.device)}</span>` : ""}</span>
+                      </span>
+                      ${ic("chevron-right")}
+                    </a>`;
+                })
+                .join("")}
+            </div>`;
+        })
+        .join("");
+      document.getElementById("btnLogMore").style.display = groups.length > daysShown ? "" : "none";
+    }
+
+    state.uiRefreshCallbacks.push(render);
+    render();
   }
 
   /* ==================== GLOBAL INIT ==================== */
@@ -1580,6 +2051,7 @@
     initPlanPage();
     initSearchPage();
     initNotesPage();
+    initReadingLogPage();
     initSyncModal();
   });
 })();

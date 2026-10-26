@@ -77,6 +77,12 @@ enum ChapterBlock: Identifiable {
         }
     }
 
+    /// Redak bloka na vrhu ekrana iz njegova id-a („p12", „v12", „h12-0", „r12-0"); 0 za zaglavlje.
+    static func verse(fromId id: String?) -> Int {
+        guard let id, let first = id.first, "pvhr".contains(first) else { return 0 }
+        return Int(id.dropFirst().prefix { $0.isNumber }) ?? 0
+    }
+
     var verseNumbers: [Int] {
         switch self {
         case .prose(_, let verses): verses.map(\.verse)
@@ -126,11 +132,16 @@ struct ChapterScrollView: View {
 
     @State private var verses: [Verse] = []
     @State private var blocks: [ChapterBlock] = []
+    @State private var topBlockId: String?
 
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 0) {
+                    if model.activeDay == nil, let cursor = model.linear, !model.isLinear(ref) {
+                        LinearReturnBanner(cursor: cursor, current: ref, palette: palette)
+                            .padding(.bottom, 12)
+                    }
                     if let day = model.activeDay {
                         PlanDayBanner(context: day, current: ref, palette: palette)
                             .padding(.bottom, 12)
@@ -145,10 +156,15 @@ struct ChapterScrollView: View {
                     ChapterFooter(ref: ref, palette: palette)
                         .padding(.top, 28)
                 }
+                .scrollTargetLayout()
                 .padding(.horizontal, 20)
                 .padding(.vertical, 12)
                 .frame(maxWidth: 720, alignment: .leading)
                 .frame(maxWidth: .infinity)
+            }
+            .scrollPosition(id: $topBlockId, anchor: .top)
+            .onChange(of: topBlockId) { _, id in
+                model.didScroll(to: ChapterBlock.verse(fromId: id))
             }
             .task(id: TaskKey(ref: ref, mode: model.readingMode)) {
                 verses = model.verses(ref)
@@ -307,6 +323,45 @@ struct ChapterStrip: View {
             .onAppear { proxy.scrollTo(current, anchor: .center) }
         }
         .frame(height: 38)
+    }
+}
+
+/// Čitanje izvan reda: povratak na mjesto linearnog čitanja ili pomicanje kursora ovamo (traka na webu).
+struct LinearReturnBanner: View {
+    @Environment(AppModel.self) private var model
+    let cursor: LinearCursor
+    let current: ChapterRef
+    let palette: Palette
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Label("ČITAŠ IZVAN REDA", systemImage: "shoeprints.fill")
+                .font(.caption2.weight(.bold))
+                .foregroundStyle(palette.accent)
+            (Text("Redom si stigao do ") + Text(placeLabel(cursor.label, cursor.verse)).bold())
+                .font(.subheadline)
+            HStack(spacing: 8) {
+                Button {
+                    model.openLinear()
+                } label: {
+                    Label("Vrati se", systemImage: "arrow.uturn.left")
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(palette.accent)
+                Button {
+                    model.continueLinearHere(current)
+                } label: {
+                    Label("Nastavi redom odavde", systemImage: "forward.end")
+                }
+                .buttonStyle(.bordered)
+            }
+            .font(.subheadline)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(12)
+        .foregroundStyle(palette.text)
+        .background(palette.accent.opacity(0.08))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
 

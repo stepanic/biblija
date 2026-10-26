@@ -44,6 +44,61 @@ def hash_pin(user_key: str, pin: str) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
+EPOCH = "1970-01-01T00:00:00.000Z"
+MAX_LOG_PER_REQUEST = 500
+CHAPTER_URL = re.compile(r"^/[a-z0-9-]{1,60}/\d{1,3}/$")
+ISO_TS = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,3})?Z$")
+LOG_ID = re.compile(r"^[A-Za-z0-9_-]{8,64}$")
+
+
+def iso_now() -> str:
+    """Isti oblik kao `new Date().toISOString()` u workeru, da se kursori mogu uspoređivati kao stringovi."""
+    return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z"
+
+
+def to_verse(v) -> int:
+    try:
+        n = int(float(v or 0))
+    except (TypeError, ValueError):
+        return 0
+    return n if 0 < n < 1000 else 0
+
+
+def parse_linear(raw):
+    if not isinstance(raw, dict):
+        return None
+    url = str(raw.get("url") or "")
+    updated_at = str(raw.get("updated_at") or "")
+    if not CHAPTER_URL.match(url) or not ISO_TS.match(updated_at):
+        return None
+    return {"url": url, "label": str(raw.get("label") or "")[:120], "verse": to_verse(raw.get("verse")), "updated_at": updated_at}
+
+
+def parse_log_entry(raw):
+    if not isinstance(raw, dict):
+        return None
+    eid = str(raw.get("id") or "")
+    url = str(raw.get("url") or "")
+    started_at = str(raw.get("started_at") or "")
+    ended_at = str(raw.get("ended_at") or started_at)
+    updated_at = str(raw.get("updated_at") or "")
+    if not LOG_ID.match(eid) or not CHAPTER_URL.match(url):
+        return None
+    if not (ISO_TS.match(started_at) and ISO_TS.match(ended_at) and ISO_TS.match(updated_at)):
+        return None
+    return {
+        "id": eid,
+        "url": url,
+        "label": str(raw.get("label") or "")[:120],
+        "verse": to_verse(raw.get("verse")),
+        "started_at": started_at,
+        "ended_at": max(ended_at, started_at),
+        "linear": bool(raw.get("linear")),
+        "device": str(raw.get("device") or "")[:40],
+        "updated_at": updated_at,
+    }
+
+
 def get_db():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
@@ -94,6 +149,31 @@ def ensure_sync_tables():
         );
 
         CREATE INDEX IF NOT EXISTS idx_sync_bookmarks_user ON sync_bookmarks(user_key);
+
+        CREATE TABLE IF NOT EXISTS sync_reading_log (
+            user_key TEXT NOT NULL,
+            id TEXT NOT NULL,
+            url TEXT NOT NULL,
+            label TEXT NOT NULL DEFAULT '',
+            verse INTEGER NOT NULL DEFAULT 0,
+            started_at TEXT NOT NULL,
+            ended_at TEXT NOT NULL,
+            linear INTEGER NOT NULL DEFAULT 0,
+            device TEXT NOT NULL DEFAULT '',
+            updated_at TEXT NOT NULL,
+            received_at TEXT NOT NULL,
+            PRIMARY KEY (user_key, id)
+        );
+
+        CREATE INDEX IF NOT EXISTS idx_sync_reading_log_received ON sync_reading_log(user_key, received_at);
+
+        CREATE TABLE IF NOT EXISTS sync_linear (
+            user_key TEXT PRIMARY KEY,
+            url TEXT NOT NULL,
+            label TEXT NOT NULL DEFAULT '',
+            verse INTEGER NOT NULL DEFAULT 0,
+            updated_at TEXT NOT NULL
+        );
     """)
     conn.commit()
     conn.close()
@@ -432,6 +512,50 @@ class BiblijaRequestHandler(SimpleHTTPRequestHandler):
                         ),
                     )
 
+            # 4. Linearni kursor (LWW po updated_at)
+            lin_row = conn.execute(
+                "SELECT url, label, verse, updated_at FROM sync_linear WHERE user_key = ?", (user_key,)
+            ).fetchone()
+            merged_linear = dict(lin_row) if lin_row else None
+            c_linear = parse_linear(body.get("linear"))
+            if c_linear and (not merged_linear or c_linear["updated_at"] > merged_linear["updated_at"]):
+                merged_linear = c_linear
+                conn.execute(
+                    """INSERT INTO sync_linear (user_key, url, label, verse, updated_at) VALUES (?, ?, ?, ?, ?)
+                       ON CONFLICT(user_key) DO UPDATE SET
+                           url = excluded.url, label = excluded.label, verse = excluded.verse, updated_at = excluded.updated_at""",
+                    (user_key, c_linear["url"], c_linear["label"], c_linear["verse"], c_linear["updated_at"]),
+                )
+
+            # 5. Dnevnik čitanja (LWW po id-u, inkrementalno po log_since / log_cursor)
+            received_at = iso_now()
+            c_log = body.get("log") if isinstance(body.get("log"), list) else []
+            for raw in c_log[:MAX_LOG_PER_REQUEST]:
+                e = parse_log_entry(raw)
+                if not e:
+                    continue
+                conn.execute(
+                    """INSERT INTO sync_reading_log (
+                           user_key, id, url, label, verse, started_at, ended_at, linear, device, updated_at, received_at
+                       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                       ON CONFLICT(user_key, id) DO UPDATE SET
+                           url = excluded.url, label = excluded.label, verse = excluded.verse,
+                           started_at = excluded.started_at, ended_at = excluded.ended_at, linear = excluded.linear,
+                           device = excluded.device, updated_at = excluded.updated_at, received_at = excluded.received_at
+                       WHERE excluded.updated_at > sync_reading_log.updated_at""",
+                    (user_key, e["id"], e["url"], e["label"], e["verse"], e["started_at"], e["ended_at"],
+                     1 if e["linear"] else 0, e["device"], e["updated_at"], received_at),
+                )
+
+            log_since = str(body.get("log_since") or "")
+            if not ISO_TS.match(log_since):
+                log_since = EPOCH
+            log_rows = conn.execute(
+                """SELECT id, url, label, verse, started_at, ended_at, linear, device, updated_at
+                   FROM sync_reading_log WHERE user_key = ? AND received_at >= ? ORDER BY started_at""",
+                (user_key, log_since),
+            ).fetchall()
+
             conn.commit()
             conn.close()
 
@@ -443,6 +567,9 @@ class BiblijaRequestHandler(SimpleHTTPRequestHandler):
                 "meta": merged_meta,
                 "progress": merged_progress,
                 "bookmarks": bm_map,
+                "linear": merged_linear,
+                "log": [{**dict(r), "linear": bool(r["linear"])} for r in log_rows],
+                "log_cursor": received_at,
             })
 
         return self.send_json({"error": "Not found"}, status=404)

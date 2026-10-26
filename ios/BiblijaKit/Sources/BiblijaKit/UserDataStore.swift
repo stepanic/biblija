@@ -60,6 +60,62 @@ public extension UserData {
         meta.lastUpdatedAt = now
     }
 
+    mutating func setLinear(url: String, label: String, verse: Int, at now: String = Timestamp.now()) {
+        linear = LinearCursor(url: url, label: label, verse: verse, updatedAt: now)
+    }
+
+    mutating func upsertLog(_ entry: ReadingLogEntry) {
+        readingLog[entry.id] = entry
+        logDirty.insert(entry.id)
+    }
+
+    /// Otvoreno poglavlje, kao `initReadingTracker` u public/astro-client.js: kursor se pomiče ako je ovo
+    /// isto ili sljedeće poglavlje (ili kursora još nema), a zapis istog poglavlja s ovog uređaja mlađi
+    /// od `continueWithin` se nastavlja umjesto novog. Vraća id zapisa.
+    @discardableResult
+    mutating func beginVisit(
+        url: String, label: String, previousUrl: String?, device: String,
+        newId: String = UUID().uuidString.lowercased(), now: Date = Date(), continueWithin: TimeInterval = 30 * 60
+    ) -> String {
+        let nowIso = Timestamp.now(now)
+        if linear == nil || (previousUrl != nil && linear?.url == previousUrl) {
+            setLinear(url: url, label: label, verse: 0, at: nowIso)
+        }
+        let isLinear = linear?.url == url
+        if var recent = readingLog.values
+            .filter({ $0.url == url && $0.device == device })
+            .max(by: { $0.endedAt < $1.endedAt }),
+           let ended = Timestamp.parse(recent.endedAt), now.timeIntervalSince(ended) < continueWithin {
+            recent.endedAt = nowIso
+            recent.updatedAt = nowIso
+            recent.linear = recent.linear || isLinear
+            upsertLog(recent)
+            return recent.id
+        }
+        upsertLog(ReadingLogEntry(
+            id: newId, url: url, label: label, verse: 0, startedAt: nowIso, endedAt: nowIso,
+            linear: isLinear, device: device, updatedAt: nowIso
+        ))
+        return newId
+    }
+
+    /// Redak na vrhu se promijenio (ili samo vrijeme, ako je `verse` isti). Kursor prati redak samo dok je
+    /// na ovom poglavlju i samo kad se redak stvarno promijeni, kao na webu.
+    mutating func updateVisit(id: String, verse: Int, at now: String = Timestamp.now(), moveLinear: Bool = true) {
+        guard var entry = readingLog[id] else { return }
+        let isLinear = linear?.url == entry.url
+        entry.verse = verse
+        entry.endedAt = max(now, entry.startedAt)
+        entry.updatedAt = now
+        entry.linear = entry.linear || isLinear
+        upsertLog(entry)
+        if moveLinear, isLinear, var cursor = linear, cursor.verse != verse {
+            cursor.verse = verse
+            cursor.updatedAt = now
+            linear = cursor
+        }
+    }
+
     mutating func setLastRead(url: String, label: String, at now: String = Timestamp.now()) {
         guard meta.lastUrl != url else { return }
         meta.lastUrl = url

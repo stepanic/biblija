@@ -212,10 +212,86 @@ final class AppModel {
         open(ChapterRef(bookOrder: reading.bookOrder, chapter: reading.chapterStart), keepDay: true)
     }
 
-    /// Čitač javlja da je poglavlje prikazano: pamti se za „nastavi čitanje" na svim uređajima.
+    /// Čitač javlja da je poglavlje prikazano: pamti se za „nastavi čitanje" na svim uređajima,
+    /// otvara se zapis u dnevniku i, ako je ovo isto ili sljedeće poglavlje, pomiče linearni kursor.
     func didShow(_ ref: ChapterRef) {
         guard let book = book(order: ref.bookOrder) else { return }
-        mutate { $0.setLastRead(url: WebPath.chapter(bookSlug: book.slug, chapter: ref.chapter), label: WebPath.label(book: book, chapter: ref.chapter)) }
+        let url = WebPath.chapter(bookSlug: book.slug, chapter: ref.chapter)
+        let label = WebPath.label(book: book, chapter: ref.chapter)
+        let previousUrl = neighbour(of: ref, offset: -1).flatMap { prev in
+            self.book(order: prev.bookOrder).map { WebPath.chapter(bookSlug: $0.slug, chapter: prev.chapter) }
+        }
+        visitTimer?.cancel()
+        linearPin = nil
+        var visitId = ""
+        mutate {
+            $0.setLastRead(url: url, label: label)
+            visitId = $0.beginVisit(url: url, label: label, previousUrl: previousUrl, device: Self.deviceLabel)
+        }
+        currentVisit = (id: visitId, verse: 0)
+    }
+
+    // MARK: - Dnevnik čitanja i linearno čitanje
+
+    private static let deviceLabel = UIDevice.current.userInterfaceIdiom == .pad ? "iPad" : "iPhone"
+    /// Otvoreni zapis dnevnika i redak na vrhu ekrana
+    @ObservationIgnored private var currentVisit: (id: String, verse: Int)?
+    @ObservationIgnored private var visitTimer: Task<Void, Never>?
+    /// Ručno „Ovdje sam stao": kursor ne prati skrolanje dok se redak na vrhu ne pomakne s `top`.
+    @ObservationIgnored private var linearPin: (top: Int, verse: Int)?
+
+    var linear: LinearCursor? { userData.linear }
+    var linearRef: ChapterRef? { userData.linear.flatMap { chapterRef(fromWebPath: $0.url) } }
+    var readingLog: [ReadingLogEntry] { userData.readingLogNewestFirst }
+
+    func isLinear(_ ref: ChapterRef) -> Bool { linearRef == ref }
+
+    /// Čitač javlja redak na vrhu ekrana; zapisuje se kad se skrolanje smiri.
+    func didScroll(to verse: Int) {
+        guard var visit = currentVisit, visit.verse != verse else { return }
+        visit.verse = verse
+        currentVisit = visit
+        visitTimer?.cancel()
+        visitTimer = Task { [weak self] in
+            try? await Task.sleep(for: .milliseconds(700))
+            guard !Task.isCancelled, let self else { return }
+            let keepPin = self.linearPin.map { verse == $0.top } ?? false
+            if !keepPin { self.linearPin = nil }
+            self.mutate(syncAfter: .seconds(4)) { $0.updateVisit(id: visit.id, verse: verse, moveLinear: !keepPin) }
+        }
+    }
+
+    /// Aplikacija ide u pozadinu: kraj zapisa = sada, i odmah sync.
+    private func closeVisit() {
+        guard let visit = currentVisit else { return }
+        visitTimer?.cancel()
+        mutate(syncAfter: .milliseconds(100)) { $0.updateVisit(id: visit.id, verse: visit.verse, moveLinear: self.linearPin == nil) }
+    }
+
+    func openLinear() {
+        guard let cursor = userData.linear, let ref = linearRef else { return }
+        open(ref, verse: cursor.verse > 1 ? cursor.verse : nil)
+    }
+
+    func open(_ entry: ReadingLogEntry) {
+        guard let ref = chapterRef(fromWebPath: entry.url) else { return }
+        open(ref, verse: entry.verse > 1 ? entry.verse : nil)
+    }
+
+    /// „Ovdje sam stao" iz izbornika retka.
+    func setLinear(_ ref: ChapterRef, verse: Int) {
+        guard let book = book(order: ref.bookOrder) else { return }
+        mutate { $0.setLinear(url: WebPath.chapter(bookSlug: book.slug, chapter: ref.chapter), label: WebPath.label(book: book, chapter: ref.chapter), verse: verse) }
+        if ref == readerTarget.chapter { linearPin = (top: currentVisit?.verse ?? 0, verse: verse) }
+    }
+
+    /// „Nastavi redom odavde": kursor na otvoreno poglavlje i redak na vrhu.
+    func continueLinearHere(_ ref: ChapterRef) {
+        setLinear(ref, verse: currentVisit?.verse ?? 0)
+        linearPin = nil
+        if let visit = currentVisit {
+            mutate { $0.updateVisit(id: visit.id, verse: visit.verse) }
+        }
     }
 
     // MARK: - Korisničko stanje
@@ -252,13 +328,13 @@ final class AppModel {
         mutate { $0.removeBookmark(key: key) }
     }
 
-    private func mutate(_ change: (inout UserData) -> Void) {
+    private func mutate(syncAfter delay: Duration = .milliseconds(800), _ change: (inout UserData) -> Void) {
         var next = userData
         change(&next)
         guard next != userData else { return }
         userData = next
         persist()
-        scheduleSync()
+        scheduleSync(after: delay)
     }
 
     private func persist() {
@@ -343,6 +419,7 @@ final class AppModel {
 
     /// Iz BiblijaApp: realtime veza postoji samo dok je aplikacija aktivna (kao `visibilitychange` na webu).
     func setActive(_ active: Bool) {
+        if isActive, !active { closeVisit() }
         isActive = active
         updateLive()
     }
@@ -386,8 +463,15 @@ final class AppModel {
             let result = try await client.sync(credentials, data: userData, clientId: clientId)
             guard self.credentials?.userKey == credentials.userKey else { return }
             // Izmjene napravljene dok je zahtjev bio u letu su novije i ostaju.
-            let merged = LWW.merge(server: result.data, client: userData)
-            let hasNewerLocal = merged != result.data
+            var merged = LWW.merge(server: result.data, client: userData)
+            for (id, version) in result.acknowledgedLog where merged.readingLog[id].map({ $0.updatedAt == version }) ?? true {
+                merged.logDirty.remove(id)
+            }
+            // Server vraća samo novi dio dnevnika, pa se uspoređuje ono što vraća cijelo.
+            let supportsLog = !result.data.logCursor.isEmpty
+            let hasNewerLocal = merged.meta != result.data.meta || merged.progress != result.data.progress
+                || merged.bookmarks != result.data.bookmarks
+                || (supportsLog && (merged.linear != result.data.linear || (!merged.logDirty.isEmpty && !result.acknowledgedLog.isEmpty)))
             if merged != userData {
                 let lastUrlChanged = merged.meta.lastUrl != userData.meta.lastUrl
                 userData = merged

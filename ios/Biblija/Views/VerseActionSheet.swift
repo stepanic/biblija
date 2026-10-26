@@ -61,6 +61,12 @@ struct VerseActionSheet: View {
                 }
                 Section {
                     Button {
+                        model.setLinear(ref, verse: verse.verse)
+                        dismiss()
+                    } label: {
+                        Label("Ovdje sam stao", systemImage: "flag")
+                    }
+                    Button {
                         UIPasteboard.general.string = quote
                         copied = true
                     } label: {

@@ -47,7 +47,21 @@ public struct SyncResult: Sendable, Equatable {
     public let displayName: String
     /// Soba za realtime obavijesti (`/api/live`), nil ako je poslužitelj nema.
     public let liveRoom: String?
+    /// Poslani zapisi dnevnika (id → updated_at); potvrđeni su ako se lokalno nisu mijenjali u međuvremenu.
+    /// Prazno ako poslužitelj ne podržava dnevnik (nema `log_cursor`), pa zapisi ostaju za idući put.
+    public let acknowledgedLog: [String: String]
+
+    public init(data: UserData, syncedAt: String, displayName: String, liveRoom: String?, acknowledgedLog: [String: String] = [:]) {
+        self.data = data
+        self.syncedAt = syncedAt
+        self.displayName = displayName
+        self.liveRoom = liveRoom
+        self.acknowledgedLog = acknowledgedLog
+    }
 }
+
+/// Najviše zapisa dnevnika po zahtjevu (isto ograničenje kao MAX_LOG_PER_REQUEST u workeru).
+public let maxLogPerSync = 500
 
 /// HTTP ugovor iz src/worker.ts: POST /api/auth, /api/sync, /api/account/delete.
 public struct SyncClient: Sendable {
@@ -69,13 +83,25 @@ public struct SyncClient: Sendable {
 
     /// `clientId` je id ovog uređaja; poslužitelj mu ne vraća realtime obavijest o vlastitoj promjeni.
     public func sync(_ credentials: SyncCredentials, data: UserData, clientId: String? = nil) async throws -> SyncResult {
-        let body = SyncRequest(userKey: credentials.userKey, pin: credentials.pin, meta: data.meta, progress: data.progress, bookmarks: data.bookmarks, clientId: clientId)
+        let sentLog = data.logDirty.compactMap { data.readingLog[$0] }
+            .sorted { $0.startedAt < $1.startedAt }
+            .prefix(maxLogPerSync)
+        let body = SyncRequest(
+            userKey: credentials.userKey, pin: credentials.pin, meta: data.meta, progress: data.progress, bookmarks: data.bookmarks,
+            linear: data.linear, log: Array(sentLog), logSince: data.logCursor, clientId: clientId
+        )
         let res: SyncResponse = try await post("api/sync", body)
+        let supportsLog = res.logCursor != nil
         return SyncResult(
-            data: UserData(meta: res.meta, progress: res.progress, bookmarks: res.bookmarks),
+            data: UserData(
+                meta: res.meta, progress: res.progress, bookmarks: res.bookmarks,
+                linear: res.linear, readingLog: Dictionary((res.log ?? []).map { ($0.id, $0) }, uniquingKeysWith: { $1 }),
+                logCursor: res.logCursor ?? ""
+            ),
             syncedAt: res.syncedAt ?? Timestamp.now(),
             displayName: res.displayName ?? credentials.displayName,
-            liveRoom: res.liveRoom
+            liveRoom: res.liveRoom,
+            acknowledgedLog: supportsLog ? Dictionary(sentLog.map { ($0.id, $0.updatedAt) }, uniquingKeysWith: { $1 }) : [:]
         )
     }
 
@@ -127,8 +153,13 @@ private struct SyncRequest: Encodable {
     let meta: SyncMeta
     let progress: ProgressMap
     let bookmarks: BookmarkMap
+    let linear: LinearCursor?
+    let log: [ReadingLogEntry]
+    let logSince: String
     let clientId: String?
-    enum CodingKeys: String, CodingKey { case userKey = "user_key", pin, meta, progress, bookmarks, clientId = "client_id" }
+    enum CodingKeys: String, CodingKey {
+        case userKey = "user_key", pin, meta, progress, bookmarks, linear, log, logSince = "log_since", clientId = "client_id"
+    }
 }
 
 private struct ErrorEnvelope: Decodable {
@@ -152,8 +183,12 @@ private struct SyncResponse: Decodable {
     let meta: SyncMeta
     let progress: ProgressMap
     let bookmarks: BookmarkMap
+    let linear: LinearCursor?
+    let log: [ReadingLogEntry]?
+    let logCursor: String?
     enum CodingKeys: String, CodingKey {
         case displayName = "display_name", syncedAt = "synced_at", liveRoom = "live_room", meta, progress, bookmarks
+        case linear, log, logCursor = "log_cursor"
     }
 }
 

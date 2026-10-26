@@ -12,7 +12,29 @@ object Lww {
         meta = mergeMeta(server.meta, client.meta),
         progress = mergeProgress(server.progress, client.progress),
         bookmarks = mergeBookmarks(server.bookmarks, client.bookmarks),
+        linear = mergeLinear(server.linear, client.linear),
+        readingLog = mergeLog(server.readingLog, client.readingLog),
+        logDirty = client.logDirty,
+        logCursor = server.logCursor.ifEmpty { client.logCursor },
     )
+
+    fun mergeLinear(server: LinearCursor?, client: LinearCursor?): LinearCursor? = when {
+        client == null -> server
+        server == null -> client
+        client.updatedAt > server.updatedAt -> client
+        else -> server
+    }
+
+    /** Server vraća samo zapise od `log_cursor`, pa se spaja u lokalni dnevnik, ne obrnuto. */
+    fun mergeLog(server: Map<String, ReadingLogEntry>, client: Map<String, ReadingLogEntry>): Map<String, ReadingLogEntry> {
+        val merged = client.toMutableMap()
+        for ((id, entry) in server) {
+            val local = merged[id]
+            if (local != null && local.updatedAt > entry.updatedAt) continue
+            merged[id] = entry
+        }
+        return merged
+    }
 
     fun mergeMeta(server: SyncMeta, client: SyncMeta): SyncMeta {
         if (client.lastUpdatedAt <= server.lastUpdatedAt) return server

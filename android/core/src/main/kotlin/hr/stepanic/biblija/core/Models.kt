@@ -162,6 +162,33 @@ data class SyncMeta(
     }
 }
 
+/** Mjesto do kojeg se čita redom (`linear` u /api/sync). Skokovi na druga poglavlja ga ne pomiču. */
+@Serializable
+data class LinearCursor(
+    /** Web URL poglavlja, npr. `/izaija/12/` */
+    val url: String,
+    val label: String = "",
+    /** Redak na vrhu ekrana; 0 = početak poglavlja */
+    val verse: Int = 0,
+    @SerialName("updated_at") val updatedAt: String = Timestamp.EPOCH,
+)
+
+/** Jedan posjet poglavlju u dnevniku čitanja (`log` u /api/sync), LWW po [id]. */
+@Serializable
+data class ReadingLogEntry(
+    val id: String,
+    val url: String,
+    val label: String = "",
+    /** Redak do kojeg se stiglo (vrh ekrana pri zadnjem pomaku) */
+    val verse: Int = 0,
+    @SerialName("started_at") val startedAt: String,
+    @SerialName("ended_at") val endedAt: String = startedAt,
+    /** Je li posjet bio dio linearnog čitanja */
+    val linear: Boolean = false,
+    val device: String = "",
+    @SerialName("updated_at") val updatedAt: String = Timestamp.EPOCH,
+)
+
 /** plan_id → dan (string, zbog JSON-a) → napredak */
 typealias ProgressMap = Map<String, Map<String, DayProgress>>
 
@@ -173,7 +200,69 @@ data class UserData(
     val meta: SyncMeta = SyncMeta(),
     val progress: ProgressMap = emptyMap(),
     val bookmarks: BookmarkMap = emptyMap(),
+    val linear: LinearCursor? = null,
+    /** id → zapis dnevnika čitanja */
+    @SerialName("reading_log") val readingLog: Map<String, ReadingLogEntry> = emptyMap(),
+    /** Zapisi dnevnika koje server još nije potvrdio */
+    @SerialName("log_dirty") val logDirty: Set<String> = emptySet(),
+    /** `log_cursor` zadnjeg synca; server od njega vraća samo nove zapise */
+    @SerialName("log_cursor") val logCursor: String = "",
 ) {
+    /** Dnevnik od najnovijeg prema starijem. */
+    val readingLogNewestFirst: List<ReadingLogEntry>
+        get() = readingLog.values.sortedByDescending { it.startedAt }
+
+    fun withLinear(url: String, label: String, verse: Int, now: String = Timestamp.now()) =
+        copy(linear = LinearCursor(url, label, verse, now))
+
+    fun withLog(entry: ReadingLogEntry) =
+        copy(readingLog = readingLog + (entry.id to entry), logDirty = logDirty + entry.id)
+
+    /**
+     * Otvoreno poglavlje, kao `initReadingTracker` u public/astro-client.js: kursor se pomiče ako je ovo
+     * isto ili sljedeće poglavlje (ili kursora još nema), a zapis istog poglavlja s ovog uređaja mlađi od
+     * [continueWithinMs] se nastavlja umjesto novog. Vraća novo stanje i id zapisa.
+     */
+    fun beginVisit(
+        url: String,
+        label: String,
+        previousUrl: String?,
+        device: String,
+        newId: String = java.util.UUID.randomUUID().toString(),
+        now: Instant = Instant.now(),
+        continueWithinMs: Long = 30 * 60 * 1000L,
+    ): Pair<UserData, String> {
+        val nowIso = Timestamp.now(now)
+        var next = this
+        if (linear == null || (previousUrl != null && linear.url == previousUrl)) {
+            next = next.withLinear(url, label, 0, nowIso)
+        }
+        val isLinear = next.linear?.url == url
+        val recent = readingLog.values.filter { it.url == url && it.device == device }.maxByOrNull { it.endedAt }
+        val recentEnd = recent?.let { Timestamp.parse(it.endedAt) }
+        if (recent != null && recentEnd != null && now.toEpochMilli() - recentEnd.toEpochMilli() < continueWithinMs) {
+            return next.withLog(recent.copy(endedAt = nowIso, updatedAt = nowIso, linear = recent.linear || isLinear)) to recent.id
+        }
+        val entry = ReadingLogEntry(newId, url, label, 0, nowIso, nowIso, isLinear, device, nowIso)
+        return next.withLog(entry) to newId
+    }
+
+    /**
+     * Redak na vrhu se promijenio (ili samo vrijeme, ako je [verse] isti). Kursor prati redak samo dok je
+     * na ovom poglavlju i samo kad se redak stvarno promijeni, kao na webu.
+     */
+    fun withVisitUpdate(id: String, verse: Int, now: String = Timestamp.now(), moveLinear: Boolean = true): UserData {
+        val entry = readingLog[id] ?: return this
+        val isLinear = linear?.url == entry.url
+        var next = withLog(
+            entry.copy(verse = verse, endedAt = maxOf(now, entry.startedAt), updatedAt = now, linear = entry.linear || isLinear),
+        )
+        if (moveLinear && isLinear && linear != null && linear.verse != verse) {
+            next = next.copy(linear = linear.copy(verse = verse, updatedAt = now))
+        }
+        return next
+    }
+
     fun isDayDone(planId: String, day: Int): Boolean = progress[planId]?.get(day.toString())?.completed ?: false
 
     fun activeBookmark(key: String): Bookmark? = bookmarks[key]?.takeUnless { it.deleted }
@@ -219,6 +308,8 @@ object Timestamp {
 
     /** ISO-8601 UTC s milisekundama, isto kao `new Date().toISOString()`; LWW ga uspoređuje kao string. */
     fun now(instant: Instant = Instant.now()): String = format.format(instant)
+
+    fun parse(iso: String): Instant? = runCatching { Instant.parse(iso) }.getOrNull()
 }
 
 /** Web URL-ovi `/<book-id>/<chapter>/`. */

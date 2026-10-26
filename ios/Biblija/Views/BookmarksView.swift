@@ -64,6 +64,15 @@ struct BookmarksView: View {
                 .background(.bar)
             }
             .navigationTitle("Oznake")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink {
+                        ReadingLogView()
+                    } label: {
+                        Label("Dnevnik čitanja", systemImage: "clock.arrow.circlepath")
+                    }
+                }
+            }
         }
     }
 

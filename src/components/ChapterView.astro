@@ -120,6 +120,18 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
       </div>
     </div>
 
+    <!-- Čitanje izvan reda: povratak na linearni kursor ili pomicanje kursora ovamo -->
+    <div id="linearReturnBanner" class="linear-return-banner" hidden>
+      <div class="linear-return-info">
+        <span class="linear-return-kicker"><Icon name="footprints" />Čitaš izvan reda</span>
+        <span class="linear-return-text">Redom si stigao do <strong id="linearReturnLabel"></strong></span>
+      </div>
+      <div class="linear-return-actions">
+        <a id="linearReturnLink" href="/" class="icon-btn btn-accent" style="text-decoration:none;"><Icon name="corner-up-left" />Vrati se</a>
+        <button type="button" class="icon-btn" id="btnLinearContinueHere" title="Od sada čitaj redom od ovog poglavlja"><Icon name="step-forward" />Nastavi redom odavde</button>
+      </div>
+    </div>
+
     <!-- Active Biblija 365 Day Banner inside Reader -->
     <div id="readerPlanBanner" class="active-plan-banner" style="display:none;">
       <div class="active-plan-banner-info">

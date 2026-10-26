@@ -1,4 +1,4 @@
-const CACHE_NAME = "biblija365-astro-v5";
+const CACHE_NAME = "biblija365-astro-v6";
 const PRECACHE_ASSETS = [
   "/",
   "/plan/",

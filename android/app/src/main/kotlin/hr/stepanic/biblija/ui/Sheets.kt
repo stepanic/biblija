@@ -29,6 +29,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.outlined.BookmarkRemove
 import androidx.compose.material.icons.outlined.ContentCopy
+import androidx.compose.material.icons.outlined.Flag
 import androidx.compose.material.icons.outlined.Share
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -238,6 +239,11 @@ fun VerseSheet(vm: AppViewModel, ref: ChapterRef, verse: Verse, onDismiss: () ->
                     Spacer(Modifier.width(6.dp))
                     Text("Podijeli")
                 }
+            }
+            TextButton(onClick = { vm.setLinear(ref, verse.verse); onDismiss() }) {
+                Icon(Icons.Outlined.Flag, contentDescription = null)
+                Spacer(Modifier.width(6.dp))
+                Text("Ovdje sam stao")
             }
             if (existing != null) {
                 TextButton(onClick = { vm.removeBookmark(existing.key); onDismiss() }) {

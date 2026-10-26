@@ -605,7 +605,7 @@ kbd {
     right: 0;
     z-index: 130;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     background: var(--bg-glass);
     backdrop-filter: saturate(1.6) blur(18px);
     -webkit-backdrop-filter: saturate(1.6) blur(18px);
@@ -632,7 +632,7 @@ kbd {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 3.5rem;
+    width: 3.1rem;
     height: 1.95rem;
     border-radius: 999px;
     transition: background 0.2s var(--ease), color 0.2s var(--ease);
@@ -1044,6 +1044,52 @@ kbd {
   }
 }
 
+.linear-return-banner {
+  background: var(--bg-elevated);
+  border: 1px solid var(--accent-border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 0.95rem;
+  margin-bottom: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.linear-return-banner[hidden] {
+  display: none;
+}
+
+.linear-return-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.linear-return-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.linear-return-text {
+  font-size: 0.95rem;
+}
+
+.linear-return-actions {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
 .active-plan-banner {
   background: var(--accent-soft);
   border: 1px solid var(--accent-border);
@@ -1324,6 +1370,11 @@ html[data-reading-mode="verses"] .verse-item {
 .verse-item.hl-green { background: var(--hl-green); }
 .verse-item.hl-blue { background: var(--hl-blue); }
 .verse-item.hl-pink { background: var(--hl-pink); }
+
+/* Nastavak čitanja (#od-N) stavlja redak na vrh ispod trake; astro-client.js topVerse() koristi istu crtu */
+.verse-item {
+  scroll-margin-top: 6rem;
+}
 
 .verse-item.flash-target {
   outline: 2px solid var(--accent);
@@ -2343,4 +2394,208 @@ mark {
   background: var(--danger-soft) !important;
   border-color: var(--danger) !important;
   color: var(--danger) !important;
+}
+
+/* ==================== DNEVNIK ČITANJA ==================== */
+.linear-card {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--accent-border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-md);
+  background: var(--accent-soft);
+}
+
+.linear-card-current {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.linear-card-kicker {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.linear-card-label {
+  font-size: 1.08rem;
+}
+
+.linear-card-time {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.linear-set {
+  margin-top: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.65rem 0.9rem;
+}
+
+.linear-set summary {
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.linear-set-hint {
+  margin: 0.55rem 0 0.75rem;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.linear-set-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: flex-end;
+}
+
+.linear-set-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1 1 14rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.linear-set-field .book-filter-input {
+  margin: 0;
+}
+
+.linear-set-small {
+  flex: 0 1 6.5rem;
+}
+
+.log-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.log-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-muted);
+}
+
+.log-stat span {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+.log-stat strong {
+  font-size: 1.15rem;
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.log-empty {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.log-day-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.2rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+
+.log-day-head strong::first-letter {
+  text-transform: uppercase;
+}
+
+.log-day-head span {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.log-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 0.35rem;
+  border-radius: var(--radius-sm, 8px);
+  color: inherit;
+  text-decoration: none;
+}
+
+.log-row:hover {
+  background: var(--bg-muted);
+}
+
+.log-row-time {
+  flex: 0 0 6.6rem;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.log-row-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.log-row-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.log-kind-linear {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent-border);
+}
+
+@media (max-width: 560px) {
+  .log-stats {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.4rem;
+  }
+
+  .log-stat {
+    padding: 0.5rem 0.55rem;
+  }
+
+  .log-row-time {
+    flex-basis: 4.6rem;
+    font-size: 0.78rem;
+  }
 }

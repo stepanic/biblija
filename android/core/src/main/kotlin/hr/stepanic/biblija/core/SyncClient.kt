@@ -29,8 +29,21 @@ sealed class SyncException(message: String) : Exception(message) {
 
 data class AuthResult(val created: Boolean, val credentials: SyncCredentials)
 
-/** [liveRoom]: soba za realtime obavijesti (`/api/live`), null ako je poslužitelj nema. */
-data class SyncResult(val data: UserData, val syncedAt: String, val displayName: String, val liveRoom: String? = null)
+/**
+ * [liveRoom]: soba za realtime obavijesti (`/api/live`), null ako je poslužitelj nema.
+ * [acknowledgedLog]: poslani zapisi dnevnika (id → updated_at); potvrđeni su ako se lokalno nisu mijenjali
+ * u međuvremenu. Prazno ako poslužitelj ne podržava dnevnik (nema `log_cursor`), pa ostaju za idući put.
+ */
+data class SyncResult(
+    val data: UserData,
+    val syncedAt: String,
+    val displayName: String,
+    val liveRoom: String? = null,
+    val acknowledgedLog: Map<String, String> = emptyMap(),
+)
+
+/** Najviše zapisa dnevnika po zahtjevu (isto ograničenje kao MAX_LOG_PER_REQUEST u workeru). */
+const val MAX_LOG_PER_SYNC = 500
 
 /** HTTP ugovor iz src/worker.ts: POST /api/auth, /api/sync, /api/account/delete. */
 class SyncClient(baseUrl: String) {
@@ -47,13 +60,24 @@ class SyncClient(baseUrl: String) {
 
     /** [clientId] je id ovog uređaja; poslužitelj mu ne vraća realtime obavijest o vlastitoj promjeni. */
     suspend fun sync(credentials: SyncCredentials, data: UserData, clientId: String? = null): SyncResult {
-        val body = SyncRequest(credentials.userKey, credentials.pin, data.meta, data.progress, data.bookmarks, clientId)
+        val sentLog = data.logDirty.mapNotNull { data.readingLog[it] }.sortedBy { it.startedAt }.take(MAX_LOG_PER_SYNC)
+        val body = SyncRequest(
+            credentials.userKey, credentials.pin, data.meta, data.progress, data.bookmarks,
+            data.linear, sentLog, data.logCursor, clientId,
+        )
         val res: SyncResponse = post("api/sync", json.encodeToString(body))
+        val supportsLog = res.logCursor != null
         return SyncResult(
-            data = UserData(res.meta, res.progress, res.bookmarks),
+            data = UserData(
+                res.meta, res.progress, res.bookmarks,
+                linear = res.linear,
+                readingLog = res.log.orEmpty().associateBy { it.id },
+                logCursor = res.logCursor ?: "",
+            ),
             syncedAt = res.syncedAt ?: Timestamp.now(),
             displayName = res.displayName ?: credentials.displayName,
             liveRoom = res.liveRoom,
+            acknowledgedLog = if (supportsLog) sentLog.associate { it.id to it.updatedAt } else emptyMap(),
         )
     }
 
@@ -110,6 +134,9 @@ private data class SyncRequest(
     val meta: SyncMeta,
     val progress: ProgressMap,
     val bookmarks: BookmarkMap,
+    val linear: LinearCursor? = null,
+    val log: List<ReadingLogEntry> = emptyList(),
+    @SerialName("log_since") val logSince: String = "",
     @SerialName("client_id") val clientId: String? = null,
 )
 
@@ -135,6 +162,9 @@ private data class SyncResponse(
     val meta: SyncMeta = SyncMeta(),
     val progress: ProgressMap = emptyMap(),
     val bookmarks: BookmarkMap = emptyMap(),
+    val linear: LinearCursor? = null,
+    val log: List<ReadingLogEntry>? = null,
+    @SerialName("log_cursor") val logCursor: String? = null,
 )
 
 @Serializable

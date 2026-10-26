@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Icon from "../../components/Icon.astro";
+import { getAllBooks, getBookPayload } from "../../lib/bible";
+
+// Za izbor mjesta linearnog čitanja: knjige s poglavljima (0 = Proslov) i brojem redaka.
+const pickerBooks = getAllBooks().map((b) => {
+  const payload = getBookPayload(b.order);
+  return {
+    id: b.id,
+    abbr: b.abbr,
+    title: b.title,
+    chapters: payload.chapters.map((c) => [c.chapter, c.verse_count]),
+  };
+});
+---
+
+<BaseLayout
+  title="Dnevnik čitanja | Biblija 365"
+  description="Povijest svakog čitanja: gdje si čitao, do kojeg retka i kada, te mjesto do kojeg čitaš Bibliju redom."
+  activeNav="log"
+>
+  <section id="readingLogRoot">
+    <div class="card">
+      <span class="badge badge-accent"><Icon name="footprints" />Linearno čitanje</span>
+      <h1 class="page-hero-title">Dnevnik čitanja</h1>
+      <p class="page-hero-sub">
+        Svako otvoreno poglavlje ostaje zapisano s retkom do kojeg si stigao i vremenom čitanja. Skok na drugo mjesto ne mijenja mjesto do kojeg čitaš redom, pa se uvijek možeš vratiti.
+      </p>
+
+      <div class="linear-card">
+        <div class="linear-card-current">
+          <span class="linear-card-kicker">Redom si stigao do</span>
+          <strong id="linearCurrentLabel" class="linear-card-label">Još nije postavljeno</strong>
+          <span id="linearCurrentTime" class="linear-card-time"></span>
+        </div>
+        <a id="linearCurrentLink" href="/" class="icon-btn btn-accent" style="text-decoration:none;display:none;">Nastavi čitanje<Icon name="arrow-right" /></a>
+      </div>
+
+      <details class="linear-set" id="linearSetDetails">
+        <summary><Icon name="flag" />Postavi mjesto od kojeg čitaš redom</summary>
+        <p class="linear-set-hint">
+          Ako si čitao izvan aplikacije ili na starom profilu, ovdje upiši gdje si stao i nastavi odande, bez listanja poglavlje po poglavlje.
+        </p>
+        <div class="linear-set-row">
+          <label class="linear-set-field">
+            <span>Knjiga</span>
+            <select id="linearBookSelect" class="book-filter-input"></select>
+          </label>
+          <label class="linear-set-field linear-set-small">
+            <span>Poglavlje</span>
+            <select id="linearChapterSelect" class="book-filter-input"></select>
+          </label>
+          <label class="linear-set-field linear-set-small">
+            <span>Redak</span>
+            <input id="linearVerseInput" type="number" min="1" inputmode="numeric" class="book-filter-input" placeholder="1" />
+          </label>
+          <button type="button" class="icon-btn btn-accent" id="btnSetLinear"><Icon name="check" />Postavi</button>
+        </div>
+      </details>
+    </div>
+
+    <div class="card">
+      <div class="log-stats" id="logStats"></div>
+
+      <div class="bookmarks-filter-row">
+        <button type="button" class="filter-chip active" data-logfilter="all">Sve</button>
+        <button type="button" class="filter-chip" data-logfilter="linear"><Icon name="footprints" />Redom</button>
+        <button type="button" class="filter-chip" data-logfilter="jump"><Icon name="corner-up-left" />Skokovi</button>
+      </div>
+
+      <div id="readingLogList" class="log-list"></div>
+      <button type="button" class="icon-btn" id="btnLogMore" style="display:none;margin-top:0.75rem;"><Icon name="chevron-down" />Prikaži starije</button>
+    </div>
+  </section>
+
+  <script type="application/json" id="linearPickerBooks" set:html={JSON.stringify(pickerBooks)} />
+</BaseLayout>

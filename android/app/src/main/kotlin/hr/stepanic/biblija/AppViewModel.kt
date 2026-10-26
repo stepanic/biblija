@@ -15,9 +15,11 @@ import hr.stepanic.biblija.core.Bookmark
 import hr.stepanic.biblija.core.BookmarkColor
 import hr.stepanic.biblija.core.ChapterInfo
 import hr.stepanic.biblija.core.ChapterRef
+import hr.stepanic.biblija.core.LinearCursor
 import hr.stepanic.biblija.core.Lww
 import hr.stepanic.biblija.core.PlanDay
 import hr.stepanic.biblija.core.PlanReading
+import hr.stepanic.biblija.core.ReadingLogEntry
 import hr.stepanic.biblija.core.ReadingPlan
 import hr.stepanic.biblija.core.SearchResult
 import hr.stepanic.biblija.core.SyncClient
@@ -191,10 +193,85 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         open(ChapterRef(reading.bookOrder, reading.chapterStart), keepDay = true)
     }
 
-    /** Čitač javlja da je poglavlje prikazano: pamti se za „nastavi čitanje" na svim uređajima. */
+    /**
+     * Čitač javlja da je poglavlje prikazano: pamti se za „nastavi čitanje" na svim uređajima,
+     * otvara se zapis u dnevniku i, ako je ovo isto ili sljedeće poglavlje, pomiče linearni kursor.
+     */
     fun didShow(ref: ChapterRef) {
         val book = book(ref.bookOrder) ?: return
-        mutate { it.withLastRead(WebPath.chapter(book.slug, ref.chapter), WebPath.label(book, ref.chapter)) }
+        val url = WebPath.chapter(book.slug, ref.chapter)
+        val label = WebPath.label(book, ref.chapter)
+        val previousUrl = neighbour(ref, -1)?.let { prev -> book(prev.bookOrder)?.let { WebPath.chapter(it.slug, prev.chapter) } }
+        visitJob?.cancel()
+        linearPin = null
+        var visitId = ""
+        mutate {
+            val (next, id) = it.withLastRead(url, label).beginVisit(url, label, previousUrl, DEVICE_LABEL)
+            visitId = id
+            next
+        }
+        currentVisit = visitId to 0
+    }
+
+    // ---------- Dnevnik čitanja i linearno čitanje ----------
+
+    /** Otvoreni zapis dnevnika i redak na vrhu ekrana */
+    private var currentVisit: Pair<String, Int>? = null
+    private var visitJob: Job? = null
+
+    /** Ručno „Ovdje sam stao": kursor ne prati skrolanje dok se redak na vrhu ne pomakne s `top`. */
+    private var linearPin: Int? = null
+
+    val linear: LinearCursor? get() = userData.linear
+    val linearRef: ChapterRef? get() = userData.linear?.let { chapterRef(it.url) }
+    val readingLog: List<ReadingLogEntry> get() = userData.readingLogNewestFirst
+
+    fun isLinear(ref: ChapterRef) = linearRef == ref
+
+    /** Čitač javlja redak na vrhu ekrana; zapisuje se kad se skrolanje smiri. */
+    fun didScroll(verse: Int) {
+        val (id, last) = currentVisit ?: return
+        if (last == verse) return
+        currentVisit = id to verse
+        visitJob?.cancel()
+        visitJob = viewModelScope.launch {
+            delay(700)
+            val keepPin = linearPin == verse
+            if (!keepPin) linearPin = null
+            mutate(syncAfterMs = 4000) { it.withVisitUpdate(id, verse, moveLinear = !keepPin) }
+        }
+    }
+
+    /** Aplikacija ide u pozadinu: kraj zapisa = sada, i odmah sync. */
+    private fun closeVisit() {
+        val (id, verse) = currentVisit ?: return
+        visitJob?.cancel()
+        mutate(syncAfterMs = 100) { it.withVisitUpdate(id, verse, moveLinear = linearPin == null) }
+    }
+
+    fun openLinear() {
+        val cursor = userData.linear ?: return
+        val ref = linearRef ?: return
+        open(ref, verse = cursor.verse.takeIf { it > 1 })
+    }
+
+    fun open(entry: ReadingLogEntry) {
+        val ref = chapterRef(entry.url) ?: return
+        open(ref, verse = entry.verse.takeIf { it > 1 })
+    }
+
+    /** „Ovdje sam stao" iz izbornika retka, ili ručno postavljeno mjesto u dnevniku. */
+    fun setLinear(ref: ChapterRef, verse: Int) {
+        val book = book(ref.bookOrder) ?: return
+        mutate { it.withLinear(WebPath.chapter(book.slug, ref.chapter), WebPath.label(book, ref.chapter), verse) }
+        if (ref == readerTarget.chapter) linearPin = currentVisit?.second ?: 0
+    }
+
+    /** „Nastavi redom odavde": kursor na otvoreno poglavlje i redak na vrhu. */
+    fun continueLinearHere(ref: ChapterRef) {
+        setLinear(ref, currentVisit?.second ?: 0)
+        linearPin = null
+        currentVisit?.let { (id, verse) -> mutate { it.withVisitUpdate(id, verse) } }
     }
 
     // ---------- Postavke ----------
@@ -246,12 +323,12 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     fun removeBookmark(key: String) = mutate { it.withoutBookmark(key) }
 
-    private fun mutate(change: (UserData) -> UserData) {
+    private fun mutate(syncAfterMs: Long = 800, change: (UserData) -> UserData) {
         val next = change(userData)
         if (next == userData) return
         userData = next
         persist()
-        scheduleSync()
+        scheduleSync(syncAfterMs)
     }
 
     private fun persist() {
@@ -326,6 +403,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     /** Iz MainActivity: realtime veza postoji samo dok je aplikacija u prvom planu (kao `visibilitychange` na webu). */
     fun setForeground(foreground: Boolean) {
+        if (inForeground && !foreground) closeVisit()
         inForeground = foreground
         updateLive()
     }
@@ -369,8 +447,14 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
             val result = c.sync(creds, userData, clientId)
             if (credentials?.userKey != creds.userKey) return
             // Izmjene napravljene dok je zahtjev bio u letu su novije i ostaju.
-            val merged = Lww.merge(result.data, userData)
-            val hasNewerLocal = merged != result.data
+            var merged = Lww.merge(result.data, userData)
+            val acknowledged = result.acknowledgedLog.filter { (id, version) -> merged.readingLog[id]?.updatedAt?.let { it == version } ?: true }
+            merged = merged.copy(logDirty = merged.logDirty - acknowledged.keys)
+            // Server vraća samo novi dio dnevnika, pa se uspoređuje ono što vraća cijelo.
+            val supportsLog = result.data.logCursor.isNotEmpty()
+            val hasNewerLocal = merged.meta != result.data.meta || merged.progress != result.data.progress ||
+                merged.bookmarks != result.data.bookmarks ||
+                (supportsLog && (merged.linear != result.data.linear || (merged.logDirty.isNotEmpty() && result.acknowledgedLog.isNotEmpty())))
             if (merged != userData) {
                 val lastUrlChanged = merged.meta.lastUrl != userData.meta.lastUrl
                 userData = merged
@@ -399,6 +483,9 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     val dataVersion: String get() = repository?.meta("data_hash")?.take(12) ?: "—"
 }
+
+/** Uređaj u dnevniku čitanja („Android", „Web · Mac", „iPhone") */
+private val DEVICE_LABEL = android.os.Build.MODEL?.takeIf { it.isNotBlank() } ?: "Android"
 
 private inline fun <reified E : Enum<E>> enumOr(name: String?, fallback: E): E =
     name?.let { n -> enumValues<E>().firstOrNull { it.name == n } } ?: fallback
