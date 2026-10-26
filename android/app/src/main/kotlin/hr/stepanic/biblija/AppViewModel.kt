@@ -17,6 +17,7 @@ import hr.stepanic.biblija.core.ChapterInfo
 import hr.stepanic.biblija.core.ChapterRef
 import hr.stepanic.biblija.core.LinearCursor
 import hr.stepanic.biblija.core.Lww
+import hr.stepanic.biblija.core.PlanCatchUp
 import hr.stepanic.biblija.core.PlanDay
 import hr.stepanic.biblija.core.PlanReading
 import hr.stepanic.biblija.core.ReadingLogEntry
@@ -55,6 +56,16 @@ enum class ReadingMode(val label: String) {
 
 /** Plan i dan iz kojeg je čitač otvoren (traka „Dan N" u čitaču, kao `biblija_active_day_ctx` na webu). */
 data class PlanDayContext(val planId: String, val day: PlanDay)
+
+/** Ponuda da se dani kanonskog plana prije kursora označe pročitanima; [place] je npr. „2 Kr 6". */
+data class PlanCatchUpOffer(val planId: String, val days: List<PlanDay>, val place: String) {
+    val question: String
+        get() = if (days.size == 1) {
+            "Označiti ${days[0].day}. dan (${days[0].label}) pročitanim?"
+        } else {
+            "Označiti pročitanim ${days.size} dana, od ${days.first().day}. do ${days.last().day}. (prije $place)?"
+        }
+}
 
 data class ReaderTarget(val chapter: ChapterRef, val verse: Int? = null)
 
@@ -204,6 +215,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         val previousUrl = neighbour(ref, -1)?.let { prev -> book(prev.bookOrder)?.let { WebPath.chapter(it.slug, prev.chapter) } }
         visitJob?.cancel()
         linearPin = null
+        val cursorBefore = linearRef
         var visitId = ""
         mutate {
             val (next, id) = it.withLastRead(url, label).beginVisit(url, label, previousUrl, DEVICE_LABEL)
@@ -211,6 +223,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
             next
         }
         currentVisit = visitId to 0
+        if (cursorBefore != null && cursorBefore != linearRef) offerPlanCatchUp(cursorBefore)
     }
 
     // ---------- Dnevnik čitanja i linearno čitanje ----------
@@ -265,6 +278,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         val book = book(ref.bookOrder) ?: return
         mutate { it.withLinear(WebPath.chapter(book.slug, ref.chapter), WebPath.label(book, ref.chapter), verse) }
         if (ref == readerTarget.chapter) linearPin = currentVisit?.second ?: 0
+        offerPlanCatchUp(null)
     }
 
     /** „Nastavi redom odavde": kursor na otvoreno poglavlje i redak na vrhu. */
@@ -295,6 +309,36 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         serverUrl = value
         prefs.edit { putString("server_url", value) }
         rememberLiveRoom(null)
+    }
+
+    // ---------- Kursor i kanonski plan Biblije 365 ----------
+
+    /** Ponuda da se dani kanonskog plana prije kursora označe pročitanima (uvijek uz potvrdu). */
+    var planCatchUp by mutableStateOf<PlanCatchUpOffer?>(null)
+
+    /**
+     * Ručno postavljen kursor (`from == null`) nudi sve neoznačene dane prije njega; linearno čitanje samo
+     * dane koje je pomak s [from] završio.
+     */
+    private fun offerPlanCatchUp(from: ChapterRef?) {
+        if (activePlanId != PlanCatchUp.CANON_PLAN_ID) return
+        val cursor = linearRef ?: return
+        val planId = PlanCatchUp.CANON_PLAN_ID
+        val days = PlanCatchUp.daysToOffer(planDays(planId), from, cursor) { isDayDone(planId, it) }
+        planCatchUp = if (days.isEmpty()) null else PlanCatchUpOffer(planId, days, label(cursor))
+    }
+
+    fun acceptPlanCatchUp() {
+        val offer = planCatchUp ?: return
+        planCatchUp = null
+        mutate { data ->
+            offer.days.filterNot { data.isDayDone(offer.planId, it.day) }
+                .fold(data) { acc, day -> acc.withDay(offer.planId, day.day, true) }
+        }
+    }
+
+    fun dismissPlanCatchUp() {
+        planCatchUp = null
     }
 
     // ---------- Korisničko stanje ----------

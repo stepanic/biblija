@@ -151,6 +151,93 @@
     saveLinear();
   }
 
+  /* Veza kursora i plana „Biblija 365 — Kanonski redom": samo taj plan ide redom kao kursor, pa se dani
+     prije kursora mogu označiti pročitanima. Uvijek uz potvrdu, nikad tiho, i nikad se ne poništava. */
+  const CANON_PLAN_ID = "biblija-365-kanonski";
+
+  async function loadPlanJson(planId) {
+    if (!state.loadedPlans[planId]) {
+      const res = await fetch(`/data/json/plans/${planId}.json`);
+      state.loadedPlans[planId] = await res.json();
+    }
+    return state.loadedPlans[planId];
+  }
+
+  /** (book_order, chapter) mjesta u kanonu kao jedan broj; Proslov je poglavlje 0. */
+  function canonPos(bookOrder, chapter) {
+    return bookOrder * 1000 + chapter;
+  }
+
+  async function linearCanonPos(lin) {
+    const m = lin && lin.url ? lin.url.match(/^\/([a-z0-9-]+)\/(\d+)\/$/) : null;
+    if (!m) return null;
+    const books = await ensureBooksLoaded();
+    const b = books.find((x) => x.id === m[1]);
+    return b ? canonPos(b.order, Number(m[2])) : null;
+  }
+
+  /** Kraj dana: zadnje poglavlje zadnjeg čitanja. */
+  function dayEndPos(day) {
+    let end = -1;
+    for (const r of day.readings || []) end = Math.max(end, canonPos(r.book_order, r.chapter_end));
+    return end;
+  }
+
+  /**
+   * Nakon pomaka kursora ponudi označavanje dana kanonskog plana koji završavaju prije kursora.
+   * Ručno postavljanje nudi sve neoznačene dane prije kursora; linearno čitanje samo dane koje je
+   * ovaj pomak završio (kraj u [stari kursor, novi kursor)), da odbijeni dani ne iskaču ponovno.
+   */
+  async function offerPlanCatchUp(prevLinear, manual) {
+    if (state.currentPlanId !== CANON_PLAN_ID || !state.linear) return;
+    try {
+      const to = await linearCanonPos(state.linear);
+      if (to === null) return;
+      const from = manual ? -1 : await linearCanonPos(prevLinear);
+      if (from === null || from >= to) return;
+      const plan = await loadPlanJson(CANON_PLAN_ID);
+      const days = plan.days.filter((d) => {
+        const end = dayEndPos(d);
+        return end < to && end >= from && !isDayDone(plan.id, d.day);
+      });
+      if (days.length) showPlanCatchUp(plan, days);
+    } catch (_) {}
+  }
+
+  function showPlanCatchUp(plan, days) {
+    document.getElementById("planCatchUpToast")?.remove();
+    const first = days[0];
+    const last = days[days.length - 1];
+    const place = (state.linear.label.match(/\(([^)]+)\)$/) || [])[1] || state.linear.label;
+    const text =
+      days.length === 1
+        ? `Označiti ${first.day}. dan (${escapeHtml(first.label)}) pročitanim?`
+        : `Označiti pročitanim ${days.length} dana, od ${first.day}. do ${last.day}. (prije ${escapeHtml(place)})?`;
+    const box = document.createElement("div");
+    box.id = "planCatchUpToast";
+    box.className = "plan-catchup-toast";
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-live", "polite");
+    box.innerHTML = `
+      <div class="plan-catchup-info">
+        <span class="linear-return-kicker">${ic("calendar-check")}Biblija 365 — Kanonski redom</span>
+        <span class="plan-catchup-text">${text}</span>
+      </div>
+      <div class="linear-return-actions">
+        <button type="button" class="icon-btn btn-accent" data-catchup="yes">${ic("check")}<span class="btn-text">Označi</span></button>
+        <button type="button" class="icon-btn" data-catchup="no">${ic("x")}<span class="btn-text">Ne</span></button>
+      </div>`;
+    box.querySelector('[data-catchup="yes"]').addEventListener("click", () => {
+      for (const d of days) {
+        if (!isDayDone(plan.id, d.day)) togglePlanDayCompleted(plan.id, d.day, true);
+      }
+      box.remove();
+      triggerAllUiRefresh();
+    });
+    box.querySelector('[data-catchup="no"]').addEventListener("click", () => box.remove());
+    document.body.appendChild(box);
+  }
+
   function saveReadingLog() {
     localStorage.setItem("biblija_reading_log", JSON.stringify(state.readingLog));
     localStorage.setItem("biblija_log_dirty", JSON.stringify([...state.logDirty]));
@@ -1066,7 +1153,10 @@
    */
   function initReadingTracker(url, label, prevUrl) {
     const lin = state.linear;
-    if (!lin || (prevUrl && lin.url === prevUrl)) setLinear(url, label, 0);
+    if (!lin || (prevUrl && lin.url === prevUrl)) {
+      setLinear(url, label, 0);
+      if (lin && lin.url !== url) offerPlanCatchUp(lin, false);
+    }
     const isLinearHere = () => Boolean(state.linear && state.linear.url === url);
 
     const device = deviceLabel();
@@ -1165,6 +1255,7 @@
         record(state.linear.verse);
         renderBanner();
         scheduleCloudSync();
+        offerPlanCatchUp(null, true);
       });
     }
     renderBanner();
@@ -1258,6 +1349,7 @@
         setLinear(`/${ctx.book_id}/${ctx.chapter}/`, `${ctx.book_title} (${ctx.book_abbr} ${chLbl})`, ctx.verse);
         state.linearPin = { at: Date.now(), top: state.topVerse ? state.topVerse() : -1 };
         scheduleCloudSync();
+        offerPlanCatchUp(null, true);
         iconLabel(stopHereBtn, "check", "Zapamćeno");
         setTimeout(() => {
           iconLabel(stopHereBtn, "flag", "Ovdje sam stao");
@@ -1873,6 +1965,7 @@
       const verse = Math.min(max, Math.max(0, parseInt(verseInput.value, 10) || 0));
       setLinear(`/${b.id}/${ch}/`, `${b.title} (${b.abbr} ${ch === 0 ? "Proslov" : ch})`, verse);
       scheduleCloudSync();
+      offerPlanCatchUp(null, true);
       document.getElementById("linearSetDetails").open = false;
       render();
     });

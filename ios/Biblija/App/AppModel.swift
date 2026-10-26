@@ -32,6 +32,19 @@ enum ReadingMode: String, CaseIterable, Identifiable {
 }
 
 /// Plan i dan iz kojeg je čitač otvoren (traka „Dan N" u čitaču, kao `biblija_active_day_ctx` na webu).
+struct PlanCatchUpOffer: Equatable {
+    let planId: String
+    let days: [PlanDay]
+    /// Mjesto kursora, npr. „2 Kr 6"
+    let place: String
+
+    var question: String {
+        guard let first = days.first, let last = days.last else { return "" }
+        if days.count == 1 { return "Označiti \(first.day). dan (\(first.label)) pročitanim?" }
+        return "Označiti pročitanim \(days.count) dana, od \(first.day). do \(last.day). (prije \(place))?"
+    }
+}
+
 struct PlanDayContext: Equatable {
     let planId: String
     let day: PlanDay
@@ -223,12 +236,14 @@ final class AppModel {
         }
         visitTimer?.cancel()
         linearPin = nil
+        let cursorBefore = linearRef
         var visitId = ""
         mutate {
             $0.setLastRead(url: url, label: label)
             visitId = $0.beginVisit(url: url, label: label, previousUrl: previousUrl, device: Self.deviceLabel)
         }
         currentVisit = (id: visitId, verse: 0)
+        if let cursorBefore, cursorBefore != linearRef { offerPlanCatchUp(from: cursorBefore) }
     }
 
     // MARK: - Dnevnik čitanja i linearno čitanje
@@ -283,6 +298,7 @@ final class AppModel {
         guard let book = book(order: ref.bookOrder) else { return }
         mutate { $0.setLinear(url: WebPath.chapter(bookSlug: book.slug, chapter: ref.chapter), label: WebPath.label(book: book, chapter: ref.chapter), verse: verse) }
         if ref == readerTarget.chapter { linearPin = (top: currentVisit?.verse ?? 0, verse: verse) }
+        offerPlanCatchUp(from: nil)
     }
 
     /// „Nastavi redom odavde": kursor na otvoreno poglavlje i redak na vrhu.
@@ -291,6 +307,30 @@ final class AppModel {
         linearPin = nil
         if let visit = currentVisit {
             mutate { $0.updateVisit(id: visit.id, verse: visit.verse) }
+        }
+    }
+
+    // MARK: - Kursor i kanonski plan Biblije 365
+
+    /// Ponuda da se dani kanonskog plana prije kursora označe pročitanima (uvijek uz potvrdu).
+    var planCatchUp: PlanCatchUpOffer?
+
+    /// Ručno postavljen kursor (`from == nil`) nudi sve neoznačene dane prije njega; linearno čitanje samo
+    /// dane koje je pomak s `from` završio.
+    private func offerPlanCatchUp(from previous: ChapterRef?) {
+        guard activePlanId == PlanCatchUp.canonPlanId, let cursor = linearRef else { return }
+        let planId = PlanCatchUp.canonPlanId
+        let days = PlanCatchUp.daysToOffer(days: planDays(planId), from: previous, to: cursor) { self.isDayDone(planId, $0) }
+        planCatchUp = days.isEmpty ? nil : PlanCatchUpOffer(planId: planId, days: days, place: label(cursor))
+    }
+
+    func acceptPlanCatchUp() {
+        guard let offer = planCatchUp else { return }
+        planCatchUp = nil
+        mutate {
+            for day in offer.days where !$0.isDayDone(planId: offer.planId, day: day.day) {
+                $0.setDay(planId: offer.planId, day: day.day, completed: true)
+            }
         }
     }
 

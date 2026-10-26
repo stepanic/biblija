@@ -72,6 +72,7 @@ fun BiblijaApp(vm: AppViewModel) {
                 AppTab.BOOKMARKS -> BookmarksScreen(vm)
                 AppTab.SETTINGS -> SettingsScreen(vm)
             }
+            vm.planCatchUp?.let { PlanCatchUpBanner(vm, it, Modifier.align(Alignment.BottomCenter)) }
         }
     }
 }

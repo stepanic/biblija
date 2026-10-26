@@ -74,6 +74,23 @@ sequenceDiagram
 - Android: `ReadingLogScreen` (ikona u Oznakama), `LinearReturnBanner`, gumb u `VerseSheet`.
 - Uređaj u dnevniku: web „Web · Mac/iPhone/…", iOS „iPhone"/„iPad", Android `Build.MODEL`.
 
+## Kursor i plan „Biblija 365 — Kanonski redom"
+
+Kad je aktivni plan `biblija-365-kanonski` (jedini koji ide redom kao kursor; ostali miješaju knjige),
+pomak kursora nudi označavanje dana pročitanima: web toast `#planCatchUpToast`, iOS `PlanCatchUpBanner`
+u `RootView`, Android `PlanCatchUpBanner` u `BiblijaApp`. Logika: `offerPlanCatchUp` (web),
+`PlanCatchUp.daysToOffer` (BiblijaKit i `:core`, s testovima na pravom planu).
+
+- Uvijek uz potvrdu („Označi" / „Ne"), nikad tiho; već označeni dani se ne diraju, ništa se ne poništava.
+- Dan je gotov kad mu je kraj (zadnje poglavlje zadnjeg čitanja) **prije** kursora; usporedba
+  `book_order * 1000 + poglavlje`, Proslov = 0. Dan koji sadrži kursorovo poglavlje ostaje neoznačen
+  (kursor na 2 Kr 6 → dani 1–102, dan 103 „2 Kr 6–8" ne).
+- Ručno postavljanje (/dnevnik/ „Postavi", „Ovdje sam stao", „Nastavi redom odavde") nudi sve neoznačene
+  dane prije kursora. Linearni korak nudi samo dane s krajem u `[stari kursor, novi kursor)`, pa odbijeni
+  dan ne iskače ponovno pri svakom poglavlju.
+- Kursor koji stigne syncom s drugog uređaja ne nudi ništa (ponudio ga je uređaj na kojem se čitalo).
+- Zadnji dan plana (završava na Otk 22) linearni korak nikad ne ponudi jer kursor ne može dalje.
+
 ## Otvoreno
 
 - iOS i Android **nisu pokrenuti na uređaju** s ovom značajkom (samo build + unit testovi). Provjeriti:
