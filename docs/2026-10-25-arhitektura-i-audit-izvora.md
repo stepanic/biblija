@@ -164,3 +164,7 @@ sequenceDiagram
    nove migracije: `npx wrangler d1 migrations apply biblija-365-db --remote`.
 2. Dnevnik čitanja i linearni kursor (2026-10-26, migracija 0003 primijenjena u produkciji): vidi
    [2026-10-26-dnevnik-citanja-i-linearni-kursor.md](2026-10-26-dnevnik-citanja-i-linearni-kursor.md).
+
+## Vezani dokumenti
+
+- [FOI „Biblijski prijevodi": 15 prijevoda, pravi Šarić i trosmjerna usporedba KS-a (7 novih errata)](2026-10-28-foi-prijevodi-i-trosmjerna-usporedba.md)
