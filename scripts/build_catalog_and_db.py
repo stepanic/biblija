@@ -373,6 +373,14 @@ def apply_cross_source_errata(all_book_payloads, chapters_by_book_order):
         (22, "Job", 19, 1, "?Job progovori i reče:", "Job progovori i reče:", "Zaostali znak '?' na početku stiha u bazi biblija.ks.hr."),
         (22, "Job", 29, 1, "?Job nastavi svoju besjedu i reče:", "Job nastavi svoju besjedu i reče:", "Zaostali znak '?' na početku stiha u bazi biblija.ks.hr."),
         (29, "Iz", 10, 1, "?Jao onima koji izdaju", "Jao onima koji izdaju", "Zaostali znak '?' na početku stiha u bazi biblija.ks.hr."),
+        # Three-way vote against library.foi.hr (Biblija KS) and hrv_usfm: both other digitizations agree.
+        (1, "Post", 50, 14, "u Egi pat", "u Egipat", "Razdvojena riječ ('Egi pat' -> 'Egipat'); FOI i hrv_usfm se slažu."),
+        (3, "Lev", 4, 12, "mjestoizvan", "mjesto izvan", "Spojene riječi ('mjestoizvan' -> 'mjesto izvan'); FOI i hrv_usfm se slažu."),
+        (8, "Rut", 4, 5, "iRutu", "i Rutu", "Spojene riječi ('iRutu' -> 'i Rutu'); FOI i hrv_usfm se slažu."),
+        (15, "Ezr", 1, 1, "kralja Ki- ra", "kralja Kira", "Zaostala crtica prijeloma retka ('Ki- ra' -> 'Kira'); FOI i hrv_usfm se slažu."),
+        (23, "Ps", 17, 10, "zatvarajui ustima", "zatvaraju i ustima", "Spojene riječi ('zatvarajui' -> 'zatvaraju i'); FOI i hrv_usfm se slažu."),
+        (23, "Ps", 113, 3, "zalaskahvaljeno", "zalaska hvaljeno", "Spojene riječi ('zalaskahvaljeno' -> 'zalaska hvaljeno'); FOI i hrv_usfm se slažu."),
+        (23, "Ps", 119, 80, "pravilimada", "pravilima da", "Spojene riječi ('pravilimada' -> 'pravilima da'); FOI i hrv_usfm se slažu."),
     ]
     for bo, abbr, ch, vnum, bad_sub, good_sub, reason in ocr_fixes:
         ch_obj = chapters_by_book_order[bo][ch]

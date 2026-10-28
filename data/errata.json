@@ -284,5 +284,82 @@
     "ks_raw": "?Jao onima koji izdaju odredbe nepravedne, koji ispisuju propise tlačiteljske;",
     "fixed": "Jao onima koji izdaju odredbe nepravedne, koji ispisuju propise tlačiteljske;",
     "reason": "Zaostali znak '?' na početku stiha u bazi biblija.ks.hr."
+  },
+  {
+    "book_order": 1,
+    "usfm_id": "GEN",
+    "reference": "Post 50,14",
+    "chapter": 50,
+    "verse": 14,
+    "type": "ocr_typo_fixed",
+    "ks_raw": "Pošto je sahranio svoga oca, Josip se vrati u Egi pat – on, njegova braća i svi koji su s njim išli da mu oca pokopaju.",
+    "fixed": "Pošto je sahranio svoga oca, Josip se vrati u Egipat – on, njegova braća i svi koji su s njim išli da mu oca pokopaju.",
+    "reason": "Razdvojena riječ ('Egi pat' -> 'Egipat'); FOI i hrv_usfm se slažu."
+  },
+  {
+    "book_order": 3,
+    "usfm_id": "LEV",
+    "reference": "Lev 4,12",
+    "chapter": 4,
+    "verse": 12,
+    "type": "ocr_typo_fixed",
+    "ks_raw": "– svega junca – neka iznese na čisto mjestoizvan tabora gdje se pepeo izasiplje i neka ga spali na vatri od drva; tu na pepelu neka se junac spali.’",
+    "fixed": "– svega junca – neka iznese na čisto mjesto izvan tabora gdje se pepeo izasiplje i neka ga spali na vatri od drva; tu na pepelu neka se junac spali.’",
+    "reason": "Spojene riječi ('mjestoizvan' -> 'mjesto izvan'); FOI i hrv_usfm se slažu."
+  },
+  {
+    "book_order": 8,
+    "usfm_id": "RUT",
+    "reference": "Rut 4,5",
+    "chapter": 4,
+    "verse": 5,
+    "type": "ocr_typo_fixed",
+    "ks_raw": "Onda kaza Boaz: »Kad uzmeš zemlju iz ruke Noemi, treba da uzmeš iRutu Moapku, pokojnikovu ženu, da se pokojniku sačuva ime na baštini.«",
+    "fixed": "Onda kaza Boaz: »Kad uzmeš zemlju iz ruke Noemi, treba da uzmeš i Rutu Moapku, pokojnikovu ženu, da se pokojniku sačuva ime na baštini.«",
+    "reason": "Spojene riječi ('iRutu' -> 'i Rutu'); FOI i hrv_usfm se slažu."
+  },
+  {
+    "book_order": 15,
+    "usfm_id": "EZR",
+    "reference": "Ezr 1,1",
+    "chapter": 1,
+    "verse": 1,
+    "type": "ocr_typo_fixed",
+    "ks_raw": "Prve godine perzijskoga kralja Ki- ra, da bi se ispunila riječ Jahvina objavljena na Jeremijina usta, nadahnu Jahve perzijskoga kralja Kira te on objavi po svemu svojem kraljevstvu, usmeno i pismeno:",
+    "fixed": "Prve godine perzijskoga kralja Kira, da bi se ispunila riječ Jahvina objavljena na Jeremijina usta, nadahnu Jahve perzijskoga kralja Kira te on objavi po svemu svojem kraljevstvu, usmeno i pismeno:",
+    "reason": "Zaostala crtica prijeloma retka ('Ki- ra' -> 'Kira'); FOI i hrv_usfm se slažu."
+  },
+  {
+    "book_order": 23,
+    "usfm_id": "PSA",
+    "reference": "Ps 17,10",
+    "chapter": 17,
+    "verse": 10,
+    "type": "ocr_typo_fixed",
+    "ks_raw": "bešćutno srce zatvarajui ustima zbore naduto,",
+    "fixed": "bešćutno srce zatvaraju i ustima zbore naduto,",
+    "reason": "Spojene riječi ('zatvarajui' -> 'zatvaraju i'); FOI i hrv_usfm se slažu."
+  },
+  {
+    "book_order": 23,
+    "usfm_id": "PSA",
+    "reference": "Ps 113,3",
+    "chapter": 113,
+    "verse": 3,
+    "type": "ocr_typo_fixed",
+    "ks_raw": "Od istoka sunca do zalaskahvaljeno bilo ime Jahvino!",
+    "fixed": "Od istoka sunca do zalaska hvaljeno bilo ime Jahvino!",
+    "reason": "Spojene riječi ('zalaskahvaljeno' -> 'zalaska hvaljeno'); FOI i hrv_usfm se slažu."
+  },
+  {
+    "book_order": 23,
+    "usfm_id": "PSA",
+    "reference": "Ps 119,80",
+    "chapter": 119,
+    "verse": 80,
+    "type": "ocr_typo_fixed",
+    "ks_raw": "Nek’ mi srce savršeno bude u tvojim pravilimada ne budem postiđen.",
+    "fixed": "Nek’ mi srce savršeno bude u tvojim pravilima da ne budem postiđen.",
+    "reason": "Spojene riječi ('pravilimada' -> 'pravilima da'); FOI i hrv_usfm se slažu."
   }
 ]
