@@ -152,7 +152,14 @@ Jdt, Est i Sir su u Vulgati drugi tekst, pa čitač za njih to i napiše. 1–2 
 - Šarić kao drugi prijevod u aplikaciji tek uz dozvolu nositelja prava ili 2031.
 - Katančićev prijevod (1831.) je slobodan, ali tekst je FOI-jeva digitalizacija
   („Copyrights by Point d.o.o."). Preuzimanje cijele knjige može dirati
-  *sui generis* pravo na bazu podataka (ZAPSP). Prije deploya i commita
-  `data/json/katancic/` treba odluka ili dozvola. Mobilne aplikacije Katančića
-  još nemaju.
+  *sui generis* pravo na bazu podataka (ZAPSP). Matija je 2026-10-29 svjesno
+  odlučio objaviti: `data/json/katancic/` je u javnom repou i u produkciji
+  (biblija.domovina.ai, verzija `7b56d2be`). Ako Point ili FOI prigovore,
+  zamjena je čista digitalizacija Katančića iz drugog izvora.
+- Mobilne aplikacije Katančića još nemaju (`export_mobile_db.py`, SwiftUI, Compose).
+- BSB interlinear nije u čitaču. Za to treba preslikati englesku numeraciju na
+  KS (naslovi psalama kao 1. redak, Jl, Mal) i odlučiti gdje se prikazuje (popover
+  retka?). Strongov rječnik nije dohvaćen; slobodni izvor je openscriptures/strongs.
+- Na produkciji Katančić nije isproban u pregledniku, samo `curl` (stranica,
+  `astro-client.js`, JSON vraćaju 200 i sadrže nov kod).
 - Mobilna baza (`export_mobile_db.py`) i deploy s novih 7 ispravaka nisu pokrenuti.
