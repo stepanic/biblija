@@ -1334,7 +1334,146 @@ html[data-reading-mode="verses"] .verse-item {
   padding: 0.18rem 0.45rem;
 }
 
-/* Drugi prijevod (Katančić): usporedno ispod svakog retka KS-a ili samostalno */
+/* Drugi prijevodi (Šarić, Katančić, Rupčić, Raspudić, Gusić): izbornik i prikaz */
+.translation-picker-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.translation-menu {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
+  z-index: 90;
+  width: min(21rem, calc(100vw - 1.5rem));
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: 0.55rem;
+  font-family: var(--font-ui);
+}
+
+.translation-menu[hidden] {
+  display: none;
+}
+
+.tr-menu-head {
+  padding: 0.25rem 0.3rem 0.55rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0.35rem;
+}
+
+.tr-menu-kicker {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.tr-layout-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem;
+  background: var(--bg-sunken);
+  padding: 0.2rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.tr-layout-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.32rem 0.5rem;
+  border-radius: calc(var(--radius-sm) - 2px);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.tr-layout-btn.active {
+  background: var(--bg-elevated);
+  color: var(--accent);
+  box-shadow: var(--shadow-xs);
+}
+
+.tr-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.tr-item-btn {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text);
+  width: 100%;
+  text-align: left;
+  padding: 0.45rem 0.55rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  transition: background 0.12s ease, border-color 0.12s ease;
+}
+
+.tr-item-btn:hover {
+  background: var(--bg-sunken);
+}
+
+.tr-item-btn.active {
+  background: var(--accent-soft);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+.tr-item-btn.is-unavailable {
+  opacity: 0.62;
+}
+
+.tr-item-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.tr-item-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.84rem;
+  line-height: 1.25;
+}
+
+.tr-item-sub {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  line-height: 1.25;
+}
+
+.tr-item-badge {
+  font-size: 0.66rem;
+  font-weight: 600;
+  padding: 0.08rem 0.36rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-sunken);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
 html[data-translation="parallel"] #chapterBody .para-break {
   display: none;
 }

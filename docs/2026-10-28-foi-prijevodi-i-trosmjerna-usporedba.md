@@ -131,35 +131,45 @@ Oba druga izvora se slažu, ali drugi izvori su vjerojatno u krivu:
 
 Za oba treba pogledati tiskano izdanje.
 
-## Katančić u čitaču
+## Hrvatski prijevodi s FOI-ja u čitaču
 
-`scripts/build_katancic.py` piše `data/json/katancic/` (67 knjiga, 3,4 MB), a
-čitač ima gumb prijevoda: KS, KS + Katančić (ispod svakog retka) ili samo
-Katančić. Oznake, plan i dnevnik ostaju na retcima KS-a.
+`scripts/build_foi_translations.py` (uz kompatibilni wrapper `scripts/build_katancic.py`)
+iz lokalnog FOI cachea gradi svih **5 jedinstvenih hrvatskih prijevoda** u
+`data/json/<slug>/` i krovni katalog `data/json/translations.json`:
 
-FOI je Katančićeve psalme prenumerirao na hebrejske brojeve samo do 113. Ostale
-Vulgatine razlike (Izl 7/8, Lev 5/6, Br 16/17, Neh 3/4, Ez 20/21, Zah 1/2, Jl,
-Mal, Ps 114–150, Sir proslov) preslikava `remap()`. Provjereno po sadržaju. Tob,
-Jdt, Est i Sir su u Vulgati drugi tekst, pa čitač za njih to i napiše. 1–2 Sam,
-1–2 Kr i 1–2 Ljet FOI nema.
+| Slug | FOI ID | Prijevod | Knjiga | Redaka | Napomena o čišćenju i poravnanju |
+|---|---|---|---|---|---|
+| `saric` | 75 | **Šarić** (1941.–1942.) | 73 | 35.236 | Uklonjeno 1.427 zvjezdica `*` (oznaka fusnota kojih na FOI-ju nema, pri čemu su 34 prazna retka samo s `*` izostavljena), 148 zalutalih zaglavlja idućeg psalma `(Psalam N...)` s kraja prethodnog psalma i 44 zalutala međunaslova u zagradama s kraja prethodnog retka. Preslikani `Dn 3,24–33 → 91–100`, `Neh 7,68–73 → 67–72` i `Ps 127,5+6 → 5`. (FOI `32` „Novi zavjet (Šarić)" je 100 % u slovo identičan NZ-u iz `75`: 7.957 / 7.957 redaka.) |
+| `katancic` | 76 | **Katančić** (Budim, 1831.) | 67 | 30.987 | Vulgatina podjela u SZ-u (`Ps 114–150`, `Izl 7/8`, `Lev 5/6`, `Br 16/17`, `Neh 3/4`, `Ez 20/21`, `Zah 1/2`, `Jl`, `Mal`, `Sir 0`) i u NZ-u (`Mt 17`, `Mk 8,39 / 9,1–49`, `Iv 6,51–72`, `Dj 7`, `Dj 14`, `1 Sol 4`, `2 Sol 2`) preslikana na KS; uklonjeni zalutali prolog Tužaljki u `Jer 52,34` i kolofon `S V E R H A` u `Otk 22,21`. 1–2 Sam, 1–2 Kr i 1–2 Ljet FOI nema. (FOI `34` „Novi zavjet (Katančić)" je 100 % identičan NZ-u iz `76`: 7.948 / 7.948 redaka.) |
+| `rupcic` | 11 | **Rupčić** (Novi zavjet, 1961.) | 27 | 7.936 | Popravljena `3. Ivanova` (na FOI-ju spremljena kao pogl. 2 umjesto 1), razdvojen drugi `Lk 14,11 → 12`, uklonjen zalutali međunaslov u `1 Iv 5,12`, spojeno 12 prepolovljenih redaka (`a/b`), te popravljeno 5 redaka s oznakom ispuštenog retka `(N) M` (`Mk 9,45.47`, `Lk 17,37`, `Lk 23,18`, `Dj 8,38`). |
+| `raspudic` | 37 | **Raspudić** (Novi zavjet, 1987.) | 27 | 7.945 | Popravljeni duplikati brojeva redaka (drugi `Mt 22,11 → 12`, drugi `Mt 23,16 → 17`) i uklonjeno 5 zvjezdica `*` na prijelomima odlomaka. |
+| `gusic` | 35 | **Gusić** (kajkavski NZ, 1821.) | 27 | 7.948 | Kajkavski rukopisni prijevod Novog zavjeta; primijenjena ista Vulgatina preslikavanja u NZ-u (`Mt 17`, `Mk 8/9`, `Iv 6`, `Dj 7`, `Dj 14`, `1 Sol 4`, `2 Sol 2`) kao kod Katančića. |
+
+FOI `14` („Duda–Fućak NZ") je 100 % identičan NZ-u iz `74` (7.944 / 7.944 redaka), a
+`71` („Greek Bible") je zbroj `7` (LXX) i `8` (GNT).
+
+U čitaču gumb prijevoda (`#btnTranslationToggle`) otvara izbornik u kojem se bira
+bilo koji od 6 hrvatskih prijevoda (**KS**, **Šarić**, **Katančić**, **Rupčić**,
+**Raspudić**, **Gusić**) te način prikaza drugog prijevoda (**Usporedno uz KS** ili
+**Samostalno**). Oznake, plan i dnevnik ostaju vezani uz retke KS-a.
+
+### Prava
+
+Svih pet tekstova su FOI-jeve digitalizacije („Copyrights by Point d.o.o."), pa
+objava cijelih knjiga može dirati *sui generis* pravo na bazu podataka (ZAPSP).
+Katančić (1831.) i Gusić (1821.) su kao prijevodi slobodni. Šarić je pod
+autorskim pravom do 2031., a Rupčić (1961.) i Raspudić (1987.) još dulje.
+Matija je svjesno odlučio objaviti Katančića 2026-10-29 (verzija `7b56d2be`), a
+istog dana i ostala četiri, u javnom repou i na biblija.domovina.ai. Ako nositelji
+prava ili FOI prigovore, prijevod se uklanja iz `TRANSLATION_SPECS` i
+`TRANSLATION_CATALOG`, a njegov `data/json/<slug>/` se briše.
 
 ## Otvoreno
 
 - 45 neodlučenih mjesta (`vote_74.json`): uglavnom drukčije lomljenje stihova.
   Zanimljiva su Ezr 6,22, Lk 14,28 (FOI dodaje „se"), Dj 20,37 („obisnuše se" vs
   „padoše") i Jak 1,1.
-- Šarićev NZ (32) usporediti s NZ-om Šarićeve Biblije (75).
-- Šarić kao drugi prijevod u aplikaciji tek uz dozvolu nositelja prava ili 2031.
-- Katančićev prijevod (1831.) je slobodan, ali tekst je FOI-jeva digitalizacija
-  („Copyrights by Point d.o.o."). Preuzimanje cijele knjige može dirati
-  *sui generis* pravo na bazu podataka (ZAPSP). Matija je 2026-10-29 svjesno
-  odlučio objaviti: `data/json/katancic/` je u javnom repou i u produkciji
-  (biblija.domovina.ai, verzija `7b56d2be`). Ako Point ili FOI prigovore,
-  zamjena je čista digitalizacija Katančića iz drugog izvora.
-- Mobilne aplikacije Katančića još nemaju (`export_mobile_db.py`, SwiftUI, Compose).
+- Mobilne aplikacije dodatne prijevode još nemaju (`export_mobile_db.py`, SwiftUI, Compose).
 - BSB interlinear nije u čitaču. Za to treba preslikati englesku numeraciju na
   KS (naslovi psalama kao 1. redak, Jl, Mal) i odlučiti gdje se prikazuje (popover
   retka?). Strongov rječnik nije dohvaćen; slobodni izvor je openscriptures/strongs.
-- Na produkciji Katančić nije isproban u pregledniku, samo `curl` (stranica,
-  `astro-client.js`, JSON vraćaju 200 i sadrže nov kod).
-- Mobilna baza (`export_mobile_db.py`) i deploy s novih 7 ispravaka nisu pokrenuti.

@@ -64,7 +64,16 @@
     fontSize: parseInt(localStorage.getItem("biblija_fontsize") || "19", 10),
     theme: localStorage.getItem("biblija_theme") || "light",
     readingMode: localStorage.getItem("biblija_reading_mode") || "paragraphs",
-    translation: localStorage.getItem("biblija_translation") || "ks",
+    translation: (() => {
+      const saved = localStorage.getItem("biblija_translation") || "ks";
+      return saved === "parallel" ? "katancic" : saved;
+    })(),
+    translationLayout: (() => {
+      const savedLayout = localStorage.getItem("biblija_translation_layout");
+      if (savedLayout === "parallel" || savedLayout === "only") return savedLayout;
+      const savedTr = localStorage.getItem("biblija_translation");
+      return savedTr === "katancic" ? "only" : "parallel";
+    })(),
     syncAuth: JSON.parse(localStorage.getItem("biblija_sync_auth") || "null"),
     savedProfiles: JSON.parse(localStorage.getItem("biblija_saved_profiles") || "[]"),
     lastSyncedAt: localStorage.getItem("biblija_last_synced_at") || null,
@@ -921,24 +930,93 @@
       });
     }
 
-    /* Drugi prijevod: Katančić (Budim 1831.) iz data/json/katancic/, po knjizi. Oznake, bilješke,
-       plan i dnevnik ostaju na retcima KS-a; Katančić se poravnava po broju retka i samo se prikazuje. */
-    const TRANSLATIONS = ["ks", "parallel", "katancic"];
+    /* Drugi prijevodi iz data/json/<slug>/, po knjizi: Šarić (73), Katančić (67), Rupčić (NZ 27),
+       Raspudić (NZ 27), Gusić kajkavski (NZ 27). Oznake, bilješke, plan i dnevnik ostaju na retcima
+       KS-a; odabrani prijevod poravnava se po broju retka (usporedno ispod KS-a ili samostalno). */
+    const TRANSLATION_CATALOG = [
+      {
+        slug: "ks",
+        name: "KS",
+        shortLabel: "KS",
+        title: "Kršćanska sadašnjost (Duda–Fućak, 1968.)",
+        subtitle: "Cijela Biblija · 73 knjige · zadani tekst",
+        scope: "all",
+      },
+      {
+        slug: "saric",
+        name: "Šarić",
+        shortLabel: "Šarić",
+        title: "Ivan Ev. Šarić (1941.–1942.)",
+        subtitle: "Cijela Biblija · 73 knjige",
+        notice: "Šarić, Sveto pismo (1941.–1942.) · digitalizacija library.foi.hr",
+        scope: "all",
+      },
+      {
+        slug: "katancic",
+        name: "Katančić",
+        shortLabel: "Katančić",
+        title: "Matija Petar Katančić (Budim 1831.)",
+        subtitle: "Stari i Novi zavjet · 67 knjiga · stari pravopis",
+        notice: "Katančić, Sveto pismo (Budim 1831.) · digitalizacija library.foi.hr · stari pravopis",
+        scope: "all",
+        missingOrders: [9, 10, 11, 12, 13, 14],
+      },
+      {
+        slug: "rupcic",
+        name: "Rupčić",
+        shortLabel: "Rupčić",
+        title: "Ljudevit Rupčić (1961.)",
+        subtitle: "Novi zavjet · 27 knjiga",
+        notice: "Rupčić, Novi zavjet (1961.) · digitalizacija library.foi.hr",
+        scope: "nt",
+      },
+      {
+        slug: "raspudic",
+        name: "Raspudić",
+        shortLabel: "Raspudić",
+        title: "Gracijan Raspudić (1987.)",
+        subtitle: "Novi zavjet · 27 knjiga",
+        notice: "Raspudić, Novi zavjet (1987.) · digitalizacija library.foi.hr",
+        scope: "nt",
+      },
+      {
+        slug: "gusic",
+        name: "Gusić",
+        shortLabel: "Gusić",
+        title: "Ivan Rupert Gusić (kajkavski, 1821.)",
+        subtitle: "Novi zavjet · 27 knjiga · kajkavski rukopis",
+        notice: "Gusić, kajkavski Novi zavjet (1821.) · digitalizacija library.foi.hr · stari kajkavski pravopis",
+        scope: "nt",
+      },
+    ];
+    const TR_BY_SLUG = Object.fromEntries(TRANSLATION_CATALOG.map((t) => [t.slug, t]));
     const trBtn = document.getElementById("btnTranslationToggle");
+    const trMenu = document.getElementById("translationMenu");
     const altBody = document.getElementById("altChapterBody");
     const altNotice = document.getElementById("altNotice");
     const ksBody = document.getElementById("chapterBody");
-    let katancicBook; // undefined = nije učitano, null = FOI nema knjigu
+    const altBookCache = new Map();
 
-    async function loadKatancicBook() {
-      if (katancicBook !== undefined) return katancicBook;
+    function isBookSupportedBy(tr) {
+      if (!tr || tr.slug === "ks") return true;
+      if (tr.scope === "nt" && bookOrder < 47) return false;
+      if (tr.missingOrders && tr.missingOrders.includes(bookOrder)) return false;
+      return true;
+    }
+
+    async function loadAltBook(slug) {
+      const tr = TR_BY_SLUG[slug];
+      if (!tr || !isBookSupportedBy(tr)) return null;
+      if (altBookCache.has(slug)) return altBookCache.get(slug);
       try {
-        const res = await fetch(`/data/json/katancic/${String(bookOrder).padStart(2, "0")}_${bookId}.json`);
-        katancicBook = res.ok ? await res.json() : null;
+        const res = await fetch(`/data/json/${slug}/${String(bookOrder).padStart(2, "0")}_${bookId}.json`);
+        const data = res.ok ? await res.json() : null;
+        altBookCache.set(slug, data);
+        return data;
       } catch {
-        katancicBook = null;
+        altBookCache.set(slug, null);
+        return null;
       }
-      return katancicBook;
     }
 
     function showAltNotice(text) {
@@ -961,32 +1039,109 @@
       ksBody.querySelectorAll(".alt-verse, .alt-extra").forEach((el) => el.remove());
     }
 
+    function renderTranslationMenu() {
+      if (!trMenu) return;
+      const slug = TR_BY_SLUG[state.translation] ? state.translation : "ks";
+      const layout = state.translationLayout === "only" ? "only" : "parallel";
+      trMenu.innerHTML = `
+        <div class="tr-menu-head">
+          <span class="tr-menu-kicker">Način prikaza drugog prijevoda</span>
+          <div class="tr-layout-switch" role="group" aria-label="Način prikaza drugog prijevoda">
+            <button type="button" class="tr-layout-btn ${layout === "parallel" ? "active" : ""}" data-layout="parallel">Usporedno uz KS</button>
+            <button type="button" class="tr-layout-btn ${layout === "only" ? "active" : ""}" data-layout="only">Samostalno</button>
+          </div>
+        </div>
+        <div class="tr-menu-list" role="listbox" aria-label="Odabir prijevoda">
+          ${TRANSLATION_CATALOG.map((t) => {
+            const active = t.slug === slug;
+            const supported = isBookSupportedBy(t);
+            const unavailTag = !supported
+              ? `<span class="tr-item-badge">${t.scope === "nt" ? "samo NZ" : "nema knjige"}</span>`
+              : "";
+            return `
+              <button type="button" class="tr-item-btn ${active ? "active" : ""} ${!supported ? "is-unavailable" : ""}" data-tr-slug="${t.slug}" role="option" aria-selected="${active}">
+                <div class="tr-item-main">
+                  <div class="tr-item-title-row">
+                    <strong>${t.title}</strong>
+                    ${unavailTag}
+                  </div>
+                  <span class="tr-item-sub">${t.subtitle}</span>
+                </div>
+                ${active ? ic("check") : ""}
+              </button>
+            `;
+          }).join("")}
+        </div>
+      `;
+      trMenu.querySelectorAll("[data-layout]").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          state.translationLayout = btn.getAttribute("data-layout");
+          if (state.translation === "ks") {
+            state.translation = "saric";
+          }
+          renderTranslationMenu();
+          applyTranslation();
+        });
+      });
+      trMenu.querySelectorAll("[data-tr-slug]").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          state.translation = btn.getAttribute("data-tr-slug");
+          closeTranslationMenu();
+          applyTranslation();
+        });
+      });
+    }
+
+    function closeTranslationMenu() {
+      if (!trMenu || !trBtn) return;
+      trMenu.hidden = true;
+      trBtn.setAttribute("aria-expanded", "false");
+    }
+
     async function applyTranslation() {
-      const mode = TRANSLATIONS.includes(state.translation) ? state.translation : "ks";
-      localStorage.setItem("biblija_translation", mode);
-      document.documentElement.setAttribute("data-translation", mode);
-      if (trBtn) iconLabel(trBtn, "languages", { ks: "KS", parallel: "KS + Katančić", katancic: "Katančić" }[mode]);
+      const slug = TR_BY_SLUG[state.translation] ? state.translation : "ks";
+      const layout = state.translationLayout === "only" ? "only" : "parallel";
+      const tr = TR_BY_SLUG[slug];
+      localStorage.setItem("biblija_translation", slug);
+      localStorage.setItem("biblija_translation_layout", layout);
+      document.documentElement.setAttribute("data-translation", slug === "ks" ? "ks" : layout);
+      document.documentElement.setAttribute("data-translation-id", slug);
+
+      if (trBtn) {
+        const label = slug === "ks" ? "KS" : (layout === "parallel" ? `KS + ${tr.shortLabel}` : tr.shortLabel);
+        iconLabel(trBtn, "languages", label);
+      }
 
       clearParallel();
       altBody.replaceChildren();
       altBody.hidden = true;
       ksBody.hidden = false;
       showAltNotice("");
-      if (mode === "ks") return;
+      if (slug === "ks") return;
 
-      const book = await loadKatancicBook();
-      if (state.translation !== mode) return; // u međuvremenu prebačeno
+      if (!isBookSupportedBy(tr)) {
+        showAltNotice(
+          tr.scope === "nt"
+            ? `${tr.title} obuhvaća samo Novi zavjet (27 knjiga). Za Stari zavjet prikazan je tekst KS-a.`
+            : `Prijevod ${tr.name} nema ovu knjigu u izvoru (library.foi.hr). Prikazan je tekst KS-a.`
+        );
+        return;
+      }
+
+      const book = await loadAltBook(slug);
+      if (state.translation !== slug) return; // u međuvremenu prebačeno
       const verses = book && book.chapters[String(chapter)];
       if (!verses || !verses.length) {
         showAltNotice(book
-          ? `Katančić nema ${chapter === 0 ? "proslov" : `${chapter}. poglavlje`} pod ovim brojem.`
-          : "Katančića za ovu knjigu nema u izvoru (library.foi.hr). Prikazan je tekst KS-a.");
+          ? `${tr.name} nema ${chapter === 0 ? "proslov" : `${chapter}. poglavlje`} pod ovim brojem. Prikazan je tekst KS-a.`
+          : `Prijevod ${tr.name} za ovu knjigu nije dostupan. Prikazan je tekst KS-a.`);
         return;
       }
-      showAltNotice("Katančić, Sveto pismo (Budim 1831.) · digitalizacija library.foi.hr · stari pravopis"
-        + (book.note ? `. ${book.note}` : ""));
+      showAltNotice(tr.notice + (book.note ? `. ${book.note}` : ""));
 
-      if (mode === "parallel") {
+      if (layout === "parallel") {
         const ksByVerse = new Map();
         ksBody.querySelectorAll(".verse-item").forEach((el) => {
           const v = parseInt(el.getAttribute("data-verse"), 10);
@@ -1010,7 +1165,7 @@
           box.className = "alt-extra";
           const title = document.createElement("div");
           title.className = "sec-ref";
-          title.textContent = "Retci koje KS nema pod istim brojem (Katančić):";
+          title.textContent = `Retci koje KS nema pod istim brojem (${tr.name}):`;
           box.append(title, ...extra.map(([v, t]) => altVerseEl("span", "alt-verse alt-verse-standalone", v, t)));
           ksBody.append(box);
         }
@@ -1030,9 +1185,27 @@
     }
 
     if (trBtn && altBody && ksBody) {
-      trBtn.addEventListener("click", () => {
-        state.translation = TRANSLATIONS[(TRANSLATIONS.indexOf(state.translation) + 1) % TRANSLATIONS.length];
-        applyTranslation();
+      trBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (!trMenu) return;
+        const willOpen = trMenu.hidden;
+        if (willOpen) {
+          renderTranslationMenu();
+          trMenu.hidden = false;
+          trBtn.setAttribute("aria-expanded", "true");
+        } else {
+          closeTranslationMenu();
+        }
+      });
+      document.addEventListener("click", (e) => {
+        if (trMenu && !trMenu.hidden && !trMenu.contains(e.target) && e.target !== trBtn) {
+          closeTranslationMenu();
+        }
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && trMenu && !trMenu.hidden) {
+          closeTranslationMenu();
+        }
       });
       applyTranslation();
     }

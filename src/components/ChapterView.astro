@@ -165,14 +165,19 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
           >
             <Icon name="pilcrow" />Odjeljci
           </button>
-          <button
-            type="button"
-            class="icon-btn"
-            id="btnTranslationToggle"
-            title="Prijevod: Kršćanska sadašnjost, usporedno s Katančićem (1831.) ili samo Katančić"
-          >
-            <Icon name="languages" />KS
-          </button>
+          <div class="translation-picker-wrap">
+            <button
+              type="button"
+              class="icon-btn"
+              id="btnTranslationToggle"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              title="Prijevodi: KS (Duda–Fućak), Šarić, Katančić, Rupčić (NZ), Raspudić (NZ), Gusić (kajkavski NZ)"
+            >
+              <Icon name="languages" />KS
+            </button>
+            <div id="translationMenu" class="translation-menu" hidden></div>
+          </div>
           <button
             type="button"
             class="icon-btn"
