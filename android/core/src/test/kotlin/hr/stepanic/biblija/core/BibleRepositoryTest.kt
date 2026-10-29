@@ -33,6 +33,21 @@ class BibleRepositoryTest {
     }
 
     @Test
+    fun altTranslations() {
+        val all = repo.altTranslations()
+        assertEquals(listOf("saric", "katancic", "rupcic", "raspudic", "gusic"), all.map { it.slug })
+        val katancic = all.first { it.slug == "katancic" }
+        assertFalse(katancic.has(9), "FOI nema 1 Sam")
+        assertTrue(katancic.bookNotes[17] != null, "Tobija ima napomenu o Vulgati")
+        val rupcic = all.first { it.slug == "rupcic" }
+        assertFalse(rupcic.has(1))
+        assertTrue(rupcic.has(50))
+        val john1 = repo.altVerses("saric", 50, 1)
+        assertEquals(1, john1.first().verse)
+        assertTrue(john1.first().text.startsWith("U početku"))
+    }
+
+    @Test
     fun versesWithHeadingsAndLines() {
         assertTrue(repo.verses(50, 3).first { it.verse == 16 }.text.contains("Bog je tako ljubio svijet"))
         assertTrue(repo.verses(23, 23).any { it.isPoetic })

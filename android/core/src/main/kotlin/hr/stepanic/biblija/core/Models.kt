@@ -50,6 +50,24 @@ data class Verse(
     val isPoetic: Boolean get() = lines.size > 1
 }
 
+/** Drugi prijevod iz tablice alt_translations (Šarić, Katančić, ...); KS nije u njoj. */
+data class AltTranslation(
+    val slug: String,
+    val name: String,
+    val shortLabel: String,
+    val title: String,
+    val notice: String,
+    /** `all` ili `nt` (samo Novi zavjet) */
+    val scope: String,
+    /** Knjige (`book_order`) koje prijevod ima, s napomenom uz knjigu ako je ima. */
+    val bookNotes: Map<Int, String?>,
+) {
+    fun has(bookOrder: Int): Boolean = bookOrder in bookNotes
+}
+
+/** Redak drugog prijevoda, poravnat po broju retka KS-a. */
+data class AltVerse(val verse: Int, val text: String)
+
 @Serializable
 data class ChapterRef(val bookOrder: Int, val chapter: Int)
 

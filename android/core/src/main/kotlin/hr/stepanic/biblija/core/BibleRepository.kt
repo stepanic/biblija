@@ -14,7 +14,7 @@ class SchemaMismatchException(found: Int, expected: Int) :
 class BibleRepository(private val connection: SQLiteConnection) : AutoCloseable {
     companion object {
         /** Mora odgovarati SCHEMA_VERSION u scripts/export_mobile_db.py. */
-        const val EXPECTED_SCHEMA_VERSION = 1
+        const val EXPECTED_SCHEMA_VERSION = 2
     }
 
     private val json = Json { ignoreUnknownKeys = true }
@@ -62,6 +62,24 @@ class BibleRepository(private val connection: SQLiteConnection) : AutoCloseable 
             lines = it.textOrNull(6)?.let { s -> json.decodeFromString<List<String>>(s) } ?: emptyList(),
         )
     }
+
+    fun altTranslations(): List<AltTranslation> {
+        val notes = mutableMapOf<String, MutableMap<Int, String?>>()
+        query("SELECT slug, book_order, note FROM alt_books") {
+            notes.getOrPut(it.getText(0)) { mutableMapOf() }[it.int(1)] = it.textOrNull(2)
+        }
+        return query("SELECT slug, name, short_label, title, notice, scope FROM alt_translations ORDER BY sort") {
+            AltTranslation(
+                slug = it.getText(0), name = it.getText(1), shortLabel = it.getText(2), title = it.getText(3),
+                notice = it.getText(4), scope = it.getText(5), bookNotes = notes[it.getText(0)] ?: emptyMap(),
+            )
+        }
+    }
+
+    fun altVerses(slug: String, bookOrder: Int, chapter: Int): List<AltVerse> = query(
+        "SELECT verse, text FROM alt_verses WHERE slug = ? AND book_order = ? AND chapter = ? ORDER BY verse",
+        listOf(slug, bookOrder, chapter),
+    ) { AltVerse(it.int(0), it.getText(1)) }
 
     fun plans(): List<ReadingPlan> = query(
         "SELECT id, title, category, days_count, description FROM reading_plans ORDER BY rowid",

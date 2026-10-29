@@ -1,6 +1,12 @@
 package hr.stepanic.biblija.ui
 
 import androidx.compose.foundation.background
+import androidx.compose.material3.LocalContentColor
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -27,6 +33,7 @@ import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.RadioButtonUnchecked
 import androidx.compose.material.icons.filled.TextFields
+import androidx.compose.material.icons.filled.Translate
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -72,6 +79,8 @@ import hr.stepanic.biblija.AppViewModel
 import hr.stepanic.biblija.PlanDayContext
 import hr.stepanic.biblija.ReaderTheme
 import hr.stepanic.biblija.ReadingMode
+import hr.stepanic.biblija.TranslationLayout
+import hr.stepanic.biblija.core.AltVerse
 import hr.stepanic.biblija.core.ChapterRef
 import hr.stepanic.biblija.core.Verse
 
@@ -81,6 +90,10 @@ sealed class ChapterBlock(val key: String) {
     class ReferenceBlock(key: String, val text: String) : ChapterBlock(key)
     class Prose(key: String, val verses: List<Verse>) : ChapterBlock(key)
     class Poetic(key: String, val verse: Verse) : ChapterBlock(key)
+    /** Redak drugog prijevoda kad se prikazuje samostalno; ključ „v<N>" da didScroll zna redak. */
+    class AltOnly(key: String, val alt: AltVerse) : ChapterBlock(key)
+    /** Retci drugog prijevoda čiji broj KS nema (npr. Vulgatina podjela). */
+    class AltExtra(key: String, val name: String, val verses: List<AltVerse>) : ChapterBlock(key)
 
     /** Redak bloka iz ključa („p12", „v12", „h12-0", „r12-0") */
     val firstVerse: Int
@@ -90,6 +103,7 @@ sealed class ChapterBlock(val key: String) {
         get() = when (this) {
             is Prose -> verses.map { it.verse }
             is Poetic -> listOf(verse.verse)
+            is AltOnly -> listOf(alt.verse)
             else -> emptyList()
         }
 
@@ -128,7 +142,22 @@ fun ReaderScreen(vm: AppViewModel) {
     var selectedVerse by remember { mutableStateOf<Verse?>(null) }
 
     val verses = remember(ref) { vm.verses(ref) }
-    val blocks = remember(verses, vm.readingMode) { ChapterBlock.build(verses, vm.readingMode) }
+    val alt = remember(ref, vm.translation, vm.altTranslations) { vm.altChapter(ref) }
+    val altParallel = alt.verses.isNotEmpty() && vm.translationLayout == TranslationLayout.PARALLEL
+    val altByVerse = remember(alt) { alt.verses.associateBy { it.verse } }
+    val blocks = remember(verses, vm.readingMode, alt, vm.translationLayout) {
+        when {
+            alt.verses.isEmpty() -> ChapterBlock.build(verses, vm.readingMode)
+            vm.translationLayout == TranslationLayout.ONLY -> alt.verses.map { ChapterBlock.AltOnly("v${it.verse}", it) }
+            else -> {
+                // Usporedno: svaki redak KS-a svoj blok, da drugi prijevod stoji točno ispod njega (kao na webu)
+                val ks = verses.map { it.verse }.toSet()
+                val extra = alt.verses.filter { it.verse !in ks }
+                ChapterBlock.build(verses, ReadingMode.VERSES) +
+                    listOfNotNull(extra.takeIf { it.isNotEmpty() }?.let { ChapterBlock.AltExtra("xalt", vm.activeAltTranslation?.name ?: "", it) })
+            }
+        }
+    }
     val listState = remember(ref) { androidx.compose.foundation.lazy.LazyListState() }
 
     LaunchedEffect(ref) { vm.didShow(ref) }
@@ -161,7 +190,10 @@ fun ReaderScreen(vm: AppViewModel) {
                 }
             }
         },
-        actions = { DisplayMenu(vm) },
+        actions = {
+            TranslationMenu(vm)
+            DisplayMenu(vm)
+        },
     ) { padding ->
         LazyColumn(
             state = listState,
@@ -175,10 +207,12 @@ fun ReaderScreen(vm: AppViewModel) {
             item(key = "banner") {
                 vm.activeDay?.let { PlanDayBanner(vm, it, ref) }
             }
-            item(key = "header") { ChapterHeader(vm, ref) }
+            item(key = "header") { ChapterHeader(vm, ref, alt.notice) }
             items(blocks, key = { it.key }) { block ->
                 Column(Modifier.widthIn(max = 720.dp).fillMaxWidth().padding(horizontal = 20.dp)) {
-                    BlockView(vm, ref, block, selectedVerse?.verse) { n -> selectedVerse = verses.firstOrNull { it.verse == n } }
+                    BlockView(vm, ref, block, selectedVerse?.verse, if (altParallel) altByVerse else emptyMap()) { n ->
+                        selectedVerse = verses.firstOrNull { it.verse == n }
+                    }
                 }
             }
             item(key = "footer") { ChapterFooter(vm, ref) }
@@ -197,17 +231,28 @@ fun ReaderScreen(vm: AppViewModel) {
 }
 
 @Composable
-private fun BlockView(vm: AppViewModel, ref: ChapterRef, block: ChapterBlock, selected: Int?, onVerse: (Int) -> Unit) {
+private fun BlockView(
+    vm: AppViewModel,
+    ref: ChapterRef,
+    block: ChapterBlock,
+    selected: Int?,
+    altByVerse: Map<Int, AltVerse>,
+    onVerse: (Int) -> Unit,
+) {
     val palette = LocalPalette.current
     val fs = vm.fontSize
     val readingStyle = TextStyle(fontFamily = ReadingFontFamily, fontSize = fs.sp, lineHeight = (fs * 1.6f).sp, color = palette.text)
+    val altStyle = readingStyle.copy(fontSize = (fs * 0.92f).sp, lineHeight = (fs * 1.45f).sp, fontStyle = FontStyle.Italic, color = palette.muted)
+    val altLines = block.verseNumbers.mapNotNull { altByVerse[it] }
 
-    fun AnnotatedString.Builder.verseNumber(v: Verse) {
+    fun AnnotatedString.Builder.verseNumber(label: String) {
         withStyle(SpanStyle(fontSize = (fs * 0.58f).sp, fontWeight = FontWeight.SemiBold, color = palette.accent, baselineShift = BaselineShift(0.4f))) {
-            append(v.label)
+            append(label)
             append(' ')
         }
     }
+
+    fun AnnotatedString.Builder.verseNumber(v: Verse): Unit = verseNumber(v.label)
 
     fun AnnotatedString.Builder.verseText(text: String, verse: Int) {
         val bm = vm.bookmark(ref, verse)
@@ -244,9 +289,9 @@ private fun BlockView(vm: AppViewModel, ref: ChapterRef, block: ChapterBlock, se
                 }
             },
             style = readingStyle,
-            modifier = Modifier.padding(bottom = if (vm.readingMode == ReadingMode.VERSES) 8.dp else 14.dp),
+            modifier = Modifier.padding(bottom = if (altLines.isNotEmpty()) 4.dp else if (vm.readingMode == ReadingMode.VERSES) 8.dp else 14.dp),
         )
-        is ChapterBlock.Poetic -> Column(Modifier.padding(bottom = 10.dp)) {
+        is ChapterBlock.Poetic -> Column(Modifier.padding(bottom = if (altLines.isNotEmpty()) 4.dp else 10.dp)) {
             block.verse.lines.forEachIndexed { idx, line ->
                 Text(
                     buildAnnotatedString {
@@ -258,11 +303,35 @@ private fun BlockView(vm: AppViewModel, ref: ChapterRef, block: ChapterBlock, se
                 )
             }
         }
+        is ChapterBlock.AltOnly -> Text(
+            buildAnnotatedString {
+                verseNumber(block.alt.verse.toString())
+                append(block.alt.text)
+            },
+            style = readingStyle,
+            modifier = Modifier.padding(bottom = 8.dp),
+        )
+        is ChapterBlock.AltExtra -> Column(Modifier.padding(top = 8.dp, bottom = 10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            Text(
+                "Retci koje KS nema pod istim brojem (${block.name}):",
+                style = MaterialTheme.typography.bodySmall.copy(fontStyle = FontStyle.Italic, color = palette.muted),
+            )
+            block.verses.forEach { v ->
+                Text(buildAnnotatedString { verseNumber(v.verse.toString()); append(v.text) }, style = altStyle)
+            }
+        }
+    }
+    // Drugi prijevod ispod retka KS-a: kurziv s crtom slijeva, kao .alt-verse na webu
+    altLines.forEach { v ->
+        Row(Modifier.padding(bottom = 10.dp).height(IntrinsicSize.Min)) {
+            Box(Modifier.width(2.dp).fillMaxHeight().background(palette.muted.copy(alpha = 0.35f)))
+            Text(v.text, style = altStyle, modifier = Modifier.padding(start = 10.dp))
+        }
     }
 }
 
 @Composable
-private fun ChapterHeader(vm: AppViewModel, ref: ChapterRef) {
+private fun ChapterHeader(vm: AppViewModel, ref: ChapterRef, altNotice: String?) {
     val palette = LocalPalette.current
     val book = vm.book(ref.bookOrder) ?: return
     val chapters = vm.chapters(book)
@@ -307,6 +376,19 @@ private fun ChapterHeader(vm: AppViewModel, ref: ChapterRef) {
                     )
                 }
             }
+        }
+        // Izvor drugog prijevoda ili zašto ga za ovo poglavlje nema (#altNotice na webu)
+        altNotice?.let {
+            Text(
+                it,
+                style = MaterialTheme.typography.bodySmall,
+                color = palette.muted,
+                modifier = Modifier
+                    .padding(top = 14.dp)
+                    .fillMaxWidth()
+                    .background(palette.muted.copy(alpha = 0.1f), RoundedCornerShape(10.dp))
+                    .padding(10.dp),
+            )
         }
     }
 }
@@ -420,6 +502,39 @@ private fun ChapterFooter(vm: AppViewModel, ref: ChapterRef) {
                     }
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun TranslationMenu(vm: AppViewModel) {
+    var open by remember { mutableStateOf(false) }
+    val active = vm.activeAltTranslation
+    IconButton(onClick = { open = true }) {
+        Icon(
+            Icons.Filled.Translate,
+            contentDescription = "Prijevod: " + (active?.let { if (vm.translationLayout == TranslationLayout.PARALLEL) "KS i ${it.name}" else it.name } ?: "KS"),
+            tint = if (active != null) LocalPalette.current.accent else LocalContentColor.current,
+        )
+    }
+    DropdownMenu(expanded = open, onDismissRequest = { open = false }) {
+        DropdownMenuItem(
+            text = { Text("Kršćanska sadašnjost (KS)", fontWeight = if (active == null) FontWeight.Bold else FontWeight.Normal) },
+            onClick = { vm.updateTranslation("ks"); open = false },
+        )
+        for (tr in vm.altTranslations) {
+            DropdownMenuItem(
+                text = { Text(tr.title, fontWeight = if (active?.slug == tr.slug) FontWeight.Bold else FontWeight.Normal) },
+                onClick = { vm.updateTranslation(tr.slug); open = false },
+            )
+        }
+        HorizontalDivider()
+        for (layout in TranslationLayout.entries) {
+            DropdownMenuItem(
+                text = { Text(layout.label, fontWeight = if (vm.translationLayout == layout) FontWeight.Bold else FontWeight.Normal) },
+                enabled = active != null,
+                onClick = { vm.updateTranslationLayout(layout); open = false },
+            )
         }
     }
 }

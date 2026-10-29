@@ -54,7 +54,7 @@ simulatora i emulatora.
 
 | Dio | Gdje | Provjera |
 |---|---|---|
-| Read-only mobilna baza (tekst, FTS5, planovi, `mobile_meta`) | `scripts/export_mobile_db.py`, `npm run mobile-db` | odbija `user_*`/`sync_*` tablice |
+| Read-only mobilna baza (tekst, FTS5, planovi, drugi prijevodi `alt_*`, `mobile_meta`; shema 2) | `scripts/export_mobile_db.py`, `npm run mobile-db` | odbija `user_*`/`sync_*` tablice |
 | Testni vektori: fold, FTS izraz, biblijska referenca, LWW | `shared/test-vectors/`, `scripts/gen_test_vectors.py` | `npm run test:contract` (15 testova protiv pravog `src/worker.ts` nad `node:sqlite`) |
 | Worker: `POST /api/account/delete`, zaključavanje nakon 5 pogrešnih PIN-ova (15 min) | `src/worker.ts`, `migrations/0002_auth_failures.sql` | isti ugovorni testovi |
 | iOS logika | `ios/BiblijaKit` (Swift package) | `cd ios/BiblijaKit && swift test` (12) |

@@ -169,7 +169,7 @@ prava ili FOI prigovore, prijevod se uklanja iz `TRANSLATION_SPECS` i
 - 45 neodlučenih mjesta (`vote_74.json`): uglavnom drukčije lomljenje stihova.
   Zanimljiva su Ezr 6,22, Lk 14,28 (FOI dodaje „se"), Dj 20,37 („obisnuše se" vs
   „padoše") i Jak 1,1.
-- Mobilne aplikacije dodatne prijevode još nemaju (`export_mobile_db.py`, SwiftUI, Compose).
+- Mobilne aplikacije imaju svih pet prijevoda od 2026-10-29 (tablice `alt_*`, shema 2), ali na uređaju još nisu isprobane.
 - BSB interlinear nije u čitaču. Za to treba preslikati englesku numeraciju na
   KS (naslovi psalama kao 1. redak, Jl, Mal) i odlučiti gdje se prikazuje (popover
   retka?). Strongov rječnik nije dohvaćen; slobodni izvor je openscriptures/strongs.

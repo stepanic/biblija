@@ -19,7 +19,7 @@ public enum BibleDatabaseError: Error, LocalizedError {
 /// Sistemski SQLite na iOS-u ima FTS5.
 public final class BibleDatabase: @unchecked Sendable {
     /// Mora odgovarati SCHEMA_VERSION u scripts/export_mobile_db.py.
-    public static let expectedSchemaVersion = 1
+    public static let expectedSchemaVersion = 2
 
     private var db: OpaquePointer?
     private let lock = NSLock()
@@ -84,6 +84,26 @@ public final class BibleDatabase: @unchecked Sendable {
                 headings: json(4) ?? [], references: json(5) ?? [], lines: json(6) ?? []
             )
         }
+    }
+
+    public func altTranslations() throws -> [AltTranslation] {
+        var notes: [String: [Int: String?]] = [:]
+        _ = try query("SELECT slug, book_order, note FROM alt_books") { r in
+            notes[r.text(0), default: [:]][r.int(1)] = .some(r.optionalText(2))
+        }
+        return try query("SELECT slug, name, short_label, title, notice, scope FROM alt_translations ORDER BY sort") { r in
+            AltTranslation(
+                slug: r.text(0), name: r.text(1), shortLabel: r.text(2), title: r.text(3), notice: r.text(4),
+                scope: r.text(5), bookNotes: notes[r.text(0)] ?? [:]
+            )
+        }
+    }
+
+    public func altVerses(slug: String, bookOrder: Int, chapter: Int) throws -> [AltVerse] {
+        try query(
+            "SELECT verse, text FROM alt_verses WHERE slug = ? AND book_order = ? AND chapter = ? ORDER BY verse",
+            [.text(slug), .int(bookOrder), .int(chapter)]
+        ) { AltVerse(verse: $0.int(0), text: $0.text(1)) }
     }
 
     public func plans() throws -> [ReadingPlan] {

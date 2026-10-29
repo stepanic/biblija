@@ -31,6 +31,21 @@ enum ReadingMode: String, CaseIterable, Identifiable {
     var label: String { self == .paragraphs ? "Odlomci" : "Redak po redak" }
 }
 
+/// Kako se prikazuje drugi prijevod: ispod svakog retka KS-a ili umjesto KS-a (kao na webu).
+enum TranslationLayout: String, CaseIterable, Identifiable {
+    case parallel
+    case only
+    var id: String { rawValue }
+
+    var label: String { self == .parallel ? "Usporedno uz KS" : "Samostalno" }
+}
+
+/// Drugi prijevod za poglavlje u čitaču: napomena iznad teksta i retci (prazno = prikazuje se samo KS).
+struct AltChapter: Equatable {
+    var notice: String?
+    var verses: [AltVerse] = []
+}
+
 /// Plan i dan iz kojeg je čitač otvoren (traka „Dan N" u čitaču, kao `biblija_active_day_ctx` na webu).
 struct PlanCatchUpOffer: Equatable {
     let planId: String
@@ -70,6 +85,7 @@ final class AppModel {
     private(set) var loadError: String?
     private(set) var books: [Book] = []
     private(set) var plans: [ReadingPlan] = []
+    private(set) var altTranslations: [AltTranslation] = []
     private var booksByOrder: [Int: Book] = [:]
     private var booksBySlug: [String: Book] = [:]
     private var chapterCache: [Int: [ChapterInfo]] = [:]
@@ -84,6 +100,9 @@ final class AppModel {
     var fontSize: Double { didSet { defaults.set(fontSize, forKey: Keys.fontSize) } }
     var theme: ReaderTheme { didSet { defaults.set(theme.rawValue, forKey: Keys.theme) } }
     var readingMode: ReadingMode { didSet { defaults.set(readingMode.rawValue, forKey: Keys.readingMode) } }
+    /// `ks` ili slug iz alt_translations; oznake, plan i dnevnik ostaju na retcima KS-a.
+    var translation: String { didSet { defaults.set(translation, forKey: Keys.translation) } }
+    var translationLayout: TranslationLayout { didSet { defaults.set(translationLayout.rawValue, forKey: Keys.translationLayout) } }
 
     // MARK: Korisničko stanje
     private(set) var userData: UserData
@@ -116,6 +135,8 @@ final class AppModel {
         static let fontSize = "biblija_fontsize"
         static let theme = "biblija_theme"
         static let readingMode = "biblija_reading_mode"
+        static let translation = "biblija_translation"
+        static let translationLayout = "biblija_translation_layout"
         static let serverURL = "biblija_server_url"
         static let lastSyncedAt = "biblija_last_synced_at"
         static let liveRoom = "biblija_live_room"
@@ -125,6 +146,8 @@ final class AppModel {
         fontSize = defaults.object(forKey: Keys.fontSize) as? Double ?? 19
         theme = ReaderTheme(rawValue: defaults.string(forKey: Keys.theme) ?? "") ?? .system
         readingMode = ReadingMode(rawValue: defaults.string(forKey: Keys.readingMode) ?? "") ?? .paragraphs
+        translation = defaults.string(forKey: Keys.translation) ?? "ks"
+        translationLayout = TranslationLayout(rawValue: defaults.string(forKey: Keys.translationLayout) ?? "") ?? .parallel
         serverURLString = defaults.string(forKey: Keys.serverURL)
             ?? (Bundle.main.object(forInfoDictionaryKey: "BiblijaSyncBaseURL") as? String ?? "")
         lastSyncedAt = defaults.string(forKey: Keys.lastSyncedAt)
@@ -154,6 +177,7 @@ final class AppModel {
             database = db
             books = try db.books()
             plans = try db.plans()
+            altTranslations = try db.altTranslations()
             booksByOrder = Dictionary(uniqueKeysWithValues: books.map { ($0.order, $0) })
             booksBySlug = Dictionary(uniqueKeysWithValues: books.map { ($0.slug, $0) })
         } catch {
@@ -174,6 +198,26 @@ final class AppModel {
 
     func verses(_ ref: ChapterRef) -> [Verse] {
         (try? database?.verses(bookOrder: ref.bookOrder, chapter: ref.chapter)) ?? []
+    }
+
+    /// Odabrani drugi prijevod; nil za KS.
+    var activeAltTranslation: AltTranslation? { altTranslations.first { $0.slug == translation } }
+
+    /// Drugi prijevod za poglavlje, s porukama kao applyTranslation() u astro-client.js.
+    func altChapter(_ ref: ChapterRef) -> AltChapter {
+        guard let tr = activeAltTranslation else { return AltChapter() }
+        guard tr.has(bookOrder: ref.bookOrder) else {
+            return AltChapter(notice: tr.scope == "nt"
+                ? "\(tr.name) obuhvaća samo Novi zavjet (27 knjiga). Za Stari zavjet prikazan je tekst KS-a."
+                : "Prijevod \(tr.name) nema ovu knjigu u izvoru (library.foi.hr). Prikazan je tekst KS-a.")
+        }
+        let verses = (try? database?.altVerses(slug: tr.slug, bookOrder: ref.bookOrder, chapter: ref.chapter)) ?? []
+        guard !verses.isEmpty else {
+            let place = ref.chapter == 0 ? "proslov" : "\(ref.chapter). poglavlje"
+            return AltChapter(notice: "\(tr.name) nema \(place) pod ovim brojem. Prikazan je tekst KS-a.")
+        }
+        let note = tr.bookNotes[ref.bookOrder] ?? nil
+        return AltChapter(notice: tr.notice + (note.map { ". \($0)" } ?? ""), verses: verses)
     }
 
     func planDays(_ planId: String) -> [PlanDay] {

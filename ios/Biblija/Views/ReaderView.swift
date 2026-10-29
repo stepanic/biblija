@@ -29,6 +29,7 @@ struct ReaderView: View {
                         .accessibilityHint("Odaberi knjigu i poglavlje")
                     }
                     ToolbarItemGroup(placement: .topBarTrailing) {
+                        TranslationMenu()
                         ReaderDisplayMenu()
                     }
                     ToolbarItemGroup(placement: .topBarLeading) {
@@ -132,6 +133,7 @@ struct ChapterScrollView: View {
 
     @State private var verses: [Verse] = []
     @State private var blocks: [ChapterBlock] = []
+    @State private var alt = AltChapter()
     @State private var topBlockId: String?
 
     var body: some View {
@@ -149,9 +151,42 @@ struct ChapterScrollView: View {
                     ChapterHeader(ref: ref, palette: palette)
                         .padding(.bottom, 16)
                         .id("top")
-                    ForEach(blocks) { block in
-                        blockView(block)
+                    if let notice = alt.notice {
+                        AltNotice(text: notice, palette: palette)
+                            .padding(.bottom, 14)
+                    }
+                    if altOnly {
+                        // Samo drugi prijevod; id „v<N>" da didScroll i dalje zna redak
+                        ForEach(alt.verses, id: \.verse) { v in
+                            Text(verseNumber(label: String(v.verse)) + altStyled(v.text, italic: false))
+                                .lineSpacing(ReadingFont.size(fontSize) * 0.45)
+                                .textSelection(.enabled)
+                                .padding(.bottom, 8)
+                                .id("v\(v.verse)")
+                        }
+                    } else {
+                        ForEach(blocks) { block in
+                            VStack(alignment: .leading, spacing: 0) {
+                                blockView(block)
+                                if altParallel {
+                                    ForEach(block.verseNumbers.compactMap { altByVerse[$0] }, id: \.verse) { v in
+                                        altParallelLine(v.text)
+                                    }
+                                }
+                            }
                             .id(block.id)
+                        }
+                        if altParallel, !altExtra.isEmpty {
+                            VStack(alignment: .leading, spacing: 6) {
+                                Text("Retci koje KS nema pod istim brojem (\(model.activeAltTranslation?.name ?? "")):")
+                                    .font(.footnote.italic())
+                                    .foregroundStyle(palette.muted)
+                                ForEach(altExtra, id: \.verse) { v in
+                                    Text(verseNumber(label: String(v.verse)) + altStyled(v.text, italic: true))
+                                }
+                            }
+                            .padding(.top, 8)
+                        }
                     }
                     ChapterFooter(ref: ref, palette: palette)
                         .padding(.top, 28)
@@ -166,9 +201,12 @@ struct ChapterScrollView: View {
             .onChange(of: topBlockId) { _, id in
                 model.didScroll(to: ChapterBlock.verse(fromId: id))
             }
-            .task(id: TaskKey(ref: ref, mode: model.readingMode)) {
+            .task(id: TaskKey(ref: ref, mode: model.readingMode, translation: model.translation, layout: model.translationLayout)) {
                 verses = model.verses(ref)
-                blocks = ChapterBlock.build(verses, mode: model.readingMode)
+                alt = model.altChapter(ref)
+                // Usporedno: svaki redak KS-a svoj blok, da drugi prijevod stoji točno ispod njega (kao na webu)
+                let parallel = !alt.verses.isEmpty && model.translationLayout == .parallel
+                blocks = ChapterBlock.build(verses, mode: parallel ? .verses : model.readingMode)
                 if let target = scrollTarget, let block = blocks.first(where: { $0.verseNumbers.contains(target) }) {
                     try? await Task.sleep(for: .milliseconds(80))
                     withAnimation { proxy.scrollTo(block.id, anchor: .top) }
@@ -187,6 +225,38 @@ struct ChapterScrollView: View {
     private struct TaskKey: Equatable {
         let ref: ChapterRef
         let mode: ReadingMode
+        let translation: String
+        let layout: TranslationLayout
+    }
+
+    private var altOnly: Bool { !alt.verses.isEmpty && model.translationLayout == .only }
+    private var altParallel: Bool { !alt.verses.isEmpty && model.translationLayout == .parallel }
+    private var altByVerse: [Int: AltVerse] { Dictionary(alt.verses.map { ($0.verse, $0) }, uniquingKeysWith: { a, _ in a }) }
+
+    /// Retci drugog prijevoda čiji broj KS nema (npr. Vulgatina podjela).
+    private var altExtra: [AltVerse] {
+        let ks = Set(verses.map(\.verse))
+        return alt.verses.filter { !ks.contains($0.verse) }
+    }
+
+    private func altStyled(_ text: String, italic: Bool) -> AttributedString {
+        var body = AttributedString(text)
+        body.font = italic ? ReadingFont.font(fontSize * 0.92).italic() : ReadingFont.font(fontSize)
+        body.foregroundColor = italic ? palette.muted : palette.text
+        return body
+    }
+
+    /// Drugi prijevod ispod retka KS-a: kurziv s crtom slijeva, kao .alt-verse na webu.
+    private func altParallelLine(_ text: String) -> some View {
+        Text(altStyled(text, italic: true))
+            .lineSpacing(ReadingFont.size(fontSize) * 0.3)
+            .textSelection(.enabled)
+            .padding(.leading, 10)
+            .overlay(alignment: .leading) {
+                Rectangle().fill(palette.muted.opacity(0.35)).frame(width: 2)
+            }
+            .padding(.top, -2)
+            .padding(.bottom, 10)
     }
 
     private var fontSize: Double { model.fontSize }
@@ -211,15 +281,19 @@ struct ChapterScrollView: View {
                 .lineSpacing(ReadingFont.size(fontSize) * 0.45)
                 .tint(palette.text)
                 .textSelection(.enabled)
-                .padding(.bottom, model.readingMode == .verses ? 8 : 14)
+                .padding(.bottom, altParallel ? 4 : model.readingMode == .verses ? 8 : 14)
         case .poetic(_, let verse):
             poeticView(verse)
-                .padding(.bottom, 10)
+                .padding(.bottom, altParallel ? 4 : 10)
         }
     }
 
     private func verseNumber(_ v: Verse) -> AttributedString {
-        var num = AttributedString(v.label + "\u{00A0}")
+        verseNumber(label: v.label)
+    }
+
+    private func verseNumber(label: String) -> AttributedString {
+        var num = AttributedString(label + "\u{00A0}")
         num.font = .system(size: ReadingFont.size(fontSize) * 0.58, weight: .semibold)
         num.baselineOffset = ReadingFont.size(fontSize) * 0.38
         num.foregroundColor = palette.accent
@@ -444,6 +518,46 @@ struct ChapterFooter: View {
         } else {
             Spacer().frame(maxWidth: .infinity)
         }
+    }
+}
+
+/// Izvor drugog prijevoda ili zašto ga za ovo poglavlje nema (#altNotice na webu).
+struct AltNotice: View {
+    let text: String
+    let palette: Palette
+
+    var body: some View {
+        Text(text)
+            .font(.caption)
+            .foregroundStyle(palette.muted)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(10)
+            .background(palette.muted.opacity(0.1), in: RoundedRectangle(cornerRadius: 10))
+    }
+}
+
+// MARK: - Izbornik prijevoda
+
+struct TranslationMenu: View {
+    @Environment(AppModel.self) private var model
+
+    var body: some View {
+        @Bindable var model = model
+        Menu {
+            Picker("Prijevod", selection: $model.translation) {
+                Text("Kršćanska sadašnjost (KS)").tag("ks")
+                ForEach(model.altTranslations) { tr in
+                    Text(tr.title).tag(tr.slug)
+                }
+            }
+            Picker("Drugi prijevod", selection: $model.translationLayout) {
+                ForEach(TranslationLayout.allCases) { Text($0.label).tag($0) }
+            }
+            .disabled(model.translation == "ks")
+        } label: {
+            Image(systemName: model.translation == "ks" ? "character.book.closed" : "character.book.closed.fill")
+        }
+        .accessibilityLabel("Prijevod: \(model.activeAltTranslation.map { model.translationLayout == .parallel ? "KS i \($0.name)" : $0.name } ?? "KS")")
     }
 }
 

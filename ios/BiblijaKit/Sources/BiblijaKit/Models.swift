@@ -48,6 +48,43 @@ public struct Verse: Identifiable, Hashable, Sendable {
     public var isPoetic: Bool { lines.count > 1 }
 }
 
+/// Drugi prijevod iz tablice alt_translations (Šarić, Katančić, ...); KS nije u njoj.
+public struct AltTranslation: Identifiable, Hashable, Sendable {
+    public var id: String { slug }
+    public let slug: String
+    public let name: String
+    public let shortLabel: String
+    public let title: String
+    public let notice: String
+    /// `all` ili `nt` (samo Novi zavjet)
+    public let scope: String
+    /// Knjige (`book_order`) koje prijevod ima, s napomenom uz knjigu ako je ima.
+    public let bookNotes: [Int: String?]
+
+    public init(slug: String, name: String, shortLabel: String, title: String, notice: String, scope: String, bookNotes: [Int: String?]) {
+        self.slug = slug
+        self.name = name
+        self.shortLabel = shortLabel
+        self.title = title
+        self.notice = notice
+        self.scope = scope
+        self.bookNotes = bookNotes
+    }
+
+    public func has(bookOrder: Int) -> Bool { bookNotes[bookOrder] != nil }
+}
+
+/// Redak drugog prijevoda, poravnat po broju retka KS-a.
+public struct AltVerse: Hashable, Sendable {
+    public let verse: Int
+    public let text: String
+
+    public init(verse: Int, text: String) {
+        self.verse = verse
+        self.text = text
+    }
+}
+
 public struct ChapterRef: Hashable, Codable, Sendable {
     public let bookOrder: Int
     public let chapter: Int

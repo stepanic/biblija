@@ -28,6 +28,20 @@ final class BibleDatabaseTests: XCTestCase {
         XCTAssertFalse(try db.verses(bookOrder: 19, chapter: 1).first!.headings.isEmpty)
     }
 
+    func testAltTranslations() throws {
+        let all = try db.altTranslations()
+        XCTAssertEqual(all.map(\.slug), ["saric", "katancic", "rupcic", "raspudic", "gusic"])
+        let katancic = try XCTUnwrap(all.first { $0.slug == "katancic" })
+        XCTAssertFalse(katancic.has(bookOrder: 9), "FOI nema 1 Sam")
+        XCTAssertNotNil(katancic.bookNotes[17] ?? nil, "Tobija ima napomenu o Vulgati")
+        let rupcic = try XCTUnwrap(all.first { $0.slug == "rupcic" })
+        XCTAssertFalse(rupcic.has(bookOrder: 1))
+        XCTAssertTrue(rupcic.has(bookOrder: 50))
+        let john1 = try db.altVerses(slug: "saric", bookOrder: 50, chapter: 1)
+        XCTAssertEqual(john1.first?.verse, 1)
+        XCTAssertTrue(john1.first?.text.hasPrefix("U početku") ?? false)
+    }
+
     func testSearchMatchesServerSemantics() throws {
         // isti broj kao server.py: verses_fts MATCH '"ljubav"*'
         XCTAssertEqual(try db.search("ljubav").total, 272)

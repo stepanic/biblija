@@ -52,7 +52,7 @@ android {
     }
 }
 
-// Osvježi mobilnu bazu iz data/biblija.db prije svakog builda (preskače se ako je svježa).
+// Osvježi mobilnu bazu iz data/biblija.db i drugih prijevoda prije svakog builda (preskače se ako je svježa).
 val exportMobileDb = tasks.register<Exec>("exportMobileDb") {
     val repoRoot = rootDir.parentFile
     workingDir = repoRoot
@@ -61,6 +61,8 @@ val exportMobileDb = tasks.register<Exec>("exportMobileDb") {
         "--out", File(projectDir, "src/main/assets/biblija-mobile.db").absolutePath,
     )
     inputs.file(File(repoRoot, "data/biblija.db")).optional()
+    inputs.file(File(repoRoot, "data/json/translations.json")).optional()
+    inputs.file(File(repoRoot, "scripts/export_mobile_db.py"))
     outputs.file(File(projectDir, "src/main/assets/biblija-mobile.db"))
 }
 tasks.named("preBuild") { dependsOn(exportMobileDb) }

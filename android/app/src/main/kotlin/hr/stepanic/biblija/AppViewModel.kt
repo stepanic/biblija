@@ -9,6 +9,8 @@ import androidx.core.content.edit
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.sqlite.driver.bundled.BundledSQLiteDriver
+import hr.stepanic.biblija.core.AltTranslation
+import hr.stepanic.biblija.core.AltVerse
 import hr.stepanic.biblija.core.BibleRepository
 import hr.stepanic.biblija.core.Book
 import hr.stepanic.biblija.core.Bookmark
@@ -54,6 +56,15 @@ enum class ReadingMode(val label: String) {
     VERSES("Redak po redak"),
 }
 
+/** Kako se prikazuje drugi prijevod: ispod svakog retka KS-a ili umjesto KS-a (kao na webu). */
+enum class TranslationLayout(val label: String) {
+    PARALLEL("Usporedno uz KS"),
+    ONLY("Samostalno"),
+}
+
+/** Drugi prijevod za poglavlje u čitaču: napomena iznad teksta i retci (prazno = prikazuje se samo KS). */
+data class AltChapter(val notice: String? = null, val verses: List<AltVerse> = emptyList())
+
 /** Plan i dan iz kojeg je čitač otvoren (traka „Dan N" u čitaču, kao `biblija_active_day_ctx` na webu). */
 data class PlanDayContext(val planId: String, val day: PlanDay)
 
@@ -83,6 +94,8 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         private set
     var plans: List<ReadingPlan> by mutableStateOf(emptyList())
         private set
+    var altTranslations: List<AltTranslation> by mutableStateOf(emptyList())
+        private set
     private var booksByOrder: Map<Int, Book> = emptyMap()
     private var booksBySlug: Map<String, Book> = emptyMap()
     private val chapterCache = mutableMapOf<Int, List<ChapterInfo>>()
@@ -100,6 +113,12 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var theme by mutableStateOf(enumOr(prefs.getString("theme", null), ReaderTheme.SYSTEM))
         private set
     var readingMode by mutableStateOf(enumOr(prefs.getString("reading_mode", null), ReadingMode.PARAGRAPHS))
+        private set
+
+    /** `ks` ili slug iz alt_translations; oznake, plan i dnevnik ostaju na retcima KS-a. */
+    var translation by mutableStateOf(prefs.getString("translation", null) ?: "ks")
+        private set
+    var translationLayout by mutableStateOf(enumOr(prefs.getString("translation_layout", null), TranslationLayout.PARALLEL))
         private set
 
     // ---------- Korisničko stanje ----------
@@ -135,6 +154,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                     val repo = BibleRepository(BundledSQLiteDriver().open(file.absolutePath))
                     Triple(repo, repo.books(), repo.plans())
                 }
+                altTranslations = withContext(Dispatchers.IO) { repo.altTranslations() }
                 repository = repo
                 books = loadedBooks
                 plans = loadedPlans
@@ -161,6 +181,27 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         chapterCache.getOrPut(book.order) { repository?.chapters(book.order) ?: emptyList() }
 
     fun verses(ref: ChapterRef): List<Verse> = repository?.verses(ref.bookOrder, ref.chapter) ?: emptyList()
+
+    /** Odabrani drugi prijevod; null za KS. */
+    val activeAltTranslation: AltTranslation? get() = altTranslations.firstOrNull { it.slug == translation }
+
+    /** Drugi prijevod za poglavlje, s porukama kao applyTranslation() u astro-client.js. */
+    fun altChapter(ref: ChapterRef): AltChapter {
+        val tr = activeAltTranslation ?: return AltChapter()
+        if (!tr.has(ref.bookOrder)) {
+            return AltChapter(
+                if (tr.scope == "nt") "${tr.name} obuhvaća samo Novi zavjet (27 knjiga). Za Stari zavjet prikazan je tekst KS-a."
+                else "Prijevod ${tr.name} nema ovu knjigu u izvoru (library.foi.hr). Prikazan je tekst KS-a.",
+            )
+        }
+        val verses = repository?.altVerses(tr.slug, ref.bookOrder, ref.chapter) ?: emptyList()
+        if (verses.isEmpty()) {
+            val place = if (ref.chapter == 0) "proslov" else "${ref.chapter}. poglavlje"
+            return AltChapter("${tr.name} nema $place pod ovim brojem. Prikazan je tekst KS-a.")
+        }
+        val note = tr.bookNotes[ref.bookOrder]
+        return AltChapter(tr.notice + (note?.let { ". $it" } ?: ""), verses)
+    }
 
     fun planDays(planId: String): List<PlanDay> =
         planDaysCache.getOrPut(planId) { repository?.planDays(planId) ?: emptyList() }
@@ -303,6 +344,16 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     fun updateReadingMode(value: ReadingMode) {
         readingMode = value
         prefs.edit { putString("reading_mode", value.name) }
+    }
+
+    fun updateTranslation(slug: String) {
+        translation = slug
+        prefs.edit { putString("translation", slug) }
+    }
+
+    fun updateTranslationLayout(value: TranslationLayout) {
+        translationLayout = value
+        prefs.edit { putString("translation_layout", value.name) }
     }
 
     fun updateServerUrl(value: String) {

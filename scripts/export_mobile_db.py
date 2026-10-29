@@ -2,7 +2,8 @@
 """
 Izvoz read-only mobilne baze iz data/biblija.db.
 
-Mobilni klijenti (ios/, android/) dobivaju samo tekst, FTS5 indeks i planove čitanja.
+Mobilni klijenti (ios/, android/) dobivaju samo tekst, FTS5 indeks, planove čitanja i
+druge prijevode iz data/json/<slug>/ (scripts/build_foi_translations.py) u tablicama alt_*.
 Tablice user_* i sync_* ostaju izvan bundlea; korisničko stanje svaki klijent drži zasebno.
 
 Upotreba:
@@ -16,7 +17,9 @@ Shema verses_fts je ista kao u build_catalog_and_db.py (external content nad `ve
 """
 
 import argparse
+import glob
 import hashlib
+import json
 import os
 import shutil
 import sqlite3
@@ -26,10 +29,11 @@ from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC_DB = os.path.join(ROOT, "data", "biblija.db")
+TRANSLATIONS_JSON = os.path.join(ROOT, "data", "json", "translations.json")
 DEFAULT_OUT = os.path.join(ROOT, "build", "mobile", "biblija-mobile.db")
 
 # Povećati kad se promijeni shema mobilne baze (klijenti to provjeravaju u mobile_meta).
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 
 COPIED_TABLES = ["books", "chapters", "verses", "reading_plans", "reading_plan_days"]
 
@@ -45,15 +49,77 @@ def source_schema(conn, table):
 
 def content_hash(conn):
     h = hashlib.sha256()
-    for table in COPIED_TABLES:
+    for table in COPIED_TABLES + ALT_TABLES:
         for row in conn.execute(f"SELECT * FROM {table} ORDER BY rowid"):
             h.update(repr(row).encode("utf-8"))
     return h.hexdigest()
 
 
+ALT_TABLES = ["alt_translations", "alt_books", "alt_verses"]
+
+
+def alt_sources():
+    """Datoteke drugih prijevoda; --if-stale ih uspoređuje s odredištem kao i data/biblija.db."""
+    if not os.path.exists(TRANSLATIONS_JSON):
+        return []
+    return [TRANSLATIONS_JSON] + glob.glob(os.path.join(ROOT, "data", "json", "*", "[0-9][0-9]_*.json"))
+
+
+def write_alt_translations(out):
+    """Drugi prijevodi (Šarić, Katančić, ...) poravnati po broju retka KS-a, kao na webu."""
+    out.executescript(
+        """
+        CREATE TABLE alt_translations (
+            slug TEXT PRIMARY KEY,
+            sort INTEGER NOT NULL,
+            name TEXT NOT NULL,
+            short_label TEXT NOT NULL,
+            title TEXT NOT NULL,
+            notice TEXT NOT NULL,
+            scope TEXT NOT NULL
+        );
+        CREATE TABLE alt_books (
+            slug TEXT NOT NULL,
+            book_order INTEGER NOT NULL,
+            note TEXT,
+            PRIMARY KEY (slug, book_order)
+        );
+        CREATE TABLE alt_verses (
+            slug TEXT NOT NULL,
+            book_order INTEGER NOT NULL,
+            chapter INTEGER NOT NULL,
+            verse INTEGER NOT NULL,
+            text TEXT NOT NULL,
+            PRIMARY KEY (slug, book_order, chapter, verse)
+        );
+        """
+    )
+    if not os.path.exists(TRANSLATIONS_JSON):
+        print("Nema data/json/translations.json, mobilna baza ide bez drugih prijevoda.")
+        return
+    with open(TRANSLATIONS_JSON, encoding="utf-8") as f:
+        catalog = json.load(f)
+    for sort, t in enumerate(catalog):
+        out.execute(
+            "INSERT INTO alt_translations VALUES (?, ?, ?, ?, ?, ?, ?)",
+            (t["slug"], sort, t["name"], t["short_label"], t["title"], t["notice"], t["scope"]),
+        )
+        for path in sorted(glob.glob(os.path.join(ROOT, "data", "json", t["slug"], "[0-9][0-9]_*.json"))):
+            with open(path, encoding="utf-8") as f:
+                book = json.load(f)
+            out.execute("INSERT INTO alt_books VALUES (?, ?, ?)", (t["slug"], book["order"], book.get("note")))
+            out.executemany(
+                "INSERT INTO alt_verses VALUES (?, ?, ?, ?, ?)",
+                (
+                    (t["slug"], book["order"], int(ch), v, text)
+                    for ch, verses in book["chapters"].items()
+                    for v, text in verses
+                ),
+            )
+
+
 def build(dest_path):
     src = sqlite3.connect(f"file:{SRC_DB}?mode=ro", uri=True)
-    data_hash = content_hash(src)
 
     fd, tmp_path = tempfile.mkstemp(suffix=".db", dir=os.path.dirname(dest_path))
     os.close(fd)
@@ -82,6 +148,10 @@ def build(dest_path):
     out.execute("INSERT INTO verses_fts(verses_fts) VALUES ('rebuild')")
     out.execute("INSERT INTO verses_fts(verses_fts) VALUES ('optimize')")
 
+    write_alt_translations(out)
+    out.commit()
+    data_hash = content_hash(out)
+
     out.execute(
         """
         CREATE TABLE mobile_meta (
@@ -95,6 +165,7 @@ def build(dest_path):
         "data_hash": data_hash,
         "built_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z"),
         "verse_count": str(out.execute("SELECT COUNT(*) FROM verses").fetchone()[0]),
+        "alt_verse_count": str(out.execute("SELECT COUNT(*) FROM alt_verses").fetchone()[0]),
     }
     out.executemany("INSERT INTO mobile_meta (key, value) VALUES (?, ?)", meta.items())
     out.commit()
@@ -114,13 +185,16 @@ def build(dest_path):
 
 
 def is_stale(path):
-    return not os.path.exists(path) or os.path.getmtime(path) < os.path.getmtime(SRC_DB)
+    if not os.path.exists(path):
+        return True
+    newest = max(os.path.getmtime(p) for p in [SRC_DB, os.path.abspath(__file__)] + alt_sources())
+    return os.path.getmtime(path) < newest
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--out", action="append", help="odredišna datoteka (može više puta)")
-    parser.add_argument("--if-stale", action="store_true", help="preskoči ako je odredište novije od data/biblija.db")
+    parser.add_argument("--if-stale", action="store_true", help="preskoči ako je odredište novije od izvora (baza, prijevodi, ova skripta)")
     args = parser.parse_args()
 
     if not os.path.exists(SRC_DB):
@@ -140,7 +214,8 @@ def main():
         shutil.copyfile(first, t)
 
     size_mb = os.path.getsize(first) / 1_000_000
-    print(f"Mobilna baza: {meta['verse_count']} redaka, {size_mb:.1f} MB, hash {meta['data_hash'][:12]}")
+    print(f"Mobilna baza: {meta['verse_count']} redaka, {meta['alt_verse_count']} redaka drugih prijevoda, "
+          f"{size_mb:.1f} MB, hash {meta['data_hash'][:12]}")
     for t in targets:
         print(f"  → {os.path.relpath(t, ROOT)}")
 
