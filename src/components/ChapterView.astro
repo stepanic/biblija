@@ -168,6 +168,14 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
           <button
             type="button"
             class="icon-btn"
+            id="btnTranslationToggle"
+            title="Prijevod: Kršćanska sadašnjost, usporedno s Katančićem (1831.) ili samo Katančić"
+          >
+            <Icon name="languages" />KS
+          </button>
+          <button
+            type="button"
+            class="icon-btn"
             id="btnShareChapter"
             title="Kopiraj poveznicu na ovo poglavlje"
           >
@@ -218,6 +226,10 @@ const shortChLabel = chapterObj.chapter === 0 ? "Proslov" : String(chapterObj.ch
         })}
       </div>
     </div>
+
+    <!-- Drugi prijevod (Katančić): obavijest, a u načinu „samo Katančić" i tekst; puni astro-client.js -->
+    <div id="altNotice" class="alt-notice" hidden></div>
+    <article id="altChapterBody" class="chapter-body" hidden></article>
 
     <!-- Chapter Reading Body -->
     <article id="chapterBody" class="chapter-body">

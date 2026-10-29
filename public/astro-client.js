@@ -64,6 +64,7 @@
     fontSize: parseInt(localStorage.getItem("biblija_fontsize") || "19", 10),
     theme: localStorage.getItem("biblija_theme") || "light",
     readingMode: localStorage.getItem("biblija_reading_mode") || "paragraphs",
+    translation: localStorage.getItem("biblija_translation") || "ks",
     syncAuth: JSON.parse(localStorage.getItem("biblija_sync_auth") || "null"),
     savedProfiles: JSON.parse(localStorage.getItem("biblija_saved_profiles") || "[]"),
     lastSyncedAt: localStorage.getItem("biblija_last_synced_at") || null,
@@ -920,6 +921,122 @@
       });
     }
 
+    /* Drugi prijevod: Katančić (Budim 1831.) iz data/json/katancic/, po knjizi. Oznake, bilješke,
+       plan i dnevnik ostaju na retcima KS-a; Katančić se poravnava po broju retka i samo se prikazuje. */
+    const TRANSLATIONS = ["ks", "parallel", "katancic"];
+    const trBtn = document.getElementById("btnTranslationToggle");
+    const altBody = document.getElementById("altChapterBody");
+    const altNotice = document.getElementById("altNotice");
+    const ksBody = document.getElementById("chapterBody");
+    let katancicBook; // undefined = nije učitano, null = FOI nema knjigu
+
+    async function loadKatancicBook() {
+      if (katancicBook !== undefined) return katancicBook;
+      try {
+        const res = await fetch(`/data/json/katancic/${String(bookOrder).padStart(2, "0")}_${bookId}.json`);
+        katancicBook = res.ok ? await res.json() : null;
+      } catch {
+        katancicBook = null;
+      }
+      return katancicBook;
+    }
+
+    function showAltNotice(text) {
+      altNotice.textContent = text;
+      altNotice.hidden = !text;
+    }
+
+    function altVerseEl(tag, cls, verse, text) {
+      const el = document.createElement(tag);
+      el.className = cls;
+      el.setAttribute("data-verse", verse);
+      const sup = document.createElement("sup");
+      sup.className = "verse-sup";
+      sup.textContent = verse;
+      el.append(sup, document.createTextNode(text));
+      return el;
+    }
+
+    function clearParallel() {
+      ksBody.querySelectorAll(".alt-verse, .alt-extra").forEach((el) => el.remove());
+    }
+
+    async function applyTranslation() {
+      const mode = TRANSLATIONS.includes(state.translation) ? state.translation : "ks";
+      localStorage.setItem("biblija_translation", mode);
+      document.documentElement.setAttribute("data-translation", mode);
+      if (trBtn) iconLabel(trBtn, "languages", { ks: "KS", parallel: "KS + Katančić", katancic: "Katančić" }[mode]);
+
+      clearParallel();
+      altBody.replaceChildren();
+      altBody.hidden = true;
+      ksBody.hidden = false;
+      showAltNotice("");
+      if (mode === "ks") return;
+
+      const book = await loadKatancicBook();
+      if (state.translation !== mode) return; // u međuvremenu prebačeno
+      const verses = book && book.chapters[String(chapter)];
+      if (!verses || !verses.length) {
+        showAltNotice(book
+          ? `Katančić nema ${chapter === 0 ? "proslov" : `${chapter}. poglavlje`} pod ovim brojem.`
+          : "Katančića za ovu knjigu nema u izvoru (library.foi.hr). Prikazan je tekst KS-a.");
+        return;
+      }
+      showAltNotice("Katančić, Sveto pismo (Budim 1831.) · digitalizacija library.foi.hr · stari pravopis"
+        + (book.note ? `. ${book.note}` : ""));
+
+      if (mode === "parallel") {
+        const ksByVerse = new Map();
+        ksBody.querySelectorAll(".verse-item").forEach((el) => {
+          const v = parseInt(el.getAttribute("data-verse"), 10);
+          if (!ksByVerse.has(v)) ksByVerse.set(v, el);
+        });
+        const extra = [];
+        for (const [v, text] of verses) {
+          const target = ksByVerse.get(v);
+          if (!target) {
+            extra.push([v, text]);
+            continue;
+          }
+          const alt = document.createElement("span");
+          alt.className = "alt-verse";
+          alt.textContent = text;
+          const badge = target.querySelector(".verse-note-badge");
+          target.insertBefore(alt, badge);
+        }
+        if (extra.length) {
+          const box = document.createElement("div");
+          box.className = "alt-extra";
+          const title = document.createElement("div");
+          title.className = "sec-ref";
+          title.textContent = "Retci koje KS nema pod istim brojem (Katančić):";
+          box.append(title, ...extra.map(([v, t]) => altVerseEl("span", "alt-verse alt-verse-standalone", v, t)));
+          ksBody.append(box);
+        }
+        return;
+      }
+
+      altBody.append(...verses.flatMap(([v, text]) => {
+        const el = altVerseEl("span", "verse-item alt-only", v, text);
+        if (!altBody.querySelector(`#kv-${v}`)) el.id = `kv-${v}`;
+        return [el, document.createTextNode(" ")];
+      }));
+      ksBody.hidden = true;
+      altBody.hidden = false;
+      const m = (window.location.hash || "").match(/^#(v|od)-(\d+)$/);
+      const target = m && document.getElementById(`kv-${m[2]}`);
+      if (target) target.scrollIntoView({ block: m[1] === "od" ? "start" : "center" });
+    }
+
+    if (trBtn && altBody && ksBody) {
+      trBtn.addEventListener("click", () => {
+        state.translation = TRANSLATIONS[(TRANSLATIONS.indexOf(state.translation) + 1) % TRANSLATIONS.length];
+        applyTranslation();
+      });
+      applyTranslation();
+    }
+
     // Share chapter button
     const shareBtn = document.getElementById("btnShareChapter");
     if (shareBtn) {
@@ -1179,8 +1296,9 @@
 
     // Redak na vrhu: zadnji čiji početak je iznad crte čitanja. Crta je ista kao scroll-margin-top
     // retka (6rem), pa nastavak preko #od-N ne pomiče zapamćeni redak unatrag.
-    const verseEls = Array.from(document.querySelectorAll("#chapterBody .verse-item"));
+    // Vidljivo tijelo: u načinu „samo Katančić" #chapterBody je skriven i svi bi mu retci bili „iznad crte".
     function topVerse() {
+      const verseEls = Array.from(document.querySelectorAll("#chapterBody:not([hidden]) .verse-item, #altChapterBody:not([hidden]) .verse-item"));
       const line = parseFloat(getComputedStyle(document.documentElement).fontSize) * 6 + 6;
       let v = 0;
       for (const el of verseEls) {

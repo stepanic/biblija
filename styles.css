@@ -1334,6 +1334,56 @@ html[data-reading-mode="verses"] .verse-item {
   padding: 0.18rem 0.45rem;
 }
 
+/* Drugi prijevod (Katančić): usporedno ispod svakog retka KS-a ili samostalno */
+html[data-translation="parallel"] #chapterBody .para-break {
+  display: none;
+}
+
+html[data-translation="parallel"] #chapterBody .verse-item {
+  display: block;
+  margin-bottom: 0.55rem;
+  padding: 0.18rem 0.45rem;
+}
+
+.alt-verse {
+  display: block;
+  margin-top: 0.12rem;
+  padding-left: 0.7rem;
+  border-left: 2px solid var(--accent-border);
+  font-size: 0.9em;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.alt-extra {
+  margin-top: 1.2rem;
+}
+
+.alt-verse-standalone {
+  margin-bottom: 0.4rem;
+}
+
+.verse-item.alt-only {
+  cursor: default;
+}
+
+.alt-notice {
+  max-width: 70ch;
+  margin: 1rem auto -0.6rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-sunken);
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+}
+
+.alt-notice[hidden],
+.chapter-body[hidden] {
+  display: none;
+}
+
 .sec-h2 {
   font-family: var(--font-reading);
   font-size: 1.05em;
