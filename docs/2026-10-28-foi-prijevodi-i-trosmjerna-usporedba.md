@@ -30,8 +30,16 @@ index.php?type=biblija&bid=<bid>&ch=<NNNN>&tra1=<id>&tra2=999&tra3=999
 - `tra2`/`tra3` daju do tri prijevoda poravnata po stihu u jednom zahtjevu.
   Nismo to koristili jer nije jasno što se događa kad prijevodi imaju različit
   broj stihova.
-- `type=bibdet&...&rch=NNNN` je stranica jednog stiha: svi prijevodi + grčki
-  interlinear sa Strongovim brojevima. Taj dio **nije** dohvaćen.
+- `type=bibdet&...&rch=NNNN` (`rch` s četiri znamenke) je stranica jednog
+  stiha: svi prijevodi i interlinear (hebrejski za SZ, grčki za NZ). Interlinear
+  je **Berean Interlinear** (BSB): riječ, transliteracija, morfologija, Strong i
+  engleska glosa, a deuterokanonske knjige ga nemaju. Isti podaci su CC0 u
+  `https://bereanbible.com/bsb_tables.xlsx` (55 MB), pa ih
+  `scripts/fetch_bsb_interlinear.py` uzima odande umjesto ~31.000 FOI zahtjeva.
+  Mt 1,1 i Post 1,1 provjereni su riječ po riječ protiv FOI-ja. Izlaz je
+  `downloads/bsb/interlinear/` (gitignored, 31 MB) i ima englesku numeraciju.
+  Strongov rječnik FOI puni AJAX-om (`inc/bibstrong_view.php?la=Greek&q=00976`)
+  i on nije dohvaćen.
 - Međunaslovi nisu označeni posebno, nego su samo još jedan `<br>` red u tekstu
   stiha. Parser zato sprema `lines`.
 
@@ -123,6 +131,18 @@ Oba druga izvora se slažu, ali drugi izvori su vjerojatno u krivu:
 
 Za oba treba pogledati tiskano izdanje.
 
+## Katančić u čitaču
+
+`scripts/build_katancic.py` piše `data/json/katancic/` (67 knjiga, 3,4 MB), a
+čitač ima gumb prijevoda: KS, KS + Katančić (ispod svakog retka) ili samo
+Katančić. Oznake, plan i dnevnik ostaju na retcima KS-a.
+
+FOI je Katančićeve psalme prenumerirao na hebrejske brojeve samo do 113. Ostale
+Vulgatine razlike (Izl 7/8, Lev 5/6, Br 16/17, Neh 3/4, Ez 20/21, Zah 1/2, Jl,
+Mal, Ps 114–150, Sir proslov) preslikava `remap()`. Provjereno po sadržaju. Tob,
+Jdt, Est i Sir su u Vulgati drugi tekst, pa čitač za njih to i napiše. 1–2 Sam,
+1–2 Kr i 1–2 Ljet FOI nema.
+
 ## Otvoreno
 
 - 45 neodlučenih mjesta (`vote_74.json`): uglavnom drukčije lomljenje stihova.
@@ -130,5 +150,9 @@ Za oba treba pogledati tiskano izdanje.
   „padoše") i Jak 1,1.
 - Šarićev NZ (32) usporediti s NZ-om Šarićeve Biblije (75).
 - Šarić kao drugi prijevod u aplikaciji tek uz dozvolu nositelja prava ili 2031.
-  Katančić se može objaviti već sada.
+- Katančićev prijevod (1831.) je slobodan, ali tekst je FOI-jeva digitalizacija
+  („Copyrights by Point d.o.o."). Preuzimanje cijele knjige može dirati
+  *sui generis* pravo na bazu podataka (ZAPSP). Prije deploya i commita
+  `data/json/katancic/` treba odluka ili dozvola. Mobilne aplikacije Katančića
+  još nemaju.
 - Mobilna baza (`export_mobile_db.py`) i deploy s novih 7 ispravaka nisu pokrenuti.
