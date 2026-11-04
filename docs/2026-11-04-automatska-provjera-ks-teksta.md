@@ -173,3 +173,35 @@ dorađen prema KS-u (Mudr 17 numeriran kao KS, Izl 36,37 postoji), a Dn 3 završ
 kao i KS-online. Numeracija Joba je ona bez premještanja (kao U68), pa je za nalaze tipa
 `krivi_broj` i `pomak_numeracije` samo još jedan glas za U68. Glasanje KS / FOI / U68 / biblija.me
 zato ne smije brojati biblija.me i U68 kao dva glasa.
+
+## Popis nalaza, izdanja KS-a i kontakt (2026-11-04 navečer)
+
+**Popis svih nalaza na /provjera/** (commit `cefd844`, Worker `0276b403`): `GET /api/provjera/list`
+vraća sve aktivne nalaze kompaktno (stupci + polje nizova; uzorci maskirani kao `redak`, kao i u
+`/next`) s vlastitom presudom. U sučelju su filtri (tekst, stanje, knjiga, vrsta; pamte se u
+`localStorage` `pv_list_filters`), Prethodni/Sljedeći i otvaranje bilo kojeg nalaza preko `?id=`,
+pa se vlastita presuda može promijeniti. Zamka: `.pv-list` treba `position: relative`, inače
+`offsetTop` retka nije relativan na popis i skrol na trenutni nalaz promaši.
+
+**Izdanja KS-a (stanje webshopa ks.hr, 2026-11):**
+
+| izdanje | podaci |
+|---|---|
+| tisak | XXVIII. izdanje, 2026., ISBN 978-953-11-2090-6, 14,5×22 cm, XXI + 1560 str., 39 € |
+| eKnjiga | XXV. izdanje, 2021., ISBN 978-953-11-1592-6, 23,89 €; samo u aplikaciji „eKnjige KS” (Android `air.eKnjigeKS`, iOS, Windows; nema macOS), aktivacijskim kodom |
+| mobilna aplikacija | `com.ebiblija` (eBiblija) |
+
+Opisi na webshopu (i za tisak i za eKnjigu) kažu da je NZ preveo Rupčić. To je preneseni opis
+izdanja Stvarnosti 1968.; tekst online je Duda–Fućak (Iv 1,1 „Riječ bijaše u Boga”, Rupčić
+„kod Boga”). eKnjiga je najvjerojatnije ista Zagrebačka Biblija, ali starije izdanje od tiska.
+Izvlačenje teksta iz eKnjige: dopušteno samo ako preuzeta datoteka nije šifrirana; zaobilaženje
+DRM-a je povreda ZAPSP-a i to ne radimo.
+
+**Kontakt KS:** `urednistvo@ks.hr` (Cc `uprava@ks.hr`). Gmail draft s molbom za PDF tiskanog
+izdanja XXVIII/2026 i ponudom strukturirane baze ispravaka za biblija.ks.hr i eBibliju čeka da ga
+Matija pregleda i pošalje sam (u tijelu namjerno nema linkova ni domena, Gmail MCP ih omota u
+`google.com/url`).
+
+**U68 nije s FOI-ja.** U68 = eBible `hrv_usfm` (CrossWire „CroSaric”), starija digitalizacija
+Zagrebačke Biblije; „68” je po prvom izdanju, točan predložak nije poznat. FOI daje zaseban,
+treći prijepis KS-a (ID 74). Ispravak je poslan u WhatsApp grupu „Biblija” 2026-11-04.
