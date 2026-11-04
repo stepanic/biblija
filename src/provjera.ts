@@ -211,6 +211,28 @@ export async function handleProvjera(request: Request, env: ProvjeraEnv, url: UR
     });
   }
 
+  // Popis svih aktivnih nalaza za pregled i odabir. Uzorak se prikazuje kao obični redak (kao u /next),
+  // a tuđe presude ne idu u popis: samo status, broj presuda i vlastita presuda.
+  if (path === "/list" && request.method === "GET") {
+    const auth = await requireUser(getSession, request, false);
+    if (!auth.ok) return auth.response;
+    const { results } = await db
+      .prepare(
+        `SELECT f.id, f.ref, f.book_order, f.chapter, f.verse, f.kind, f.is_sample, f.status, f.review_count,
+                r.verdict AS mine
+           FROM audit_findings f
+           LEFT JOIN audit_reviews r ON r.finding_id = f.id AND r.reviewer = ?
+          WHERE f.active = 1
+          ORDER BY f.book_order, f.chapter, COALESCE(f.verse, 0), f.id`
+      )
+      .bind(auth.reviewer)
+      .all<Record<string, any>>();
+    const items = results.map((f) => [
+      f.id, f.ref, f.book_order, f.chapter, f.verse, f.is_sample ? "redak" : f.kind, f.status, f.review_count, f.mine || "",
+    ]);
+    return json({ ok: true, cols: ["id", "ref", "book_order", "chapter", "verse", "kind", "status", "review_count", "mine"], items });
+  }
+
   if (path === "/next" && request.method === "POST") {
     const body = (await request.json().catch(() => ({}))) as Record<string, any>;
     const auth = await requireUser(getSession, request, false);

@@ -53,6 +53,25 @@ import Icon from "../../components/Icon.astro";
     </div>
     <div id="pvWho" class="pv-muted" style="display:none;margin:0 0 0.8rem;"></div>
 
+    <details class="card pv-list-card" id="pvListCard" style="display:none;">
+      <summary class="pv-list-sum"><Icon name="list" /><span id="pvListTitle">Svi nalazi</span><span class="pv-muted pv-list-hint">klikni redak za otvaranje ili izmjenu presude</span></summary>
+      <div class="pv-filters">
+        <input class="form-input pv-input" id="pvFilterQ" type="search" placeholder="Traži mjesto, npr. Job 26" />
+        <select class="form-input pv-input" id="pvFilterStatus">
+          <option value="">Svi statusi</option>
+          <option value="todo">Još nisam provjerio</option>
+          <option value="mine">Moje presude</option>
+          <option value="otvoreno">Nitko nije provjerio</option>
+          <option value="ceka_drugog">Čeka drugu osobu</option>
+          <option value="neslaganje">Neslaganje</option>
+          <option value="rijeseno">Riješeno</option>
+        </select>
+        <select class="form-input pv-input" id="pvFilterBook"><option value="">Sve knjige</option></select>
+        <select class="form-input pv-input" id="pvFilterKind"><option value="">Sve vrste</option></select>
+      </div>
+      <div class="pv-list" id="pvList"><span class="pv-muted">Učitavam popis…</span></div>
+    </details>
+
 
     <div class="card" id="pvCard" style="display:none;">
       <div class="pv-work">
@@ -62,7 +81,12 @@ import Icon from "../../components/Icon.astro";
           <div class="pv-ref" id="pvRef"></div>
           <div class="pv-kind" id="pvKind"></div>
         </div>
-        <a class="icon-btn" id="pvReaderLink" target="_blank" rel="noopener"><Icon name="book-open" />U čitaču</a>
+        <div class="pv-nav">
+          <button class="icon-btn" id="pvPrev" title="Prethodni u popisu"><Icon name="chevron-left" />Prethodni</button>
+          <span class="pv-muted" id="pvPos"></span>
+          <button class="icon-btn" id="pvNext" title="Sljedeći u popisu">Sljedeći<Icon name="chevron-right" /></button>
+          <a class="icon-btn" id="pvReaderLink" target="_blank" rel="noopener"><Icon name="book-open" />U čitaču</a>
+        </div>
       </div>
       <p class="pv-msg" id="pvMsg"></p>
 
@@ -199,6 +223,25 @@ import Icon from "../../components/Icon.astro";
     .pv .pv-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
     .pv .pv-row > div { min-width: 120px; }
     .pv .pv-grow { flex: 1; }
+    .pv .pv-list-card { padding-top: 12px; padding-bottom: 12px; }
+    .pv .pv-list-sum { display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: var(--font-display); font-weight: 700; flex-wrap: wrap; }
+    .pv .pv-list-hint { font-family: inherit; font-weight: 400; font-size: 0.8rem; }
+    .pv .pv-filters { display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin: 12px 0 8px; }
+    .pv #pvFilterQ { grid-column: 1 / -1; }
+    @media (min-width: 900px) { .pv .pv-filters { grid-template-columns: 2fr 1fr 1fr 1fr; } .pv #pvFilterQ { grid-column: auto; } }
+    .pv .pv-list { position: relative; max-height: 45vh; overflow: auto; border: 1px solid var(--border); border-radius: 10px; }
+    .pv .pv-li { display: grid; grid-template-columns: minmax(110px, 0.9fr) minmax(0, 2fr) 150px 150px; gap: 10px; align-items: center; width: 100%;
+      padding: 7px 12px; border: 0; border-bottom: 1px solid var(--border); background: none; color: var(--text); font: inherit; font-size: 0.9rem; text-align: left; cursor: pointer; }
+    .pv .pv-li:hover { background: var(--bg-muted); }
+    .pv .pv-li.is-current { background: var(--accent-soft); }
+    .pv .pv-li-ref { font-weight: 700; }
+    .pv .pv-li-kind { color: var(--text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .pv .pv-pill { justify-self: end; font-size: 0.75rem; border-radius: 999px; padding: 2px 8px; background: var(--bg-muted); border: 1px solid var(--border); white-space: nowrap; }
+    .pv .pv-pill.st-neslaganje { color: var(--danger); border-color: var(--danger); }
+    .pv .pv-pill.st-rijeseno { color: var(--success); border-color: var(--success); }
+    .pv .pv-pill.mine { background: var(--accent-soft); border-color: var(--accent); }
+    @media (max-width: 640px) { .pv .pv-li { grid-template-columns: 1fr auto auto; row-gap: 2px; } .pv .pv-li-kind { grid-column: 1 / -1; grid-row: 2; } }
+    .pv .pv-nav { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .pv .pv-others { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px; }
     .pv .pv-other { margin: 8px 0; padding: 8px 10px; border-radius: 8px; background: var(--bg-muted); }
     .pv .pv-other img { max-width: 160px; border-radius: 6px; margin-top: 6px; display: block; }
@@ -346,13 +389,100 @@ import Icon from "../../components/Icon.astro";
 
     function next(id) {
       var a = auth();
+      $("pvListCard").style.display = a ? "" : "none";
       if (!a) { show("pvLogin"); return; }
+      if (!state.list.length && !state.listLoading) { state.listLoading = true; loadList().then(function () { state.listLoading = false; }); }
       err("");
       api("/next", { skip: state.skip, id: id || undefined }).then(function (r) {
         if (!r.ok) { if (r._status === 401) { show("pvLogin"); } $("pvNotice").insertAdjacentHTML("beforeend", '<div class="sync-auth-msg error">' + esc(r.error) + "</div>"); return; }
         if (r.done) { show("pvDone"); return; }
         render(r);
       });
+    }
+
+
+    // ---- popis svih nalaza: filtri, odabir retka, prethodni/sljedeći
+    var STATUS_LABEL = { otvoreno: "Nitko još", ceka_drugog: "Čeka drugog", neslaganje: "Neslaganje", rijeseno: "Riješeno" };
+    var LIST_KEY = "pv_list_filters";
+    state.list = []; state.filtered = [];
+    function listFilters() { return { q: $("pvFilterQ").value, status: $("pvFilterStatus").value, book: $("pvFilterBook").value, kind: $("pvFilterKind").value, open: $("pvListCard").open }; }
+    function saveFilters() { try { localStorage.setItem(LIST_KEY, JSON.stringify(listFilters())); } catch (e) {} }
+    function normQ(s) { return String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim(); }
+    function loadList() {
+      return fetch("/api/provjera/list", { credentials: "same-origin" }).then(function (r) { return r.json(); }).then(function (j) {
+        if (!j.ok) return;
+        state.list = j.items.map(function (a) { var o = {}; j.cols.forEach(function (c, i) { o[c] = a[i]; }); o.nref = normQ(o.ref); return o; });
+        return books().then(function (bs) {
+          var used = {}, kinds = {};
+          state.list.forEach(function (f) { used[f.book_order] = (used[f.book_order] || 0) + 1; kinds[f.kind] = (kinds[f.kind] || 0) + 1; });
+          var saved = {}; try { saved = JSON.parse(localStorage.getItem(LIST_KEY) || "{}"); } catch (e) {}
+          $("pvFilterBook").innerHTML = '<option value="">Sve knjige</option>' + bs.filter(function (b) { return used[b.order]; })
+            .map(function (b) { return '<option value="' + b.order + '">' + esc(b.title) + " (" + used[b.order] + ")</option>"; }).join("");
+          $("pvFilterKind").innerHTML = '<option value="">Sve vrste</option>' + Object.keys(kinds).sort(function (a, b) { return kinds[b] - kinds[a]; })
+            .map(function (k) { return '<option value="' + esc(k) + '">' + esc(KIND_LABEL[k] || k) + " (" + kinds[k] + ")</option>"; }).join("");
+          ["q", "status", "book", "kind"].forEach(function (k) {
+            var el = $("pvFilter" + k.charAt(0).toUpperCase() + k.slice(1));
+            if (saved[k] != null) el.value = saved[k];
+            if (el.value !== String(saved[k] == null ? el.value : saved[k])) el.value = "";
+          });
+          $("pvListCard").open = saved.open !== false;
+          renderList();
+        });
+      }).catch(function () {});
+    }
+    function renderList() {
+      var F = listFilters(), q = normQ(F.q);
+      state.filtered = state.list.filter(function (f) {
+        if (q && f.nref.indexOf(q) === -1) return false;
+        if (F.book && String(f.book_order) !== F.book) return false;
+        if (F.kind && f.kind !== F.kind) return false;
+        if (F.status === "todo") return !f.mine;
+        if (F.status === "mine") return !!f.mine;
+        if (F.status && f.status !== F.status) return false;
+        return true;
+      });
+      var cur = state.finding && state.finding.id;
+      var mineN = state.list.filter(function (f) { return f.mine; }).length;
+      $("pvListTitle").textContent = "Svi nalazi · " + (state.filtered.length === state.list.length ? state.list.length : state.filtered.length + " od " + state.list.length) + " · moje presude: " + mineN;
+      $("pvList").innerHTML = state.filtered.length ? state.filtered.map(function (f) {
+        return '<button type="button" class="pv-li' + (f.id === cur ? " is-current" : "") + '" data-id="' + esc(f.id) + '">' +
+          '<span class="pv-li-ref">' + esc(f.ref) + "</span>" +
+          '<span class="pv-li-kind">' + esc(KIND_LABEL[f.kind] || f.kind) + "</span>" +
+          '<span class="pv-pill st-' + esc(f.status) + '">' + esc(STATUS_LABEL[f.status] || f.status) + (f.review_count ? " · " + f.review_count : "") + "</span>" +
+          (f.mine ? '<span class="pv-pill mine">' + esc(VERDICT_LABEL[f.mine] || f.mine) + "</span>" : "<span></span>") + "</button>";
+      }).join("") : '<div class="pv-muted" style="padding:10px 12px;">Nema nalaza za ove filtre.</div>';
+      updatePos();
+    }
+    function updatePos() {
+      var cur = state.finding && state.finding.id, arr = state.filtered.length ? state.filtered : state.list;
+      var i = arr.findIndex(function (f) { return f.id === cur; });
+      $("pvPos").textContent = i >= 0 ? (i + 1) + " / " + arr.length : "";
+      $("pvPrev").disabled = !arr.length || i === 0; $("pvNext").disabled = !arr.length || i === arr.length - 1;
+      document.querySelectorAll("#pvList .pv-li").forEach(function (el) { el.classList.toggle("is-current", el.dataset.id === cur); });
+      var el = cur && document.querySelector('#pvList .pv-li[data-id="' + cur + '"]');
+      if (el) { var box = $("pvList"); if (el.offsetTop < box.scrollTop || el.offsetTop > box.scrollTop + box.clientHeight - el.offsetHeight) box.scrollTop = el.offsetTop - box.clientHeight / 3; }
+    }
+    function openFinding(id) {
+      $("pvSubmit").dataset.next = ""; $("pvSubmit").innerHTML = ic("send") + "Pošalji presudu";
+      history.replaceState(null, "", location.pathname + "?id=" + encodeURIComponent(id));
+      next(id);
+    }
+    function step(d) {
+      var cur = state.finding && state.finding.id, arr = state.filtered.length ? state.filtered : state.list;
+      var i = arr.findIndex(function (f) { return f.id === cur; });
+      var t = arr[i < 0 ? 0 : i + d]; if (t) openFinding(t.id);
+    }
+    $("pvList").addEventListener("click", function (e) { var b = e.target.closest(".pv-li"); if (b) openFinding(b.dataset.id); });
+    $("pvPrev").addEventListener("click", function () { step(-1); });
+    $("pvNext").addEventListener("click", function () { step(1); });
+    ["pvFilterStatus", "pvFilterBook", "pvFilterKind"].forEach(function (id) { $(id).addEventListener("change", function () { renderList(); saveFilters(); }); });
+    $("pvFilterQ").addEventListener("input", function () { renderList(); saveFilters(); });
+    $("pvListCard").addEventListener("toggle", saveFilters);
+    function markReviewed(id, verdict, r) {
+      var f = state.list.find(function (x) { return x.id === id; }); if (!f) return;
+      f.mine = verdict; if (r && r.status) f.status = r.status;
+      if (r && r.others) f.review_count = r.others.length + 1;
+      renderList();
     }
 
     function textBox(label, body) { return '<div class="pv-text"><div class="pv-text-label">' + esc(label) + '</div><div class="pv-text-body">' + body + "</div></div>"; }
@@ -391,6 +521,7 @@ import Icon from "../../components/Icon.astro";
           $("pvTexts").insertAdjacentHTML("beforeend", textBox("Cijelo poglavlje online · " + note, body));
         });
       }
+      updatePos();
       window.scrollTo({ top: $("pvCard").offsetTop - 80, behavior: "smooth" });
     }
 
@@ -480,6 +611,7 @@ import Icon from "../../components/Icon.astro";
         btn.disabled = false; btn.innerHTML = ic("send") + "Pošalji presudu";
         if (!r.ok) { err(r.error || "Slanje nije uspjelo."); if (r.need) loadSession().then(function () { if (r.need === "passkey") show("pvLogin"); }); return; }
         err(""); loadStats();
+        markReviewed(state.finding.id, v.value, r);
         renderOthers(r.others, true);
         btn.innerHTML = ic("arrow-right") + "Sljedeći redak";
         btn.dataset.next = "1";
@@ -508,7 +640,7 @@ import Icon from "../../components/Icon.astro";
       loadSession().then(function () {
         var now = session ? session.user_key + "|" + (session.certilia_name || "") : "";
         if (now === lastUser) return;
-        lastUser = now;
+        lastUser = now; state.list = []; state.filtered = [];
         next();
       });
     }
