@@ -158,3 +158,18 @@ zasebne kartice na vrh stupca s presudom. Na pravoj, uspravnoj fotografiji još 
 - `docs/2026-10-28-foi-prijevodi-i-trosmjerna-usporedba.md`: trosmjerna usporedba i errata iz listopada
 - `docs/2026-10-25-arhitektura-i-audit-izvora.md`
 - `AUDIT.md`
+
+## biblija.me kao dodatni izvor (2026-11-04)
+
+`scripts/fetch_biblijame.py` dohvaća cijeli tekst s biblija.me (JSON API po poglavlju, popis
+knjiga s poljem `ks-knjiga` izvučen iz njihova `main.js` u `scripts/biblijame_books.json`) u
+`downloads/cache/biblijame/` (gitignored). `scripts/compare_biblijame.py` ga uspoređuje s KS-online,
+FOI-jem, U68 i nalazima audita → `data/audit/BIBLIJAME.md` i `data/audit/biblijame.json` (bez teksta).
+
+Zaključak: to je Zagrebačka Biblija (Iv 1,1 „…Riječ bijaše u Boga…”, NZ Duda–Fućak), ali **nije
+neovisan svjedok**. S U68 (eBible) slaže se u 99,7 % redaka, s KS-online u 95,7 %, i nosi iste
+artefakte kao U68 (npr. „$LAMED” u Ps 10,1), dakle potječe iz iste digitalizacije. Mjestimično je
+dorađen prema KS-u (Mudr 17 numeriran kao KS, Izl 36,37 postoji), a Dn 3 završava na 90. retku
+kao i KS-online. Numeracija Joba je ona bez premještanja (kao U68), pa je za nalaze tipa
+`krivi_broj` i `pomak_numeracije` samo još jedan glas za U68. Glasanje KS / FOI / U68 / biblija.me
+zato ne smije brojati biblija.me i U68 kao dva glasa.

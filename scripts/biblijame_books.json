@@ -1,0 +1,668 @@
+[
+ {
+  "oznaka": "01O",
+  "ks-knjiga": "1",
+  "zavjet": "Stari zavjet",
+  "ime": "Knjiga Postanka",
+  "kratica": "Post",
+  "brojGlava": 50,
+  "slug": "knjiga-postanka"
+ },
+ {
+  "oznaka": "02O",
+  "ks-knjiga": "2",
+  "zavjet": "Stari zavjet",
+  "ime": "Knjiga Izlaska",
+  "kratica": "Izl",
+  "brojGlava": 40,
+  "slug": "knjiga-izlaska"
+ },
+ {
+  "oznaka": "03O",
+  "ks-knjiga": "3",
+  "zavjet": "Stari zavjet",
+  "ime": "Levitski zakonik",
+  "kratica": "Lev",
+  "brojGlava": 27,
+  "slug": "levitski-zakonik"
+ },
+ {
+  "oznaka": "04O",
+  "ks-knjiga": "4",
+  "zavjet": "Stari zavjet",
+  "ime": "Knjiga Brojeva",
+  "kratica": "Br",
+  "brojGlava": 36,
+  "slug": "knjiga-brojeva"
+ },
+ {
+  "oznaka": "05O",
+  "ks-knjiga": "5",
+  "zavjet": "Stari zavjet",
+  "ime": "Ponovljeni zakon",
+  "kratica": "Pnz",
+  "brojGlava": 34,
+  "slug": "ponovljeni-zakon"
+ },
+ {
+  "oznaka": "06O",
+  "ks-knjiga": "6",
+  "zavjet": "Stari zavjet",
+  "ime": "Jošua",
+  "kratica": "Jš",
+  "brojGlava": 24,
+  "slug": "josua"
+ },
+ {
+  "oznaka": "07O",
+  "ks-knjiga": "7",
+  "zavjet": "Stari zavjet",
+  "ime": "Suci",
+  "kratica": "Suci",
+  "brojGlava": 21,
+  "slug": "suci"
+ },
+ {
+  "oznaka": "08O",
+  "ks-knjiga": "8",
+  "zavjet": "Stari zavjet",
+  "ime": "Knjiga o Ruti",
+  "kratica": "Rut",
+  "brojGlava": 4,
+  "slug": "knjiga-o-ruti"
+ },
+ {
+  "oznaka": "09O",
+  "ks-knjiga": "9",
+  "zavjet": "Stari zavjet",
+  "ime": "Prva knjiga o Samuelu",
+  "kratica": "1 Sam",
+  "brojGlava": 31,
+  "slug": "prva-knjiga-o-samuelu"
+ },
+ {
+  "oznaka": "10O",
+  "ks-knjiga": "10",
+  "zavjet": "Stari zavjet",
+  "ime": "Druga knjiga o Samuelu",
+  "kratica": "2 Sam",
+  "brojGlava": 24,
+  "slug": "druga-knjiga-o-samuelu"
+ },
+ {
+  "oznaka": "11O",
+  "ks-knjiga": "11",
+  "zavjet": "Stari zavjet",
+  "ime": "Prva knjiga o Kraljevima",
+  "kratica": "1 Kr",
+  "brojGlava": 22,
+  "slug": "prva-knjiga-o-kraljevima"
+ },
+ {
+  "oznaka": "12O",
+  "ks-knjiga": "12",
+  "zavjet": "Stari zavjet",
+  "ime": "Druga knjiga o Kraljevima",
+  "kratica": "2 Kr",
+  "brojGlava": 25,
+  "slug": "druga-knjiga-o-kraljevima"
+ },
+ {
+  "oznaka": "13O",
+  "ks-knjiga": "13",
+  "zavjet": "Stari zavjet",
+  "ime": "Prva knjiga Ljetopisa",
+  "kratica": "1 Ljet",
+  "brojGlava": 29,
+  "slug": "prva-knjiga-ljetopisa"
+ },
+ {
+  "oznaka": "14O",
+  "ks-knjiga": "14",
+  "zavjet": "Stari zavjet",
+  "ime": "Druga knjiga Ljetopisa",
+  "kratica": "2 Ljet",
+  "brojGlava": 36,
+  "slug": "druga-knjiga-ljetopisa"
+ },
+ {
+  "oznaka": "15O",
+  "ks-knjiga": "15",
+  "zavjet": "Stari zavjet",
+  "ime": "Knjiga Ezrina",
+  "kratica": "Ezr",
+  "brojGlava": 10,
+  "slug": "knjiga-ezrina"
+ },
+ {
+  "oznaka": "16O",
+  "ks-knjiga": "16",
+  "zavjet": "Stari zavjet",
+  "ime": "Knjiga Nehemijina",
+  "kratica": "Neh",
+  "brojGlava": 13,
+  "slug": "knjiga-nehemijina"
+ },
+ {
+  "oznaka": "67A",
+  "ks-knjiga": "17",
+  "zavjet": "Stari zavjet",
+  "ime": "Tobija",
+  "kratica": "Tb",
+  "brojGlava": 14,
+  "slug": "tobija"
+ },
+ {
+  "oznaka": "68A",
+  "ks-knjiga": "18",
+  "zavjet": "Stari zavjet",
+  "ime": "Judita",
+  "kratica": "Jdt",
+  "brojGlava": 16,
+  "slug": "judita"
+ },
+ {
+  "oznaka": "17O",
+  "ks-knjiga": "19",
+  "zavjet": "Stari zavjet",
+  "ime": "Estera",
+  "kratica": "Est",
+  "brojGlava": 10,
+  "slug": "estera-1"
+ },
+ {
+  "oznaka": "69A",
+  "ks-knjiga": "19",
+  "zavjet": "Stari zavjet",
+  "ime": "Estera",
+  "kratica": "Est",
+  "brojGlava": 10,
+  "slug": "estera-2"
+ },
+ {
+  "oznaka": "77A",
+  "ks-knjiga": "20",
+  "zavjet": "Stari zavjet",
+  "ime": "Prva knjiga o Makabejcima",
+  "kratica": "1 Mak",
+  "brojGlava": 16,
+  "slug": "prva-knjiga-o-makabejcima"
+ },
+ {
+  "oznaka": "78A",
+  "ks-knjiga": "21",
+  "zavjet": "Stari zavjet",
+  "ime": "Druga knjiga o Makabejcima",
+  "kratica": "2 Mak",
+  "brojGlava": 15,
+  "slug": "druga-knjiga-o-makabejcima"
+ },
+ {
+  "oznaka": "18O",
+  "ks-knjiga": "22",
+  "zavjet": "Stari zavjet",
+  "ime": "Job",
+  "kratica": "Job",
+  "brojGlava": 42,
+  "slug": "job"
+ },
+ {
+  "oznaka": "19O",
+  "ks-knjiga": "23",
+  "zavjet": "Stari zavjet",
+  "ime": "Psalmi",
+  "kratica": "Ps",
+  "brojGlava": 150,
+  "slug": "psalmi"
+ },
+ {
+  "oznaka": "20O",
+  "ks-knjiga": "24",
+  "zavjet": "Stari zavjet",
+  "ime": "Mudre izreke",
+  "kratica": "Izr",
+  "brojGlava": 31,
+  "slug": "mudre-izreke"
+ },
+ {
+  "oznaka": "21O",
+  "ks-knjiga": "25",
+  "zavjet": "Stari zavjet",
+  "ime": "Propovjednik",
+  "kratica": "Prop",
+  "brojGlava": 12,
+  "slug": "propovjednik"
+ },
+ {
+  "oznaka": "22O",
+  "ks-knjiga": "26",
+  "zavjet": "Stari zavjet",
+  "ime": "Pjesma nad pjesmama",
+  "kratica": "Pj",
+  "brojGlava": 8,
+  "slug": "pjesma-nad-pjesmama"
+ },
+ {
+  "oznaka": "70A",
+  "ks-knjiga": "27",
+  "zavjet": "Stari zavjet",
+  "ime": "Knjiga Mudrosti",
+  "kratica": "Mudr",
+  "brojGlava": 19,
+  "slug": "knjiga-mudrosti"
+ },
+ {
+  "oznaka": "71A",
+  "ks-knjiga": "28",
+  "zavjet": "Stari zavjet",
+  "ime": "Knjiga Sirahova",
+  "kratica": "Sir",
+  "brojGlava": 51,
+  "slug": "knjiga-sirahova"
+ },
+ {
+  "oznaka": "23O",
+  "ks-knjiga": "29",
+  "zavjet": "Stari zavjet",
+  "ime": "Izaija",
+  "kratica": "Iz",
+  "brojGlava": 66,
+  "slug": "izaija"
+ },
+ {
+  "oznaka": "24O",
+  "ks-knjiga": "30",
+  "zavjet": "Stari zavjet",
+  "ime": "Jeremija",
+  "kratica": "Jr",
+  "brojGlava": 52,
+  "slug": "jeremija"
+ },
+ {
+  "oznaka": "25O",
+  "ks-knjiga": "31",
+  "zavjet": "Stari zavjet",
+  "ime": "Tužaljke",
+  "kratica": "Tuž",
+  "brojGlava": 5,
+  "slug": "tuzaljke"
+ },
+ {
+  "oznaka": "72A",
+  "ks-knjiga": "32",
+  "zavjet": "Stari zavjet",
+  "ime": "Baruh",
+  "kratica": "Bar",
+  "brojGlava": 6,
+  "slug": "baruh"
+ },
+ {
+  "oznaka": "26O",
+  "ks-knjiga": "33",
+  "zavjet": "Stari zavjet",
+  "ime": "Ezekiel",
+  "kratica": "Ez",
+  "brojGlava": 48,
+  "slug": "ezekiel"
+ },
+ {
+  "oznaka": "27O",
+  "ks-knjiga": "34",
+  "zavjet": "Stari zavjet",
+  "ime": "Daniel",
+  "kratica": "Dn",
+  "brojGlava": 14,
+  "slug": "daniel"
+ },
+ {
+  "oznaka": "28O",
+  "ks-knjiga": "35",
+  "zavjet": "Stari zavjet",
+  "ime": "Hošea",
+  "kratica": "Hoš",
+  "brojGlava": 14,
+  "slug": "hosea"
+ },
+ {
+  "oznaka": "29O",
+  "ks-knjiga": "36",
+  "zavjet": "Stari zavjet",
+  "ime": "Joel",
+  "kratica": "Jl",
+  "brojGlava": 4,
+  "slug": "joel"
+ },
+ {
+  "oznaka": "30O",
+  "ks-knjiga": "37",
+  "zavjet": "Stari zavjet",
+  "ime": "Amos",
+  "kratica": "Am",
+  "brojGlava": 9,
+  "slug": "amos"
+ },
+ {
+  "oznaka": "31O",
+  "ks-knjiga": "38",
+  "zavjet": "Stari zavjet",
+  "ime": "Obadija",
+  "kratica": "Ob",
+  "brojGlava": 1,
+  "slug": "obadija"
+ },
+ {
+  "oznaka": "32O",
+  "ks-knjiga": "39",
+  "zavjet": "Stari zavjet",
+  "ime": "Jona",
+  "kratica": "Jon",
+  "brojGlava": 4,
+  "slug": "jona"
+ },
+ {
+  "oznaka": "33O",
+  "ks-knjiga": "40",
+  "zavjet": "Stari zavjet",
+  "ime": "Mihej",
+  "kratica": "Mih",
+  "brojGlava": 7,
+  "slug": "mihej"
+ },
+ {
+  "oznaka": "34O",
+  "ks-knjiga": "41",
+  "zavjet": "Stari zavjet",
+  "ime": "Nahum",
+  "kratica": "Nah",
+  "brojGlava": 3,
+  "slug": "nahum"
+ },
+ {
+  "oznaka": "35O",
+  "ks-knjiga": "42",
+  "zavjet": "Stari zavjet",
+  "ime": "Habakuk",
+  "kratica": "Hab",
+  "brojGlava": 3,
+  "slug": "habakuk"
+ },
+ {
+  "oznaka": "36O",
+  "ks-knjiga": "43",
+  "zavjet": "Stari zavjet",
+  "ime": "Sefanija",
+  "kratica": "Sef",
+  "brojGlava": 3,
+  "slug": "sefanija"
+ },
+ {
+  "oznaka": "37O",
+  "ks-knjiga": "44",
+  "zavjet": "Stari zavjet",
+  "ime": "Hagaj",
+  "kratica": "Hag",
+  "brojGlava": 2,
+  "slug": "hagaj"
+ },
+ {
+  "oznaka": "38O",
+  "ks-knjiga": "45",
+  "zavjet": "Stari zavjet",
+  "ime": "Zaharija",
+  "kratica": "Zah",
+  "brojGlava": 14,
+  "slug": "zaharija"
+ },
+ {
+  "oznaka": "39O",
+  "ks-knjiga": "46",
+  "zavjet": "Stari zavjet",
+  "ime": "Malahija",
+  "kratica": "Mal",
+  "brojGlava": 3,
+  "slug": "malahija"
+ },
+ {
+  "oznaka": "40N",
+  "ks-knjiga": "47",
+  "zavjet": "Novi zavjet",
+  "ime": "Matej",
+  "kratica": "Mt",
+  "brojGlava": 28,
+  "slug": "matej"
+ },
+ {
+  "oznaka": "41N",
+  "ks-knjiga": "48",
+  "zavjet": "Novi zavjet",
+  "ime": "Marko",
+  "kratica": "Mk",
+  "brojGlava": 16,
+  "slug": "marko"
+ },
+ {
+  "oznaka": "42N",
+  "ks-knjiga": "49",
+  "zavjet": "Novi zavjet",
+  "ime": "Luka",
+  "kratica": "Lk",
+  "brojGlava": 24,
+  "slug": "luka"
+ },
+ {
+  "oznaka": "43N",
+  "ks-knjiga": "50",
+  "zavjet": "Novi zavjet",
+  "ime": "Ivan",
+  "kratica": "Iv",
+  "brojGlava": 21,
+  "slug": "ivan"
+ },
+ {
+  "oznaka": "44N",
+  "ks-knjiga": "51",
+  "zavjet": "Novi zavjet",
+  "ime": "Djela Apostolska",
+  "kratica": "Dj",
+  "brojGlava": 28,
+  "slug": "djela-apostolska"
+ },
+ {
+  "oznaka": "45N",
+  "ks-knjiga": "52",
+  "zavjet": "Novi zavjet",
+  "ime": "Poslanica Rimljanima",
+  "kratica": "Rim",
+  "brojGlava": 16,
+  "slug": "poslanica-rimljanima"
+ },
+ {
+  "oznaka": "46N",
+  "ks-knjiga": "53",
+  "zavjet": "Novi zavjet",
+  "ime": "Prva poslanica Korinćanima",
+  "kratica": "1 Kor",
+  "brojGlava": 16,
+  "slug": "prva-poslanica-korincanima"
+ },
+ {
+  "oznaka": "47N",
+  "ks-knjiga": "54",
+  "zavjet": "Novi zavjet",
+  "ime": "Druga poslanica Korinčanima",
+  "kratica": "2 Kor",
+  "brojGlava": 16,
+  "slug": "druga-poslanica-korincanima"
+ },
+ {
+  "oznaka": "48N",
+  "ks-knjiga": "55",
+  "zavjet": "Novi zavjet",
+  "ime": "Poslanica Galaćanima",
+  "kratica": "Gal",
+  "brojGlava": 6,
+  "slug": "poslanica-galacanima"
+ },
+ {
+  "oznaka": "49N",
+  "ks-knjiga": "56",
+  "zavjet": "Novi zavjet",
+  "ime": "Poslanica Efežanima",
+  "kratica": "Ef",
+  "brojGlava": 6,
+  "slug": "poslanica-efezanima"
+ },
+ {
+  "oznaka": "50N",
+  "ks-knjiga": "57",
+  "zavjet": "Novi zavjet",
+  "ime": "Poslanica FIlipljanima",
+  "kratica": "Fil",
+  "brojGlava": 4,
+  "slug": "poslanica-filipljanima"
+ },
+ {
+  "oznaka": "51N",
+  "ks-knjiga": "58",
+  "zavjet": "Novi zavjet",
+  "ime": "Poslanica Kološanima",
+  "kratica": "Kol",
+  "brojGlava": 4,
+  "slug": "poslanica-kolosanima"
+ },
+ {
+  "oznaka": "52N",
+  "ks-knjiga": "59",
+  "zavjet": "Novi zavjet",
+  "ime": "Prva poslanica Solunjanima",
+  "kratica": "1 Sol",
+  "brojGlava": 5,
+  "slug": "prva-poslanica-solunjanima"
+ },
+ {
+  "oznaka": "53N",
+  "ks-knjiga": "60",
+  "zavjet": "Novi zavjet",
+  "ime": "Druga poslanica Solunjanima",
+  "kratica": "2 Sol",
+  "brojGlava": 3,
+  "slug": "druga-poslanica-solunjanima"
+ },
+ {
+  "oznaka": "54N",
+  "ks-knjiga": "61",
+  "zavjet": "Novi zavjet",
+  "ime": "Prva poslanica Timoteju",
+  "kratica": "1 Tim",
+  "brojGlava": 6,
+  "slug": "prva-poslanica-timoteju"
+ },
+ {
+  "oznaka": "55N",
+  "ks-knjiga": "62",
+  "zavjet": "Novi zavjet",
+  "ime": "Druga poslanica Timoteju",
+  "kratica": "2 Tim",
+  "brojGlava": 4,
+  "slug": "druga-poslanica-timoteju"
+ },
+ {
+  "oznaka": "56N",
+  "ks-knjiga": "63",
+  "zavjet": "Novi zavjet",
+  "ime": "Poslanica Titu",
+  "kratica": "Tit",
+  "brojGlava": 3,
+  "slug": "poslanica-titu"
+ },
+ {
+  "oznaka": "57N",
+  "ks-knjiga": "64",
+  "zavjet": "Novi zavjet",
+  "ime": "Poslanica Filemonu",
+  "kratica": "Flm",
+  "brojGlava": 1,
+  "slug": "poslanica-filemonu"
+ },
+ {
+  "oznaka": "58N",
+  "ks-knjiga": "65",
+  "zavjet": "Novi zavjet",
+  "ime": "Poslanica Hebrejima",
+  "kratica": "Heb",
+  "brojGlava": 13,
+  "slug": "poslanica-hebrejima"
+ },
+ {
+  "oznaka": "59N",
+  "ks-knjiga": "66",
+  "zavjet": "Novi zavjet",
+  "ime": "Jakovljeva poslanica",
+  "kratica": "Jak",
+  "brojGlava": 5,
+  "slug": "jakovljeva-poslanica"
+ },
+ {
+  "oznaka": "60N",
+  "ks-knjiga": "67",
+  "zavjet": "Novi zavjet",
+  "ime": "Prva Petrova poslanica",
+  "kratica": "1 Pt",
+  "brojGlava": 5,
+  "slug": "prva-petrova-poslanica"
+ },
+ {
+  "oznaka": "61N",
+  "ks-knjiga": "68",
+  "zavjet": "Novi zavjet",
+  "ime": "Druga Petrova poslanica",
+  "kratica": "2 Pt",
+  "brojGlava": 3,
+  "slug": "druga-petrova-poslanica"
+ },
+ {
+  "oznaka": "65N",
+  "ks-knjiga": "69",
+  "zavjet": "Novi zavjet",
+  "ime": "Judina poslanica",
+  "kratica": "Jd",
+  "brojGlava": 1,
+  "slug": "judina-poslanica"
+ },
+ {
+  "oznaka": "62N",
+  "ks-knjiga": "70",
+  "zavjet": "Novi zavjet",
+  "ime": "Prva Ivanova poslanica",
+  "kratica": "1 Iv",
+  "brojGlava": 5,
+  "slug": "prva-ivanova-poslanica"
+ },
+ {
+  "oznaka": "63N",
+  "ks-knjiga": "71",
+  "zavjet": "Novi zavjet",
+  "ime": "Druga Ivanova poslanica",
+  "kratica": "2 Iv",
+  "brojGlava": 1,
+  "slug": "druga-ivanova-poslanica"
+ },
+ {
+  "oznaka": "64N",
+  "ks-knjiga": "72",
+  "zavjet": "Novi zavjet",
+  "ime": "Treća Ivanova poslanica",
+  "kratica": "3 Iv",
+  "brojGlava": 1,
+  "slug": "treca-ivanova-poslanica"
+ },
+ {
+  "oznaka": "66N",
+  "ks-knjiga": "73",
+  "zavjet": "Novi zavjet",
+  "ime": "Otkrivenje",
+  "kratica": "Otk",
+  "brojGlava": 22,
+  "slug": "otkrivenje"
+ }
+]
