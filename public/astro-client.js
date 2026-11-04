@@ -1074,10 +1074,9 @@
 
     const logoutBtn = document.getElementById("btnLogoutSync");
     if (logoutBtn) {
-      logoutBtn.addEventListener("click", () => {
-        if (state.syncAuth && state.syncAuth.method === "passkey") {
-          fetch("/api/logout", { method: "POST", credentials: "same-origin" }).catch(() => {});
-        }
+      logoutBtn.addEventListener("click", async () => {
+        // Kolačić sesije mora nestati prije nego stranica (npr. /provjera/) ponovno pita tko je prijavljen.
+        await fetch("/api/logout", { method: "POST", credentials: "same-origin" }).catch(() => {});
         state.syncAuth = null;
         localStorage.removeItem("biblija_sync_auth");
         resetLocalUserData();
@@ -1088,6 +1087,7 @@
         updateSyncHeaderUI();
         updateSyncModalViews();
         triggerAllUiRefresh();
+        window.dispatchEvent(new CustomEvent("biblija-auth"));
       });
     }
 

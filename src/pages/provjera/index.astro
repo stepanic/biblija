@@ -454,7 +454,16 @@ import Icon from "../../components/Icon.astro";
       });
     });
     // Prijava ili novi profil u modalu „Prijava / Sync” (ista kartica ili druga)
-    function refresh() { loadSession().then(function () { if ($("pvLogin").style.display !== "none" && session) next(); }); }
+    // Svaka promjena prijave (ključ, novi profil, odjava) ponovno složi stranicu.
+    var lastUser = null;
+    function refresh() {
+      loadSession().then(function () {
+        var now = session ? session.user_key + "|" + (session.certilia_name || "") : "";
+        if (now === lastUser) return;
+        lastUser = now;
+        next();
+      });
+    }
     window.addEventListener("biblija-auth", refresh);
     window.addEventListener("storage", function (e) { if (e.key === "biblija_sync_auth") refresh(); });
     window.addEventListener("focus", function () { if ($("pvLogin").style.display !== "none") refresh(); });
@@ -472,7 +481,7 @@ import Icon from "../../components/Icon.astro";
 
     loadStats();
     var deep = q.get("id");
-    loadSession().then(function () { next(deep || undefined); });
+    loadSession().then(function () { lastUser = session ? session.user_key + "|" + (session.certilia_name || "") : ""; next(deep || undefined); });
   })();
   </script>
 </BaseLayout>
