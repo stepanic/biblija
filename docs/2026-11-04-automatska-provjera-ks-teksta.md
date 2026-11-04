@@ -119,6 +119,30 @@ npx wrangler d1 execute biblija-365-db --remote --file data/audit/d1_seed.sql -y
 
 Upsert čuva `status`, `consensus` i `review_count`. Nalazi koje skripta više ne prijavljuje dobivaju `active = 0`, a njihove presude ostaju. ID nalaza je `sha1(layer|kind|ref|msg)`, pa promjena teksta poruke stvara novi nalaz.
 
+## Raspored na desktopu (2026-11-04)
+
+Provjera se radi uglavnom na računalu, uz tiskanu Bibliju i mobitel za fotografiju. Zato
+`BaseLayout` ima prop `wide` (klasa `layout-wide` na `body`), koji na /provjera/ ukida
+`max-width: 1360px` za sadržaj i zaglavlje.
+
+| Širina | Raspored |
+|---|---|
+| < 1100 px | jedan stupac, kao prije: tekst, fotografija, presuda |
+| 1100–1600 px | dva stupca: tekst lijevo, fotografija pa presuda desno |
+| ≥ 1600 px | tri stupca: tekst, fotografija, presuda; fotografija i presuda su `sticky` uz dugi tekst poglavlja, fotografija visoka najviše `100vh − 260px` |
+
+Koraci prijave (ključ, Certilia) stoje jedan uz drugi. Polje „Tiskano izdanje” prešlo je iz
+zasebne kartice na vrh stupca s presudom. Na pravoj, uspravnoj fotografiji još nije viđeno.
+
+## Stanje i otvoreno (2026-11-04 navečer)
+
+- Prijava ključem i Certilia rade na produkciji (Matijin profil, `auth_log` 10:40–10:52 UTC).
+- Upute su poslane Hermanu i Lovri u WhatsApp grupu „Biblija”. Presuda još nema.
+- **OCR na pravoj fotografiji s mobitela još nije isproban** (proba: Job 26,5, str. 575).
+- Tiskano izdanje (godina, ISBN) još nije utvrđeno.
+- Job 24–27 errata čekaju potvrdu prema tisku kroz /provjera/.
+- /provjera/ nije u glavnom izborniku.
+
 ## Zamke
 
 - **Astro scopea `<style>`:** HTML koji stranica generira skriptom (statistika, tekstovi) ostaje bez stila. Na `/provjera/` zato stoji `<style is:global>`, a klase su ograničene prefiksom `.pv`.
@@ -130,6 +154,7 @@ Upsert čuva `status`, `consensus` i `review_count`. Nalazi koje skripta više n
 
 ## Vezani dokumenti
 
+- `docs/2026-11-04-passkey-i-certilia.md`: prijava ključem i Certilijom
 - `docs/2026-10-28-foi-prijevodi-i-trosmjerna-usporedba.md`: trosmjerna usporedba i errata iz listopada
 - `docs/2026-10-25-arhitektura-i-audit-izvora.md`
 - `AUDIT.md`
