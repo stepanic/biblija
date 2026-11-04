@@ -503,9 +503,12 @@ async function certiliaCallback(request: Request, env: AuthEnv, url: URL, ctx: E
   }
 
   // Samo imena claimova, nikad vrijednosti.
-  const claims = Object.keys(payload).sort().join(",");
+  let claims = Object.keys(payload).sort().join(",");
   // e-Osobna šalje OIB kao `sub`; `pin` stiže kad Certilia poštuje claims zahtjev.
-  const oib = str(payload.pin) || str(payload.oib) || str(payload.sub);
+  const source = ["pin", "oib", "sub"].find((c) => str(payload[c])) || "none";
+  const oib = source === "none" ? null : str(payload[source]);
+  // Bez vrijednosti: samo odakle je identifikator i je li oblika OIB-a (11 znamenki).
+  claims += `;oib_izvor=${source};11_znamenki=${/^\d{11}$/.test(oib || "") ? 1 : 0}`;
   if (!oib) return fail("nema_oiba", { userKey: s.userKey, claims });
   const ime = str(payload.given_name) || str(payload.firstname);
   const prezime = str(payload.family_name) || str(payload.lastname);
