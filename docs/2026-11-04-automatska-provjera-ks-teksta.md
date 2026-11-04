@@ -37,7 +37,7 @@ Filtri protiv lažnih uzbuna:
 - **Akrostih:** imena hebrejskih slova (Tuž, Nah, Ps 111) kojih FOI nema ne računaju se kao greška.
 - **Naglasci:** FOI naglašena slova zamjenjuje s `?`, pa se `?` tretira kao zamjensko slovo. Ta su mjesta ipak zabilježena na prioritetu 3, jer tisak vjerojatno ima naglasak (npr. „Tâ”) koji KS-online nema.
 
-## Prvi rezultat (649 nalaza)
+## Prvi rezultat (585 nalaza)
 
 Prioritet 1: 53 nalaza, gotovo sve stvarne greške online izdanja:
 
@@ -47,9 +47,9 @@ Prioritet 1: 53 nalaza, gotovo sve stvarne greške online izdanja:
 - **Tipfeleri:** 1 Ljet 7,1 (zalutalo „y”), Izr 28,7 („izjelicama” prema „izbjeglicama”), Mt 27,12 („optuživali” prema „optuživale”).
 - 1 Kr 15,6: redak nema ni U68. Vjerojatno se ni u tisku ne tiska (isti je kao 14,30), pa ga treba provjeriti.
 
-Prioritet 2 (370): uglavnom razlike KS-online prema FOI, gdje je U68 starije izdanje, te neupareni navodnici. Ovdje je dio razlika revizija teksta između izdanja, a ne greška.
+Prioritet 2 (84): uglavnom razlike KS-online prema FOI, gdje je U68 starije izdanje, te neupareni navodnici. Ovdje je dio razlika revizija teksta između izdanja, a ne greška.
 
-Prioritet 3 (226): naglasci, pomaci numeracije, paralele, sitna tipografija.
+Prioritet 3 (448): naglasci, pomaci numeracije, paralele, sitna tipografija.
 
 Svaki nalaz ima `in_errata` (je li već u `data/errata.json`). Errata iz listopada (33) su u
 `data/json/` već primijenjena, pa ih ova provjera ne vidi ponovno. U izvještaj za KS idu i one.
@@ -98,3 +98,23 @@ Tijek rada:
 5. Dvije neovisne istovjetne presude znače da je nalaz potvrđen. Ako se presude razlikuju, nalaz ide trećoj osobi.
 6. Nasumični redci iz uzorka izgledaju kao obični nalazi. Iz njih se računa udio grešaka koje skripta ne vidi, i to je tvrdnja o točnosti koju možemo dati KS-u.
 7. Izvoz za KS: CSV i PDF, za svaki redak ref, tekst online, tekst u tisku, stranicu tiska i fotografiju.
+
+## Implementirano: https://biblija.domovina.ai/provjera/ (2026-11-04)
+
+- **Stranica:** `src/pages/provjera/index.astro`. Prijava je postojećim Sync kodom i PIN-om.
+- **API:** `src/provjera.ts`, rute `/api/provjera/{next,review,stats,export.csv,photo/…}`.
+- **Tablice:** `audit_findings` i `audit_reviews` (`migrations/0004_provjera.sql`). Fotografije su u R2 bucketu `biblija-provjera` (binding `PHOTOS`), pod nepogodivim ključem `<finding_id>/<uuid>.jpg`.
+- **Red provjere:** najprije neslaganja, zatim nalazi s jednom presudom, pa prioritet. 20 % redaka čine nasumični uzorci (300 neoznačenih redaka, `is_sample = 1`), a recenzent ih vidi kao obične retke.
+- **Konsenzus:** dvije iste presude (bez „ne mogu”) znače da je nalaz riješen; različite presude čekaju treću osobu. Tuđe presude vide se tek nakon vlastite.
+- **OCR:** Tesseract.js 5.1.1 (`hrv`) u pregledniku, bez troška poslužitelja. Odsječak najsličniji retku online (Dice nad bigramima) upisuje se kao prijedlog teksta iz tiska, uz razliku riječ po riječ.
+- **Izvoz za KS:** `/api/provjera/export.csv` (potvrđene razlike) i `?sve=1` (sve presude), s poveznicama na fotografije.
+- **Statistika:** gornja granica udjela grešaka iz uzorka (pravilo trojke, odnosno normalna aproksimacija).
+
+Osvježavanje nalaza nakon izmjene `audit_tekst.py`:
+
+```bash
+python3 scripts/audit_tekst.py && python3 scripts/audit_to_d1.py
+npx wrangler d1 execute biblija-365-db --remote --file data/audit/d1_seed.sql -y
+```
+
+Upsert čuva `status`, `consensus` i `review_count`. Nalazi koje skripta više ne prijavljuje dobivaju `active = 0`, a njihove presude ostaju. ID nalaza je `sha1(layer|kind|ref|msg)`, pa promjena teksta poruke stvara novi nalaz.

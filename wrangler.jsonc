@@ -22,6 +22,8 @@
       "migrations_dir": "migrations"
     }
   ],
+  // Fotografije tiska iz ručne provjere (/provjera/, src/provjera.ts)
+  "r2_buckets": [{ "binding": "PHOTOS", "bucket_name": "biblija-provjera" }],
   // Realtime: jedna SyncRoom po Sync kodu (WebSocket Hibernation), vidi src/worker.ts
   "durable_objects": {
     "bindings": [{ "name": "SYNC_ROOM", "class_name": "SyncRoom" }]

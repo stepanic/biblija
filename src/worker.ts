@@ -11,6 +11,7 @@
  */
 
 import { DurableObject } from "cloudflare:workers";
+import { handleProvjera, type R2Bucket, type VerifyUser } from "./provjera";
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
@@ -29,6 +30,7 @@ export interface Env {
   ASSETS: { fetch: (req: Request) => Promise<Response> };
   DB?: D1Database;
   SYNC_ROOM?: DurableObjectNamespace<SyncRoom>;
+  PHOTOS?: R2Bucket;
 }
 
 // Najviše otvorenih veza po Sync kodu; starije se zatvaraju.
@@ -327,6 +329,31 @@ function lockedResponse(until: string): Response {
   );
 }
 
+/** Sync kod + PIN za /api/provjera: isti korisnici i isto zaključavanje kao sinkronizacija. */
+const verifyUser: VerifyUser = async (db, rawKey, pin) => {
+  await ensureSchema(db);
+  const userKey = normalizeUserKey(rawKey.trim());
+  pin = pin.trim();
+  if (userKey.length < 3 || pin.length < 4) {
+    return { ok: false, response: jsonResponse({ ok: false, error: "Prijavi se Sync kodom i PIN-om." }, 401) };
+  }
+  const nowMs = Date.now();
+  const until = await lockedUntil(db, userKey, nowMs);
+  if (until) return { ok: false, response: lockedResponse(until) };
+  const user = await db.prepare("SELECT pin_hash, display_name FROM sync_users WHERE user_key = ?")
+    .bind(userKey)
+    .first<{ pin_hash: string; display_name: string }>();
+  if (!user) {
+    return { ok: false, response: jsonResponse({ ok: false, error: "Sync kod ne postoji. Prvo se prijavi u aplikaciji." }, 401) };
+  }
+  if (user.pin_hash !== (await hashPin(userKey, pin))) {
+    await recordPinFailure(db, userKey, nowMs);
+    return { ok: false, response: jsonResponse({ ok: false, error: "Pogrešan PIN za ovaj Sync kod." }, 401) };
+  }
+  await clearPinFailures(db, userKey);
+  return { ok: true, userKey, displayName: user.display_name };
+};
+
 export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
@@ -340,6 +367,10 @@ export default {
         return jsonResponse({ ok: false, error: "Očekujem WebSocket." }, 426);
       }
       return env.SYNC_ROOM.get(env.SYNC_ROOM.idFromName(room)).fetch(request);
+    }
+
+    if (url.pathname.startsWith("/api/provjera/")) {
+      return handleProvjera(request, env, url, verifyUser);
     }
 
     if (url.pathname === "/api/status" && request.method === "GET") {

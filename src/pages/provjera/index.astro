@@ -1,0 +1,411 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Icon from "../../components/Icon.astro";
+---
+
+<BaseLayout
+  title="Provjera prema tisku | Biblija 365"
+  description="Zajednička ručna provjera online izdanja Zagrebačke Biblije (biblija.ks.hr) prema tiskanom izdanju Kršćanske sadašnjosti."
+  activeNav="notes"
+>
+  <section id="provjeraRoot" class="pv">
+    <div class="card">
+      <span class="badge badge-accent"><Icon name="scan-text" />Zagrebačka Biblija · online prema tisku</span>
+      <h1 class="page-hero-title">Provjera prema tisku</h1>
+      <p class="page-hero-sub">
+        Automatska provjera našla je mjesta gdje se tekst na biblija.ks.hr možda razlikuje od tiskanog izdanja.
+        Otvori isti redak u tiskanoj Bibliji, fotografiraj stranicu i reci što piše u tisku. Svaki redak provjeravaju
+        dvije osobe neovisno: tuđu presudu vidiš tek kad pošalješ svoju. Popis potvrđenih razlika besplatno ćemo predati
+        Kršćanskoj sadašnjosti.
+      </p>
+      <div class="pv-stats" id="pvStats"><span class="pv-muted">Učitavam stanje…</span></div>
+      <div class="pv-actions">
+        <a class="icon-btn" href="/api/provjera/export.csv"><Icon name="download" />Potvrđene razlike (CSV)</a>
+        <a class="icon-btn" href="/api/provjera/export.csv?sve=1"><Icon name="file-spreadsheet" />Sve presude (CSV)</a>
+      </div>
+    </div>
+
+    <div class="card" id="pvLogin" style="display:none;">
+      <h2 class="pv-h2"><Icon name="user-round" />Prijava</h2>
+      <p class="pv-muted">Za provjeru se prijavi svojim Sync kodom i PIN-om (gumb „Prijava / Sync” gore desno). Ako ga nemaš, tamo ga možeš napraviti.</p>
+      <button class="icon-btn btn-accent" id="pvOpenLogin"><Icon name="log-in" />Prijava / Sync</button>
+    </div>
+
+    <div class="card" id="pvEdition" style="display:none;">
+      <label class="form-label" for="pvEditionInput">Tiskano izdanje koje imaš (godina, ISBN ili naslovnica)</label>
+      <input class="form-input pv-input" id="pvEditionInput" placeholder="npr. Biblija, KS 2018., ISBN 978-953-11-…" />
+    </div>
+
+    <div class="card" id="pvCard" style="display:none;">
+      <div class="pv-head">
+        <div>
+          <div class="pv-ref" id="pvRef"></div>
+          <div class="pv-kind" id="pvKind"></div>
+        </div>
+        <a class="icon-btn" id="pvReaderLink" target="_blank" rel="noopener"><Icon name="book-open" />U čitaču</a>
+      </div>
+      <p class="pv-msg" id="pvMsg"></p>
+
+      <div class="pv-texts" id="pvTexts"></div>
+
+      <h3 class="pv-h3"><Icon name="camera" />Fotografija stranice iz tiska</h3>
+      <p class="pv-muted">Fotografija se sprema uz presudu kao dokaz. Prepoznavanje teksta radi u tvom pregledniku i samo pokušava naći redak na stranici; uvijek ga provjeri.</p>
+      <label class="icon-btn pv-file">
+        <Icon name="camera" />Snimi ili odaberi fotografiju
+        <input type="file" id="pvPhoto" accept="image/*" capture="environment" hidden />
+      </label>
+      <div id="pvPhotoBox" class="pv-photo-box" style="display:none;">
+        <img id="pvPhotoPreview" alt="Fotografija stranice" />
+        <div id="pvOcrStatus" class="pv-muted"></div>
+      </div>
+
+      <h3 class="pv-h3"><Icon name="scale" />Što piše u tisku?</h3>
+      <div class="pv-verdicts" role="radiogroup">
+        <label class="pv-verdict"><input type="radio" name="pvVerdict" value="tisak_drukcije" /><span><strong>Tisak se razlikuje</strong> od online izdanja</span></label>
+        <label class="pv-verdict"><input type="radio" name="pvVerdict" value="tisak_kao_online" /><span><strong>Isto je</strong> kao online</span></label>
+        <label class="pv-verdict"><input type="radio" name="pvVerdict" value="ne_mogu" /><span><strong>Ne mogu provjeriti</strong></span></label>
+      </div>
+
+      <label class="form-label" for="pvPrintText">Kako glasi u tisku (obavezno ako se razlikuje)</label>
+      <textarea class="form-input pv-input pv-textarea" id="pvPrintText" rows="4" placeholder="Prepiši redak (ili dio koji se razlikuje) točno kako je u tisku."></textarea>
+      <div id="pvPrintDiff" class="pv-diff"></div>
+
+      <div class="pv-row">
+        <div>
+          <label class="form-label" for="pvPage">Stranica u tisku</label>
+          <input class="form-input pv-input" id="pvPage" inputmode="numeric" placeholder="npr. 575" />
+        </div>
+        <div class="pv-grow">
+          <label class="form-label" for="pvNote">Napomena</label>
+          <input class="form-input pv-input" id="pvNote" placeholder="npr. u tisku je redak premješten iza 27,23" />
+        </div>
+      </div>
+
+      <div id="pvError" class="sync-auth-msg" style="display:none;"></div>
+      <div class="pv-actions">
+        <button class="icon-btn btn-accent" id="pvSubmit"><Icon name="send" />Pošalji presudu</button>
+        <button class="icon-btn" id="pvSkip"><Icon name="skip-forward" />Preskoči</button>
+      </div>
+
+      <div id="pvOthers" class="pv-others" style="display:none;"></div>
+    </div>
+
+    <div class="card" id="pvDone" style="display:none;">
+      <h2 class="pv-h2"><Icon name="circle-check" />Nema više redaka za tebe</h2>
+      <p class="pv-muted">Sve što ti je bilo dodijeljeno je provjereno ili preskočeno. Hvala!</p>
+      <button class="icon-btn" id="pvResetSkip"><Icon name="rotate-ccw" />Vrati preskočene</button>
+    </div>
+  </section>
+
+  <style is:global>
+    .pv .pv-stats { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .pv .pv-stat { background: var(--bg-muted); border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; min-width: 120px; }
+    .pv .pv-stat b { display: block; font-size: 1.25rem; font-family: var(--font-display); }
+    .pv .pv-stat span { font-size: 0.8rem; color: var(--text-muted); }
+    .pv .pv-muted { color: var(--text-muted); font-size: 0.9rem; }
+    .pv .pv-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .pv .pv-actions a { text-decoration: none; }
+    .pv .pv-h2, .pv .pv-h3 { display: flex; align-items: center; gap: 8px; margin: 18px 0 6px; font-family: var(--font-display); }
+    .pv .pv-h2 { margin-top: 0; }
+    .pv .pv-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; }
+    .pv .pv-head a { text-decoration: none; }
+    .pv .pv-ref { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; }
+    .pv .pv-kind { color: var(--text-muted); font-size: 0.85rem; }
+    .pv .pv-msg { margin: 8px 0 12px; }
+    .pv .pv-texts { display: grid; gap: 10px; }
+    .pv .pv-text { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--bg-sunken); }
+    .pv .pv-text-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-subtle); margin-bottom: 4px; }
+    .pv .pv-text-body { font-family: var(--font-reading); font-size: 1.05rem; line-height: 1.55; overflow-wrap: anywhere; }
+    .pv .pv-text-body sup { color: var(--verse-num); font-weight: 700; margin-right: 3px; }
+    .pv del { background: var(--danger-soft); color: var(--danger); text-decoration: line-through; }
+    .pv ins { background: var(--success-soft); color: var(--success); text-decoration: none; }
+    .pv .pv-file { cursor: pointer; }
+    .pv .pv-photo-box { margin-top: 10px; }
+    .pv .pv-photo-box img { max-width: 100%; max-height: 420px; border-radius: 10px; border: 1px solid var(--border); display: block; }
+    .pv .pv-verdicts { display: grid; gap: 8px; margin-bottom: 12px; }
+    .pv .pv-verdict { display: flex; gap: 10px; align-items: center; border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; cursor: pointer; background: var(--bg-elevated); }
+    .pv .pv-verdict:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+    .pv .pv-input { width: 100%; box-sizing: border-box; }
+    .pv .pv-textarea { font-family: var(--font-reading); font-size: 1rem; resize: vertical; }
+    .pv .pv-diff { margin: 6px 0 12px; font-family: var(--font-reading); line-height: 1.5; }
+    .pv .pv-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+    .pv .pv-row > div { min-width: 120px; }
+    .pv .pv-grow { flex: 1; }
+    .pv .pv-others { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px; }
+    .pv .pv-other { margin: 8px 0; padding: 8px 10px; border-radius: 8px; background: var(--bg-muted); }
+    .pv .pv-other img { max-width: 160px; border-radius: 6px; margin-top: 6px; display: block; }
+  </style>
+
+  <script is:inline>
+  (function () {
+    "use strict";
+    var $ = function (id) { return document.getElementById(id); };
+    var state = { finding: null, books: null, chapterCache: {}, skip: [], photo: null, ocrText: "" };
+    try { state.skip = JSON.parse(localStorage.getItem("pv_skip") || "[]"); } catch (e) { state.skip = []; }
+    try { $("pvEditionInput").value = localStorage.getItem("pv_edition") || ""; } catch (e) {}
+
+    function ic(name) { return '<svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#' + name + '"/></svg>'; }
+    function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+    function auth() {
+      try { var a = JSON.parse(localStorage.getItem("biblija_sync_auth") || "null"); return a && a.user_key && a.pin ? a : null; } catch (e) { return null; }
+    }
+    function saveSkip() { try { localStorage.setItem("pv_skip", JSON.stringify(state.skip.slice(-200))); } catch (e) {} }
+
+    var KIND_LABEL = {
+      krivi_broj: "Redak je možda pod krivim brojem", nedostaje: "Redci možda nedostaju", visak: "Redci kojih nema u drugim izdanjima",
+      prazan: "Prazan redak", duplikat: "Dvostruki redak", redoslijed: "Neobičan redoslijed redaka",
+      ks_u_manjini: "Dvije druge digitalizacije KS-a glase drukčije", ks_razlicit_od_foi: "Druga digitalizacija KS-a glasi drukčije",
+      naglasak: "Tisak možda ima naglašeno slovo", akrostih: "Hebrejsko slovo akrostiha", tekstnokriticki: "Redak koji kritička izdanja izostavljaju",
+      pomak_numeracije: "Numeracija se razlikuje od izdanja iz 1968.", mala_razlika: "Mala razlika u usporednom odlomku",
+      navodnici: "Navodnici", ponovljena_rijec: "Ponovljena riječ", upitnik_u_rijeci: "Upitnik usred riječi",
+      razmak_prije_interpunkcije: "Razmak prije interpunkcije", nema_razmaka_iza_interpunkcije: "Nema razmaka iza interpunkcije",
+      dvostruki_razmak: "Dvostruki razmak", cudan_znak: "Neobičan znak", znamenka: "Znamenka u tekstu", redak: "Usporedi redak s tiskom"
+    };
+    var VERDICT_LABEL = { tisak_drukcije: "Tisak se razlikuje", tisak_kao_online: "Isto kao online", ne_mogu: "Ne mogu provjeriti" };
+
+    // ---- riječi i razlika (LCS po riječima), za istaknute razlike i za traženje retka u OCR-u
+    function words(s) { return String(s || "").split(/\s+/).filter(Boolean); }
+    function normWord(w) { return w.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^\p{L}\p{N}]/gu, ""); }
+    function diffHtml(a, b) {
+      var A = words(a), B = words(b), n = A.length, m = B.length;
+      if (n * m > 250000) return esc(b);
+      var dp = []; for (var i = 0; i <= n; i++) { dp.push(new Uint16Array(m + 1)); }
+      for (i = n - 1; i >= 0; i--) for (var j = m - 1; j >= 0; j--)
+        dp[i][j] = normWord(A[i]) === normWord(B[j]) && A[i] === B[j] ? dp[i + 1][j + 1] + 1 : Math.max(dp[i + 1][j], dp[i][j + 1]);
+      var out = []; i = 0; j = 0;
+      while (i < n && j < m) {
+        if (A[i] === B[j]) { out.push(esc(B[j])); i++; j++; }
+        else if (dp[i + 1][j] >= dp[i][j + 1]) { out.push("<del>" + esc(A[i]) + "</del>"); i++; }
+        else { out.push("<ins>" + esc(B[j]) + "</ins>"); j++; }
+      }
+      while (i < n) out.push("<del>" + esc(A[i++]) + "</del>");
+      while (j < m) out.push("<ins>" + esc(B[j++]) + "</ins>");
+      return out.join(" ");
+    }
+    function bigrams(s) {
+      var t = normWord(s.replace(/\s+/g, "")); var g = {};
+      for (var i = 0; i < t.length - 1; i++) { var k = t.substr(i, 2); g[k] = (g[k] || 0) + 1; }
+      return g;
+    }
+    function dice(a, b) {
+      var n = 0, ta = 0, tb = 0, k;
+      for (k in a) { ta += a[k]; if (b[k]) n += Math.min(a[k], b[k]); }
+      for (k in b) tb += b[k];
+      return ta + tb ? (2 * n) / (ta + tb) : 0;
+    }
+    /** Najsličniji odsječak OCR teksta retku KS-online (prozor riječi približne duljine). */
+    function bestWindow(ocr, target) {
+      var W = words(ocr.replace(/-\s*\n\s*/g, "").replace(/\n/g, " ")), T = words(target), tg = bigrams(target);
+      if (!W.length || !T.length) return null;
+      var best = { score: 0, text: "" };
+      var lens = [T.length - 2, T.length - 1, T.length, T.length + 1, T.length + 2, T.length + 4].filter(function (x) { return x > 0; });
+      for (var s = 0; s < W.length; s++) for (var li = 0; li < lens.length; li++) {
+        if (s + lens[li] > W.length) continue;
+        var cand = W.slice(s, s + lens[li]).join(" ");
+        var sc = dice(bigrams(cand), tg);
+        if (sc > best.score) best = { score: sc, text: cand };
+      }
+      return best;
+    }
+
+    // ---- API
+    function api(path, body) {
+      return fetch("/api/provjera" + path, body instanceof FormData ? { method: "POST", body: body }
+        : { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) })
+        .then(function (r) { return r.json().then(function (j) { j._status = r.status; return j; }); });
+    }
+    function loadStats() {
+      fetch("/api/provjera/stats").then(function (r) { return r.json(); }).then(function (s) {
+        if (!s.ok) { $("pvStats").innerHTML = '<span class="pv-muted">' + esc(s.error || "Stanje nije dostupno.") + "</span>"; return; }
+        var st = s.findings.by_status || {};
+        var ub = s.sample.upper_bound_95;
+        var cells = [
+          [s.findings.total, "nalaza za provjeru"],
+          [st.rijeseno || 0, "riješeno (dvije iste presude)"],
+          [s.findings.confirmed_errors, "potvrđenih razlika"],
+          [(st.ceka_drugog || 0) + (st.neslaganje || 0), "čeka drugu ili treću osobu"],
+          [s.sample.resolved + " / " + s.sample.total, "nasumičnih redaka provjereno"],
+          [ub == null ? "–" : "< " + (ub * 100).toFixed(1).replace(".", ",") + " %", "procjena preostalih grešaka (95 %)"],
+          [s.reviewers, "osoba sudjeluje"]
+        ];
+        $("pvStats").innerHTML = cells.map(function (c) { return '<div class="pv-stat"><b>' + esc(c[0]) + "</b><span>" + esc(c[1]) + "</span></div>"; }).join("");
+      }).catch(function () {});
+    }
+    function books() {
+      if (state.books) return Promise.resolve(state.books);
+      return fetch("/data/json/books.json").then(function (r) { return r.json(); }).then(function (b) { state.books = b; return b; });
+    }
+    function chapter(order, ch) {
+      var key = order + ":" + ch;
+      if (state.chapterCache[key]) return Promise.resolve(state.chapterCache[key]);
+      return books().then(function (bs) {
+        var b = bs.find(function (x) { return x.order === order; });
+        var file = String(order).padStart(2, "0") + "_" + b.id + ".json";
+        return fetch("/data/json/books/" + file).then(function (r) { return r.json(); }).then(function (d) {
+          var c = d.chapters.find(function (x) { return x.chapter === ch; });
+          state.chapterCache[key] = c ? c.verses : [];
+          return state.chapterCache[key];
+        });
+      });
+    }
+
+    function show(id) { ["pvLogin", "pvCard", "pvDone", "pvEdition"].forEach(function (x) { $(x).style.display = x === id || (x === "pvEdition" && id === "pvCard") ? "" : "none"; }); }
+    function err(msg) { var e = $("pvError"); e.textContent = msg || ""; e.style.display = msg ? "" : "none"; e.className = "sync-auth-msg" + (msg ? " error" : ""); }
+
+    function next(id) {
+      var a = auth();
+      if (!a) { show("pvLogin"); return; }
+      err("");
+      api("/next", { user_key: a.user_key, pin: a.pin, skip: state.skip, id: id || undefined }).then(function (r) {
+        if (!r.ok) { if (r._status === 401) { show("pvLogin"); } $("pvStats").insertAdjacentHTML("beforeend", '<div class="sync-auth-msg error">' + esc(r.error) + "</div>"); return; }
+        if (r.done) { show("pvDone"); return; }
+        render(r);
+      });
+    }
+
+    function textBox(label, body) { return '<div class="pv-text"><div class="pv-text-label">' + esc(label) + '</div><div class="pv-text-body">' + body + "</div></div>"; }
+
+    function render(r) {
+      var f = r.finding; state.finding = f; state.photo = null; state.ocrText = "";
+      show("pvCard");
+      $("pvRef").textContent = f.ref;
+      $("pvKind").textContent = (KIND_LABEL[f.kind] || f.kind) + (f.review_count ? " · " + f.review_count + " presuda do sada" : "");
+      $("pvMsg").textContent = f.kind === "redak" ? "Pročitaj redak u tisku i usporedi ga riječ po riječ s online izdanjem." : f.msg;
+      $("pvPhotoBox").style.display = "none"; $("pvPhoto").value = "";
+      $("pvPrintText").value = r.mine ? r.mine.print_text : "";
+      $("pvPage").value = r.mine ? r.mine.page : "";
+      $("pvNote").value = r.mine ? r.mine.note : "";
+      document.querySelectorAll('input[name="pvVerdict"]').forEach(function (x) { x.checked = !!(r.mine && r.mine.verdict === x.value); });
+      $("pvPrintDiff").innerHTML = "";
+      renderOthers(r.others, !!r.mine);
+      books().then(function (bs) {
+        var b = bs.find(function (x) { return x.order === f.book_order; });
+        $("pvReaderLink").href = "/" + b.id + "/" + f.chapter + "/" + (f.verse ? "#v-" + f.verse : "");
+      });
+
+      var html = [];
+      if (f.ks_text) html.push(textBox("biblija.ks.hr (online)", (f.verse ? "<sup>" + f.verse + "</sup>" : "") + esc(f.ks_text)));
+      if (f.foi_text) html.push(textBox("Druga digitalizacija KS-a (FOI): razlika prema online", diffHtml(f.ks_text, f.foi_text)));
+      if (f.u68_text && f.u68_text !== f.foi_text) html.push(textBox("Zagrebačka Biblija 1968. (eBible)", diffHtml(f.ks_text, f.u68_text)));
+      if (f.extra && f.extra.suggested) html.push(textBox("Prijedlog", "Ovaj tekst u drugim izdanjima stoji kao <b>" + esc(f.extra.suggested) + "</b>. Provjeri pod kojim je brojem i na kojem mjestu tiskan."));
+      if (f.extra && f.extra.other) html.push(textBox("Usporedni odlomak", "Gotovo isti tekst je u <b>" + esc(f.extra.other) + "</b>. Provjeri oba mjesta u tisku."));
+      $("pvTexts").innerHTML = html.join("");
+      if (!f.verse) {
+        // nalaz na razini poglavlja: prikaži online poglavlje s istaknutim spornim redcima
+        chapter(f.book_order, f.chapter).then(function (vs) {
+          var mark = {}; ((f.extra && (f.extra.verses || [])) || []).forEach(function (v) { mark[v] = 1; });
+          var body = vs.map(function (v) { return "<sup>" + v.verse + "</sup>" + esc(v.text); }).join(" ");
+          var note = f.extra && f.extra.verses ? "Sporni redci: " + f.extra.verses.join(", ") + ". " : "";
+          $("pvTexts").insertAdjacentHTML("beforeend", textBox("Cijelo poglavlje online · " + note, body));
+        });
+      }
+      window.scrollTo({ top: $("pvCard").offsetTop - 80, behavior: "smooth" });
+    }
+
+    function renderOthers(others, mineSent) {
+      var box = $("pvOthers");
+      if (!mineSent) { box.style.display = "none"; box.innerHTML = ""; return; }
+      box.style.display = "";
+      if (!others || !others.length) { box.innerHTML = '<span class="pv-muted">Još nitko drugi nije provjerio ovaj redak.</span>'; return; }
+      box.innerHTML = "<strong>Presude drugih</strong>" + others.map(function (o) {
+        return '<div class="pv-other"><b>' + esc(VERDICT_LABEL[o.verdict] || o.verdict) + "</b>" +
+          (o.page ? " · str. " + esc(o.page) : "") + (o.edition ? " · " + esc(o.edition) : "") +
+          (o.print_text ? '<div class="pv-text-body">' + esc(o.print_text) + "</div>" : "") +
+          (o.note ? '<div class="pv-muted">' + esc(o.note) + "</div>" : "") +
+          (o.photo_url ? '<a href="' + esc(o.photo_url) + '" target="_blank" rel="noopener"><img src="' + esc(o.photo_url) + '" alt="Fotografija tiska" loading="lazy" /></a>' : "") + "</div>";
+      }).join("");
+    }
+
+    // ---- fotografija: smanji na 1800 px, JPEG, pa OCR (Tesseract, hrvatski) u pregledniku
+    function shrink(file) {
+      return new Promise(function (resolve) {
+        var img = new Image();
+        img.onload = function () {
+          var s = Math.min(1, 1800 / Math.max(img.width, img.height));
+          var c = document.createElement("canvas"); c.width = Math.round(img.width * s); c.height = Math.round(img.height * s);
+          c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+          c.toBlob(function (b) { resolve(b || file); }, "image/jpeg", 0.85);
+          URL.revokeObjectURL(img.src);
+        };
+        img.onerror = function () { resolve(file); };
+        img.src = URL.createObjectURL(file);
+      });
+    }
+    var tesseractLoading = null;
+    function tesseract() {
+      if (window.Tesseract) return Promise.resolve(window.Tesseract);
+      if (tesseractLoading) return tesseractLoading;
+      tesseractLoading = new Promise(function (resolve, reject) {
+        var s = document.createElement("script");
+        s.src = "https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js";
+        s.onload = function () { resolve(window.Tesseract); }; s.onerror = reject;
+        document.head.appendChild(s);
+      });
+      return tesseractLoading;
+    }
+    $("pvPhoto").addEventListener("change", function (e) {
+      var file = e.target.files && e.target.files[0]; if (!file) return;
+      var forId = state.finding && state.finding.id;
+      shrink(file).then(function (blob) {
+        state.photo = blob;
+        $("pvPhotoPreview").src = URL.createObjectURL(blob);
+        $("pvPhotoBox").style.display = "";
+        var target = state.finding && state.finding.ks_text;
+        if (!target) { $("pvOcrStatus").textContent = "Fotografija je spremna za slanje."; return; }
+        $("pvOcrStatus").textContent = "Prepoznajem tekst na fotografiji (prvi put traje dulje, preuzima se hrvatski model)…";
+        tesseract().then(function (T) { return T.recognize(blob, "hrv"); }).then(function (res) {
+          if (!state.finding || state.finding.id !== forId) return;
+          state.ocrText = res.data.text || "";
+          var best = bestWindow(state.ocrText, target);
+          if (!best || best.score < 0.55) { $("pvOcrStatus").textContent = "Redak nisam pouzdano pronašao na fotografiji. Prepiši ga ručno."; return; }
+          $("pvOcrStatus").innerHTML = "Pronađen odsječak (sličnost " + Math.round(best.score * 100) + " %). Upisan je u polje ispod: <b>provjeri ga prema tisku</b>, OCR griješi.";
+          if (!$("pvPrintText").value.trim()) { $("pvPrintText").value = best.text; updateDiff(); }
+        }).catch(function () { $("pvOcrStatus").textContent = "Prepoznavanje teksta nije uspjelo. Fotografija se svejedno šalje uz presudu."; });
+      });
+    });
+
+    function updateDiff() {
+      var f = state.finding, t = $("pvPrintText").value.trim();
+      $("pvPrintDiff").innerHTML = f && f.ks_text && t ? '<span class="pv-muted">Razlika online → tisak: </span>' + diffHtml(f.ks_text, t) : "";
+    }
+    $("pvPrintText").addEventListener("input", updateDiff);
+    $("pvEditionInput").addEventListener("change", function () { try { localStorage.setItem("pv_edition", this.value.trim()); } catch (e) {} });
+
+    $("pvSubmit").addEventListener("click", function () {
+      if (this.dataset.next === "1") { this.dataset.next = ""; this.innerHTML = ic("send") + "Pošalji presudu"; next(); return; }
+      var a = auth(); if (!a || !state.finding) { show("pvLogin"); return; }
+      var v = document.querySelector('input[name="pvVerdict"]:checked');
+      if (!v) { err("Odaberi što piše u tisku."); return; }
+      if (v.value === "tisak_drukcije" && !$("pvPrintText").value.trim()) { err("Upiši kako redak glasi u tisku."); return; }
+      var fd = new FormData();
+      fd.append("user_key", a.user_key); fd.append("pin", a.pin); fd.append("finding_id", state.finding.id);
+      fd.append("verdict", v.value); fd.append("print_text", $("pvPrintText").value);
+      fd.append("edition", $("pvEditionInput").value); fd.append("page", $("pvPage").value); fd.append("note", $("pvNote").value);
+      if (state.photo) fd.append("photo", state.photo, "tisak.jpg");
+      var btn = $("pvSubmit"); btn.disabled = true; btn.innerHTML = ic("loader-circle") + "Šaljem…";
+      api("/review", fd).then(function (r) {
+        btn.disabled = false; btn.innerHTML = ic("send") + "Pošalji presudu";
+        if (!r.ok) { err(r.error || "Slanje nije uspjelo."); return; }
+        err(""); loadStats();
+        renderOthers(r.others, true);
+        btn.innerHTML = ic("arrow-right") + "Sljedeći redak";
+        btn.dataset.next = "1";
+      }).catch(function () { btn.disabled = false; btn.innerHTML = ic("send") + "Pošalji presudu"; err("Nema veze s poslužiteljem."); });
+    });
+    $("pvSkip").addEventListener("click", function () {
+      if (state.finding) { state.skip.push(state.finding.id); saveSkip(); }
+      $("pvSubmit").dataset.next = ""; $("pvSubmit").innerHTML = ic("send") + "Pošalji presudu";
+      next();
+    });
+    $("pvResetSkip").addEventListener("click", function () { state.skip = []; saveSkip(); next(); });
+    $("pvOpenLogin").addEventListener("click", function () { var b = $("btnOpenSyncModal"); if (b) b.click(); });
+    window.addEventListener("storage", function (e) { if (e.key === "biblija_sync_auth") next(); });
+    setInterval(function () { if ($("pvLogin").style.display !== "none" && auth()) next(); }, 1500);
+    window.addEventListener("focus", function () { if ($("pvLogin").style.display !== "none" && auth()) next(); });
+
+    loadStats();
+    var deep = new URLSearchParams(location.search).get("id");
+    next(deep || undefined);
+  })();
+  </script>
+</BaseLayout>

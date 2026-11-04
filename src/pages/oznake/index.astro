@@ -53,6 +53,7 @@ const crossErrata = audit.cross_source_errata_fixed || [];
       <p style="margin:0 0 1rem;color:var(--text-muted);font-size:0.9rem;">
         Rezultati automatske provjere svih 73 knjiga, 1.329 poglavlja i <strong>{audit.total_verses.toLocaleString("hr-HR")}</strong> redaka između <code>biblija.ks.hr</code> weba, mobilnog API-ja i neovisnog USFM/CrossWire prijepisa Zagrebačke Biblije. Svi dolje navedeni problemi su <strong>automatski ispravljeni i rekonstruirani</strong> u determinističkom JSON katalogu (<code>data/errata.json</code>) i SQLite bazi (<code>data/biblija.db</code>).
       </p>
+      <p style="margin:0 0 1rem;"><a class="icon-btn btn-accent" href="/provjera/" style="text-decoration:none;"><Icon name="scan-text" />Pomozi provjeriti online izdanje prema tisku</a></p>
 
       <div class="audit-metrics-grid">
         <div class="audit-metric-box">
