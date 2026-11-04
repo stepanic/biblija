@@ -173,3 +173,7 @@ prava ili FOI prigovore, prijevod se uklanja iz `TRANSLATION_SPECS` i
 - BSB interlinear nije u čitaču. Za to treba preslikati englesku numeraciju na
   KS (naslovi psalama kao 1. redak, Jl, Mal) i odlučiti gdje se prikazuje (popover
   retka?). Strongov rječnik nije dohvaćen; slobodni izvor je openscriptures/strongs.
+
+## Nastavak
+
+Automatska provjera prema tisku i aplikacija za ručnu provjeru: `docs/2026-11-04-automatska-provjera-ks-teksta.md`.

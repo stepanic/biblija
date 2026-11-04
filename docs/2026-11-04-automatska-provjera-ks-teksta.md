@@ -118,3 +118,18 @@ npx wrangler d1 execute biblija-365-db --remote --file data/audit/d1_seed.sql -y
 ```
 
 Upsert čuva `status`, `consensus` i `review_count`. Nalazi koje skripta više ne prijavljuje dobivaju `active = 0`, a njihove presude ostaju. ID nalaza je `sha1(layer|kind|ref|msg)`, pa promjena teksta poruke stvara novi nalaz.
+
+## Zamke
+
+- **Astro scopea `<style>`:** HTML koji stranica generira skriptom (statistika, tekstovi) ostaje bez stila. Na `/provjera/` zato stoji `<style is:global>`, a klase su ograničene prefiksom `.pv`.
+- **FOI 74 naglašena slova (npr. „Tâ”) zamjenjuje s `?`,** a U68 ih kvari u „TÓa”. Bez filtra je to davalo oko 190 lažnih razlika teksta. Ta mjesta sad su na prioritetu 3 (`naglasak`), jer tisak vjerojatno ima naglasak koji KS-online nema.
+- **U68 (1968.) psalmima drukčije broji natpise.** Pomak za stalni iznos unutar poglavlja zato je `pomak_numeracije` (P3), ne `krivi_broj`.
+- **Isti natpisi psalama („Zborovođi. … Davidova.”)** daju lažna poravnanja. Poravnanje se zato prihvaća samo kad je najbolji kandidat bar 5 bodova bolji od drugog.
+- **`hrv_usfm` je izvan ovog repoa:** `/Users/ms/git/domovinatv/biblija/.cache/saric/usfm` (može se promijeniti varijablom okoline `U68_DIR`). Bez njega slojevi poravnanja i teksta ne rade.
+- **Playwright u Pythonu nema svoj Chromium.** Testiranje ide preko `executable_path` na Google Chrome.
+
+## Vezani dokumenti
+
+- `docs/2026-10-28-foi-prijevodi-i-trosmjerna-usporedba.md`: trosmjerna usporedba i errata iz listopada
+- `docs/2026-10-25-arhitektura-i-audit-izvora.md`
+- `AUDIT.md`
