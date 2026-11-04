@@ -7,6 +7,7 @@ import Icon from "../../components/Icon.astro";
   title="Provjera prema tisku | Biblija 365"
   description="Zajednička ručna provjera online izdanja Zagrebačke Biblije (biblija.ks.hr) prema tiskanom izdanju Kršćanske sadašnjosti."
   activeNav="notes"
+  wide
 >
   <section id="provjeraRoot" class="pv">
     <div class="card">
@@ -26,6 +27,7 @@ import Icon from "../../components/Icon.astro";
       </div>
     </div>
 
+    <div class="pv-steps">
     <div class="card" id="pvLogin" style="display:none;">
       <h2 class="pv-h2"><Icon name="key-round" />1. Prijava pristupnim ključem</h2>
       <p class="pv-muted">
@@ -48,14 +50,13 @@ import Icon from "../../components/Icon.astro";
       </p>
       <a class="icon-btn btn-accent" id="pvCertiliaBtn" href="/auth/certilia/start?natrag=%2Fprovjera%2F"><Icon name="badge-check" />Login with Certilia</a>
     </div>
+    </div>
     <div id="pvWho" class="pv-muted" style="display:none;margin:0 0 0.8rem;"></div>
 
-    <div class="card" id="pvEdition" style="display:none;">
-      <label class="form-label" for="pvEditionInput">Tiskano izdanje koje imaš (godina, ISBN ili naslovnica)</label>
-      <input class="form-input pv-input" id="pvEditionInput" placeholder="npr. Biblija, KS 2018., ISBN 978-953-11-…" />
-    </div>
 
     <div class="card" id="pvCard" style="display:none;">
+      <div class="pv-work">
+      <div class="pv-col-text">
       <div class="pv-head">
         <div>
           <div class="pv-ref" id="pvRef"></div>
@@ -66,6 +67,9 @@ import Icon from "../../components/Icon.astro";
       <p class="pv-msg" id="pvMsg"></p>
 
       <div class="pv-texts" id="pvTexts"></div>
+      </div>
+
+      <div class="pv-col-photo">
 
       <h3 class="pv-h3"><Icon name="camera" />Fotografija stranice iz tiska</h3>
       <p class="pv-muted">Fotografija se sprema uz presudu kao dokaz. Prepoznavanje teksta radi u tvom pregledniku i samo pokušava naći redak na stranici; uvijek ga provjeri.</p>
@@ -78,6 +82,13 @@ import Icon from "../../components/Icon.astro";
         <div id="pvOcrStatus" class="pv-muted"></div>
       </div>
 
+      </div>
+
+      <div class="pv-col-form">
+      <div id="pvEdition" class="pv-edition">
+      <label class="form-label" for="pvEditionInput">Tiskano izdanje koje imaš (godina, ISBN ili naslovnica)</label>
+      <input class="form-input pv-input" id="pvEditionInput" placeholder="npr. Biblija, KS 2018., ISBN 978-953-11-…" />
+      </div>
       <h3 class="pv-h3"><Icon name="scale" />Što piše u tisku?</h3>
       <div class="pv-verdicts" role="radiogroup">
         <label class="pv-verdict"><input type="radio" name="pvVerdict" value="tisak_drukcije" /><span><strong>Tisak se razlikuje</strong> od online izdanja</span></label>
@@ -107,6 +118,8 @@ import Icon from "../../components/Icon.astro";
       </div>
 
       <div id="pvOthers" class="pv-others" style="display:none;"></div>
+      </div>
+      </div>
     </div>
 
     <div class="card" id="pvDone" style="display:none;">
@@ -117,6 +130,36 @@ import Icon from "../../components/Icon.astro";
   </section>
 
   <style is:global>
+    /* Desktop: puna širina; tekst | fotografija | presuda usporedo, da se ne skrola između njih */
+    .layout-wide .app-container, .layout-wide .topbar-inner { max-width: none; }
+    .pv .pv-steps { display: grid; gap: 0 16px; }
+    .pv .pv-steps > .card { margin-bottom: 1rem; }
+    .pv .pv-edition { margin-bottom: 4px; }
+    .pv .pv-col-photo .pv-h3, .pv .pv-col-form > .pv-h3:first-of-type { margin-top: 18px; }
+    @media (min-width: 1100px) {
+      .layout-wide .app-container { padding-left: 2rem; padding-right: 2rem; }
+      .pv .pv-steps { grid-template-columns: 1fr 1fr; align-items: start; }
+      .pv .pv-work {
+        display: grid; gap: 28px; align-items: start;
+        grid-template-columns: minmax(0, 1.25fr) minmax(380px, 1fr);
+        grid-template-areas: "text photo" "text form";
+      }
+      .pv .pv-col-text { grid-area: text; min-width: 0; }
+      .pv .pv-col-photo { grid-area: photo; }
+      .pv .pv-col-form { grid-area: form; }
+      .pv .pv-col-photo .pv-h3 { margin-top: 0; }
+      .pv .pv-col-photo { padding-bottom: 4px; }
+    }
+    @media (min-width: 1600px) {
+      .pv .pv-work {
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(360px, 0.8fr);
+        grid-template-areas: "text photo form";
+      }
+      /* fotografija i obrazac prate dugi tekst poglavlja */
+      .pv .pv-col-photo, .pv .pv-col-form { position: sticky; top: 76px; max-height: calc(100vh - 92px); overflow: auto; }
+      .pv .pv-col-photo .pv-photo-box img { max-height: calc(100vh - 260px); }
+      .pv .pv-col-form > .pv-h3:first-of-type { margin-top: 18px; }
+    }
     .pv .pv-stats { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
     .pv .pv-stat { background: var(--bg-muted); border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; min-width: 120px; }
     .pv .pv-stat b { display: block; font-size: 1.25rem; font-family: var(--font-display); }
@@ -145,7 +188,12 @@ import Icon from "../../components/Icon.astro";
     .pv .pv-verdicts { display: grid; gap: 8px; margin-bottom: 12px; }
     .pv .pv-verdict { display: flex; gap: 10px; align-items: center; border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; cursor: pointer; background: var(--bg-elevated); }
     .pv .pv-verdict:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
-    .pv .pv-input { width: 100%; box-sizing: border-box; }
+    .pv .pv-input {
+      width: 100%; box-sizing: border-box; padding: 0.6rem 0.75rem; font: inherit; font-size: 0.95rem;
+      color: var(--text); background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px;
+    }
+    .pv .pv-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+    .pv .form-label { display: block; margin: 10px 0 4px; }
     .pv .pv-textarea { font-family: var(--font-reading); font-size: 1rem; resize: vertical; }
     .pv .pv-diff { margin: 6px 0 12px; font-family: var(--font-reading); line-height: 1.5; }
     .pv .pv-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }

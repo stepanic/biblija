@@ -5,12 +5,15 @@ interface Props {
   title: string;
   description?: string;
   activeNav?: "reader" | "plan365" | "search" | "notes" | "log";
+  /** Puna širina ekrana na desktopu (npr. /provjera/, gdje se tekst, fotografija i obrazac gledaju usporedo). */
+  wide?: boolean;
 }
 
 const {
   title,
   description = "Cjeloviti hrvatski katolički prijevod Svetoga pisma (Zagrebačka / Jeruzalemska Biblija, 73 knjige, 1.329 poglavlja, 35.410 redaka) uz program čitanja Biblija kroz 365 dana, brzi offline pretraživač i višekorisničku sinkronizaciju.",
   activeNav = "reader",
+  wide = false,
 } = Astro.props;
 ---
 
@@ -41,7 +44,7 @@ const {
     })();
   </script>
 </head>
-<body>
+<body class:list={[{ "layout-wide": wide }]}>
   <header class="topbar">
     <div class="topbar-inner">
       <div class="brand-group">
