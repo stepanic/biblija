@@ -101,7 +101,7 @@ Tijek rada:
 
 ## Implementirano: https://biblija.domovina.ai/provjera/ (2026-11-04)
 
-- **Stranica:** `src/pages/provjera/index.astro`. Prijava je postojećim Sync kodom i PIN-om.
+- **Stranica:** `src/pages/provjera/index.astro`. Prijava je pristupnim ključem, a za presudu i Certilijom (od 2026-11-04, `docs/2026-11-04-passkey-i-certilia.md`).
 - **API:** `src/provjera.ts`, rute `/api/provjera/{next,review,stats,export.csv,photo/…}`.
 - **Tablice:** `audit_findings` i `audit_reviews` (`migrations/0004_provjera.sql`). Fotografije su u R2 bucketu `biblija-provjera` (binding `PHOTOS`), pod nepogodivim ključem `<finding_id>/<uuid>.jpg`.
 - **Red provjere:** najprije neslaganja, zatim nalazi s jednom presudom, pa prioritet. 20 % redaka čine nasumični uzorci (300 neoznačenih redaka, `is_sample = 1`), a recenzent ih vidi kao obične retke.

@@ -11,7 +11,8 @@
  */
 
 import { DurableObject } from "cloudflare:workers";
-import { handleProvjera, type R2Bucket, type VerifyUser } from "./provjera";
+import { handleProvjera, type R2Bucket } from "./provjera.ts";
+import { handleAuth, sameOrigin, sessionUser, type VerifyPin } from "./auth.ts";
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
@@ -31,6 +32,11 @@ export interface Env {
   DB?: D1Database;
   SYNC_ROOM?: DurableObjectNamespace<SyncRoom>;
   PHOTOS?: R2Bucket;
+  /** Secret: potpis sesije i HMAC OIB-a. Ne rotirati bez plana: OIB otisci ovise o njemu. */
+  AUTH_SECRET?: string;
+  CERTILIA_CLIENT_ID?: string;
+  CERTILIA_CLIENT_SECRET?: string;
+  CERTILIA_ISSUER_BASE?: string;
 }
 
 // Najviše otvorenih veza po Sync kodu; starije se zatvaraju.
@@ -330,7 +336,7 @@ function lockedResponse(until: string): Response {
 }
 
 /** Sync kod + PIN za /api/provjera: isti korisnici i isto zaključavanje kao sinkronizacija. */
-const verifyUser: VerifyUser = async (db, rawKey, pin) => {
+const verifyUser: VerifyPin = async (db, rawKey, pin) => {
   await ensureSchema(db);
   const userKey = normalizeUserKey(rawKey.trim());
   pin = pin.trim();
@@ -370,8 +376,19 @@ export default {
     }
 
     if (url.pathname.startsWith("/api/provjera/")) {
-      return handleProvjera(request, env, url, verifyUser);
+      return handleProvjera(request, env, url, (req) => sessionUser(req, env));
     }
+
+    // Pristupni ključevi s biblija.domovina.ai rade i u iOS aplikaciji (Associated Domains,
+    // `webcredentials:biblija.domovina.ai`). Android assetlinks.json čeka SHA-256 potpisnog certifikata.
+    if (url.pathname === "/.well-known/apple-app-site-association") {
+      return new Response(JSON.stringify({ webcredentials: { apps: ["6SCK58757K.hr.stepanic.biblija365"] } }), {
+        headers: { "Content-Type": "application/json", "Cache-Control": "public, max-age=3600" },
+      });
+    }
+
+    const authResponse = await handleAuth(request, env, url, ctx, verifyUser);
+    if (authResponse) return authResponse;
 
     if (url.pathname === "/api/status" && request.method === "GET") {
       return jsonResponse({
@@ -455,48 +472,65 @@ export default {
       await ensureSchema(env.DB);
 
       const body = (await request.json().catch(() => ({}))) as Record<string, any>;
-      const rawKey = String(body.user_key || "").trim();
-      const userKey = normalizeUserKey(rawKey);
+      let rawKey = String(body.user_key || "").trim();
+      let userKey = normalizeUserKey(rawKey);
       const pin = String(body.pin || "").trim();
-
-      if (userKey.length < 3 || pin.length < 4) {
-        return jsonResponse({ ok: false, error: "Neispravan Sync kod ili PIN." }, 400);
-      }
-
       const nowMs = Date.now();
-      const until = await lockedUntil(env.DB, userKey, nowMs);
-      if (until) return lockedResponse(until);
-
-      const pinHash = await hashPin(userKey, pin);
       const now = new Date(nowMs).toISOString();
+      let pinHash: string;
+      let user: Record<string, string> | null;
 
-      let user = await env.DB.prepare("SELECT * FROM sync_users WHERE user_key = ?")
-        .bind(userKey)
-        .first<Record<string, string>>();
+      if (!pin) {
+        // Pristupni ključ: profil iz kolačića sesije; user_key u tijelu mora biti isti profil.
+        if (!sameOrigin(request, url)) return jsonResponse({ ok: false, error: "Zahtjev s drugog origina." }, 403);
+        const s = await sessionUser(request, env);
+        if (!s || (userKey && userKey !== s.userKey)) {
+          return jsonResponse({ ok: false, error: "Sesija je istekla. Prijavi se ponovno pristupnim ključem.", session_expired: true }, 401);
+        }
+        userKey = s.userKey;
+        rawKey = s.userKey;
+        pinHash = s.pinHash;
+        user = await env.DB.prepare("SELECT * FROM sync_users WHERE user_key = ?").bind(userKey).first<Record<string, string>>();
+        if (!user) return jsonResponse({ ok: false, error: "Profil ne postoji.", session_expired: true }, 401);
+      } else {
+        if (userKey.length < 3 || pin.length < 4) {
+          return jsonResponse({ ok: false, error: "Neispravan Sync kod ili PIN." }, 400);
+        }
 
-      if (!user) {
-        await env.DB.prepare(
-          `INSERT INTO sync_users (
-             user_key, pin_hash, display_name, active_plan_id,
-             last_url, last_label, last_updated_at, created_at
-           ) VALUES (?, ?, ?, 'mb-tematski-365', '/', '', '1970-01-01T00:00:00.000Z', ?)`
-        )
-          .bind(userKey, pinHash, rawKey, now)
-          .run();
-        user = {
-          user_key: userKey,
-          pin_hash: pinHash,
-          display_name: rawKey,
-          active_plan_id: "mb-tematski-365",
-          last_url: "/",
-          last_label: "",
-          last_updated_at: "1970-01-01T00:00:00.000Z",
-          created_at: now,
-        };
-      } else if (user.pin_hash !== pinHash) {
-        await recordPinFailure(env.DB, userKey, nowMs);
-        return jsonResponse({ ok: false, error: "Pogrešan PIN za ovaj Sync kod." }, 401);
+        const until = await lockedUntil(env.DB, userKey, nowMs);
+        if (until) return lockedResponse(until);
+
+        pinHash = await hashPin(userKey, pin);
+
+        user = await env.DB.prepare("SELECT * FROM sync_users WHERE user_key = ?")
+          .bind(userKey)
+          .first<Record<string, string>>();
+
+        if (!user) {
+          await env.DB.prepare(
+            `INSERT INTO sync_users (
+               user_key, pin_hash, display_name, active_plan_id,
+               last_url, last_label, last_updated_at, created_at
+             ) VALUES (?, ?, ?, 'mb-tematski-365', '/', '', '1970-01-01T00:00:00.000Z', ?)`
+          )
+            .bind(userKey, pinHash, rawKey, now)
+            .run();
+          user = {
+            user_key: userKey,
+            pin_hash: pinHash,
+            display_name: rawKey,
+            active_plan_id: "mb-tematski-365",
+            last_url: "/",
+            last_label: "",
+            last_updated_at: "1970-01-01T00:00:00.000Z",
+            created_at: now,
+          };
+        } else if (user.pin_hash !== pinHash) {
+          await recordPinFailure(env.DB, userKey, nowMs);
+          return jsonResponse({ ok: false, error: "Pogrešan PIN za ovaj Sync kod." }, 401);
+        }
       }
+      if (!user) return jsonResponse({ ok: false, error: "Profil ne postoji." }, 404);
 
       const batchStmts: D1PreparedStatement[] = [];
 
@@ -763,29 +797,36 @@ export default {
       await ensureSchema(env.DB);
 
       const body = (await request.json().catch(() => ({}))) as Record<string, unknown>;
-      const userKey = normalizeUserKey(String(body.user_key || ""));
+      let userKey = normalizeUserKey(String(body.user_key || ""));
       const pin = String(body.pin || "").trim();
 
-      if (userKey.length < 3 || pin.length < 4) {
-        return jsonResponse({ ok: false, error: "Neispravan Sync kod ili PIN." }, 400);
-      }
+      // Profil s pristupnim ključem briše se iz sesije (bez PIN-a).
+      const sess = !pin && sameOrigin(request, url) ? await sessionUser(request, env) : null;
+      if (sess && (!userKey || userKey === sess.userKey)) {
+        userKey = sess.userKey;
+      } else {
+        if (userKey.length < 3 || pin.length < 4) {
+          return jsonResponse({ ok: false, error: "Neispravan Sync kod ili PIN." }, 400);
+        }
 
-      const nowMs = Date.now();
-      const until = await lockedUntil(env.DB, userKey, nowMs);
-      if (until) return lockedResponse(until);
+        const nowMs = Date.now();
+        const until = await lockedUntil(env.DB, userKey, nowMs);
+        if (until) return lockedResponse(until);
 
-      const user = await env.DB.prepare("SELECT pin_hash FROM sync_users WHERE user_key = ?")
-        .bind(userKey)
-        .first<{ pin_hash: string }>();
-      if (!user) {
-        return jsonResponse({ ok: false, error: "Sync kod ne postoji." }, 404);
-      }
-      if (user.pin_hash !== (await hashPin(userKey, pin))) {
-        await recordPinFailure(env.DB, userKey, nowMs);
-        return jsonResponse({ ok: false, error: "Pogrešan PIN za ovaj Sync kod." }, 401);
+        const user = await env.DB.prepare("SELECT pin_hash FROM sync_users WHERE user_key = ?")
+          .bind(userKey)
+          .first<{ pin_hash: string }>();
+        if (!user) {
+          return jsonResponse({ ok: false, error: "Sync kod ne postoji." }, 404);
+        }
+        if (user.pin_hash !== (await hashPin(userKey, pin))) {
+          await recordPinFailure(env.DB, userKey, nowMs);
+          return jsonResponse({ ok: false, error: "Pogrešan PIN za ovaj Sync kod." }, 401);
+        }
       }
 
       await env.DB.batch([
+        env.DB.prepare("DELETE FROM passkeys WHERE user_key = ?").bind(userKey),
         env.DB.prepare("DELETE FROM sync_progress WHERE user_key = ?").bind(userKey),
         env.DB.prepare("DELETE FROM sync_bookmarks WHERE user_key = ?").bind(userKey),
         env.DB.prepare("DELETE FROM sync_reading_log WHERE user_key = ?").bind(userKey),
@@ -794,7 +835,10 @@ export default {
         env.DB.prepare("DELETE FROM sync_auth_failures WHERE user_key = ?").bind(userKey),
       ]);
 
-      return jsonResponse({ ok: true, deleted: true, user_key: userKey });
+      return jsonResponse(
+        { ok: true, deleted: true, user_key: userKey },
+        200
+      );
     }
 
     return env.ASSETS.fetch(request);

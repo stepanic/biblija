@@ -4,6 +4,7 @@
  * Vidi docs/2026-11-04-automatska-provjera-ks-teksta.md.
  */
 import type { D1Database } from "./worker";
+import type { SessionUser } from "./auth";
 
 export interface R2Bucket {
   put(key: string, value: ArrayBuffer | ReadableStream, opts?: { httpMetadata?: { contentType?: string } }): Promise<unknown>;
@@ -15,12 +16,24 @@ export interface ProvjeraEnv {
   PHOTOS?: R2Bucket;
 }
 
-/** Provjera Sync koda i PIN-a (uz zaključavanje nakon više pogrešaka), iz worker.ts. */
-export type VerifyUser = (
-  db: D1Database,
-  rawKey: string,
-  pin: string
-) => Promise<{ ok: true; userKey: string; displayName: string } | { ok: false; response: Response }>;
+/** Profil iz kolačića sesije (pristupni ključ), iz auth.ts. */
+export type GetSession = (request: Request) => Promise<SessionUser | null>;
+
+/**
+ * Pregled nalaza traži profil s pristupnim ključem. Presuda traži i Certiliju vezanu uz profil,
+ * da se zna ime i prezime osobe koja ju je dala. Presude se broje po osobi (OIB otisak).
+ */
+async function requireUser(getSession: GetSession, request: Request, needCertilia: boolean) {
+  const s = await getSession(request);
+  if (!s) {
+    return { ok: false as const, response: json({ ok: false, error: "Prijavi se pristupnim ključem.", need: "passkey" }, 401) };
+  }
+  if (needCertilia && (!s.oibHash || !s.certiliaName)) {
+    return { ok: false as const, response: json({ ok: false, error: "Za slanje presude potvrdi identitet Certilijom.", need: "certilia" }, 403) };
+  }
+  // Prije Certilije `reviewer` je profil, tako da red nalaza radi i za samo pregledavanje.
+  return { ok: true as const, user: s, reviewer: s.oibHash || `profil:${s.userKey}` };
+}
 
 const VERDICTS = new Set(["tisak_kao_online", "tisak_drukcije", "ne_mogu"]);
 const MAX_PHOTO_BYTES = 4 * 1024 * 1024;
@@ -75,13 +88,13 @@ function publicFinding(f: Record<string, any>) {
   };
 }
 
-async function othersReviews(db: D1Database, findingId: string, userKey: string) {
+async function othersReviews(db: D1Database, findingId: string, reviewer: string) {
   const { results } = await db
     .prepare(
-      `SELECT verdict, print_text, edition, page, note, photo_key, created_at
-         FROM audit_reviews WHERE finding_id = ? AND user_key != ? ORDER BY created_at`
+      `SELECT reviewer_name, verdict, print_text, edition, page, note, photo_key, created_at
+         FROM audit_reviews WHERE finding_id = ? AND reviewer != ? ORDER BY created_at`
     )
-    .bind(findingId, userKey)
+    .bind(findingId, reviewer)
     .all<Record<string, string>>();
   return results.map((r) => ({ ...r, photo_url: r.photo_key ? `/api/provjera/photo/${r.photo_key}` : "" }));
 }
@@ -120,7 +133,7 @@ async function stats(db: D1Database) {
     out.sample.upper_bound_95 = k === 0 ? 3 / N : Math.min(1, p + 1.96 * Math.sqrt((p * (1 - p)) / N));
   }
   const rv = await db
-    .prepare("SELECT COUNT(*) AS n, COUNT(DISTINCT user_key) AS u FROM audit_reviews")
+    .prepare("SELECT COUNT(*) AS n, COUNT(DISTINCT reviewer) AS u FROM audit_reviews")
     .first<{ n: number; u: number }>();
   out.reviews = rv?.n || 0;
   out.reviewers = rv?.u || 0;
@@ -142,13 +155,15 @@ async function exportCsv(db: D1Database, origin: string, all: boolean): Promise<
               (SELECT group_concat(r.edition || ' str. ' || r.page, ' || ') FROM audit_reviews r
                  WHERE r.finding_id = f.id AND r.page != '') AS pages,
               (SELECT group_concat(r.photo_key, ' ') FROM audit_reviews r
-                 WHERE r.finding_id = f.id AND r.photo_key != '') AS photos
+                 WHERE r.finding_id = f.id AND r.photo_key != '') AS photos,
+              (SELECT group_concat(r.reviewer_name || ': ' || r.verdict, ' || ') FROM audit_reviews r
+                 WHERE r.finding_id = f.id) AS reviewers
          FROM audit_findings f
         WHERE f.active = 1 AND f.review_count > 0 ${all ? "" : "AND f.consensus = 'tisak_drukcije'"}
         ORDER BY f.book_order, f.chapter, f.verse`
     )
     .all<Record<string, any>>();
-  const head = ["ref", "status", "presuda", "vrsta", "tekst_online", "tekst_u_tisku", "izdanje_i_stranica", "fotografije", "napomena_provjere"];
+  const head = ["ref", "status", "presuda", "vrsta", "tekst_online", "tekst_u_tisku", "izdanje_i_stranica", "fotografije", "provjerili", "napomena_provjere"];
   const lines = [head.join(",")];
   for (const r of results) {
     const photos = String(r.photos || "")
@@ -158,7 +173,7 @@ async function exportCsv(db: D1Database, origin: string, all: boolean): Promise<
       .join(" ");
     lines.push(
       [r.ref, r.status, r.consensus, r.is_sample ? "nasumični uzorak" : `${r.layer}/${r.kind}`, r.ks_text,
-        r.print_texts, r.pages, photos, r.is_sample ? "" : r.msg].map(csvCell).join(",")
+        r.print_texts, r.pages, photos, r.reviewers, r.is_sample ? "" : r.msg].map(csvCell).join(",")
     );
   }
   return new Response("﻿" + lines.join("\n") + "\n", {
@@ -170,7 +185,7 @@ async function exportCsv(db: D1Database, origin: string, all: boolean): Promise<
   });
 }
 
-export async function handleProvjera(request: Request, env: ProvjeraEnv, url: URL, verify: VerifyUser): Promise<Response> {
+export async function handleProvjera(request: Request, env: ProvjeraEnv, url: URL, getSession: GetSession): Promise<Response> {
   if (!env.DB) return json({ ok: false, error: "D1 nije povezan." }, 503);
   const db = env.DB;
   try {
@@ -198,11 +213,11 @@ export async function handleProvjera(request: Request, env: ProvjeraEnv, url: UR
 
   if (path === "/next" && request.method === "POST") {
     const body = (await request.json().catch(() => ({}))) as Record<string, any>;
-    const auth = await verify(db, String(body.user_key || ""), String(body.pin || ""));
+    const auth = await requireUser(getSession, request, false);
     if (!auth.ok) return auth.response;
     const skip: string[] = Array.isArray(body.skip) ? body.skip.filter((s: unknown) => typeof s === "string").slice(0, 200) : [];
     const wantId = typeof body.id === "string" ? body.id : "";
-    const notMine = `NOT EXISTS (SELECT 1 FROM audit_reviews r WHERE r.finding_id = f.id AND r.user_key = ?)`;
+    const notMine = `NOT EXISTS (SELECT 1 FROM audit_reviews r WHERE r.finding_id = f.id AND r.reviewer = ?)`;
     const skipSql = skip.length ? `AND f.id NOT IN (${skip.map(() => "?").join(",")})` : "";
     const pick = async (sample: boolean) =>
       db
@@ -213,7 +228,7 @@ export async function handleProvjera(request: Request, env: ProvjeraEnv, url: UR
                      f.priority, ${sample ? "f.id" : "f.book_order, f.chapter, f.verse"}
             LIMIT 1`
         )
-        .bind(sample ? 1 : 0, auth.userKey, ...skip)
+        .bind(sample ? 1 : 0, auth.reviewer, ...skip)
         .first<Record<string, any>>();
     let f: Record<string, any> | null = null;
     if (wantId) {
@@ -224,22 +239,25 @@ export async function handleProvjera(request: Request, env: ProvjeraEnv, url: UR
     }
     if (!f) return json({ ok: true, done: true, stats: await stats(db) });
     const mine = await db
-      .prepare("SELECT verdict, print_text, edition, page, note, photo_key FROM audit_reviews WHERE finding_id = ? AND user_key = ?")
-      .bind(f.id, auth.userKey)
+      .prepare("SELECT verdict, print_text, edition, page, note, photo_key FROM audit_reviews WHERE finding_id = ? AND reviewer = ?")
+      .bind(f.id, auth.reviewer)
       .first<Record<string, string>>();
     return json({
       ok: true,
       finding: publicFinding(f),
       mine: mine || null,
       // tuđe presude tek nakon vlastite (slijepa provjera)
-      others: mine ? await othersReviews(db, f.id, auth.userKey) : [],
+      others: mine ? await othersReviews(db, f.id, auth.reviewer) : [],
+      me: { display_name: auth.user.displayName, certilia_name: auth.user.certiliaName },
     });
   }
 
   if (path === "/review" && request.method === "POST") {
     const form = await request.formData().catch(() => null);
     if (!form) return json({ ok: false, error: "Očekujem multipart/form-data." }, 400);
-    const auth = await verify(db, String(form.get("user_key") || ""), String(form.get("pin") || ""));
+    const origin = request.headers.get("Origin");
+    if (origin && origin !== url.origin) return json({ ok: false, error: "Zahtjev s drugog origina." }, 403);
+    const auth = await requireUser(getSession, request, true);
     if (!auth.ok) return auth.response;
 
     const findingId = String(form.get("finding_id") || "");
@@ -266,8 +284,8 @@ export async function handleProvjera(request: Request, env: ProvjeraEnv, url: UR
       await env.PHOTOS.put(photoKey, await file.arrayBuffer(), { httpMetadata: { contentType: file.type || "image/jpeg" } });
     } else {
       const prev = await db
-        .prepare("SELECT photo_key FROM audit_reviews WHERE finding_id = ? AND user_key = ?")
-        .bind(findingId, auth.userKey)
+        .prepare("SELECT photo_key FROM audit_reviews WHERE finding_id = ? AND reviewer = ?")
+        .bind(findingId, auth.reviewer)
         .first<{ photo_key: string }>();
       photoKey = prev?.photo_key || "";
     }
@@ -275,13 +293,13 @@ export async function handleProvjera(request: Request, env: ProvjeraEnv, url: UR
     const now = new Date().toISOString();
     await db
       .prepare(
-        `INSERT INTO audit_reviews (finding_id, user_key, verdict, print_text, edition, page, note, photo_key, created_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-         ON CONFLICT(finding_id, user_key) DO UPDATE SET
-           verdict = excluded.verdict, print_text = excluded.print_text, edition = excluded.edition,
+        `INSERT INTO audit_reviews (finding_id, reviewer, reviewer_name, user_key, verdict, print_text, edition, page, note, photo_key, created_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         ON CONFLICT(finding_id, reviewer) DO UPDATE SET
+           reviewer_name = excluded.reviewer_name, user_key = excluded.user_key, verdict = excluded.verdict, print_text = excluded.print_text, edition = excluded.edition,
            page = excluded.page, note = excluded.note, photo_key = excluded.photo_key, created_at = excluded.created_at`
       )
-      .bind(findingId, auth.userKey, verdict, printText, edition, page, note, photoKey, now)
+      .bind(findingId, auth.reviewer, auth.user.certiliaName, auth.user.userKey, verdict, printText, edition, page, note, photoKey, now)
       .run();
 
     const { results } = await db
@@ -294,7 +312,7 @@ export async function handleProvjera(request: Request, env: ProvjeraEnv, url: UR
       .bind(st.status, st.consensus, results.length, findingId)
       .run();
 
-    return json({ ok: true, status: st.status, consensus: st.consensus, others: await othersReviews(db, findingId, auth.userKey) });
+    return json({ ok: true, status: st.status, consensus: st.consensus, others: await othersReviews(db, findingId, auth.reviewer) });
   }
 
   return json({ ok: false, error: "Nepoznata ruta." }, 404);

@@ -15,7 +15,7 @@ const { default: worker } = await import("../../src/worker.ts");
 
 const root = new URL("../../", import.meta.url);
 const vectors = (name) => JSON.parse(readFileSync(new URL(`shared/test-vectors/${name}`, root), "utf-8"));
-const migrations = ["0001_sync.sql", "0002_auth_failures.sql", "0003_reading_log.sql"].map((f) =>
+const migrations = ["0001_sync.sql", "0002_auth_failures.sql", "0003_reading_log.sql", "0004_provjera.sql", "0005_passkey_certilia.sql"].map((f) =>
   readFileSync(new URL(`migrations/${f}`, root), "utf-8")
 );
 

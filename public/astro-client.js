@@ -432,12 +432,13 @@
   }
 
   function saveProfileToDeviceList(authObj) {
-    if (!authObj || !authObj.user_key || !authObj.pin) return;
+    if (!authObj || !authObj.user_key || !(authObj.pin || authObj.method === "passkey")) return;
     const list = state.savedProfiles.filter((p) => p && p.user_key !== authObj.user_key);
     list.unshift({
       user_key: authObj.user_key,
       display_name: authObj.display_name || authObj.user_key,
-      pin: authObj.pin,
+      pin: authObj.pin || undefined,
+      method: authObj.pin ? "pin" : "passkey",
       saved_at: new Date().toISOString(),
     });
     state.savedProfiles = list.slice(0, 8);
@@ -479,8 +480,14 @@
     }
   }
 
+  /** Profil s kojim se sinkronizira: pristupni ključ (kolačić sesije) ili stari Sync kod + PIN. */
+  function canSync() {
+    const a = state.syncAuth;
+    return Boolean(a && a.user_key && !a.expired && (a.pin || a.method === "passkey"));
+  }
+
   function scheduleCloudSync() {
-    if (!state.syncAuth || !state.syncAuth.user_key || !state.syncAuth.pin) return;
+    if (!canSync()) return;
     if (syncDebounceTimer) clearTimeout(syncDebounceTimer);
     syncDebounceTimer = setTimeout(() => {
       syncWithServer({ silent: true });
@@ -494,7 +501,9 @@
 
     if (state.syncAuth && state.syncAuth.user_key) {
       btn.classList.add("synced");
-      iconLabel(lbl, state.isSyncing ? "refresh-cw" : "user-round", `@${state.syncAuth.user_key}`);
+      const a = state.syncAuth;
+      const who = a.method === "passkey" ? a.display_name || a.user_key : `@${a.user_key}`;
+      iconLabel(lbl, state.isSyncing ? "refresh-cw" : a.expired ? "key-round" : "user-round", a.expired ? "Prijavi se ključem" : who);
       lbl.classList.toggle("is-spinning", Boolean(state.isSyncing));
     } else {
       btn.classList.remove("synced");
@@ -535,8 +544,13 @@
         const targetKey = el.getAttribute("data-switch-key");
         const found = state.savedProfiles.find((x) => x.user_key === targetKey);
         if (!found) return;
-        if (state.syncAuth && state.syncAuth.user_key === found.user_key) {
+        if (state.syncAuth && state.syncAuth.user_key === found.user_key && canSync()) {
           await syncWithServer({ silent: false });
+          return;
+        }
+        if (!found.pin) {
+          // Profil s ključem: uređaj ponudi svoje ključeve, a profil određuje odabrani ključ.
+          await passkeyAction("login", {});
           return;
         }
         // Clean local state before switching to another user so data never bleeds across users
@@ -572,7 +586,19 @@
     if (state.syncAuth && state.syncAuth.user_key) {
       outView.style.display = "none";
       inView.style.display = "block";
-      document.getElementById("syncActiveUserBadge").textContent = `@${state.syncAuth.user_key}`;
+      const a = state.syncAuth;
+      const isPasskey = a.method === "passkey";
+      document.getElementById("syncActiveUserBadge").textContent = isPasskey ? `${a.display_name || a.user_key}` : `@${a.user_key}`;
+      const show = (id, on) => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = on ? "" : "none";
+      };
+      show("syncPasskeyUpgrade", !isPasskey && pk.supported());
+      show("syncPasskeyInfo", isPasskey && !a.expired);
+      show("syncSessionExpired", Boolean(a.expired));
+      show("syncLegacyHint", !isPasskey);
+      show("btnCopySyncInfo", !isPasskey);
+      if (isPasskey && !a.expired) renderPasskeyList();
       const lastTime = state.lastSyncedAt
         ? new Date(state.lastSyncedAt).toLocaleString("hr-HR")
         : "upravo sada";
@@ -607,7 +633,7 @@
   }
 
   async function syncOnce({ silent = false, keepalive = false } = {}) {
-    if (!state.syncAuth || !state.syncAuth.user_key || !state.syncAuth.pin) return false;
+    if (!canSync()) return false;
 
     state.isSyncing = true;
     updateSyncHeaderUI();
@@ -618,7 +644,7 @@
       const sentVersions = new Map(sentLog.map((e) => [e.id, e.updated_at]));
       const payload = {
         user_key: state.syncAuth.user_key,
-        pin: state.syncAuth.pin,
+        pin: state.syncAuth.pin || "",
         client_id: clientId,
         meta: {
           active_plan_id: state.currentPlanId,
@@ -644,6 +670,15 @@
 
       const data = await res.json();
       if (!res.ok || !data.ok) {
+        if (data.session_expired && state.syncAuth) {
+          // Kolačić je istekao ili je obrisan: profil ostaje, treba samo ponovna prijava ključem.
+          state.syncAuth.expired = true;
+          localStorage.setItem("biblija_sync_auth", JSON.stringify(state.syncAuth));
+          state.isSyncing = false;
+          updateSyncHeaderUI();
+          updateSyncModalViews();
+          return false;
+        }
         if (!silent) {
           alert(data.error || "Pogreška pri sinkronizaciji.");
         }
@@ -710,6 +745,172 @@
       return false;
     }
   }
+
+  /* ==================== PRISTUPNI KLJUČ (passkey) ====================
+     Glavni način sinkronizacije: ključ je u Apple Passwords / Google Password Manageru, sesija u
+     HttpOnly kolačiću. Sync kod + PIN ostaje kao stari način (mobilne aplikacije). Server: src/auth.ts. */
+  const pk = (() => {
+    const b64uToBuf = (str) => {
+      const b = atob(str.replace(/-/g, "+").replace(/_/g, "/") + "===".slice((str.length + 3) % 4));
+      return Uint8Array.from(b, (c) => c.charCodeAt(0)).buffer;
+    };
+    const bufToB64u = (buf) =>
+      btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+    function credToJSON(c) {
+      if (typeof c.toJSON === "function") return c.toJSON();
+      const r = c.response;
+      const response = { clientDataJSON: bufToB64u(r.clientDataJSON) };
+      if (r.attestationObject) {
+        response.attestationObject = bufToB64u(r.attestationObject);
+        response.transports = r.getTransports ? r.getTransports() : [];
+      } else {
+        response.authenticatorData = bufToB64u(r.authenticatorData);
+        response.signature = bufToB64u(r.signature);
+        if (r.userHandle) response.userHandle = bufToB64u(r.userHandle);
+      }
+      return {
+        id: c.id, rawId: bufToB64u(c.rawId), type: c.type, response,
+        clientExtensionResults: c.getClientExtensionResults(), authenticatorAttachment: c.authenticatorAttachment,
+      };
+    }
+    const PKC = window.PublicKeyCredential;
+    const requestOptions = (o) =>
+      PKC && PKC.parseRequestOptionsFromJSON
+        ? PKC.parseRequestOptionsFromJSON(o)
+        : { ...o, challenge: b64uToBuf(o.challenge), allowCredentials: (o.allowCredentials || []).map((c) => ({ ...c, id: b64uToBuf(c.id) })) };
+    const creationOptions = (o) =>
+      PKC && PKC.parseCreationOptionsFromJSON
+        ? PKC.parseCreationOptionsFromJSON(o)
+        : {
+            ...o, challenge: b64uToBuf(o.challenge), user: { ...o.user, id: b64uToBuf(o.user.id) },
+            excludeCredentials: (o.excludeCredentials || []).map((c) => ({ ...c, id: b64uToBuf(c.id) })),
+          };
+    async function post(url, body) {
+      const r = await fetch(url, {
+        method: "POST", credentials: "same-origin",
+        headers: { "Content-Type": "application/json" }, body: JSON.stringify(body || {}),
+      });
+      const d = await r.json().catch(() => ({}));
+      if (!r.ok || !d.ok) throw new Error(d.error || "Poslužitelj nije odgovorio.");
+      return d;
+    }
+    function niceError(e) {
+      if (e && e.name === "NotAllowedError") return "Prijava ključem je prekinuta ili je isteklo vrijeme.";
+      if (e && e.name === "InvalidStateError") return "Ovaj uređaj već ima ključ za taj profil.";
+      return (e && e.message) || "Nešto nije uspjelo.";
+    }
+    function deviceName() {
+      const ua = navigator.userAgent;
+      if (/iPhone/.test(ua)) return "iPhone";
+      if (/iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return "iPad";
+      if (/Android/.test(ua)) return "Android";
+      if (/Macintosh/.test(ua)) return "Mac";
+      if (/Windows/.test(ua)) return "Windows";
+      return "preglednik";
+    }
+    return {
+      supported: () => Boolean(window.PublicKeyCredential && navigator.credentials && window.isSecureContext),
+      niceError,
+      async login() {
+        const { options } = await post("/api/passkey/login/options");
+        const cred = await navigator.credentials.get({ publicKey: requestOptions(options) });
+        return post("/api/passkey/login/verify", { response: credToJSON(cred) });
+      },
+      async register(extra) {
+        const { options } = await post("/api/passkey/register/options", extra);
+        const cred = await navigator.credentials.create({ publicKey: creationOptions(options) });
+        return post("/api/passkey/register/verify", { response: credToJSON(cred), name: deviceName() });
+      },
+      session: () => fetch("/api/session", { credentials: "same-origin" }).then((r) => r.json()),
+      post,
+    };
+  })();
+
+  /** Prijava ili upis ključa, pa prelazak na taj profil. kind: login | create | upgrade | add */
+  async function passkeyAction(kind, extra) {
+    const msgEl = document.getElementById(kind === "login" || kind === "create" ? "syncPasskeyMessage" : "syncPasskeyMessage2");
+    const say = (txt, isErr = true) => {
+      if (!msgEl) return;
+      msgEl.style.display = txt ? "block" : "none";
+      msgEl.style.background = isErr ? "var(--danger-soft)" : "var(--success-soft)";
+      msgEl.style.color = isErr ? "var(--danger)" : "var(--success)";
+      msgEl.textContent = txt || "";
+    };
+    if (!pk.supported()) {
+      say("Ovaj preglednik ne podržava pristupne ključeve. Koristi stari način (Sync kod i PIN).");
+      return null;
+    }
+    say("");
+    try {
+      let data;
+      if (kind === "login") data = await pk.login();
+      else if (kind === "create") data = await pk.register({ display_name: extra.display_name });
+      else if (kind === "upgrade") data = await pk.register({ user_key: state.syncAuth.user_key, pin: state.syncAuth.pin });
+      else {
+        // Drugi ključ istom profilu traži svježu prijavu ključem (npr. QR kodom s mobitela).
+        const sess = await pk.session();
+        if (!sess.user || !sess.user.fresh) await pk.login();
+        data = await pk.register({ add_to_current: true });
+      }
+      await adoptPasskeyProfile(data);
+      if (kind === "upgrade" || kind === "add") say("Pristupni ključ je dodan.", false);
+      return data;
+    } catch (e) {
+      say(pk.niceError(e));
+      return null;
+    }
+  }
+
+  async function adoptPasskeyProfile(data) {
+    if (state.syncAuth && state.syncAuth.user_key && state.syncAuth.user_key !== data.user_key) {
+      resetLocalUserData();
+    }
+    // PIN se više ne čuva u pregledniku: profil se otvara ključem.
+    state.syncAuth = { user_key: data.user_key, display_name: data.display_name || data.user_key, method: "passkey" };
+    localStorage.setItem("biblija_sync_auth", JSON.stringify(state.syncAuth));
+    saveProfileToDeviceList(state.syncAuth);
+    window.dispatchEvent(new CustomEvent("biblija-auth"));
+    await syncWithServer({ silent: true });
+    updateSyncHeaderUI();
+    updateSyncModalViews();
+  }
+
+  async function renderPasskeyList() {
+    const el = document.getElementById("syncPasskeyList");
+    if (!el) return;
+    try {
+      const s = await pk.session();
+      if (!s.user) return;
+      const keys = s.user.passkeys || [];
+      el.innerHTML = keys.length
+        ? `<div class="passkey-list-title">${ic("key-round")}Pristupni ključevi ovog profila</div>` +
+          keys
+            .map(
+              (k) => `<div class="passkey-row"><span>${escapeHtml(k.name)} · ${escapeHtml(new Date(k.created_at).toLocaleDateString("hr-HR"))}</span>` +
+                `<button type="button" class="saved-profile-remove" data-del-key="${escapeHtml(k.id)}" title="Ukloni ključ" aria-label="Ukloni ključ">${ic("x")}</button></div>`
+            )
+            .join("") +
+          (s.user.certilia_name ? `<div class="passkey-row">${ic("badge-check")}Certilia: ${escapeHtml(s.user.certilia_name)}</div>` : "")
+        : "";
+      el.querySelectorAll("[data-del-key]").forEach((b) =>
+        b.addEventListener("click", async () => {
+          try {
+            await pk.post("/api/passkey/delete", { id: b.getAttribute("data-del-key") });
+            renderPasskeyList();
+          } catch (e) {
+            const m = document.getElementById("syncPasskeyMessage2");
+            if (m) {
+              m.style.display = "block";
+              m.style.background = "var(--danger-soft)";
+              m.style.color = "var(--danger)";
+              m.textContent = pk.niceError(e);
+            }
+          }
+        })
+      );
+    } catch (_) {}
+  }
+  window.biblijaPasskey = { supported: pk.supported, action: passkeyAction, session: pk.session };
 
   function initSyncModal() {
     const overlay = document.getElementById("syncModalOverlay");
@@ -846,9 +1047,37 @@
       });
     }
 
+    const on = (id, fn) => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener("click", fn);
+    };
+    on("btnPasskeyLogin", () => passkeyAction("login", {}));
+    on("btnPasskeyRelogin", () => passkeyAction("login", {}));
+    on("btnPasskeyCreate", () => {
+      const name = (document.getElementById("syncNewProfileName").value || "").trim();
+      if (name.length < 2) {
+        const m = document.getElementById("syncPasskeyMessage");
+        m.style.display = "block";
+        m.style.background = "var(--danger-soft)";
+        m.style.color = "var(--danger)";
+        m.textContent = "Upiši ime profila (barem 2 znaka), npr. svoje ime.";
+        return;
+      }
+      passkeyAction("create", { display_name: name });
+    });
+    on("btnPasskeyUpgrade", () => passkeyAction("upgrade", {}));
+    on("btnPasskeyAddDevice", () => passkeyAction("add", {}));
+    if (!pk.supported()) {
+      const legacy = document.getElementById("syncLegacyDetails");
+      if (legacy) legacy.open = true;
+    }
+
     const logoutBtn = document.getElementById("btnLogoutSync");
     if (logoutBtn) {
       logoutBtn.addEventListener("click", () => {
+        if (state.syncAuth && state.syncAuth.method === "passkey") {
+          fetch("/api/logout", { method: "POST", credentials: "same-origin" }).catch(() => {});
+        }
         state.syncAuth = null;
         localStorage.removeItem("biblija_sync_auth");
         resetLocalUserData();
@@ -863,11 +1092,11 @@
     }
 
     // Auto-sync on startup & when switching back to tab on mobile/laptop
-    if (state.syncAuth && state.syncAuth.user_key) {
+    if (canSync()) {
       syncWithServer({ silent: true });
     }
     document.addEventListener("visibilitychange", () => {
-      if (document.visibilityState === "visible" && state.syncAuth && state.syncAuth.user_key) {
+      if (document.visibilityState === "visible" && canSync()) {
         syncWithServer({ silent: true });
       } else if (document.visibilityState === "hidden") {
         closeLive();

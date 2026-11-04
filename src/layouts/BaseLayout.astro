@@ -148,8 +148,34 @@ const {
       <!-- Logged Out View -->
       <div id="syncLoggedOutView">
         <p class="modal-desc">
-          Čitaj na mobitelu, tabletu i računalu uz uvijek usklađen napredak kroz <strong>Bibliju 365</strong>, zadnje čitano poglavlje i osobne bilješke. Bez e-maila — upiši svoj <strong>Sync kod</strong> i <strong>PIN</strong>.
+          Čitaj na mobitelu, tabletu i računalu uz uvijek usklađen napredak kroz <strong>Bibliju 365</strong>, zadnje čitano poglavlje i osobne bilješke.
+          Prijava je <strong>pristupnim ključem</strong> (passkey): sprema se u Apple Passwords ili Google Password Manager i sam dolazi na tvoje druge uređaje. Nema e-maila, lozinke ni PIN-a koji treba pamtiti.
         </p>
+
+        <button type="button" class="btn-primary-full" id="btnPasskeyLogin">
+          <Icon name="key-round" />Prijavi se pristupnim ključem
+        </button>
+
+        <div class="form-field" style="margin-top:1.1rem;">
+          <label for="syncNewProfileName" class="form-label">Prvi put? Upiši ime profila i napravi ključ</label>
+          <div class="input-action-row">
+            <input
+              type="text"
+              id="syncNewProfileName"
+              class="book-filter-input"
+              style="margin:0;flex:1;"
+              placeholder="npr. Marko ili Obitelj Horvat"
+              maxlength="40"
+              autocomplete="off"
+            />
+            <button type="button" class="icon-btn btn-accent" id="btnPasskeyCreate"><Icon name="user-plus" />Napravi profil</button>
+          </div>
+        </div>
+
+        <div id="syncPasskeyMessage" class="sync-auth-msg" style="display:none;"></div>
+
+        <details class="sync-legacy" id="syncLegacyDetails">
+          <summary>Stari način: Sync kod i PIN (mobilna aplikacija)</summary>
 
         <div class="form-field">
           <label for="syncUserKeyInput" class="form-label">
@@ -194,6 +220,7 @@ const {
         >
           <Icon name="cloud-upload" />Poveži uređaj i sinkroniziraj
         </button>
+        </details>
       </div>
 
       <!-- Logged In View -->
@@ -210,7 +237,33 @@ const {
           <div class="sync-stats-grid" id="syncStatsSummary"></div>
         </div>
 
-        <p class="modal-desc" style="margin-bottom:0.9rem;">
+        <div id="syncSessionExpired" class="sync-upgrade" style="display:none;">
+          <p>Prijava ključem je istekla na ovom uređaju. Podaci su sačuvani, samo se ponovno prijavi.</p>
+          <button type="button" class="btn-primary-full" id="btnPasskeyRelogin"><Icon name="key-round" />Prijavi se pristupnim ključem</button>
+        </div>
+
+        <div id="syncPasskeyUpgrade" class="sync-upgrade" style="display:none;">
+          <p>
+            <strong>Prijeđi na pristupni ključ.</strong> Sync kod i PIN su stari način. Ključ se sprema u Apple Passwords
+            ili Google Password Manager, pa ga ne možeš zaboraviti. Mobilna aplikacija i dalje radi sa Sync kodom i PIN-om.
+          </p>
+          <button type="button" class="btn-primary-full" id="btnPasskeyUpgrade"><Icon name="key-round" />Dodaj pristupni ključ ovom profilu</button>
+        </div>
+
+        <div id="syncPasskeyInfo" style="display:none;">
+          <p class="modal-desc" style="margin-bottom:0.6rem;">
+            Na drugom uređaju otvori biblija.domovina.ai i odaberi <strong>Prijavi se pristupnim ključem</strong>. Uz isti Apple ili Google račun ključ je već tamo.
+            Za Android uz iPhone (ili obrnuto) skeniraj QR kod koji preglednik ponudi, pa na tom uređaju dodaj i njegov ključ.
+          </p>
+          <div id="syncPasskeyList" class="passkey-list"></div>
+          <button type="button" class="icon-btn modal-secondary-btn" id="btnPasskeyAddDevice" style="margin-bottom:0.6rem;">
+            <Icon name="key-round" />Dodaj ključ i na ovaj uređaj
+          </button>
+        </div>
+
+        <div id="syncPasskeyMessage2" class="sync-auth-msg" style="display:none;"></div>
+
+        <p class="modal-desc" id="syncLegacyHint" style="margin-bottom:0.9rem;">
           Za povezivanje drugog uređaja (mobitela ili laptopa), otvori aplikaciju na tom uređaju, klikni na <strong>Prijava / Sync</strong> i upiši isti Sync kod i PIN.
         </p>
 

@@ -8,7 +8,10 @@
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
-    "not_found_handling": "404-page"
+    "not_found_handling": "404-page",
+    // Navigacija na nepostojeću statičku putanju inače dobije 404 stranicu bez pozivanja Workera
+    // (Sec-Fetch-Mode: navigate). Certilia callback i AASA su upravo takve putanje.
+    "run_worker_first": ["/auth/*", "/api/*", "/.well-known/*"]
   },
   "routes": [
     { "pattern": "biblija.domovina.ai", "custom_domain": true }

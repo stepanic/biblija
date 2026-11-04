@@ -19,6 +19,7 @@ import Icon from "../../components/Icon.astro";
         Kršćanskoj sadašnjosti.
       </p>
       <div class="pv-stats" id="pvStats"><span class="pv-muted">Učitavam stanje…</span></div>
+      <div id="pvNotice"></div>
       <div class="pv-actions">
         <a class="icon-btn" href="/api/provjera/export.csv"><Icon name="download" />Potvrđene razlike (CSV)</a>
         <a class="icon-btn" href="/api/provjera/export.csv?sve=1"><Icon name="file-spreadsheet" />Sve presude (CSV)</a>
@@ -26,10 +27,28 @@ import Icon from "../../components/Icon.astro";
     </div>
 
     <div class="card" id="pvLogin" style="display:none;">
-      <h2 class="pv-h2"><Icon name="user-round" />Prijava</h2>
-      <p class="pv-muted">Za provjeru se prijavi svojim Sync kodom i PIN-om (gumb „Prijava / Sync” gore desno). Ako ga nemaš, tamo ga možeš napraviti.</p>
-      <button class="icon-btn btn-accent" id="pvOpenLogin"><Icon name="log-in" />Prijava / Sync</button>
+      <h2 class="pv-h2"><Icon name="key-round" />1. Prijava pristupnim ključem</h2>
+      <p class="pv-muted">
+        Provjera ide uz tvoj profil u Bibliji. Prijavi se pristupnim ključem (Apple Passwords, Google Password Manager).
+        Ako profila još nemaš, napravi ga u „Prijava / Sync” gore desno. Ako imaš stari Sync kod i PIN, tamo mu dodaj ključ.
+      </p>
+      <div class="pv-actions">
+        <button class="icon-btn btn-accent" id="pvPasskeyLogin"><Icon name="key-round" />Prijavi se ključem</button>
+        <button class="icon-btn" id="pvOpenLogin"><Icon name="user-plus" />Novi profil ili Sync kod</button>
+      </div>
+      <div id="pvLoginMsg" class="sync-auth-msg" style="display:none;"></div>
     </div>
+
+    <div class="card" id="pvCertilia" style="display:none;">
+      <h2 class="pv-h2"><Icon name="badge-check" />2. Potvrdi identitet Certilijom</h2>
+      <p class="pv-muted">
+        Presude idu Kršćanskoj sadašnjosti s imenom i prezimenom osobe koja je provjerila redak, zato se prije slanja
+        presude identitet potvrđuje jednom, preko Certilije (e-Osobna, mobileID). OIB se ne sprema, samo njegov
+        neprepoznatljiv otisak, uz ime i prezime. Retke možeš pregledavati i prije toga.
+      </p>
+      <a class="icon-btn btn-accent" id="pvCertiliaBtn" href="/auth/certilia/start?natrag=%2Fprovjera%2F"><Icon name="badge-check" />Login with Certilia</a>
+    </div>
+    <div id="pvWho" class="pv-muted" style="display:none;margin:0 0 0.8rem;"></div>
 
     <div class="card" id="pvEdition" style="display:none;">
       <label class="form-label" for="pvEditionInput">Tiskano izdanje koje imaš (godina, ISBN ili naslovnica)</label>
@@ -146,8 +165,25 @@ import Icon from "../../components/Icon.astro";
 
     function ic(name) { return '<svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#' + name + '"/></svg>'; }
     function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
-    function auth() {
-      try { var a = JSON.parse(localStorage.getItem("biblija_sync_auth") || "null"); return a && a.user_key && a.pin ? a : null; } catch (e) { return null; }
+    // Sesija (pristupni ključ) je u HttpOnly kolačiću; /api/session kaže tko je i je li potvrđen Certilijom.
+    var session = null;
+    function auth() { return session; }
+    function loadSession() {
+      return fetch("/api/session", { credentials: "same-origin" }).then(function (r) { return r.json(); }).then(function (s) {
+        session = s && s.user ? s.user : null;
+        var needCert = Boolean(session && !session.certilia_name);
+        $("pvCertilia").style.display = needCert ? "" : "none";
+        if (needCert && !s.certilia_enabled) {
+          $("pvCertiliaBtn").removeAttribute("href");
+          $("pvCertiliaBtn").innerHTML = ic("clock") + "Certilia još nije podešena";
+        }
+        $("pvWho").style.display = session ? "" : "none";
+        if (session) {
+          $("pvWho").innerHTML = ic("user-round") + " Profil: <b>" + esc(session.display_name) + "</b>" +
+            (session.certilia_name ? " · presude potpisuje <b>" + esc(session.certilia_name) + "</b> (Certilia)" : " · Certilia još nije potvrđena");
+        }
+        return session;
+      }).catch(function () { session = null; return null; });
     }
     function saveSkip() { try { localStorage.setItem("pv_skip", JSON.stringify(state.skip.slice(-200))); } catch (e) {} }
 
@@ -249,15 +285,15 @@ import Icon from "../../components/Icon.astro";
       });
     }
 
-    function show(id) { ["pvLogin", "pvCard", "pvDone", "pvEdition"].forEach(function (x) { $(x).style.display = x === id || (x === "pvEdition" && id === "pvCard") ? "" : "none"; }); }
+    function show(id) { if (id === "pvLogin") $("pvCertilia").style.display = "none"; ["pvLogin", "pvCard", "pvDone", "pvEdition"].forEach(function (x) { $(x).style.display = x === id || (x === "pvEdition" && id === "pvCard") ? "" : "none"; }); }
     function err(msg) { var e = $("pvError"); e.textContent = msg || ""; e.style.display = msg ? "" : "none"; e.className = "sync-auth-msg" + (msg ? " error" : ""); }
 
     function next(id) {
       var a = auth();
       if (!a) { show("pvLogin"); return; }
       err("");
-      api("/next", { user_key: a.user_key, pin: a.pin, skip: state.skip, id: id || undefined }).then(function (r) {
-        if (!r.ok) { if (r._status === 401) { show("pvLogin"); } $("pvStats").insertAdjacentHTML("beforeend", '<div class="sync-auth-msg error">' + esc(r.error) + "</div>"); return; }
+      api("/next", { skip: state.skip, id: id || undefined }).then(function (r) {
+        if (!r.ok) { if (r._status === 401) { show("pvLogin"); } $("pvNotice").insertAdjacentHTML("beforeend", '<div class="sync-auth-msg error">' + esc(r.error) + "</div>"); return; }
         if (r.done) { show("pvDone"); return; }
         render(r);
       });
@@ -308,7 +344,7 @@ import Icon from "../../components/Icon.astro";
       box.style.display = "";
       if (!others || !others.length) { box.innerHTML = '<span class="pv-muted">Još nitko drugi nije provjerio ovaj redak.</span>'; return; }
       box.innerHTML = "<strong>Presude drugih</strong>" + others.map(function (o) {
-        return '<div class="pv-other"><b>' + esc(VERDICT_LABEL[o.verdict] || o.verdict) + "</b>" +
+        return '<div class="pv-other"><b>' + esc(VERDICT_LABEL[o.verdict] || o.verdict) + "</b>" + (o.reviewer_name ? " · " + esc(o.reviewer_name) : "") +
           (o.page ? " · str. " + esc(o.page) : "") + (o.edition ? " · " + esc(o.edition) : "") +
           (o.print_text ? '<div class="pv-text-body">' + esc(o.print_text) + "</div>" : "") +
           (o.note ? '<div class="pv-muted">' + esc(o.note) + "</div>" : "") +
@@ -378,14 +414,15 @@ import Icon from "../../components/Icon.astro";
       if (!v) { err("Odaberi što piše u tisku."); return; }
       if (v.value === "tisak_drukcije" && !$("pvPrintText").value.trim()) { err("Upiši kako redak glasi u tisku."); return; }
       var fd = new FormData();
-      fd.append("user_key", a.user_key); fd.append("pin", a.pin); fd.append("finding_id", state.finding.id);
+      if (!a.certilia_name) { err("Prije slanja presude potvrdi identitet Certilijom (korak 2 gore)."); $("pvCertilia").scrollIntoView({ behavior: "smooth" }); return; }
+      fd.append("finding_id", state.finding.id);
       fd.append("verdict", v.value); fd.append("print_text", $("pvPrintText").value);
       fd.append("edition", $("pvEditionInput").value); fd.append("page", $("pvPage").value); fd.append("note", $("pvNote").value);
       if (state.photo) fd.append("photo", state.photo, "tisak.jpg");
       var btn = $("pvSubmit"); btn.disabled = true; btn.innerHTML = ic("loader-circle") + "Šaljem…";
       api("/review", fd).then(function (r) {
         btn.disabled = false; btn.innerHTML = ic("send") + "Pošalji presudu";
-        if (!r.ok) { err(r.error || "Slanje nije uspjelo."); return; }
+        if (!r.ok) { err(r.error || "Slanje nije uspjelo."); if (r.need) loadSession().then(function () { if (r.need === "passkey") show("pvLogin"); }); return; }
         err(""); loadStats();
         renderOthers(r.others, true);
         btn.innerHTML = ic("arrow-right") + "Sljedeći redak";
@@ -399,13 +436,35 @@ import Icon from "../../components/Icon.astro";
     });
     $("pvResetSkip").addEventListener("click", function () { state.skip = []; saveSkip(); next(); });
     $("pvOpenLogin").addEventListener("click", function () { var b = $("btnOpenSyncModal"); if (b) b.click(); });
-    window.addEventListener("storage", function (e) { if (e.key === "biblija_sync_auth") next(); });
-    setInterval(function () { if ($("pvLogin").style.display !== "none" && auth()) next(); }, 1500);
-    window.addEventListener("focus", function () { if ($("pvLogin").style.display !== "none" && auth()) next(); });
+    $("pvPasskeyLogin").addEventListener("click", function () {
+      var m = $("pvLoginMsg");
+      if (!window.biblijaPasskey || !window.biblijaPasskey.supported()) {
+        m.style.display = ""; m.className = "sync-auth-msg error"; m.textContent = "Ovaj preglednik ne podržava pristupne ključeve."; return;
+      }
+      window.biblijaPasskey.action("login", {}).then(function (d) {
+        if (!d) { m.style.display = ""; m.className = "sync-auth-msg error"; m.textContent = "Prijava nije uspjela. Pokušaj ponovno ili napravi profil."; }
+      });
+    });
+    // Prijava ili novi profil u modalu „Prijava / Sync” (ista kartica ili druga)
+    function refresh() { loadSession().then(function () { if ($("pvLogin").style.display !== "none" && session) next(); }); }
+    window.addEventListener("biblija-auth", refresh);
+    window.addEventListener("storage", function (e) { if (e.key === "biblija_sync_auth") refresh(); });
+    window.addEventListener("focus", function () { if ($("pvLogin").style.display !== "none") refresh(); });
+
+    var q = new URLSearchParams(location.search);
+    var CERT_ERR = {
+      nije_podesena: "Certilia još nije podešena na poslužitelju.", prijava: "Najprije se prijavi pristupnim ključem.",
+      odustao: "Prijava Certilijom je prekinuta.", druga_sesija: "Certilija se vratila u drugi preglednik ili profil. Pokreni je ponovno ovdje.",
+      neispravan_state: "Prijava Certilijom je istekla. Pokušaj ponovno.", nema_oiba: "Certilia nije poslala OIB.",
+      nema_imena: "Certilia nije poslala ime i prezime."
+    };
+    if (q.get("certilia_greska")) $("pvNotice").insertAdjacentHTML("beforeend", '<div class="sync-auth-msg error">' + esc(CERT_ERR[q.get("certilia_greska")] || "Prijava Certilijom nije uspjela (" + q.get("certilia_greska") + ").") + "</div>");
+    if (q.get("certilia") === "ok") $("pvNotice").insertAdjacentHTML("beforeend", '<div class="sync-auth-msg">Identitet je potvrđen. Presude sad nose tvoje ime i prezime.</div>');
+    if (q.get("certilia") || q.get("certilia_greska")) history.replaceState(null, "", location.pathname + (q.get("id") ? "?id=" + encodeURIComponent(q.get("id")) : ""));
 
     loadStats();
-    var deep = new URLSearchParams(location.search).get("id");
-    next(deep || undefined);
+    var deep = q.get("id");
+    loadSession().then(function () { next(deep || undefined); });
   })();
   </script>
 </BaseLayout>

@@ -38,3 +38,4 @@ android/.idea/
 
 # Tree-shaken Lucide sprite (generira scripts/build_icons.mjs u sync-public)
 public/icons.svg
+.dev.vars
