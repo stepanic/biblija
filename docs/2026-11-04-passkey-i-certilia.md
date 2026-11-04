@@ -112,6 +112,14 @@ Na pravom uređaju (iPhone, Android) i s pravom Certilijom još nije isprobano.
   aplikaciji kad dobije Associated Domains i `ASAuthorizationPlatformPublicKeyCredentialProvider`.
   Androidu treba `assetlinks.json` sa SHA-256 potpisnog certifikata (Play App Signing), koji
   još nemamo.
+- **Certilia, 2026-11-04 (prva prava prijava):** na developer.certilia.com `OIB/PIN` se ne da
+  spremiti kao mandatory (nakon Save opet nije), a na ekranu za pristanak ga nema među podacima.
+  Prijava je svejedno prošla: claimovi `acr,amr,at_hash,aud,azp,c_hash,exp,family_name,given_name,
+  iat,iss,nbf,nonce,sid,sub`, bez `pin`, pa se identifikator uzima iz `sub` (isto kao e-satnica
+  4. 11.). Od Workera `13ea65e9` `auth_log.claims` dodaje `oib_izvor=…;11_znamenki=0|1`, da se
+  vidi je li `sub` doista OIB, bez spremanja vrijednosti.
+- Nakon odjave u modalu stranica mora dobiti `biblija-auth` događaj tek kad `/api/logout`
+  obriše kolačić, inače `/api/session` još vidi staru sesiju.
 - `node --test` uvozi `src/worker.ts` izravno, pa lokalni uvozi moraju imati nastavak `.ts`.
 
 ## Vezani dokumenti
