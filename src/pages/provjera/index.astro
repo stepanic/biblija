@@ -123,6 +123,7 @@ import Icon from "../../components/Icon.astro";
     .pv .pv-stat span { font-size: 0.8rem; color: var(--text-muted); }
     .pv .pv-muted { color: var(--text-muted); font-size: 0.9rem; }
     .pv .pv-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .pv .pv-disabled { opacity: 0.55; cursor: not-allowed; pointer-events: none; }
     .pv .pv-actions a { text-decoration: none; }
     .pv .pv-h2, .pv .pv-h3 { display: flex; align-items: center; gap: 8px; margin: 18px 0 6px; font-family: var(--font-display); }
     .pv .pv-h2 { margin-top: 0; }
@@ -171,11 +172,18 @@ import Icon from "../../components/Icon.astro";
     function loadSession() {
       return fetch("/api/session", { credentials: "same-origin" }).then(function (r) { return r.json(); }).then(function (s) {
         session = s && s.user ? s.user : null;
-        var needCert = Boolean(session && !session.certilia_name);
-        $("pvCertilia").style.display = needCert ? "" : "none";
-        if (needCert && !s.certilia_enabled) {
-          $("pvCertiliaBtn").removeAttribute("href");
-          $("pvCertiliaBtn").innerHTML = ic("clock") + "Certilia još nije podešena";
+        // Korak 2 se vidi uvijek dok Certilia nije potvrđena; gumb radi tek nakon koraka 1.
+        var btn = $("pvCertiliaBtn");
+        $("pvCertilia").style.display = session && session.certilia_name ? "none" : "";
+        if (!s.certilia_enabled) {
+          btn.removeAttribute("href"); btn.classList.add("pv-disabled");
+          btn.innerHTML = ic("clock") + "Certilia još nije podešena";
+        } else if (!session) {
+          btn.removeAttribute("href"); btn.classList.add("pv-disabled");
+          btn.innerHTML = ic("badge-check") + "Login with Certilia (najprije korak 1)";
+        } else {
+          btn.setAttribute("href", "/auth/certilia/start?natrag=%2Fprovjera%2F"); btn.classList.remove("pv-disabled");
+          btn.innerHTML = ic("badge-check") + "Login with Certilia";
         }
         $("pvWho").style.display = session ? "" : "none";
         if (session) {
@@ -285,7 +293,7 @@ import Icon from "../../components/Icon.astro";
       });
     }
 
-    function show(id) { if (id === "pvLogin") $("pvCertilia").style.display = "none"; ["pvLogin", "pvCard", "pvDone", "pvEdition"].forEach(function (x) { $(x).style.display = x === id || (x === "pvEdition" && id === "pvCard") ? "" : "none"; }); }
+    function show(id) { ["pvLogin", "pvCard", "pvDone", "pvEdition"].forEach(function (x) { $(x).style.display = x === id || (x === "pvEdition" && id === "pvCard") ? "" : "none"; }); }
     function err(msg) { var e = $("pvError"); e.textContent = msg || ""; e.style.display = msg ? "" : "none"; e.className = "sync-auth-msg" + (msg ? " error" : ""); }
 
     function next(id) {
