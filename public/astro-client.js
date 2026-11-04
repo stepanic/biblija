@@ -2166,6 +2166,8 @@
 
     async function runSearch() {
       const q = document.getElementById("searchInput").value.trim();
+      // upit u URL-u: nakon gašenja aplikacije točka nastavka vraća i pretragu
+      history.replaceState(null, "", q ? `${window.location.pathname}?q=${encodeURIComponent(q)}` : window.location.pathname);
       const testament = document.getElementById("searchTestamentFilter").value;
       const bookOrderStr = document.getElementById("searchBookFilter").value;
       const directCard = document.getElementById("directRefCard");
@@ -2290,6 +2292,11 @@
         runSearch();
       });
     });
+    const initialQ = new URLSearchParams(window.location.search).get("q");
+    if (initialQ) {
+      searchInputEl.value = initialQ;
+      runSearch();
+    }
   }
 
   /* ==================== NOTES & AUDIT PAGE ==================== */
@@ -2593,7 +2600,114 @@
   }
 
   /* ==================== GLOBAL INIT ==================== */
+  /* ==================== NASTAVAK NAKON ZATVARANJA (PWA) ====================
+     iOS pri ponovnom pokretanju ubijene aplikacije s početnog zaslona uvijek otvara start_url
+     iz manifesta (`/?app=1`). Zato svaka stranica pamti točku nastavka na ovom uređaju
+     (`biblija_resume`: putanja, redak na vrhu poglavlja, scroll, vrijeme), a pokretanje aplikacije
+     vodi na nju. Ako je dnevnik (npr. sinkroniziran s drugog uređaja) noviji, nastavlja se ondje. */
+  const RESUME_KEY = "biblija_resume";
+
+  function isStandalone() {
+    return Boolean(window.navigator.standalone) ||
+      (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches);
+  }
+
+  function currentResumePoint() {
+    const path = window.location.pathname === "/index.html" ? "/" : window.location.pathname;
+    const params = new URLSearchParams(window.location.search);
+    params.delete("app");
+    const qs = params.toString();
+    const onChapter = CHAPTER_URL_RE.test(path) && typeof state.topVerse === "function";
+    return {
+      href: path + (qs ? `?${qs}` : ""),
+      verse: onChapter ? state.topVerse() || 0 : 0,
+      y: Math.round(window.scrollY || 0),
+      at: new Date().toISOString(),
+    };
+  }
+
+  function saveResumePoint() {
+    try {
+      // /provjera/ je radni alat, ne čitanje: ne preuzima točku nastavka.
+      if (window.location.pathname.startsWith("/provjera")) return;
+      localStorage.setItem(RESUME_KEY, JSON.stringify(currentResumePoint()));
+    } catch (_) {}
+  }
+
+  /** Vraća true ako je pokrenuto preusmjeravanje (ostatak inicijalizacije se preskače). */
+  function resumeOnAppLaunch() {
+    let launched = false;
+    try {
+      launched = sessionStorage.getItem("biblija_launched") === "1";
+      sessionStorage.setItem("biblija_launched", "1");
+    } catch (_) {
+      return false;
+    }
+    const params = new URLSearchParams(window.location.search);
+    const fromManifest = params.get("app") === "1";
+    const atStart = window.location.pathname === "/" || window.location.pathname === "/index.html";
+    if (fromManifest) {
+      params.delete("app");
+      const qs = params.toString();
+      history.replaceState(null, "", "/" + (qs ? `?${qs}` : "") + window.location.hash);
+    }
+    if (launched || !atStart || !(fromManifest || isStandalone())) return false;
+
+    let point = null;
+    try {
+      point = JSON.parse(localStorage.getItem(RESUME_KEY) || "null");
+    } catch (_) {}
+    // Noviji zapis dnevnika (drugi uređaj, sinkroniziran ranije) ima prednost pred lokalnom točkom.
+    let latest = null;
+    for (const e of state.readingLog.slice(-50)) {
+      if (e && e.url && e.ended_at && (!latest || e.ended_at > latest.ended_at)) latest = e;
+    }
+    if (latest && (!point || Date.parse(latest.ended_at) > Date.parse(point.at) + 60000)) {
+      point = { href: latest.url, verse: latest.verse || 0, y: 0, at: latest.ended_at };
+    }
+    if (!point || !point.href || point.href === "/" || !point.href.startsWith("/")) {
+      if (point && point.y > 0) setTimeout(() => window.scrollTo(0, point.y), 60);
+      return false;
+    }
+    if (point.verse > 1 && CHAPTER_URL_RE.test(point.href)) {
+      window.location.replace(`${point.href}#od-${point.verse}`);
+    } else {
+      try {
+        sessionStorage.setItem("biblija_restore_y", JSON.stringify({ href: point.href, y: point.y || 0 }));
+      } catch (_) {}
+      window.location.replace(point.href);
+    }
+    return true;
+  }
+
+  function initResumeTracking() {
+    // Scroll s prethodnog pokretanja (stranice bez retka, npr. plan, dnevnik, pretraga)
+    try {
+      const r = JSON.parse(sessionStorage.getItem("biblija_restore_y") || "null");
+      sessionStorage.removeItem("biblija_restore_y");
+      const here = window.location.pathname + window.location.search;
+      if (r && r.href === here && r.y > 0) {
+        // stranice koje se iscrtavaju iz JS-a trebaju trenutak dok narastu
+        setTimeout(() => window.scrollTo(0, r.y), 150);
+        setTimeout(() => { if (Math.abs(window.scrollY - r.y) > 40) window.scrollTo(0, r.y); }, 700);
+      }
+    } catch (_) {}
+
+    let t = null;
+    window.addEventListener("scroll", () => {
+      clearTimeout(t);
+      t = setTimeout(saveResumePoint, 400);
+    }, { passive: true });
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "hidden") saveResumePoint();
+    });
+    window.addEventListener("pagehide", saveResumePoint);
+    // nakon što se stranica posloži (i nakon skoka na #od-N)
+    setTimeout(saveResumePoint, 1200);
+  }
+
   window.addEventListener("DOMContentLoaded", () => {
+    if (resumeOnAppLaunch()) return;
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker
         .register("/sw.js", { updateViaCache: "none" })
@@ -2666,5 +2780,6 @@
     initNotesPage();
     initReadingLogPage();
     initSyncModal();
+    initResumeTracking();
   });
 })();

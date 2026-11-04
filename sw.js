@@ -1,4 +1,4 @@
-const CACHE_NAME = "biblija365-astro-v6";
+const CACHE_NAME = "biblija365-astro-v7";
 const PRECACHE_ASSETS = [
   "/",
   "/plan/",
@@ -8,6 +8,10 @@ const PRECACHE_ASSETS = [
   "/astro-client.js",
   "/icons.svg",
   "/favicon.svg",
+  "/apple-touch-icon.png",
+  "/icon-192.png",
+  "/icon-512.png",
+  "/dnevnik/",
   "/manifest.json",
   "/data/json/books.json",
   "/data/json/plans/index.json",
@@ -50,6 +54,10 @@ self.addEventListener("fetch", (event) => {
         }
         return res;
       })
-      .catch(() => caches.match(event.request))
+      // Offline: pokretanje s početnog zaslona dolazi kao /?app=1, a ?q= pretrage nije u cacheu
+      .catch(async () =>
+        (await caches.match(event.request)) ||
+        (event.request.mode === "navigate" ? caches.match(event.request, { ignoreSearch: true }) : undefined)
+      )
   );
 });
