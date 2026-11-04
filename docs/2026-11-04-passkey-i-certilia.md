@@ -117,7 +117,8 @@ Na pravom uređaju (iPhone, Android) i s pravom Certilijom još nije isprobano.
   Prijava je svejedno prošla: claimovi `acr,amr,at_hash,aud,azp,c_hash,exp,family_name,given_name,
   iat,iss,nbf,nonce,sid,sub`, bez `pin`, pa se identifikator uzima iz `sub` (isto kao e-satnica
   4. 11.). Od Workera `13ea65e9` `auth_log.claims` dodaje `oib_izvor=…;11_znamenki=0|1`, da se
-  vidi je li `sub` doista OIB, bez spremanja vrijednosti.
+  vidi je li `sub` doista OIB, bez spremanja vrijednosti. Provjereno 10:51 i 10:52 UTC:
+  `oib_izvor=sub;11_znamenki=1`, dakle `sub` je OIB.
 - Nakon odjave u modalu stranica mora dobiti `biblija-auth` događaj tek kad `/api/logout`
   obriše kolačić, inače `/api/session` još vidi staru sesiju.
 - `node --test` uvozi `src/worker.ts` izravno, pa lokalni uvozi moraju imati nastavak `.ts`.
