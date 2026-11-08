@@ -14,8 +14,11 @@ flowchart LR
   B --> C{prvi load u sessionStorage?}
   C -- ne --> H[ostaje na početnoj]
   C -- da --> D{dnevnik noviji od biblija_resume za više od 60 s?}
-  D -- da --> E["poglavlje iz dnevnika #od-N"]
-  D -- ne --> F{biblija_resume}
+  D -- da --> T{točka nastavka od danas?}
+  D -- ne --> T
+  T -- ne --> P["/plan/ (današnje čitanje)"]
+  T -- "da, iz dnevnika" --> E["poglavlje iz dnevnika #od-N"]
+  T -- "da, biblija_resume" --> F{biblija_resume}
   F -- poglavlje s retkom --> G["/knjiga/N/#od-redak"]
   F -- druga stranica --> I[stranica + scrollY preko biblija_restore_y]
 ```
@@ -28,6 +31,11 @@ flowchart LR
   (`sessionStorage.biblija_launched`). Klik na početnu unutar aplikacije zato
   ne preusmjerava. Stare instalacije s `start_url: ./index.html` hvata
   standalone provjera.
+- Od 2026-11-08 prvo pokretanje u danu (točka nastavka nije od današnjeg
+  lokalnog datuma, ili je nema) vodi na `/plan/`, gdje je na vrhu današnje
+  čitanje po kalendaru. Ponovno pokretanje istog dana nastavlja kao prije.
+  Plan se pri nastavku uvijek otvara na vrhu (`y = 0`). Vidi
+  `docs/2026-11-08-plan-po-kalendaru.md`.
 - Pretraga drži upit u URL-u (`/pretraga/?q=`), pa se i ona vraća.
 - Service worker v7: offline navigacija pada na `caches.match(..., { ignoreSearch: true })`,
   jer `/?app=1` i `?q=` nisu u cacheu pod tim ključem.
