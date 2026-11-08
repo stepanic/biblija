@@ -47,6 +47,9 @@ const SHORT_NAMES: Record<string, { badge: string; name: string; sub: string }> 
   activeNav="plan365"
 >
   <section id="planPageRoot">
+    <!-- Današnje čitanje: prvo što se vidi kad se plan otvori -->
+    <div id="currentDayHeroCard" class="card current-day-hero-card"></div>
+
     <!-- Plan Overview & Selector Card -->
     <div class="card plan-header-card">
       <div class="plan-top-row">
@@ -99,6 +102,18 @@ const SHORT_NAMES: Record<string, { badge: string; name: string; sub: string }> 
 
       <p id="planDescription" class="plan-description-box"></p>
 
+      <div id="planModeRow" class="plan-mode-row">
+        <span class="form-label plan-mode-label">„Danas” je:</span>
+        <div class="plan-mode-toggle" role="radiogroup" aria-label="Kako se određuje današnji dan">
+          <button type="button" class="filter-chip" role="radio" data-planmode="calendar">
+            <Icon name="calendar-days" />Dan po datumu
+          </button>
+          <button type="button" class="filter-chip" role="radio" data-planmode="progress">
+            <Icon name="list-checks" />Sljedeći nepročitani
+          </button>
+        </div>
+      </div>
+
       <div class="plan-progress-panel">
         <div class="plan-progress-labels">
           <strong id="planProgressStats">Pročitano: 0 / 365 dana (0%)</strong>
@@ -110,9 +125,6 @@ const SHORT_NAMES: Record<string, { badge: string; name: string; sub: string }> 
       </div>
     </div>
 
-    <!-- Today's Reading Hero Card -->
-    <div id="currentDayHeroCard" class="card current-day-hero-card"></div>
-
     <!-- All Days Grid Card -->
     <div class="card">
       <div class="days-toolbar">
@@ -121,14 +133,14 @@ const SHORT_NAMES: Record<string, { badge: string; name: string; sub: string }> 
           <button class="filter-chip" data-dayfilter="todo">Nepročitani</button>
           <button class="filter-chip" data-dayfilter="done">Pročitani</button>
           <button type="button" class="icon-btn" id="btnScrollToCurrentDay" title="Pronađi današnji dan u mreži">
-            <Icon name="target" />Skoči na današnji dan
+            <Icon name="target" />Danas
           </button>
         </div>
         <input
           type="search"
           id="daySearchInput"
           class="book-filter-input days-search-input"
-          placeholder="Traži dan ili kraticu (npr. Dan 12, Iz, Ps 23)..."
+          placeholder="Traži dan, datum ili kraticu (npr. Dan 12, 8.11., Ps 23)..."
         />
       </div>
       <div id="planDaysGrid" class="days-grid"></div>

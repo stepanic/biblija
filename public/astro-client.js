@@ -1903,9 +1903,52 @@
     scheduleCloudSync();
   }
 
+  /*
+   * Kalendar 365-dnevnih planova: Dan 1 = 1. siječnja, Dan 365 = 31. prosinca. Brojanje ide po
+   * neprijestupnoj godini, pa isti datum svake godine pada na isti dan plana (1. ožujka je uvijek
+   * Dan 60). 29. veljače nema svoj dan: dijeli Dan 59 s 28. veljače i služi za nadoknadu.
+   */
+  const MONTH_START = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+  const MONTHS_GEN = ["siječnja", "veljače", "ožujka", "travnja", "svibnja", "lipnja", "srpnja", "kolovoza", "rujna", "listopada", "studenoga", "prosinca"];
+
+  function isCalendarPlan(plan) {
+    return Boolean(plan) && plan.days_count === 365;
+  }
+
+  function calendarDayOf(date) {
+    const m = date.getMonth();
+    const d = date.getDate();
+    if (m === 1 && d === 29) return 59;
+    return MONTH_START[m] + d;
+  }
+
+  /** Datum (lokalni) kojem pripada dan plana u zadanoj godini. */
+  function calendarDateOf(dayNum, year) {
+    let m = 11;
+    while (m > 0 && MONTH_START[m] >= dayNum) m--;
+    return new Date(year, m, dayNum - MONTH_START[m]);
+  }
+
+  function fmtPlanDate(date, long) {
+    return long
+      ? `${date.getDate()}. ${MONTHS_GEN[date.getMonth()]}`
+      : `${date.getDate()}. ${date.getMonth() + 1}.`;
+  }
+
+  function planTodayMode() {
+    try {
+      return localStorage.getItem("biblija_plan_today_mode") === "progress" ? "progress" : "calendar";
+    } catch (_) {
+      return "calendar";
+    }
+  }
+
   async function initPlanPage() {
     const root = document.getElementById("planPageRoot");
     if (!root) return;
+
+    let todayMode = planTodayMode();
+    let lastRenderedDate = new Date().toDateString();
 
     const sel = document.getElementById("planSelector");
     if (sel) {
@@ -1940,15 +1983,71 @@
       });
     });
 
-    const scrollCurBtn = document.getElementById("btnScrollToCurrentDay");
-    if (scrollCurBtn) {
-      scrollCurBtn.addEventListener("click", () => {
-        const curCard = document.querySelector("#planDaysGrid .day-card.current-day");
-        if (curCard) {
-          curCard.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
+    document.querySelectorAll("[data-planmode]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        todayMode = btn.getAttribute("data-planmode") === "progress" ? "progress" : "calendar";
+        try {
+          localStorage.setItem("biblija_plan_today_mode", todayMode);
+        } catch (_) {}
+        renderPlan();
       });
+    });
+
+    /** Skoči na današnji dan: makni filtere i pretragu koji ga skrivaju pa ga centriraj u mreži. */
+    async function scrollToTodayCard(smooth = true) {
+      let curCard = document.querySelector("#planDaysGrid .day-card.current-day");
+      if (!curCard && (state.dayFilter !== "all" || state.daySearch)) {
+        state.dayFilter = "all";
+        state.daySearch = "";
+        if (daySearchInput) daySearchInput.value = "";
+        document.querySelectorAll("[data-dayfilter]").forEach((b) =>
+          b.classList.toggle("active", b.getAttribute("data-dayfilter") === "all")
+        );
+        await renderPlan();
+        curCard = document.querySelector("#planDaysGrid .day-card.current-day");
+      }
+      if (curCard) {
+        // Do 2 ekrana glatko; dalje (mreža ima 365 kartica) odmah, inače skok traje sekundama.
+        const far = Math.abs(curCard.getBoundingClientRect().top) > window.innerHeight * 2;
+        // "instant", ne "auto": html ima scroll-behavior: smooth, pa bi "auto" opet bio glatko.
+        curCard.scrollIntoView({ behavior: smooth && !far ? "smooth" : "instant", block: "center" });
+        curCard.classList.add("flash-target");
+        setTimeout(() => curCard.classList.remove("flash-target"), 1800);
+      }
     }
+
+    const scrollCurBtn = document.getElementById("btnScrollToCurrentDay");
+    if (scrollCurBtn) scrollCurBtn.addEventListener("click", () => scrollToTodayCard());
+
+    // Plutajući gumb „Danas”, vidljiv kad današnja kartica nije na ekranu.
+    const fab = document.createElement("button");
+    fab.type = "button";
+    fab.id = "btnPlanTodayFab";
+    fab.className = "plan-today-fab";
+    fab.hidden = true;
+    fab.innerHTML = `${ic("target")}<span>Danas</span>`;
+    fab.addEventListener("click", () => scrollToTodayCard());
+    document.body.appendChild(fab);
+    let fabObserver = null;
+    function watchTodayCard() {
+      if (fabObserver) fabObserver.disconnect();
+      const card = document.querySelector("#planDaysGrid .day-card.current-day");
+      const hero = document.getElementById("currentDayHeroCard");
+      if (!("IntersectionObserver" in window)) return;
+      const visible = new Set();
+      fabObserver = new IntersectionObserver((entries) => {
+        for (const e of entries) e.isIntersecting ? visible.add(e.target) : visible.delete(e.target);
+        fab.hidden = visible.size > 0;
+      });
+      if (card) fabObserver.observe(card);
+      if (hero) fabObserver.observe(hero);
+    }
+
+    // Aplikacija ostane otvorena preko ponoći ili se vrati iz pozadine sljedeći dan: novi „danas”.
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState !== "visible") return;
+      if (new Date().toDateString() !== lastRenderedDate) renderPlan();
+    });
 
     const daySearchInput = document.getElementById("daySearchInput");
     if (daySearchInput) {
@@ -1978,14 +2077,48 @@
       document.getElementById("planProgressBar").style.width = `${pct}%`;
       document.getElementById("planProgressStats").textContent = `Pročitano: ${doneCount} / ${plan.days_count} dana (${pct}%)`;
 
-      const nextDayObj = plan.days.find((d) => !isDayDone(plan.id, d.day)) || plan.days[plan.days.length - 1];
+      const firstUnread = plan.days.find((d) => !isDayDone(plan.id, d.day)) || null;
+      const now = new Date();
+      lastRenderedDate = now.toDateString();
+      const year = now.getFullYear();
+      const calendar = isCalendarPlan(plan);
+      const byDate = calendar && todayMode === "calendar";
+      const todayNum = calendar ? calendarDayOf(now) : null;
+      const nextDayObj = byDate
+        ? plan.days.find((d) => d.day === todayNum)
+        : firstUnread || plan.days[plan.days.length - 1];
+      const missed = byDate ? plan.days.filter((d) => d.day < todayNum && !isDayDone(plan.id, d.day)) : [];
+
+      const modeRow = document.getElementById("planModeRow");
+      if (modeRow) {
+        modeRow.style.display = calendar ? "" : "none";
+        modeRow.querySelectorAll("[data-planmode]").forEach((b) => {
+          const on = b.getAttribute("data-planmode") === todayMode;
+          b.classList.toggle("active", on);
+          b.setAttribute("aria-checked", on ? "true" : "false");
+        });
+      }
+
       document.getElementById("planNextSuggested").textContent =
         doneCount === plan.days_count
           ? "Čestitamo! Plan je u cijelosti pročitan!"
-          : `Sljedeći nepročitani dan: Dan ${nextDayObj.day} (${nextDayObj.label})`;
+          : byDate
+            ? missed.length
+              ? `Propušteno do danas: ${missed.length} ${missed.length === 1 ? "dan" : "dana"}`
+              : "Nema propuštenih dana do danas"
+            : `Sljedeći nepročitani dan: Dan ${firstUnread.day} (${firstUnread.label})`;
 
       const hero = document.getElementById("currentDayHeroCard");
       if (nextDayObj) {
+        const heroDone = isDayDone(plan.id, nextDayObj.day);
+        const heroDate = calendar ? calendarDateOf(nextDayObj.day, year) : null;
+        const isFeb29 = byDate && now.getMonth() === 1 && now.getDate() === 29;
+        const kicker = byDate
+          ? `Danas, ${fmtPlanDate(now, true)} · Dan ${nextDayObj.day} od ${plan.days_count}`
+          : `Sljedeće čitanje · Dan ${nextDayObj.day} od ${plan.days_count}${heroDate ? ` · ${fmtPlanDate(heroDate, true)}` : ""}`;
+        const missedNote = missed.length
+          ? `<button type="button" class="icon-btn plan-missed-btn" id="btnHeroFirstMissed">${ic("history")}Propušteno ${missed.length} · prvi: Dan ${missed[0].day} (${fmtPlanDate(calendarDateOf(missed[0].day, year), false)})</button>`
+          : "";
         const readingBtns = nextDayObj.readings
           .map(
             (r, idx) =>
@@ -1996,23 +2129,39 @@
         hero.innerHTML = `
           <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.85rem;">
             <div>
-              <span class="badge badge-accent">${ic("calendar-days")}Današnje čitanje · Dan ${nextDayObj.day} od ${plan.days_count}</span>
+              <span class="badge badge-accent">${ic("calendar-days")}${escapeHtml(kicker)}</span>
               <h3 style="margin:0.35rem 0 0.2rem;font-size:1.35rem;">${escapeHtml(nextDayObj.label)}</h3>
-              <div style="font-size:0.84rem;color:var(--text-muted);">Ukupno ~${nextDayObj.verse_count} redaka u današnjem rasporedu</div>
+              <div style="font-size:0.84rem;color:var(--text-muted);">Ukupno ~${nextDayObj.verse_count} redaka${isFeb29 ? " · 29. veljače dijeli Dan 59 s 28. veljače: dan za nadoknadu" : ""}</div>
             </div>
             <div style="display:flex;gap:0.45rem;flex-wrap:wrap;">
               <button class="icon-btn btn-accent" id="btnHeroStartFirst" style="padding:0.5rem 0.95rem;">
                 ${ic("book-open")}Započni čitanje
               </button>
-              <button class="icon-btn" id="btnHeroToggleDone" style="padding:0.5rem 0.9rem;">
-                ${ic("check")}Označi Dan ${nextDayObj.day} pročitanim
+              <button class="icon-btn" id="btnHeroToggleDone" style="padding:0.5rem 0.9rem;${heroDone ? "background:var(--success);color:#fff;border-color:var(--success);" : ""}">
+                ${heroDone ? `${ic("circle-check")}Dan ${nextDayObj.day} je pročitan` : `${ic("check")}Označi Dan ${nextDayObj.day} pročitanim`}
               </button>
             </div>
           </div>
           <div style="display:flex;gap:0.45rem;flex-wrap:wrap;margin-top:0.9rem;">
             ${readingBtns}
           </div>
+          ${missedNote ? `<div class="plan-missed-row">${missedNote}</div>` : ""}
         `;
+
+        const firstMissedBtn = hero.querySelector("#btnHeroFirstMissed");
+        if (firstMissedBtn) {
+          firstMissedBtn.addEventListener("click", async () => {
+            if (state.dayFilter !== "todo") {
+              state.dayFilter = "todo";
+              document.querySelectorAll("[data-dayfilter]").forEach((b) =>
+                b.classList.toggle("active", b.getAttribute("data-dayfilter") === "todo")
+              );
+              await renderPlan();
+            }
+            const card = document.querySelector(`#planDaysGrid .day-card[data-day="${missed[0].day}"]`);
+            if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+          });
+        }
 
         hero.querySelector("#btnHeroStartFirst").addEventListener("click", () => {
           if (nextDayObj.readings.length) {
@@ -2040,13 +2189,23 @@
         if (state.dayFilter === "todo" && isDone) return false;
         if (state.dayFilter === "done" && !isDone) return false;
         if (!q) return true;
-        return `dan ${d.day}`.includes(q) || foldHr(d.label).includes(q);
+        if (`dan ${d.day}`.includes(q) || foldHr(d.label).includes(q)) return true;
+        if (!calendar) return false;
+        // „8.11.”, „8. 11.”, „8.11” ili „8. studenoga”
+        const dt = calendarDateOf(d.day, year);
+        const compactQ = q.replace(/\s+/g, "");
+        return (
+          `${dt.getDate()}.${dt.getMonth() + 1}.`.startsWith(compactQ.endsWith(".") ? compactQ : `${compactQ}.`) ||
+          foldHr(fmtPlanDate(dt, true)).startsWith(q)
+        );
       });
 
       grid.innerHTML = filteredDays
         .map((d) => {
           const isDone = isDayDone(plan.id, d.day);
           const isCur = nextDayObj && d.day === nextDayObj.day ? "current-day" : "";
+          const isMissed = byDate && !isDone && d.day < todayNum ? "missed" : "";
+          const dateLbl = calendar ? fmtPlanDate(calendarDateOf(d.day, year), false) : "";
           const pills = d.readings
             .map(
               (r, idx) =>
@@ -2055,9 +2214,9 @@
             .join("");
 
           return `
-            <div class="day-card ${isDone ? "done" : ""} ${isCur}">
+            <div class="day-card ${isDone ? "done" : ""} ${isCur} ${isMissed}" data-day="${d.day}">
               <div style="display:flex;justify-content:space-between;align-items:center;">
-                <strong>Dan ${d.day}${isCur ? " · Danas" : ""}</strong>
+                <strong>Dan ${d.day}${dateLbl ? ` <span class="day-card-date">${dateLbl}</span>` : ""}${isCur ? ` <span class="day-card-today">${byDate ? "Danas" : "Sljedeći"}</span>` : ""}</strong>
                 <span class="badge">${d.verse_count} redaka</span>
               </div>
               <div class="plan-reading-pills">${pills}</div>
@@ -2100,6 +2259,8 @@
           }
         });
       });
+
+      watchTodayCard();
     }
 
     function openPlanDayInReader(plan, dayObj, reading) {
@@ -2604,7 +2765,8 @@
      iOS pri ponovnom pokretanju ubijene aplikacije s početnog zaslona uvijek otvara start_url
      iz manifesta (`/?app=1`). Zato svaka stranica pamti točku nastavka na ovom uređaju
      (`biblija_resume`: putanja, redak na vrhu poglavlja, scroll, vrijeme), a pokretanje aplikacije
-     vodi na nju. Ako je dnevnik (npr. sinkroniziran s drugog uređaja) noviji, nastavlja se ondje. */
+     vodi na nju. Ako je dnevnik (npr. sinkroniziran s drugog uređaja) noviji, nastavlja se ondje.
+     Iznimka: ako je točka nastavka od prijašnjeg dana, pokretanje vodi na /plan/ (današnje čitanje). */
   const RESUME_KEY = "biblija_resume";
 
   function isStandalone() {
@@ -2665,7 +2827,14 @@
     if (latest && (!point || Date.parse(latest.ended_at) > Date.parse(point.at) + 60000)) {
       point = { href: latest.url, verse: latest.verse || 0, y: 0, at: latest.ended_at };
     }
-    if (!point || !point.href || point.href === "/" || !point.href.startsWith("/")) {
+    // Prvo pokretanje u danu vodi na današnje čitanje u planu. Ponovno pokretanje istog dana
+    // (iOS često ugasi PWA usred poglavlja) nastavlja točno gdje si stao.
+    const sameDay = point && point.at && new Date(point.at).toDateString() === new Date().toDateString();
+    if (!sameDay) {
+      window.location.replace("/plan/");
+      return true;
+    }
+    if (!point.href || point.href === "/" || !point.href.startsWith("/")) {
       if (point && point.y > 0) setTimeout(() => window.scrollTo(0, point.y), 60);
       return false;
     }
@@ -2673,7 +2842,9 @@
       window.location.replace(`${point.href}#od-${point.verse}`);
     } else {
       try {
-        sessionStorage.setItem("biblija_restore_y", JSON.stringify({ href: point.href, y: point.y || 0 }));
+        // Plan se uvijek otvara na vrhu: tamo je kartica s današnjim danom.
+        const y = point.href.startsWith("/plan") ? 0 : point.y || 0;
+        sessionStorage.setItem("biblija_restore_y", JSON.stringify({ href: point.href, y }));
       } catch (_) {}
       window.location.replace(point.href);
     }

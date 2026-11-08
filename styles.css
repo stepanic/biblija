@@ -2084,6 +2084,108 @@ html[data-translation="parallel"] #chapterBody .verse-item {
   box-shadow: inset 0 0 0 1px var(--accent), var(--shadow);
 }
 
+.day-card {
+  scroll-margin: 6rem 0;
+}
+
+.day-card.missed {
+  border-style: dashed;
+  border-color: var(--accent-border);
+}
+
+.day-card.flash-target {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.day-card-date {
+  font-weight: 500;
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  margin-left: 0.25rem;
+}
+
+.day-card-today {
+  display: inline-block;
+  margin-left: 0.3rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  vertical-align: 0.1em;
+}
+
+.plan-mode-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.plan-mode-label {
+  margin: 0;
+}
+
+.plan-mode-toggle {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.plan-mode-toggle .filter-chip {
+  flex: none;
+  padding: 0.4rem 0.9rem;
+  background: var(--bg-muted);
+}
+
+.plan-mode-toggle .filter-chip.active {
+  background: var(--bg-elevated);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.plan-missed-row {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--accent-border);
+}
+
+.plan-missed-btn {
+  font-size: 0.84rem;
+}
+
+.plan-today-fab {
+  position: fixed;
+  right: calc(1.1rem + env(safe-area-inset-right, 0px));
+  bottom: calc(1.2rem + env(safe-area-inset-bottom, 0px));
+  z-index: 120;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+
+.plan-today-fab[hidden] {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .plan-today-fab {
+    bottom: calc(4.8rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
 /* ==================== SEARCH VIEW ==================== */
 .search-bar-wrap {
   display: flex;
